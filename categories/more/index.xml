@@ -792,6 +792,29 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后将这个文件提交到Github仓库就会自动触发Action流水线自动部署到GitHub Pages页面上。&lt;/p&gt;
+&lt;p&gt;提交完代码后，在Github Action处可以看到触发了流水线任务：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-02-20_23-51-32.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-02-20_23-51-32.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;点进去可以看到流水线详情：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-02-20_23-52-39.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-02-20_23-52-39.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，流水线能够正常工作，不需要我手动提交静态文件到 meizhaohui/meizhaohui.github.io 仓库了，流水线会自动帮我提交并发布页面！！&lt;/p&gt;
 </description>
         </item>
         <item>
