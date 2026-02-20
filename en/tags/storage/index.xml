@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Storage on Programming Technology Sharing</title>
+        <link>https://meizhaohui.github.io/en/tags/storage/</link>
+        <description>Recent content in Storage on Programming Technology Sharing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/tags/storage/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>File Systems Basics</title>
+        <link>https://meizhaohui.github.io/en/os/filesystem/</link>
+        <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/os/filesystem/</guid>
+        <description>&lt;h2 id=&#34;file-system-types&#34;&gt;File System Types
+&lt;/h2&gt;&lt;p&gt;Common file systems include ext4, NTFS, and APFS.&lt;/p&gt;
+&lt;h2 id=&#34;inodes&#34;&gt;Inodes
+&lt;/h2&gt;&lt;p&gt;An inode stores metadata about a file including permissions, ownership, and timestamps.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

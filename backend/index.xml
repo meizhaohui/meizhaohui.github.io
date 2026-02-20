@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>后端开发 on 编程技术分享</title>
+        <link>https://meizhaohui.github.io/backend/</link>
+        <description>Recent content in 后端开发 on 编程技术分享</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/backend/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>RESTful API设计</title>
+        <link>https://meizhaohui.github.io/backend/rest-api/</link>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/backend/rest-api/</guid>
+        <description>&lt;h2 id=&#34;rest原则&#34;&gt;REST原则
+&lt;/h2&gt;&lt;p&gt;REST使用HTTP方法进行CRUD操作。&lt;/p&gt;
+&lt;h2 id=&#34;http方法&#34;&gt;HTTP方法
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;GET: 获取数据&lt;/li&gt;
+&lt;li&gt;POST: 创建新资源&lt;/li&gt;
+&lt;li&gt;PUT: 更新资源&lt;/li&gt;
+&lt;li&gt;DELETE: 删除资源&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>数据库索引</title>
+        <link>https://meizhaohui.github.io/backend/database-index/</link>
+        <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/backend/database-index/</guid>
+        <description>&lt;h2 id=&#34;什么是索引&#34;&gt;什么是索引？
+&lt;/h2&gt;&lt;p&gt;索引是一种提高查询性能的数据结构。&lt;/p&gt;
+&lt;h2 id=&#34;索引类型&#34;&gt;索引类型
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;B树索引&lt;/li&gt;
+&lt;li&gt;哈希索引&lt;/li&gt;
+&lt;li&gt;全文索引&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>微服务架构</title>
+        <link>https://meizhaohui.github.io/backend/microservices/</link>
+        <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/backend/microservices/</guid>
+        <description>&lt;h2 id=&#34;什么是微服务&#34;&gt;什么是微服务？
+&lt;/h2&gt;&lt;p&gt;微服务将应用程序拆分为小型、独立的服务。&lt;/p&gt;
+&lt;h2 id=&#34;优势&#34;&gt;优势
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;独立部署&lt;/li&gt;
+&lt;li&gt;技术灵活性&lt;/li&gt;
+&lt;li&gt;故障隔离&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

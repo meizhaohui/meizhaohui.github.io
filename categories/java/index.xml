@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Java on 编程技术分享</title>
+        <link>https://meizhaohui.github.io/categories/java/</link>
+        <description>Recent content in Java on 编程技术分享</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Spring Boot快速入门</title>
+        <link>https://meizhaohui.github.io/backend/java/spring-boot-intro/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/backend/java/spring-boot-intro/</guid>
+        <description>&lt;h2 id=&#34;spring-boot简介&#34;&gt;Spring Boot简介
+&lt;/h2&gt;&lt;p&gt;Spring Boot简化了Spring应用的开发，提供了开箱即用的配置。&lt;/p&gt;
+&lt;h2 id=&#34;创建rest-api&#34;&gt;创建REST API
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@RestController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/api&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;HelloController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@GetMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/hello&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, Spring Boot!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;自动配置&#34;&gt;自动配置
+&lt;/h2&gt;&lt;p&gt;Spring Boot会根据依赖自动配置应用。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Maven打包</title>
+        <link>https://meizhaohui.github.io/backend/java/maven/</link>
+        <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/backend/java/maven/</guid>
+        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Maven打包" /&gt;&lt;h2 id=&#34;maven打包&#34;&gt;Maven打包
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>Java开发环境配置</title>
+        <link>https://meizhaohui.github.io/backend/java/basic/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/backend/java/basic/</guid>
+        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Java开发环境配置" /&gt;&lt;h2 id=&#34;java开发环境配置&#34;&gt;Java开发环境配置
+&lt;/h2&gt;&lt;h3 id=&#34;1-java编程环境配置&#34;&gt;1. java编程环境配置
+&lt;/h3&gt;&lt;h4 id=&#34;11-windows-jdk环境安装配置&#34;&gt;1.1 windows jdk环境安装配置
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;JDK是Java开发工具包，JDK包含JRE，JRE包含JVM和基础类库。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以去Oracle官方下载 jdk 1.8 &lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/java/technologies/downloads/#java8-windows&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.oracle.com/java/technologies/downloads/#java8-windows&lt;/a&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Oracle官方下载需要注册账号登陆后才能下载。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装可参考 &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/read/cv24353732&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;JDK8.0的下载、安装、配置环境变量&lt;/a&gt;。需要注意以下几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java安装时，不用选择【 公共JRE】，因为JDK中包含JRE。&lt;/li&gt;
+&lt;li&gt;安装路径设置在&lt;code&gt;D:\ProgramFiles\Java\jdk-1.8&lt;/code&gt;,不要直接安装到C盘。&lt;/li&gt;
+&lt;li&gt;安装完成后，设置环境变量&lt;code&gt;JAVA_HOME&lt;/code&gt;值为&lt;code&gt;D:\ProgramFiles\Java\jdk-1.8&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;并将&lt;code&gt;D:\ProgramFiles\Java\jdk-1.8\bin&lt;/code&gt;加入到Path环境变量中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;完成以上配置后，在命令行输入&lt;code&gt;java -version&lt;/code&gt;，如果能够正常输出以下信息，则说明Java环境配置正常。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ java -version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java version &lt;span class=&#34;s2&#34;&gt;&amp;#34;1.8.0_401&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Java&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;TM&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; SE Runtime Environment &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;build 1.8.0_401-b10&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Java HotSpot&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;TM&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 64-Bit Server VM &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;build 25.401-b10, mixed mode&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;12-vscode配置java环境&#34;&gt;1.2 vscode配置java环境
+&lt;/h4&gt;&lt;h5 id=&#34;121-安装插件&#34;&gt;1.2.1 安装插件
+&lt;/h5&gt;&lt;p&gt;vscode中安装以下三个插件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extension Pack for Java&lt;/li&gt;
+&lt;li&gt;Debugger for Java&lt;/li&gt;
+&lt;li&gt;Language support for Java ™ for Visual Studio Code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;122-修改配置&#34;&gt;1.2.2 修改配置
+&lt;/h5&gt;&lt;p&gt;使用快捷键Ctrl+Shift+P， 打开用户setting页面:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 字体大小
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;editor.fontSize&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// java环境配置
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;java.configuration.runtimes&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;JavaSE-1.8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\\ProgramFiles\\Java\\jdk-1.8&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意，在&lt;code&gt;editor.fontSize&lt;/code&gt;配置下面增加以上jdk1.8相关的配置。&lt;code&gt;path&lt;/code&gt;路径里面路径分隔符需要用两个&lt;code&gt;\&lt;/code&gt;。即&lt;code&gt;\\&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-58-31.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;123-验证环境是否成功&#34;&gt;1.2.3 验证环境是否成功
+&lt;/h5&gt;&lt;p&gt;使用快捷键Ctrl+Shift+P， 然后输入&lt;strong&gt;java:create java Project&lt;/strong&gt;  ，不用全部输入就会显示出来：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-21-38.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后选择&lt;code&gt;no build tools&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-23-09.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在弹出的对话框中选择一个用来存放Java项目的目录：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-22-29.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;并点击【Select the project location】,在输入框内输入项目名称，&lt;strong&gt;项目名称最好不要有中文或者特殊符号&lt;/strong&gt; ，如我输入【demo】:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-23-59.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;输入项目名称后，直接按Enter回车，此时会打开一个新的VSCODE窗口：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-24-31.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后选择&lt;code&gt;no build tools&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-48-24.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在弹出的对话框中选择一个用来存放Java项目的目录：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-49-26.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;并点击【Select the project location】,在输入框内输入项目名称，&lt;strong&gt;项目名称最好不要有中文或者特殊符号&lt;/strong&gt; ，如我输入【demo】:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-52-22.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;输入项目名称后，直接按Enter回车，此时会打开一个新的VSCODE窗口：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-53-31.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;此时，vsvode自动给创建了项目框架， src下面的java文件就是java代码源文件：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;App&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;throws&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Exception&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意&lt;code&gt;Run|Debug&lt;/code&gt;并不是代码，而是插件的功能按钮，点击它们就可以运行代码。&lt;/p&gt;
+&lt;p&gt;我们直接点击&lt;code&gt;Run|Debug&lt;/code&gt;就可以运行代码，以下是点击&lt;code&gt;Run&lt;/code&gt;运行后的结果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-25-54.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，正常输出的&lt;code&gt;Hello, World!&lt;/code&gt;字符串。&lt;/p&gt;
+&lt;h4 id=&#34;13-vscode配置maven环境&#34;&gt;1.3 vscode配置maven环境
+&lt;/h4&gt;&lt;h5 id=&#34;131-安装maven&#34;&gt;1.3.1 安装maven
+&lt;/h5&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;maven 3.6.0&lt;/a&gt; 可以下载需要用的maven安装包。&lt;/p&gt;
+&lt;p&gt;下载后，将压缩包解压到&lt;code&gt;D:\ProgramFiles\Java&lt;/code&gt; 目录，此时Maven目录文件如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-26-49.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;设置环境变量&lt;code&gt;MAVEN_HOME&lt;/code&gt;值为&lt;code&gt;D:\ProgramFiles\Java\apache-maven-3.6.0&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;并将&lt;code&gt;D:\ProgramFiles\Java\apache-maven-3.6.0\bin&lt;/code&gt;加入到Path环境变量中。&lt;/p&gt;
+&lt;p&gt;然后打开命令行窗口：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ mvn --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Apache Maven 3.6.0 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;97c98ec64a1fdfee7767ce5ffb20918da4f719f3&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; 2018-10-25T02:41:47+08:00&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Maven home: D:&lt;span class=&#34;se&#34;&gt;\P&lt;/span&gt;rogramFiles&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;ava&lt;span class=&#34;se&#34;&gt;\a&lt;/span&gt;pache-maven-3.6.0&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;in&lt;span class=&#34;se&#34;&gt;\.&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Java version: 1.8.0_401, vendor: Oracle Corporation, runtime: D:&lt;span class=&#34;se&#34;&gt;\P&lt;/span&gt;rogramFiles&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;ava&lt;span class=&#34;se&#34;&gt;\j&lt;/span&gt;dk-1.8&lt;span class=&#34;se&#34;&gt;\j&lt;/span&gt;re
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Default locale: zh_CN, platform encoding: GBK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;OS name: &lt;span class=&#34;s2&#34;&gt;&amp;#34;windows 11&amp;#34;&lt;/span&gt;, version: &lt;span class=&#34;s2&#34;&gt;&amp;#34;10.0&amp;#34;&lt;/span&gt;, arch: &lt;span class=&#34;s2&#34;&gt;&amp;#34;amd64&amp;#34;&lt;/span&gt;, family: &lt;span class=&#34;s2&#34;&gt;&amp;#34;windows&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;输入&lt;code&gt;mvn --version&lt;/code&gt;能正常看到以上版本信息，则说明maven环境配置正常。&lt;/p&gt;
+&lt;h5 id=&#34;132-安装插件&#34;&gt;1.3.2 安装插件
+&lt;/h5&gt;&lt;p&gt;vscode中安装以下插件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maven for Java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-34-45.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;133-修改配置&#34;&gt;1.3.3 修改配置
+&lt;/h5&gt;&lt;p&gt;使用快捷键Ctrl+Shift+P， 打开用户setting页面，在vscode配置文件中，增加以下三行内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// maven环境配置
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;maven.executable.path&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\\ProgramFiles\\Java\\apache-maven-3.6.0\\bin\\mvn&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;maven.terminal.useJavaHome&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;maven.settingsFile&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\\ProgramFiles\\Java\\apache-maven-3.6.0\\conf\\settings.xml&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-27-50.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h5 id=&#34;134-设置maven加速源&#34;&gt;1.3.4 设置maven加速源
+&lt;/h5&gt;&lt;p&gt;参考阿里云&lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/mirror/maven?spm=a2c6h.13651102.0.0.3e221b11zarqhG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Maven 配置&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;打开 Maven 的配置文件(windows机器一般在maven安装目录的conf/settings.xml)，在&lt;code&gt;&amp;lt;mirrors&amp;gt;&amp;lt;/mirrors&amp;gt;&lt;/code&gt;标签中添加 mirror 子节点:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mirror&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;aliyunmaven&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/id&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mirrorOf&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;*&amp;lt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/mirrorOf&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;阿里云公共仓库&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/name&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//maven.aliyun.com/repository/public&amp;lt;/url&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/mirror&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-29-48.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;直接在配置文件增加以上几行就行！&lt;/p&gt;
+&lt;h5 id=&#34;135-创建maven项目&#34;&gt;1.3.5 创建maven项目
+&lt;/h5&gt;&lt;p&gt;vscode空白处点击右键选择【从maven原型创建新项目】 ：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-35-24.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;创建项目窗口中可以选择快速创建项目【maven-archetype-quickstart】:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-35-57.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;选择版本 ，选择1.1：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-36-24.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;填写项目的组织，一般是公司域名的倒写，因为我是要测试&lt;code&gt;nexusapi.com&lt;/code&gt; api接口的，所以我们填写&lt;code&gt;com.nexusapi&lt;/code&gt; :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-37-12.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后，按Enter回车，在新的输入框输入项目名称，如我输入【mavendemo】：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-37-35.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后，按Enter回车,此时让选择项目存放的目录，我们仍然放在之前的java目录下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-38-12.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;并点击【Select Destination Folder】,此时vscode就会自动去下载相关依赖包：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-38-31.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;很快就下载完成了，让输入一些相关的信息：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-39-02.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;我们直接回车，使用默认的版本信息【1.0-SNAPSHOT】：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_00-22-57.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Maven 将要求确认项目细节，按 &lt;strong&gt;Enter&lt;/strong&gt; 或按 Y 确认。&lt;/p&gt;
+&lt;p&gt;此时，可以看到vscode开始创建项目：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-39-37.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;创建成功后，按任意键会关闭该终端。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-40-22.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;也可以点击右侧的【Add as Workplace Folder】，即添加为工作空间文件夹，点击该处后，vscode上面看到如下视图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-42-46.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;此时，vscode已经打开了刚才创建的mavendemo项目，相关文件已经创建成功了。&lt;/p&gt;
+&lt;p&gt;如果有新的依赖包需要安装，可以左下角的【MAVEN】&amp;ndash;【Run Maven Commands】选项相应命令执行即可：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-44-16.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如果没有新的依赖包需要安装，则可以直接点【运行和调试】的图标，或者按快捷键【Ctrl+Shift+D】 ，然后点击【运行和调试】按钮，vscode则会运行Maven项目代码：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-45-40.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，正常输出了【Hello World!】和【这是Maven项目输出！】信息，也就是说，vscode里面的maven环境配置成功了。&lt;/p&gt;
+&lt;p&gt;至此，Java的开发环境就准备好了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Programming Technology Sharing</title>
+        <link>https://meizhaohui.github.io/en/categories/</link>
+        <description>Recent content in Categories on Programming Technology Sharing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Backend</title>
+        <link>https://meizhaohui.github.io/en/categories/backend/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/backend/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Cicd</title>
+        <link>https://meizhaohui.github.io/en/categories/cicd/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/cicd/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Devops</title>
+        <link>https://meizhaohui.github.io/en/categories/devops/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/devops/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Docker</title>
+        <link>https://meizhaohui.github.io/en/categories/docker/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/docker/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Golang</title>
+        <link>https://meizhaohui.github.io/en/categories/golang/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/golang/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Java</title>
+        <link>https://meizhaohui.github.io/en/categories/java/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Kubernetes</title>
+        <link>https://meizhaohui.github.io/en/categories/kubernetes/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/kubernetes/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>https://meizhaohui.github.io/en/categories/python/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Frontend</title>
+        <link>https://meizhaohui.github.io/en/categories/frontend/</link>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/frontend/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Os</title>
+        <link>https://meizhaohui.github.io/en/categories/os/</link>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/categories/os/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

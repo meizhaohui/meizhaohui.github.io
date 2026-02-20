@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>proxmox on 编程技术分享</title>
+        <link>https://meizhaohui.github.io/devops/proxmox/</link>
+        <description>Recent content in proxmox on 编程技术分享</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/devops/proxmox/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>proxmox Docs</title>
+        <link>https://meizhaohui.github.io/devops/proxmox/proxmox_docs/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/devops/proxmox/proxmox_docs/</guid>
+        <description>&lt;img src="https://meizhaohui.github.io/img/proxmox_logo_icon_144960.png" alt="Featured image of post proxmox Docs" /&gt;&lt;h2 id=&#34;proxmox-docs&#34;&gt;proxmox Docs
+&lt;/h2&gt;&lt;p&gt;本文档主要是想将&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Main_Page&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Proxmox wiki page&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/pve-docs/pve-admin-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Proxmox VE Administration Guide&lt;/a&gt;翻译成中文文档，方便大家学习。&lt;/p&gt;
+&lt;p&gt;2018年查找企业私有云技术时，偶尔的机会发现了&lt;code&gt;Proxmox&lt;/code&gt;，自己在虚拟机上面经过一翻测试，发现很好用，后来向领导极力推荐，领导同意后，在公司内网使用&lt;code&gt;Proxmox&lt;/code&gt;部署了一套企业私有云平台，现在在上面部署着一些服务，稳定运行了两年多，&lt;code&gt;Proxmox&lt;/code&gt;非常不错。你值得尝试！😀😀&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X1_Introduction&#34; &gt;Proxmox VE简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X2_InstallingProxmoxVE&#34; &gt;Proxmox VE安装&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;proxmox-virtual-environment&#34;&gt;Proxmox Virtual Environment
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Proxmox Virtual Environment&lt;/code&gt;是一种基于&lt;code&gt;QEMU/KVM&lt;/code&gt;和&lt;code&gt;LXC&lt;/code&gt;的开源服务器虚拟化管理解决方案。你可以使用集成的，易于使用的&lt;code&gt;Web&lt;/code&gt;界面或&lt;code&gt;CLI&lt;/code&gt;管理虚拟机,容器,高可用性群集,存储和网络。&lt;code&gt;Proxmox VE&lt;/code&gt;代码根据&lt;code&gt;GNU Affero&lt;/code&gt;通用公共许可证第3版获得许可。该项目由&lt;code&gt;Proxmox Server Solutions GmbH&lt;/code&gt;开发和维护。&lt;/p&gt;
+&lt;p&gt;有关&lt;code&gt;Proxmox VE&lt;/code&gt;主要功能的概述，请访问&lt;a class=&#34;link&#34; href=&#34;https://www.proxmox.com/en/proxmox-ve/features&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Proxmox网站&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;下载&#34;&gt;下载
+&lt;/h3&gt;&lt;p&gt;ISO镜像下载&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;地址&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;使用proxmox-ve&#34;&gt;使用Proxmox VE
+&lt;/h3&gt;&lt;p&gt;如果你是&lt;code&gt;Proxmox VE&lt;/code&gt;的新用户,以下章节对你非常有益:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Qemu/KVM Virtual Machines&lt;/a&gt;  和 &lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Linux_Container&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Linux Container&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Qemu/KVM&lt;/code&gt;虚拟机和&lt;code&gt;Linux&lt;/code&gt;容器是&lt;code&gt;Proxmox VE&lt;/code&gt;支持的两种虚拟化技术.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Host_System_Administration&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Host System Administration&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;主机系统管理将详细介绍&lt;code&gt;Proxmox VE&lt;/code&gt;主机上常用的所有任务,例如在&lt;code&gt;Linux&lt;/code&gt;上设置软件包存储库,网络配置,系统软件更新,外部度量服务器,磁盘运行状况监控,逻辑卷管理器(&lt;code&gt;LVM&lt;/code&gt;)和&lt;code&gt;ZFS&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Cluster_Manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cluster Manager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;集群管理将向您介绍如何在群集中对&lt;code&gt;Proxmox VE&lt;/code&gt;主机进行分组, 设置群集后,可以为虚拟机和容器配置高可用性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/High_Availability&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;High Availability&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;设置群集后,可以为虚拟机和容器配置高可用性.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Storage&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Storage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;存储将概述&lt;code&gt;Proxmox VE&lt;/code&gt;中支持的所有存储：&lt;code&gt;GlusterFS&lt;/code&gt;,用户模式&lt;code&gt;iSCSI&lt;/code&gt;,&lt;code&gt;iSCSI&lt;/code&gt;,&lt;code&gt;LVM&lt;/code&gt;,&lt;code&gt;LVM thin&lt;/code&gt;,&lt;code&gt;NFS&lt;/code&gt;,&lt;code&gt;RBD&lt;/code&gt;,&lt;code&gt;ZFS&lt;/code&gt;,&lt;code&gt;iSCSI&lt;/code&gt;上的&lt;code&gt;ZFS&lt;/code&gt;等.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Ceph_Server&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ceph&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用&lt;code&gt;Ceph&lt;/code&gt;设置超融合基础架构.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Backup_and_Restore&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Backup and Restore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;备份和还原将说明如何使用集成备份管理器.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Firewall&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Firewall&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;详细介绍了内置的&lt;code&gt;Proxmox VE&lt;/code&gt;防火墙的工作原理.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/User_Management&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;User Management&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用户管理解释了身份验证和权限在&lt;code&gt;Proxmox VE&lt;/code&gt;中的工作方式.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Developer_Documentation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Developer Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;开发人员文档将向您展示如何访问源代码，以及如何发送补丁.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;离线文档&#34;&gt;离线文档
+&lt;/h3&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/pve-docs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://pve.proxmox.com/pve-docs/&lt;/a&gt;可以获取到完整的&lt;code&gt;html&lt;/code&gt;,&lt;code&gt;pdf&lt;/code&gt;,&lt;code&gt;epub&lt;/code&gt;格式的&lt;code&gt;Proxmox VE&lt;/code&gt;参考文档.&lt;/p&gt;
+&lt;h3 id=&#34;操作文档和故障排除&#34;&gt;操作文档和故障排除
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Category:HOWTO&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;操作文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Category:Hardware&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;硬件信息&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Category:Troubleshooting&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;故障排除&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;版本历史和路线图&#34;&gt;版本历史和路线图
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;查看&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Roadmap&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;路线图&lt;/a&gt;,了解即将推出的功能.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;视频教程&#34;&gt;视频教程
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;我们会定期在网站上面发布视频教程，可参见&lt;a class=&#34;link&#34; href=&#34;https://www.proxmox.com/en/training/video-tutorials&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.proxmox.com/en/training/video-tutorials&lt;/a&gt; .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;用户推荐&#34;&gt;用户推荐
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;13,000多家公司,大学,公共机构和非政府组织在生产环境中使用&lt;code&gt;Proxmox VE&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>ProxmoxVE安装</title>
+        <link>https://meizhaohui.github.io/devops/proxmox/x2_installingproxmoxve/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/devops/proxmox/x2_installingproxmoxve/</guid>
+        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ProxmoxVE安装" /&gt;&lt;h2 id=&#34;proxmox-ve安装&#34;&gt;Proxmox VE安装
+&lt;/h2&gt;&lt;p&gt;Proxmox VE基于Debian，附带一个安装CD-ROM，其中包括一个完整的Debian系统（5.x版本的&amp;quot;stretch&amp;quot;）以及所有必需的&lt;code&gt;Proxmox VE&lt;/code&gt;软件包。&lt;/p&gt;
+&lt;p&gt;安装程序只询问您几个问题，然后对本地磁盘进行分区，安装所有必需的软件包，并配置系统，包括基本网络设置。 您可以在几分钟内获得功能齐全的系统。推荐使用这种方法安装。&lt;/p&gt;
+&lt;p&gt;Proxmox VE可以安装在现有的Debian系统之上。 但此选项仅建议高级用户使用，因为有必要详细了解Proxmox VE。&lt;/p&gt;
+&lt;h3 id=&#34;系统要求&#34;&gt;系统要求
+&lt;/h3&gt;&lt;p&gt;对于生产服务器，需要高质量的服务器设备。 请记住，如果您在一台计算机上运行10个虚拟服务器，然后遇到硬件故障，则会丢失10个服务。 Proxmox VE支持群集，这意味着由于包含群集功能，可以集中管理多个Proxmox VE安装。&lt;/p&gt;
+&lt;p&gt;Proxmox VE可以使用本地存储（DAS），SAN，NAS以及分布式存储（Ceph RBD）。 详细信息请参见存储章节。&lt;/p&gt;
+&lt;h4 id=&#34;最低配置要求&#34;&gt;最低配置要求
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;CPU：64位（Intel EMT64或AMD64）&lt;/li&gt;
+&lt;li&gt;支持KVM全虚拟化Intel VT /AMD-V的CPU/主板&lt;/li&gt;
+&lt;li&gt;RAM：1 GB RAM，以及用于虚拟机/容器的额外RAM&lt;/li&gt;
+&lt;li&gt;硬盘&lt;/li&gt;
+&lt;li&gt;一个网卡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;推荐的系统要求&#34;&gt;推荐的系统要求
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;CPU：64位（Intel EMT64或AMD64），推荐使用多核CPU&lt;/li&gt;
+&lt;li&gt;支持KVM全虚拟化Intel VT /AMD-V的CPU/主板&lt;/li&gt;
+&lt;li&gt;RAM：8 GB RAM，以及用于虚拟机/容器的额外RAM&lt;/li&gt;
+&lt;li&gt;具有电池保护的写入缓存（“BBU”）或基于闪存的保护的硬件RAID&lt;/li&gt;
+&lt;li&gt;快速硬盘驱动器，15k rpm SAS，Raid10的最佳效果&lt;/li&gt;
+&lt;li&gt;至少有两个网卡，具体取决于您需要的存储技术&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;简单的性能概述&#34;&gt;简单的性能概述
+&lt;/h4&gt;&lt;p&gt;在已安装的Proxmox VE系统上，您可以运行附带的&lt;code&gt;pveperf&lt;/code&gt;脚本以获取CPU和硬盘性能的概述。&lt;/p&gt;
+&lt;p&gt;::: tip 说明&lt;/p&gt;
+&lt;p&gt;这只是一个非常快速和通用的基准。 建议进行更详细的测试，尤其是有关系统I/O性能的测试。
+:::&lt;/p&gt;
+&lt;h4 id=&#34;支持的web浏览器用于访问web图形界面&#34;&gt;支持的WEB浏览器用于访问WEB图形界面
+&lt;/h4&gt;&lt;p&gt;要使用WEB图形界面，需要一个现代浏览器，其中包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Firefox浏览器，本年度发布的版本，或最新的扩展支持版本&lt;/li&gt;
+&lt;li&gt;Chrome浏览器，本年度发布的版本&lt;/li&gt;
+&lt;li&gt;Microsoft目前支持的Internet Explorer版本（IE 11或IE Edge或更高版本）&lt;/li&gt;
+&lt;li&gt;Apple目前支持的Safari版本（Safari 9或更高版本）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果Proxmox VE检测到您正在从移动设备进行连接，您将被重定向到基于触摸的轻量级UI。&lt;/p&gt;
+&lt;h3 id=&#34;使用proxmox-ve安装cd-rom&#34;&gt;使用Proxmox VE安装CD-ROM
+&lt;/h3&gt;&lt;p&gt;您可以从&lt;a class=&#34;link&#34; href=&#34;https://www.proxmox.com/en/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.proxmox.com/en/downloads&lt;/a&gt;下载ISO。 它包括以下内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完整的操作系统（Debian Linux，64位）&lt;/li&gt;
+&lt;li&gt;Proxmox VE安装程序，使用ext4，ext3，xfs或ZFS对硬盘驱动器进行分区并安装操作系统。&lt;/li&gt;
+&lt;li&gt;Proxmox VE内核（Linux），支持LXC和KVM&lt;/li&gt;
+&lt;li&gt;用于管理虚拟机，容器和资源的完整工具集&lt;/li&gt;
+&lt;li&gt;工具集的WEB管理界面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;::: warning 警告&lt;/p&gt;
+&lt;p&gt;在安装过程中，默认使用整个服务器，并删除所有现有数据。请对服务器数据提前进行备份！！！
+:::&lt;/p&gt;
+&lt;p&gt;请插入安装CD-ROM，然后从该驱动器启动。 之后您可以选择以下菜单选项：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/pve-grub-menu.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;pve-grub-menu.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Proxmox VE 正常安装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;::: tip 说明&lt;/p&gt;
+&lt;p&gt;可以仅使用键盘来完成安装向导。 可以通过按下ALT键并与相应按钮中带下划线的字符组合来按下按钮。 例如，ALT + N按下“下一步”按钮。
+:::&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Proxmox VE (Debug mode) 调试模式安装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以调试模式开始安装。 它在几个安装步骤打开一个&lt;code&gt;shell&lt;/code&gt;控制台，这样你就可以在出现问题时进行调试。 请按&lt;code&gt;CTRL-D&lt;/code&gt;退出这些调试控制台并继续安装。 此选项主要面向开发人员，不适用于一般用途。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rescue Boot 救援模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;此选项允许您引导现有安装。它搜索所有连接的硬盘，如果找到现有安装，则使用现有Linux内核直接引导到该磁盘。 如果引导块（grub）出现问题，或者BIOS无法从磁盘读取引导块，可以使用此种模式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Test Memory 测试内存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;运行memtest86+。这有助于检查您的内存是否正常运行且没有错误。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>ProxmoxVE介绍</title>
+        <link>https://meizhaohui.github.io/devops/proxmox/x1_introduction/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/devops/proxmox/x1_introduction/</guid>
+        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ProxmoxVE介绍" /&gt;&lt;h2 id=&#34;proxmox-ve介绍&#34;&gt;Proxmox VE介绍
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;是基于&lt;code&gt;Debian Linux&lt;/code&gt;，开源的运行虚拟机和窗口的平台。&lt;code&gt;Proxmox VE&lt;/code&gt;中可以实现两种虚拟化技术，&lt;code&gt;Kernel-based Virtual Machine (KVM技术)&lt;/code&gt;和&lt;code&gt;container-based virtualization (LXC技术)&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;一个主要的设计目标是使管理尽可能简单。 您可以在单个节点上使用&lt;code&gt;Proxmox VE&lt;/code&gt;，也可以组装多个节点的集群。 所有管理任务都可以使用我们基于&lt;code&gt;Web&lt;/code&gt;的&lt;code&gt;GUI&lt;/code&gt;管理界面完成，即使是初学者也可以在几分钟内设置和安装&lt;code&gt;Proxmox VE&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Proxmox的架构图如下图所示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/proxmox_introduction.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;proxmox_introduction.svg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;管理中心&#34;&gt;管理中心
+&lt;/h3&gt;&lt;p&gt;使用  &lt;code&gt;Proxmox VE&lt;/code&gt; 一般从单节点开始。&lt;code&gt;Proxmox VE&lt;/code&gt;可以将大量的节点组成集群。&lt;code&gt;Proxmox VE&lt;/code&gt;默认安装时就提供有集群功能。&lt;/p&gt;
+&lt;h4 id=&#34;多主设置&#34;&gt;多主设置
+&lt;/h4&gt;&lt;p&gt;基于WEB的GUI图形管理界面可以使你全面了解全部的KVM虚拟机/容器以及整个集群。你可以在GUI界面轻松的管理你的VM虚拟机/容器/存储或集群，不需要另外安装复杂的管理服务器。&lt;/p&gt;
+&lt;h4 id=&#34;proxmox集群文件系统pmxcfs&#34;&gt;Proxmox集群文件系统（pmxcfs）
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;使用独特的&lt;code&gt;Proxmox Cluster文件系统（pmxcfs）&lt;/code&gt;，&lt;code&gt;pmxcfs&lt;/code&gt;是一个用于存储配置文件的数据库驱动文件系统。使您可以存储数千个虚拟机的配置。通过使用&lt;code&gt;corosync&lt;/code&gt;，可以在所有群集节点上实时复制这些文件。文件系统将所有数据存储在磁盘上的持久数据库中，但是数据的副本驻留在RAM中，RAM的最大存储大小为30MB，这对于存储数千个VM虚拟机的配置来说已经足够了。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;是唯一使用此独特群集文件系统的虚拟化平台。&lt;/p&gt;
+&lt;h4 id=&#34;基于web的管理界面&#34;&gt;基于Web的管理界面
+&lt;/h4&gt;&lt;p&gt;Proxmox VE易于使用。在基于Web的管理界面可以完成管理任务，无需安装单独的管理工具或任何具有大型数据库的其他管理节点。多主工具允许您从群集的任何节点管理整个群集。基于Web框架的中央管理-基于&lt;code&gt;JavaScript&lt;/code&gt;框架&lt;code&gt;ExtJS&lt;/code&gt;-使您能够在GUI界面查看每个节点的概述历史记录，系统日志，备份或还原作业，实时迁移或HA触发等功能。&lt;/p&gt;
+&lt;p&gt;ExtJS介绍：无论是界面之美，还是功能之强，ext的表格控件都高居榜首。
+单选行，多选行，高亮显示选中的行，拖拽改变列宽度，按列排序，这些基本功能ExtJS轻量级实现。&lt;/p&gt;
+&lt;h4 id=&#34;命令行&#34;&gt;命令行
+&lt;/h4&gt;&lt;p&gt;对于习惯于熟悉&lt;code&gt;Unix shell&lt;/code&gt;或&lt;code&gt;Windows Powershell&lt;/code&gt;的高级用户，&lt;code&gt;Proxmox VE&lt;/code&gt;提供命令行来管理虚拟环境的所有组件，命令行界面具有智能选项卡功能以及完善的UNIX手册页文档。&lt;/p&gt;
+&lt;h4 id=&#34;rest-api&#34;&gt;REST API
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;使用&lt;code&gt;RESTful API&lt;/code&gt;。我们选择&lt;code&gt;JSON&lt;/code&gt;作为主要数据格式，并使用&lt;code&gt;JSON Schema&lt;/code&gt;正式定义整个&lt;code&gt;API&lt;/code&gt;。这样可以快速轻松地集成第三方管理工具，如自定义托管环境、基于角色的管理等。&lt;/p&gt;
+&lt;h4 id=&#34;基于角色的管理&#34;&gt;基于角色的管理
+&lt;/h4&gt;&lt;p&gt;您可以使用基于角色的用户和权限管理为所有对象（如VM，存储，节点等）定义粒度访问。这允许您定义权限并帮助您控制对对象的访问。此概念也称为访问控制列表：每个权限指定特定路径上的主题（用户或组）和角色（权限集）。&lt;/p&gt;
+&lt;h4 id=&#34;身份验证&#34;&gt;身份验证
+&lt;/h4&gt;&lt;p&gt;Proxmox VE支持多种身份验证源，如&lt;code&gt;Microsoft Active Directory&lt;/code&gt;，&lt;code&gt;LDAP&lt;/code&gt;，&lt;code&gt;Linux PAM&lt;/code&gt;标准身份验证或内置的&lt;code&gt;Proxmox VE&lt;/code&gt;身份验证服务。&lt;/p&gt;
+&lt;h3 id=&#34;灵活的存储&#34;&gt;灵活的存储
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;的存储模型非常灵活。虚拟机映像可以存储在单个或多个本地存储上，也可以存储在&lt;code&gt;NFS&lt;/code&gt;或&lt;code&gt;SAN&lt;/code&gt;上面，你可以根据你的需要任意定义你的存储。你可以使用&lt;code&gt;Debian Linux&lt;/code&gt;可用的所有的存储技术。&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;VM&lt;/code&gt;存储在共享存储上的一个主要好处是能够在没有任何停机的情况下实时迁移正在运行的计算机，因为群集中的所有节点都可以直接访问&lt;code&gt;VM&lt;/code&gt;磁盘映像。&lt;/p&gt;
+&lt;p&gt;我们目前支持以下网络存储类型：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LVM Group（使用iSCSI目标的网络支持）&lt;/li&gt;
+&lt;li&gt;iSCSI目标&lt;/li&gt;
+&lt;li&gt;NFS共享&lt;/li&gt;
+&lt;li&gt;CIFS分享&lt;/li&gt;
+&lt;li&gt;Ceph RBD&lt;/li&gt;
+&lt;li&gt;直接使用iSCSI LUN&lt;/li&gt;
+&lt;li&gt;GlusterFS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;支持的本地存储包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LVM组（本地支持设备，如块设备，FC设备，DRBD等）&lt;/li&gt;
+&lt;li&gt;目录（存储在现有文件系统上）&lt;/li&gt;
+&lt;li&gt;ZFS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;集成备份和还原&#34;&gt;集成备份和还原
+&lt;/h3&gt;&lt;p&gt;集成备份工具（&lt;code&gt;vzdump&lt;/code&gt;）可创建&lt;code&gt;KVM&lt;/code&gt;虚拟机和容器的快照。&lt;code&gt;vzdump&lt;/code&gt;备份工具会创建包括&lt;code&gt;VM/CT&lt;/code&gt;配置文件在内的&lt;code&gt;VM/CT&lt;/code&gt;数据的存档。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;KVM&lt;/code&gt;实时备份适用于所有存储类型，包括NFS，CIFS，iSCSI LUN，Ceph RBD或分布式存储系统sheepdog的VM映像，经过优化的备份格式（稀疏文件，乱序数据，最小化I/O）使VM备份更快速高效。&lt;/p&gt;
+&lt;h3 id=&#34;高可用集群&#34;&gt;高可用集群
+&lt;/h3&gt;&lt;p&gt;多节点&lt;code&gt;Proxmox VE HA Cluster&lt;/code&gt;可以定义高可用性虚拟服务器。&lt;code&gt;Proxmox VE HA Cluster&lt;/code&gt;基于成熟的&lt;code&gt;Linux HA&lt;/code&gt;技术，可提供稳定可靠的&lt;code&gt;HA&lt;/code&gt;服务。&lt;/p&gt;
+&lt;h3 id=&#34;灵活的网络&#34;&gt;灵活的网络
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;使用桥接网络模型。 所有虚拟机都可以共享一个网桥，就好像来自每个guest虚拟机的虚拟网络电缆都插入同一个交换机一样。 为了将VM连接到外部世界，桥接器连接到分配了TCP/IP配置的物理网卡。&lt;/p&gt;
+&lt;p&gt;为了进一步提高灵活性，可以使用&lt;code&gt;VLAN（IEEE 802.1q）&lt;/code&gt;和网络绑定/聚合。通过这种方式，可以为Proxmox VE主机构建复杂，灵活的虚拟网络，充分利用Linux网络堆栈的强大功能。&lt;/p&gt;
+&lt;h3 id=&#34;集成防火墙&#34;&gt;集成防火墙
+&lt;/h3&gt;&lt;p&gt;集成防火墙允许您在任何VM或容器接口上过滤网络数据包。常见的防火墙规则集可以分组为“安全组”。&lt;/p&gt;
+&lt;h3 id=&#34;为什么开源&#34;&gt;为什么开源
+&lt;/h3&gt;&lt;p&gt;Proxmox VE使用Linux内核，基于Debian GNU / Linux发行版。 Proxmox VE的源代码是在GNU Affero通用公共许可证版本3下发布的。这意味着您可以随时自由检查源代码或自行参与项目。&lt;/p&gt;
+&lt;p&gt;在Proxmox，我们致力于尽可能使用开源软件。使用开源软件可确保完全访问所有功能 - 以及高安全性和可靠性。每个人都应该有权访问软件的源代码来运行它，构建它或将更改提交回项目。鼓励每个人做出贡献，而Proxmox确保产品始终符合专业质量标准。&lt;/p&gt;
+&lt;p&gt;开源软件还有助于降低成本，使你的核心基础架构独立于单一供应商。&lt;/p&gt;
+&lt;h3 id=&#34;proxmox-ve的优点&#34;&gt;Proxmox VE的优点
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;开源软件&lt;/li&gt;
+&lt;li&gt;没有供应商锁定&lt;/li&gt;
+&lt;li&gt;Linux内核&lt;/li&gt;
+&lt;li&gt;安装快速且易于使用&lt;/li&gt;
+&lt;li&gt;基于WEB的管理界面&lt;/li&gt;
+&lt;li&gt;REST API&lt;/li&gt;
+&lt;li&gt;巨大的活跃社区&lt;/li&gt;
+&lt;li&gt;管理成本低，部署简单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;获取帮助&#34;&gt;获取帮助
+&lt;/h3&gt;&lt;h4 id=&#34;proxmox-ve-wiki&#34;&gt;Proxmox VE wiki
+&lt;/h4&gt;&lt;p&gt;主要信息来源于&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Main_Page&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Proxmox VE wiki&lt;/a&gt;,包括参考文档和用户贡献的内容。&lt;/p&gt;
+&lt;h4 id=&#34;社区论坛&#34;&gt;社区论坛
+&lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://forum.proxmox.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Proxmox社区论坛&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Proxmox VE本身是完全开源的，因此我们始终鼓励用户使用Proxmox VE社区论坛讨论和分享他们的知识。该论坛由Proxmox支持团队完全主持，并在全世界拥有庞大的用户群。毋庸置疑，这么大的论坛是获取信息的好地方。&lt;/p&gt;
+&lt;h4 id=&#34;邮件列表&#34;&gt;邮件列表
+&lt;/h4&gt;&lt;p&gt;通过电子邮件可以与Proxmox VE社区进行快速通信。&lt;/p&gt;
+&lt;p&gt;用户邮件列表： &lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/cgi-bin/mailman/listinfo/pve-user&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PVE User List&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;开发人员的主要沟通渠道：&lt;/p&gt;
+&lt;p&gt;开发人员有邮件列表：  &lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/cgi-bin/mailman/listinfo/pve-devel&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PVE development discussion&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;商业支持&#34;&gt;商业支持
+&lt;/h4&gt;&lt;p&gt;Proxmox Server Solutions Gmbh还提供商业Proxmox VE订阅服务计划。 具有标准订阅计划的系统管理员可以访问具有保证响应时间的专用支持门户，Proxmox VE开发人员可以在出现问题时帮助他们。&lt;/p&gt;
+&lt;h4 id=&#34;bug-tracker&#34;&gt;Bug Tracker
+&lt;/h4&gt;&lt;p&gt;我们还在&lt;a class=&#34;link&#34; href=&#34;https://bugzilla.proxmox.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://bugzilla.proxmox.com&lt;/a&gt;上运行公共错误跟踪器。 如果您发现问题，可以在那里提交错误报告。 这样可以轻松跟踪其状态，一旦问题得到解决，您就会收到通知。&lt;/p&gt;
+&lt;h3 id=&#34;项目历史&#34;&gt;项目历史
+&lt;/h3&gt;&lt;p&gt;该项目始于2007年，随后是2008年的第一个稳定版本。当时我们使用OpenVZ作为容器，使用KVM作为虚拟机。群集功能有限，用户界面很简单（服务器生成的网页）。&lt;/p&gt;
+&lt;p&gt;但我们使用Corosync集群堆栈快速开发了新功能，并且引入新的Proxmox集群文件系统（pmxcfs）是向前迈出的一大步，因为它完全隐藏了用户的集群复杂性。管理16个节点的集群就像管理单个节点一样简单。&lt;/p&gt;
+&lt;p&gt;我们还引入了一个新的REST API，其中包含一个用JSON-Schema编写的完整声明性规范。这使其他人能够将Proxmox VE集成到他们的基础架构中，并且可以轻松提供其他服务。&lt;/p&gt;
+&lt;p&gt;此外，新的REST API使用现代Javascript HTML5应用程序替换原始用户界面成为可能。我们还用noVNC替换了旧的基于Java的VNC控制台代码。因此，您只需要一个Web浏览器来管理您的VM。&lt;/p&gt;
+&lt;p&gt;对各种存储类型的支持是另一项重大任务。值得注意的是，Proxmox VE是2014年默认在Linux上发布ZFS的第一个发行版。另一个里程碑是能够在虚拟机管理程序节点上运行和管理Ceph存储。这样的设置极具成本效益。&lt;/p&gt;
+&lt;p&gt;当我们开始时，我们是最早为KVM提供商业支持的公司之一。 KVM项目本身不断发展，现在是一个广泛使用的虚拟机管理程序。每个版本都会提供新功能。我们开发了KVM实时备份功能，可以在任何存储类型上创建快照备份。&lt;/p&gt;
+&lt;p&gt;版本4.0最值得注意的变化是从OpenVZ迁移到LXC。容器现在已经深度集成，它们可以使用与虚拟机相同的存储和网络功能。&lt;/p&gt;
+&lt;h3 id=&#34;改进proxmox-ve文档&#34;&gt;改进Proxmox VE文档
+&lt;/h3&gt;&lt;p&gt;根据您希望改进的问题，您可以使用各种通信媒介来联系开发人员。&lt;/p&gt;
+&lt;p&gt;如果您在当前文档中发现错误，请使用Proxmox错误跟踪器并提出替代文本/措辞。&lt;/p&gt;
+&lt;p&gt;如果您想提出新内容，则取决于您要记录的内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果内容特定于您的设置，那么维基文章是最佳选择。例如，如果您想记录客户系统的特定选项，例如Qemu驱动程序的哪个组合最适合不太流行的操作系统，这非常适合维基文章。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果您认为内容的通用性足以引起所有用户的兴趣，那么您应该尝试将其纳入参考文档。参考文档以易于使用的asciidoc文档格式编写。编辑官方文档需要在 &lt;a class=&#34;link&#34; href=&#34;git://git.proxmox.com/git/pve-docs.git&#34; &gt;git://git.proxmox.com/git/pve-docs.git&lt;/a&gt; 中克隆git存储库，然后按照README.adoc文档进行操作。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;改进文档就像编辑维基百科文章一样简单，并且是开发大型开源项目的有趣尝试。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Developer_Documentation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;开发者文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果您对使用Proxmox VE代码库感兴趣，可以参考开发人员文档维基文章。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

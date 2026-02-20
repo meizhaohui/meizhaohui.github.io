@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>架构 on 编程技术分享</title>
+        <link>https://meizhaohui.github.io/tags/%E6%9E%B6%E6%9E%84/</link>
+        <description>Recent content in 架构 on 编程技术分享</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>微服务架构</title>
+        <link>https://meizhaohui.github.io/backend/microservices/</link>
+        <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/backend/microservices/</guid>
+        <description>&lt;h2 id=&#34;什么是微服务&#34;&gt;什么是微服务？
+&lt;/h2&gt;&lt;p&gt;微服务将应用程序拆分为小型、独立的服务。&lt;/p&gt;
+&lt;h2 id=&#34;优势&#34;&gt;优势
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;独立部署&lt;/li&gt;
+&lt;li&gt;技术灵活性&lt;/li&gt;
+&lt;li&gt;故障隔离&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

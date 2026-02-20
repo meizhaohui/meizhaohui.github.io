@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Layout on Programming Technology Sharing</title>
+        <link>https://meizhaohui.github.io/en/tags/layout/</link>
+        <description>Recent content in Layout on Programming Technology Sharing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/tags/layout/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CSS Flexbox Layout</title>
+        <link>https://meizhaohui.github.io/en/frontend/css-flexbox/</link>
+        <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/frontend/css-flexbox/</guid>
+        <description>&lt;h2 id=&#34;flexbox-basics&#34;&gt;Flexbox Basics
+&lt;/h2&gt;&lt;p&gt;Flexbox is a one-dimensional layout method.&lt;/p&gt;
+&lt;h2 id=&#34;main-properties&#34;&gt;Main Properties
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;display: flex&lt;/li&gt;
+&lt;li&gt;justify-content&lt;/li&gt;
+&lt;li&gt;align-items&lt;/li&gt;
+&lt;li&gt;flex-direction&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

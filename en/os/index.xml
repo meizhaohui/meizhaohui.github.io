@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Operating System on Programming Technology Sharing</title>
+        <link>https://meizhaohui.github.io/en/os/</link>
+        <description>Recent content in Operating System on Programming Technology Sharing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/os/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Memory Management in Linux</title>
+        <link>https://meizhaohui.github.io/en/os/memory-management/</link>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/os/memory-management/</guid>
+        <description>&lt;h2 id=&#34;virtual-memory&#34;&gt;Virtual Memory
+&lt;/h2&gt;&lt;p&gt;Linux uses virtual memory to allow processes to use more memory than physically available.&lt;/p&gt;
+&lt;h2 id=&#34;page-tables&#34;&gt;Page Tables
+&lt;/h2&gt;&lt;p&gt;The kernel maintains page tables to map virtual addresses to physical addresses.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Linux Process Management</title>
+        <link>https://meizhaohui.github.io/en/os/linux-process/</link>
+        <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/os/linux-process/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;Process management is a fundamental aspect of operating systems.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>File Systems Basics</title>
+        <link>https://meizhaohui.github.io/en/os/filesystem/</link>
+        <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/os/filesystem/</guid>
+        <description>&lt;h2 id=&#34;file-system-types&#34;&gt;File System Types
+&lt;/h2&gt;&lt;p&gt;Common file systems include ext4, NTFS, and APFS.&lt;/p&gt;
+&lt;h2 id=&#34;inodes&#34;&gt;Inodes
+&lt;/h2&gt;&lt;p&gt;An inode stores metadata about a file including permissions, ownership, and timestamps.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Thread Scheduling</title>
+        <link>https://meizhaohui.github.io/en/os/thread-scheduling/</link>
+        <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/os/thread-scheduling/</guid>
+        <description>&lt;h2 id=&#34;thread-vs-process&#34;&gt;Thread vs Process
+&lt;/h2&gt;&lt;p&gt;Threads are lightweight execution units within a process.&lt;/p&gt;
+&lt;h2 id=&#34;scheduling-algorithms&#34;&gt;Scheduling Algorithms
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Round Robin&lt;/li&gt;
+&lt;li&gt;Priority Scheduling&lt;/li&gt;
+&lt;li&gt;Multi-level Queue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/750-1334-max.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;test&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

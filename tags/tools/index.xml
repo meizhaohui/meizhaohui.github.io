@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tools on 编程技术分享</title>
+        <link>https://meizhaohui.github.io/tags/tools/</link>
+        <description>Recent content in Tools on 编程技术分享</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>工具列表</title>
+        <link>https://meizhaohui.github.io/more/tools/tools_docs/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/more/tools/tools_docs/</guid>
+        <description>&lt;img src="https://meizhaohui.github.io/img/administrative_tools_15497.png" alt="Featured image of post 工具列表" /&gt;&lt;h2 id=&#34;工具列表&#34;&gt;工具列表
+&lt;/h2&gt;&lt;p&gt;以下列出自己认为非常好用的工具，排名不分先后。&lt;/p&gt;
+&lt;h3 id=&#34;1-截图工具snipaste&#34;&gt;1. 截图工具&lt;code&gt;Snipaste&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Snipaste&lt;/code&gt;支持windows和MacOS系统，官网地址&lt;a class=&#34;link&#34; href=&#34;https://www.snipaste.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.snipaste.com/&lt;/a&gt;,按&lt;code&gt;F1&lt;/code&gt;截图。
+&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-markdown编辑工具typora或macdown&#34;&gt;2. Markdown编辑工具&lt;code&gt;Typora&lt;/code&gt;或&lt;code&gt;MacDown&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;Typora支持windows、Linux和MacOS系统，MacDown是在MacOS系统上的Markdown编辑器，两个编辑器都不错。&lt;/p&gt;
+&lt;p&gt;Typora所见即所得模式比较好，下载地址&lt;a class=&#34;link&#34; href=&#34;https://www.typora.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.typora.io/&lt;/a&gt;。而我也比较喜欢MacDown左侧输入文本右侧自动显示最后生成的效果预览，下载地址&lt;a class=&#34;link&#34; href=&#34;https://macdown.uranusjr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://macdown.uranusjr.com/&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;3-在线生成markdown表格tableconvert&#34;&gt;3. 在线生成Markdown表格&lt;code&gt;TableConvert&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;在线生成Markdown表格&lt;code&gt;TableConvert&lt;/code&gt;地址&lt;a class=&#34;link&#34; href=&#34;https://tableconvert.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tableconvert.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/tableconvert.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;tableconvert.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;该网站也可以从Excel表格、外部URL、XML文件等导入源数据，来生成Markdown表格信息。你可以非常轻松地获得对应的Markdown表格语法，实现一键转换，几乎不需要花费太多时间。&lt;/p&gt;
+&lt;p&gt;也可以通过API接口将需要的表格转换成Markdown表格语法。详细可参考 &lt;a class=&#34;link&#34; href=&#34;https://tableconvert.com/api/#post-/convert/excel-to-markdown&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tableconvert.com/api/#post-/convert/excel-to-markdown&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;4-制作u盘启动盘rufus和etcher&#34;&gt;4. 制作U盘启动盘&lt;code&gt;Rufus&lt;/code&gt;和&lt;code&gt;Etcher&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Rufus&lt;/code&gt;支持windows系统，官网地址 &lt;a class=&#34;link&#34; href=&#34;http://rufus.ie/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://rufus.ie/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/rufus_en_2x.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;rufus_en_2x.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Etcher&lt;/code&gt;支持windows、Linux和MacOS系统，官网地址&lt;a class=&#34;link&#34; href=&#34;https://www.balena.io/etcher/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/etcher_step.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;etcher_step.gif&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-国内开源镜像站&#34;&gt;5. 国内开源镜像站
+&lt;/h3&gt;&lt;p&gt;使用国内开源镜像站，可以使我们下载软件的速度更快，更方便！&lt;/p&gt;
+&lt;h4 id=&#34;51-阿里云镜像站&#34;&gt;5.1 阿里云镜像站
+&lt;/h4&gt;&lt;p&gt;阿里云官方镜像站，提供极速全面的系统镜像服务，链接&lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/mirror/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developer.aliyun.com/mirror/&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/aliyun_mirror.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;aliyun_mirror&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;52-清华大学镜像站&#34;&gt;5.2 清华大学镜像站
+&lt;/h4&gt;&lt;p&gt;清脂大学开源软件镜像站，链接&lt;a class=&#34;link&#34; href=&#34;https://mirrors.tuna.tsinghua.edu.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://mirrors.tuna.tsinghua.edu.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/tsinghua_mirror.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;tsinghua_mirror.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6-jsdelivr--open-source-cdn-开源cdn&#34;&gt;6. jsDelivr – Open Source CDN 开源CDN
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jsdelivr.com/?docs=gh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.jsdelivr.com/?docs=gh&lt;/a&gt;, 可以用这个网站进行图片等的加速！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233130.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;7-cmder-windows系统上面的命令行工具&#34;&gt;7. cmder windows系统上面的命令行工具
+&lt;/h3&gt;&lt;p&gt;Windows系统自带的&lt;code&gt;cmd&lt;/code&gt;命令行使用起来非常不方便，粘贴文本必须使用鼠标，不能使用快捷键，我们可以使用&lt;code&gt;cmder&lt;/code&gt;工具使用windows系统上面的命令行工具。&lt;/p&gt;
+&lt;p&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://cmder.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cmder.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;界面如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cmder.net/img/main.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;cmder&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;将&lt;code&gt;Cmder.exe&lt;/code&gt;文件所在目录添加到&lt;code&gt;Path&lt;/code&gt;环境变量中，以管理员身份打开&lt;code&gt;cmd&lt;/code&gt;命令行容器，执行以下命令注册右键：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 设置任意地方鼠标右键启动Cmder
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Cmder.exe /REGISTER ALL
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;8-录屏软件ev录屏&#34;&gt;8. 录屏软件EV录屏
+&lt;/h3&gt;&lt;p&gt;EV录屏支持windows操作系统和MacOS操作系统。录屏非常方便，可以全屏录制也可以选定区域录制。&lt;/p&gt;
+&lt;p&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://www.ieway.cn/evcapture.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.ieway.cn/evcapture.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;9-windows系统传输文件到远程备份服务器工具putty&#34;&gt;9. windows系统传输文件到远程备份服务器工具putty
+&lt;/h3&gt;&lt;p&gt;putty官网介绍&lt;code&gt;PuTTY: a free SSH and Telnet client&lt;/code&gt;即是一个免费的SSH和Telnet客户端，我们可以通过它提供的&lt;code&gt;pscp&lt;/code&gt;将windows系统的文件传输到远程的备份服务器中。&lt;/p&gt;
+&lt;p&gt;官网地址&lt;a class=&#34;link&#34; href=&#34;https://www.chiark.greenend.org.uk/~sgtatham/putty/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.chiark.greenend.org.uk/~sgtatham/putty/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;10-终端分屏工具tmux&#34;&gt;10. 终端分屏工具tmux
+&lt;/h3&gt;&lt;p&gt;Tmux工具可以使SSH连接会话与窗口解绑，通过tmux工具可以使窗口关闭时，会话仍然不终止。下次连接时可以继续该会话。&lt;/p&gt;
+&lt;p&gt;详细可参考 阮一峰的网络日志 Tmux 使用教程http://www.ruanyifeng.com/blog/2019/10/tmux.html&lt;/p&gt;
+&lt;p&gt;其常用命令如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tmux&lt;/code&gt; 启动一个tmux窗口。此时按&lt;code&gt;ctrl+b d&lt;/code&gt;或输入命令&lt;code&gt;tmux detach&lt;/code&gt;将当前会话与窗口分离。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmux ls&lt;/code&gt;可以查看所有会话。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmux attach -t ID/NAME&lt;/code&gt;或&lt;code&gt;tmux a -t ID/NAME&lt;/code&gt;通过会话id或name名称接入会话。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmux kill-session -t ID/NAME&lt;/code&gt;通过指定会话id或name名称来杀死会话。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmux new -s session_name&lt;/code&gt;创建会话时指定会话名称。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmux rename-session -t ID/NAME new-name&lt;/code&gt;或&lt;code&gt;tmux rename -t ID/NAME new-name&lt;/code&gt;重命名会话名称。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux   &lt;span class=&#34;c1&#34;&gt;# 启动一个会话，并按快捷键ctrl + b  d 分离会话与窗口&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;detached &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;from session 0&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux ls  &lt;span class=&#34;c1&#34;&gt;# 查看当前存在的会话&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;0: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; windows &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;created Wed Mar &lt;span class=&#34;m&#34;&gt;17&lt;/span&gt; 06:45:51 2021&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux a -t &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 重新连接到会话，进入到会话中&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;detached &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;from session 0&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux rename -t &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 将ID为0的会话重命名为test&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux ls  &lt;span class=&#34;c1&#34;&gt;# 列出当前存在的会话，可以看到会话名称已经变成test了，但会话的创建时间并没有更新&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;test: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; windows &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;created Wed Mar &lt;span class=&#34;m&#34;&gt;17&lt;/span&gt; 06:45:51 2021&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux a -t &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 接入到test会话&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;detached &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;from session &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux new -s deploy  &lt;span class=&#34;c1&#34;&gt;# 创建一个名称为deploy的会话&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;detached &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;from session deploy&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux ls  &lt;span class=&#34;c1&#34;&gt;# 查看当前存在的会话&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deploy: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; windows &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;created Wed Mar &lt;span class=&#34;m&#34;&gt;17&lt;/span&gt; 06:53:20 2021&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;test: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; windows &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;created Wed Mar &lt;span class=&#34;m&#34;&gt;17&lt;/span&gt; 06:45:51 2021&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux kill-session -t &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 杀死test会话&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ tmux ls  &lt;span class=&#34;c1&#34;&gt;# 查看当前存在的会话&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;deploy: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; windows &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;created Wed Mar &lt;span class=&#34;m&#34;&gt;17&lt;/span&gt; 06:53:20 2021&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;11-图床工具picgo&#34;&gt;11. 图床工具PicGo
+&lt;/h3&gt;&lt;p&gt;PicGo官网地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/PicGo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/PicGo/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PicGo的使用可参考： &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/128014135&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PicGo：免费搭建个人图床&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注意，&lt;code&gt;repo&lt;/code&gt;地址处不用写&lt;code&gt;https://gitee.com/&lt;/code&gt;字符。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/image-20210421233656676.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20210421233656676&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;参考： &lt;a class=&#34;link&#34; href=&#34;https://www.pianshen.com/article/12391560560/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PicGo 配置Gitee 图床&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;截图成功后，使用快捷键&lt;code&gt;command + shift + P&lt;/code&gt;就可以调用PicGo上传图片了，上传成功后自动复制链接地址。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210421234510.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-json解析工具jq&#34;&gt;12. JSON解析工具jq
+&lt;/h3&gt;&lt;p&gt;非常好用的json解析工具&lt;code&gt;jq&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210821171120.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官方地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/stedolan/jq&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/stedolan/jq&lt;/a&gt; 。&lt;/li&gt;
+&lt;li&gt;你也可以参考我写的总结文档 &lt;a class=&#34;link&#34; href=&#34;../../OS/Centos/json_tool_jq.html&#34; &gt;JSON解析工具-jq&lt;/a&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13-mac--app-启动和切换工具manico&#34;&gt;13. Mac  App 启动和切换工具Manico
+&lt;/h3&gt;&lt;p&gt;Manico 是一个为 macOS 设计的快速的 App 启动和切换工具。参考：&lt;a class=&#34;link&#34; href=&#34;https://manico.im/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://manico.im/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://manico.im/static/img/manico-homepage-banner@2x.5948f72d46dc.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;按&lt;code&gt;Option&lt;/code&gt;键⌥则可以调出app选择切换器，按住⌥的同时再按相应的数字键则可以快速切换到对应的应用。&lt;/p&gt;
+&lt;p&gt;Manico 默认使用 Option + 数字组件键。&lt;/p&gt;
+&lt;p&gt;2021年11月30日我花40元购买了该软件，现在没有弹窗。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20211130214529.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;14-终端连接工具termius&#34;&gt;14. 终端连接工具termius
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://www.termius.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.termius.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://assets-global.website-files.com/5c7036349b5477bf13f828cf/6126f64cecfe794c371ddf30_6112100c32644a0172698ab3_hero_new_semaphore_2x-min.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;免费&lt;/li&gt;
+&lt;li&gt;支持用户名密码和密钥模式&lt;/li&gt;
+&lt;li&gt;常用脚本片段（同时发送到多个主机）&lt;/li&gt;
+&lt;li&gt;全平台&lt;/li&gt;
+&lt;li&gt;云同步（注册一个账号即可）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SFTP需要付费才能使用&lt;/li&gt;
+&lt;li&gt;云同步需要付费版才可使用&lt;/li&gt;
+&lt;li&gt;默认为英文界面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;快捷键：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20211120221017.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;15-windows终端连接工具mobaxterm&#34;&gt;15. windows终端连接工具MobaXterm
+&lt;/h3&gt;&lt;p&gt;这也是一款非常不错的终端连接工具。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://mobaxterm.mobatek.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://mobaxterm.mobatek.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://mobaxterm.mobatek.net/img/moba/features/feature-terminal.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;解除会话限制方法：参考 &lt;a class=&#34;link&#34; href=&#34;https://github.com/flygon2018/MobaXterm-keygen&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/flygon2018/MobaXterm-keygen&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Usage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;MobaXterm&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Keygen&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;py&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;UserName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Version&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;UserName&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;      &lt;span class=&#34;n&#34;&gt;The&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Name&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;licensed&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Version&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;       &lt;span class=&#34;n&#34;&gt;The&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Version&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;of&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MobaXterm&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                     &lt;span class=&#34;n&#34;&gt;Example&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;    &lt;span class=&#34;mf&#34;&gt;10.9&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/python/MobaXterm-Keygen.py&#34; &gt;download MobaXterm-Keygen.py&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;16-文本编辑器sublime-text&#34;&gt;16. 文本编辑器Sublime Text
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;官网地址： &lt;a class=&#34;link&#34; href=&#34;https://www.sublimetext.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.sublimetext.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.sublimetext.com/screenshots/sublime_text_4_multi_select.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;17-switchhosts&#34;&gt;17. SwitchHosts
+&lt;/h3&gt;&lt;p&gt;SwitchHosts是一个管理、快速切换Hosts小工具，开源软件，一键切换Hosts配置，非常实用，高效。&lt;/p&gt;
+&lt;p&gt;下载地址: &lt;a class=&#34;link&#34; href=&#34;https://github.com/oldj/SwitchHosts/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/oldj/SwitchHosts/releases&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;18-windows对比工具beyound-compare&#34;&gt;18. Windows对比工具Beyound Compare
+&lt;/h3&gt;&lt;p&gt;试用处理。&lt;/p&gt;
+&lt;p&gt;注册表中删除 &lt;code&gt;\HKEY_CURRENT_USER\Software\ScooterSoftware\Beyond Compare 4\CacheId&lt;/code&gt; 根据这个路径找到&lt;code&gt;CacheID&lt;/code&gt;右击删除掉就可以 然后重新打开beyond compare。&lt;/p&gt;
+&lt;h3 id=&#34;19-远程文件复制工具winscp&#34;&gt;19. 远程文件复制工具WinSCP
+&lt;/h3&gt;&lt;p&gt;官网地址 &lt;a class=&#34;link&#34; href=&#34;https://winscp.net/eng/index.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://winscp.net/eng/index.php&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://winscp-static-746341.c.cdn77.org/data/media/screenshots/commander.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;20-finalshell&#34;&gt;20. FinalShell
+&lt;/h3&gt;&lt;p&gt;FinalShell也可以进行远程终端连接，文件复制等！&lt;/p&gt;
+&lt;h3 id=&#34;21-everything&#34;&gt;21. Everything
+&lt;/h3&gt;&lt;p&gt;Windows系统上面快速搜索文件。&lt;/p&gt;
+&lt;p&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://www.voidtools.com/zh-cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.voidtools.com/zh-cn/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;22-变量名搜索codelf&#34;&gt;22. 变量名搜索CODELF
+&lt;/h3&gt;&lt;p&gt;当在写代码时，有个变量名不知道用英文怎么表示，可以去这个网站上搜索一下，看看别的大佬是怎么表示的。&lt;/p&gt;
+&lt;p&gt;官网地址： &lt;a class=&#34;link&#34; href=&#34;https://unbug.github.io/codelf/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://unbug.github.io/codelf/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;23-生成代码图片carbon&#34;&gt;23. 生成代码图片carbon
+&lt;/h3&gt;&lt;p&gt;官网地址: &lt;a class=&#34;link&#34; href=&#34;https://carbon.now.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://carbon.now.sh/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;24-文件管理器ranger&#34;&gt;24. 文件管理器ranger
+&lt;/h3&gt;&lt;p&gt;ranger 是一个终端文件管理器，通过 ranger 可以实现和 windows 中类似的资源管理器的展示功能。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网地址: &lt;a class=&#34;link&#34; href=&#34;https://ranger.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ranger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;文档: &lt;a class=&#34;link&#34; href=&#34;https://ranger.github.io/ranger.1.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;安装:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo pip install ranger-fm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;25-在线画图工具-excalidraw&#34;&gt;25. 在线画图工具 excalidraw
+&lt;/h3&gt;&lt;p&gt;Excalidraw 是一款开源的画图工具。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网地址 &lt;a class=&#34;link&#34; href=&#34;https://excalidraw.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://excalidraw.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub源码 &lt;a class=&#34;link&#34; href=&#34;https://github.com/excalidraw/excalidraw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/excalidraw/excalidraw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用该工具画的图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/excalidraw.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;26-让屏幕显示你按的键盘符号&#34;&gt;26. 让屏幕显示你按的键盘符号
+&lt;/h3&gt;&lt;p&gt;KeyCastr。这是一款 GitHub 上的开源免费软件，它可以让 Mac 在屏幕上实时显示你按下的键盘符号，比如在键盘上按了「command + shift + S」 键，屏幕上就会显示「⌘ ⇧ S」符号。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网地址 &lt;a class=&#34;link&#34; href=&#34;https://github.com/keycastr/keycastr&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/keycastr/keycastr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;27-windows-软件卸载工具geek-uninstaller&#34;&gt;27. windows 软件卸载工具Geek Uninstaller
+&lt;/h3&gt;&lt;p&gt;Geek Uninstaller，官网&lt;a class=&#34;link&#34; href=&#34;https://geekuninstaller.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://geekuninstaller.com/&lt;/a&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Efficient and Fast, Small and Portable. 100% Free。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clean Removal and Force Removal&lt;/li&gt;
+&lt;li&gt;Native X64 support&lt;/li&gt;
+&lt;li&gt;Easy-to-use User Interface&lt;/li&gt;
+&lt;li&gt;Uninstall Microsoft Store Apps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://geekuninstaller.com/assets/images/screen_1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;28-科学上网工具&#34;&gt;28. 科学上网工具
+&lt;/h3&gt;&lt;p&gt;有的时候，使用百度或必应搜索还是搜索不到自己想要的答案，这时候可以借助科学上网工具v2ray，进行代理，正常访问 Google等网站。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-12_22-32-56.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最新版本V2RayN的系统代理默认关闭，开启方法：在任务栏找到V字图标，右键点击。悬停在【系统代理】选项卡，在弹出选项中选择【自动配置系统代理】。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-12_22-36-13.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;29-umi-ocr-文字识别工具&#34;&gt;29. Umi-OCR 文字识别工具
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Umi-OCR 是一款免费、开源、可批量的离线 OCR 软件，基于 PaddleOCR，适用于 Windows10/11 平台。&lt;/li&gt;
+&lt;li&gt;下载地址：&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/mirrors/Umi-OCR&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitee.com/mirrors/Umi-OCR&lt;/a&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://tupian.li/images/2022/10/27/icon---256.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tupian.li/images/2023/11/19/65599097ab5f4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;效果图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-01_22-57-51.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;30-颜色工具colorhexa&#34;&gt;30. 颜色工具colorhexa
+&lt;/h3&gt;&lt;p&gt;直接访问 &lt;a class=&#34;link&#34; href=&#34;https://www.colorhexa.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.colorhexa.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在搜索框中输入任何颜色格式 。 这可以是十六进制值，RGB，CMYK，HSL甚至是颜色的名称。 几乎每种格式都受支持。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-08_23-13-12.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-02-08_23-13-12.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;31--在线工具集&#34;&gt;31.  在线工具集
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://amd794.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://amd794.com/&lt;/a&gt; 一个涵盖各种工具的在线平台，覆盖广泛主题，助力你高效完成各种任务，提升工作效率。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_22-09-49.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-03-10_22-09-49.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32--在线翻译-reverso&#34;&gt;32.  在线翻译 reverso
+&lt;/h3&gt;&lt;p&gt;官方地址 &lt;a class=&#34;link&#34; href=&#34;https://www.reverso.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.reverso.net&lt;/a&gt;  Reverso是一个语言工具集的门户网站，其包括全文翻译，词典查询，拼写检查，动词变位，语法知识，朗读。Reverso Context依赖于从数以百万计的真实多语言文本中收集的数据，这些文本是通过强大的“大数据”算法和机器学习技术计算出来的。这样就可以确保用户享受最准确、最相关的结果，以及根据您的需求定制的学习体验。用户可以拥有数百万个单词和表达，以及多种语言的翻译。只要输入或说出一个词或一个表达，并找到准确的翻译，用实际使用的例子来说明，就可以很容易地记住与你的学习活动相关的内容。Reverso是为用户提供高质量翻译并帮助用户无缝提高语言技能的一体化工具。教师或翻译、学生或商业专业人士、初学者或高级学习者使用Reverso来丰富他们的词汇，并更准确和自信地阅读、写作和说话。&lt;/p&gt;
+&lt;h3 id=&#34;33-windows命令行补全工具-clink&#34;&gt;33. windows命令行补全工具 Clink
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Clink官方地址： &lt;a class=&#34;link&#34; href=&#34;https://chrisant996.github.io/clink/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://chrisant996.github.io/clink/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;直接官方地址下载exe安装包安装即可。&lt;/li&gt;
+&lt;li&gt;可实现自动建议、补全、彩色命令行等功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-22_22-40-25.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-10-22_22-40-25.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;34-iodraw免费在线制作流程图&#34;&gt;34 ioDraw免费在线制作流程图
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.iodraw.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.iodraw.com/&lt;/a&gt; 免费在线制作流程图，支持流程图、思维导图、甘特图、拓扑图、时序图、原型图、UML、平面设计图、电路图等。
+&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-23_22-15-47.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2025-05-23_22-15-47.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;35-听音乐&#34;&gt;35. 听音乐
+&lt;/h3&gt;&lt;p&gt;在线听音乐 &lt;a class=&#34;link&#34; href=&#34;https://music.gdstudio.xyz/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://music.gdstudio.xyz/&lt;/a&gt; 。&lt;/p&gt;
+&lt;h3 id=&#34;36-看视频&#34;&gt;36. 看视频
+&lt;/h3&gt;&lt;p&gt;小柳实验室 &lt;a class=&#34;link&#34; href=&#34;https://www.xlsys.cn/vipsp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.xlsys.cn/vipsp&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;37-icon图片&#34;&gt;37. icon图片
+&lt;/h3&gt;&lt;p&gt;Thousands of free icons, Best icons for personal and commercial use SVG - PNG &lt;a class=&#34;link&#34; href=&#34;https://icon-icons.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://icon-icons.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;38-windows网络端口查询工具-currports&#34;&gt;38. Windows网络端口查询工具 CurrPorts
+&lt;/h3&gt;&lt;p&gt;CurrPorts 是 NirSoft 出品的 Windows 端口查看 / 管理神器，免安装、绿色、免费，专门用来查本机端口占用、定位进程、杀进程、关连接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://www.nirsoft.net/utils/cports.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.nirsoft.net/utils/cports.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cports.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;cports&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

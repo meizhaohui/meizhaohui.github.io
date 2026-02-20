@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Backend on Programming Technology Sharing</title>
+        <link>https://meizhaohui.github.io/en/backend/</link>
+        <description>Recent content in Backend on Programming Technology Sharing</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/backend/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>RESTful API Design</title>
+        <link>https://meizhaohui.github.io/en/backend/rest-api/</link>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/backend/rest-api/</guid>
+        <description>&lt;h2 id=&#34;rest-principles&#34;&gt;REST Principles
+&lt;/h2&gt;&lt;p&gt;REST uses HTTP methods for CRUD operations.&lt;/p&gt;
+&lt;h2 id=&#34;http-methods&#34;&gt;HTTP Methods
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;GET: Retrieve data&lt;/li&gt;
+&lt;li&gt;POST: Create new resource&lt;/li&gt;
+&lt;li&gt;PUT: Update resource&lt;/li&gt;
+&lt;li&gt;DELETE: Remove resource&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Database Indexing</title>
+        <link>https://meizhaohui.github.io/en/backend/database-index/</link>
+        <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/backend/database-index/</guid>
+        <description>&lt;h2 id=&#34;what-is-an-index&#34;&gt;What is an Index?
+&lt;/h2&gt;&lt;p&gt;An index is a data structure that improves query performance.&lt;/p&gt;
+&lt;h2 id=&#34;types-of-indexes&#34;&gt;Types of Indexes
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;B-Tree Index&lt;/li&gt;
+&lt;li&gt;Hash Index&lt;/li&gt;
+&lt;li&gt;Full-Text Index&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Microservices Architecture</title>
+        <link>https://meizhaohui.github.io/en/backend/microservices/</link>
+        <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/en/backend/microservices/</guid>
+        <description>&lt;h2 id=&#34;what-are-microservices&#34;&gt;What are Microservices?
+&lt;/h2&gt;&lt;p&gt;Microservices break applications into small, independent services.&lt;/p&gt;
+&lt;h2 id=&#34;benefits&#34;&gt;Benefits
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Independent deployment&lt;/li&gt;
+&lt;li&gt;Technology flexibility&lt;/li&gt;
+&lt;li&gt;Fault isolation&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

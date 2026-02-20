@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on 编程技术分享</title>
+        <link>https://meizhaohui.github.io/categories/</link>
+        <description>Recent content in Categories on 编程技术分享</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>阿梅的博客</copyright>
+        <lastBuildDate>Sat, 14 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Blog</title>
+        <link>https://meizhaohui.github.io/categories/blog/</link>
+        <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/blog/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>More</title>
+        <link>https://meizhaohui.github.io/categories/more/</link>
+        <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/more/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Backend</title>
+        <link>https://meizhaohui.github.io/categories/backend/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/backend/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Cicd</title>
+        <link>https://meizhaohui.github.io/categories/cicd/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/cicd/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Devops</title>
+        <link>https://meizhaohui.github.io/categories/devops/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/devops/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Docker</title>
+        <link>https://meizhaohui.github.io/categories/docker/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/docker/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Golang</title>
+        <link>https://meizhaohui.github.io/categories/golang/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/golang/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Java</title>
+        <link>https://meizhaohui.github.io/categories/java/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Kubernetes</title>
+        <link>https://meizhaohui.github.io/categories/kubernetes/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/kubernetes/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>https://meizhaohui.github.io/categories/python/</link>
+        <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Frontend</title>
+        <link>https://meizhaohui.github.io/categories/frontend/</link>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/frontend/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Os</title>
+        <link>https://meizhaohui.github.io/categories/os/</link>
+        <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/os/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Centos</title>
+        <link>https://meizhaohui.github.io/categories/centos/</link>
+        <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/centos/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>CI</title>
+        <link>https://meizhaohui.github.io/categories/ci/</link>
+        <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/ci/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Coredns</title>
+        <link>https://meizhaohui.github.io/categories/coredns/</link>
+        <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/coredns/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Etcd</title>
+        <link>https://meizhaohui.github.io/categories/etcd/</link>
+        <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/etcd/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Dalao</title>
+        <link>https://meizhaohui.github.io/categories/dalao/</link>
+        <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/dalao/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Ai</title>
+        <link>https://meizhaohui.github.io/categories/ai/</link>
+        <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/ai/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>C</title>
+        <link>https://meizhaohui.github.io/categories/c/</link>
+        <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/c/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Deepseek</title>
+        <link>https://meizhaohui.github.io/categories/deepseek/</link>
+        <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/deepseek/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>CM</title>
+        <link>https://meizhaohui.github.io/categories/cm/</link>
+        <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/cm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Git</title>
+        <link>https://meizhaohui.github.io/categories/git/</link>
+        <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/git/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Database</title>
+        <link>https://meizhaohui.github.io/categories/database/</link>
+        <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/database/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Mysql</title>
+        <link>https://meizhaohui.github.io/categories/mysql/</link>
+        <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/mysql/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Ansible</title>
+        <link>https://meizhaohui.github.io/categories/ansible/</link>
+        <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/ansible/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Redis</title>
+        <link>https://meizhaohui.github.io/categories/redis/</link>
+        <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/redis/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Cobbler</title>
+        <link>https://meizhaohui.github.io/categories/cobbler/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/cobbler/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Flask</title>
+        <link>https://meizhaohui.github.io/categories/flask/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/flask/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Game</title>
+        <link>https://meizhaohui.github.io/categories/game/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/game/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Gitlab</title>
+        <link>https://meizhaohui.github.io/categories/gitlab/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/gitlab/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Jenkins</title>
+        <link>https://meizhaohui.github.io/categories/jenkins/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/jenkins/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>K8s</title>
+        <link>https://meizhaohui.github.io/categories/k8s/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/k8s/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>MacOS</title>
+        <link>https://meizhaohui.github.io/categories/macos/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/macos/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Me</title>
+        <link>https://meizhaohui.github.io/categories/me/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/me/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Monitor</title>
+        <link>https://meizhaohui.github.io/categories/monitor/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/monitor/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Proxmox</title>
+        <link>https://meizhaohui.github.io/categories/proxmox/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/proxmox/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>RockyLinux</title>
+        <link>https://meizhaohui.github.io/categories/rockylinux/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/rockylinux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Softexam</title>
+        <link>https://meizhaohui.github.io/categories/softexam/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/softexam/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Supervisor</title>
+        <link>https://meizhaohui.github.io/categories/supervisor/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/supervisor/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Svn</title>
+        <link>https://meizhaohui.github.io/categories/svn/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/svn/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Tools</title>
+        <link>https://meizhaohui.github.io/categories/tools/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/tools/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Ubuntu</title>
+        <link>https://meizhaohui.github.io/categories/ubuntu/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/ubuntu/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Vue</title>
+        <link>https://meizhaohui.github.io/categories/vue/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/vue/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Windows</title>
+        <link>https://meizhaohui.github.io/categories/windows/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/windows/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Zabbix</title>
+        <link>https://meizhaohui.github.io/categories/zabbix/</link>
+        <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://meizhaohui.github.io/categories/zabbix/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
