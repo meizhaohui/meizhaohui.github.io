@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Flask on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/flask/</link>
+        <link>https://hellogitlab.com/categories/flask/</link>
         <description>Recent content in Flask on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/flask/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/flask/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Flask Docs</title>
-        <link>https://meizhaohui.github.io/backend/flask/flask_docs/</link>
+        <link>https://hellogitlab.com/backend/flask/flask_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/flask/flask_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Flask Docs" /&gt;&lt;h2 id=&#34;flask-docs&#34;&gt;Flask Docs
+        <guid>https://hellogitlab.com/backend/flask/flask_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Flask Docs" /&gt;&lt;h2 id=&#34;flask-docs&#34;&gt;Flask Docs
 &lt;/h2&gt;&lt;p&gt;Flask框架学习笔记。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Flask官方文档：&lt;a class=&#34;link&#34; href=&#34;https://flask.palletsprojects.com/en/1.1.x/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -45,11 +45,11 @@
         </item>
         <item>
         <title>接口认证管理之Flask_HTTPAuth</title>
-        <link>https://meizhaohui.github.io/backend/flask/flask_httpauth/</link>
+        <link>https://hellogitlab.com/backend/flask/flask_httpauth/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/flask/flask_httpauth/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 接口认证管理之Flask_HTTPAuth" /&gt;&lt;h2 id=&#34;接口认证管理之flask_httpauth&#34;&gt;接口认证管理之Flask_HTTPAuth
+        <guid>https://hellogitlab.com/backend/flask/flask_httpauth/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 接口认证管理之Flask_HTTPAuth" /&gt;&lt;h2 id=&#34;接口认证管理之flask_httpauth&#34;&gt;接口认证管理之Flask_HTTPAuth
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;pypi页面：&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/Flask-HTTPAuth/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pypi.org/project/Flask-HTTPAuth/&lt;/a&gt;&lt;/li&gt;
@@ -165,7 +165,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行Flask程序，访问&lt;code&gt;http://testflask.com:5000/&lt;/code&gt;,可以看到需要输入用户名和密码信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210506212631.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210506212631.png&#34;
 	
 	
 	
@@ -407,7 +407,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们可以使用Postman进行API测试：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210506220650.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210506220650.png&#34;
 	
 	
 	

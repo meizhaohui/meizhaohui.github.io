@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Web框架 on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/web%E6%A1%86%E6%9E%B6/</link>
+        <link>https://hellogitlab.com/tags/web%E6%A1%86%E6%9E%B6/</link>
         <description>Recent content in Web框架 on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/web%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/web%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Flask Web框架入门</title>
-        <link>https://meizhaohui.github.io/backend/flask/flask-intro/</link>
+        <link>https://hellogitlab.com/backend/flask/flask-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/flask/flask-intro/</guid>
+        <guid>https://hellogitlab.com/backend/flask/flask-intro/</guid>
         <description>&lt;h2 id=&#34;flask简介&#34;&gt;Flask简介
 &lt;/h2&gt;&lt;p&gt;Flask是一个轻量级的Python Web框架，非常适合快速开发Web应用。&lt;/p&gt;
 &lt;h2 id=&#34;快速开始&#34;&gt;快速开始

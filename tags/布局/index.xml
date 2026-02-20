@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>布局 on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/%E5%B8%83%E5%B1%80/</link>
+        <link>https://hellogitlab.com/tags/%E5%B8%83%E5%B1%80/</link>
         <description>Recent content in 布局 on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/%E5%B8%83%E5%B1%80/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E5%B8%83%E5%B1%80/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CSS Flexbox布局</title>
-        <link>https://meizhaohui.github.io/frontend/css-flexbox/</link>
+        <link>https://hellogitlab.com/frontend/css-flexbox/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/frontend/css-flexbox/</guid>
+        <guid>https://hellogitlab.com/frontend/css-flexbox/</guid>
         <description>&lt;h2 id=&#34;flexbox基础&#34;&gt;Flexbox基础
 &lt;/h2&gt;&lt;p&gt;Flexbox是一种一维布局方法。&lt;/p&gt;
 &lt;h2 id=&#34;主要属性&#34;&gt;主要属性

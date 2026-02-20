@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Zabbix on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/zabbix/</link>
+        <link>https://hellogitlab.com/categories/zabbix/</link>
         <description>Recent content in Zabbix on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/zabbix/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/zabbix/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>zabbix日志监控Permissiondenied权限异常处理</title>
-        <link>https://meizhaohui.github.io/devops/zabbix/permission_denied/</link>
+        <link>https://hellogitlab.com/devops/zabbix/permission_denied/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/zabbix/permission_denied/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post zabbix日志监控Permissiondenied权限异常处理" /&gt;&lt;h2 id=&#34;zabbix日志监控permission-denied权限异常处理&#34;&gt;zabbix日志监控Permission denied权限异常处理
+        <guid>https://hellogitlab.com/devops/zabbix/permission_denied/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post zabbix日志监控Permissiondenied权限异常处理" /&gt;&lt;h2 id=&#34;zabbix日志监控permission-denied权限异常处理&#34;&gt;zabbix日志监控Permission denied权限异常处理
 &lt;/h2&gt;&lt;h3 id=&#34;1-问题描述&#34;&gt;1. 问题描述
 &lt;/h3&gt;&lt;p&gt;配置了zabbix监控日志&lt;code&gt;/var/log/messages&lt;/code&gt;时，页面显示监控项是“Not supported”不支持的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-15_22-13-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-15_22-13-50.png&#34;
 	
 	
 	
@@ -154,7 +154,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到&lt;code&gt;zabbix&lt;/code&gt;已经成了文件的&lt;code&gt;owner&lt;/code&gt;拥有者了，说明有权限了。&lt;/p&gt;
 &lt;p&gt;过了一会儿后，在页面上可以看到监控项变成&lt;code&gt;Enable&lt;/code&gt;启用状态了。
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-15_22-33-54.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-15_22-33-54.png&#34;
 	
 	
 	
@@ -180,7 +180,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;过一会儿，zabbix监控界面上就弹出监控异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-15_22-46-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-15_22-46-50.png&#34;
 	
 	
 	
@@ -559,11 +559,11 @@ Secure user for Zabbix agent&lt;/p&gt;
         </item>
         <item>
         <title>监控工具之Zabbix</title>
-        <link>https://meizhaohui.github.io/devops/zabbix/zabbix_docs/</link>
+        <link>https://hellogitlab.com/devops/zabbix/zabbix_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/zabbix/zabbix_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/zabbix.png" alt="Featured image of post 监控工具之Zabbix" /&gt;&lt;h2 id=&#34;监控工具之zabbix&#34;&gt;监控工具之Zabbix
+        <guid>https://hellogitlab.com/devops/zabbix/zabbix_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/zabbix.png" alt="Featured image of post 监控工具之Zabbix" /&gt;&lt;h2 id=&#34;监控工具之zabbix&#34;&gt;监控工具之Zabbix
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../Permission_denied&#34; &gt;zabbix日志监控Permission denied权限异常处理&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;

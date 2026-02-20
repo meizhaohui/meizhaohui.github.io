@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Automation on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/tags/automation/</link>
+        <link>https://hellogitlab.com/en/tags/automation/</link>
         <description>Recent content in Automation on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/tags/automation/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/tags/automation/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CI/CD Pipeline Configuration</title>
-        <link>https://meizhaohui.github.io/en/devops/cicd-pipeline/</link>
+        <link>https://hellogitlab.com/en/devops/cicd-pipeline/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/cicd-pipeline/</guid>
+        <guid>https://hellogitlab.com/en/devops/cicd-pipeline/</guid>
         <description>&lt;h2 id=&#34;gitlab-cicd&#34;&gt;GitLab CI/CD
 &lt;/h2&gt;&lt;p&gt;Implement automated build and deployment with GitLab CI/CD.&lt;/p&gt;
 &lt;h2 id=&#34;gitlab-ciyml-example&#34;&gt;.gitlab-ci.yml Example

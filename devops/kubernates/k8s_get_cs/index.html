@@ -4,16 +4,16 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="获取k8s集群组件状态kubectl get cs 1. 查看组件状态信息 kubernetes集群的基本搭建，请参考K8S集群部署。\n之前我设置了快捷命令：\n1 2 3 alias k8let=&#39;kubelet&#39; alias k8adm=&#39;kubeadm&#39; alias k8ctl=&#39;kubectl&#39; 在k8s集群基本配置好后，可以查看k8s集群组件当前的状态信息。\n1 2 3 4 5 [root@k8s-master ~]# k8ctl get cs NAME STATUS MESSAGE controller-manager Unhealthy Get http://127.0.0.1:10252/healthz: dial tcp 127.0.0.1:10252: connect: connection refused scheduler Unhealthy Get http://127.0.0.1:10251/healthz: dial tcp 127.0.0.1:10251: connect: connection refused etcd-0 Healthy {&#34;health&#34;:&#34;true&#34;} 或者使用非简写命令：\n1 2 3 4 5 [root@k8s-master ~]# k8ctl get componentstatuses NAME STATUS MESSAGE controller-manager Unhealthy Get http://127.0.0.1:10252/healthz: dial tcp 127.0.0.1:10252: connect: connection refused scheduler Unhealthy Get http://127.0.0.1:10251/healthz: dial tcp 127.0.0.1:10251: connect: connection refused etcd-0 Healthy {&#34;health&#34;:&#34;true&#34;} 可以看到，controller-manager和scheduler的状态是Unhealthy不健康的。\n">
 <title>获取k8s集群组件状态`kubectlgetcs`</title>
 
-<link rel='canonical' href='https://meizhaohui.github.io/devops/kubernates/k8s_get_cs/'>
+<link rel='canonical' href='https://hellogitlab.com/devops/kubernates/k8s_get_cs/'>
 
 <link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="获取k8s集群组件状态`kubectlgetcs`">
 <meta property='og:description' content="获取k8s集群组件状态kubectl get cs 1. 查看组件状态信息 kubernetes集群的基本搭建，请参考K8S集群部署。\n之前我设置了快捷命令：\n1 2 3 alias k8let=&#39;kubelet&#39; alias k8adm=&#39;kubeadm&#39; alias k8ctl=&#39;kubectl&#39; 在k8s集群基本配置好后，可以查看k8s集群组件当前的状态信息。\n1 2 3 4 5 [root@k8s-master ~]# k8ctl get cs NAME STATUS MESSAGE controller-manager Unhealthy Get http://127.0.0.1:10252/healthz: dial tcp 127.0.0.1:10252: connect: connection refused scheduler Unhealthy Get http://127.0.0.1:10251/healthz: dial tcp 127.0.0.1:10251: connect: connection refused etcd-0 Healthy {&#34;health&#34;:&#34;true&#34;} 或者使用非简写命令：\n1 2 3 4 5 [root@k8s-master ~]# k8ctl get componentstatuses NAME STATUS MESSAGE controller-manager Unhealthy Get http://127.0.0.1:10252/healthz: dial tcp 127.0.0.1:10252: connect: connection refused scheduler Unhealthy Get http://127.0.0.1:10251/healthz: dial tcp 127.0.0.1:10251: connect: connection refused etcd-0 Healthy {&#34;health&#34;:&#34;true&#34;} 可以看到，controller-manager和scheduler的状态是Unhealthy不健康的。\n">
-<meta property='og:url' content='https://meizhaohui.github.io/devops/kubernates/k8s_get_cs/'>
+<meta property='og:url' content='https://hellogitlab.com/devops/kubernates/k8s_get_cs/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='K8s' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://meizhaohui.github.io/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='K8s' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="获取k8s集群组件状态`kubectlgetcs`">
 <meta name="twitter:description" content="获取k8s集群组件状态kubectl get cs 1. 查看组件状态信息 kubernetes集群的基本搭建，请参考K8S集群部署。\n之前我设置了快捷命令：\n1 2 3 alias k8let=&#39;kubelet&#39; alias k8adm=&#39;kubeadm&#39; alias k8ctl=&#39;kubectl&#39; 在k8s集群基本配置好后，可以查看k8s集群组件当前的状态信息。\n1 2 3 4 5 [root@k8s-master ~]# k8ctl get cs NAME STATUS MESSAGE controller-manager Unhealthy Get http://127.0.0.1:10252/healthz: dial tcp 127.0.0.1:10252: connect: connection refused scheduler Unhealthy Get http://127.0.0.1:10251/healthz: dial tcp 127.0.0.1:10251: connect: connection refused etcd-0 Healthy {&#34;health&#34;:&#34;true&#34;} 或者使用非简写命令：\n1 2 3 4 5 [root@k8s-master ~]# k8ctl get componentstatuses NAME STATUS MESSAGE controller-manager Unhealthy Get http://127.0.0.1:10252/healthz: dial tcp 127.0.0.1:10252: connect: connection refused scheduler Unhealthy Get http://127.0.0.1:10251/healthz: dial tcp 127.0.0.1:10251: connect: connection refused etcd-0 Healthy {&#34;health&#34;:&#34;true&#34;} 可以看到，controller-manager和scheduler的状态是Unhealthy不健康的。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://meizhaohui.github.io/img/default.jpg' />
+    <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -327,9 +327,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://meizhaohui.github.io/" selected>简体中文</option>
+                                    <option value="https://hellogitlab.com/" selected>简体中文</option>
                                 
-                                    <option value="https://meizhaohui.github.io/en/" >English</option>
+                                    <option value="https://hellogitlab.com/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -437,7 +437,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

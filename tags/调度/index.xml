@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>调度 on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/%E8%B0%83%E5%BA%A6/</link>
+        <link>https://hellogitlab.com/tags/%E8%B0%83%E5%BA%A6/</link>
         <description>Recent content in 调度 on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/%E8%B0%83%E5%BA%A6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E8%B0%83%E5%BA%A6/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>线程调度</title>
-        <link>https://meizhaohui.github.io/os/thread-scheduling/</link>
+        <link>https://hellogitlab.com/os/thread-scheduling/</link>
         <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/thread-scheduling/</guid>
+        <guid>https://hellogitlab.com/os/thread-scheduling/</guid>
         <description>&lt;h2 id=&#34;线程与进程&#34;&gt;线程与进程
 &lt;/h2&gt;&lt;p&gt;线程是进程内的轻量级执行单元。&lt;/p&gt;
 &lt;h2 id=&#34;调度算法&#34;&gt;调度算法
@@ -21,7 +21,7 @@
 &lt;li&gt;优先级调度&lt;/li&gt;
 &lt;li&gt;多级队列调度&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/750-1334-max.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/750-1334-max.png&#34;
 	
 	
 	

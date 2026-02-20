@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tools on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/tools/</link>
+        <link>https://hellogitlab.com/categories/tools/</link>
         <description>Recent content in Tools on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/tools/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>工具列表</title>
-        <link>https://meizhaohui.github.io/more/tools/tools_docs/</link>
+        <link>https://hellogitlab.com/more/tools/tools_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/more/tools/tools_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/administrative_tools_15497.png" alt="Featured image of post 工具列表" /&gt;&lt;h2 id=&#34;工具列表&#34;&gt;工具列表
+        <guid>https://hellogitlab.com/more/tools/tools_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/administrative_tools_15497.png" alt="Featured image of post 工具列表" /&gt;&lt;h2 id=&#34;工具列表&#34;&gt;工具列表
 &lt;/h2&gt;&lt;p&gt;以下列出自己认为非常好用的工具，排名不分先后。&lt;/p&gt;
 &lt;h3 id=&#34;1-截图工具snipaste&#34;&gt;1. 截图工具&lt;code&gt;Snipaste&lt;/code&gt;
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;Snipaste&lt;/code&gt;支持windows和MacOS系统，官网地址&lt;a class=&#34;link&#34; href=&#34;https://www.snipaste.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.snipaste.com/&lt;/a&gt;,按&lt;code&gt;F1&lt;/code&gt;截图。
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste.png&#34;
 	
 	
 	
@@ -36,7 +36,7 @@
 &lt;h3 id=&#34;3-在线生成markdown表格tableconvert&#34;&gt;3. 在线生成Markdown表格&lt;code&gt;TableConvert&lt;/code&gt;
 &lt;/h3&gt;&lt;p&gt;在线生成Markdown表格&lt;code&gt;TableConvert&lt;/code&gt;地址&lt;a class=&#34;link&#34; href=&#34;https://tableconvert.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://tableconvert.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/tableconvert.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/tableconvert.png&#34;
 	
 	
 	
@@ -52,7 +52,7 @@
 &lt;h3 id=&#34;4-制作u盘启动盘rufus和etcher&#34;&gt;4. 制作U盘启动盘&lt;code&gt;Rufus&lt;/code&gt;和&lt;code&gt;Etcher&lt;/code&gt;
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;Rufus&lt;/code&gt;支持windows系统，官网地址 &lt;a class=&#34;link&#34; href=&#34;http://rufus.ie/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://rufus.ie/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/rufus_en_2x.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/rufus_en_2x.png&#34;
 	
 	
 	
@@ -64,7 +64,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Etcher&lt;/code&gt;支持windows、Linux和MacOS系统，官网地址&lt;a class=&#34;link&#34; href=&#34;https://www.balena.io/etcher/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/etcher_step.gif&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/etcher_step.gif&#34;
 	
 	
 	
@@ -79,7 +79,7 @@
 &lt;h4 id=&#34;51-阿里云镜像站&#34;&gt;5.1 阿里云镜像站
 &lt;/h4&gt;&lt;p&gt;阿里云官方镜像站，提供极速全面的系统镜像服务，链接&lt;a class=&#34;link&#34; href=&#34;https://developer.aliyun.com/mirror/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.aliyun.com/mirror/&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/aliyun_mirror.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/aliyun_mirror.png&#34;
 	
 	
 	
@@ -92,7 +92,7 @@
 &lt;h4 id=&#34;52-清华大学镜像站&#34;&gt;5.2 清华大学镜像站
 &lt;/h4&gt;&lt;p&gt;清脂大学开源软件镜像站，链接&lt;a class=&#34;link&#34; href=&#34;https://mirrors.tuna.tsinghua.edu.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://mirrors.tuna.tsinghua.edu.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/tsinghua_mirror.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/tsinghua_mirror.png&#34;
 	
 	
 	
@@ -105,7 +105,7 @@
 &lt;h3 id=&#34;6-jsdelivr--open-source-cdn-开源cdn&#34;&gt;6. jsDelivr – Open Source CDN 开源CDN
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jsdelivr.com/?docs=gh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.jsdelivr.com/?docs=gh&lt;/a&gt;, 可以用这个网站进行图片等的加速！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233130.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511233130.png&#34;
 	
 	
 	
@@ -210,7 +210,7 @@
 &lt;p&gt;PicGo的使用可参考： &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/128014135&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;PicGo：免费搭建个人图床&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;注意，&lt;code&gt;repo&lt;/code&gt;地址处不用写&lt;code&gt;https://gitee.com/&lt;/code&gt;字符。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/image-20210421233656676.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/image-20210421233656676.png&#34;
 	
 	
 	
@@ -223,7 +223,7 @@
 &lt;p&gt;参考： &lt;a class=&#34;link&#34; href=&#34;https://www.pianshen.com/article/12391560560/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;PicGo 配置Gitee 图床&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;截图成功后，使用快捷键&lt;code&gt;command + shift + P&lt;/code&gt;就可以调用PicGo上传图片了，上传成功后自动复制链接地址。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210421234510.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210421234510.png&#34;
 	
 	
 	
@@ -233,7 +233,7 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;12-json解析工具jq&#34;&gt;12. JSON解析工具jq
 &lt;/h3&gt;&lt;p&gt;非常好用的json解析工具&lt;code&gt;jq&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210821171120.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210821171120.png&#34;
 	
 	
 	
@@ -260,7 +260,7 @@
 &lt;p&gt;按&lt;code&gt;Option&lt;/code&gt;键⌥则可以调出app选择切换器，按住⌥的同时再按相应的数字键则可以快速切换到对应的应用。&lt;/p&gt;
 &lt;p&gt;Manico 默认使用 Option + 数字组件键。&lt;/p&gt;
 &lt;p&gt;2021年11月30日我花40元购买了该软件，现在没有弹窗。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20211130214529.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20211130214529.png&#34;
 	
 	
 	
@@ -296,7 +296,7 @@
 &lt;li&gt;默认为英文界面&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;快捷键：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20211120221017.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20211120221017.png&#34;
 	
 	
 	
@@ -338,7 +338,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                     &lt;span class=&#34;n&#34;&gt;Example&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;    &lt;span class=&#34;mf&#34;&gt;10.9&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/python/MobaXterm-Keygen.py&#34; &gt;download MobaXterm-Keygen.py&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/python/MobaXterm-Keygen.py&#34; &gt;download MobaXterm-Keygen.py&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;16-文本编辑器sublime-text&#34;&gt;16. 文本编辑器Sublime Text
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;官网地址： &lt;a class=&#34;link&#34; href=&#34;https://www.sublimetext.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -409,7 +409,7 @@
     &gt;https://github.com/excalidraw/excalidraw&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;使用该工具画的图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/excalidraw.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/excalidraw.png&#34;
 	
 	
 	
@@ -445,7 +445,7 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;28-科学上网工具&#34;&gt;28. 科学上网工具
 &lt;/h3&gt;&lt;p&gt;有的时候，使用百度或必应搜索还是搜索不到自己想要的答案，这时候可以借助科学上网工具v2ray，进行代理，正常访问 Google等网站。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-12_22-32-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-12_22-32-56.png&#34;
 	
 	
 	
@@ -454,7 +454,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;最新版本V2RayN的系统代理默认关闭，开启方法：在任务栏找到V字图标，右键点击。悬停在【系统代理】选项卡，在弹出选项中选择【自动配置系统代理】。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-12_22-36-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-12_22-36-13.png&#34;
 	
 	
 	
@@ -485,7 +485,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-01_22-57-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-01_22-57-51.png&#34;
 	
 	
 	
@@ -497,7 +497,7 @@
 &lt;/h3&gt;&lt;p&gt;直接访问 &lt;a class=&#34;link&#34; href=&#34;https://www.colorhexa.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.colorhexa.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在搜索框中输入任何颜色格式 。 这可以是十六进制值，RGB，CMYK，HSL甚至是颜色的名称。 几乎每种格式都受支持。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-08_23-13-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-08_23-13-12.png&#34;
 	
 	
 	
@@ -510,7 +510,7 @@
 &lt;h3 id=&#34;31--在线工具集&#34;&gt;31.  在线工具集
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://amd794.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://amd794.com/&lt;/a&gt; 一个涵盖各种工具的在线平台，覆盖广泛主题，助力你高效完成各种任务，提升工作效率。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_22-09-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_22-09-49.png&#34;
 	
 	
 	
@@ -530,7 +530,7 @@
 &lt;li&gt;直接官方地址下载exe安装包安装即可。&lt;/li&gt;
 &lt;li&gt;可实现自动建议、补全、彩色命令行等功能。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-22_22-40-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-22_22-40-25.png&#34;
 	
 	
 	
@@ -543,7 +543,7 @@
 &lt;h3 id=&#34;34-iodraw免费在线制作流程图&#34;&gt;34 ioDraw免费在线制作流程图
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.iodraw.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.iodraw.com/&lt;/a&gt; 免费在线制作流程图，支持流程图、思维导图、甘特图、拓扑图、时序图、原型图、UML、平面设计图、电路图等。
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-23_22-15-47.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-23_22-15-47.png&#34;
 	
 	
 	
@@ -568,7 +568,7 @@
 &lt;li&gt;官网地址：&lt;a class=&#34;link&#34; href=&#34;https://www.nirsoft.net/utils/cports.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.nirsoft.net/utils/cports.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cports.gif&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cports.gif&#34;
 	
 	
 	

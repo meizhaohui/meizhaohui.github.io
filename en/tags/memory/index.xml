@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Memory on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/tags/memory/</link>
+        <link>https://hellogitlab.com/en/tags/memory/</link>
         <description>Recent content in Memory on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/tags/memory/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/tags/memory/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Memory Management in Linux</title>
-        <link>https://meizhaohui.github.io/en/os/memory-management/</link>
+        <link>https://hellogitlab.com/en/os/memory-management/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/os/memory-management/</guid>
+        <guid>https://hellogitlab.com/en/os/memory-management/</guid>
         <description>&lt;h2 id=&#34;virtual-memory&#34;&gt;Virtual Memory
 &lt;/h2&gt;&lt;p&gt;Linux uses virtual memory to allow processes to use more memory than physically available.&lt;/p&gt;
 &lt;h2 id=&#34;page-tables&#34;&gt;Page Tables

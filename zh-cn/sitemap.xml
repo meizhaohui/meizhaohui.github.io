@@ -2,1854 +2,1854 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://meizhaohui.github.io/categories/blog/</loc>
+    <loc>https://hellogitlab.com/categories/blog/</loc>
     <lastmod>2026-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/blog/</loc>
+    <loc>https://hellogitlab.com/more/blog/</loc>
     <lastmod>2026-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/blog/</loc>
+    <loc>https://hellogitlab.com/tags/blog/</loc>
     <lastmod>2026-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/"
-                />
-  </url><url>
-    <loc>https://meizhaohui.github.io/more/blog/shortcodes-usage/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://meizhaohui.github.io/categories/more/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://meizhaohui.github.io/tags/more/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://meizhaohui.github.io/tags/</loc>
+    <loc>https://hellogitlab.com/categories/</loc>
     <lastmod>2026-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/"
+                href="https://hellogitlab.com/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/"
+                href="https://hellogitlab.com/categories/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/more/</loc>
+    <loc>https://hellogitlab.com/more/blog/shortcodes-usage/</loc>
     <lastmod>2026-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/blog/create_hugo_blog/</loc>
+    <loc>https://hellogitlab.com/categories/more/</loc>
     <lastmod>2026-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/</loc>
+    <loc>https://hellogitlab.com/tags/more/</loc>
+    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/</loc>
     <lastmod>2026-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/"
+                href="https://hellogitlab.com/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/"
+                href="https://hellogitlab.com/tags/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/backend/</loc>
+    <loc>https://hellogitlab.com/more/</loc>
+    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/more/blog/create_hugo_blog/</loc>
+    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/</loc>
+    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hellogitlab.com/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/categories/backend/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/backend/"
+                href="https://hellogitlab.com/en/categories/backend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/backend/"
+                href="https://hellogitlab.com/categories/backend/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/channel/</loc>
+    <loc>https://hellogitlab.com/tags/channel/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/channel/"
+                href="https://hellogitlab.com/en/tags/channel/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/channel/"
+                href="https://hellogitlab.com/tags/channel/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/cicd-pipeline/</loc>
+    <loc>https://hellogitlab.com/devops/cicd-pipeline/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/devops/cicd-pipeline/"
+                href="https://hellogitlab.com/en/devops/cicd-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/devops/cicd-pipeline/"
+                href="https://hellogitlab.com/devops/cicd-pipeline/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/cicd/</loc>
+    <loc>https://hellogitlab.com/categories/cicd/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/cicd/"
+                href="https://hellogitlab.com/en/categories/cicd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/cicd/"
+                href="https://hellogitlab.com/categories/cicd/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/</loc>
+    <loc>https://hellogitlab.com/devops/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/devops/"
+                href="https://hellogitlab.com/en/devops/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/devops/"
+                href="https://hellogitlab.com/devops/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/devops/</loc>
+    <loc>https://hellogitlab.com/categories/devops/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/devops/"
+                href="https://hellogitlab.com/en/categories/devops/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/devops/"
+                href="https://hellogitlab.com/categories/devops/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/docker/</loc>
+    <loc>https://hellogitlab.com/categories/docker/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/docker/"
+                href="https://hellogitlab.com/en/categories/docker/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/docker/"
+                href="https://hellogitlab.com/categories/docker/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/docker/</loc>
+    <loc>https://hellogitlab.com/tags/docker/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/docker/"
+                href="https://hellogitlab.com/en/tags/docker/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/docker/"
+                href="https://hellogitlab.com/tags/docker/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker-deploy/</loc>
+    <loc>https://hellogitlab.com/devops/docker-deploy/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/devops/docker-deploy/"
+                href="https://hellogitlab.com/en/devops/docker-deploy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/devops/docker-deploy/"
+                href="https://hellogitlab.com/devops/docker-deploy/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/flask/</loc>
+    <loc>https://hellogitlab.com/backend/flask/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/flask/</loc>
+    <loc>https://hellogitlab.com/tags/flask/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/flask/"
+                href="https://hellogitlab.com/en/tags/flask/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/flask/"
+                href="https://hellogitlab.com/tags/flask/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/flask/flask-intro/</loc>
+    <loc>https://hellogitlab.com/backend/flask/flask-intro/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/gitlab-ci/</loc>
+    <loc>https://hellogitlab.com/tags/gitlab-ci/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/gitlab-ci/"
+                href="https://hellogitlab.com/en/tags/gitlab-ci/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/gitlab-ci/"
+                href="https://hellogitlab.com/tags/gitlab-ci/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/golang/</loc>
+    <loc>https://hellogitlab.com/backend/golang/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/golang/"
+                href="https://hellogitlab.com/en/backend/golang/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/golang/"
+                href="https://hellogitlab.com/backend/golang/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/golang/</loc>
+    <loc>https://hellogitlab.com/categories/golang/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/golang/"
+                href="https://hellogitlab.com/en/categories/golang/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/golang/"
+                href="https://hellogitlab.com/categories/golang/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/golang/golang-concurrency/</loc>
+    <loc>https://hellogitlab.com/backend/golang/golang-concurrency/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/golang/golang-concurrency/"
+                href="https://hellogitlab.com/en/backend/golang/golang-concurrency/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/golang/golang-concurrency/"
+                href="https://hellogitlab.com/backend/golang/golang-concurrency/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/goroutine/</loc>
+    <loc>https://hellogitlab.com/tags/goroutine/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/goroutine/"
+                href="https://hellogitlab.com/en/tags/goroutine/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/goroutine/"
+                href="https://hellogitlab.com/tags/goroutine/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/java/</loc>
+    <loc>https://hellogitlab.com/backend/java/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/java/"
+                href="https://hellogitlab.com/en/backend/java/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/java/"
+                href="https://hellogitlab.com/backend/java/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/java/</loc>
+    <loc>https://hellogitlab.com/categories/java/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/java/"
+                href="https://hellogitlab.com/en/categories/java/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/java/"
+                href="https://hellogitlab.com/categories/java/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/java/</loc>
+    <loc>https://hellogitlab.com/tags/java/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/java/"
+                href="https://hellogitlab.com/en/tags/java/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/java/"
+                href="https://hellogitlab.com/tags/java/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/k8s/</loc>
+    <loc>https://hellogitlab.com/tags/k8s/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/k8s/"
+                href="https://hellogitlab.com/en/tags/k8s/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/k8s/"
+                href="https://hellogitlab.com/tags/k8s/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/kubernetes/</loc>
+    <loc>https://hellogitlab.com/categories/kubernetes/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/kubernetes/"
+                href="https://hellogitlab.com/en/categories/kubernetes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/kubernetes/"
+                href="https://hellogitlab.com/categories/kubernetes/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/kubernates/</loc>
+    <loc>https://hellogitlab.com/devops/kubernates/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/kubernates/kubernetes-cluster/</loc>
+    <loc>https://hellogitlab.com/devops/kubernates/kubernetes-cluster/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/page/</loc>
+    <loc>https://hellogitlab.com/page/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/page/"
+                href="https://hellogitlab.com/en/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/page/"
+                href="https://hellogitlab.com/page/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/python/</loc>
+    <loc>https://hellogitlab.com/categories/python/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/python/"
+                href="https://hellogitlab.com/en/categories/python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/python/"
+                href="https://hellogitlab.com/categories/python/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/java/spring-boot-intro/</loc>
+    <loc>https://hellogitlab.com/backend/java/spring-boot-intro/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/java/spring-boot-intro/"
+                href="https://hellogitlab.com/en/backend/java/spring-boot-intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/java/spring-boot-intro/"
+                href="https://hellogitlab.com/backend/java/spring-boot-intro/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/spring-boot/</loc>
+    <loc>https://hellogitlab.com/tags/spring-boot/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/spring-boot/"
+                href="https://hellogitlab.com/en/tags/spring-boot/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/spring-boot/"
+                href="https://hellogitlab.com/tags/spring-boot/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/web%E6%A1%86%E6%9E%B6/</loc>
+    <loc>https://hellogitlab.com/tags/web%E6%A1%86%E6%9E%B6/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/page/archives/</loc>
+    <loc>https://hellogitlab.com/page/archives/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/page/archives/"
+                href="https://hellogitlab.com/en/page/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/page/archives/"
+                href="https://hellogitlab.com/page/archives/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/</loc>
+    <loc>https://hellogitlab.com/backend/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/"
+                href="https://hellogitlab.com/en/backend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/"
+                href="https://hellogitlab.com/backend/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</loc>
+    <loc>https://hellogitlab.com/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/</loc>
+    <loc>https://hellogitlab.com/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/page/search/</loc>
+    <loc>https://hellogitlab.com/page/search/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/page/search/"
+                href="https://hellogitlab.com/en/page/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/page/search/"
+                href="https://hellogitlab.com/page/search/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <loc>https://hellogitlab.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/api/</loc>
+    <loc>https://hellogitlab.com/tags/api/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/api/"
+                href="https://hellogitlab.com/en/tags/api/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/api/"
+                href="https://hellogitlab.com/tags/api/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/frontend/</loc>
+    <loc>https://hellogitlab.com/categories/frontend/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/frontend/"
+                href="https://hellogitlab.com/en/categories/frontend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/frontend/"
+                href="https://hellogitlab.com/categories/frontend/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/javascript/</loc>
+    <loc>https://hellogitlab.com/tags/javascript/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/javascript/"
+                href="https://hellogitlab.com/en/tags/javascript/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/javascript/"
+                href="https://hellogitlab.com/tags/javascript/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/linux/</loc>
+    <loc>https://hellogitlab.com/tags/linux/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/linux/"
+                href="https://hellogitlab.com/en/tags/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/linux/"
+                href="https://hellogitlab.com/tags/linux/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/os/memory-management/</loc>
+    <loc>https://hellogitlab.com/os/memory-management/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/os/memory-management/"
+                href="https://hellogitlab.com/en/os/memory-management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/os/memory-management/"
+                href="https://hellogitlab.com/os/memory-management/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/os/</loc>
+    <loc>https://hellogitlab.com/categories/os/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/categories/os/"
+                href="https://hellogitlab.com/en/categories/os/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/categories/os/"
+                href="https://hellogitlab.com/categories/os/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/react/</loc>
+    <loc>https://hellogitlab.com/tags/react/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/react/"
+                href="https://hellogitlab.com/en/tags/react/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/react/"
+                href="https://hellogitlab.com/tags/react/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/react-hooks/</loc>
+    <loc>https://hellogitlab.com/frontend/react-hooks/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/frontend/react-hooks/"
+                href="https://hellogitlab.com/en/frontend/react-hooks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/frontend/react-hooks/"
+                href="https://hellogitlab.com/frontend/react-hooks/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/rest/</loc>
+    <loc>https://hellogitlab.com/tags/rest/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/rest/"
+                href="https://hellogitlab.com/en/tags/rest/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/rest/"
+                href="https://hellogitlab.com/tags/rest/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/rest-api/</loc>
+    <loc>https://hellogitlab.com/backend/rest-api/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/rest-api/"
+                href="https://hellogitlab.com/en/backend/rest-api/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/rest-api/"
+                href="https://hellogitlab.com/backend/rest-api/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/os/</loc>
+    <loc>https://hellogitlab.com/os/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/os/"
+                href="https://hellogitlab.com/en/os/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/os/"
+                href="https://hellogitlab.com/os/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E5%86%85%E5%AD%98/</loc>
+    <loc>https://hellogitlab.com/tags/%E5%86%85%E5%AD%98/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/</loc>
+    <loc>https://hellogitlab.com/frontend/</loc>
     <lastmod>2026-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/frontend/"
+                href="https://hellogitlab.com/en/frontend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/frontend/"
+                href="https://hellogitlab.com/frontend/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/css/</loc>
+    <loc>https://hellogitlab.com/tags/css/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/css/"
+                href="https://hellogitlab.com/en/tags/css/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/css/"
+                href="https://hellogitlab.com/tags/css/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/css-flexbox/</loc>
+    <loc>https://hellogitlab.com/frontend/css-flexbox/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/frontend/css-flexbox/"
+                href="https://hellogitlab.com/en/frontend/css-flexbox/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/frontend/css-flexbox/"
+                href="https://hellogitlab.com/frontend/css-flexbox/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/</loc>
+    <loc>https://hellogitlab.com/dba/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/dba/"
+                href="https://hellogitlab.com/en/dba/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/dba/"
+                href="https://hellogitlab.com/dba/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E5%B8%83%E5%B1%80/</loc>
+    <loc>https://hellogitlab.com/tags/%E5%B8%83%E5%B1%80/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://hellogitlab.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/database-index/</loc>
+    <loc>https://hellogitlab.com/backend/database-index/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/database-index/"
+                href="https://hellogitlab.com/en/backend/database-index/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/database-index/"
+                href="https://hellogitlab.com/backend/database-index/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/database-index/</loc>
+    <loc>https://hellogitlab.com/dba/database-index/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E6%80%A7%E8%83%BD/</loc>
+    <loc>https://hellogitlab.com/tags/%E6%80%A7%E8%83%BD/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/vue/</loc>
+    <loc>https://hellogitlab.com/tags/vue/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/vue/"
+                href="https://hellogitlab.com/en/tags/vue/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/vue/"
+                href="https://hellogitlab.com/tags/vue/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue3-composition/</loc>
+    <loc>https://hellogitlab.com/frontend/vue3-composition/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/frontend/vue3-composition/"
+                href="https://hellogitlab.com/en/frontend/vue3-composition/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/frontend/vue3-composition/"
+                href="https://hellogitlab.com/frontend/vue3-composition/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E5%AD%98%E5%82%A8/</loc>
+    <loc>https://hellogitlab.com/tags/%E5%AD%98%E5%82%A8/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E6%9E%B6%E6%9E%84/</loc>
+    <loc>https://hellogitlab.com/tags/%E6%9E%B6%E6%9E%84/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
+    <loc>https://hellogitlab.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/microservices/</loc>
+    <loc>https://hellogitlab.com/backend/microservices/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/microservices/"
+                href="https://hellogitlab.com/en/backend/microservices/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/microservices/"
+                href="https://hellogitlab.com/backend/microservices/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://hellogitlab.com/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/filesystem/</loc>
+    <loc>https://hellogitlab.com/os/filesystem/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/os/filesystem/"
+                href="https://hellogitlab.com/en/os/filesystem/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/os/filesystem/"
+                href="https://hellogitlab.com/os/filesystem/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E8%B0%83%E5%BA%A6/</loc>
+    <loc>https://hellogitlab.com/tags/%E8%B0%83%E5%BA%A6/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E7%BA%BF%E7%A8%8B/</loc>
+    <loc>https://hellogitlab.com/tags/%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/thread-scheduling/</loc>
+    <loc>https://hellogitlab.com/os/thread-scheduling/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/os/thread-scheduling/"
+                href="https://hellogitlab.com/en/os/thread-scheduling/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/os/thread-scheduling/"
+                href="https://hellogitlab.com/os/thread-scheduling/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/centos/</loc>
+    <loc>https://hellogitlab.com/categories/centos/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/centos/</loc>
+    <loc>https://hellogitlab.com/tags/centos/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/</loc>
+    <loc>https://hellogitlab.com/os/centos/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/dig/</loc>
+    <loc>https://hellogitlab.com/os/centos/dig/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/os/</loc>
+    <loc>https://hellogitlab.com/tags/os/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/ci/</loc>
+    <loc>https://hellogitlab.com/categories/ci/</loc>
     <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/ci/</loc>
+    <loc>https://hellogitlab.com/tags/ci/</loc>
     <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/coredns/</loc>
+    <loc>https://hellogitlab.com/devops/coredns/</loc>
     <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/coredns/</loc>
+    <loc>https://hellogitlab.com/categories/coredns/</loc>
     <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/coredns/</loc>
+    <loc>https://hellogitlab.com/tags/coredns/</loc>
     <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/coredns/base_use/</loc>
+    <loc>https://hellogitlab.com/devops/coredns/base_use/</loc>
     <lastmod>2025-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/coredns/coredns_docs/</loc>
+    <loc>https://hellogitlab.com/devops/coredns/coredns_docs/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/coredns/deploy/</loc>
+    <loc>https://hellogitlab.com/devops/coredns/deploy/</loc>
     <lastmod>2025-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/backend/</loc>
+    <loc>https://hellogitlab.com/tags/backend/</loc>
     <lastmod>2025-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/</loc>
+    <loc>https://hellogitlab.com/backend/python/</loc>
     <lastmod>2025-10-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/backend/python/"
+                href="https://hellogitlab.com/en/backend/python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/backend/python/"
+                href="https://hellogitlab.com/backend/python/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/python/</loc>
+    <loc>https://hellogitlab.com/tags/python/</loc>
     <lastmod>2025-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/miniforge/</loc>
+    <loc>https://hellogitlab.com/backend/python/miniforge/</loc>
     <lastmod>2025-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/use_loguru/</loc>
+    <loc>https://hellogitlab.com/backend/python/use_loguru/</loc>
     <lastmod>2025-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/etcd/</loc>
+    <loc>https://hellogitlab.com/categories/etcd/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/etcd/</loc>
+    <loc>https://hellogitlab.com/tags/etcd/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_compaction/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_compaction/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_id_is_different/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_id_is_different/</loc>
     <lastmod>2025-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_initial-cluster-state/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_initial-cluster-state/</loc>
     <lastmod>2025-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_visualization_tool/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_visualization_tool/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_configuration_file/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_configuration_file/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_certificate_expired/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_certificate_expired/</loc>
     <lastmod>2025-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/dalao/</loc>
+    <loc>https://hellogitlab.com/categories/dalao/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/dalao/</loc>
+    <loc>https://hellogitlab.com/tags/dalao/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_role/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_role/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/friendlink/</loc>
+    <loc>https://hellogitlab.com/more/friendlink/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/friendlink/dalao/</loc>
+    <loc>https://hellogitlab.com/more/friendlink/dalao/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/tls_etcd_cluster/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/tls_etcd_cluster/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_cluster/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_cluster/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/single_etcd/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/single_etcd/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/</loc>
+    <loc>https://hellogitlab.com/devops/docker/</loc>
     <lastmod>2025-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/reader_user_run_docker_commands/</loc>
+    <loc>https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/</loc>
     <lastmod>2025-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/etcd_docs/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/etcd_docs/</loc>
     <lastmod>2025-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/etcd/install/</loc>
+    <loc>https://hellogitlab.com/devops/etcd/install/</loc>
     <lastmod>2025-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/ai/</loc>
+    <loc>https://hellogitlab.com/categories/ai/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/ai/</loc>
+    <loc>https://hellogitlab.com/tags/ai/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/agent/</loc>
+    <loc>https://hellogitlab.com/agent/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/c/</loc>
+    <loc>https://hellogitlab.com/backend/c/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/c/</loc>
+    <loc>https://hellogitlab.com/categories/c/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/c/</loc>
+    <loc>https://hellogitlab.com/tags/c/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/deepseek/</loc>
+    <loc>https://hellogitlab.com/categories/deepseek/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/deepseek/</loc>
+    <loc>https://hellogitlab.com/tags/deepseek/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/agent/deepseek/</loc>
+    <loc>https://hellogitlab.com/agent/deepseek/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/agent/deepseek/deepseek_docs/</loc>
+    <loc>https://hellogitlab.com/agent/deepseek/deepseek_docs/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/agent/deepseek/deepseek_in_wps/</loc>
+    <loc>https://hellogitlab.com/agent/deepseek/deepseek_in_wps/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/agent/deepseek/create_local_deepseek_environments/</loc>
+    <loc>https://hellogitlab.com/agent/deepseek/create_local_deepseek_environments/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E7%BC%96%E7%A0%81/</loc>
+    <loc>https://hellogitlab.com/tags/%E7%BC%96%E7%A0%81/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/c/newstylec_5.3/</loc>
+    <loc>https://hellogitlab.com/backend/c/newstylec_5.3/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/%E5%AD%97%E7%AC%A6/</loc>
+    <loc>https://hellogitlab.com/tags/%E5%AD%97%E7%AC%A6/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/c/newstylec_5.2/</loc>
+    <loc>https://hellogitlab.com/backend/c/newstylec_5.2/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/c/newstylec_5/</loc>
+    <loc>https://hellogitlab.com/backend/c/newstylec_5/</loc>
     <lastmod>2024-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/cm/</loc>
+    <loc>https://hellogitlab.com/categories/cm/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/cm/</loc>
+    <loc>https://hellogitlab.com/tags/cm/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/git/</loc>
+    <loc>https://hellogitlab.com/categories/git/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/</loc>
+    <loc>https://hellogitlab.com/devops/git/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/git/</loc>
+    <loc>https://hellogitlab.com/tags/git/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/force_delete_remote_commit/</loc>
+    <loc>https://hellogitlab.com/devops/git/force_delete_remote_commit/</loc>
     <lastmod>2024-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/c/newstylec_4/</loc>
+    <loc>https://hellogitlab.com/backend/c/newstylec_4/</loc>
     <lastmod>2024-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/mysql/x_00_install_mysql/</loc>
+    <loc>https://hellogitlab.com/dba/mysql/x_00_install_mysql/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/database/</loc>
+    <loc>https://hellogitlab.com/categories/database/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/database/</loc>
+    <loc>https://hellogitlab.com/tags/database/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meizhaohui.github.io/en/tags/database/"
+                href="https://hellogitlab.com/en/tags/database/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://meizhaohui.github.io/tags/database/"
+                href="https://hellogitlab.com/tags/database/"
                 />
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/mysql/</loc>
+    <loc>https://hellogitlab.com/categories/mysql/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/mysql/</loc>
+    <loc>https://hellogitlab.com/tags/mysql/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/mysql/</loc>
+    <loc>https://hellogitlab.com/dba/mysql/</loc>
     <lastmod>2024-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/ansible/</loc>
+    <loc>https://hellogitlab.com/categories/ansible/</loc>
     <lastmod>2024-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/</loc>
     <lastmod>2024-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/ansible/</loc>
+    <loc>https://hellogitlab.com/tags/ansible/</loc>
     <lastmod>2024-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/role_6_redis/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/role_6_redis/</loc>
     <lastmod>2024-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/redis/install_redis_with_source/</loc>
+    <loc>https://hellogitlab.com/dba/redis/install_redis_with_source/</loc>
     <lastmod>2024-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/redis/</loc>
+    <loc>https://hellogitlab.com/categories/redis/</loc>
     <lastmod>2024-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/redis/</loc>
+    <loc>https://hellogitlab.com/dba/redis/</loc>
     <lastmod>2024-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/redis/</loc>
+    <loc>https://hellogitlab.com/tags/redis/</loc>
     <lastmod>2024-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/miniconda/</loc>
+    <loc>https://hellogitlab.com/backend/python/miniconda/</loc>
     <lastmod>2024-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/role_5_supervisor/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/role_5_supervisor/</loc>
     <lastmod>2024-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/callback/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/callback/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/accelerate/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/accelerate/</loc>
     <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/role_4_include/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/role_4_include/</loc>
     <lastmod>2024-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_12_user_permission/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_12_user_permission/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/c/newstylec/</loc>
+    <loc>https://hellogitlab.com/backend/c/newstylec/</loc>
     <lastmod>2024-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/</loc>
     <lastmod>2024-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/java/maven/</loc>
+    <loc>https://hellogitlab.com/backend/java/maven/</loc>
     <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/ansible-vault/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/ansible-vault/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/loop/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/loop/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/base/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/base/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/ansible_docs/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/ansible_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_wildcard_regular_expression_in_bash_script/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_wildcard_regular_expression_in_bash_script/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/blockinfile/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/blockinfile/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</loc>
+    <loc>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/gitlab/x_centos7_install_gitlab_with_external_nginx_and_https/</loc>
+    <loc>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx_and_https/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/centos_docs/</loc>
+    <loc>https://hellogitlab.com/os/centos/centos_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/certificate_authority_for_https/</loc>
+    <loc>https://hellogitlab.com/os/centos/certificate_authority_for_https/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/nfs_server/</loc>
+    <loc>https://hellogitlab.com/os/centos/nfs_server/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/create_git_server/</loc>
+    <loc>https://hellogitlab.com/devops/git/create_git_server/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_enhance_centos_secure/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_enhance_centos_secure/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/changed_when/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/changed_when/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/cobbler/</loc>
+    <loc>https://hellogitlab.com/categories/cobbler/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/cobbler/</loc>
+    <loc>https://hellogitlab.com/tags/cobbler/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/cobbler/</loc>
+    <loc>https://hellogitlab.com/os/cobbler/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/command/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/command/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/copy/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/copy/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/cron/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/cron/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/c/the_c_programming_language_second_edition/</loc>
+    <loc>https://hellogitlab.com/backend/c/the_c_programming_language_second_edition/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/debug/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/debug/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/docker_docs/</loc>
+    <loc>https://hellogitlab.com/devops/docker/docker_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/docker-compose/</loc>
+    <loc>https://hellogitlab.com/devops/docker/docker-compose/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/warning-bridge-nf-call-iptables_is_disabled/</loc>
+    <loc>https://hellogitlab.com/devops/docker/warning-bridge-nf-call-iptables_is_disabled/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/docker_basic_use/</loc>
+    <loc>https://hellogitlab.com/devops/docker/docker_basic_use/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/postgresql_in_docker/</loc>
+    <loc>https://hellogitlab.com/devops/docker/postgresql_in_docker/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/redis_in_docker/</loc>
+    <loc>https://hellogitlab.com/devops/docker/redis_in_docker/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/add_port_to_container/</loc>
+    <loc>https://hellogitlab.com/devops/docker/add_port_to_container/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_echo_color_font/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_echo_color_font/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/fetch/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/fetch/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/file/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/file/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/filter/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/filter/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/find/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/find/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/firewalld/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/firewalld/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/flask/</loc>
+    <loc>https://hellogitlab.com/categories/flask/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/flask/flask_docs/</loc>
+    <loc>https://hellogitlab.com/backend/flask/flask_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/frontend/</loc>
+    <loc>https://hellogitlab.com/tags/frontend/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/game/</loc>
+    <loc>https://hellogitlab.com/categories/game/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/game/</loc>
+    <loc>https://hellogitlab.com/tags/game/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/get_url/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/get_url/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/git_docs/</loc>
+    <loc>https://hellogitlab.com/devops/git/git_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/git_config/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/git_config/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/git_commit_template/</loc>
+    <loc>https://hellogitlab.com/devops/git/git_commit_template/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/git_hooks/</loc>
+    <loc>https://hellogitlab.com/devops/git/git_hooks/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/gitlab/</loc>
+    <loc>https://hellogitlab.com/categories/gitlab/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/gitlab/</loc>
+    <loc>https://hellogitlab.com/tags/gitlab/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/gitlab/</loc>
+    <loc>https://hellogitlab.com/devops/gitlab/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/gitlab/gitlab_docs/</loc>
+    <loc>https://hellogitlab.com/devops/gitlab/gitlab_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/</loc>
+    <loc>https://hellogitlab.com/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/gitlab/x_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner/</loc>
+    <loc>https://hellogitlab.com/devops/gitlab/x_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/gogs_in_docker/</loc>
+    <loc>https://hellogitlab.com/devops/docker/gogs_in_docker/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/git_chinese_filename/</loc>
+    <loc>https://hellogitlab.com/devops/git/git_chinese_filename/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/version_control_with_git/</loc>
+    <loc>https://hellogitlab.com/devops/git/version_control_with_git/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/install_git/</loc>
+    <loc>https://hellogitlab.com/devops/git/install_git/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/basic_use/</loc>
+    <loc>https://hellogitlab.com/devops/git/basic_use/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/reset_diff_repos/</loc>
+    <loc>https://hellogitlab.com/devops/git/reset_diff_repos/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/git_exceptions/</loc>
+    <loc>https://hellogitlab.com/devops/git/git_exceptions/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/git/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/git/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/golang/</loc>
+    <loc>https://hellogitlab.com/tags/golang/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/golang/base/</loc>
+    <loc>https://hellogitlab.com/backend/golang/base/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/golang/go-tour/</loc>
+    <loc>https://hellogitlab.com/backend/golang/go-tour/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/group/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/group/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/handlers/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/handlers/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/hostname/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/hostname/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/htpasswd/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/htpasswd/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/java/basic/</loc>
+    <loc>https://hellogitlab.com/backend/java/basic/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/jenkins/</loc>
+    <loc>https://hellogitlab.com/categories/jenkins/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/jenkins/</loc>
+    <loc>https://hellogitlab.com/devops/jenkins/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/jenkins/</loc>
+    <loc>https://hellogitlab.com/tags/jenkins/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/jenkins_docs/</loc>
+    <loc>https://hellogitlab.com/devops/docker/jenkins_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/jenkins/jenkins_docs/</loc>
+    <loc>https://hellogitlab.com/devops/jenkins/jenkins_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/jenkins_job_info/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/jenkins_job_info/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/jenkins_job/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/jenkins_job/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/install/</loc>
+    <loc>https://hellogitlab.com/devops/docker/install/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/jenkins/install/</loc>
+    <loc>https://hellogitlab.com/devops/jenkins/install/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/plugins/</loc>
+    <loc>https://hellogitlab.com/devops/docker/plugins/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/jenkins/plugins/</loc>
+    <loc>https://hellogitlab.com/devops/jenkins/plugins/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/json_tool_jq/</loc>
+    <loc>https://hellogitlab.com/os/centos/json_tool_jq/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/k8s/</loc>
+    <loc>https://hellogitlab.com/categories/k8s/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/kubernates/kubernetes_docs/</loc>
+    <loc>https://hellogitlab.com/devops/kubernates/kubernetes_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/kubernates/deploy/</loc>
+    <loc>https://hellogitlab.com/devops/kubernates/deploy/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/ldap_attr/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/ldap_attr/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/ldap_entry/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/ldap_entry/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/ldap_passwd/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/ldap_passwd/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/lineinfile/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/lineinfile/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/linux_boot/</loc>
+    <loc>https://hellogitlab.com/os/centos/linux_boot/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_how_to_install_htop_in_linux/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_how_to_install_htop_in_linux/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_logging/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_logging/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/lookups/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/lookups/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/macos/</loc>
+    <loc>https://hellogitlab.com/categories/macos/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/macos/</loc>
+    <loc>https://hellogitlab.com/tags/macos/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/macos/</loc>
+    <loc>https://hellogitlab.com/os/macos/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/mail/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/mail/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/make/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/make/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/me/</loc>
+    <loc>https://hellogitlab.com/categories/me/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/me/</loc>
+    <loc>https://hellogitlab.com/more/me/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/me/</loc>
+    <loc>https://hellogitlab.com/tags/me/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/monitor/</loc>
+    <loc>https://hellogitlab.com/categories/monitor/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/monitor/</loc>
+    <loc>https://hellogitlab.com/tags/monitor/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/mysql/mysql_docs/</loc>
+    <loc>https://hellogitlab.com/dba/mysql/mysql_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/mysql/x_01_insert_select_update_delete/</loc>
+    <loc>https://hellogitlab.com/dba/mysql/x_01_insert_select_update_delete/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/mysql/x_02_sum_count_avg/</loc>
+    <loc>https://hellogitlab.com/dba/mysql/x_02_sum_count_avg/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/mysql/x_03_greatest_least/</loc>
+    <loc>https://hellogitlab.com/dba/mysql/x_03_greatest_least/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/ntpdate/</loc>
+    <loc>https://hellogitlab.com/os/centos/ntpdate/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/ping/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/ping/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_pipenv/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_pipenv/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/pip/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/pip/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/proxmox/</loc>
+    <loc>https://hellogitlab.com/devops/proxmox/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/proxmox/</loc>
+    <loc>https://hellogitlab.com/categories/proxmox/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/proxmox/</loc>
+    <loc>https://hellogitlab.com/tags/proxmox/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/proxmox/proxmox_docs/</loc>
+    <loc>https://hellogitlab.com/devops/proxmox/proxmox_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/proxmox/x2_installingproxmoxve/</loc>
+    <loc>https://hellogitlab.com/devops/proxmox/x2_installingproxmoxve/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/proxmox/x1_introduction/</loc>
+    <loc>https://hellogitlab.com/devops/proxmox/x1_introduction/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_python_cookbook/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_python_cookbook/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/python_docs/</loc>
+    <loc>https://hellogitlab.com/backend/python/python_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_python_concurrency/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_python_concurrency/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/black/</loc>
+    <loc>https://hellogitlab.com/backend/python/black/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_install_python/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_install_python/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_control_workflow/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_control_workflow/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_operational_character/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_operational_character/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_introduction_python/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_introduction_python/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_python_interview/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_python_interview/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/mytelnet/</loc>
+    <loc>https://hellogitlab.com/backend/python/mytelnet/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_str/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_str/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/redis/install_redis/</loc>
+    <loc>https://hellogitlab.com/dba/redis/install_redis/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/redis/redis_docs/</loc>
+    <loc>https://hellogitlab.com/dba/redis/redis_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_reviewboard_i18n/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_reviewboard_i18n/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/rockylinux/</loc>
+    <loc>https://hellogitlab.com/os/rockylinux/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/rockylinux/rocky_linux_docs/</loc>
+    <loc>https://hellogitlab.com/os/rockylinux/rocky_linux_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/rockylinux/</loc>
+    <loc>https://hellogitlab.com/categories/rockylinux/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/rockylinux/</loc>
+    <loc>https://hellogitlab.com/tags/rockylinux/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/role/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/role/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/rsync/</loc>
+    <loc>https://hellogitlab.com/os/centos/rsync/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/script/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/script/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_selenium_install_and_use/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_selenium_install_and_use/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/service/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/service/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/setup/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/setup/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/shell/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/shell/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/softexam/</loc>
+    <loc>https://hellogitlab.com/categories/softexam/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/softexam/</loc>
+    <loc>https://hellogitlab.com/tags/softexam/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/ssh-keygen/</loc>
+    <loc>https://hellogitlab.com/os/centos/ssh-keygen/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/use_ssh_git_push/</loc>
+    <loc>https://hellogitlab.com/devops/git/use_ssh_git_push/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/supervisor/</loc>
+    <loc>https://hellogitlab.com/categories/supervisor/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/supervisor/</loc>
+    <loc>https://hellogitlab.com/devops/supervisor/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/supervisor/</loc>
+    <loc>https://hellogitlab.com/tags/supervisor/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/svn/</loc>
+    <loc>https://hellogitlab.com/categories/svn/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/svn/</loc>
+    <loc>https://hellogitlab.com/tags/svn/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/svn/</loc>
+    <loc>https://hellogitlab.com/devops/svn/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/svn/svn_docs/</loc>
+    <loc>https://hellogitlab.com/devops/svn/svn_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/tags/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/tags/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/tempfile/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/tempfile/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/template/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/template/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/timezone/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/timezone/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/tools/</loc>
+    <loc>https://hellogitlab.com/categories/tools/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/tools/</loc>
+    <loc>https://hellogitlab.com/tags/tools/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/ubuntu/</loc>
+    <loc>https://hellogitlab.com/categories/ubuntu/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/ubuntu/</loc>
+    <loc>https://hellogitlab.com/os/ubuntu/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/ubuntu/</loc>
+    <loc>https://hellogitlab.com/tags/ubuntu/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/ubuntu/ubuntu_docs/</loc>
+    <loc>https://hellogitlab.com/os/ubuntu/ubuntu_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/ubuntu/ubuntu_firewall/</loc>
+    <loc>https://hellogitlab.com/os/ubuntu/ubuntu_firewall/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/ubuntu/ubuntu_init/</loc>
+    <loc>https://hellogitlab.com/os/ubuntu/ubuntu_init/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/unarchive/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/unarchive/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/user/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/user/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/v-for/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/v-for/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_how_to_use_vim/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_how_to_use_vim/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/virtualbox_command/</loc>
+    <loc>https://hellogitlab.com/os/centos/virtualbox_command/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_virtualbox_enhance_hdds/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_virtualbox_enhance_hdds/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/blog/build_your_vitepress_blog/</loc>
+    <loc>https://hellogitlab.com/more/blog/build_your_vitepress_blog/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/vue/</loc>
+    <loc>https://hellogitlab.com/categories/vue/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/use_vue-multiselect/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/use_vue-multiselect/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/blog/build_your_vuepress_blog_1/</loc>
+    <loc>https://hellogitlab.com/more/blog/build_your_vuepress_blog_1/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/blog/build_your_vuepress_blog/</loc>
+    <loc>https://hellogitlab.com/more/blog/build_your_vuepress_blog/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/vue_basic_use/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/vue_basic_use/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/vue_docs/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/vue_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/wait_for_connection/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/wait_for_connection/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/wait_for/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/wait_for/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/when/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/when/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/windows/</loc>
+    <loc>https://hellogitlab.com/categories/windows/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/windows/</loc>
+    <loc>https://hellogitlab.com/os/windows/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/windows/</loc>
+    <loc>https://hellogitlab.com/tags/windows/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/windows/windows_docs/</loc>
+    <loc>https://hellogitlab.com/os/windows/windows_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/windows/cmd/</loc>
+    <loc>https://hellogitlab.com/os/windows/cmd/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/yum/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/yum/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/categories/zabbix/</loc>
+    <loc>https://hellogitlab.com/categories/zabbix/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/zabbix/</loc>
+    <loc>https://hellogitlab.com/devops/zabbix/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/tags/zabbix/</loc>
+    <loc>https://hellogitlab.com/tags/zabbix/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/zabbix/permission_denied/</loc>
+    <loc>https://hellogitlab.com/devops/zabbix/permission_denied/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/facts_module/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/facts_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_var_name_rule/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_var_name_rule/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/forms/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/forms/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/prettytable/</loc>
+    <loc>https://hellogitlab.com/backend/python/prettytable/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/check_python_package_json_info/</loc>
+    <loc>https://hellogitlab.com/backend/python/check_python_package_json_info/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/the_latest_image/</loc>
+    <loc>https://hellogitlab.com/devops/docker/the_latest_image/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_collections_module/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_collections_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_re_module/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_re_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_tobepythonista/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_tobepythonista/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_programs_and_processes/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_programs_and_processes/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/create_password/</loc>
+    <loc>https://hellogitlab.com/os/centos/create_password/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/fast_web/</loc>
+    <loc>https://hellogitlab.com/backend/python/fast_web/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_10_nexus_api_2/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_10_nexus_api_2/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_2/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_2/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_3/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_3/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_4_docker_proxy/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_4_docker_proxy/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_5_test_docker_proxy/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_5_test_docker_proxy/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_6_nginx_proxy/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_6_nginx_proxy/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_7_change_timezone/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_7_change_timezone/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_8_nexus_database/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_8_nexus_database/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/create_your_nexus_9_nexus_api/</loc>
+    <loc>https://hellogitlab.com/devops/docker/create_your_nexus_9_nexus_api/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_python_style_and_static_check/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_python_style_and_static_check/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/role_2/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/role_2/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/class_style/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/class_style/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/yaml/</loc>
+    <loc>https://hellogitlab.com/backend/python/yaml/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_forbit_use_rm_to_delete_root_path/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_forbit_use_rm_to_delete_root_path/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/ubuntu/ubuntu_change_repo/</loc>
+    <loc>https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/tools/</loc>
+    <loc>https://hellogitlab.com/more/tools/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/tools/tools_docs/</loc>
+    <loc>https://hellogitlab.com/more/tools/tools_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/blog/blog_docs/</loc>
+    <loc>https://hellogitlab.com/more/blog/blog_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/me/about/</loc>
+    <loc>https://hellogitlab.com/more/me/about/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_function/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_function/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/kubernates/k8s_get_nodes/</loc>
+    <loc>https://hellogitlab.com/devops/kubernates/k8s_get_nodes/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/kubernates/k8s_cluster_info/</loc>
+    <loc>https://hellogitlab.com/devops/kubernates/k8s_cluster_info/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/kubernates/k8s_get_cs/</loc>
+    <loc>https://hellogitlab.com/devops/kubernates/k8s_get_cs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/computed_watch/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/computed_watch/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/zabbix/zabbix_docs/</loc>
+    <loc>https://hellogitlab.com/devops/zabbix/zabbix_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/flask/flask_httpauth/</loc>
+    <loc>https://hellogitlab.com/backend/flask/flask_httpauth/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/dba/mysql/x_04_index_column_size_too_large_the_maximum_column_size_is_767_bytes/</loc>
+    <loc>https://hellogitlab.com/dba/mysql/x_04_index_column_size_too_large_the_maximum_column_size_is_767_bytes/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/supervisor/supervisor/</loc>
+    <loc>https://hellogitlab.com/devops/supervisor/supervisor/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_object_oriented_programming/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_object_oriented_programming/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/syntax/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/syntax/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_glob_module/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_glob_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_itertools_module/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_itertools_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_json_module/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_json_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_os_module/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_os_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_system_module/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_system_module/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_univeral_unique_identifier/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_univeral_unique_identifier/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_built-in_data_structure/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_built-in_data_structure/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_web/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_web/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_arrow/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_arrow/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_calendar/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_calendar/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_datetime/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_datetime/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_dateutil/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_dateutil/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_fleming/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_fleming/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_pytz/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_pytz/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_time/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_time/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_time_and_date_module_timeit/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_timeit/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/softexam/soft_exam/</loc>
+    <loc>https://hellogitlab.com/more/softexam/soft_exam/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/softexam/</loc>
+    <loc>https://hellogitlab.com/more/softexam/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/game/third_order_magic_cube/</loc>
+    <loc>https://hellogitlab.com/more/game/third_order_magic_cube/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/signed-off-by/</loc>
+    <loc>https://hellogitlab.com/devops/git/signed-off-by/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/git/ignore_changed_files/</loc>
+    <loc>https://hellogitlab.com/devops/git/ignore_changed_files/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/clair/</loc>
+    <loc>https://hellogitlab.com/devops/docker/clair/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/nextcloud_in_docker/</loc>
+    <loc>https://hellogitlab.com/devops/docker/nextcloud_in_docker/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_faker_generate_fake_data/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_faker_generate_fake_data/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/events/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/events/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_database/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_database/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_pprint/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_pprint/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/v-if_v_show/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/v-if_v_show/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/get_container_by_pid/</loc>
+    <loc>https://hellogitlab.com/devops/docker/get_container_by_pid/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_internet/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_internet/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_file_read_write/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_file_read_write/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/docker/change_root_dir/</loc>
+    <loc>https://hellogitlab.com/devops/docker/change_root_dir/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_use_help/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_use_help/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_use_help/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_use_help/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/devops/ansible/role_3/</loc>
+    <loc>https://hellogitlab.com/devops/ansible/role_3/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/game/game_docs/</loc>
+    <loc>https://hellogitlab.com/more/game/game_docs/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_try_except_else_finally/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_try_except_else_finally/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_quote_escape_character/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_quote_escape_character/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/more/game/</loc>
+    <loc>https://hellogitlab.com/more/game/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_virtualbox_install_centos7/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_virtualbox_install_centos7/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/os/centos/x_hotkey_in_terminal/</loc>
+    <loc>https://hellogitlab.com/os/centos/x_hotkey_in_terminal/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/x_decorator/</loc>
+    <loc>https://hellogitlab.com/backend/python/x_decorator/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/backend/python/auto_start_proxy/</loc>
+    <loc>https://hellogitlab.com/backend/python/auto_start_proxy/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://meizhaohui.github.io/frontend/vue/components/</loc>
+    <loc>https://hellogitlab.com/frontend/vue/components/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url>
 </urlset>

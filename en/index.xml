@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Home on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/</link>
+        <link>https://hellogitlab.com/en/</link>
         <description>Recent content in Home on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>https://meizhaohui.github.io/en/page/archives/</link>
+        <link>https://hellogitlab.com/en/page/archives/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/page/archives/</guid>
+        <guid>https://hellogitlab.com/en/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>CI/CD Pipeline Configuration</title>
-        <link>https://meizhaohui.github.io/en/devops/cicd-pipeline/</link>
+        <link>https://hellogitlab.com/en/devops/cicd-pipeline/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/cicd-pipeline/</guid>
+        <guid>https://hellogitlab.com/en/devops/cicd-pipeline/</guid>
         <description>&lt;h2 id=&#34;gitlab-cicd&#34;&gt;GitLab CI/CD
 &lt;/h2&gt;&lt;p&gt;Implement automated build and deployment with GitLab CI/CD.&lt;/p&gt;
 &lt;h2 id=&#34;gitlab-ciyml-example&#34;&gt;.gitlab-ci.yml Example
@@ -84,10 +84,10 @@
         </item>
         <item>
         <title>Docker Container Deployment</title>
-        <link>https://meizhaohui.github.io/en/devops/docker-deploy/</link>
+        <link>https://hellogitlab.com/en/devops/docker-deploy/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/docker-deploy/</guid>
+        <guid>https://hellogitlab.com/en/devops/docker-deploy/</guid>
         <description>&lt;h2 id=&#34;docker-overview&#34;&gt;Docker Overview
 &lt;/h2&gt;&lt;p&gt;Docker is an open-source containerization platform for packaging applications and dependencies.&lt;/p&gt;
 &lt;h2 id=&#34;dockerfile-example&#34;&gt;Dockerfile Example
@@ -121,10 +121,10 @@
         </item>
         <item>
         <title>Flask Web Framework Introduction</title>
-        <link>https://meizhaohui.github.io/en/backend/python/flask-intro/</link>
+        <link>https://hellogitlab.com/en/backend/python/flask-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/python/flask-intro/</guid>
+        <guid>https://hellogitlab.com/en/backend/python/flask-intro/</guid>
         <description>&lt;h2 id=&#34;flask-overview&#34;&gt;Flask Overview
 &lt;/h2&gt;&lt;p&gt;Flask is a lightweight Python web framework, perfect for rapid web application development.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;Quick Start
@@ -160,10 +160,10 @@
         </item>
         <item>
         <title>Golang Concurrency Programming</title>
-        <link>https://meizhaohui.github.io/en/backend/golang/golang-concurrency/</link>
+        <link>https://hellogitlab.com/en/backend/golang/golang-concurrency/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/golang/golang-concurrency/</guid>
+        <guid>https://hellogitlab.com/en/backend/golang/golang-concurrency/</guid>
         <description>&lt;h2 id=&#34;goroutine&#34;&gt;Goroutine
 &lt;/h2&gt;&lt;p&gt;Goroutine is Go&amp;rsquo;s lightweight thread, started with the go keyword.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -208,10 +208,10 @@
         </item>
         <item>
         <title>Kubernetes Cluster Management</title>
-        <link>https://meizhaohui.github.io/en/devops/kubernetes-cluster/</link>
+        <link>https://hellogitlab.com/en/devops/kubernetes-cluster/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/kubernetes-cluster/</guid>
+        <guid>https://hellogitlab.com/en/devops/kubernetes-cluster/</guid>
         <description>&lt;h2 id=&#34;kubernetes-overview&#34;&gt;Kubernetes Overview
 &lt;/h2&gt;&lt;p&gt;Kubernetes (K8s) is an open-source container orchestration platform.&lt;/p&gt;
 &lt;h2 id=&#34;deploy-application&#34;&gt;Deploy Application
@@ -269,18 +269,18 @@
         </item>
         <item>
         <title>Search</title>
-        <link>https://meizhaohui.github.io/en/page/search/</link>
+        <link>https://hellogitlab.com/en/page/search/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/page/search/</guid>
+        <guid>https://hellogitlab.com/en/page/search/</guid>
         <description></description>
         </item>
         <item>
         <title>Spring Boot Quick Start</title>
-        <link>https://meizhaohui.github.io/en/backend/java/spring-boot-intro/</link>
+        <link>https://hellogitlab.com/en/backend/java/spring-boot-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/java/spring-boot-intro/</guid>
+        <guid>https://hellogitlab.com/en/backend/java/spring-boot-intro/</guid>
         <description>&lt;h2 id=&#34;spring-boot-overview&#34;&gt;Spring Boot Overview
 &lt;/h2&gt;&lt;p&gt;Spring Boot simplifies Spring application development with out-of-the-box configurations.&lt;/p&gt;
 &lt;h2 id=&#34;creating-rest-api&#34;&gt;Creating REST API
@@ -314,10 +314,10 @@
         </item>
         <item>
         <title>Memory Management in Linux</title>
-        <link>https://meizhaohui.github.io/en/os/memory-management/</link>
+        <link>https://hellogitlab.com/en/os/memory-management/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/os/memory-management/</guid>
+        <guid>https://hellogitlab.com/en/os/memory-management/</guid>
         <description>&lt;h2 id=&#34;virtual-memory&#34;&gt;Virtual Memory
 &lt;/h2&gt;&lt;p&gt;Linux uses virtual memory to allow processes to use more memory than physically available.&lt;/p&gt;
 &lt;h2 id=&#34;page-tables&#34;&gt;Page Tables
@@ -326,10 +326,10 @@
         </item>
         <item>
         <title>React Hooks Guide</title>
-        <link>https://meizhaohui.github.io/en/frontend/react-hooks/</link>
+        <link>https://hellogitlab.com/en/frontend/react-hooks/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/frontend/react-hooks/</guid>
+        <guid>https://hellogitlab.com/en/frontend/react-hooks/</guid>
         <description>&lt;h2 id=&#34;usestate-hook&#34;&gt;useState Hook
 &lt;/h2&gt;&lt;p&gt;useState allows functional components to have state.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -346,10 +346,10 @@
         </item>
         <item>
         <title>RESTful API Design</title>
-        <link>https://meizhaohui.github.io/en/backend/rest-api/</link>
+        <link>https://hellogitlab.com/en/backend/rest-api/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/rest-api/</guid>
+        <guid>https://hellogitlab.com/en/backend/rest-api/</guid>
         <description>&lt;h2 id=&#34;rest-principles&#34;&gt;REST Principles
 &lt;/h2&gt;&lt;p&gt;REST uses HTTP methods for CRUD operations.&lt;/p&gt;
 &lt;h2 id=&#34;http-methods&#34;&gt;HTTP Methods
@@ -363,10 +363,10 @@
         </item>
         <item>
         <title>CSS Flexbox Layout</title>
-        <link>https://meizhaohui.github.io/en/frontend/css-flexbox/</link>
+        <link>https://hellogitlab.com/en/frontend/css-flexbox/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/frontend/css-flexbox/</guid>
+        <guid>https://hellogitlab.com/en/frontend/css-flexbox/</guid>
         <description>&lt;h2 id=&#34;flexbox-basics&#34;&gt;Flexbox Basics
 &lt;/h2&gt;&lt;p&gt;Flexbox is a one-dimensional layout method.&lt;/p&gt;
 &lt;h2 id=&#34;main-properties&#34;&gt;Main Properties
@@ -380,10 +380,10 @@
         </item>
         <item>
         <title>Database Indexing</title>
-        <link>https://meizhaohui.github.io/en/backend/database-index/</link>
+        <link>https://hellogitlab.com/en/backend/database-index/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/database-index/</guid>
+        <guid>https://hellogitlab.com/en/backend/database-index/</guid>
         <description>&lt;h2 id=&#34;what-is-an-index&#34;&gt;What is an Index?
 &lt;/h2&gt;&lt;p&gt;An index is a data structure that improves query performance.&lt;/p&gt;
 &lt;h2 id=&#34;types-of-indexes&#34;&gt;Types of Indexes
@@ -396,20 +396,20 @@
         </item>
         <item>
         <title>Linux Process Management</title>
-        <link>https://meizhaohui.github.io/en/os/linux-process/</link>
+        <link>https://hellogitlab.com/en/os/linux-process/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/os/linux-process/</guid>
+        <guid>https://hellogitlab.com/en/os/linux-process/</guid>
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;Process management is a fundamental aspect of operating systems.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>File Systems Basics</title>
-        <link>https://meizhaohui.github.io/en/os/filesystem/</link>
+        <link>https://hellogitlab.com/en/os/filesystem/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/os/filesystem/</guid>
+        <guid>https://hellogitlab.com/en/os/filesystem/</guid>
         <description>&lt;h2 id=&#34;file-system-types&#34;&gt;File System Types
 &lt;/h2&gt;&lt;p&gt;Common file systems include ext4, NTFS, and APFS.&lt;/p&gt;
 &lt;h2 id=&#34;inodes&#34;&gt;Inodes
@@ -418,10 +418,10 @@
         </item>
         <item>
         <title>Microservices Architecture</title>
-        <link>https://meizhaohui.github.io/en/backend/microservices/</link>
+        <link>https://hellogitlab.com/en/backend/microservices/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/microservices/</guid>
+        <guid>https://hellogitlab.com/en/backend/microservices/</guid>
         <description>&lt;h2 id=&#34;what-are-microservices&#34;&gt;What are Microservices?
 &lt;/h2&gt;&lt;p&gt;Microservices break applications into small, independent services.&lt;/p&gt;
 &lt;h2 id=&#34;benefits&#34;&gt;Benefits
@@ -434,10 +434,10 @@
         </item>
         <item>
         <title>Vue 3 Composition API</title>
-        <link>https://meizhaohui.github.io/en/frontend/vue3-composition/</link>
+        <link>https://hellogitlab.com/en/frontend/vue3-composition/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/frontend/vue3-composition/</guid>
+        <guid>https://hellogitlab.com/en/frontend/vue3-composition/</guid>
         <description>&lt;h2 id=&#34;setup-function&#34;&gt;Setup Function
 &lt;/h2&gt;&lt;p&gt;The setup function is the entry point for Composition API.&lt;/p&gt;
 &lt;h2 id=&#34;reactive-data&#34;&gt;Reactive Data
@@ -454,10 +454,10 @@
         </item>
         <item>
         <title>Thread Scheduling</title>
-        <link>https://meizhaohui.github.io/en/os/thread-scheduling/</link>
+        <link>https://hellogitlab.com/en/os/thread-scheduling/</link>
         <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/os/thread-scheduling/</guid>
+        <guid>https://hellogitlab.com/en/os/thread-scheduling/</guid>
         <description>&lt;h2 id=&#34;thread-vs-process&#34;&gt;Thread vs Process
 &lt;/h2&gt;&lt;p&gt;Threads are lightweight execution units within a process.&lt;/p&gt;
 &lt;h2 id=&#34;scheduling-algorithms&#34;&gt;Scheduling Algorithms
@@ -466,7 +466,7 @@
 &lt;li&gt;Priority Scheduling&lt;/li&gt;
 &lt;li&gt;Multi-level Queue&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/750-1334-max.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/750-1334-max.png&#34;
 	
 	
 	

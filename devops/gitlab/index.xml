@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>GitLab on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/devops/gitlab/</link>
+        <link>https://hellogitlab.com/devops/gitlab/</link>
         <description>Recent content in GitLab on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/devops/gitlab/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/devops/gitlab/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CenOS7安装GitLab(使用外部Nginx配置)</title>
-        <link>https://meizhaohui.github.io/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</link>
+        <link>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CenOS7安装GitLab(使用外部Nginx配置)" /&gt;&lt;h2 id=&#34;cenos7安装gitlab使用外部nginx配置&#34;&gt;CenOS7安装GitLab(使用外部Nginx配置)
+        <guid>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CenOS7安装GitLab(使用外部Nginx配置)" /&gt;&lt;h2 id=&#34;cenos7安装gitlab使用外部nginx配置&#34;&gt;CenOS7安装GitLab(使用外部Nginx配置)
 &lt;/h2&gt;&lt;p&gt;本文讲解在CentOS7系统中安装GitLab(使用外部Nginx配置)。&lt;/p&gt;
 &lt;h3 id=&#34;实验环境&#34;&gt;实验环境
 &lt;/h3&gt;&lt;ul&gt;
@@ -1629,7 +1629,7 @@ git仓库存储目录 &lt;code&gt;必须是目录，不能是软链接&lt;/code&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;没有报异常，说明邮件发送成功！登陆QQ邮箱检查邮件信息，发现已经收到邮件！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/test_gitlab_smtp.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/test_gitlab_smtp.png&#34;
 	
 	
 	
@@ -1690,7 +1690,7 @@ git仓库存储目录 &lt;code&gt;必须是目录，不能是软链接&lt;/code&
 :::&lt;/p&gt;
 &lt;h3 id=&#34;访问gitlab&#34;&gt;访问GitLab
 &lt;/h3&gt;&lt;p&gt;在Google浏览器中访问URL: http://192.168.56.14/ ，提示&amp;quot;502 Bad Gateway&amp;quot;，说明GitLab异常。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/502_bad_gateway.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/502_bad_gateway.png&#34;
 	
 	
 	
@@ -3422,7 +3422,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;访问GitLab，终于见到了GitLab页面了！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_first_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_first_page.png&#34;
 	
 	
 	
@@ -3434,7 +3434,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;gitlab-web界面配置&#34;&gt;GitLab WEB界面配置
 &lt;/h3&gt;&lt;p&gt;设置GitLab管理员root的密码为&amp;quot;1234567890&amp;quot;，并重新登陆，进入主页：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_index_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_index_page.png&#34;
 	
 	
 	
@@ -3445,7 +3445,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;新建一个用户:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_new_user.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_new_user.png&#34;
 	
 	
 	
@@ -3456,7 +3456,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;登陆邮箱查看邮件，验证账号：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_account_was_created_for_you_email.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_account_was_created_for_you_email.png&#34;
 	
 	
 	
@@ -3467,7 +3467,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;重置密码:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_first_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_first_page.png&#34;
 	
 	
 	
@@ -3478,7 +3478,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;普通账号登陆：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_login_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_login_page.png&#34;
 	
 	
 	
@@ -3489,7 +3489,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;管理员账号新建组(Group)和项目(Project)，并添加组成员，并给予开发者权限：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_add_group_members.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_add_group_members.png&#34;
 	
 	
 	
@@ -3500,7 +3500,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;管理员账号将普通账号加入到项目中后，普通用户就可以看到相应的项目：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_project.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_project.png&#34;
 	
 	
 	
@@ -3578,7 +3578,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;普通用户在WEB界面添加SSH KEY&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_add_ssh_key.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_add_ssh_key.png&#34;
 	
 	
 	
@@ -3735,7 +3735,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以发现私有项目，开发人员不能直接合入！&lt;/p&gt;
 &lt;p&gt;在WEB界面上操作也可以发现无法合入:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_not_allowed_to_push.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_not_allowed_to_push.png&#34;
 	
 	
 	
@@ -4102,7 +4102,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以发现项目的owner拥有者可以通过SSH或HTTP方式克隆和PUSH数据到项目中，但通过HTTP方式下载和提交修改时都需要输入用户名和密码。&lt;/p&gt;
 &lt;p&gt;在WEB界面上可以看到刚才的两次提交:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_check_commits.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_check_commits.png&#34;
 	
 	
 	
@@ -4130,7 +4130,7 @@ Note: make sure that the webserver user has the correct permissions on all direc
 &lt;li&gt;查看GitLab版本： &lt;code&gt;cat /opt/gitlab/embedded/service/gitlab-rails/VERSION&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;初始化gitlab配置文件的脚本文件&#34;&gt;初始化GitLab配置文件的脚本文件
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/init_gitlab_conf.sh&#34; &gt;download init_gitlab_conf.sh&lt;/a&gt;&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/init_gitlab_conf.sh&#34; &gt;download init_gitlab_conf.sh&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;init_gitlab_conf.sh&lt;/code&gt;脚本内容如下:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4433,11 +4433,11 @@ Note: make sure that the webserver user has the correct permissions on all direc
         </item>
         <item>
         <title>CenOS7安装GitLab(使用外部Nginx配置)并配置HTTPS协议</title>
-        <link>https://meizhaohui.github.io/devops/gitlab/x_centos7_install_gitlab_with_external_nginx_and_https/</link>
+        <link>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx_and_https/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/gitlab/x_centos7_install_gitlab_with_external_nginx_and_https/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CenOS7安装GitLab(使用外部Nginx配置)并配置HTTPS协议" /&gt;&lt;h2 id=&#34;cenos7安装gitlab使用外部nginx配置并配置https协议&#34;&gt;CenOS7安装GitLab(使用外部Nginx配置)并配置HTTPS协议
+        <guid>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx_and_https/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CenOS7安装GitLab(使用外部Nginx配置)并配置HTTPS协议" /&gt;&lt;h2 id=&#34;cenos7安装gitlab使用外部nginx配置并配置https协议&#34;&gt;CenOS7安装GitLab(使用外部Nginx配置)并配置HTTPS协议
 &lt;/h2&gt;&lt;p&gt;本文讲解在CentOS7系统中安装GitLab(使用外部Nginx配置)并配置HTTPS协议进行加密传输数据。&lt;/p&gt;
 &lt;h3 id=&#34;实验环境&#34;&gt;实验环境
 &lt;/h3&gt;&lt;ul&gt;
@@ -5552,7 +5552,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;你也可以通过点击下面的按钮进行下载。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/resource/conf/gitlab-omnibus-nginx.conf&#34; &gt;download gitlab-omnibus-nginx.conf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/resource/conf/gitlab-omnibus-nginx.conf&#34; &gt;download gitlab-omnibus-nginx.conf&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;将 &lt;code&gt;gitlab-omnibus-nginx.conf&lt;/code&gt;移动到&lt;code&gt;/etc/nginx/conf.d&lt;/code&gt;目录:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -5939,7 +5939,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;没有报异常，说明邮件发送成功！登陆QQ邮箱检查邮件信息，发现已经收到邮件！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/test_gitlab_smtp_domain.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/test_gitlab_smtp_domain.png&#34;
 	
 	
 	
@@ -6056,7 +6056,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;h3 id=&#34;访问gitlab&#34;&gt;访问GitLab
 &lt;/h3&gt;&lt;p&gt;在Google浏览器中访问URL: &lt;a class=&#34;link&#34; href=&#34;http://hellogitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://hellogitlab.com/&lt;/a&gt; ，可以看到GitLab页面了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_first_domain_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_first_domain_page.png&#34;
 	
 	
 	
@@ -6069,7 +6069,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;p&gt;如果发现异常，可查看GitLab的错误日志文件&lt;code&gt;/var/log/nginx/gitlab_error.log&lt;/code&gt;，另外检查SELinux是否关闭。&lt;/p&gt;
 &lt;h3 id=&#34;gitlab-web界面配置&#34;&gt;GitLab WEB界面配置
 &lt;/h3&gt;&lt;p&gt;设置GitLab管理员root的密码为&amp;quot;1234567890&amp;quot;，并重新登陆，进入主页：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_index_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_index_page.png&#34;
 	
 	
 	
@@ -6080,7 +6080,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;新建一个用户，并设置为管理员:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_new_user.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_new_user.png&#34;
 	
 	
 	
@@ -6091,7 +6091,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;登陆邮箱查看邮件，验证账号：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_account_was_created_for_you_email.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_account_was_created_for_you_email.png&#34;
 	
 	
 	
@@ -6102,7 +6102,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击链接&amp;quot;Click here to set your password&amp;quot;重置密码:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_first_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_first_page.png&#34;
 	
 	
 	
@@ -6113,7 +6113,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;使用刚新建的管理员账号登陆：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_login_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_login_page.png&#34;
 	
 	
 	
@@ -6124,7 +6124,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;创建一个新的个人项目：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_new_project.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_new_project.png&#34;
 	
 	
 	
@@ -6136,7 +6136,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &gt;&lt;/p&gt;
 &lt;p&gt;点击&amp;quot;Create project&amp;quot;创建项目。&lt;/p&gt;
 &lt;p&gt;创建完成后，可以看到跳转到项目详情界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_new_project_details.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_new_project_details.png&#34;
 	
 	
 	
@@ -6148,7 +6148,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &gt;&lt;/p&gt;
 &lt;p&gt;我们将宿主机上的个人公钥加到Gitlab上去，如果没有公钥，可以使用&lt;code&gt;ssh-keygen -C your_email@example.com&lt;/code&gt;添加。&lt;/p&gt;
 &lt;p&gt;在WEB界面添加SSH KEY：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_add_ssh_key.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_add_ssh_key.jpg&#34;
 	
 	
 	
@@ -6279,7 +6279,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以发现合入成功！&lt;/p&gt;
 &lt;p&gt;在WEB界面上查看刚才的提交:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_the_ssh_method_push.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_the_ssh_method_push.png&#34;
 	
 	
 	
@@ -6311,7 +6311,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在克隆下载时，需要输入用户名和密码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_git_clone_with_http_method.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_git_clone_with_http_method.png&#34;
 	
 	
 	
@@ -6392,7 +6392,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以发现通过http方式也可以合入修改！&lt;/p&gt;
 &lt;p&gt;在WEB界面上查看刚才的提交:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_the_http_method_push.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_the_http_method_push.png&#34;
 	
 	
 	
@@ -6435,7 +6435,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;你也可以通过点击下面的按钮进行下载。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/resource/conf/gitlab-omnibus-ssl-nginx.conf&#34; &gt;download gitlab-omnibus-ssl-nginx.conf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/resource/conf/gitlab-omnibus-ssl-nginx.conf&#34; &gt;download gitlab-omnibus-ssl-nginx.conf&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;修改配置&#34;&gt;修改配置
 &lt;/h4&gt;&lt;p&gt;将配置文件复制到&lt;code&gt;/etc/nginx/conf.d/&lt;/code&gt;目录下:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -6459,7 +6459,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;查看配置文件，我们关注35、46、52-54行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_nginx_ssl_config.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_nginx_ssl_config.png&#34;
 	
 	
 	
@@ -6782,7 +6782,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/h3&gt;&lt;p&gt;在Google浏览器中访问URL:&lt;a class=&#34;link&#34; href=&#34;http://hellogitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://hellogitlab.com/&lt;/a&gt; ，可以看到页面自动跳转到&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://hellogitlab.com/&lt;/a&gt;了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_http_2_https.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_http_2_https.png&#34;
 	
 	
 	
@@ -6795,7 +6795,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;p&gt;我们点击&amp;quot;高级&amp;quot;&amp;ndash;&amp;ldquo;继续前往hellogitlab.com（不安全）&amp;quot;，可以看到打开了
 &lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://hellogitlab.com/&lt;/a&gt;页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_https_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_https_page.png&#34;
 	
 	
 	
@@ -6806,7 +6806,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们使用&amp;quot;meizhaohui&amp;quot;这个账号进行登陆，发现可以登陆上，登陆后的界面如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_https_login.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_https_login.png&#34;
 	
 	
 	
@@ -6817,7 +6817,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;查看项目的详情界面，点击&amp;quot;clone&amp;quot;按钮，查看URL地址是否更新，可以发现URL已经变成https开头了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_https_url_updated.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_https_url_updated.png&#34;
 	
 	
 	
@@ -6828,7 +6828,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们在宿主机上面使用https方式克隆下载仓库，也需要输入用户名和密码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_git_clone_with_https_method.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_git_clone_with_https_method.png&#34;
 	
 	
 	
@@ -6918,7 +6918,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在WEB界面上查看刚才的提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_https_commit.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_https_commit.png&#34;
 	
 	
 	
@@ -7082,7 +7082,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;发现可以正常提交，并且在WEB界面上面可以看到提交的更新：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_https_ssh_push.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_https_ssh_push.png&#34;
 	
 	
 	
@@ -7275,7 +7275,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;重新访问GitLab，可以看到中文页面了:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_https_with_i18n.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_https_with_i18n.png&#34;
 	
 	
 	
@@ -7287,7 +7287,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &gt;&lt;/p&gt;
 &lt;p&gt;正常登陆。在&amp;quot;偏好&amp;quot;中设置&amp;quot;语言&amp;quot;是&amp;quot;简体中文&amp;rdquo;，重新登陆即可。&lt;/p&gt;
 &lt;p&gt;再次查看项目详情页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_domain_https_project_details_with_i18n.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_domain_https_project_details_with_i18n.png&#34;
 	
 	
 	
@@ -7307,7 +7307,7 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
 &lt;li&gt;查看GitLab版本： &lt;code&gt;cat /opt/gitlab/embedded/service/gitlab-rails/VERSION&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;初始化https方式gitlab配置文件的脚本&#34;&gt;初始化HTTPS方式GitLab配置文件的脚本
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/init_gitlab_https_conf.sh&#34; &gt;download init_gitlab_https_conf.sh&lt;/a&gt;&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/init_gitlab_https_conf.sh&#34; &gt;download init_gitlab_https_conf.sh&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;脚本内容如下:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -7887,11 +7887,11 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
         </item>
         <item>
         <title>GitLab Docs</title>
-        <link>https://meizhaohui.github.io/devops/gitlab/gitlab_docs/</link>
+        <link>https://hellogitlab.com/devops/gitlab/gitlab_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/gitlab/gitlab_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/gitlab_original_wordmark_logo_icon_146504.png" alt="Featured image of post GitLab Docs" /&gt;&lt;h2 id=&#34;gitlab-docs&#34;&gt;GitLab Docs
+        <guid>https://hellogitlab.com/devops/gitlab/gitlab_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/gitlab_original_wordmark_logo_icon_146504.png" alt="Featured image of post GitLab Docs" /&gt;&lt;h2 id=&#34;gitlab-docs&#34;&gt;GitLab Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_centos7_install_gitlab_with_external_nginx&#34; &gt;CenOS7安装GitLab(使用外部Nginx配置)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner&#34; &gt;GitLab的汉化与CI持续集成gitlab-runner的配置&lt;/a&gt;&lt;/li&gt;
@@ -7902,11 +7902,11 @@ git仓库存储目录&lt;code&gt;必须是目录，不能是软链接&lt;/code&g
         </item>
         <item>
         <title>GitLabCI流水线配置文件.gitlab-ci.yml详解</title>
-        <link>https://meizhaohui.github.io/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/</link>
+        <link>https://hellogitlab.com/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post GitLabCI流水线配置文件.gitlab-ci.yml详解" /&gt;&lt;h2 id=&#34;gitlab-ci流水线配置文件gitlab-ciyml详解&#34;&gt;GitLab CI流水线配置文件.gitlab-ci.yml详解
+        <guid>https://hellogitlab.com/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post GitLabCI流水线配置文件.gitlab-ci.yml详解" /&gt;&lt;h2 id=&#34;gitlab-ci流水线配置文件gitlab-ciyml详解&#34;&gt;GitLab CI流水线配置文件.gitlab-ci.yml详解
 &lt;/h2&gt;&lt;p&gt;本文讲解在&lt;a class=&#34;link&#34; href=&#34;./X_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner.html&#34; &gt;GitLab的汉化与CI持续集成gitlab-runner的配置&lt;/a&gt;的基础上，对&lt;code&gt;GitLab CI&lt;/code&gt;流水线配置文件 &lt;code&gt;.gitlab-ci.yml&lt;/code&gt;进行详细的介绍。&lt;/p&gt;
 &lt;h3 id=&#34;实验环境&#34;&gt;实验环境
 &lt;/h3&gt;&lt;ul&gt;
@@ -7962,7 +7962,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;p&gt;如果一切运行正常（没有非零返回值），您将获得与提交相关联的漂亮绿色复选标记(如下图所示)。这样可以在查看代码之前轻松查看提交是否导致任何测试失败。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_green_checkmark.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_green_checkmark.png&#34;
 	
 	
 	
@@ -8255,7 +8255,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;将修改上传提交，查看作业build1的控制台输出：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/job_before_script_overwrited_global_before_script.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/job_before_script_overwrited_global_before_script.png&#34;
 	
 	
 	
@@ -8265,7 +8265,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/job_after_script_overwrited_global_after_script.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/job_after_script_overwrited_global_after_script.png&#34;
 	
 	
 	
@@ -8417,7 +8417,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们增加一个 &lt;code&gt;code_check&lt;/code&gt;阶段，该阶段有一个作业&lt;code&gt;find Bugs&lt;/code&gt;，该作业主要是先安装Flake8，然后使用Flake8对Python代码进行规范检查。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/job_code_check_failed.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/job_code_check_failed.png&#34;
 	
 	
 	
@@ -8429,7 +8429,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;由于Flake8检查到了Python代码中的缺陷，导致find Bugs作业失败！这样可以控制开发人员提交有坏味道的代码到仓库中。&lt;/p&gt;
 &lt;p&gt;另外，在上一个流水线中，Test阶段的作业test1和test2是并行执行的，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/test_jobs_are_executed_in_parallel.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/test_jobs_are_executed_in_parallel.png&#34;
 	
 	
 	
@@ -8440,7 +8440,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;本次(pipeline #7)流水线由于在作业&lt;code&gt;find Bugs&lt;/code&gt;检查不通过，导致整个流水线运行失败，后续的作业不会执行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/code_check_failed_no_jobs_of_further_stage_are_executed.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/code_check_failed_no_jobs_of_further_stage_are_executed.png&#34;
 	
 	
 	
@@ -8838,7 +8838,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;上面这个例子中，一旦合并请求中修改了&lt;code&gt;Dockerfile&lt;/code&gt;文件或者修改了&lt;code&gt;service-one&lt;/code&gt;目录下的文件，都会触发Docker构建。&lt;/p&gt;
 &lt;h5 id=&#34;only和except综合示例&#34;&gt;&lt;code&gt;only&lt;/code&gt;和&lt;code&gt;except&lt;/code&gt;综合示例
 &lt;/h5&gt;&lt;p&gt;我们将&lt;code&gt;bluelog&lt;/code&gt;项目的描述和主题进行修改：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/project_description_tags.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/project_description_tags.png&#34;
 	
 	
 	
@@ -8849,7 +8849,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;并创建三个分支&lt;code&gt;issue-pylint&lt;/code&gt;、&lt;code&gt;Issue-flake8&lt;/code&gt;和&lt;code&gt;severe-issues&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/project_three_branches.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/project_three_branches.png&#34;
 	
 	
 	
@@ -8860,7 +8860,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;刚新增的三个分支，自动继承了master主干的CI RUNNER，因为Flake8检查代码质量没通过，流水线都失败了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/project_three_branches_pipeline_failed.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/project_three_branches_pipeline_failed.png&#34;
 	
 	
 	
@@ -8874,7 +8874,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;p&gt;现在朝&lt;code&gt;.gitlab-ci.yml&lt;/code&gt;文件中增加&lt;code&gt;only&lt;/code&gt;和&lt;code&gt;except&lt;/code&gt;策略。&lt;/p&gt;
 &lt;h5 id=&#34;匹配issue-开头的分支&#34;&gt;匹配&lt;code&gt;issue-&lt;/code&gt;开头的分支
 &lt;/h5&gt;&lt;p&gt;创建仅匹配&lt;code&gt;issue-&lt;/code&gt;开头的分支：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/only_match_startwith_issue.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/only_match_startwith_issue.png&#34;
 	
 	
 	
@@ -8885,7 +8885,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以发现master主干没有执行&lt;code&gt;find Bugs&lt;/code&gt;作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/master_no_find_bugs.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/master_no_find_bugs.png&#34;
 	
 	
 	
@@ -9131,7 +9131,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_only_except_pipeline_22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_only_except_pipeline_22.png&#34;
 	
 	
 	
@@ -9437,7 +9437,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;正如我们预期的一样，&lt;code&gt;issue-pylint&lt;/code&gt;和&lt;code&gt;Issue-flake8&lt;/code&gt;分支会触发流水线执行，&lt;code&gt;master&lt;/code&gt;主干和&lt;code&gt;severe-issues&lt;/code&gt;分支不会触发流水线执行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_only_except_pipeline_23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_only_except_pipeline_23.png&#34;
 	
 	
 	
@@ -9447,7 +9447,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_only_except_pipeline_24.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/gitlab_only_except_pipeline_24.png&#34;
 	
 	
 	
@@ -9762,7 +9762,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;正如我们预期的一样，&lt;code&gt;issue-pylint&lt;/code&gt;、&lt;code&gt;Issue-flake8&lt;/code&gt;和&lt;code&gt;severe-issues&lt;/code&gt;分支会触发流水线执行，&lt;code&gt;master&lt;/code&gt;主干不会触发流水线执行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_only_except_pipeline_25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_only_except_pipeline_25.png&#34;
 	
 	
 	
@@ -9772,7 +9772,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_only_except_pipeline_26.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/gitlab_only_except_pipeline_26.png&#34;
 	
 	
 	
@@ -9782,7 +9782,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_only_except_pipeline_27.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/gitlab_only_except_pipeline_27.png&#34;
 	
 	
 	
@@ -9962,7 +9962,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h5 id=&#34;仅当tag标签提交时才触发流水线执行&#34;&gt;仅当tag标签提交时，才触发流水线执行
 &lt;/h5&gt;&lt;p&gt;使用标签，可以标记提交历史上的特定点为重要提交，可以标记重要版本，如下图，是GitLab官方的Tag标签列表：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_office_tags_list.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_office_tags_list.png&#34;
 	
 	
 	
@@ -10300,7 +10300,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;查看是否触发流水线，可以发现没有触发流水线执行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_submit_tags_no_trigger_pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_submit_tags_no_trigger_pipeline.png&#34;
 	
 	
 	
@@ -10342,7 +10342,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以发现&lt;code&gt;bluelog&lt;/code&gt;已经生成了一个tag版本：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_tag_v0.1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_tag_v0.1.png&#34;
 	
 	
 	
@@ -10353,7 +10353,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在流水线列表中，也可以看#31号流水线被触发了，并且标签是v0.1:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_pipeline_31_with_tag_v0.1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_pipeline_31_with_tag_v0.1.png&#34;
 	
 	
 	
@@ -10365,7 +10365,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;使用流水线触发器触发流水线执行&#34;&gt;使用流水线触发器触发流水线执行
 &lt;/h5&gt;&lt;p&gt;我们给 &lt;code&gt;bluelog&lt;/code&gt;项目创建一个流水线触发器(&lt;code&gt;Trigger&lt;/code&gt;)，在项目的&lt;code&gt;设置&lt;/code&gt;&amp;ndash;&amp;gt;&lt;code&gt;CI/CD&lt;/code&gt;&amp;ndash;&amp;gt;&lt;code&gt;流水线触发器&lt;/code&gt;处增加流水线触发器：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_add_pipeline_trigger_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_add_pipeline_trigger_page.png&#34;
 	
 	
 	
@@ -10376,7 +10376,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在&amp;quot;触发器描述&amp;quot;处填写&amp;quot;bluelog trigger&amp;quot;，然后点击&amp;quot;增加触发器&amp;quot;按钮，则会新增一个触发器:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_trigger.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_trigger.png&#34;
 	
 	
 	
@@ -10655,7 +10655,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;检查发现并没有触发流水线的执行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_submit_triggers_no_trigger_pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_submit_triggers_no_trigger_pipeline.png&#34;
 	
 	
 	
@@ -10676,7 +10676,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;:33,&lt;span class=&#34;s2&#34;&gt;&amp;#34;sha&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;57f64a35cad6d069dc62ddc93f0747296383826e&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;ref&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;master&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;status&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;pending&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;web_url&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;http://192.168.56.14/higit/bluelog/pipelines/33&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;before_sha&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;0000000000000000000000000000000000000000&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;tag&amp;#34;&lt;/span&gt;:false,&lt;span class=&#34;s2&#34;&gt;&amp;#34;yaml_errors&amp;#34;&lt;/span&gt;:null,&lt;span class=&#34;s2&#34;&gt;&amp;#34;user&amp;#34;&lt;/span&gt;:&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;:2,&lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;梅朝辉&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;meizhaohui&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;state&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;active&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;avatar_url&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;http://192.168.56.14/uploads/-/system/user/avatar/2/avatar.png&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;web_url&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;http://192.168.56.14/meizhaohui&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;created_at&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;2019-07-06T22:08:52.761+08:00&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;updated_at&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;2019-07-06T22:08:53.026+08:00&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;started_at&amp;#34;&lt;/span&gt;:null,&lt;span class=&#34;s2&#34;&gt;&amp;#34;finished_at&amp;#34;&lt;/span&gt;:null,&lt;span class=&#34;s2&#34;&gt;&amp;#34;committed_at&amp;#34;&lt;/span&gt;:null,&lt;span class=&#34;s2&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;:null,&lt;span class=&#34;s2&#34;&gt;&amp;#34;coverage&amp;#34;&lt;/span&gt;:null,&lt;span class=&#34;s2&#34;&gt;&amp;#34;detailed_status&amp;#34;&lt;/span&gt;:&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;icon&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;status_pending&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;等待中&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;label&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;等待中&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;group&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;pending&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;tooltip&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;等待中&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;has_details&amp;#34;&lt;/span&gt;:false,&lt;span class=&#34;s2&#34;&gt;&amp;#34;details_path&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;/higit/bluelog/pipelines/33&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;illustration&amp;#34;&lt;/span&gt;:null,&lt;span class=&#34;s2&#34;&gt;&amp;#34;favicon&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;/assets/ci_favicons/favicon_status_pending-5bdf338420e5221ca24353b6bff1c9367189588750632e9a871b7af09ff6a2ae.png&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/use_curl_post_gitlab_pipeline_trigger.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/use_curl_post_gitlab_pipeline_trigger.png&#34;
 	
 	
 	
@@ -10687,7 +10687,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以发现流水线已经被执行，#33号流水线执行了&lt;code&gt;build1&lt;/code&gt;和&lt;code&gt;find Bugs&lt;/code&gt;作业，其他作业并未执行，与我们预期的相同：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/use_curl_post_gitlab_pipeline_trigger_33.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/use_curl_post_gitlab_pipeline_trigger_33.png&#34;
 	
 	
 	
@@ -11830,7 +11830,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;查看各阶段的输出内容。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_variables_job_build1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_variables_job_build1.png&#34;
 	
 	
 	
@@ -11847,7 +11847,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;li&gt;作业中定义的&lt;code&gt;SQLALCHEMY_ECHO: &amp;quot;False&amp;quot;&lt;/code&gt;将全局的&lt;code&gt;SQLALCHEMY_ECHO: &amp;quot;True&amp;quot;&lt;/code&gt;覆盖，最后显示的是&amp;quot;False&amp;quot;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;再看&lt;code&gt;find Bugs&lt;/code&gt;作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_variables_job_find_Bugs.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_variables_job_find_Bugs.png&#34;
 	
 	
 	
@@ -11865,7 +11865,7 @@ gitlab_cicd-pipeline_detail.png)&lt;/p&gt;
 &lt;li&gt;可以使用赋值语句对全局变量或局部变量进行重新赋值。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;再看&lt;code&gt;test1&lt;/code&gt;作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_variables_job_test1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_variables_job_test1.png&#34;
 	
 	
 	
@@ -12296,7 +12296,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;提交后，流水线触发了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_pipeline.png&#34;
 	
 	
 	
@@ -12308,7 +12308,7 @@ Predefined environment variables.&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;我们检查一下每个作业的log日志信息：&lt;/p&gt;
 &lt;p&gt;先看build1作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_pipeline_build1_job_top.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_pipeline_build1_job_top.png&#34;
 	
 	
 	
@@ -12318,7 +12318,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_pipeline_build1_job_bottom.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_pipeline_build1_job_bottom.png&#34;
 	
 	
 	
@@ -12330,7 +12330,7 @@ Predefined environment variables.&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到默认情况下，会使用&lt;code&gt;git fetch&lt;/code&gt;方式来获取最新的修改，并且&lt;code&gt;echo &amp;quot;GIT_STRATEGY:${GIT_STRATEGY}&amp;quot;&lt;/code&gt;打印&lt;code&gt;${GIT_STRATEGY}&lt;/code&gt;变量为空，也就是默认情况下GitLab并不会设置&lt;code&gt;GIT_STRATEGY&lt;/code&gt;变量。&lt;/p&gt;
 &lt;p&gt;再看一下find Bugs作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_find_Bugs.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_find_Bugs.png&#34;
 	
 	
 	
@@ -12342,7 +12342,7 @@ Predefined environment variables.&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;此处也是直接使用现有项目空间里面的本地仓库，使用&lt;code&gt;git fetch&lt;/code&gt;方式来获取最新的修改，由于在作业级中设置了&lt;code&gt;GIT_STRATEGY&lt;/code&gt;变量，最后打印出打印&lt;code&gt;${GIT_STRATEGY}&lt;/code&gt;变量的值为&lt;code&gt;fetch&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;再看一下test1作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_test1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_test1.png&#34;
 	
 	
 	
@@ -12354,7 +12354,7 @@ Predefined environment variables.&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;因为设置了&lt;code&gt;GIT_STRATEGY: &amp;quot;clone&amp;quot;&lt;/code&gt;，这个时候GitLab Runner会从头开始克隆远程仓库，最后打印出打印&lt;code&gt;${GIT_STRATEGY}&lt;/code&gt;变量的值为&lt;code&gt;clone&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;再看一下test2作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_test2.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_test2.png&#34;
 	
 	
 	
@@ -12509,7 +12509,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;提交后，流水线触发了，但有build1作业后面的作业需要手动执行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_manual_pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_manual_pipeline.png&#34;
 	
 	
 	
@@ -12520,7 +12520,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们检查build1作业：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_manual_pipeline_build1_job_bottom.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_manual_pipeline_build1_job_bottom.png&#34;
 	
 	
 	
@@ -12532,7 +12532,7 @@ Predefined environment variables.&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;可以获取到整个仓库的大小，也可以读取到仓库中&amp;quot;README.md&amp;quot;文件。&lt;/p&gt;
 &lt;p&gt;假设我们此时在服务器端将&lt;code&gt;/root/gitlab-runner/builds/1aXYZ5H9/0/higit/bluelog&lt;/code&gt;和&lt;code&gt;/root/gitlab-runner/builds/1aXYZ5H9/0/higit/bluelog.tmp&lt;/code&gt;目录删除，并触发find Bugs作业运行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_manual_pipeline_delete_project_workspace.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_manual_pipeline_delete_project_workspace.png&#34;
 	
 	
 	
@@ -12543,7 +12543,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;因为设置了&lt;code&gt;GIT_STRATEGY: &amp;quot;fetch&amp;quot;&lt;/code&gt;，但因为我把项目空间里面的本地仓库内容都删除了，这个时候GitLab Runner发现本地并没有远程仓库的文件，只能从头开始克隆远程仓库，最后打印出打印&lt;code&gt;${GIT_STRATEGY}&lt;/code&gt;变量的值为&lt;code&gt;fetch&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_manual_pipeline_find_bugs_job.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_manual_pipeline_find_bugs_job.png&#34;
 	
 	
 	
@@ -12554,7 +12554,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;再触发test1作业运行，还是从头开始下载远程仓库：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_manual_pipeline_test1_job.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_manual_pipeline_test1_job.png&#34;
 	
 	
 	
@@ -12565,7 +12565,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;关键一步，我们再次删除工作空间中的&lt;code&gt;/root/gitlab-runner/builds/1aXYZ5H9/0/higit/bluelog&lt;/code&gt;和&lt;code&gt;/root/gitlab-runner/builds/1aXYZ5H9/0/higit/bluelog.tmp&lt;/code&gt;目录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_manual_pipeline_delete_project_workspace_again.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_manual_pipeline_delete_project_workspace_again.png&#34;
 	
 	
 	
@@ -12576,7 +12576,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;再触发test2作业运行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_strategy_manual_pipeline_test2_job_failed.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_strategy_manual_pipeline_test2_job_failed.png&#34;
 	
 	
 	
@@ -12593,7 +12593,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;li&gt;流水线的Git策略默认是&lt;code&gt;git fetch&lt;/code&gt;模式。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;流水线的默认Git策略，可以在项目的流水线通用设置中查看：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_default_git_strategy.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_default_git_strategy.png&#34;
 	
 	
 	
@@ -12943,7 +12943,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;提交修改构建目录后，流水线执行失败：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_custom_build_directory_failure.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_custom_build_directory_failure.png&#34;
 	
 	
 	
@@ -12954,7 +12954,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;查看作业详情：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_custom_build_directory_failure_job_details.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_custom_build_directory_failure_job_details.png&#34;
 	
 	
 	
@@ -13082,7 +13082,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;查看&amp;quot;build1&amp;quot;和&amp;quot;find Bugs&amp;quot;作业的详情：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_custom_build_directory_success_build1_job_details.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_custom_build_directory_success_build1_job_details.png&#34;
 	
 	
 	
@@ -13093,7 +13093,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到&amp;quot;build1&amp;quot;作业使用作业级定义的&lt;code&gt;GIT_CLONE_PATH: $CI_BUILDS_DIR/sub_folder&lt;/code&gt;，仓库会被下载到&lt;code&gt;/root/gitlab-runner/builds/sub_folder&lt;/code&gt;目录下。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_custom_build_directory_success_find_bugs_job_details.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_custom_build_directory_success_find_bugs_job_details.png&#34;
 	
 	
 	
@@ -13406,7 +13406,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;li&gt;或者，在&lt;code&gt;git push&lt;/code&gt;时添加推送选项，如&lt;code&gt;git push -o ci.skip&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我们第一次修改配置文件，commit日志为&amp;quot;移除自定义构建目录，测试忽略ci构建 ci skip&amp;quot;，包含有&lt;code&gt;ci skip&lt;/code&gt;关键字，但是没有左右中括号，进行提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_commit_with_ci_skip.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_commit_with_ci_skip.png&#34;
 	
 	
 	
@@ -13417,7 +13417,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;但是发现流水线被触发了，正常运行了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_commit_with_ci_skip_trigger_success_pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_commit_with_ci_skip_trigger_success_pipeline.png&#34;
 	
 	
 	
@@ -13428,7 +13428,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们第二次修改配置文件，commit日志为&amp;quot;移除自定义构建目录，测试忽略ci构建 [CI Skip]&amp;quot;，包含有&lt;code&gt;[CI Skip]&lt;/code&gt;关键字，进行提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_commit_with_CI_Skip_Capitalization.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_commit_with_CI_Skip_Capitalization.png&#34;
 	
 	
 	
@@ -13439,7 +13439,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以发现流水线没有被触发，但是提交已经创建成功了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_commit_with_ci_skip_trigger_skipped_pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_commit_with_ci_skip_trigger_skipped_pipeline.png&#34;
 	
 	
 	
@@ -13449,7 +13449,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_commit_with_ci_skip_trigger_skipped_pipeline1.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_commit_with_ci_skip_trigger_skipped_pipeline1.png&#34;
 	
 	
 	
@@ -13460,7 +13460,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们第三次修改配置文件，commit日志为&amp;quot;测试使用git push添加推送选项&amp;quot;，进行提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_commit_with_git_push_ci_skip_option.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_commit_with_git_push_ci_skip_option.png&#34;
 	
 	
 	
@@ -13471,7 +13471,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以发现流水线没有被触发，但是提交已经创建成功了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_git_commit_with_git_push_ci_skip_option_trigger_skipped_pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_git_commit_with_git_push_ci_skip_option_trigger_skipped_pipeline.png&#34;
 	
 	
 	
@@ -13543,11 +13543,11 @@ Predefined environment variables.&lt;/p&gt;
         </item>
         <item>
         <title>GitLab的汉化与CI持续集成gitlab-runner的配置</title>
-        <link>https://meizhaohui.github.io/devops/gitlab/x_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner/</link>
+        <link>https://hellogitlab.com/devops/gitlab/x_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/gitlab/x_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post GitLab的汉化与CI持续集成gitlab-runner的配置" /&gt;&lt;h2 id=&#34;gitlab的汉化与ci持续集成gitlab-runner的配置&#34;&gt;GitLab的汉化与CI持续集成gitlab-runner的配置
+        <guid>https://hellogitlab.com/devops/gitlab/x_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post GitLab的汉化与CI持续集成gitlab-runner的配置" /&gt;&lt;h2 id=&#34;gitlab的汉化与ci持续集成gitlab-runner的配置&#34;&gt;GitLab的汉化与CI持续集成gitlab-runner的配置
 &lt;/h2&gt;&lt;p&gt;本文讲解在&lt;a class=&#34;link&#34; href=&#34;./X_centos7_install_gitlab_with_external_nginx.md&#34; &gt;CentOS7安装GitLab(使用外部Nginx配置)&lt;/a&gt; 的基础上，对GitLab进行汉化，并配置CI持续集成工具&lt;code&gt;gitlab-runner&lt;/code&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;实验环境&#34;&gt;实验环境
 &lt;/h3&gt;&lt;ul&gt;
@@ -13637,7 +13637,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Nginx服务正常运行，访问GitLab服务 http://192.168.56.14 ，发现可以正常访问：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_login_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_login_page.png&#34;
 	
 	
 	
@@ -13684,7 +13684,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;查看GitLab中文社区官方仓库 &lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/xhang/gitlab&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://gitlab.com/xhang/gitlab&lt;/a&gt; ， 检查对应的汉化包版本信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_stable_zh.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_stable_zh.png&#34;
 	
 	
 	
@@ -13897,7 +13897,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;访问GitLab服务 http://192.168.56.14 ，发现可以正常访问，并显示中文的页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_chinese_login_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_chinese_login_page.png&#34;
 	
 	
 	
@@ -13908,7 +13908,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击右上角的个人图标，在弹出的下拉选项中点击 &lt;code&gt;Settings&lt;/code&gt;进入到 &lt;code&gt;Settings&lt;/code&gt;设置界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_setting.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_setting.png&#34;
 	
 	
 	
@@ -13919,7 +13919,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击左侧的 &lt;code&gt;preferences&lt;/code&gt;标签页，进入到个人偏好设置界面，下拉到&lt;code&gt;Localization&lt;/code&gt;本地化的位置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_preferences.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_preferences.png&#34;
 	
 	
 	
@@ -13930,7 +13930,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击&lt;code&gt;Language&lt;/code&gt;语言下拉框选择 &amp;ldquo;简体中文&amp;rdquo;，并将周一设置为每周的第一天，并点击 &lt;code&gt;Save changes&lt;/code&gt;保存修改：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_change_language.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_change_language.png&#34;
 	
 	
 	
@@ -13941,7 +13941,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;保存后，按F5刷新一下页面，可以看到页面显示已经变成中文了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_preferences_chinese.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_preferences_chinese.png&#34;
 	
 	
 	
@@ -14020,7 +14020,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;将 &lt;code&gt;/var/lib/nginx/&lt;/code&gt; 和 &lt;code&gt;/var/lib/nginx/tmp/&lt;/code&gt;目录增加&lt;code&gt;rx&lt;/code&gt;权限，再上传图像能够正常修改成功！可以看看很酷的头像：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_admin_icon.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_admin_icon.png&#34;
 	
 	
 	
@@ -14137,7 +14137,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;上传完成后，查看 &lt;code&gt;bluelog&lt;/code&gt; 项目：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_bluelog_project.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_bluelog_project.png&#34;
 	
 	
 	
@@ -14148,7 +14148,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们点击&amp;quot;配置CD/CD&amp;quot;按钮：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_configure_ci_cd.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_configure_ci_cd.png&#34;
 	
 	
 	
@@ -14159,7 +14159,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们点击&amp;quot;选择一个GitLab CI Yaml模板&amp;quot;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_template.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_template.png&#34;
 	
 	
 	
@@ -14170,7 +14170,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;选择&lt;code&gt;Bash&lt;/code&gt;模板：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_bash_template.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_bash_template.png&#34;
 	
 	
 	
@@ -14181,7 +14181,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;会自动加入Bash模板的内容，我们点击&amp;quot;提交修改&amp;quot;按钮进行提交，并检查CI/CD中的流水线工程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd-pipeline.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd-pipeline.png&#34;
 	
 	
 	
@@ -14192,7 +14192,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;发现流水线任务的状态是 &lt;code&gt;&amp;quot;卡住(stuck)&amp;quot;&lt;/code&gt; &lt;code&gt;&amp;quot;等待中&amp;quot;&lt;/code&gt;，说明我们的流水线配置还不正确，没能正确的运行。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_job_stuck.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_job_stuck.png&#34;
 	
 	
 	
@@ -14203,7 +14203,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;提示 &lt;code&gt;作业卡住了，请检查运行器&lt;/code&gt;，我们查看具体哪个JOB卡住了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_build_stuck.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_build_stuck.png&#34;
 	
 	
 	
@@ -14214,7 +14214,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们查看build这个作业的详情页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_build_stuck_detail.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_build_stuck_detail.png&#34;
 	
 	
 	
@@ -14225,7 +14225,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到提示 &lt;code&gt;由于您没有任何可以运行此作业的活跃运行器，因此作业卡住了。转到 Runner页面&lt;/code&gt;，说明我们没有配置运行器，我们点击&amp;quot;Runner页面&amp;quot;跳转到运行器配置页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_gitlab_runner_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_gitlab_runner_page.png&#34;
 	
 	
 	
@@ -15188,7 +15188,7 @@ Predefined environment variables.&lt;/p&gt;
 交互式注册、非交互式注册选择一种执行即可，不用重复执行！！！
 :::&lt;/p&gt;
 &lt;p&gt;注册成功后，查看WEB界面中已经激活的运行器：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_active_runner.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_active_runner.png&#34;
 	
 	
 	
@@ -15199,7 +15199,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击&amp;quot;1aXYZ5H9&amp;quot;，查看运行器的详情：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_active_runner_detail.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_active_runner_detail.png&#34;
 	
 	
 	
@@ -16420,7 +16420,7 @@ Predefined environment variables.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;提交后，查看&lt;code&gt;bluelog&lt;/code&gt;项目的流水线，发现状态是&amp;quot;已通过&amp;quot;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_pipeline_success.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_pipeline_success.png&#34;
 	
 	
 	
@@ -16431,7 +16431,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;查看4#流水线的详情：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd-pipeline_detail.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd-pipeline_detail.png&#34;
 	
 	
 	
@@ -16443,7 +16443,7 @@ Predefined environment variables.&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;可以发现其&lt;code&gt;build&lt;/code&gt;、&lt;code&gt;Test&lt;/code&gt;、&lt;code&gt;Deploy&lt;/code&gt;三个阶段的任务都执行成功！&lt;/p&gt;
 &lt;p&gt;查看作业详情，可以看到控制台输出的内容，就是我们在&lt;code&gt;.gitlab-ci.yml&lt;/code&gt;中定义的一些过程的输出:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd-pipeline_console_output.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd-pipeline_console_output.png&#34;
 	
 	
 	
@@ -16454,7 +16454,7 @@ Predefined environment variables.&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;后台控制台输出以及工作目录中的内容如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/gitlab_cicd_gitlab_runner_console.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/gitlab_cicd_gitlab_runner_console.png&#34;
 	
 	
 	

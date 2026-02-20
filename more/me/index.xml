@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Me on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/more/me/</link>
+        <link>https://hellogitlab.com/more/me/</link>
         <description>Recent content in Me on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/more/me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/more/me/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于我</title>
-        <link>https://meizhaohui.github.io/more/me/about/</link>
+        <link>https://hellogitlab.com/more/me/about/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/more/me/about/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/hellogitlab_logo.png" alt="Featured image of post 关于我" /&gt;&lt;h2 id=&#34;关于我&#34;&gt;关于我
+        <guid>https://hellogitlab.com/more/me/about/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/hellogitlab_logo.png" alt="Featured image of post 关于我" /&gt;&lt;h2 id=&#34;关于我&#34;&gt;关于我
 &lt;/h2&gt;&lt;p&gt;2015年开始自学《鸟哥的Linux私房菜》，从此开始了程序员生活😀。&lt;/p&gt;
 &lt;p&gt;工作期间，主要使用&lt;code&gt;Linux Shell&lt;/code&gt;、&lt;code&gt;Python&lt;/code&gt;、&lt;code&gt;Windows批处理脚本&lt;/code&gt;处理工作中相关的事情，使用&lt;code&gt;Jenkins&lt;/code&gt;、&lt;code&gt;GitLab&lt;/code&gt;构建持续集成流水线，自己也使用&lt;code&gt;Docker&lt;/code&gt;部署一些应用。&lt;/p&gt;
 &lt;p&gt;每天进步一点，快乐编程，快乐生活！加油！Fighting💪💪&lt;/p&gt;

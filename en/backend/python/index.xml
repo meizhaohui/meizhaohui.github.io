@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Python on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/backend/python/</link>
+        <link>https://hellogitlab.com/en/backend/python/</link>
         <description>Recent content in Python on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/backend/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/backend/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Flask Web Framework Introduction</title>
-        <link>https://meizhaohui.github.io/en/backend/python/flask-intro/</link>
+        <link>https://hellogitlab.com/en/backend/python/flask-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/python/flask-intro/</guid>
+        <guid>https://hellogitlab.com/en/backend/python/flask-intro/</guid>
         <description>&lt;h2 id=&#34;flask-overview&#34;&gt;Flask Overview
 &lt;/h2&gt;&lt;p&gt;Flask is a lightweight Python web framework, perfect for rapid web application development.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;Quick Start

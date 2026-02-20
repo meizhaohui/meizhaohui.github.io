@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>React on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/tags/react/</link>
+        <link>https://hellogitlab.com/en/tags/react/</link>
         <description>Recent content in React on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/tags/react/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/tags/react/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>React Hooks Guide</title>
-        <link>https://meizhaohui.github.io/en/frontend/react-hooks/</link>
+        <link>https://hellogitlab.com/en/frontend/react-hooks/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/frontend/react-hooks/</guid>
+        <guid>https://hellogitlab.com/en/frontend/react-hooks/</guid>
         <description>&lt;h2 id=&#34;usestate-hook&#34;&gt;useState Hook
 &lt;/h2&gt;&lt;p&gt;useState allows functional components to have state.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Java on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/java/</link>
+        <link>https://hellogitlab.com/tags/java/</link>
         <description>Recent content in Java on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Spring Boot快速入门</title>
-        <link>https://meizhaohui.github.io/backend/java/spring-boot-intro/</link>
+        <link>https://hellogitlab.com/backend/java/spring-boot-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/java/spring-boot-intro/</guid>
+        <guid>https://hellogitlab.com/backend/java/spring-boot-intro/</guid>
         <description>&lt;h2 id=&#34;spring-boot简介&#34;&gt;Spring Boot简介
 &lt;/h2&gt;&lt;p&gt;Spring Boot简化了Spring应用的开发，提供了开箱即用的配置。&lt;/p&gt;
 &lt;h2 id=&#34;创建rest-api&#34;&gt;创建REST API
@@ -46,20 +46,20 @@
         </item>
         <item>
         <title>Maven打包</title>
-        <link>https://meizhaohui.github.io/backend/java/maven/</link>
+        <link>https://hellogitlab.com/backend/java/maven/</link>
         <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/java/maven/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Maven打包" /&gt;&lt;h2 id=&#34;maven打包&#34;&gt;Maven打包
+        <guid>https://hellogitlab.com/backend/java/maven/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Maven打包" /&gt;&lt;h2 id=&#34;maven打包&#34;&gt;Maven打包
 &lt;/h2&gt;</description>
         </item>
         <item>
         <title>Java开发环境配置</title>
-        <link>https://meizhaohui.github.io/backend/java/basic/</link>
+        <link>https://hellogitlab.com/backend/java/basic/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/java/basic/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Java开发环境配置" /&gt;&lt;h2 id=&#34;java开发环境配置&#34;&gt;Java开发环境配置
+        <guid>https://hellogitlab.com/backend/java/basic/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Java开发环境配置" /&gt;&lt;h2 id=&#34;java开发环境配置&#34;&gt;Java开发环境配置
 &lt;/h2&gt;&lt;h3 id=&#34;1-java编程环境配置&#34;&gt;1. java编程环境配置
 &lt;/h3&gt;&lt;h4 id=&#34;11-windows-jdk环境安装配置&#34;&gt;1.1 windows jdk环境安装配置
 &lt;/h4&gt;&lt;ul&gt;
@@ -134,7 +134,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;注意，在&lt;code&gt;editor.fontSize&lt;/code&gt;配置下面增加以上jdk1.8相关的配置。&lt;code&gt;path&lt;/code&gt;路径里面路径分隔符需要用两个&lt;code&gt;\&lt;/code&gt;。即&lt;code&gt;\\&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-58-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-58-31.png&#34;
 	
 	
 	
@@ -144,7 +144,7 @@
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;123-验证环境是否成功&#34;&gt;1.2.3 验证环境是否成功
 &lt;/h5&gt;&lt;p&gt;使用快捷键Ctrl+Shift+P， 然后输入&lt;strong&gt;java:create java Project&lt;/strong&gt;  ，不用全部输入就会显示出来：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-21-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-21-38.png&#34;
 	
 	
 	
@@ -153,7 +153,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后选择&lt;code&gt;no build tools&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-23-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-23-09.png&#34;
 	
 	
 	
@@ -162,7 +162,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在弹出的对话框中选择一个用来存放Java项目的目录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-22-29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-22-29.png&#34;
 	
 	
 	
@@ -171,7 +171,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;并点击【Select the project location】,在输入框内输入项目名称，&lt;strong&gt;项目名称最好不要有中文或者特殊符号&lt;/strong&gt; ，如我输入【demo】:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-23-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-23-59.png&#34;
 	
 	
 	
@@ -180,7 +180,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;输入项目名称后，直接按Enter回车，此时会打开一个新的VSCODE窗口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-24-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-24-31.png&#34;
 	
 	
 	
@@ -189,13 +189,13 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后选择&lt;code&gt;no build tools&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-48-24.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-48-24.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在弹出的对话框中选择一个用来存放Java项目的目录：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-49-26.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-49-26.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;并点击【Select the project location】,在输入框内输入项目名称，&lt;strong&gt;项目名称最好不要有中文或者特殊符号&lt;/strong&gt; ，如我输入【demo】:&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-52-22.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-52-22.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;输入项目名称后，直接按Enter回车，此时会打开一个新的VSCODE窗口：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-53-31.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-53-31.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;此时，vsvode自动给创建了项目框架， src下面的java文件就是java代码源文件：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -215,7 +215,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;注意&lt;code&gt;Run|Debug&lt;/code&gt;并不是代码，而是插件的功能按钮，点击它们就可以运行代码。&lt;/p&gt;
 &lt;p&gt;我们直接点击&lt;code&gt;Run|Debug&lt;/code&gt;就可以运行代码，以下是点击&lt;code&gt;Run&lt;/code&gt;运行后的结果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-25-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-25-54.png&#34;
 	
 	
 	
@@ -229,7 +229,7 @@
 &lt;/h5&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;maven 3.6.0&lt;/a&gt; 可以下载需要用的maven安装包。&lt;/p&gt;
 &lt;p&gt;下载后，将压缩包解压到&lt;code&gt;D:\ProgramFiles\Java&lt;/code&gt; 目录，此时Maven目录文件如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-26-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-26-49.png&#34;
 	
 	
 	
@@ -266,7 +266,7 @@
 &lt;ul&gt;
 &lt;li&gt;Maven for Java&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-34-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-34-45.png&#34;
 	
 	
 	
@@ -290,7 +290,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;maven.settingsFile&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\\ProgramFiles\\Java\\apache-maven-3.6.0\\conf\\settings.xml&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-27-50.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-27-50.png&#34;
 	
 	
 	
@@ -322,7 +322,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-29-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-29-48.png&#34;
 	
 	
 	
@@ -333,7 +333,7 @@
 &lt;p&gt;直接在配置文件增加以上几行就行！&lt;/p&gt;
 &lt;h5 id=&#34;135-创建maven项目&#34;&gt;1.3.5 创建maven项目
 &lt;/h5&gt;&lt;p&gt;vscode空白处点击右键选择【从maven原型创建新项目】 ：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-35-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-35-24.png&#34;
 	
 	
 	
@@ -342,7 +342,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;创建项目窗口中可以选择快速创建项目【maven-archetype-quickstart】:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-35-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-35-57.png&#34;
 	
 	
 	
@@ -351,7 +351,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;选择版本 ，选择1.1：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-36-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-36-24.png&#34;
 	
 	
 	
@@ -360,7 +360,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;填写项目的组织，一般是公司域名的倒写，因为我是要测试&lt;code&gt;nexusapi.com&lt;/code&gt; api接口的，所以我们填写&lt;code&gt;com.nexusapi&lt;/code&gt; :&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-37-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-37-12.png&#34;
 	
 	
 	
@@ -369,7 +369,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后，按Enter回车，在新的输入框输入项目名称，如我输入【mavendemo】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-37-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-37-35.png&#34;
 	
 	
 	
@@ -378,7 +378,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后，按Enter回车,此时让选择项目存放的目录，我们仍然放在之前的java目录下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-38-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-38-12.png&#34;
 	
 	
 	
@@ -387,7 +387,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;并点击【Select Destination Folder】,此时vscode就会自动去下载相关依赖包：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-38-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-38-31.png&#34;
 	
 	
 	
@@ -396,7 +396,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;很快就下载完成了，让输入一些相关的信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-39-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-39-02.png&#34;
 	
 	
 	
@@ -405,10 +405,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们直接回车，使用默认的版本信息【1.0-SNAPSHOT】：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_00-22-57.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_00-22-57.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Maven 将要求确认项目细节，按 &lt;strong&gt;Enter&lt;/strong&gt; 或按 Y 确认。&lt;/p&gt;
 &lt;p&gt;此时，可以看到vscode开始创建项目：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-39-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-39-37.png&#34;
 	
 	
 	
@@ -417,7 +417,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;创建成功后，按任意键会关闭该终端。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-40-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-40-22.png&#34;
 	
 	
 	
@@ -426,7 +426,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;也可以点击右侧的【Add as Workplace Folder】，即添加为工作空间文件夹，点击该处后，vscode上面看到如下视图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-42-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-42-46.png&#34;
 	
 	
 	
@@ -436,7 +436,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，vscode已经打开了刚才创建的mavendemo项目，相关文件已经创建成功了。&lt;/p&gt;
 &lt;p&gt;如果有新的依赖包需要安装，可以左下角的【MAVEN】&amp;ndash;【Run Maven Commands】选项相应命令执行即可：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-44-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-44-16.png&#34;
 	
 	
 	
@@ -445,7 +445,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;如果没有新的依赖包需要安装，则可以直接点【运行和调试】的图标，或者按快捷键【Ctrl+Shift+D】 ，然后点击【运行和调试】按钮，vscode则会运行Maven项目代码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-45-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-45-40.png&#34;
 	
 	
 	

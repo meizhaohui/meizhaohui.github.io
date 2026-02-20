@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Supervisor on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/supervisor/</link>
+        <link>https://hellogitlab.com/tags/supervisor/</link>
         <description>Recent content in Supervisor on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/supervisor/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/supervisor/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>进程管理工具之Supervisor</title>
-        <link>https://meizhaohui.github.io/devops/supervisor/supervisor/</link>
+        <link>https://hellogitlab.com/devops/supervisor/supervisor/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/supervisor/supervisor/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/Supervisor.png" alt="Featured image of post 进程管理工具之Supervisor" /&gt;&lt;h2 id=&#34;进程管理工具之supervisor&#34;&gt;进程管理工具之Supervisor
+        <guid>https://hellogitlab.com/devops/supervisor/supervisor/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/Supervisor.png" alt="Featured image of post 进程管理工具之Supervisor" /&gt;&lt;h2 id=&#34;进程管理工具之supervisor&#34;&gt;进程管理工具之Supervisor
 &lt;/h2&gt;&lt;p&gt;官方文档的项目描述：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems.&lt;/p&gt;
@@ -3681,7 +3681,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后使用vim打开&lt;code&gt;app.html&lt;/code&gt;文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-22_06-39-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-22_06-39-49.png&#34;
 	
 	
 	
@@ -3753,7 +3753,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;访问：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-24_06-52-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-24_06-52-00.png&#34;
 	
 	
 	
@@ -3762,7 +3762,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;输入用户名和密码后，就可以登陆进Web页面了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-24_06-54-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-24_06-54-07.png&#34;
 	
 	
 	
@@ -3772,7 +3772,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，页面上面已经显示了正在运行的服务。&lt;/p&gt;
 &lt;p&gt;尝试点击Stop停止按钮，停止后的状态如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-24_06-56-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-24_06-56-46.png&#34;
 	
 	
 	
@@ -5615,7 +5615,7 @@
 &lt;/div&gt;&lt;p&gt;重启后，的确可以看到进程的UID已经修改为&lt;code&gt;nobody&lt;/code&gt;了。&lt;/p&gt;
 &lt;p&gt;此时，打开页面 &lt;a class=&#34;link&#34; href=&#34;http://master.hellogitlab.com:8765/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://master.hellogitlab.com:8765/&lt;/a&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-05_23-21-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-05_23-21-54.png&#34;
 	
 	
 	
@@ -5706,7 +5706,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时打开页面，效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-05_23-29-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-05_23-29-13.png&#34;
 	
 	
 	
@@ -5841,7 +5841,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，默认工作目录是&lt;code&gt;/&lt;/code&gt;根目录。&lt;/p&gt;
 &lt;p&gt;当停止应用时，日志不再输出：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-07_21-00-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-07_21-00-31.png&#34;
 	
 	
 	
@@ -6459,7 +6459,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;访问 &lt;a class=&#34;link&#34; href=&#34;http://master.hellogitlab.com:8765/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://master.hellogitlab.com:8765/&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-08_00-16-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-08_00-16-57.png&#34;
 	
 	
 	
@@ -6469,7 +6469,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;访问 &lt;a class=&#34;link&#34; href=&#34;http://master.hellogitlab.com:8765/env&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://master.hellogitlab.com:8765/env&lt;/a&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/image-20220908001644194.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/image-20220908001644194.png&#34;
 	
 	
 	
@@ -6688,7 +6688,7 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;52-进程状态&#34;&gt;5.2 进程状态
 &lt;/h4&gt;&lt;p&gt;直接看官方的状态图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/subprocess-transitions.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/subprocess-transitions.png&#34;
 	
 	
 	

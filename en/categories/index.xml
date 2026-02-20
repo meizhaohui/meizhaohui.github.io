@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/categories/</link>
+        <link>https://hellogitlab.com/en/categories/</link>
         <description>Recent content in Categories on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Backend</title>
-        <link>https://meizhaohui.github.io/en/categories/backend/</link>
+        <link>https://hellogitlab.com/en/categories/backend/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/backend/</guid>
+        <guid>https://hellogitlab.com/en/categories/backend/</guid>
         <description></description>
         </item>
         <item>
         <title>Cicd</title>
-        <link>https://meizhaohui.github.io/en/categories/cicd/</link>
+        <link>https://hellogitlab.com/en/categories/cicd/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/cicd/</guid>
+        <guid>https://hellogitlab.com/en/categories/cicd/</guid>
         <description></description>
         </item>
         <item>
         <title>Devops</title>
-        <link>https://meizhaohui.github.io/en/categories/devops/</link>
+        <link>https://hellogitlab.com/en/categories/devops/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/devops/</guid>
+        <guid>https://hellogitlab.com/en/categories/devops/</guid>
         <description></description>
         </item>
         <item>
         <title>Docker</title>
-        <link>https://meizhaohui.github.io/en/categories/docker/</link>
+        <link>https://hellogitlab.com/en/categories/docker/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/docker/</guid>
+        <guid>https://hellogitlab.com/en/categories/docker/</guid>
         <description></description>
         </item>
         <item>
         <title>Golang</title>
-        <link>https://meizhaohui.github.io/en/categories/golang/</link>
+        <link>https://hellogitlab.com/en/categories/golang/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/golang/</guid>
+        <guid>https://hellogitlab.com/en/categories/golang/</guid>
         <description></description>
         </item>
         <item>
         <title>Java</title>
-        <link>https://meizhaohui.github.io/en/categories/java/</link>
+        <link>https://hellogitlab.com/en/categories/java/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/java/</guid>
+        <guid>https://hellogitlab.com/en/categories/java/</guid>
         <description></description>
         </item>
         <item>
         <title>Kubernetes</title>
-        <link>https://meizhaohui.github.io/en/categories/kubernetes/</link>
+        <link>https://hellogitlab.com/en/categories/kubernetes/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/kubernetes/</guid>
+        <guid>https://hellogitlab.com/en/categories/kubernetes/</guid>
         <description></description>
         </item>
         <item>
         <title>Python</title>
-        <link>https://meizhaohui.github.io/en/categories/python/</link>
+        <link>https://hellogitlab.com/en/categories/python/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/python/</guid>
+        <guid>https://hellogitlab.com/en/categories/python/</guid>
         <description></description>
         </item>
         <item>
         <title>Frontend</title>
-        <link>https://meizhaohui.github.io/en/categories/frontend/</link>
+        <link>https://hellogitlab.com/en/categories/frontend/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/frontend/</guid>
+        <guid>https://hellogitlab.com/en/categories/frontend/</guid>
         <description></description>
         </item>
         <item>
         <title>Os</title>
-        <link>https://meizhaohui.github.io/en/categories/os/</link>
+        <link>https://hellogitlab.com/en/categories/os/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/categories/os/</guid>
+        <guid>https://hellogitlab.com/en/categories/os/</guid>
         <description></description>
         </item>
         

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>编码 on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/%E7%BC%96%E7%A0%81/</link>
+        <link>https://hellogitlab.com/tags/%E7%BC%96%E7%A0%81/</link>
         <description>Recent content in 编码 on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第5章5.3</title>
-        <link>https://meizhaohui.github.io/backend/c/newstylec_5.3/</link>
+        <link>https://hellogitlab.com/backend/c/newstylec_5.3/</link>
         <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/c/newstylec_5.3/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.3" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-53节-字符和字符串&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.3节 字符和字符串
+        <guid>https://hellogitlab.com/backend/c/newstylec_5.3/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.3" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-53节-字符和字符串&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.3节 字符和字符串
 &lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
 &lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_14-51-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
 	
 	
 	
@@ -37,7 +37,7 @@
 &lt;h3 id=&#34;5-获取完整的牌价数据&#34;&gt;5. 获取完整的牌价数据
 &lt;/h3&gt;&lt;h4 id=&#34;53-字符和字符串&#34;&gt;5.3 字符和字符串
 &lt;/h4&gt;&lt;p&gt;在5.1.2节中，我们已经可以使用一个双精度浮点型数组存储现汇买入价、现钞买入价、现汇卖出价、现钞卖出价和中行折算价。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_00-12-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_00-12-26.png&#34;
 	
 	
 	
@@ -101,7 +101,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/ul&gt;
 &lt;p&gt;例如字符“F”，要在屏幕上显示它就必须将这个字母的外观用二进制数值进行描述。方法之一就是把字符的外形划分成若干个栅格，然后分别用1和0来描述每个栅格的内容。&lt;/p&gt;
 &lt;p&gt;如下图所示就是字符F的点阵描述：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-14_22-32-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-14_22-32-31.png&#34;
 	
 	
 	
@@ -124,7 +124,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;li&gt;基本的ASCII字符集只包含128个字符，含控制字符、符号、数字和字母。例如英语字母A对应的编码值是65，字母B对应的编码值是66.后来扩展的ASCII字符集包含了256个字符。 详细可参考 &lt;a class=&#34;link&#34; href=&#34;https://ascii-code.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ascii-code.net/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-02-19_20-33-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-02-19_20-33-01.png&#34;
 	
 	
 	
@@ -239,7 +239,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行代码，显示输出如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-02-19_23-51-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-02-19_23-51-07.png&#34;
 	
 	
 	

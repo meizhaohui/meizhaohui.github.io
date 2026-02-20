@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Os on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/os/</link>
-        <description>Recent content in Os on 编程技术分享</description>
+        <title>OS on 编程技术分享</title>
+        <link>https://hellogitlab.com/categories/os/</link>
+        <description>Recent content in OS on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/os/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/os/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux内存管理</title>
-        <link>https://meizhaohui.github.io/os/memory-management/</link>
+        <link>https://hellogitlab.com/os/memory-management/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/memory-management/</guid>
+        <guid>https://hellogitlab.com/os/memory-management/</guid>
         <description>&lt;h2 id=&#34;虚拟内存&#34;&gt;虚拟内存
 &lt;/h2&gt;&lt;p&gt;Linux使用虚拟内存允许进程使用比物理内存更多的内存空间。&lt;/p&gt;
 &lt;h2 id=&#34;页表&#34;&gt;页表
@@ -21,10 +21,10 @@
         </item>
         <item>
         <title>文件系统基础</title>
-        <link>https://meizhaohui.github.io/os/filesystem/</link>
+        <link>https://hellogitlab.com/os/filesystem/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/filesystem/</guid>
+        <guid>https://hellogitlab.com/os/filesystem/</guid>
         <description>&lt;h2 id=&#34;文件系统类型&#34;&gt;文件系统类型
 &lt;/h2&gt;&lt;p&gt;常见的文件系统包括ext4、NTFS和APFS。&lt;/p&gt;
 &lt;h2 id=&#34;inode节点&#34;&gt;Inode节点
@@ -33,10 +33,10 @@
         </item>
         <item>
         <title>线程调度</title>
-        <link>https://meizhaohui.github.io/os/thread-scheduling/</link>
+        <link>https://hellogitlab.com/os/thread-scheduling/</link>
         <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/thread-scheduling/</guid>
+        <guid>https://hellogitlab.com/os/thread-scheduling/</guid>
         <description>&lt;h2 id=&#34;线程与进程&#34;&gt;线程与进程
 &lt;/h2&gt;&lt;p&gt;线程是进程内的轻量级执行单元。&lt;/p&gt;
 &lt;h2 id=&#34;调度算法&#34;&gt;调度算法
@@ -45,7 +45,7 @@
 &lt;li&gt;优先级调度&lt;/li&gt;
 &lt;li&gt;多级队列调度&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/750-1334-max.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/750-1334-max.png&#34;
 	
 	
 	
@@ -59,11 +59,11 @@
         </item>
         <item>
         <title>DNS查询工具dig</title>
-        <link>https://meizhaohui.github.io/os/centos/dig/</link>
+        <link>https://hellogitlab.com/os/centos/dig/</link>
         <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/dig/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post DNS查询工具dig" /&gt;&lt;h2 id=&#34;dns-查询工具-dig&#34;&gt;DNS 查询工具 dig
+        <guid>https://hellogitlab.com/os/centos/dig/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post DNS查询工具dig" /&gt;&lt;h2 id=&#34;dns-查询工具-dig&#34;&gt;DNS 查询工具 dig
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;dig (Domain Information Groper) 是 Linux 系统中一个功能强大的 DNS 查询工具，用于查询 DNS 域名服务器。与传统的 nslookup 相比，dig 提供了更详细的查询结果和更灵活的查询选项。&lt;/p&gt;
 &lt;p&gt;dig 命令的主要特点：&lt;/p&gt;
@@ -534,7 +534,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@localhost ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-18_21-55-13.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-18_21-55-13.png&#34;
 	
 	
 	
@@ -571,11 +571,11 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
         </item>
         <item>
         <title>Bash script中的通配符与正则表达式</title>
-        <link>https://meizhaohui.github.io/os/centos/x_wildcard_regular_expression_in_bash_script/</link>
+        <link>https://hellogitlab.com/os/centos/x_wildcard_regular_expression_in_bash_script/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_wildcard_regular_expression_in_bash_script/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Bash script中的通配符与正则表达式" /&gt;&lt;h2 id=&#34;bash-script中的通配符与正则表达式&#34;&gt;Bash script中的通配符与正则表达式
+        <guid>https://hellogitlab.com/os/centos/x_wildcard_regular_expression_in_bash_script/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Bash script中的通配符与正则表达式" /&gt;&lt;h2 id=&#34;bash-script中的通配符与正则表达式&#34;&gt;Bash script中的通配符与正则表达式
 &lt;/h2&gt;&lt;h3 id=&#34;通配符符号与其意义&#34;&gt;通配符符号与其意义
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;符号　　 意义&lt;/li&gt;
@@ -616,11 +616,11 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
         </item>
         <item>
         <title>CentOS Docs</title>
-        <link>https://meizhaohui.github.io/os/centos/centos_docs/</link>
+        <link>https://hellogitlab.com/os/centos/centos_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/centos_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS Docs" /&gt;&lt;h2 id=&#34;centos-docs&#34;&gt;CentOS Docs
+        <guid>https://hellogitlab.com/os/centos/centos_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS Docs" /&gt;&lt;h2 id=&#34;centos-docs&#34;&gt;CentOS Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_use_help&#34; &gt;学会使用命令帮助&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_how_to_use_vim&#34; &gt;VIM编辑器的使用&lt;/a&gt;&lt;/li&gt;
@@ -647,11 +647,11 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
         </item>
         <item>
         <title>CentOS7搭建CA认证中心实现https认证</title>
-        <link>https://meizhaohui.github.io/os/centos/certificate_authority_for_https/</link>
+        <link>https://hellogitlab.com/os/centos/certificate_authority_for_https/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/certificate_authority_for_https/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS7搭建CA认证中心实现https认证" /&gt;&lt;h2 id=&#34;centos-7-搭建ca认证中心实现https认证&#34;&gt;CentOS 7 搭建CA认证中心实现https认证
+        <guid>https://hellogitlab.com/os/centos/certificate_authority_for_https/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS7搭建CA认证中心实现https认证" /&gt;&lt;h2 id=&#34;centos-7-搭建ca认证中心实现https认证&#34;&gt;CentOS 7 搭建CA认证中心实现https认证
 &lt;/h2&gt;&lt;p&gt;本文讲解在CentOS7中搭建CA认证中心，实现Httpd和Nginx的https认证。&lt;/p&gt;
 &lt;p&gt;如果你想直接制作自签名证书，可以直接查看&lt;a class=&#34;link&#34; href=&#34;#%e8%87%aa%e7%ad%be%e5%90%8d%e8%af%81%e4%b9%a6&#34; &gt;自签名证书&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;实验环境&#34;&gt;实验环境
@@ -1421,7 +1421,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在浏览器中访问链接&lt;a class=&#34;link&#34; href=&#34;http://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.56.15/&lt;/a&gt;，则可以看到httpd的测试页:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpd_test.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpd_test.png&#34;
 	
 	
 	
@@ -2182,7 +2182,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 &lt;/div&gt;&lt;h3 id=&#34;远程访问https-web服务&#34;&gt;远程访问https web服务
 &lt;/h3&gt;&lt;p&gt;在Google浏览器中打开&lt;a class=&#34;link&#34; href=&#34;https://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.56.15/&lt;/a&gt;链接，显示如下图:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/err_cert_authority_invalid.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/err_cert_authority_invalid.png&#34;
 	
 	
 	
@@ -2193,7 +2193,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击&amp;quot;高级&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;继续前往192.168.56.15（不安全）&amp;quot;，则会正常显示页面:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpd_https_test.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpd_https_test.png&#34;
 	
 	
 	
@@ -2204,7 +2204,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击Google地址栏&amp;quot;不安全&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;证书(无效)&amp;quot;，则会正常显示页面，可以看到证书有效期是2年:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/unsecure.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/unsecure.png&#34;
 	
 	
 	
@@ -2215,7 +2215,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击&amp;quot;证书&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;详细信息&amp;rdquo;，可以看到颁发者就是我们的CA中心，则会正常显示页面:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/ca_details.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/ca_details.png&#34;
 	
 	
 	
@@ -2887,7 +2887,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到&lt;code&gt;nginx&lt;/code&gt;当前启动的是&lt;code&gt;80&lt;/code&gt;端口，我们使用google浏览器打开&lt;a class=&#34;link&#34; href=&#34;http://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.56.15/&lt;/a&gt;链接:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/nginx_test.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/nginx_test.png&#34;
 	
 	
 	
@@ -3339,7 +3339,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;使用google浏览器打开&lt;a class=&#34;link&#34; href=&#34;https://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.56.15/&lt;/a&gt;链接:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/nginx_https_test.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/nginx_https_test.png&#34;
 	
 	
 	
@@ -3473,7 +3473,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 &lt;p&gt;使用google浏览器打开&lt;a class=&#34;link&#34; href=&#34;http://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.56.15/&lt;/a&gt;链接时，会自动跳转到  &lt;a class=&#34;link&#34; href=&#34;https://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.56.15/&lt;/a&gt;链接:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/nginx_80_2_443.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/nginx_80_2_443.png&#34;
 	
 	
 	
@@ -3648,7 +3648,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
 &lt;/div&gt;&lt;p&gt;使用google浏览器打开&lt;a class=&#34;link&#34; href=&#34;http://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.56.15/&lt;/a&gt;链接时，会自动跳转到&lt;a class=&#34;link&#34; href=&#34;https://192.168.56.15/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.56.15/&lt;/a&gt;链接，此时查看证书的详情:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/self_ca.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/self_ca.png&#34;
 	
 	
 	
@@ -3717,7 +3717,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
     &gt;https://certbot.eff.org/docs/using.html#where-are-my-certificates&lt;/a&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;使用lets-encrypt颁发证书&#34;&gt;使用Let’s Encrypt颁发证书
 &lt;/h3&gt;&lt;h4 id=&#34;什么是lets-encrypt&#34;&gt;什么是Let’s Encrypt
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/LetsEncrypt.jpg&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/LetsEncrypt.jpg&#34;
 	
 	
 	
@@ -5693,7 +5693,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
     &gt;http://www.hopewait.com/&lt;/a&gt;时，会自动跳转到&lt;a class=&#34;link&#34; href=&#34;https://hopewait.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://hopewait.com/&lt;/a&gt;链接或&lt;a class=&#34;link&#34; href=&#34;https://www.hopewait.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.hopewait.com/&lt;/a&gt;链接，此时查看证书的详情:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/LetsEncrypt_cert.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/LetsEncrypt_cert.png&#34;
 	
 	
 	
@@ -6174,7 +6174,7 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
     &gt;http://www.hopewait.com/&lt;/a&gt;时，会自动跳转到&lt;a class=&#34;link&#34; href=&#34;https://hopewait.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://hopewait.com/&lt;/a&gt;链接或&lt;a class=&#34;link&#34; href=&#34;https://www.hopewait.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.hopewait.com/&lt;/a&gt;链接，此时查看证书的详情:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/LetsEncrypt_nginx.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/LetsEncrypt_nginx.png&#34;
 	
 	
 	
@@ -6381,11 +6381,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>CentOS7搭建NFS服务器</title>
-        <link>https://meizhaohui.github.io/os/centos/nfs_server/</link>
+        <link>https://hellogitlab.com/os/centos/nfs_server/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/nfs_server/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS7搭建NFS服务器" /&gt;&lt;h2 id=&#34;centos7搭建nfs服务器&#34;&gt;CentOS7搭建NFS服务器
+        <guid>https://hellogitlab.com/os/centos/nfs_server/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS7搭建NFS服务器" /&gt;&lt;h2 id=&#34;centos7搭建nfs服务器&#34;&gt;CentOS7搭建NFS服务器
 &lt;/h2&gt;&lt;p&gt;测试主机信息：&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -7106,11 +7106,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>CentOS7增加系统安全性</title>
-        <link>https://meizhaohui.github.io/os/centos/x_enhance_centos_secure/</link>
+        <link>https://hellogitlab.com/os/centos/x_enhance_centos_secure/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_enhance_centos_secure/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS7增加系统安全性" /&gt;&lt;h2 id=&#34;centos7增加系统安全性&#34;&gt;CentOS7增加系统安全性
+        <guid>https://hellogitlab.com/os/centos/x_enhance_centos_secure/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS7增加系统安全性" /&gt;&lt;h2 id=&#34;centos7增加系统安全性&#34;&gt;CentOS7增加系统安全性
 &lt;/h2&gt;&lt;p&gt;为了给CentOS7系统增加系统的安全性，防止系统被黑，可以进行以下操作：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;修改用户密码为高强度密码&lt;/li&gt;
@@ -7963,7 +7963,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;DenyHosts用于SSH防暴力破解。当远程用户多次登陆失败时，用户的IP将会被加入到黑名单中，不允许再次登陆。只有将该IP从黑名单移除后才能再次登陆。&lt;/p&gt;
 &lt;p&gt;可直接参考官网说明进行安装配置。&lt;/p&gt;
 &lt;p&gt;此处编写一个自动安装脚本。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/init_denyhosts.sh&#34; &gt;download init_denyhosts.sh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/init_denyhosts.sh&#34; &gt;download init_denyhosts.sh&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -8739,11 +8739,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>Cobbler自动化系统安装环境配置</title>
-        <link>https://meizhaohui.github.io/os/cobbler/</link>
+        <link>https://hellogitlab.com/os/cobbler/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/cobbler/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/logo-cobbler-new.svg" alt="Featured image of post Cobbler自动化系统安装环境配置" /&gt;&lt;h2 id=&#34;cobbler自动化系统安装环境配置&#34;&gt;Cobbler自动化系统安装环境配置
+        <guid>https://hellogitlab.com/os/cobbler/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/logo-cobbler-new.svg" alt="Featured image of post Cobbler自动化系统安装环境配置" /&gt;&lt;h2 id=&#34;cobbler自动化系统安装环境配置&#34;&gt;Cobbler自动化系统安装环境配置
 &lt;/h2&gt;&lt;p&gt;网络安装服务器套件 Cobbler(补鞋匠)是RedHat在2008年发布的，用于快速建立Linux网络安装环境。今天我们就用Cobbler来配置一套自动化系统安装环境。&lt;/p&gt;
 &lt;h3 id=&#34;0-参考文档&#34;&gt;0. 参考文档
 &lt;/h3&gt;&lt;ul&gt;
@@ -8927,7 +8927,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;记录好这些信息，后面配置Cobbler DHCP时需要使用到。&lt;/p&gt;
 &lt;p&gt;另外，我们关闭VirtualBox主机网络管理器中的&amp;quot;DHCP服务器&amp;quot;，不启用服务器即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/virual_network_dhcp.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/virual_network_dhcp.png&#34;
 	
 	
 	
@@ -12010,7 +12010,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时打开浏览器，访问地址 &lt;a class=&#34;link&#34; href=&#34;https://192.168.2.20/cobbler/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.2.20/cobbler/&lt;/a&gt;，可以看到如下文件列表信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler_index.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler_index.png&#34;
 	
 	
 	
@@ -12020,7 +12020,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;p&gt;访问：&lt;a class=&#34;link&#34; href=&#34;https://192.168.2.20/cobbler_web/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.2.20/cobbler_web/&lt;/a&gt; 可以访问Cobbler的Web管理系统：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler_web.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler_web.png&#34;
 	
 	
 	
@@ -12032,7 +12032,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;h3 id=&#34;10-新建虚拟机节点&#34;&gt;10. 新建虚拟机节点
 &lt;/h3&gt;&lt;p&gt;我们尝试新建一个虚拟机节点，看是否能够从网络安装。&lt;/p&gt;
 &lt;p&gt;新建一个名称为&lt;code&gt;cobbler-node1&lt;/code&gt;的虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/new_virtual_os.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/new_virtual_os.png&#34;
 	
 	
 	
@@ -12042,7 +12042,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;p&gt;内存设置为2048MB，虚拟硬盘大小设置为40GB。&lt;/p&gt;
 &lt;p&gt;系统设置为从“网络”启动：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/start_from_network.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/start_from_network.png&#34;
 	
 	
 	
@@ -12051,7 +12051,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;并且设置网络为桥接模式：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/network_settings.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/network_settings.png&#34;
 	
 	
 	
@@ -12060,7 +12060,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时启动虚拟机节点， 发现不能正常启动，报以下异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/start_error.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/start_error.png&#34;
 	
 	
 	
@@ -12109,7 +12109,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，再启动&lt;code&gt;cobbler-node1&lt;/code&gt;虚拟机，发现还是启动不了，但是出现的结果不一样了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/start_error_again.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/start_error_again.png&#34;
 	
 	
 	
@@ -13513,7 +13513,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;再次在浏览器中打开应答文件，可以发现没有提示异常。&lt;/p&gt;
 &lt;p&gt;重新启动&lt;code&gt;cobbler_node1&lt;/code&gt;虚拟机。仍然提示异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_012.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_012.png&#34;
 	
 	
 	
@@ -13522,7 +13522,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在VMware中安装虚拟机，尝试开机启动也会提示异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/CentOS7test_VMware_Workstation_013.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/CentOS7test_VMware_Workstation_013.png&#34;
 	
 	
 	
@@ -13533,7 +13533,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;我们尝试手动连接一下TFTP。&lt;/p&gt;
 &lt;p&gt;我们可以Web浏览器中访问 &lt;a class=&#34;link&#34; href=&#34;https://192.168.2.20/cobbler/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.2.20/cobbler/&lt;/a&gt; 查看FTP的数据：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/ftp_data.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/ftp_data.png&#34;
 	
 	
 	
@@ -13718,7 +13718,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;说明是因为宿主机的防火墙开启导致安装新的系统时，新系统不能下载FTP的数据。&lt;/p&gt;
 &lt;p&gt;我们再次尝试在VMware和VirtualBox中启动系统。&lt;/p&gt;
 &lt;p&gt;注意，我们在VirtualBox或VMware中配置的新系统都使用桥接网络：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Selection_015.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Selection_015.png&#34;
 	
 	
 	
@@ -13727,7 +13727,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;启动&lt;code&gt;cobbler_node1&lt;/code&gt;虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_016.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_016.png&#34;
 	
 	
 	
@@ -13736,7 +13736,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;由于我长时间没有选择，系统自动从&lt;code&gt;local&lt;/code&gt;启动，而我们&lt;code&gt;local&lt;/code&gt;本地没有启动程序，出现异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_017.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_017.png&#34;
 	
 	
 	
@@ -13745,7 +13745,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们关闭系统，重新启动：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_018.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_018.png&#34;
 	
 	
 	
@@ -13901,11 +13901,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>echo输出带颜色的字体</title>
-        <link>https://meizhaohui.github.io/os/centos/x_echo_color_font/</link>
+        <link>https://hellogitlab.com/os/centos/x_echo_color_font/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_echo_color_font/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post echo输出带颜色的字体" /&gt;&lt;h2 id=&#34;echo输出带颜色的字体&#34;&gt;echo输出带颜色的字体
+        <guid>https://hellogitlab.com/os/centos/x_echo_color_font/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post echo输出带颜色的字体" /&gt;&lt;h2 id=&#34;echo输出带颜色的字体&#34;&gt;echo输出带颜色的字体
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;p&gt;在&lt;code&gt;Linux&lt;/code&gt;命令行终端或&lt;code&gt;Bash Shell&lt;/code&gt;脚本中适当使用颜色，能够让第一时间感觉到您的命令或脚本执行过程中差异。本文主要介绍使用&lt;code&gt;echo&lt;/code&gt;输出带颜色的字体。&lt;/p&gt;
 &lt;h3 id=&#34;echo不带参数输出字符串&#34;&gt;&lt;code&gt;echo&lt;/code&gt;不带参数输出字符串
@@ -13971,7 +13971,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[31m红字\033[32m绿字\033[0m&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 输出红字和绿字&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/red_green_font.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/red_green_font.png&#34;
 	
 	
 	
@@ -13990,7 +13990,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[31m红字\033[43;32m绿字带黄色背景\033[0m&amp;#34;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 输出红字和带黄色背景的绿字&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/red_green_font_yellow_background.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/red_green_font_yellow_background.png&#34;
 	
 	
 	
@@ -14009,7 +14009,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[4;47;31m带下划线的白色背景的红字\033[0m\033[1;41;32m高亮的红色背景的绿字\033[0m&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/underline_highlight1.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/underline_highlight1.png&#34;
 	
 	
 	
@@ -14028,7 +14028,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[4m\033[47m\033[31m带下划线的白色背景的红字\033[0m \033[1m\033[41m\033[32m高亮的红色背景的绿字\033[0m&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/underline_highlight2.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/underline_highlight2.png&#34;
 	
 	
 	
@@ -14047,7 +14047,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[4m\033[47m\033[31m带下划线的白色背景的红字\033[0m \033[1;4m\033[41m\033[32m高亮的红色背景的带下划线的绿字\033[0m&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/underline_highlight3.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/underline_highlight3.png&#34;
 	
 	
 	
@@ -14203,7 +14203,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;meizhaohui@localhost ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ sh print_color.sh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/red_back_bold_green_new.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/red_back_bold_green_new.png&#34;
 	
 	
 	
@@ -14378,7 +14378,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;实际效果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210821123847.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210821123847.png&#34;
 	
 	
 	
@@ -14411,7 +14411,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210821124157.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210821124157.png&#34;
 	
 	
 	
@@ -14426,11 +14426,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>JSON解析工具-jq</title>
-        <link>https://meizhaohui.github.io/os/centos/json_tool_jq/</link>
+        <link>https://hellogitlab.com/os/centos/json_tool_jq/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/json_tool_jq/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post JSON解析工具-jq" /&gt;&lt;h2 id=&#34;json解析工具-jq&#34;&gt;JSON解析工具-jq
+        <guid>https://hellogitlab.com/os/centos/json_tool_jq/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post JSON解析工具-jq" /&gt;&lt;h2 id=&#34;json解析工具-jq&#34;&gt;JSON解析工具-jq
 &lt;/h2&gt;&lt;p&gt;jq 是一个轻量级而且灵活的命令行 JSON 解析器，类似用于 JSON 数据的 sed 工具。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;jq官网地址：&lt;a class=&#34;link&#34; href=&#34;https://stedolan.github.io/jq/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -15695,7 +15695,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，我们可以看到，虽然结果相同，但现在的输出结果中，已经美化过了，变得非常漂亮了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210821171120.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210821171120.png&#34;
 	
 	
 	
@@ -15957,7 +15957,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210821172451.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210821172451.png&#34;
 	
 	
 	
@@ -16521,7 +16521,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;说明：由于markdown显示的问题，上面控制台输出是异常的。&lt;/p&gt;
 &lt;p&gt;请看以下图片中的效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210825204936.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210825204936.png&#34;
 	
 	
 	
@@ -16811,7 +16811,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在控制台看不出效果，请看以下效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210825212233.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210825212233.png&#34;
 	
 	
 	
@@ -16906,7 +16906,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210825212453.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210825212453.png&#34;
 	
 	
 	
@@ -16946,7 +16946,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，可以看到，直接查看&lt;code&gt;out.json&lt;/code&gt;的内容时，就有彩色输出：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210825212928.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210825212928.png&#34;
 	
 	
 	
@@ -18411,7 +18411,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，&lt;code&gt;jq&lt;/code&gt;直接忽略了&lt;code&gt;--run-tests&lt;/code&gt;参数前的&lt;code&gt; &#39;$ARGS.named&#39; --arg tool &amp;quot;jq&amp;quot;&lt;/code&gt;，只运行了测试用例。&lt;/p&gt;
 &lt;p&gt;我们来对比一下测试文件和输出结果，说明详见下图：&lt;/p&gt;
-&lt;p&gt;`&lt;img src=&#34;https://meizhaohui.github.io/img/20210827224132.png&#34;
+&lt;p&gt;`&lt;img src=&#34;https://hellogitlab.com/img/20210827224132.png&#34;
 	
 	
 	
@@ -18450,7 +18450,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/ul&gt;
 &lt;p&gt;国内访问&lt;code&gt;jq&lt;/code&gt;的官方时，查看示例时，经常点击&lt;code&gt;Examples&lt;/code&gt;没有反应，不显示给出的示例。这个时候最好使用科学上网(翻墙)，然后再查看示例。&lt;/p&gt;
 &lt;p&gt;使用科学上网看到的示例：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210827235913.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210827235913.png&#34;
 	
 	
 	
@@ -18460,7 +18460,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;p&gt;你可以点击&lt;code&gt;Run&lt;/code&gt;按钮跳转到&lt;code&gt;jq play&lt;/code&gt;页面 &lt;a class=&#34;link&#34; href=&#34;https://jqplay.org/jq?q=.&amp;amp;j=%22Hello%2C%20world!%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://jqplay.org/jq?q=.&amp;amp;j=%22Hello%2C%20world!%22&lt;/a&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210828000232.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210828000232.png&#34;
 	
 	
 	
@@ -19759,7 +19759,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210902224044.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210902224044.png&#34;
 	
 	
 	
@@ -19818,7 +19818,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210902225836.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210902225836.png&#34;
 	
 	
 	
@@ -22821,7 +22821,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;你可以在 &lt;a class=&#34;link&#34; href=&#34;http://www.mytju.com/classcode/tools/encode_utf8.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://www.mytju.com/classcode/tools/encode_utf8.asp&lt;/a&gt; 进行中文字符串的查询。&lt;/p&gt;
 &lt;p&gt;如，我们查询&amp;quot;工具&amp;quot;这个字符串。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210907230145.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210907230145.png&#34;
 	
 	
 	
@@ -25661,7 +25661,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
     &gt;黄金分割&lt;/a&gt;数列，因数学家莱昂纳多·斐波那契（Leonardo Fibonacci）以兔子繁殖为例子而引入，故又称为“兔子数列”，指的是这样一个数列：0、1、1、2、3、5、8、13、21、34、……在数学上，斐波那契数列以如下被以递推的方法定义：&lt;em&gt;F&lt;/em&gt;(0)=0，&lt;em&gt;F&lt;/em&gt;(1)=1, &lt;em&gt;F&lt;/em&gt;(n)=&lt;em&gt;F&lt;/em&gt;(n - 1)+&lt;em&gt;F&lt;/em&gt;(n - 2)（&lt;em&gt;n&lt;/em&gt; ≥ 2，&lt;em&gt;n&lt;/em&gt; ∈ N*）在现代物理、准&lt;a class=&#34;link&#34; href=&#34;https://baike.baidu.com/item/%e6%99%b6%e4%bd%93%e7%bb%93%e6%9e%84/10401467&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;晶体结构&lt;/a&gt;、化学等领域，斐波纳契数列都有直接的应用，为此，美国数学会从 1963 年起出版了以《斐波纳契数列季刊》为名的一份数学杂志，用于专门刊载这方面的研究成果。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;斐波那契数列&lt;/strong&gt;指的是这样一个数列：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210924225901.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210924225901.png&#34;
 	
 	
 	
@@ -25889,7 +25889,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tests/jq.test:1672:#&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;as&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;def&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;module&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;import&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;include&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;if&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;then&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;else&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;elif&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;end&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;reduce&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;foreach&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;and&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;or&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;try&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;catch&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;label&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;break&amp;#34;&lt;/span&gt;,&lt;span class=&#34;s2&#34;&gt;&amp;#34;__loc__&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210921153332.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210921153332.png&#34;
 	
 	
 	
@@ -26449,12 +26449,12 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>Linux操作系统的启动过程？</title>
-        <link>https://meizhaohui.github.io/os/centos/linux_boot/</link>
+        <link>https://hellogitlab.com/os/centos/linux_boot/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/linux_boot/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Linux操作系统的启动过程？" /&gt;&lt;h2 id=&#34;linux操作系统的启动过程&#34;&gt;Linux操作系统的启动过程？
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/startup.png&#34;
+        <guid>https://hellogitlab.com/os/centos/linux_boot/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Linux操作系统的启动过程？" /&gt;&lt;h2 id=&#34;linux操作系统的启动过程&#34;&gt;Linux操作系统的启动过程？
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/startup.png&#34;
 	
 	
 	
@@ -26549,11 +26549,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>linux下安装htop</title>
-        <link>https://meizhaohui.github.io/os/centos/x_how_to_install_htop_in_linux/</link>
+        <link>https://hellogitlab.com/os/centos/x_how_to_install_htop_in_linux/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_how_to_install_htop_in_linux/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post linux下安装htop" /&gt;&lt;h2 id=&#34;linux下安装htop&#34;&gt;linux下安装htop
+        <guid>https://hellogitlab.com/os/centos/x_how_to_install_htop_in_linux/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post linux下安装htop" /&gt;&lt;h2 id=&#34;linux下安装htop&#34;&gt;linux下安装htop
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;htop&lt;/code&gt;是Linux系统中的一个互动的进程查看器。&lt;/p&gt;
 &lt;h3 id=&#34;下载源文件&#34;&gt;下载源文件
 &lt;/h3&gt;&lt;p&gt;htop下载地址：&lt;a class=&#34;link&#34; href=&#34;http://hisham.hm/htop/index.php?page=downloads#binaries&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -26634,7 +26634,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;htop查看进程示例：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/htop_graph.gif&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/htop_graph.gif&#34;
 	
 	
 	
@@ -26648,13 +26648,13 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>MacOS使用总结</title>
-        <link>https://meizhaohui.github.io/os/macos/</link>
+        <link>https://hellogitlab.com/os/macos/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/macos/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/mac-apple-osx-desktop-software-hardware_icon-icons.com_59176.png" alt="Featured image of post MacOS使用总结" /&gt;&lt;h2 id=&#34;macos使用总结&#34;&gt;MacOS使用总结
+        <guid>https://hellogitlab.com/os/macos/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/mac-apple-osx-desktop-software-hardware_icon-icons.com_59176.png" alt="Featured image of post MacOS使用总结" /&gt;&lt;h2 id=&#34;macos使用总结&#34;&gt;MacOS使用总结
 &lt;/h2&gt;&lt;h3 id=&#34;1-打开访达文件夹的快捷键&#34;&gt;1. 打开访达文件夹的快捷键
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/finder_keymap.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/finder_keymap.png&#34;
 	
 	
 	
@@ -26672,7 +26672,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;⇧ 代表&amp;quot;shift&amp;quot;键&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;通过快捷键⌃+⌘+空格键可以调出『表情符号与人物』窗口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/emoji.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/emoji.png&#34;
 	
 	
 	
@@ -26683,7 +26683,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击『表情符号与人物』窗口右下角的向右的箭头，调到『技术符号』处就可以看到常用的&amp;quot;command&amp;quot;等键的符号了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/emoji_command.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/emoji_command.png&#34;
 	
 	
 	
@@ -26756,7 +26756,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;另外，可以通过设置触发角来实现快速显示桌面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-07-23_06-42-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-07-23_06-42-16.png&#34;
 	
 	
 	
@@ -26779,7 +26779,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;查找本地文件，按空格，再输入搜索关键字。&lt;/li&gt;
 &lt;li&gt;网页搜索，默认使用Google搜索，可以配置百度搜索，百度搜索的话，可以输入『bd 搜索关键字』进行搜索，Alfred中百度搜索配置如下：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/alfred_baidu_search.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/alfred_baidu_search.png&#34;
 	
 	
 	
@@ -26793,7 +26793,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;简单数学计算，如输入「2+2」则会自动计算出结果4。&lt;/li&gt;
 &lt;li&gt;查字典，如输入「d lovely」则会显示lovely的翻译。Alfred中字典配置如下：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/alfred_dict_search.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/alfred_dict_search.png&#34;
 	
 	
 	
@@ -26811,9 +26811,9 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/h3&gt;&lt;p&gt;macos中快捷键特别多，有时记不住快捷键，安装CheatSheet后，可以通过长按⌘键查看当前软件的快捷键。&lt;/p&gt;
 &lt;p&gt;你可以从&lt;a class=&#34;link&#34; href=&#34;https://cheatsheet-mac.en.softonic.com/mac&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://cheatsheet-mac.en.softonic.com/mac&lt;/a&gt;网站上面下载安装包。&lt;/p&gt;
-&lt;p&gt;你也可以从这里下载 &lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/resource/pkg/CheatSheet_1.0.1.zip&#34; &gt;CheatSheet_1.0.1.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;你也可以从这里下载 &lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/resource/pkg/CheatSheet_1.0.1.zip&#34; &gt;CheatSheet_1.0.1.zip&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如我的火狐浏览器中长按⌘键弹出的所有的快捷键如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/firefox_shortcuts.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/firefox_shortcuts.png&#34;
 	
 	
 	
@@ -26828,7 +26828,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
     &gt;https://github.com/fitztrev/shuttle&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Shuttle是一款快捷操作管理软件，你可以通过自定义命令，将常用的命令设置成图标快捷方式显示在任务栏中，当点击自定义的命令的名称时，shuttle会自动打开终端，并执行相应的命令。&lt;/p&gt;
 &lt;p&gt;如我的shuttle配置后，显示如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/shuttle.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/shuttle.png&#34;
 	
 	
 	
@@ -27047,7 +27047,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;&lt;p&gt;如果以上不能运行，可能直接在&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh&lt;/a&gt;复制install.sh的内容下来保存到文件&lt;code&gt;install.sh&lt;/code&gt;中，使用&lt;code&gt;sh install.sh&lt;/code&gt;运行即可。&lt;/p&gt;
 &lt;p&gt;运行脚本后，自动安装&lt;code&gt;oh-my-zsh&lt;/code&gt;并设置默认的主题。 显示如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/installed_ohmyzsh.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/installed_ohmyzsh.png&#34;
 	
 	
 	
@@ -27107,7 +27107,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
     &gt;https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;选择自己喜欢的主题，可以一直用一种主题，也可以使用随机主题。&lt;/p&gt;
 &lt;p&gt;像我配置的随机主题：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/oh_my_zsh_random_theme.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/oh_my_zsh_random_theme.png&#34;
 	
 	
 	
@@ -27127,7 +27127,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;显示如下：
-&lt;img src=&#34;https://meizhaohui.github.io/img/reload_random_theme.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/reload_random_theme.png&#34;
 	
 	
 	
@@ -27343,7 +27343,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;帮助文档非常的详细，你可以仔细阅读一下。&lt;/p&gt;
 &lt;p&gt;参考官方的示例：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpie.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpie.png&#34;
 	
 	
 	
@@ -27400,7 +27400,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;启动服务后，浏览器中打开&lt;code&gt;localhost&lt;/code&gt;，可以看到如下效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/docker_local_httpbin.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/docker_local_httpbin.png&#34;
 	
 	
 	
@@ -27428,7 +27428,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;上面几种方式都是向本地80端口的&amp;rsquo;/get&amp;rsquo;地址发送GET请求，返回结果相同：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpie_GET.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpie_GET.png&#34;
 	
 	
 	
@@ -27508,7 +27508,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;发送POST请求，返回结果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpie_POST.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpie_POST.png&#34;
 	
 	
 	
@@ -27673,7 +27673,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;点击&lt;code&gt;MT&lt;/code&gt;应用图标，&lt;code&gt;⌘+,&lt;/code&gt;打开设置，&lt;code&gt;mtmr&lt;/code&gt;通过&lt;code&gt;items.json&lt;/code&gt;配置文件保存设置。你可以官网示例修改默认的设置。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我的触控条自定义后显示如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/touchbar_display.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/touchbar_display.png&#34;
 	
 	
 	
@@ -28089,7 +28089,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://clang.llvm.org/docs/ClangFormat.html#vim-integration&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://clang.llvm.org/docs/ClangFormat.html#vim-integration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-03_21-55-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-03_21-55-23.png&#34;
 	
 	
 	
@@ -29074,11 +29074,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>NTP时间同步</title>
-        <link>https://meizhaohui.github.io/os/centos/ntpdate/</link>
+        <link>https://hellogitlab.com/os/centos/ntpdate/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/ntpdate/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post NTP时间同步" /&gt;&lt;h2 id=&#34;ntp时间同步&#34;&gt;NTP时间同步
+        <guid>https://hellogitlab.com/os/centos/ntpdate/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post NTP时间同步" /&gt;&lt;h2 id=&#34;ntp时间同步&#34;&gt;NTP时间同步
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;NTP是用于同步网络中计算机时间的协议，全称为网络时间协议（Network Time Protocol）。&lt;/p&gt;
@@ -29253,11 +29253,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>Rocky Linux docs</title>
-        <link>https://meizhaohui.github.io/os/rockylinux/rocky_linux_docs/</link>
+        <link>https://hellogitlab.com/os/rockylinux/rocky_linux_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/rockylinux/rocky_linux_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/rocky-linux.png" alt="Featured image of post Rocky Linux docs" /&gt;&lt;h2 id=&#34;rocky-linux-docs&#34;&gt;Rocky Linux docs
+        <guid>https://hellogitlab.com/os/rockylinux/rocky_linux_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/rocky-linux.png" alt="Featured image of post Rocky Linux docs" /&gt;&lt;h2 id=&#34;rocky-linux-docs&#34;&gt;Rocky Linux docs
 &lt;/h2&gt;&lt;p&gt;Rocky Linux学习笔记:&lt;/p&gt;
 &lt;p&gt;根据 &lt;a class=&#34;link&#34; href=&#34;https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CentOS 官方公告&lt;/a&gt;，CentOS 7 已经于 2024 年 6 月 30 日结束支持，其软件仓库也相应被上游移除。&lt;/p&gt;
@@ -29318,11 +29318,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>rsync&#43;inotify实现数据实时同步</title>
-        <link>https://meizhaohui.github.io/os/centos/rsync/</link>
+        <link>https://hellogitlab.com/os/centos/rsync/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/rsync/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post rsync&#43;inotify实现数据实时同步" /&gt;&lt;h2 id=&#34;rsyncinotify实现数据实时同步&#34;&gt;rsync+inotify实现数据实时同步
+        <guid>https://hellogitlab.com/os/centos/rsync/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post rsync&#43;inotify实现数据实时同步" /&gt;&lt;h2 id=&#34;rsyncinotify实现数据实时同步&#34;&gt;rsync+inotify实现数据实时同步
 &lt;/h2&gt;&lt;h3 id=&#34;1-实验环境说明&#34;&gt;1. 实验环境说明
 &lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -30796,7 +30796,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;&lt;h4 id=&#34;44-编写同步脚本&#34;&gt;4.4 编写同步脚本
 &lt;/h4&gt;&lt;p&gt;参考 &lt;a class=&#34;link&#34; href=&#34;https://blog.51cto.com/u_13858192/2159200&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;rsync+ Notify配置解析及步骤详解&lt;/a&gt;编写一个监听同步脚本。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/file_watch.sh&#34; &gt;download file_watch.sh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/file_watch.sh&#34; &gt;download file_watch.sh&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -31000,7 +31000,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root      &lt;span class=&#34;m&#34;&gt;1729&lt;/span&gt;  &lt;span class=&#34;m&#34;&gt;1728&lt;/span&gt;  &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; 08:43 pts/0    00:00:00 /usr/bin/inotifywait -mrq --timefmt %Y%m%d %H:%M:%S --format %T %w%f %e --event modify,delete,create,attrib /var/lib/docker
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-13_22-22-14.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-13_22-22-14.png&#34;
 	
 	
 	
@@ -31085,7 +31085,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，查看日志输出，可以看到有新增同步日志：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-13_22-32-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-13_22-32-43.png&#34;
 	
 	
 	
@@ -31402,7 +31402,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;inotify_dirs &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;SRC_LIST_FILE&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/file_watch.conf&#34; &gt;download file_watch.conf&lt;/a&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/file_watch.conf&#34; &gt;download file_watch.conf&lt;/a&gt;
 对应的配置文件&lt;code&gt;file_watch.conf&lt;/code&gt;：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -31577,7 +31577,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到监听程序已经启动。&lt;/p&gt;
 &lt;p&gt;我们看一下日志：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-14_23-08-54.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-14_23-08-54.png&#34;
 	
 	
 	
@@ -31586,7 +31586,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;
 通过日志可以看到，监听程序可以对每组同步信息中的文件夹进行同步处理！说明优化后的脚本正常可用。当任意一组文件夹中的文件有变化时，会触发所有组同步都进行一次同步操作。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/file_watch_v2.sh&#34; &gt;download file_watch_v2.sh&lt;/a&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/file_watch_v2.sh&#34; &gt;download file_watch_v2.sh&lt;/a&gt;
 优化后的脚本：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -31828,11 +31828,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>ssh-keygen创建公钥私钥对</title>
-        <link>https://meizhaohui.github.io/os/centos/ssh-keygen/</link>
+        <link>https://hellogitlab.com/os/centos/ssh-keygen/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/ssh-keygen/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ssh-keygen创建公钥私钥对" /&gt;&lt;h2 id=&#34;ssh-keygen创建公钥私钥对&#34;&gt;ssh-keygen创建公钥私钥对
+        <guid>https://hellogitlab.com/os/centos/ssh-keygen/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ssh-keygen创建公钥私钥对" /&gt;&lt;h2 id=&#34;ssh-keygen创建公钥私钥对&#34;&gt;ssh-keygen创建公钥私钥对
 &lt;/h2&gt;&lt;h3 id=&#34;1-什么是ssh&#34;&gt;1. 什么是SSH
 &lt;/h3&gt;&lt;p&gt;SSH 为 Secure Shell的缩写，由 IETF 的网络小组（Network Working Group）所制定；它是建立在应用层基础上的安全协议。&lt;/p&gt;
 &lt;p&gt;SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。&lt;/p&gt;
@@ -33293,7 +33293,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-14_08-46-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-14_08-46-59.png&#34;
 	
 	
 	
@@ -33371,7 +33371,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;为了避免输出字符太长， 此处在命令后面加了&lt;code&gt;tail&lt;/code&gt;只取最后10行。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-14_09-23-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-14_09-23-13.png&#34;
 	
 	
 	
@@ -34163,11 +34163,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>Ubuntu Docs</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_docs/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ubuntu Docs" /&gt;&lt;h2 id=&#34;ubuntu-docs&#34;&gt;Ubuntu Docs
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ubuntu Docs" /&gt;&lt;h2 id=&#34;ubuntu-docs&#34;&gt;Ubuntu Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../ubuntu_init&#34; &gt;Ubuntu桌面初始化安装配置&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../ubuntu_change_repo&#34; &gt;更改ubuntu国内镜像源&lt;/a&gt;&lt;/li&gt;
@@ -34177,11 +34177,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>Ubuntu UFW防火墙设置</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_firewall/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_firewall/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_firewall/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ubuntu UFW防火墙设置" /&gt;&lt;h2 id=&#34;ubuntu-ufw防火墙设置&#34;&gt;Ubuntu UFW防火墙设置
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_firewall/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ubuntu UFW防火墙设置" /&gt;&lt;h2 id=&#34;ubuntu-ufw防火墙设置&#34;&gt;Ubuntu UFW防火墙设置
 &lt;/h2&gt;&lt;h4 id=&#34;安装&#34;&gt;安装
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -34434,11 +34434,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>Ubuntu初始化配置</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_init/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_init/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_init/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ubuntu初始化配置" /&gt;&lt;h2 id=&#34;ubuntu初始化配置&#34;&gt;Ubuntu初始化配置
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_init/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ubuntu初始化配置" /&gt;&lt;h2 id=&#34;ubuntu初始化配置&#34;&gt;Ubuntu初始化配置
 &lt;/h2&gt;&lt;h3 id=&#34;ubuntu下一个好用的终端&#34;&gt;Ubuntu下一个好用的终端
 &lt;/h3&gt;&lt;p&gt;在终端下输入：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -34611,11 +34611,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>VIM编辑器的使用</title>
-        <link>https://meizhaohui.github.io/os/centos/x_how_to_use_vim/</link>
+        <link>https://hellogitlab.com/os/centos/x_how_to_use_vim/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_how_to_use_vim/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post VIM编辑器的使用" /&gt;&lt;h2 id=&#34;vim编辑器的使用&#34;&gt;VIM编辑器的使用
+        <guid>https://hellogitlab.com/os/centos/x_how_to_use_vim/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post VIM编辑器的使用" /&gt;&lt;h2 id=&#34;vim编辑器的使用&#34;&gt;VIM编辑器的使用
 &lt;/h2&gt;&lt;h3 id=&#34;vim的模式&#34;&gt;VIM的模式
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;命令模式&lt;/code&gt;：vim默认启动进入此模式。&lt;/li&gt;
@@ -35120,15 +35120,15 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>virtualbox命令行工具VBoxManage的使用</title>
-        <link>https://meizhaohui.github.io/os/centos/virtualbox_command/</link>
+        <link>https://hellogitlab.com/os/centos/virtualbox_command/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/virtualbox_command/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post virtualbox命令行工具VBoxManage的使用" /&gt;&lt;h2 id=&#34;virtualbox命令行工具vboxmanage的使用&#34;&gt;virtualbox命令行工具VBoxManage的使用
+        <guid>https://hellogitlab.com/os/centos/virtualbox_command/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post virtualbox命令行工具VBoxManage的使用" /&gt;&lt;h2 id=&#34;virtualbox命令行工具vboxmanage的使用&#34;&gt;virtualbox命令行工具VBoxManage的使用
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;我使用的VirtualBox版本是6.0.12，因此在 &lt;a class=&#34;link&#34; href=&#34;https://download.virtualbox.org/virtualbox/6.0.12/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://download.virtualbox.org/virtualbox/6.0.12/&lt;/a&gt; 下载相应的用户手册UserManual.pdf：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-21_23-34-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-21_23-34-24.png&#34;
 	
 	
 	
@@ -36655,7 +36655,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;13-虚拟机组&#34;&gt;1.3 虚拟机组
 &lt;/h4&gt;&lt;p&gt;虚拟机组就是将某些虚拟机存放到一个组中，便于管理。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-24_22-19-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-24_22-19-23.png&#34;
 	
 	
 	
@@ -36671,7 +36671,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;通过命令行设置虚拟机组。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;详细可参考手册1.10节：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-24_22-26-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-24_22-26-47.png&#34;
 	
 	
 	
@@ -36681,7 +36681,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-命令行基本使用&#34;&gt;2. 命令行基本使用
 &lt;/h3&gt;&lt;p&gt;我之前创建了一个虚拟机&lt;code&gt;basecentos7&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-21_23-47-34.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-21_23-47-34.png&#34;
 	
 	
 	
@@ -37076,7 +37076,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-22_22-10-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-22_22-10-31.png&#34;
 	
 	
 	
@@ -37086,7 +37086,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;p&gt;此时可以看到，启动了basecentos7虚拟机，窗口自动启动，并显示在登录界面。&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;root&lt;/code&gt;账号登录后，查看虚拟机IP信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-22_22-12-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-22_22-12-59.png&#34;
 	
 	
 	
@@ -37095,7 +37095,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在任务管理器可以看到此时有三个&lt;code&gt;VirtualBoxVM.exe&lt;/code&gt;的进程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-22_22-28-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-22_22-28-58.png&#34;
 	
 	
 	
@@ -37119,7 +37119,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，没有弹出新的窗口。在任务管理器可以看到此时有三个&lt;code&gt;VBoxHeadless.exe&lt;/code&gt;的进程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-22_22-20-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-22_22-20-24.png&#34;
 	
 	
 	
@@ -37128,7 +37128,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，可以通过mobaxterm远程连接到虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-22_22-21-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-22_22-21-26.png&#34;
 	
 	
 	
@@ -37316,7 +37316,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时查看virutalBox界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-24_21-56-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-24_21-56-44.png&#34;
 	
 	
 	
@@ -37353,7 +37353,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时查看virutalBox界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-24_22-00-41.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-24_22-00-41.png&#34;
 	
 	
 	
@@ -37365,7 +37365,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;h5 id=&#34;253-克隆虚拟机时设置虚拟机组&#34;&gt;2.5.3 克隆虚拟机时设置虚拟机组
 &lt;/h5&gt;&lt;p&gt;为了测试克隆时自动创建虚拟机组，我们选中&lt;code&gt;testvm&lt;/code&gt;和&lt;code&gt;testvm2&lt;/code&gt;虚拟机，并右键，选择【编组】，并重命名组名为&lt;code&gt;testgroup&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;编组后显示如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-24_22-50-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-24_22-50-01.png&#34;
 	
 	
 	
@@ -37387,7 +37387,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，可以看到&lt;code&gt;testvm3&lt;/code&gt;并没有自动加入到&lt;code&gt;/testgroup&lt;/code&gt;组中：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-24_22-53-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-24_22-53-04.png&#34;
 	
 	
 	
@@ -37406,7 +37406,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时在virtualBox GUI界面没有自动刷新，没有正常将&lt;code&gt;testvm3&lt;/code&gt;虚拟机放到&lt;code&gt;/testgroup&lt;/code&gt;组中。&lt;/p&gt;
 &lt;p&gt;关闭virtualBox 界面，重新打开，此时可以看到&lt;code&gt;testvm3&lt;/code&gt;虚拟机已经在&lt;code&gt;/testgroup&lt;/code&gt;组中了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-24_22-59-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-24_22-59-28.png&#34;
 	
 	
 	
@@ -37774,7 +37774,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;&lt;p&gt;可以看到&lt;code&gt;modifyvm&lt;/code&gt;修改虚拟机的选项非常多，我们不一一测试实践。&lt;/p&gt;
 &lt;h5 id=&#34;261-增加虚拟机cpu核心数&#34;&gt;2.6.1 增加虚拟机CPU核心数
 &lt;/h5&gt;&lt;p&gt;在部署 Kubernetes 时，通常需要配置2CPU的虚拟机。我配置的模板&lt;code&gt;basecentos7&lt;/code&gt;的CPU核心数是1：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-26_21-38-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-26_21-38-06.png&#34;
 	
 	
 	
@@ -37823,7 +37823,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到是2个CPU核心，已经修改成功了。&lt;/p&gt;
 &lt;p&gt;重新在界面上查看，可以看到处理器数量已经变成了2：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-26_22-08-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-26_22-08-08.png&#34;
 	
 	
 	
@@ -37858,7 +37858,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;修改后，查看虚拟机信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-26_22-38-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-26_22-38-38.png&#34;
 	
 	
 	
@@ -38024,7 +38024,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在VirtualBox界面上也可以看到刚创建的快照：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-29_21-38-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-29_21-38-30.png&#34;
 	
 	
 	
@@ -38060,7 +38060,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在VirtualBox界面上也可以看到快照的名称发生了变化：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-29_21-46-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-29_21-46-06.png&#34;
 	
 	
 	
@@ -38108,7 +38108,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;如果我要修改新克隆的&lt;code&gt;testvm1&lt;/code&gt;的IP，该怎么做：&lt;/p&gt;
 &lt;p&gt;可以看到克隆虚拟机后，这四台虚拟机的IP都是一样的。可以在克隆完成每台新的虚拟机出来后，远程连接到&lt;code&gt;192.168.56.101&lt;/code&gt;服务器，然后手动修改&lt;code&gt;/etc/sysconfig/network-scripts/ifcfg-enp0s3&lt;/code&gt;配置文件中&lt;code&gt;IPADDR=192.168.56.101&lt;/code&gt;这一行内容，如修改为&lt;code&gt;IPADDR=192.168.56.110&lt;/code&gt;，然后重启虚拟机，这时该虚拟机的IP就是&lt;code&gt;192.168.56.110&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;我先用终端工具连接到&lt;code&gt;192.168.56.101&lt;/code&gt;主机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-29_23-39-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-29_23-39-19.png&#34;
 	
 	
 	
@@ -38260,7 +38260,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-29_23-48-30.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-29_23-48-30.png&#34;
 	
 	
 	
@@ -38288,7 +38288,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，成功登陆！！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-29_23-51-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-29_23-51-38.png&#34;
 	
 	
 	
@@ -38412,7 +38412,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;中间会暂停60秒钟，让虚拟机完全启动成功。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-01_00-18-05.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-01_00-18-05.png&#34;
 	
 	
 	
@@ -38529,7 +38529,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;stty: standard input: Inappropriate ioctl &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; device
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-01_00-22-00.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-01_00-22-00.png&#34;
 	
 	
 	
@@ -38565,7 +38565,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@localhost ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-01_00-23-29.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-01_00-23-29.png&#34;
 	
 	
 	
@@ -38575,7 +38575,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，能够正常登陆，并执行命令。&lt;/p&gt;
 &lt;p&gt;在VirtualBox 界面也可以看到ansible-master虚拟机正常在运行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-01_00-25-14.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-01_00-25-14.png&#34;
 	
 	
 	
@@ -38587,11 +38587,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>VirtualBox虚拟机磁盘空间扩容</title>
-        <link>https://meizhaohui.github.io/os/centos/x_virtualbox_enhance_hdds/</link>
+        <link>https://hellogitlab.com/os/centos/x_virtualbox_enhance_hdds/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_virtualbox_enhance_hdds/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post VirtualBox虚拟机磁盘空间扩容" /&gt;&lt;h2 id=&#34;virtualbox虚拟机磁盘空间扩容&#34;&gt;VirtualBox虚拟机磁盘空间扩容
+        <guid>https://hellogitlab.com/os/centos/x_virtualbox_enhance_hdds/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post VirtualBox虚拟机磁盘空间扩容" /&gt;&lt;h2 id=&#34;virtualbox虚拟机磁盘空间扩容&#34;&gt;VirtualBox虚拟机磁盘空间扩容
 &lt;/h2&gt;&lt;p&gt;今天我要将VirtualBox中&lt;code&gt;jumpServer-server&lt;/code&gt;虚拟机的硬盘空间从20GB扩展到50GB。&lt;/p&gt;
 &lt;h3 id=&#34;准备工作&#34;&gt;准备工作
 &lt;/h3&gt;&lt;ul&gt;
@@ -40216,7 +40216,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们先要确保虚拟机&lt;code&gt;jumpserver-server&lt;/code&gt;已经处于关机状态：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589674678671.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589674678671.png&#34;
 	
 	
 	
@@ -40434,7 +40434,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;再次在VirtualBox中查看虚拟机虚拟分配空间大小：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589675559489.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589675559489.png&#34;
 	
 	
 	
@@ -41086,11 +41086,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>Windows Docs</title>
-        <link>https://meizhaohui.github.io/os/windows/windows_docs/</link>
+        <link>https://hellogitlab.com/os/windows/windows_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/windows/windows_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Windows Docs" /&gt;&lt;h2 id=&#34;windows-docs&#34;&gt;Windows Docs
+        <guid>https://hellogitlab.com/os/windows/windows_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Windows Docs" /&gt;&lt;h2 id=&#34;windows-docs&#34;&gt;Windows Docs
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;ol&gt;
@@ -41102,11 +41102,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>windows批处理的使用</title>
-        <link>https://meizhaohui.github.io/os/windows/cmd/</link>
+        <link>https://hellogitlab.com/os/windows/cmd/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/windows/cmd/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post windows批处理的使用" /&gt;&lt;h2 id=&#34;windows批处理的使用&#34;&gt;windows批处理的使用
+        <guid>https://hellogitlab.com/os/windows/cmd/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post windows批处理的使用" /&gt;&lt;h2 id=&#34;windows批处理的使用&#34;&gt;windows批处理的使用
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;命令提示符（CMD）是Windows操作系统中内置的命令行工具，它提供了一种直接与计算机系统进行交互的方式。虽然现代操作系统提供了许多图形化界面和工具，但命令提示符在某些场景下仍然具有重要的作用。比如重复任务的执行，日志的定时删除等操作，都可以借助命令行工具来完成。&lt;/li&gt;
@@ -41120,7 +41120,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/ul&gt;
 &lt;h4 id=&#34;11-打开命令行窗口&#34;&gt;1.1 打开命令行窗口
 &lt;/h4&gt;&lt;p&gt;我使用的windows系统版本是&lt;code&gt;Windows 10 家庭中文版&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-16-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-16-58.png&#34;
 	
 	
 	
@@ -41132,7 +41132,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;ul&gt;
 &lt;li&gt;方式1： 通过windows搜索功能，在搜索框直接输入&lt;code&gt;cmd&lt;/code&gt;搜索，搜索出结果后，点击【打开】或【以管理员身份运行】：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-18-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-18-23.png&#34;
 	
 	
 	
@@ -41141,7 +41141,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;【以管理员身份运行】则可以获取更多的权限。建议通常直接点击【打开】或者直接搜索出结果后按Enter键回车。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-33-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-33-18.png&#34;
 	
 	
 	
@@ -41154,7 +41154,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;方式2：在当前目录下的路径栏，输入&lt;code&gt;cmd&lt;/code&gt;可以打开当前目录下的命令行。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;如当前目录是&lt;code&gt;D:\data\temp&lt;/code&gt;，直接在路径栏输入&lt;code&gt;cmd&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-28-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-28-38.png&#34;
 	
 	
 	
@@ -41163,7 +41163,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时就可以直接在命令行进入到当前目录。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-29-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-29-51.png&#34;
 	
 	
 	
@@ -41175,7 +41175,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;ul&gt;
 &lt;li&gt;方式3： 通过Win+R键，输入&lt;code&gt;cmd&lt;/code&gt;启动命令行。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-40-41.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-40-41.png&#34;
 	
 	
 	
@@ -41187,7 +41187,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;ul&gt;
 &lt;li&gt;方式4：任务管理器中，依次点击【文件】&amp;ndash;【运行新任务】，在打开的输入框处理&lt;code&gt;cmd&lt;/code&gt;然后回车即可。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-43-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-43-13.png&#34;
 	
 	
 	
@@ -41196,7 +41196,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;这种方式打开的命令行窗口处于&lt;code&gt;C:\WINDOWS\system32&amp;gt;&lt;/code&gt;目录下。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-45-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-45-07.png&#34;
 	
 	
 	
@@ -41206,7 +41206,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;12-改变命令行窗口颜色&#34;&gt;1.2 改变命令行窗口颜色
 &lt;/h4&gt;&lt;p&gt;直接在命令行窗口，在标题处点击鼠标右键，选择【属性】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-51-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-51-59.png&#34;
 	
 	
 	
@@ -41215,7 +41215,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;选择【屏幕背景】，然后在下面的颜色处，直接点击右侧的白色：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-53-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-53-43.png&#34;
 	
 	
 	
@@ -41224,7 +41224,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后选择【屏幕文字】，然后在下面的颜色处，直接点击左侧的黑色，最后点击【确认】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-56-33.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-56-33.png&#34;
 	
 	
 	
@@ -41233,7 +41233,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;关闭当前命令行窗口，重新打开一个命令行窗口，可以看到窗口颜色已经发生变化了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_13-57-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_13-57-59.png&#34;
 	
 	
 	
@@ -41566,7 +41566,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;meizhaohui@windows D:&lt;span class=&#34;se&#34;&gt;\d&lt;/span&gt;ata&lt;span class=&#34;se&#34;&gt;\t&lt;/span&gt;emp&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_15-35-05.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_15-35-05.png&#34;
 	
 	
 	
@@ -41968,7 +41968,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;该目录实际情况：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-02_16-56-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-02_16-56-27.png&#34;
 	
 	
 	
@@ -43009,7 +43009,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这样，就查找出了&lt;code&gt;C:\Program Files (x86)\Microsoft\Edge\Application&lt;/code&gt;目录下的所有&lt;code&gt;.exe&lt;/code&gt;可执行文件。&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;DIR&lt;/code&gt;搜索结果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-03_22-39-52.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-03_22-39-52.png&#34;
 	
 	
 	
@@ -43018,7 +43018,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;使用everything搜索结果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-03_22-40-34.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-03_22-40-34.png&#34;
 	
 	
 	
@@ -43130,11 +43130,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>创建随机密码</title>
-        <link>https://meizhaohui.github.io/os/centos/create_password/</link>
+        <link>https://hellogitlab.com/os/centos/create_password/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/create_password/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 创建随机密码" /&gt;&lt;h2 id=&#34;创建随机密码&#34;&gt;创建随机密码
+        <guid>https://hellogitlab.com/os/centos/create_password/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 创建随机密码" /&gt;&lt;h2 id=&#34;创建随机密码&#34;&gt;创建随机密码
 &lt;/h2&gt;&lt;p&gt;以下命令都是创建16个字符的密码。&lt;/p&gt;
 &lt;h3 id=&#34;1-使用sha算法加密日期&#34;&gt;1. 使用SHA算法加密日期
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -43503,11 +43503,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>防止`rm-rf/`误删除的方法</title>
-        <link>https://meizhaohui.github.io/os/centos/x_forbit_use_rm_to_delete_root_path/</link>
+        <link>https://hellogitlab.com/os/centos/x_forbit_use_rm_to_delete_root_path/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_forbit_use_rm_to_delete_root_path/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 防止`rm-rf/`误删除的方法" /&gt;&lt;h2 id=&#34;防止rm--rf-误删除的方法&#34;&gt;防止&lt;code&gt;rm -rf /&lt;/code&gt;误删除的方法
+        <guid>https://hellogitlab.com/os/centos/x_forbit_use_rm_to_delete_root_path/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 防止`rm-rf/`误删除的方法" /&gt;&lt;h2 id=&#34;防止rm--rf-误删除的方法&#34;&gt;防止&lt;code&gt;rm -rf /&lt;/code&gt;误删除的方法
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;rm -rf /&lt;/code&gt;意味着擦除根路径&lt;code&gt;/&lt;/code&gt;下挂载的所有内容而无需询问。&lt;/li&gt;
@@ -44026,7 +44026,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在&lt;code&gt;/etc/bashrc&lt;/code&gt;中配置后，使用&lt;code&gt;rm&lt;/code&gt;命令就会提示使用&lt;code&gt;safe-rm&lt;/code&gt;或&lt;code&gt;trash-put&lt;/code&gt;命令进行删除操作。&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;rm&lt;/code&gt;命令时的提示如下:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/do_not_use_rm_command.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/do_not_use_rm_command.png&#34;
 	
 	
 	
@@ -44047,11 +44047,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>更改ubuntu国内镜像源</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_change_repo/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_change_repo/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 更改ubuntu国内镜像源" /&gt;&lt;h2 id=&#34;更改ubuntu国内镜像源&#34;&gt;更改ubuntu国内镜像源
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 更改ubuntu国内镜像源" /&gt;&lt;h2 id=&#34;更改ubuntu国内镜像源&#34;&gt;更改ubuntu国内镜像源
 &lt;/h2&gt;&lt;p&gt;我们使用docker运行一个ubuntu容器。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -44469,11 +44469,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>学会使用命令帮助</title>
-        <link>https://meizhaohui.github.io/os/centos/x_use_help/</link>
+        <link>https://hellogitlab.com/os/centos/x_use_help/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_use_help/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 学会使用命令帮助" /&gt;&lt;h2 id=&#34;学会使用命令帮助&#34;&gt;学会使用命令帮助
+        <guid>https://hellogitlab.com/os/centos/x_use_help/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 学会使用命令帮助" /&gt;&lt;h2 id=&#34;学会使用命令帮助&#34;&gt;学会使用命令帮助
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;p&gt;Linux命令行有非常多的命令，通过获取命令的帮忙信息，能够快速了解命令的具体含义和使用方法，通过使用命令行命令的帮助信息，可以减轻学习Linux的负担。获取帮助的途径有：&lt;/p&gt;
 &lt;ul&gt;
@@ -44487,7 +44487,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;h3 id=&#34;man命令&#34;&gt;man命令
 &lt;/h3&gt;&lt;p&gt;man命令的实用性非常高，基本上所有的类Unix系统都支持，所以man命令是学习的重点。man命令帮助文档存放在/usr/share/man目录下，man工具的功能非常强大，几乎每个命令都有man手册。&lt;/p&gt;
 &lt;p&gt;/usr/share/man目录结构如下:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/man_folder_list.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/man_folder_list.png&#34;
 	
 	
 	
@@ -44513,7 +44513,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;查找vim相关的手册&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/mankvim.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/mankvim.png&#34;
 	
 	
 	
@@ -44530,7 +44530,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;查找man关键字可用的手册页&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/manfman.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/manfman.png&#34;
 	
 	
 	
@@ -44547,7 +44547,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;打印man帮助文档存放的路径&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/manpath.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/manpath.png&#34;
 	
 	
 	
@@ -44613,7 +44613,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;h3 id=&#34;info命令&#34;&gt;info命令
 &lt;/h3&gt;&lt;p&gt;直接使用info keyword就可以查看某关键字的info信息页。&lt;/p&gt;
 &lt;p&gt;在命令行输入 &lt;code&gt;info vim&lt;/code&gt; 则可以查看vim的info信息页。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/infovim.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/infovim.png&#34;
 	
 	
 	
@@ -44626,7 +44626,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;h3 id=&#34;help帮助&#34;&gt;help帮助
 &lt;/h3&gt;&lt;p&gt;一般命令都会有 &lt;code&gt;-h&lt;/code&gt; 参数，用于查看命令的help帮助信息&lt;/p&gt;
 &lt;p&gt;在命令行输入 &lt;code&gt;vim -h&lt;/code&gt; 则可以查看vim的帮助信息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/vimhelp.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/vimhelp.png&#34;
 	
 	
 	
@@ -44646,18 +44646,18 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>在VirtualBox中安装CentOS7虚拟机系统</title>
-        <link>https://meizhaohui.github.io/os/centos/x_virtualbox_install_centos7/</link>
+        <link>https://hellogitlab.com/os/centos/x_virtualbox_install_centos7/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_virtualbox_install_centos7/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 在VirtualBox中安装CentOS7虚拟机系统" /&gt;&lt;h2 id=&#34;在virtualbox中安装centos7虚拟机系统&#34;&gt;在VirtualBox中安装CentOS7虚拟机系统
+        <guid>https://hellogitlab.com/os/centos/x_virtualbox_install_centos7/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 在VirtualBox中安装CentOS7虚拟机系统" /&gt;&lt;h2 id=&#34;在virtualbox中安装centos7虚拟机系统&#34;&gt;在VirtualBox中安装CentOS7虚拟机系统
 &lt;/h2&gt;&lt;p&gt;有时我们在学习一些新的知识时，需要使用VitualBox或者VMware配置和安装虚拟机系统，并在虚拟机系统中进行一些实验操作。&lt;/p&gt;
 &lt;p&gt;今天再次总结一下在VirtualBox中安装CentOS7虚拟机。你也可以使用VMware workstation创建虚拟机，由于我使用VMware workstation创建虚拟机时，VMware workstation启动卡顿，感觉电脑卡顿严重，VitualBox相对来说轻量一些。&lt;/p&gt;
 &lt;h3 id=&#34;windows系统中安装virtualbox&#34;&gt;Windows系统中安装VirtualBox
 &lt;/h3&gt;&lt;p&gt;可以在腾讯软件中心下载VirtualBox, &lt;a class=&#34;link&#34; href=&#34;https://pc.qq.com/detail/3/detail_1023.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pc.qq.com/detail/3/detail_1023.html&lt;/a&gt;,也可以在官网下载，下载完成后直接双击&lt;code&gt;virtualbox-Win-latest_6.0.12.exe&lt;/code&gt;可执行文件安装即可。&lt;/p&gt;
 &lt;p&gt;双击桌面中的&lt;code&gt;Oracle VM VirtualBox&lt;/code&gt;图标，可以打开VirtualBox应用。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511232616.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511232616.jpg&#34;
 	
 	
 	
@@ -44674,7 +44674,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;ul&gt;
 &lt;li&gt;新建虚拟机，设置虚拟机名称：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233502.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511233502.png&#34;
 	
 	
 	
@@ -44689,7 +44689,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;设置虚拟机内存&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;将默认的1024MB改成2048MB：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233603.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511233603.png&#34;
 	
 	
 	
@@ -44701,7 +44701,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;现在创建虚拟机&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;点击&amp;quot;创建&amp;quot;即可：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233700.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511233700.png&#34;
 	
 	
 	
@@ -44712,7 +44712,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;ul&gt;
 &lt;li&gt;使用默认的硬盘文件类型&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233812.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511233812.png&#34;
 	
 	
 	
@@ -44723,7 +44723,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;ul&gt;
 &lt;li&gt;设置动态分配物理硬盘&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233847.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511233847.png&#34;
 	
 	
 	
@@ -44735,7 +44735,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;创建虚拟硬盘&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;设置虚拟硬盘大小为20GB，并点击“创建”按钮：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511233935.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511233935.png&#34;
 	
 	
 	
@@ -44744,7 +44744,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时创建出了一个CentOS7的虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511234109.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511234109.png&#34;
 	
 	
 	
@@ -44755,7 +44755,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;注意，此时不要点击“启动”按钮，还需要进行一些配置。我们先关注一下网络配置，待会再来设置虚拟机的其他设置。&lt;/p&gt;
 &lt;h3 id=&#34;virtualbox虚拟机网络环境配置&#34;&gt;VirtualBox虚拟机网络环境配置
 &lt;/h3&gt;&lt;p&gt;VirtualBox安装完成后，会在设备管理器-&amp;gt;网络适配器中增加一个名称为&amp;quot;VirutalBox Host-Only Ethernet Adapter&amp;quot;的适配器：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589291889022.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589291889022.png&#34;
 	
 	
 	
@@ -44766,7 +44766,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们在&lt;code&gt;控制面板\网络和 Internet\网络连接&lt;/code&gt;中查看这个网络：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511235136.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511235136.png&#34;
 	
 	
 	
@@ -44775,7 +44775,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到它现在没有发包也没有接收包：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511235204.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511235204.png&#34;
 	
 	
 	
@@ -44786,7 +44786,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;我们为“以太网2”配置一下DNS.&lt;/p&gt;
 &lt;h4 id=&#34;vitualbox网络适配器dns配置&#34;&gt;VitualBox网络适配器DNS配置
 &lt;/h4&gt;&lt;p&gt;首先，我们查看宿主机的网络详情：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200511235547.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200511235547.png&#34;
 	
 	
 	
@@ -44800,7 +44800,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;202.103.x.x&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我们给VirtualBox网络适配器配置一下DNS:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512000136.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512000136.png&#34;
 	
 	
 	
@@ -44811,7 +44811,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;查看virtualbox主机网络管理器&#34;&gt;查看VirtualBox主机网络管理器
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512000521.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512000521.png&#34;
 	
 	
 	
@@ -44819,7 +44819,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512000606.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512000606.png&#34;
 	
 	
 	
@@ -44827,7 +44827,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512000635.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512000635.png&#34;
 	
 	
 	
@@ -44848,7 +44848,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;h3 id=&#34;virtualbox中修改centos7虚拟机默认配置&#34;&gt;VirtualBox中修改CentOS7虚拟机默认配置
 &lt;/h3&gt;&lt;h4 id=&#34;显卡控制器设置&#34;&gt;显卡控制器设置
 &lt;/h4&gt;&lt;p&gt;将显卡控制器的默认设置&amp;quot;VMSVGA&amp;quot;改为“VBoxVGA”:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512212842.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512212842.jpg&#34;
 	
 	
 	
@@ -44858,7 +44858,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512213100.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512213100.png&#34;
 	
 	
 	
@@ -44868,7 +44868,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;存储设置&#34;&gt;存储设置
 &lt;/h4&gt;&lt;p&gt;存储设置中选择我们下载的CentOS7镜像iso文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512213203.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512213203.png&#34;
 	
 	
 	
@@ -44878,7 +44878,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;声音设置&#34;&gt;声音设置
 &lt;/h4&gt;&lt;p&gt;我们关闭虚拟机中的声音，即不启用声音，去掉&amp;quot;启用声音&amp;quot;前面的勾选。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512213349.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512213349.png&#34;
 	
 	
 	
@@ -44888,7 +44888,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;串口设置&#34;&gt;串口设置
 &lt;/h4&gt;&lt;p&gt;我们不启用串口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512213548.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512213548.png&#34;
 	
 	
 	
@@ -44898,7 +44898,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;usb设备&#34;&gt;USB设备
 &lt;/h4&gt;&lt;p&gt;不启用USB控制器：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589290606079.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589290606079.png&#34;
 	
 	
 	
@@ -44917,7 +44917,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;li&gt;网卡2：网络地址转换(NAT)：虚拟机可访问宿主机，宿主机不能访问虚拟机，虚拟机可以访问外部网络，是访问外网更优的方案。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;网卡1配置仅主机(Host-Only)网络：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589290989891.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589290989891.png&#34;
 	
 	
 	
@@ -44928,7 +44928,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;网卡2配置网络地址转换(NAT):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589291035198.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589291035198.png&#34;
 	
 	
 	
@@ -44941,7 +44941,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;以上配置完成后，可以再检查一下确认是否配置正确。确认无误后，可以启动虚拟机。&lt;/p&gt;
 &lt;h3 id=&#34;centos7系统安装&#34;&gt;CentOS7系统安装
 &lt;/h3&gt;&lt;p&gt;首先启动centos7虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512221929.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512221929.png&#34;
 	
 	
 	
@@ -44953,7 +44953,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512222053.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512222053.png&#34;
 	
 	
 	
@@ -44963,7 +44963,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;p&gt;我们先禁用一下“VirtualBox Host-Only Ethernet Adapter”,然后再启动：&lt;/p&gt;
 &lt;p&gt;禁用设备：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512222250.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512222250.png&#34;
 	
 	
 	
@@ -44976,7 +44976,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;在虚拟机中可以使用上下左右键，或者tab键进行焦点切换。&lt;/p&gt;
 &lt;h4 id=&#34;安装&#34;&gt;安装
 &lt;/h4&gt;&lt;p&gt;选择“Install CentOS 7”:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589293507799.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589293507799.png&#34;
 	
 	
 	
@@ -44987,7 +44987,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;保持默认的安装语言为英文：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512223034.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512223034.png&#34;
 	
 	
 	
@@ -44996,7 +44996,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;配置本地化-时间和日期设置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512223232.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512223232.png&#34;
 	
 	
 	
@@ -45005,7 +45005,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击中国地图区域，设置区域为”Asia-Shanghai“，即”亚洲-上海“，最后点击”Done“确认：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512223415.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512223415.png&#34;
 	
 	
 	
@@ -45014,7 +45014,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;语言支持可以选择你想使用的语言，我们添加中文支持：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512223613.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512223613.png&#34;
 	
 	
 	
@@ -45023,7 +45023,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;安装目标磁盘，我们选择我们创建的20GB的虚拟磁盘：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512223732.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512223732.png&#34;
 	
 	
 	
@@ -45032,7 +45032,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们将两个网卡设置为启动状态，右上角处设置为”ON“状态，自动获取IP地址：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512223916.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512223916.png&#34;
 	
 	
 	
@@ -45041,7 +45041,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;最终两个网络都显示”Conneted“表示已经连接网络：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512224049.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512224049.png&#34;
 	
 	
 	
@@ -45050,7 +45050,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;以上配置完成后，点击”Begin Install“开始安装：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589294533039.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589294533039.png&#34;
 	
 	
 	
@@ -45061,7 +45061,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在安装系统的时候，需要配置用户设置，需要配置root账号密码和普通用户：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589294732001.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589294732001.png&#34;
 	
 	
 	
@@ -45072,7 +45072,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;配置root密码，因为我们是做测试，所以可以设置一个简单的密码，如&lt;code&gt;123456&lt;/code&gt;，两次输入root账号的密码后，按Done确认：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512230417.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512230417.png&#34;
 	
 	
 	
@@ -45081,7 +45081,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;有时候，为了系统的安全，我们会禁止root账号远程登陆，此时有必要设置一个普通账号，并将其设置为超级用户，这样就可以使用这个超级用户账号远程登陆来管理服务器，因此我们创建一个普通账号：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200512230749.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200512230749.png&#34;
 	
 	
 	
@@ -45091,7 +45091,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;p&gt;注意，创建普通账号时，将”Make this user administrator“即将该用户配置为超级用户。&lt;/p&gt;
 &lt;p&gt;安装完成后，点击”Reboot“按钮重启虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513064659.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513064659.png&#34;
 	
 	
 	
@@ -45100,7 +45100,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;重启后，保持默认的”CentOS Linux(3.10.90-957.el7.x86_64) 7 (Core)“：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513065012.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513065012.png&#34;
 	
 	
 	
@@ -45110,7 +45110,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;登陆centos7系统&#34;&gt;登陆CentOS7系统
 &lt;/h4&gt;&lt;p&gt;首次进入系统时，需要输入登陆用户名和密码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513065234.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513065234.png&#34;
 	
 	
 	
@@ -45119,7 +45119,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们使用root账号和密码登陆：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513065419.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513065419.png&#34;
 	
 	
 	
@@ -45131,7 +45131,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/h4&gt;&lt;p&gt;我们首先检查虚拟机中是否能够ping通外网，如果通ping通外网，说明虚拟机能够正常访问外网。&lt;/p&gt;
 &lt;h5 id=&#34;检查虚拟机是否能正常ping通外网&#34;&gt;检查虚拟机是否能正常ping通外网
 &lt;/h5&gt;&lt;p&gt;使用命令&lt;code&gt;ping -c 3 baidu.com&lt;/code&gt;检查虚拟机是否能正常ping通外网：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513065717.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513065717.png&#34;
 	
 	
 	
@@ -45150,7 +45150,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ip a show
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513070453.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513070453.png&#34;
 	
 	
 	
@@ -45159,7 +45159,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时可以发现&lt;code&gt;enp0s3&lt;/code&gt;网络异常，&lt;code&gt;enp0s8&lt;/code&gt;网络正常（正常显示了ip地址10.0.3.15）,我们检查一下&lt;code&gt;enp0s3&lt;/code&gt;的网络配置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513070703.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513070703.png&#34;
 	
 	
 	
@@ -45176,7 +45176,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sed -i &lt;span class=&#34;s1&#34;&gt;&amp;#39;s/ONBOOT=no/ONBOOT=yes/g&amp;#39;&lt;/span&gt; ifcfg-enp0s3
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589325083976.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589325083976.png&#34;
 	
 	
 	
@@ -45187,7 +45187,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;运行&lt;code&gt;shutdown -r now&lt;/code&gt;重启虚拟机,重启后，使用root账号和密码登陆，再次查看虚拟机IP信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589325208055.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589325208055.png&#34;
 	
 	
 	
@@ -45198,7 +45198,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时显示出IP地址为&lt;code&gt;192.168.56.7&lt;/code&gt;,我们使用宿主机的&lt;code&gt;cmd&lt;/code&gt;命令行尝试ping一下虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589325349015.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589325349015.png&#34;
 	
 	
 	
@@ -45424,7 +45424,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，远程连接会断开，我们在VirutalBox的虚拟机界面使用&lt;code&gt;ip a show&lt;/code&gt;查看配置是否生效：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513205220.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513205220.png&#34;
 	
 	
 	
@@ -45433,7 +45433,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;使用XShell 6连接虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20200513205501.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20200513205501.png&#34;
 	
 	
 	
@@ -45446,7 +45446,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;p&gt;至此，VirutalBox中安装的纯净CentOS7 mini版本配置完成了，可以使用VirtualBox的备份【系统快照】功能，给当前虚拟机设置一个快照，后续可以使用这个基本虚拟机创建其他虚拟机。&lt;/p&gt;
 &lt;h3 id=&#34;创建虚拟机快照&#34;&gt;创建虚拟机快照
 &lt;/h3&gt;&lt;p&gt;在虚拟机关机状态下，点击虚拟机的“备份[系统快照]”创建快照：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589375195020.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589375195020.png&#34;
 	
 	
 	
@@ -45457,7 +45457,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击“生成”，在弹出的“生成备份”界面中填写&lt;code&gt;备份名称&lt;/code&gt;和&lt;code&gt;备份描述&lt;/code&gt;，便于后期使用时选择备份时间点，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589375508986.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589375508986.png&#34;
 	
 	
 	
@@ -45468,7 +45468,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;后续我们就可以在该备份时间点处进行备份恢复或者复制到新的虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/1589375879546.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/1589375879546.png&#34;
 	
 	
 	
@@ -45611,7 +45611,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，使用&lt;code&gt;活动监视器&lt;/code&gt;查看virtualbox应用cpu/内存占用情况：&lt;/p&gt;
 &lt;p&gt;cpu占用：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-21_20-21-07.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-21_20-21-07.png&#34;
 	
 	
 	
@@ -45620,7 +45620,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;
 内存占用：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-21_20-21-54.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-21_20-21-54.png&#34;
 	
 	
 	
@@ -45655,7 +45655,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，cpu占用情况：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-21_20-27-49.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-21_20-27-49.png&#34;
 	
 	
 	
@@ -45664,7 +45664,7 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
 	
 &gt;
 内存占用情况：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-21_20-28-26.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-21_20-28-26.png&#34;
 	
 	
 	
@@ -45682,11 +45682,11 @@ There is a Failed Validation limit of 5 failures per account, per hostname, per 
         </item>
         <item>
         <title>终端快捷键的使用</title>
-        <link>https://meizhaohui.github.io/os/centos/x_hotkey_in_terminal/</link>
+        <link>https://hellogitlab.com/os/centos/x_hotkey_in_terminal/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/centos/x_hotkey_in_terminal/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 终端快捷键的使用" /&gt;&lt;h2 id=&#34;终端快捷键的使用&#34;&gt;终端快捷键的使用
+        <guid>https://hellogitlab.com/os/centos/x_hotkey_in_terminal/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 终端快捷键的使用" /&gt;&lt;h2 id=&#34;终端快捷键的使用&#34;&gt;终端快捷键的使用
 &lt;/h2&gt;&lt;p&gt;在&lt;code&gt;linux&lt;/code&gt; 终端(&lt;code&gt;Terminal&lt;/code&gt;)使用快捷键可以提升你的工作效率。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;Tab&lt;/code&gt; 自动补全&lt;/li&gt;

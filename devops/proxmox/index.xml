@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>proxmox on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/devops/proxmox/</link>
+        <link>https://hellogitlab.com/devops/proxmox/</link>
         <description>Recent content in proxmox on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/devops/proxmox/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/devops/proxmox/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>proxmox Docs</title>
-        <link>https://meizhaohui.github.io/devops/proxmox/proxmox_docs/</link>
+        <link>https://hellogitlab.com/devops/proxmox/proxmox_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/proxmox/proxmox_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/proxmox_logo_icon_144960.png" alt="Featured image of post proxmox Docs" /&gt;&lt;h2 id=&#34;proxmox-docs&#34;&gt;proxmox Docs
+        <guid>https://hellogitlab.com/devops/proxmox/proxmox_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/proxmox_logo_icon_144960.png" alt="Featured image of post proxmox Docs" /&gt;&lt;h2 id=&#34;proxmox-docs&#34;&gt;proxmox Docs
 &lt;/h2&gt;&lt;p&gt;本文档主要是想将&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Main_Page&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Proxmox wiki page&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/pve-docs/pve-admin-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Proxmox VE Administration Guide&lt;/a&gt;翻译成中文文档，方便大家学习。&lt;/p&gt;
@@ -114,11 +114,11 @@
         </item>
         <item>
         <title>ProxmoxVE安装</title>
-        <link>https://meizhaohui.github.io/devops/proxmox/x2_installingproxmoxve/</link>
+        <link>https://hellogitlab.com/devops/proxmox/x2_installingproxmoxve/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/proxmox/x2_installingproxmoxve/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ProxmoxVE安装" /&gt;&lt;h2 id=&#34;proxmox-ve安装&#34;&gt;Proxmox VE安装
+        <guid>https://hellogitlab.com/devops/proxmox/x2_installingproxmoxve/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ProxmoxVE安装" /&gt;&lt;h2 id=&#34;proxmox-ve安装&#34;&gt;Proxmox VE安装
 &lt;/h2&gt;&lt;p&gt;Proxmox VE基于Debian，附带一个安装CD-ROM，其中包括一个完整的Debian系统（5.x版本的&amp;quot;stretch&amp;quot;）以及所有必需的&lt;code&gt;Proxmox VE&lt;/code&gt;软件包。&lt;/p&gt;
 &lt;p&gt;安装程序只询问您几个问题，然后对本地磁盘进行分区，安装所有必需的软件包，并配置系统，包括基本网络设置。 您可以在几分钟内获得功能齐全的系统。推荐使用这种方法安装。&lt;/p&gt;
 &lt;p&gt;Proxmox VE可以安装在现有的Debian系统之上。 但此选项仅建议高级用户使用，因为有必要详细了解Proxmox VE。&lt;/p&gt;
@@ -170,7 +170,7 @@
 &lt;p&gt;在安装过程中，默认使用整个服务器，并删除所有现有数据。请对服务器数据提前进行备份！！！
 :::&lt;/p&gt;
 &lt;p&gt;请插入安装CD-ROM，然后从该驱动器启动。 之后您可以选择以下菜单选项：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/pve-grub-menu.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/pve-grub-menu.png&#34;
 	
 	
 	
@@ -202,15 +202,15 @@
         </item>
         <item>
         <title>ProxmoxVE介绍</title>
-        <link>https://meizhaohui.github.io/devops/proxmox/x1_introduction/</link>
+        <link>https://hellogitlab.com/devops/proxmox/x1_introduction/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/proxmox/x1_introduction/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ProxmoxVE介绍" /&gt;&lt;h2 id=&#34;proxmox-ve介绍&#34;&gt;Proxmox VE介绍
+        <guid>https://hellogitlab.com/devops/proxmox/x1_introduction/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ProxmoxVE介绍" /&gt;&lt;h2 id=&#34;proxmox-ve介绍&#34;&gt;Proxmox VE介绍
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;是基于&lt;code&gt;Debian Linux&lt;/code&gt;，开源的运行虚拟机和窗口的平台。&lt;code&gt;Proxmox VE&lt;/code&gt;中可以实现两种虚拟化技术，&lt;code&gt;Kernel-based Virtual Machine (KVM技术)&lt;/code&gt;和&lt;code&gt;container-based virtualization (LXC技术)&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;一个主要的设计目标是使管理尽可能简单。 您可以在单个节点上使用&lt;code&gt;Proxmox VE&lt;/code&gt;，也可以组装多个节点的集群。 所有管理任务都可以使用我们基于&lt;code&gt;Web&lt;/code&gt;的&lt;code&gt;GUI&lt;/code&gt;管理界面完成，即使是初学者也可以在几分钟内设置和安装&lt;code&gt;Proxmox VE&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;Proxmox的架构图如下图所示&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/proxmox_introduction.svg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/proxmox_introduction.svg&#34;
 	
 	
 	

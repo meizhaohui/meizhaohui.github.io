@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Backend on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/backend/</link>
+        <link>https://hellogitlab.com/categories/backend/</link>
         <description>Recent content in Backend on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/backend/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/backend/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Flask Web框架入门</title>
-        <link>https://meizhaohui.github.io/backend/flask/flask-intro/</link>
+        <link>https://hellogitlab.com/backend/flask/flask-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/flask/flask-intro/</guid>
+        <guid>https://hellogitlab.com/backend/flask/flask-intro/</guid>
         <description>&lt;h2 id=&#34;flask简介&#34;&gt;Flask简介
 &lt;/h2&gt;&lt;p&gt;Flask是一个轻量级的Python Web框架，非常适合快速开发Web应用。&lt;/p&gt;
 &lt;h2 id=&#34;快速开始&#34;&gt;快速开始
@@ -48,10 +48,10 @@
         </item>
         <item>
         <title>Golang并发编程</title>
-        <link>https://meizhaohui.github.io/backend/golang/golang-concurrency/</link>
+        <link>https://hellogitlab.com/backend/golang/golang-concurrency/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/golang/golang-concurrency/</guid>
+        <guid>https://hellogitlab.com/backend/golang/golang-concurrency/</guid>
         <description>&lt;h2 id=&#34;goroutine&#34;&gt;Goroutine
 &lt;/h2&gt;&lt;p&gt;Goroutine是Go语言的轻量级线程，使用go关键字即可启动。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -96,10 +96,10 @@
         </item>
         <item>
         <title>Spring Boot快速入门</title>
-        <link>https://meizhaohui.github.io/backend/java/spring-boot-intro/</link>
+        <link>https://hellogitlab.com/backend/java/spring-boot-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/java/spring-boot-intro/</guid>
+        <guid>https://hellogitlab.com/backend/java/spring-boot-intro/</guid>
         <description>&lt;h2 id=&#34;spring-boot简介&#34;&gt;Spring Boot简介
 &lt;/h2&gt;&lt;p&gt;Spring Boot简化了Spring应用的开发，提供了开箱即用的配置。&lt;/p&gt;
 &lt;h2 id=&#34;创建rest-api&#34;&gt;创建REST API
@@ -133,10 +133,10 @@
         </item>
         <item>
         <title>RESTful API设计</title>
-        <link>https://meizhaohui.github.io/backend/rest-api/</link>
+        <link>https://hellogitlab.com/backend/rest-api/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/rest-api/</guid>
+        <guid>https://hellogitlab.com/backend/rest-api/</guid>
         <description>&lt;h2 id=&#34;rest原则&#34;&gt;REST原则
 &lt;/h2&gt;&lt;p&gt;REST使用HTTP方法进行CRUD操作。&lt;/p&gt;
 &lt;h2 id=&#34;http方法&#34;&gt;HTTP方法
@@ -150,10 +150,10 @@
         </item>
         <item>
         <title>数据库索引</title>
-        <link>https://meizhaohui.github.io/backend/database-index/</link>
+        <link>https://hellogitlab.com/backend/database-index/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/database-index/</guid>
+        <guid>https://hellogitlab.com/backend/database-index/</guid>
         <description>&lt;h2 id=&#34;什么是索引&#34;&gt;什么是索引？
 &lt;/h2&gt;&lt;p&gt;索引是一种提高查询性能的数据结构。&lt;/p&gt;
 &lt;h2 id=&#34;索引类型&#34;&gt;索引类型
@@ -166,10 +166,10 @@
         </item>
         <item>
         <title>数据库索引</title>
-        <link>https://meizhaohui.github.io/dba/database-index/</link>
+        <link>https://hellogitlab.com/dba/database-index/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/database-index/</guid>
+        <guid>https://hellogitlab.com/dba/database-index/</guid>
         <description>&lt;h2 id=&#34;什么是索引&#34;&gt;什么是索引？
 &lt;/h2&gt;&lt;p&gt;索引是一种提高查询性能的数据结构。&lt;/p&gt;
 &lt;h2 id=&#34;索引类型&#34;&gt;索引类型
@@ -182,10 +182,10 @@
         </item>
         <item>
         <title>微服务架构</title>
-        <link>https://meizhaohui.github.io/backend/microservices/</link>
+        <link>https://hellogitlab.com/backend/microservices/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/microservices/</guid>
+        <guid>https://hellogitlab.com/backend/microservices/</guid>
         <description>&lt;h2 id=&#34;什么是微服务&#34;&gt;什么是微服务？
 &lt;/h2&gt;&lt;p&gt;微服务将应用程序拆分为小型、独立的服务。&lt;/p&gt;
 &lt;h2 id=&#34;优势&#34;&gt;优势
@@ -198,11 +198,11 @@
         </item>
         <item>
         <title>Python虚拟环境管理器miniforge</title>
-        <link>https://meizhaohui.github.io/backend/python/miniforge/</link>
+        <link>https://hellogitlab.com/backend/python/miniforge/</link>
         <pubDate>Sat, 25 Oct 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/miniforge/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python虚拟环境管理器miniforge" /&gt;&lt;h2 id=&#34;python虚拟环境管理器miniforge&#34;&gt;Python虚拟环境管理器miniforge
+        <guid>https://hellogitlab.com/backend/python/miniforge/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python虚拟环境管理器miniforge" /&gt;&lt;h2 id=&#34;python虚拟环境管理器miniforge&#34;&gt;Python虚拟环境管理器miniforge
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;miniforge官方地址 &lt;a class=&#34;link&#34; href=&#34;https://github.com/conda-forge/miniforge&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -212,7 +212,7 @@
 &lt;li&gt;国内可以在清华大学开源镜像站上下载相关的包，&lt;a class=&#34;link&#34; href=&#34;https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/Release%2025.3.1-0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://mirrors.tuna.tsinghua.edu.cn/github-release/conda-forge/miniforge/Release%2025.3.1-0/&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-10-25_18-31-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-10-25_18-31-46.png&#34;
 	
 	
 	
@@ -254,7 +254,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./Miniforge3-25.3.1-0-Linux-x86_64.sh: OK
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-10-25_18-37-25.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-10-25_18-37-25.png&#34;
 	
 	
 	
@@ -2242,11 +2242,11 @@
         </item>
         <item>
         <title>在Python项目中使用loguru记录日志</title>
-        <link>https://meizhaohui.github.io/backend/python/use_loguru/</link>
+        <link>https://hellogitlab.com/backend/python/use_loguru/</link>
         <pubDate>Sat, 25 Oct 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/use_loguru/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 在Python项目中使用loguru记录日志" /&gt;&lt;h2 id=&#34;在python项目中使用loguru记录日志&#34;&gt;在Python项目中使用loguru记录日志
+        <guid>https://hellogitlab.com/backend/python/use_loguru/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 在Python项目中使用loguru记录日志" /&gt;&lt;h2 id=&#34;在python项目中使用loguru记录日志&#34;&gt;在Python项目中使用loguru记录日志
 &lt;/h2&gt;&lt;p&gt;loguru 是一个 Python 日志记录 第三方开源库，相比与 Python 原生的 logging 模块，loguru 提供了更简单、更强大、更优雅的日志记录方式。它是对 Python 标准库logging的替代方案，具有开箱即用、功能丰富、配置灵活等特点。&lt;/p&gt;
 &lt;h3 id=&#34;1-loguru的基本使用&#34;&gt;1. loguru的基本使用
 &lt;/h3&gt;&lt;ul&gt;
@@ -2349,7 +2349,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，会在标准输出里面输出一行debug日志。&lt;/p&gt;
 &lt;p&gt;看一下截图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-10-30_22-12-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-10-30_22-12-49.png&#34;
 	
 	
 	
@@ -2448,7 +2448,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;输出如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-10-30_22-25-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-10-30_22-25-13.png&#34;
 	
 	
 	
@@ -2486,7 +2486,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时再执行之前的日志输出就可以看到TRACE级别的信息输出了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-10-30_22-42-34.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-10-30_22-42-34.png&#34;
 	
 	
 	
@@ -2514,7 +2514,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时再输出日志：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-10-30_22-45-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-10-30_22-45-25.png&#34;
 	
 	
 	
@@ -2715,7 +2715,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@localhost tmp&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-01_17-22-53.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-01_17-22-53.png&#34;
 	
 	
 	
@@ -3400,7 +3400,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后运行&lt;code&gt;main.py&lt;/code&gt;，效果如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_22-46-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_22-46-12.png&#34;
 	
 	
 	
@@ -3534,7 +3534,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后运行&lt;code&gt;main.py&lt;/code&gt;，效果如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_22-51-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_22-51-53.png&#34;
 	
 	
 	
@@ -3648,7 +3648,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行一次&lt;code&gt;main.py&lt;/code&gt;程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_23-16-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_23-16-10.png&#34;
 	
 	
 	
@@ -3660,7 +3660,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &gt;&lt;/p&gt;
 &lt;p&gt;此时在日志文件夹中会生成&lt;code&gt;app.log&lt;/code&gt;日志文件：&lt;/p&gt;
 &lt;p&gt;使用notepad++打开&lt;code&gt;app.log&lt;/code&gt;日志文件，可以看到其长度为525字节：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_23-18-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_23-18-06.png&#34;
 	
 	
 	
@@ -3671,7 +3671,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;再运行一次程序，发现日志做了轮转，生成了一个归档日志文件&lt;code&gt;app.2025-11-03_23-12-44_261418.log&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_23-19-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_23-19-10.png&#34;
 	
 	
 	
@@ -3682,7 +3682,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;查看&lt;code&gt;app.2025-11-03_23-12-44_261418.log&lt;/code&gt;日志内容：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_23-20-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_23-20-48.png&#34;
 	
 	
 	
@@ -3694,7 +3694,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，其长度为974字节。&lt;/p&gt;
 &lt;p&gt;而此时的&lt;code&gt;app.log&lt;/code&gt;的内容如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_23-22-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_23-22-02.png&#34;
 	
 	
 	
@@ -3796,7 +3796,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后运行文件，可以发现生成了多个归档文件&lt;code&gt;app.2025-11-03_23-32-52_450490.log&lt;/code&gt;、&lt;code&gt;app.2025-11-03_23-32-55_461361.log&lt;/code&gt;，可以看到这两个文件名秒数相差3。查看内容：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-03_23-41-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-03_23-41-50.png&#34;
 	
 	
 	
@@ -3923,7 +3923,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;my_log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-08_18-14-18.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-08_18-14-18.png&#34;
 	
 	
 	
@@ -4307,7 +4307,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;my_log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-08_22-24-46.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-08_22-24-46.png&#34;
 	
 	
 	
@@ -4319,7 +4319,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &gt;&lt;/p&gt;
 &lt;p&gt;在命令行运行&lt;code&gt;main.py&lt;/code&gt;程序，并使用&lt;code&gt;jq&lt;/code&gt;命令获取日志文件输出。&lt;/p&gt;
 &lt;p&gt;注意，&lt;code&gt;jq&lt;/code&gt;是一个json解析工具，可参考&lt;a class=&#34;link&#34; href=&#34;../../OS/Centos/json_tool_jq&#34; &gt;JSON解析工具-jq&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-08_22-28-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-08_22-28-06.png&#34;
 	
 	
 	
@@ -4331,7 +4331,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到jq命令能够正常解析出已经序列化的日志文件 &lt;code&gt;app.log&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;序列化的日志文件长这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-08_22-29-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-08_22-29-21.png&#34;
 	
 	
 	
@@ -4421,7 +4421,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在Python命令行运行以上代码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_14-27-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_14-27-13.png&#34;
 	
 	
 	
@@ -4446,7 +4446,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，可以看到日志记录中都额外记录了&lt;code&gt;ip&lt;/code&gt;和&lt;code&gt;user&lt;/code&gt;这两个属性：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_14-31-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_14-31-11.png&#34;
 	
 	
 	
@@ -4485,7 +4485,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;注意第三行&lt;code&gt;logger = logger.bind(ip=&amp;quot;unknown&amp;quot;, user=&amp;quot;anonymous&amp;quot;)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;此时程序正常运行，没有报错：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_14-40-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_14-40-26.png&#34;
 	
 	
 	
@@ -4581,7 +4581,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                                                                                                                                                                                                                                                                                             ✔
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_14-43-33.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_14-43-33.png&#34;
 	
 	
 	
@@ -4646,7 +4646,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，运行代码正常。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_14-52-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_14-52-03.png&#34;
 	
 	
 	
@@ -4671,7 +4671,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Method 2 IP: unknown User:anonymous Message:An info message.\n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;record&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;elapsed&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;repr&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;0:00:00.011040&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;seconds&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.01104&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;exception&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;extra&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;ip&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;unknown&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;user&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;input&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;input&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;function&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;module&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;level&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;icon&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;ℹ️&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;INFO&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;no&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;line&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;message&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;An info message.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;module&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;input&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;process&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;11036&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;MainProcess&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;thread&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7780&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;MainThread&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;},&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;time&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;repr&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;2025-11-09 14:50:03.070805+08:00&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;&amp;#34;timestamp&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1762671003.070805&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_21-16-58.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_21-16-58.png&#34;
 	
 	
 	
@@ -4834,7 +4834,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后运行&lt;code&gt;main.py&lt;/code&gt;程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_21-51-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_21-51-00.png&#34;
 	
 	
 	
@@ -4845,7 +4845,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，在日志文件夹&lt;code&gt;logs&lt;/code&gt;目录中生成了&lt;code&gt;app.log&lt;/code&gt;和&lt;code&gt;error.log&lt;/code&gt;，查看其内容：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_21-55-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_21-55-30.png&#34;
 	
 	
 	
@@ -4895,7 +4895,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行代码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_22-12-14.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_22-12-14.png&#34;
 	
 	
 	
@@ -5056,7 +5056,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后运行&lt;code&gt;main.py&lt;/code&gt;程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_22-34-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_22-34-24.png&#34;
 	
 	
 	
@@ -5067,7 +5067,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;查看日志文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_22-36-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_22-36-46.png&#34;
 	
 	
 	
@@ -5230,7 +5230,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行&lt;code&gt;main.py&lt;/code&gt;程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-09_22-57-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-09_22-57-22.png&#34;
 	
 	
 	
@@ -5256,14 +5256,14 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
         </item>
         <item>
         <title>换个姿势学C语言第5章5.3</title>
-        <link>https://meizhaohui.github.io/backend/c/newstylec_5.3/</link>
+        <link>https://hellogitlab.com/backend/c/newstylec_5.3/</link>
         <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/c/newstylec_5.3/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.3" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-53节-字符和字符串&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.3节 字符和字符串
+        <guid>https://hellogitlab.com/backend/c/newstylec_5.3/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.3" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-53节-字符和字符串&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.3节 字符和字符串
 &lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
 &lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_14-51-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
 	
 	
 	
@@ -5284,7 +5284,7 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;h3 id=&#34;5-获取完整的牌价数据&#34;&gt;5. 获取完整的牌价数据
 &lt;/h3&gt;&lt;h4 id=&#34;53-字符和字符串&#34;&gt;5.3 字符和字符串
 &lt;/h4&gt;&lt;p&gt;在5.1.2节中，我们已经可以使用一个双精度浮点型数组存储现汇买入价、现钞买入价、现汇卖出价、现钞卖出价和中行折算价。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_00-12-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_00-12-26.png&#34;
 	
 	
 	
@@ -5348,7 +5348,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/ul&gt;
 &lt;p&gt;例如字符“F”，要在屏幕上显示它就必须将这个字母的外观用二进制数值进行描述。方法之一就是把字符的外形划分成若干个栅格，然后分别用1和0来描述每个栅格的内容。&lt;/p&gt;
 &lt;p&gt;如下图所示就是字符F的点阵描述：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-14_22-32-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-14_22-32-31.png&#34;
 	
 	
 	
@@ -5371,7 +5371,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;li&gt;基本的ASCII字符集只包含128个字符，含控制字符、符号、数字和字母。例如英语字母A对应的编码值是65，字母B对应的编码值是66.后来扩展的ASCII字符集包含了256个字符。 详细可参考 &lt;a class=&#34;link&#34; href=&#34;https://ascii-code.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ascii-code.net/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-02-19_20-33-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-02-19_20-33-01.png&#34;
 	
 	
 	
@@ -5486,7 +5486,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行代码，显示输出如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-02-19_23-51-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-02-19_23-51-07.png&#34;
 	
 	
 	
@@ -5538,14 +5538,14 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
         </item>
         <item>
         <title>换个姿势学C语言第5章5.2</title>
-        <link>https://meizhaohui.github.io/backend/c/newstylec_5.2/</link>
+        <link>https://hellogitlab.com/backend/c/newstylec_5.2/</link>
         <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/c/newstylec_5.2/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.2" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-52节-处理数组中的数据&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.2节 处理数组中的数据
+        <guid>https://hellogitlab.com/backend/c/newstylec_5.2/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.2" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-52节-处理数组中的数据&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.2节 处理数组中的数据
 &lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
 &lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_14-51-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
 	
 	
 	
@@ -5853,7 +5853,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;通过在参数&lt;code&gt;int* array&lt;/code&gt;前面加上限定符&lt;code&gt;const&lt;/code&gt;，向编译器明确说明了：不允许在函数内部修改指针&lt;code&gt;array&lt;/code&gt;指向的内存值。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-01-21_23-21-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-01-21_23-21-38.png&#34;
 	
 	
 	
@@ -6556,14 +6556,14 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
         </item>
         <item>
         <title>换个姿势学C语言第5章5.1</title>
-        <link>https://meizhaohui.github.io/backend/c/newstylec_5/</link>
+        <link>https://hellogitlab.com/backend/c/newstylec_5/</link>
         <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/c/newstylec_5/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.1" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-51节-使用数组存储数据&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.1节 使用数组存储数据
+        <guid>https://hellogitlab.com/backend/c/newstylec_5/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第5章5.1" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第5章-获取完整的牌价数据-51节-使用数组存储数据&#34;&gt;换个姿势学C语言 第5章 获取完整的牌价数据 5.1节 使用数组存储数据
 &lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
 &lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_14-51-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
 	
 	
 	
@@ -6677,7 +6677,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;p&gt;在完成本章程序编写后，你的程序可以完整地获取和显示某种货币的全部牌价信息。&lt;/p&gt;
 &lt;h4 id=&#34;51-使用数组存储数据&#34;&gt;5.1 使用数组存储数据
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;ConvertCurrency&lt;/code&gt;函数是根据中行折算价进行货币金额转换的，得到的是单个金额 。但是外汇牌价看板程序需要获取多个价格，包括现汇买入价、现钞买入价、现汇卖出价、现钞卖出价和中行折算价。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_00-12-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_00-12-26.png&#34;
 	
 	
 	
@@ -6689,7 +6689,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &gt;&lt;/p&gt;
 &lt;p&gt;这5项数据该如何存储？读者当然可以定义5个&lt;code&gt;double&lt;/code&gt;双精度浮点数 ，然后用5个不同的函数获取不同的价格，但这种方式会大大提高程序的复杂度（35种货币都定义5个变量的话，则需要定义&lt;code&gt;35 * 5 = 175&lt;/code&gt;个变量）。&lt;/p&gt;
 &lt;p&gt;想像一下，如果你要从超市买10个鸡蛋回家，最好的办法显然不是每个口袋装几个，而是用一种叫“蛋托”的容器装好以更方便和妥当地携带。就像下图这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/10619577025_1692599836.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/10619577025_1692599836.jpg&#34;
 	
 	
 	
@@ -6760,7 +6760,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-25_22-50-36.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-25_22-50-36.png&#34;
 	
 	
 	
@@ -6983,7 +6983,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时运行代码，输出结果是1。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-15_23-29-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-15_23-29-32.png&#34;
 	
 	
 	
@@ -7073,7 +7073,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;而此时中国银行官网上面显示结果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-17_22-39-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-17_22-39-12.png&#34;
 	
 	
 	
@@ -7238,7 +7238,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，程序可以正常运行。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-20_23-11-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-20_23-11-24.png&#34;
 	
 	
 	
@@ -7275,7 +7275,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-20_23-13-23.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-20_23-13-23.png&#34;
 	
 	
 	
@@ -7289,7 +7289,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;p&gt;C程序里所有函数中的变量、数组都是使用一块被称为【栈】的内存空间。不同的编译器分配的栈空间大小不同，如果程序在访问栈时发生了越界行为，则会造成&lt;code&gt;Stack overflow&lt;/code&gt;栈溢出异常。&lt;/p&gt;
 &lt;p&gt;可通过以下访问查看visual studio中栈默认值。&lt;/p&gt;
 &lt;p&gt;项目属性&amp;ndash;&amp;gt;链接器&amp;ndash;&amp;gt;系统&amp;ndash;&amp;gt;堆栈保留大小，单位为字节。系统默认为1M，即1024*1024=1048576字节。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-20_23-18-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-20_23-18-21.png&#34;
 	
 	
 	
@@ -7377,7 +7377,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;当设置数组长度为&lt;code&gt;256504&lt;/code&gt;时，有警告，运行时也会提示堆栈溢出错误：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-22_23-38-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-22_23-38-44.png&#34;
 	
 	
 	
@@ -7388,7 +7388,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;当设置数组长度为&lt;code&gt;256500&lt;/code&gt;时，又可以正常运行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-22_23-41-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-22_23-41-03.png&#34;
 	
 	
 	
@@ -7488,7 +7488,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，启动程序后，消耗内存17294-16005 = 1289 MB，即除了分配1GB的动态内存外，程序本身还消耗了些内存。&lt;/p&gt;
 &lt;p&gt;此时，虽然程序能正常执行，但有两个警告：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-10-23_23-07-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-10-23_23-07-59.png&#34;
 	
 	
 	
@@ -7569,7 +7569,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;li&gt;指针变量用于存放数据的地址，而数据都是有类型的(&lt;code&gt;int&lt;/code&gt;、&lt;code&gt;double&lt;/code&gt;和&lt;code&gt;float&lt;/code&gt;等)，为了更方便地操作不同类型的数据，C语言提供了多种指针类型，通过指针类型来明确这个指针变量将存储何种类型数据的地址。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;不同类型的指针：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-11-05_21-22-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-11-05_21-22-40.png&#34;
 	
 	
 	
@@ -7659,7 +7659,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;注意，每次运行时，变量x的地址、指针变量ptr_x的值和指针变量ptr_x的地址都会不一样。&lt;/p&gt;
 &lt;p&gt;绘制变量x与ptr_x的关系：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-11-06_23-29-36.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-11-06_23-29-36.png&#34;
 	
 	
 	
@@ -7921,7 +7921,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;现在，通过动态分配的内存空间存储了40960个整型值，突破了对数组大小的限制。如果必要的话，还可以分配更大的空间以存储更多的数据。&lt;/p&gt;
 &lt;p&gt;这个程序有一个告警：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-12-08_21-15-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-12-08_21-15-44.png&#34;
 	
 	
 	
@@ -8068,7 +8068,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时可以正常运行程序，并且编译器没有警告了！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-12-08_21-43-14.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-12-08_21-43-14.png&#34;
 	
 	
 	
@@ -8214,14 +8214,14 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
         </item>
         <item>
         <title>换个姿势学C语言第4章</title>
-        <link>https://meizhaohui.github.io/backend/c/newstylec_4/</link>
+        <link>https://hellogitlab.com/backend/c/newstylec_4/</link>
         <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/c/newstylec_4/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 换个姿势学C语言第4章" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第4章-获取和显示外汇实时牌价&#34;&gt;换个姿势学C语言 第4章 获取和显示外汇实时牌价
+        <guid>https://hellogitlab.com/backend/c/newstylec_4/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第4章" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第4章-获取和显示外汇实时牌价&#34;&gt;换个姿势学C语言 第4章 获取和显示外汇实时牌价
 &lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
 &lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_14-51-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
 	
 	
 	
@@ -8262,7 +8262,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/h5&gt;&lt;p&gt;何老师在书的前言中给出了清华大学出版社的下载二维码。&lt;/p&gt;
 &lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;./newstylec#_2-3-1-%e8%a7%84%e5%88%92%e9%a1%b9%e7%9b%ae%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34; &gt;规划项目目录结构&lt;/a&gt; 中已经给出了目录结构的规划。&lt;/p&gt;
 &lt;p&gt;我们将下载好的接口库文件存放到 &lt;code&gt;D:\BC101\Libraries\BOCRates&lt;/code&gt;目录下，该目录下一共有两个文件。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-27_23-14-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-27_23-14-15.png&#34;
 	
 	
 	
@@ -8318,7 +8318,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;使用Debug x86模式来编译代码。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;修改项目属性，设置【链接器】&amp;ndash;【常规】&amp;ndash;【强制文件输出】选择【已启用（/FORCE）】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-27_23-44-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-27_23-44-46.png&#34;
 	
 	
 	
@@ -8330,7 +8330,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &gt;&lt;/p&gt;
 &lt;p&gt;请务必牢记未来创建的所有用到外汇牌价接口库的程序，都应修改【强制文件输出】选择【已启用（/FORCE）】。&lt;/p&gt;
 &lt;p&gt;此时，我们还是报异常了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-27_23-48-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-27_23-48-12.png&#34;
 	
 	
 	
@@ -8342,7 +8342,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &gt;&lt;/p&gt;
 &lt;p&gt;提示无法打开nafxcw.lib文件。&lt;/p&gt;
 &lt;p&gt;我们搜索一下，发现系统中有这个文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-27_23-49-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-27_23-49-10.png&#34;
 	
 	
 	
@@ -8355,7 +8355,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;p&gt;可以知道其路径是&lt;code&gt;D:\ProgramFiles\MicrosoftVisualStudio\2022\Enterprise\VC\Tools\MSVC\14.16.27023\atlmfc\lib\x86&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;点击【链接器】&amp;ndash;【常规】&amp;ndash;【附加库目录】，增加这个lib文件所在目录：&lt;/p&gt;
 &lt;p&gt;可知VS有自带的宏地址&lt;code&gt;$(VCToolsetsDir)&lt;/code&gt;,其对应路径是&lt;code&gt;D:\ProgramFiles\MicrosoftVisualStudio\2022\Enterprise\VC\Tools\MSVC\&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-27_23-56-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-27_23-56-02.png&#34;
 	
 	
 	
@@ -8366,7 +8366,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;所以我们可以配置一个附加库目录&lt;code&gt;$(VCToolsetsDir)14.16.27023\atlmfc\lib\x86&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-27_23-59-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-27_23-59-39.png&#34;
 	
 	
 	
@@ -8377,7 +8377,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后再次运行项目：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-28_00-03-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-28_00-03-25.png&#34;
 	
 	
 	
@@ -8391,7 +8391,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;p&gt;可以看到，此时得到美元折算价是712.49元。&lt;/p&gt;
 &lt;p&gt;此时，在中国银行外汇牌价 &lt;a class=&#34;link&#34; href=&#34;https://srh.bankofchina.com/search/whpj/search_cn.jsp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://srh.bankofchina.com/search/whpj/search_cn.jsp&lt;/a&gt; 上面查看:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-08-28_00-06-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-08-28_00-06-16.png&#34;
 	
 	
 	
@@ -8512,7 +8512,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/div&gt;&lt;p&gt;此时，运行代码得到的结果不一定，就是100日元折合人民币约4.91元。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ConvertCurrency&lt;/code&gt;函数的第1个参数，指定是否返回实时价格。当用户没有网络时，可以将该参数设置为0，则返回离线版固定的汇率数据。书上说是上返回&lt;code&gt;2021年6月12日10:30:00&lt;/code&gt;时中行外汇牌价数据。&lt;/p&gt;
 &lt;p&gt;如果我将第一个参数改成0，再运行程序，得到的结果是100日元折合人民币约4.94元。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-01_22-52-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-01_22-52-48.png&#34;
 	
 	
 	
@@ -8524,7 +8524,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;p&gt;正常情况下，我们都是网络环境正常，因此第1个参数保持1即可。&lt;/p&gt;
 &lt;p&gt;在经验的程序员会根据函数调用的子程序或者开发工具的智能提示猜测函数的用法。但负责任的函数开发者会提供一份详细的函数使用说明，程序员可以在其中找到调用这个函数需要包含的头文件、函数的原型、参数和返回值说明。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ConvertCurrency&lt;/code&gt;函数说明如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-02_22-58-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-02_22-58-17.png&#34;
 	
 	
 	
@@ -8574,7 +8574,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我尝试断开网络，再运行时，并没有达到预期的效果，提示&lt;code&gt;0xC0000005: 读取位置 0x00000000 时发生访问冲突。&lt;/code&gt;异常。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-02_23-37-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-02_23-37-50.png&#34;
 	
 	
 	
@@ -8695,7 +8695,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;使用Debug x86模式来编译代码。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-10_22-22-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-10_22-22-18.png&#34;
 	
 	
 	
@@ -8765,7 +8765,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时运行则会报错：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-10_22-45-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-10_22-45-07.png&#34;
 	
 	
 	
@@ -8831,7 +8831,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-10_23-00-48.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-10_23-00-48.png&#34;
 	
 	
 	
@@ -9213,7 +9213,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;变量c的值是: &lt;span class=&#34;m&#34;&gt;2147483649&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-21_23-11-24.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-21_23-11-24.png&#34;
 	
 	
 	
@@ -9512,7 +9512,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;关系表达式 a + &lt;span class=&#34;m&#34;&gt;10&lt;/span&gt; !&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; b 的值是:0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-22_21-29-50.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-22_21-29-50.png&#34;
 	
 	
 	
@@ -9578,11 +9578,11 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
         </item>
         <item>
         <title>miniconda的使用</title>
-        <link>https://meizhaohui.github.io/backend/python/miniconda/</link>
+        <link>https://hellogitlab.com/backend/python/miniconda/</link>
         <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/miniconda/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post miniconda的使用" /&gt;&lt;h2 id=&#34;miniconda的使用&#34;&gt;miniconda的使用
+        <guid>https://hellogitlab.com/backend/python/miniconda/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post miniconda的使用" /&gt;&lt;h2 id=&#34;miniconda的使用&#34;&gt;miniconda的使用
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Python最新版本信息，可在Python官网查看 &lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -9598,7 +9598,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/h3&gt;&lt;h4 id=&#34;21-下载miniconda&#34;&gt;2.1 下载miniconda
 &lt;/h4&gt;&lt;p&gt;在Python官网下载页面 &lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.python.org/downloads/&lt;/a&gt; 可以看到当前Python 安全版本是Python 3.10：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-04-09_23-20-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-04-09_23-20-46.png&#34;
 	
 	
 	
@@ -9610,7 +9610,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &gt;&lt;/p&gt;
 &lt;p&gt;然后在 &lt;a class=&#34;link&#34; href=&#34;https://docs.anaconda.com/free/miniconda/miniconda-other-installer-links/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Latest Miniconda installer links by Python version&lt;/a&gt; 页面下载Python 3.10版本对应的miniconda：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-04-09_23-24-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-04-09_23-24-16.png&#34;
 	
 	
 	
@@ -10073,14 +10073,14 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
         </item>
         <item>
         <title>换个姿势学C语言1-3章</title>
-        <link>https://meizhaohui.github.io/backend/c/newstylec/</link>
+        <link>https://hellogitlab.com/backend/c/newstylec/</link>
         <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/c/newstylec/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 换个姿势学C语言1-3章" /&gt;&lt;h2 id=&#34;换个姿势学c语言1-3章&#34;&gt;换个姿势学C语言1-3章
+        <guid>https://hellogitlab.com/backend/c/newstylec/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言1-3章" /&gt;&lt;h2 id=&#34;换个姿势学c语言1-3章&#34;&gt;换个姿势学C语言1-3章
 &lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
 &lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_14-51-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
 	
 	
 	
@@ -10223,7 +10223,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;h5 id=&#34;134-设计原型系统&#34;&gt;1.3.4 设计原型系统
 &lt;/h5&gt;&lt;p&gt;软件工程师通过与客户的多次沟通，确定了要开发的“外汇牌价看板”的具体需求。然而，仅仅使用文字和语言来描述客户对软件的功能需求是不够的，因为同样的方案不同的人有不同的理解，并且文字也无法直观地描述软件的视觉和交互效果。&lt;/p&gt;
 &lt;p&gt;基于这样的原因，为了使客户、软件工程师能更直观地对软件功能、外观和交互效果进行确认，设计人员会采用原型系统的方式来制作一个软件的“模型”，在正式开始系统设计与编码之前就让客户和软件工程师看到软件最终运行的样子。它类似于各种工程建设中的效果图，在开工之前就让人们看到最终建成的效果。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_00-12-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_00-12-26.png&#34;
 	
 	
 	
@@ -10262,7 +10262,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;/blockquote&gt;
 &lt;p&gt;即使没有任何编程经验，也不难写出上面的语句，将其中包含动词的句子简化后就是一个功能模块的名称。例如【获取外汇牌价】和【显示外汇牌价】。可以用一个结构图表示系统的功能模块。&lt;/p&gt;
 &lt;p&gt;如下图描述了外汇牌价看板的二级功能。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_15-21-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_15-21-32.png&#34;
 	
 	
 	
@@ -10273,7 +10273,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;根据前面的界面原型设计，还可以将【显示外汇牌价】这个功能分解成4个子功能，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_15-28-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_15-28-37.png&#34;
 	
 	
 	
@@ -10338,7 +10338,7 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 &lt;p&gt;因为外汇牌价看板需要实时从一个统一的位置获取最新的外汇牌价数据，因此可以确定外汇牌价看板不是一个独立运行的单机程序。&lt;/p&gt;
 &lt;p&gt;确定外汇牌价看板不是单机程序后，再确定它应该采用C/S架构还是B/S架构，由于本书是一本讲述C语言的教程，而&lt;strong&gt;C语言并不适用于开发一般的B/S架构程序&lt;/strong&gt;，因此本书选择C/S架构。&lt;/p&gt;
 &lt;p&gt;下图是外汇牌价看板的系统架构：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_22-21-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_22-21-53.png&#34;
 	
 	
 	
@@ -10427,7 +10427,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;li&gt;Resources目录，未来要使用的资源文件（如国旗、行政区旗的图片文件将存入此目录）。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我们也在自己电脑上创建这几个目录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-12_22-25-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-12_22-25-27.png&#34;
 	
 	
 	
@@ -10442,7 +10442,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;启动VS，选择【创建新项目】：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-12_22-42-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-12_22-42-25.png&#34;
 	
 	
 	
@@ -10455,7 +10455,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;选择【空白解决方案】，并单击【下一步】：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-12_22-43-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-12_22-43-31.png&#34;
 	
 	
 	
@@ -10468,7 +10468,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;为解决方案指定名称和位置，指定解决方案名称为“Examples”：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-12_22-46-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-12_22-46-28.png&#34;
 	
 	
 	
@@ -10479,7 +10479,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;单击【创建】后，会创建解决方案：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-12_22-47-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-12_22-47-48.png&#34;
 	
 	
 	
@@ -10495,7 +10495,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 1: 在【解决方案&amp;rsquo;Examples&amp;rsquo;(0个项目)】节点上单击鼠标右键（下方称“右击”），在弹出的快捷菜单中选择【添加】-【新建项目】命令：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_06-26-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_06-26-59.png&#34;
 	
 	
 	
@@ -10508,7 +10508,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 2: 在弹出的【添加新项目】窗口，Visual Studio提供了很多C++的项目模板和向导，但本案例还是从零开始创建一个项目，这里选择【空项目】，然后单击【下一步】按钮：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_06-29-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_06-29-38.png&#34;
 	
 	
 	
@@ -10521,7 +10521,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 3:在弹出的【配置新项目】窗口输入项目名称。这里指定项目名称是【L02_01_HELLOWORLD】，表示第2课的第1个程序，程序名为HELLOWORLD。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_06-32-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_06-32-32.png&#34;
 	
 	
 	
@@ -10535,7 +10535,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 4:单击【创建】按钮完成新项目的创建。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_06-37-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_06-37-08.png&#34;
 	
 	
 	
@@ -10551,7 +10551,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 1:在【解决方案资源管理器】窗口选择项目【L02_01_HELLOWORLD】，并右击【源文件】选项，在弹出的快捷菜单中选择【添加】-【新建项】：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_06-47-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_06-47-27.png&#34;
 	
 	
 	
@@ -10562,7 +10562,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;出现【添加新项】对话框时，选择【C++文件(.cpp)】选项，并输入文件名【HelloWorld.cpp】，然后单击【添加】按钮：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_06-57-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_06-57-38.png&#34;
 	
 	
 	
@@ -10575,7 +10575,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 2: 此时VS自动创建好HelloWorld.cpp源文件，并打开了该文件，我们只有在文件中输入源代码即可：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_06-58-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_06-58-43.png&#34;
 	
 	
 	
@@ -10617,7 +10617,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这就是第1个C语言程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_07-01-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_07-01-04.png&#34;
 	
 	
 	
@@ -10629,7 +10629,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;234-运行程序&#34;&gt;2.3.4 运行程序
 &lt;/h5&gt;&lt;p&gt;单击工具栏的【本地Windows调试器】按钮，则可以运行程序程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_07-03-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_07-03-44.png&#34;
 	
 	
 	
@@ -10654,7 +10654,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;关闭SDL检查。Visual Studio 2022默认开启了安全开发生命周期检查（Security Development Lifecycle， SDL），这个选项强迫程序员使用更安全的方式编程，即通过更严格的检测来确保程序的安全性。可以在项目属性页&amp;ndash;【C/C++】选项&amp;ndash;【常规】-【SDL检查】，选择【否(/sdl-)】:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_20-26-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_20-26-28.png&#34;
 	
 	
 	
@@ -10667,7 +10667,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;关闭安全检查。在项目属性页&amp;ndash;【C/C++】选项&amp;ndash;【代码生成】-【安全检查】，选择【禁用安全检查 (/GS-)】：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_20-27-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_20-27-59.png&#34;
 	
 	
 	
@@ -10702,7 +10702,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;li&gt;定义函数最简单的方法就是直接在源程序中输入函数代码。&lt;/li&gt;
 &lt;li&gt;在C程序中定义函数时，函数代码分为两部分：函数头(function header)和函数体(function body)。下图描述了函数的基本结构。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_21-30-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_21-30-58.png&#34;
 	
 	
 	
@@ -10719,7 +10719,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;li&gt;函数的返回值类型。一段功能代码在执行完成后，需要向调用者报告函数的执行结果（是否执行成功？没有成功的原因是什么？&amp;hellip;），函数报告的执行结果被称为【返回值】。在定义函数时，需要首先确定函数是否需要返回值和需要返回何种类型的值。这些是由函数的作者根据实际需要确定的。我们将&lt;code&gt;sayHello&lt;/code&gt;函数的返回值类型设定为整型（整数）。&lt;/li&gt;
 &lt;li&gt;函数的参数。运行函数时可能还需要调用者提供一些信息才可以执行。调用者可以通过函数的参数向函数传递信息。函数的参数被写在函数名后的括号里。&lt;code&gt;sayHello&lt;/code&gt;函数在函数头的函数名后只有一个括号，说明这个函数没有参数。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_21-41-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_21-41-44.png&#34;
 	
 	
 	
@@ -10766,7 +10766,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;li&gt;标准库函数不是一套全世界统一的代码，而是由不同的开发厂商根据C语言的规范在不同的软硬件平台下开发的、功能与调用方法基本一致的函数库。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Visual Studio 2022对应的部分函数库位于以下目录&lt;code&gt;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\ucrt\x64&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_22-21-05.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_22-21-05.png&#34;
 	
 	
 	
@@ -10784,7 +10784,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;因此通常在程序的起始处(头部)加入对这类文件的引用语句，所以它们被称为【头文件】。头文件通常存储在&lt;code&gt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt&lt;/code&gt; 目录下。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_22-29-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_22-29-30.png&#34;
 	
 	
 	
@@ -10801,7 +10801,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在Visual Studio创建项目时，自动指定了搜索头文件的位置，可以项目属性的【VC++目录】中找到【包含目录】的配置，一般来说不需要修改它。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_22-40-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_22-40-56.png&#34;
 	
 	
 	
@@ -10862,7 +10862,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_22-59-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_22-59-38.png&#34;
 	
 	
 	
@@ -10874,7 +10874,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;我使用第一种方式。&lt;/p&gt;
 &lt;p&gt;运行程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_23-10-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_23-10-02.png&#34;
 	
 	
 	
@@ -10887,7 +10887,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;h4 id=&#34;33-源程序如何变成可执行文件&#34;&gt;3.3 源程序如何变成可执行文件
 &lt;/h4&gt;&lt;p&gt;除了让Visual Studio自动完成编译，程序员也可以用手工操作的方式逐步编译源代码。接下来我们将使用命令行逐步处理源程序，将其编译成可执行文件。&lt;/p&gt;
 &lt;p&gt;在操作之前，请先请第2课的源程序文件&lt;code&gt;HelloWorld.cpp&lt;/code&gt;复制到计算机某个磁盘的某个目录下，例如&lt;code&gt;D:\BC101\Examples\build&lt;/code&gt;目录。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_23-17-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_23-17-18.png&#34;
 	
 	
 	
@@ -10898,7 +10898,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我用的系统是Windows 11，上面用的PowerShell命令行工具。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_23-26-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_23-26-09.png&#34;
 	
 	
 	
@@ -10922,7 +10922,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;help&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;txt&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_23-31-38.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_23-31-38.png&#34;
 	
 	
 	
@@ -10964,7 +10964,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，会在当前目录生成&lt;code&gt;HelloWorld_p.cpp&lt;/code&gt;文件。该文件比源文件大很多。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_23-38-41.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_23-38-41.png&#34;
 	
 	
 	
@@ -10975,7 +10975,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;对比两个文件内容：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_23-36-52.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_23-36-52.png&#34;
 	
 	
 	
@@ -11132,7 +11132,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到正常输出结果。&lt;/p&gt;
 &lt;p&gt;对比之前用Visual Studio自动生成的可执行文件，以及我们自己编译生成的文件，可以看到两者大小不一样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-13_23-59-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-13_23-59-22.png&#34;
 	
 	
 	
@@ -11192,7 +11192,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-25_22-45-32.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-25_22-45-32.png&#34;
 	
 	
 	
@@ -11204,7 +11204,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，使用了复制粘贴的方式调用了5次&lt;code&gt;sayHello&lt;/code&gt;函数。&lt;/p&gt;
 &lt;p&gt;运行结果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-25_22-48-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-25_22-48-57.png&#34;
 	
 	
 	
@@ -11329,7 +11329,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后，如果我输入数字7，则会输出7次&amp;quot;Hello,World&amp;quot;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-25_23-02-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-25_23-02-11.png&#34;
 	
 	
 	
@@ -11465,7 +11465,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后再次运行代码，提示异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-04-14_22-56-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-04-14_22-56-49.png&#34;
 	
 	
 	
@@ -11685,20 +11685,20 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
         </item>
         <item>
         <title>Maven打包</title>
-        <link>https://meizhaohui.github.io/backend/java/maven/</link>
+        <link>https://hellogitlab.com/backend/java/maven/</link>
         <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/java/maven/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Maven打包" /&gt;&lt;h2 id=&#34;maven打包&#34;&gt;Maven打包
+        <guid>https://hellogitlab.com/backend/java/maven/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Maven打包" /&gt;&lt;h2 id=&#34;maven打包&#34;&gt;Maven打包
 &lt;/h2&gt;</description>
         </item>
         <item>
         <title>C程序设计语言总结</title>
-        <link>https://meizhaohui.github.io/backend/c/the_c_programming_language_second_edition/</link>
+        <link>https://hellogitlab.com/backend/c/the_c_programming_language_second_edition/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/c/the_c_programming_language_second_edition/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post C程序设计语言总结" /&gt;&lt;h2 id=&#34;c程序设计语言总结&#34;&gt;C程序设计语言总结
+        <guid>https://hellogitlab.com/backend/c/the_c_programming_language_second_edition/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post C程序设计语言总结" /&gt;&lt;h2 id=&#34;c程序设计语言总结&#34;&gt;C程序设计语言总结
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;注：实验环境MacOS系统。&lt;/li&gt;
 &lt;/ul&gt;
@@ -13716,7 +13716,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
   构造类型--&amp;gt;枚举类型enum
 &lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/c_data_type.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/c_data_type.png&#34;
 	
 	
 	
@@ -16625,7 +16625,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;h4 id=&#34;运算符优先级和结合性一览表&#34;&gt;运算符优先级和结合性一览表
 &lt;/h4&gt;&lt;p&gt;盗个图，参考地址 &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/53147212&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://zhuanlan.zhihu.com/p/53147212&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/2021-03-04_22-24-33.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/2021-03-04_22-24-33.jpg&#34;
 	
 	
 	
@@ -18591,7 +18591,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-24_07-24-20.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-24_07-24-20.png&#34;
 	
 	
 	
@@ -18769,7 +18769,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到带颜色的输出：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-13_22-52-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-13_22-52-47.png&#34;
 	
 	
 	
@@ -20355,7 +20355,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果将第一行的&lt;code&gt;#define SYSTEM MACOS&lt;/code&gt;注释掉，则第3行的编译会抛出异常，提示未定义&lt;code&gt;SYSTEM&lt;/code&gt;。如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20211101225952.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20211101225952.png&#34;
 	
 	
 	
@@ -20408,7 +20408,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/pointer.c&#34; &gt;download pointer.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/pointer.c&#34; &gt;download pointer.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -20522,7 +20522,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/swap.c&#34; &gt;download swap.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/swap.c&#34; &gt;download swap.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -20622,7 +20622,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/array.c&#34; &gt;download array.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/array.c&#34; &gt;download array.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行程序：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -20773,7 +20773,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/strlen.c&#34; &gt;download strlen.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/strlen.c&#34; &gt;download strlen.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -20977,7 +20977,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/alloc_afree.c&#34; &gt;download alloc_afree.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/alloc_afree.c&#34; &gt;download alloc_afree.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行程序：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -21051,7 +21051,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/string.c&#34; &gt;download string.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/string.c&#34; &gt;download string.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行程序：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -21183,7 +21183,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/strcpy.c&#34; &gt;download strcpy.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/strcpy.c&#34; &gt;download strcpy.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行程序：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -21277,7 +21277,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/year_day.c&#34; &gt;download year_day.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/year_day.c&#34; &gt;download year_day.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;运行程序：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -21347,7 +21347,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/month_name.c&#34; &gt;download month_name.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/month_name.c&#34; &gt;download month_name.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;name&lt;/code&gt;是一个一维数组，数组的元素为字符指针。&lt;code&gt;name&lt;/code&gt;数组的初始化通过一个字符串列表实现，列表中每个字符串赋值给数组相应位置的元素。&lt;/p&gt;
 &lt;p&gt;运行程序：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -21400,7 +21400,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;li&gt;按照C语言的约定，&lt;code&gt;argv[0]&lt;/code&gt;的值是启动该程序的程序名，因此&lt;code&gt;argc&lt;/code&gt;的值至少为1。如果&lt;code&gt;argc&lt;/code&gt;的值为1，则说明程序名后面没有命令行参数。&lt;/li&gt;
 &lt;li&gt;ANSI标准要求&lt;code&gt;argv[argc]&lt;/code&gt;的值必须为一空指针。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/image-20220611214342696.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/image-20220611214342696.png&#34;
 	
 	
 	
@@ -21450,7 +21450,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/myecho.c&#34; &gt;download myecho.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/myecho.c&#34; &gt;download myecho.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;编译并运行：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -21975,7 +21975,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/mystruct.c&#34; &gt;download mystruct.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/mystruct.c&#34; &gt;download mystruct.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;编译后运行：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -22188,7 +22188,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/struct_function.c&#34; &gt;download struct_function.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/struct_function.c&#34; &gt;download struct_function.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;编译后运行：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -22302,7 +22302,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/struct_pointer.c&#34; &gt;download struct_pointer.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/struct_pointer.c&#34; &gt;download struct_pointer.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;编译后运行：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -22364,7 +22364,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/c/typedefine.c&#34; &gt;download typedefine.c&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/c/typedefine.c&#34; &gt;download typedefine.c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;编译后运行:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -23656,11 +23656,11 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
         </item>
         <item>
         <title>Flask Docs</title>
-        <link>https://meizhaohui.github.io/backend/flask/flask_docs/</link>
+        <link>https://hellogitlab.com/backend/flask/flask_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/flask/flask_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Flask Docs" /&gt;&lt;h2 id=&#34;flask-docs&#34;&gt;Flask Docs
+        <guid>https://hellogitlab.com/backend/flask/flask_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Flask Docs" /&gt;&lt;h2 id=&#34;flask-docs&#34;&gt;Flask Docs
 &lt;/h2&gt;&lt;p&gt;Flask框架学习笔记。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Flask官方文档：&lt;a class=&#34;link&#34; href=&#34;https://flask.palletsprojects.com/en/1.1.x/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -23692,11 +23692,11 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
         </item>
         <item>
         <title>Go的基本使用</title>
-        <link>https://meizhaohui.github.io/backend/golang/base/</link>
+        <link>https://hellogitlab.com/backend/golang/base/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/golang/base/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Go的基本使用" /&gt;&lt;h2 id=&#34;go的基本使用&#34;&gt;Go的基本使用
+        <guid>https://hellogitlab.com/backend/golang/base/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Go的基本使用" /&gt;&lt;h2 id=&#34;go的基本使用&#34;&gt;Go的基本使用
 &lt;/h2&gt;&lt;p&gt;本文用于记录学习Golang相关知识点。&lt;/p&gt;
 &lt;p&gt;Go编程语言中文文档中介绍Go:&lt;/p&gt;
 &lt;ul&gt;
@@ -24732,11 +24732,11 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
         </item>
         <item>
         <title>GO语言之旅</title>
-        <link>https://meizhaohui.github.io/backend/golang/go-tour/</link>
+        <link>https://hellogitlab.com/backend/golang/go-tour/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/golang/go-tour/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post GO语言之旅" /&gt;&lt;h2 id=&#34;go语言之旅&#34;&gt;GO语言之旅
+        <guid>https://hellogitlab.com/backend/golang/go-tour/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post GO语言之旅" /&gt;&lt;h2 id=&#34;go语言之旅&#34;&gt;GO语言之旅
 &lt;/h2&gt;&lt;h3 id=&#34;1-基础&#34;&gt;1. 基础
 &lt;/h3&gt;&lt;h4 id=&#34;11-注释&#34;&gt;1.1 注释
 &lt;/h4&gt;&lt;ul&gt;
@@ -25959,7 +25959,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;上面程序运行时，会不停执行&lt;code&gt;for&lt;/code&gt;循环语句，&lt;code&gt;i&lt;/code&gt;不断进行自增1，程序不断运行下去，必须手动进行终止。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-11-10_21-42-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-11-10_21-42-16.png&#34;
 	
 	
 	
@@ -26865,7 +26865,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到虽然&lt;code&gt;fmt.Println(&amp;quot;World&amp;quot;)&lt;/code&gt;语法在代码中先定义，但却是在&lt;code&gt;fmt.Println(&amp;quot;Hello&amp;quot;)&lt;/code&gt;执行后再执行的，说明&lt;code&gt;defer&lt;/code&gt;延迟语句起了作用。&lt;/p&gt;
 &lt;p&gt;同时，因为在&lt;code&gt;for&lt;/code&gt;循环体中也使用了&lt;code&gt;defer&lt;/code&gt;延迟语句，&lt;strong&gt;按照先进后出规则&lt;/strong&gt;，对于&lt;code&gt;for&lt;/code&gt;循环会依次打印3、2、1、0,&lt;code&gt;for&lt;/code&gt;循环结尾后，最后再打印栈底的&amp;quot;World&amp;quot;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-11-10_22-18-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-11-10_22-18-11.png&#34;
 	
 	
 	
@@ -26982,11 +26982,11 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
         </item>
         <item>
         <title>Java开发环境配置</title>
-        <link>https://meizhaohui.github.io/backend/java/basic/</link>
+        <link>https://hellogitlab.com/backend/java/basic/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/java/basic/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Java开发环境配置" /&gt;&lt;h2 id=&#34;java开发环境配置&#34;&gt;Java开发环境配置
+        <guid>https://hellogitlab.com/backend/java/basic/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Java开发环境配置" /&gt;&lt;h2 id=&#34;java开发环境配置&#34;&gt;Java开发环境配置
 &lt;/h2&gt;&lt;h3 id=&#34;1-java编程环境配置&#34;&gt;1. java编程环境配置
 &lt;/h3&gt;&lt;h4 id=&#34;11-windows-jdk环境安装配置&#34;&gt;1.1 windows jdk环境安装配置
 &lt;/h4&gt;&lt;ul&gt;
@@ -27061,7 +27061,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;注意，在&lt;code&gt;editor.fontSize&lt;/code&gt;配置下面增加以上jdk1.8相关的配置。&lt;code&gt;path&lt;/code&gt;路径里面路径分隔符需要用两个&lt;code&gt;\&lt;/code&gt;。即&lt;code&gt;\\&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-58-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-58-31.png&#34;
 	
 	
 	
@@ -27071,7 +27071,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;123-验证环境是否成功&#34;&gt;1.2.3 验证环境是否成功
 &lt;/h5&gt;&lt;p&gt;使用快捷键Ctrl+Shift+P， 然后输入&lt;strong&gt;java:create java Project&lt;/strong&gt;  ，不用全部输入就会显示出来：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-21-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-21-38.png&#34;
 	
 	
 	
@@ -27080,7 +27080,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后选择&lt;code&gt;no build tools&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-23-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-23-09.png&#34;
 	
 	
 	
@@ -27089,7 +27089,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在弹出的对话框中选择一个用来存放Java项目的目录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-22-29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-22-29.png&#34;
 	
 	
 	
@@ -27098,7 +27098,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;并点击【Select the project location】,在输入框内输入项目名称，&lt;strong&gt;项目名称最好不要有中文或者特殊符号&lt;/strong&gt; ，如我输入【demo】:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-23-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-23-59.png&#34;
 	
 	
 	
@@ -27107,7 +27107,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;输入项目名称后，直接按Enter回车，此时会打开一个新的VSCODE窗口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-24-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-24-31.png&#34;
 	
 	
 	
@@ -27116,13 +27116,13 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后选择&lt;code&gt;no build tools&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-48-24.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-48-24.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;在弹出的对话框中选择一个用来存放Java项目的目录：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-49-26.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-49-26.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;并点击【Select the project location】,在输入框内输入项目名称，&lt;strong&gt;项目名称最好不要有中文或者特殊符号&lt;/strong&gt; ，如我输入【demo】:&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-52-22.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-52-22.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;输入项目名称后，直接按Enter回车，此时会打开一个新的VSCODE窗口：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-02_22-53-31.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-02_22-53-31.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;此时，vsvode自动给创建了项目框架， src下面的java文件就是java代码源文件：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -27142,7 +27142,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;注意&lt;code&gt;Run|Debug&lt;/code&gt;并不是代码，而是插件的功能按钮，点击它们就可以运行代码。&lt;/p&gt;
 &lt;p&gt;我们直接点击&lt;code&gt;Run|Debug&lt;/code&gt;就可以运行代码，以下是点击&lt;code&gt;Run&lt;/code&gt;运行后的结果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-25-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-25-54.png&#34;
 	
 	
 	
@@ -27156,7 +27156,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/h5&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;maven 3.6.0&lt;/a&gt; 可以下载需要用的maven安装包。&lt;/p&gt;
 &lt;p&gt;下载后，将压缩包解压到&lt;code&gt;D:\ProgramFiles\Java&lt;/code&gt; 目录，此时Maven目录文件如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-26-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-26-49.png&#34;
 	
 	
 	
@@ -27193,7 +27193,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Maven for Java&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-34-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-34-45.png&#34;
 	
 	
 	
@@ -27217,7 +27217,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;maven.settingsFile&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\\ProgramFiles\\Java\\apache-maven-3.6.0\\conf\\settings.xml&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;,&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-27-50.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-27-50.png&#34;
 	
 	
 	
@@ -27249,7 +27249,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-29-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-29-48.png&#34;
 	
 	
 	
@@ -27260,7 +27260,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;p&gt;直接在配置文件增加以上几行就行！&lt;/p&gt;
 &lt;h5 id=&#34;135-创建maven项目&#34;&gt;1.3.5 创建maven项目
 &lt;/h5&gt;&lt;p&gt;vscode空白处点击右键选择【从maven原型创建新项目】 ：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-35-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-35-24.png&#34;
 	
 	
 	
@@ -27269,7 +27269,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;创建项目窗口中可以选择快速创建项目【maven-archetype-quickstart】:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-35-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-35-57.png&#34;
 	
 	
 	
@@ -27278,7 +27278,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;选择版本 ，选择1.1：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-36-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-36-24.png&#34;
 	
 	
 	
@@ -27287,7 +27287,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;填写项目的组织，一般是公司域名的倒写，因为我是要测试&lt;code&gt;nexusapi.com&lt;/code&gt; api接口的，所以我们填写&lt;code&gt;com.nexusapi&lt;/code&gt; :&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-37-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-37-12.png&#34;
 	
 	
 	
@@ -27296,7 +27296,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后，按Enter回车，在新的输入框输入项目名称，如我输入【mavendemo】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-37-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-37-35.png&#34;
 	
 	
 	
@@ -27305,7 +27305,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后，按Enter回车,此时让选择项目存放的目录，我们仍然放在之前的java目录下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-38-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-38-12.png&#34;
 	
 	
 	
@@ -27314,7 +27314,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;并点击【Select Destination Folder】,此时vscode就会自动去下载相关依赖包：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-38-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-38-31.png&#34;
 	
 	
 	
@@ -27323,7 +27323,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;很快就下载完成了，让输入一些相关的信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-39-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-39-02.png&#34;
 	
 	
 	
@@ -27332,10 +27332,10 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们直接回车，使用默认的版本信息【1.0-SNAPSHOT】：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_00-22-57.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_00-22-57.png&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Maven 将要求确认项目细节，按 &lt;strong&gt;Enter&lt;/strong&gt; 或按 Y 确认。&lt;/p&gt;
 &lt;p&gt;此时，可以看到vscode开始创建项目：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-39-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-39-37.png&#34;
 	
 	
 	
@@ -27344,7 +27344,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;创建成功后，按任意键会关闭该终端。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-40-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-40-22.png&#34;
 	
 	
 	
@@ -27353,7 +27353,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;也可以点击右侧的【Add as Workplace Folder】，即添加为工作空间文件夹，点击该处后，vscode上面看到如下视图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-42-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-42-46.png&#34;
 	
 	
 	
@@ -27363,7 +27363,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，vscode已经打开了刚才创建的mavendemo项目，相关文件已经创建成功了。&lt;/p&gt;
 &lt;p&gt;如果有新的依赖包需要安装，可以左下角的【MAVEN】&amp;ndash;【Run Maven Commands】选项相应命令执行即可：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-44-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-44-16.png&#34;
 	
 	
 	
@@ -27372,7 +27372,7 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;如果没有新的依赖包需要安装，则可以直接点【运行和调试】的图标，或者按快捷键【Ctrl+Shift+D】 ，然后点击【运行和调试】按钮，vscode则会运行Maven项目代码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-03_19-45-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-03_19-45-40.png&#34;
 	
 	
 	
@@ -27386,20 +27386,20 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
         </item>
         <item>
         <title>logging模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_logging/</link>
+        <link>https://hellogitlab.com/backend/python/x_logging/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_logging/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post logging模块" /&gt;&lt;h2 id=&#34;logging模块&#34;&gt;logging模块
+        <guid>https://hellogitlab.com/backend/python/x_logging/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post logging模块" /&gt;&lt;h2 id=&#34;logging模块&#34;&gt;logging模块
 &lt;/h2&gt;</description>
         </item>
         <item>
         <title>Pipenv虚拟环境的使用</title>
-        <link>https://meizhaohui.github.io/backend/python/x_pipenv/</link>
+        <link>https://hellogitlab.com/backend/python/x_pipenv/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_pipenv/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Pipenv虚拟环境的使用" /&gt;&lt;h2 id=&#34;pipenv虚拟环境的使用&#34;&gt;Pipenv虚拟环境的使用
+        <guid>https://hellogitlab.com/backend/python/x_pipenv/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Pipenv虚拟环境的使用" /&gt;&lt;h2 id=&#34;pipenv虚拟环境的使用&#34;&gt;Pipenv虚拟环境的使用
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;pipenv&lt;/code&gt;是Kenneth Reitz大神的作品，提供Python的各个版本间的管理，各种包管理。是&lt;code&gt;virtualenv pip&lt;/code&gt;等工具的合体。&lt;/p&gt;
 &lt;h3 id=&#34;pipenv的优点&#34;&gt;Pipenv的优点
 &lt;/h3&gt;&lt;ul&gt;
@@ -27553,7 +27553,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;初始化虚拟环境后，会在项目目录下生成&lt;code&gt;Pipfile&lt;/code&gt;和&lt;code&gt;Pipfile.lock&lt;/code&gt;，以及目录&lt;code&gt;.venv&lt;/code&gt;。如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/pipenv_folder.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/pipenv_folder.png&#34;
 	
 	
 	
@@ -28199,7 +28199,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时查看&lt;a class=&#34;link&#34; href=&#34;http://127.0.0.1:5000/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://127.0.0.1:5000/&lt;/a&gt;，结果如下图所示:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/pipenv_none.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/pipenv_none.png&#34;
 	
 	
 	
@@ -28274,7 +28274,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;安装完成&lt;code&gt;python-dotenv&lt;/code&gt;后，再重新运行&lt;code&gt;Flask&lt;/code&gt;项目，重新访问 &lt;a class=&#34;link&#34; href=&#34;http://127.0.0.1:5000/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://127.0.0.1:5000/&lt;/a&gt; ，结果如下图所示:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/pipenv_show.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/pipenv_show.png&#34;
 	
 	
 	
@@ -28319,11 +28319,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>PythonCookbook</title>
-        <link>https://meizhaohui.github.io/backend/python/x_python_cookbook/</link>
+        <link>https://hellogitlab.com/backend/python/x_python_cookbook/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_python_cookbook/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post PythonCookbook" /&gt;&lt;h2 id=&#34;python-cookbook&#34;&gt;Python Cookbook
+        <guid>https://hellogitlab.com/backend/python/x_python_cookbook/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post PythonCookbook" /&gt;&lt;h2 id=&#34;python-cookbook&#34;&gt;Python Cookbook
 &lt;/h2&gt;&lt;h3 id=&#34;第1章-数据结构和算法&#34;&gt;第1章 数据结构和算法
 &lt;/h3&gt;&lt;h4 id=&#34;11-将序列分解为单独的变量&#34;&gt;1.1 将序列分解为单独的变量
 &lt;/h4&gt;&lt;p&gt;任何序列（或可迭代的对象）都可以通过一个简单的赋值操作来分解为单独的变量。&lt;/p&gt;
@@ -28747,11 +28747,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>PythonDocs</title>
-        <link>https://meizhaohui.github.io/backend/python/python_docs/</link>
+        <link>https://hellogitlab.com/backend/python/python_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/python_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post PythonDocs" /&gt;&lt;h2 id=&#34;python-docs&#34;&gt;Python Docs
+        <guid>https://hellogitlab.com/backend/python/python_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post PythonDocs" /&gt;&lt;h2 id=&#34;python-docs&#34;&gt;Python Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_introduction_python&#34; &gt;Python介绍&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_install_python&#34; &gt;Python的安装&lt;/a&gt;&lt;/li&gt;
@@ -28813,11 +28813,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Python并发</title>
-        <link>https://meizhaohui.github.io/backend/python/x_python_concurrency/</link>
+        <link>https://hellogitlab.com/backend/python/x_python_concurrency/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_python_concurrency/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python并发" /&gt;&lt;h2 id=&#34;python并发&#34;&gt;Python并发
+        <guid>https://hellogitlab.com/backend/python/x_python_concurrency/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python并发" /&gt;&lt;h2 id=&#34;python并发&#34;&gt;Python并发
 &lt;/h2&gt;&lt;p&gt;在计算机中，如果你的程序在等待，通常是因为以下两个原因：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I/O限制，这个限制很常见，计算机的CPU速度非常快，比计算机内存快几百倍，比硬盘或者网络快几千倍。&lt;/li&gt;
@@ -29723,11 +29723,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Python代码格式化工具black</title>
-        <link>https://meizhaohui.github.io/backend/python/black/</link>
+        <link>https://hellogitlab.com/backend/python/black/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/black/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python代码格式化工具black" /&gt;&lt;h2 id=&#34;python代码格式化工具black&#34;&gt;Python代码格式化工具black
+        <guid>https://hellogitlab.com/backend/python/black/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python代码格式化工具black" /&gt;&lt;h2 id=&#34;python代码格式化工具black&#34;&gt;Python代码格式化工具black
 &lt;/h2&gt;&lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://muzing.top/posts/a29e4743/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -29743,11 +29743,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Python的安装</title>
-        <link>https://meizhaohui.github.io/backend/python/x_install_python/</link>
+        <link>https://hellogitlab.com/backend/python/x_install_python/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_install_python/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python的安装" /&gt;&lt;h2 id=&#34;python的安装&#34;&gt;Python的安装
+        <guid>https://hellogitlab.com/backend/python/x_install_python/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python的安装" /&gt;&lt;h2 id=&#34;python的安装&#34;&gt;Python的安装
 &lt;/h2&gt;&lt;p&gt;本文讲解python3.6.2的安装。&lt;/p&gt;
 &lt;h3 id=&#34;python下载地址&#34;&gt;Python下载地址
 &lt;/h3&gt;&lt;p&gt;Python3.6.2安装文件的下载地址如下：&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/release/python-362/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -31223,7 +31223,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;&lt;p&gt;:::&lt;/p&gt;
 &lt;p&gt;所以我可以通过域名访问jupyter notebook，如果你没有配置域名解决对应关系，通过ip地址(&lt;a class=&#34;link&#34; href=&#34;https://192.168.56.103:8888&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.56.103:8888&lt;/a&gt;)也可以访问:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/jupyter_notebook_login_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/jupyter_notebook_login_page.png&#34;
 	
 	
 	
@@ -31234,7 +31234,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;输入密码123456，登陆进jupyter notebook主页：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/jupyter_notebook_home_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/jupyter_notebook_home_page.png&#34;
 	
 	
 	
@@ -31245,7 +31245,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们点击右上角的&amp;quot;New&amp;quot; &amp;ndash;&amp;gt; &amp;ldquo;Python3&amp;rdquo; 可以创建Python3的notebook:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/jupyter_notebook_create_python3_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/jupyter_notebook_create_python3_page.png&#34;
 	
 	
 	
@@ -31256,7 +31256,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在新页面输入python命令，并按Ctrl + Enter键执行，如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/jupyter_notebook_input_python_command.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/jupyter_notebook_input_python_command.png&#34;
 	
 	
 	
@@ -31267,7 +31267,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;你可以使用 &lt;code&gt;%timeit&lt;/code&gt; 计算程序执行时间，如 &lt;code&gt;%timeit [i*i for i in range(1000)]&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/jupyter_notebook_run_timeit.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/jupyter_notebook_run_timeit.png&#34;
 	
 	
 	
@@ -31278,7 +31278,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;保存文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/jupyter_notebook_save_notebook.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/jupyter_notebook_save_notebook.png&#34;
 	
 	
 	
@@ -31314,11 +31314,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Python的控制流</title>
-        <link>https://meizhaohui.github.io/backend/python/x_control_workflow/</link>
+        <link>https://hellogitlab.com/backend/python/x_control_workflow/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_control_workflow/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python的控制流" /&gt;&lt;h2 id=&#34;python的控制流&#34;&gt;Python的控制流
+        <guid>https://hellogitlab.com/backend/python/x_control_workflow/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python的控制流" /&gt;&lt;h2 id=&#34;python的控制流&#34;&gt;Python的控制流
 &lt;/h2&gt;&lt;p&gt;python中控制流语句包括&lt;code&gt;if&lt;/code&gt;/&lt;code&gt;for&lt;/code&gt;/&lt;code&gt;while&lt;/code&gt;三种控制流语句。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;使用&lt;code&gt;#&lt;/code&gt;标记注释，从&lt;code&gt;#&lt;/code&gt;开始到当前行结束的部分都是注释。&lt;/li&gt;
@@ -31648,11 +31648,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Python的运算符</title>
-        <link>https://meizhaohui.github.io/backend/python/x_operational_character/</link>
+        <link>https://hellogitlab.com/backend/python/x_operational_character/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_operational_character/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python的运算符" /&gt;&lt;h2 id=&#34;python的运算符&#34;&gt;Python的运算符
+        <guid>https://hellogitlab.com/backend/python/x_operational_character/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python的运算符" /&gt;&lt;h2 id=&#34;python的运算符&#34;&gt;Python的运算符
 &lt;/h2&gt;&lt;h3 id=&#34;常用运算符&#34;&gt;常用运算符
 &lt;/h3&gt;&lt;p&gt;常用运算符详细介绍见下表：&lt;/p&gt;
 &lt;table&gt;
@@ -32000,11 +32000,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Python介绍</title>
-        <link>https://meizhaohui.github.io/backend/python/x_introduction_python/</link>
+        <link>https://hellogitlab.com/backend/python/x_introduction_python/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_introduction_python/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python介绍" /&gt;&lt;h2 id=&#34;python介绍&#34;&gt;Python介绍
+        <guid>https://hellogitlab.com/backend/python/x_introduction_python/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python介绍" /&gt;&lt;h2 id=&#34;python介绍&#34;&gt;Python介绍
 &lt;/h2&gt;&lt;p&gt;本文简要介绍一下Python。&lt;/p&gt;
 &lt;h3 id=&#34;概要&#34;&gt;概要
 &lt;/h3&gt;&lt;p&gt;Python是一种计算机程序设计语言。是一门高级的、动态的、面向对象、解释性的脚本语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。&lt;/p&gt;
@@ -32076,7 +32076,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;ul&gt;
 &lt;li&gt;运行速度慢：代码执行时需要一行一行地翻译成计算机的机器码，翻译过程耗时，但是大量的应用程序不需要这么快的运行速度，因为用户根本感觉不出来。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/do_not_care_about_runtime.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/do_not_care_about_runtime.jpg&#34;
 	
 	
 	
@@ -32089,7 +32089,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;ul&gt;
 &lt;li&gt;代码不能加密：如果要发布你的Python程序，实际上就是发布源代码，凡是编译型的语言，都没有这个问题，而解释型的语言，则必须把源码发布出去。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/have_no_time_check_your_fuck_code.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/have_no_time_check_your_fuck_code.jpg&#34;
 	
 	
 	
@@ -32108,11 +32108,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Python面试总结</title>
-        <link>https://meizhaohui.github.io/backend/python/x_python_interview/</link>
+        <link>https://hellogitlab.com/backend/python/x_python_interview/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_python_interview/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Python面试总结" /&gt;&lt;h2 id=&#34;python面试总结&#34;&gt;Python面试总结
+        <guid>https://hellogitlab.com/backend/python/x_python_interview/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Python面试总结" /&gt;&lt;h2 id=&#34;python面试总结&#34;&gt;Python面试总结
 &lt;/h2&gt;&lt;h3 id=&#34;python语言基础&#34;&gt;Python语言基础
 &lt;/h3&gt;&lt;h4 id=&#34;1列出几个常用python标准库&#34;&gt;1.列出几个常用Python标准库
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;os&lt;/code&gt;, &lt;code&gt;sys&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;, &lt;code&gt;logging&lt;/code&gt;, &lt;code&gt;time&lt;/code&gt;, &lt;code&gt;datetime&lt;/code&gt;, &lt;code&gt;re&lt;/code&gt;, &lt;code&gt;math&lt;/code&gt;,&lt;code&gt;threading&lt;/code&gt;&lt;/p&gt;
@@ -33552,11 +33552,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>python批量telnet检测IP地址的端口是否开放</title>
-        <link>https://meizhaohui.github.io/backend/python/mytelnet/</link>
+        <link>https://hellogitlab.com/backend/python/mytelnet/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/mytelnet/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post python批量telnet检测IP地址的端口是否开放" /&gt;&lt;h2 id=&#34;python批量telnet检测ip地址的端口是否开放&#34;&gt;python批量telnet检测IP地址的端口是否开放
+        <guid>https://hellogitlab.com/backend/python/mytelnet/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post python批量telnet检测IP地址的端口是否开放" /&gt;&lt;h2 id=&#34;python批量telnet检测ip地址的端口是否开放&#34;&gt;python批量telnet检测IP地址的端口是否开放
 &lt;/h2&gt;&lt;h3 id=&#34;1--需求说明&#34;&gt;1.  需求说明
 &lt;/h3&gt;&lt;p&gt;有的时候，如果检查某个服务器到别的主机的某些端口是否能够正常联通，首先想到使用&lt;code&gt;telnet&lt;/code&gt;工具。但有时候主机没有外网权限，不方便安装&lt;code&gt;telnet&lt;/code&gt;包。&lt;/p&gt;
 &lt;p&gt;这时候，就可以使用python批量telnet检测IP地址的端口是否开放。&lt;/p&gt;
@@ -33648,7 +33648,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-10_00-39-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-10_00-39-04.png&#34;
 	
 	
 	
@@ -33660,11 +33660,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>python字符串处理</title>
-        <link>https://meizhaohui.github.io/backend/python/x_str/</link>
+        <link>https://hellogitlab.com/backend/python/x_str/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_str/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post python字符串处理" /&gt;&lt;h2 id=&#34;python字符串处理&#34;&gt;python字符串处理
+        <guid>https://hellogitlab.com/backend/python/x_str/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post python字符串处理" /&gt;&lt;h2 id=&#34;python字符串处理&#34;&gt;python字符串处理
 &lt;/h2&gt;&lt;h3 id=&#34;python字符串&#34;&gt;python字符串
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -36021,11 +36021,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>ReviewBoard国际化配置</title>
-        <link>https://meizhaohui.github.io/backend/python/x_reviewboard_i18n/</link>
+        <link>https://hellogitlab.com/backend/python/x_reviewboard_i18n/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_reviewboard_i18n/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ReviewBoard国际化配置" /&gt;&lt;h2 id=&#34;reviewboard国际化配置&#34;&gt;ReviewBoard国际化配置
+        <guid>https://hellogitlab.com/backend/python/x_reviewboard_i18n/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ReviewBoard国际化配置" /&gt;&lt;h2 id=&#34;reviewboard国际化配置&#34;&gt;ReviewBoard国际化配置
 &lt;/h2&gt;&lt;p&gt;ReviewBoard是一个代码评审系统，当前默认没有配置中文翻译，本节主要讲解如何将ReviewBoard系统汉化。&lt;/p&gt;
 &lt;h3 id=&#34;基本信息&#34;&gt;基本信息
 &lt;/h3&gt;&lt;p&gt;查看Django版本:&lt;/p&gt;
@@ -36568,7 +36568,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时ReviewBoard登陆界面如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/reviewboard_default_login_page.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/reviewboard_default_login_page.png&#34;
 	
 	
 	
@@ -36928,7 +36928,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时再刷新一下页面看一下，是否有变化。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/reviewboard_default_login_page_modify.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/reviewboard_default_login_page_modify.png&#34;
 	
 	
 	
@@ -37075,7 +37075,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;重新刷新ReviewBoard系统，可以看到中文翻译:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/reviewboard_default_login_page_i18n_chinese.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/reviewboard_default_login_page_i18n_chinese.png&#34;
 	
 	
 	
@@ -37099,11 +37099,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>Selenium安装与使用</title>
-        <link>https://meizhaohui.github.io/backend/python/x_selenium_install_and_use/</link>
+        <link>https://hellogitlab.com/backend/python/x_selenium_install_and_use/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_selenium_install_and_use/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Selenium安装与使用" /&gt;&lt;h2 id=&#34;selenium安装与使用&#34;&gt;Selenium安装与使用
+        <guid>https://hellogitlab.com/backend/python/x_selenium_install_and_use/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Selenium安装与使用" /&gt;&lt;h2 id=&#34;selenium安装与使用&#34;&gt;Selenium安装与使用
 &lt;/h2&gt;&lt;h3 id=&#34;python362下载&#34;&gt;Python3.6.2下载
 &lt;/h3&gt;&lt;p&gt;下载地址：&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.python.org/downloads&lt;/a&gt;&lt;/p&gt;
@@ -37314,11 +37314,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>变量标识符的命名规则</title>
-        <link>https://meizhaohui.github.io/backend/python/x_var_name_rule/</link>
+        <link>https://hellogitlab.com/backend/python/x_var_name_rule/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_var_name_rule/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 变量标识符的命名规则" /&gt;&lt;h2 id=&#34;变量标识符的命名规则&#34;&gt;变量标识符的命名规则
+        <guid>https://hellogitlab.com/backend/python/x_var_name_rule/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 变量标识符的命名规则" /&gt;&lt;h2 id=&#34;变量标识符的命名规则&#34;&gt;变量标识符的命名规则
 &lt;/h2&gt;&lt;h3 id=&#34;变量名字和对象&#34;&gt;变量、名字和对象
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Python里所有数据——布尔值、整数、浮点数、字符串，甚至大型数据结构、函数以及程序——都是以对象(Object)的形式存在的。这使得Python语言具有很强的统一性。&lt;/li&gt;
@@ -37528,11 +37528,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>表格美化输出模块prettytable</title>
-        <link>https://meizhaohui.github.io/backend/python/prettytable/</link>
+        <link>https://hellogitlab.com/backend/python/prettytable/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/prettytable/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 表格美化输出模块prettytable" /&gt;&lt;h2 id=&#34;表格美化输出模块prettytable&#34;&gt;表格美化输出模块prettytable
+        <guid>https://hellogitlab.com/backend/python/prettytable/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 表格美化输出模块prettytable" /&gt;&lt;h2 id=&#34;表格美化输出模块prettytable&#34;&gt;表格美化输出模块prettytable
 &lt;/h2&gt;&lt;p&gt;本文约32000字。简单使用的话，仅阅读到3.3节 添加字段名和数据 即可。&lt;/p&gt;
 &lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
@@ -37829,8 +37829,8 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;li&gt;不要混合使用&lt;code&gt;add_column&lt;/code&gt;和&lt;code&gt;add_row&lt;/code&gt;,这样有时会让人感觉困惑，更推荐使用&lt;code&gt;add_row&lt;/code&gt;或&lt;code&gt;add_rows&lt;/code&gt;一次添加一行或多行数据。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;36-从csv文件读取数据&#34;&gt;3.6 从csv文件读取数据
-&lt;/h4&gt;&lt;p&gt;如我们创建一个&lt;code&gt;data.csv&lt;/code&gt;文件 &lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/python/data.csv&#34; &gt;download data.csv&lt;/a&gt; ：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_11-34-13.png&#34;
+&lt;/h4&gt;&lt;p&gt;如我们创建一个&lt;code&gt;data.csv&lt;/code&gt;文件 &lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/python/data.csv&#34; &gt;download data.csv&lt;/a&gt; ：
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_11-34-13.png&#34;
 	
 	
 	
@@ -37885,7 +37885,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;输出效果如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_11-38-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_11-38-37.png&#34;
 	
 	
 	
@@ -37895,7 +37895,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，可以正常从csv文件中读取到数据，并输出了表格。唯一美中不足的是，表格中存在中文，文本没有完全对齐。&lt;/p&gt;
 &lt;p&gt;在Iterm2中控制台输出显示是正常的：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_16-37-20.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_16-37-20.png&#34;
 	
 	
 	
@@ -37904,7 +37904,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在VSCODE中输出也是正常的！！
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_16-32-31.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_16-32-31.png&#34;
 	
 	
 	
@@ -37981,7 +37981,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;操作后，检查输出：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_12-00-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_12-00-09.png&#34;
 	
 	
 	
@@ -38371,7 +38371,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行，输出结果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_17-20-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_17-20-40.png&#34;
 	
 	
 	
@@ -38417,7 +38417,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后，查看输出效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_18-54-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_18-54-58.png&#34;
 	
 	
 	
@@ -38551,7 +38551,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，表格输出与上一节的结果相同！！&lt;/p&gt;
 &lt;p&gt;输出如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_19-15-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_19-15-03.png&#34;
 	
 	
 	
@@ -38596,7 +38596,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_22-02-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_22-02-23.png&#34;
 	
 	
 	
@@ -38628,7 +38628,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_21-45-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_21-45-13.png&#34;
 	
 	
 	
@@ -38661,7 +38661,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_21-50-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_21-50-17.png&#34;
 	
 	
 	
@@ -38695,7 +38695,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_21-54-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_21-54-21.png&#34;
 	
 	
 	
@@ -38779,7 +38779,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-30_21-59-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-30_21-59-02.png&#34;
 	
 	
 	
@@ -38820,7 +38820,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-01_11-44-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-01_11-44-47.png&#34;
 	
 	
 	
@@ -38853,7 +38853,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-01_16-31-56.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-01_16-31-56.png&#34;
 	
 	
 	
@@ -38884,7 +38884,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-01_12-00-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-01_12-00-10.png&#34;
 	
 	
 	
@@ -38941,7 +38941,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-01_12-05-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-01_12-05-45.png&#34;
 	
 	
 	
@@ -38980,7 +38980,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-01_14-46-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-01_14-46-32.png&#34;
 	
 	
 	
@@ -39041,7 +39041,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-03_10-37-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-03_10-37-43.png&#34;
 	
 	
 	
@@ -39065,7 +39065,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;使用&lt;code&gt;x.sortby = &#39;最低气温&#39;&lt;/code&gt;按&lt;code&gt;最低气温&lt;/code&gt;升序排序。&lt;/p&gt;
 &lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-03_11-16-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-03_11-16-32.png&#34;
 	
 	
 	
@@ -39091,7 +39091,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;默认情况下，排序是使用的升序排序，要想降序排序，则需要使用&lt;code&gt;x.reversesort = True&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-03_11-19-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-03_11-19-28.png&#34;
 	
 	
 	
@@ -39156,7 +39156,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-05_23-23-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-05_23-23-37.png&#34;
 	
 	
 	
@@ -39223,7 +39223,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-05_23-32-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-05_23-32-59.png&#34;
 	
 	
 	
@@ -39287,7 +39287,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-05_23-51-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-05_23-51-18.png&#34;
 	
 	
 	
@@ -39342,7 +39342,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行程序，并在控制台查看输入的文件&lt;code&gt;default.txt&lt;/code&gt;，效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-05_23-58-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-05_23-58-27.png&#34;
 	
 	
 	
@@ -39383,7 +39383,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在上一节的基础上，我们分别输出html、json、csv格式的文件，运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_00-10-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_00-10-58.png&#34;
 	
 	
 	
@@ -39391,7 +39391,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_00-16-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_00-16-11.png&#34;
 	
 	
 	
@@ -39399,7 +39399,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_00-16-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_00-16-40.png&#34;
 	
 	
 	
@@ -39513,7 +39513,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行程序，效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_18-09-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_18-09-53.png&#34;
 	
 	
 	
@@ -39587,7 +39587,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;p&gt;维基百科上面详细介绍了 &lt;a class=&#34;link&#34; href=&#34;https://zh.wikipedia.org/wiki/ANSI%E8%BD%AC%E4%B9%89%E5%BA%8F%E5%88%97&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ANSI转义序列 https://zh.wikipedia.org/wiki/ANSI%E8%BD%AC%E4%B9%89%E5%BA%8F%E5%88%97&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;其中有详细的颜色表！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_22-16-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_22-16-46.png&#34;
 	
 	
 	
@@ -39634,7 +39634,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_22-25-42.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_22-25-42.png&#34;
 	
 	
 	
@@ -39710,7 +39710,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行程序，效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_22-34-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_22-34-13.png&#34;
 	
 	
 	
@@ -39741,7 +39741,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行程序，效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-05-06_23-09-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-05-06_23-09-07.png&#34;
 	
 	
 	
@@ -39768,16 +39768,16 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>查看Python第三方包的json信息</title>
-        <link>https://meizhaohui.github.io/backend/python/check_python_package_json_info/</link>
+        <link>https://hellogitlab.com/backend/python/check_python_package_json_info/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/check_python_package_json_info/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 查看Python第三方包的json信息" /&gt;&lt;h2 id=&#34;查看python第三方包的json信息&#34;&gt;查看Python第三方包的json信息
+        <guid>https://hellogitlab.com/backend/python/check_python_package_json_info/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 查看Python第三方包的json信息" /&gt;&lt;h2 id=&#34;查看python第三方包的json信息&#34;&gt;查看Python第三方包的json信息
 &lt;/h2&gt;&lt;p&gt;在Python官方包管理网站 &lt;a class=&#34;link&#34; href=&#34;https://pypi.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pypi.org/&lt;/a&gt; 可以搜索到非常多的第三方包，有时我们需要获取这些包的json信息，则可以使用以下方式进行获取。&lt;/p&gt;
 &lt;h3 id=&#34;1-查看包信息&#34;&gt;1. 查看包信息
 &lt;/h3&gt;&lt;p&gt;如查看Flask包的相关信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-01_06-18-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-01_06-18-16.png&#34;
 	
 	
 	
@@ -39788,7 +39788,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;h3 id=&#34;2-在web中查看包的json信息&#34;&gt;2. 在Web中查看包的json信息
 &lt;/h3&gt;&lt;p&gt;如获取Flask包对就把的json信息，则可以直接访问URL：&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/pypi/Flask/json&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pypi.org/pypi/Flask/json&lt;/a&gt;， 此时则可以看到其对应的json信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-01_06-20-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-01_06-20-00.png&#34;
 	
 	
 	
@@ -39816,7 +39816,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-01_06-27-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-01_06-27-45.png&#34;
 	
 	
 	
@@ -40285,7 +40285,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;前三个信息示例截图信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-01_06-44-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-01_06-44-54.png&#34;
 	
 	
 	
@@ -40393,11 +40393,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>常用内建模块Collections模块的使用</title>
-        <link>https://meizhaohui.github.io/backend/python/x_collections_module/</link>
+        <link>https://hellogitlab.com/backend/python/x_collections_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_collections_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 常用内建模块Collections模块的使用" /&gt;&lt;h2 id=&#34;常用内建模块collections模块的使用&#34;&gt;常用内建模块Collections模块的使用
+        <guid>https://hellogitlab.com/backend/python/x_collections_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 常用内建模块Collections模块的使用" /&gt;&lt;h2 id=&#34;常用内建模块collections模块的使用&#34;&gt;常用内建模块Collections模块的使用
 &lt;/h2&gt;&lt;h3 id=&#34;collections模块介绍&#34;&gt;Collections模块介绍
 &lt;/h3&gt;&lt;p&gt;前面介绍了python内建数据结构包括 &lt;strong&gt;列表(list)&lt;/strong&gt; 、&lt;strong&gt;元组(tuple)&lt;/strong&gt; 和 &lt;strong&gt;字典(dict)&lt;/strong&gt; 。
 &lt;code&gt;collections&lt;/code&gt;模块在这些内置数据类型的基础上，提供了几个额外的数据类型：&lt;/p&gt;
@@ -41729,11 +41729,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>常用内建模块之正则表达式re模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_re_module/</link>
+        <link>https://hellogitlab.com/backend/python/x_re_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_re_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 常用内建模块之正则表达式re模块" /&gt;&lt;h2 id=&#34;常用内建模块之正则表达式re模块&#34;&gt;常用内建模块之正则表达式re模块
+        <guid>https://hellogitlab.com/backend/python/x_re_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 常用内建模块之正则表达式re模块" /&gt;&lt;h2 id=&#34;常用内建模块之正则表达式re模块&#34;&gt;常用内建模块之正则表达式re模块
 &lt;/h2&gt;&lt;h3 id=&#34;python正则表达式re模块介绍&#34;&gt;python正则表达式&lt;code&gt;re&lt;/code&gt;模块介绍
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;正则表达式，英语：&lt;code&gt;Regular Expression&lt;/code&gt;，在代码中常简写为&lt;code&gt;regex&lt;/code&gt;、&lt;code&gt;regexp&lt;/code&gt;或&lt;code&gt;RE&lt;/code&gt;。&lt;/li&gt;
@@ -42855,11 +42855,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>成为真正的Python开发者</title>
-        <link>https://meizhaohui.github.io/backend/python/x_tobepythonista/</link>
+        <link>https://hellogitlab.com/backend/python/x_tobepythonista/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_tobepythonista/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 成为真正的Python开发者" /&gt;&lt;h2 id=&#34;成为真正的python开发者&#34;&gt;成为真正的Python开发者
+        <guid>https://hellogitlab.com/backend/python/x_tobepythonista/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 成为真正的Python开发者" /&gt;&lt;h2 id=&#34;成为真正的python开发者&#34;&gt;成为真正的Python开发者
 &lt;/h2&gt;&lt;p&gt;Python开发者，用英文表示时为&lt;code&gt;Pythonista&lt;/code&gt;，参考&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/26832983&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;我不认识Pythoner这种开发者&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -45434,11 +45434,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>程序和进程</title>
-        <link>https://meizhaohui.github.io/backend/python/x_programs_and_processes/</link>
+        <link>https://hellogitlab.com/backend/python/x_programs_and_processes/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_programs_and_processes/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 程序和进程" /&gt;&lt;h2 id=&#34;程序和进程&#34;&gt;程序和进程
+        <guid>https://hellogitlab.com/backend/python/x_programs_and_processes/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 程序和进程" /&gt;&lt;h2 id=&#34;程序和进程&#34;&gt;程序和进程
 &lt;/h2&gt;&lt;p&gt;当运行一个&lt;code&gt;程序&lt;/code&gt;时，操作系统会创建一个&lt;code&gt;进程&lt;/code&gt;。它会使用系统资源（如CPU、内存和磁盘空间）和操作系统内核中的数据结构（文件、网络连接、用量统计等）。进程之间是互相隔离的，即一个进程无法访问其他进程的内容，也无法操作其他进程。&lt;/p&gt;
 &lt;p&gt;操作系统会跟踪所有正在运行的进程，给每个进程一小段运行时间，然后切换到其他进程，这样既可以做到俊平又可以响应用户操作。&lt;/p&gt;
 &lt;p&gt;标准库&lt;code&gt;os&lt;/code&gt;模块提供了一些常用的获取系统信息的函数。&lt;/p&gt;
@@ -46807,11 +46807,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>搭建简易的HTTP服务</title>
-        <link>https://meizhaohui.github.io/backend/python/fast_web/</link>
+        <link>https://hellogitlab.com/backend/python/fast_web/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/fast_web/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建简易的HTTP服务" /&gt;&lt;h2 id=&#34;搭建简易的http服务&#34;&gt;搭建简易的HTTP服务
+        <guid>https://hellogitlab.com/backend/python/fast_web/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建简易的HTTP服务" /&gt;&lt;h2 id=&#34;搭建简易的http服务&#34;&gt;搭建简易的HTTP服务
 &lt;/h2&gt;&lt;p&gt;通过Python自带的模块，可以快速搭建简易的HTTP服务，达达到共享目录的目的。&lt;/p&gt;
 &lt;p&gt;首先创建一个共享目录：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -46868,7 +46868,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，访问页面 &lt;a class=&#34;link&#34; href=&#34;http://master.hellogitlab.com:8000/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://master.hellogitlab.com:8000/&lt;/a&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-05_22-29-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-05_22-29-21.png&#34;
 	
 	
 	
@@ -46893,7 +46893,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，访问页面 &lt;a class=&#34;link&#34; href=&#34;http://master.hellogitlab.com:8765/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://master.hellogitlab.com:8765/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-05_22-34-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-05_22-34-24.png&#34;
 	
 	
 	
@@ -46953,7 +46953,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，访问页面 &lt;a class=&#34;link&#34; href=&#34;http://master.hellogitlab.com:8765/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://master.hellogitlab.com:8765/&lt;/a&gt; 看到的效果如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-05_22-42-05.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-05_22-42-05.png&#34;
 	
 	
 	
@@ -47033,11 +47033,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>代码检查</title>
-        <link>https://meizhaohui.github.io/backend/python/x_python_style_and_static_check/</link>
+        <link>https://hellogitlab.com/backend/python/x_python_style_and_static_check/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_python_style_and_static_check/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 代码检查" /&gt;&lt;h2 id=&#34;代码检查&#34;&gt;代码检查
+        <guid>https://hellogitlab.com/backend/python/x_python_style_and_static_check/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 代码检查" /&gt;&lt;h2 id=&#34;代码检查&#34;&gt;代码检查
 &lt;/h2&gt;&lt;h3 id=&#34;代码规范检查&#34;&gt;代码规范检查
 &lt;/h3&gt;&lt;h4 id=&#34;pylint&#34;&gt;pylint
 &lt;/h4&gt;&lt;ul&gt;
@@ -48445,11 +48445,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>读取yaml配置文件</title>
-        <link>https://meizhaohui.github.io/backend/python/yaml/</link>
+        <link>https://hellogitlab.com/backend/python/yaml/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/yaml/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 读取yaml配置文件" /&gt;&lt;h2 id=&#34;读取yaml配置文件&#34;&gt;读取yaml配置文件
+        <guid>https://hellogitlab.com/backend/python/yaml/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 读取yaml配置文件" /&gt;&lt;h2 id=&#34;读取yaml配置文件&#34;&gt;读取yaml配置文件
 &lt;/h2&gt;&lt;p&gt;有的时候，我们可以将一些配置信息存放在yaml配置文件中，然后读取配置文件即可。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -48581,11 +48581,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>函数</title>
-        <link>https://meizhaohui.github.io/backend/python/x_function/</link>
+        <link>https://hellogitlab.com/backend/python/x_function/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_function/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 函数" /&gt;&lt;h2 id=&#34;函数&#34;&gt;函数
+        <guid>https://hellogitlab.com/backend/python/x_function/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 函数" /&gt;&lt;h2 id=&#34;函数&#34;&gt;函数
 &lt;/h2&gt;&lt;p&gt;本节全面介绍python中函数的使用。&lt;/p&gt;
 &lt;h3 id=&#34;函数的创建&#34;&gt;函数的创建
 &lt;/h3&gt;&lt;ul&gt;
@@ -49555,7 +49555,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;对比函数执行前后的差异：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/locals_globals.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/locals_globals.png&#34;
 	
 	
 	
@@ -49580,11 +49580,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>接口认证管理之Flask_HTTPAuth</title>
-        <link>https://meizhaohui.github.io/backend/flask/flask_httpauth/</link>
+        <link>https://hellogitlab.com/backend/flask/flask_httpauth/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/flask/flask_httpauth/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 接口认证管理之Flask_HTTPAuth" /&gt;&lt;h2 id=&#34;接口认证管理之flask_httpauth&#34;&gt;接口认证管理之Flask_HTTPAuth
+        <guid>https://hellogitlab.com/backend/flask/flask_httpauth/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 接口认证管理之Flask_HTTPAuth" /&gt;&lt;h2 id=&#34;接口认证管理之flask_httpauth&#34;&gt;接口认证管理之Flask_HTTPAuth
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;pypi页面：&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/Flask-HTTPAuth/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pypi.org/project/Flask-HTTPAuth/&lt;/a&gt;&lt;/li&gt;
@@ -49700,7 +49700,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行Flask程序，访问&lt;code&gt;http://testflask.com:5000/&lt;/code&gt;,可以看到需要输入用户名和密码信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210506212631.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210506212631.png&#34;
 	
 	
 	
@@ -49942,7 +49942,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们可以使用Postman进行API测试：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210506220650.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210506220650.png&#34;
 	
 	
 	
@@ -50174,11 +50174,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>面向对象编程</title>
-        <link>https://meizhaohui.github.io/backend/python/x_object_oriented_programming/</link>
+        <link>https://hellogitlab.com/backend/python/x_object_oriented_programming/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_object_oriented_programming/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 面向对象编程" /&gt;&lt;h2 id=&#34;面向对象编程&#34;&gt;面向对象编程
+        <guid>https://hellogitlab.com/backend/python/x_object_oriented_programming/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 面向对象编程" /&gt;&lt;h2 id=&#34;面向对象编程&#34;&gt;面向对象编程
 &lt;/h2&gt;&lt;h3 id=&#34;面向对象编程基础&#34;&gt;面向对象编程基础
 &lt;/h3&gt;&lt;p&gt;两种范型：&lt;/p&gt;
 &lt;ul&gt;
@@ -51398,11 +51398,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>模块-glob模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_glob_module/</link>
+        <link>https://hellogitlab.com/backend/python/x_glob_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_glob_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 模块-glob模块" /&gt;&lt;h2 id=&#34;模块-glob模块&#34;&gt;模块-glob模块
+        <guid>https://hellogitlab.com/backend/python/x_glob_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 模块-glob模块" /&gt;&lt;h2 id=&#34;模块-glob模块&#34;&gt;模块-glob模块
 &lt;/h2&gt;&lt;h3 id=&#34;glob模块基本介绍&#34;&gt;glob模块基本介绍
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;glob&lt;/code&gt;是python自带的一个操作文件的相关模块。&lt;/li&gt;
@@ -51771,11 +51771,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>模块-itertools模块迭代器函数</title>
-        <link>https://meizhaohui.github.io/backend/python/x_itertools_module/</link>
+        <link>https://hellogitlab.com/backend/python/x_itertools_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_itertools_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 模块-itertools模块迭代器函数" /&gt;&lt;h2 id=&#34;模块-itertools模块迭代器函数&#34;&gt;模块-itertools模块迭代器函数
+        <guid>https://hellogitlab.com/backend/python/x_itertools_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 模块-itertools模块迭代器函数" /&gt;&lt;h2 id=&#34;模块-itertools模块迭代器函数&#34;&gt;模块-itertools模块迭代器函数
 &lt;/h2&gt;&lt;h3 id=&#34;itertools模块基本介绍&#34;&gt;&lt;code&gt;itertools&lt;/code&gt;模块基本介绍
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Python的内建模块&lt;code&gt;itertools&lt;/code&gt;提供了非常有用的用于操作迭代对象的函数。&lt;/li&gt;
@@ -53315,11 +53315,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>模块-json模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_json_module/</link>
+        <link>https://hellogitlab.com/backend/python/x_json_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_json_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 模块-json模块" /&gt;&lt;h2 id=&#34;模块-json模块&#34;&gt;模块-json模块
+        <guid>https://hellogitlab.com/backend/python/x_json_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 模块-json模块" /&gt;&lt;h2 id=&#34;模块-json模块&#34;&gt;模块-json模块
 &lt;/h2&gt;&lt;h3 id=&#34;json模块基本介绍&#34;&gt;json模块基本介绍
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;存储数据结构到一个文件中称为 &lt;code&gt;序列化(Serialize)&lt;/code&gt; ， 从文件中解析数据并存储到数据结构中称为 &lt;code&gt;反序列化(Deserialize)&lt;/code&gt; 。&lt;/li&gt;
@@ -54063,11 +54063,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>模块-os模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_os_module/</link>
+        <link>https://hellogitlab.com/backend/python/x_os_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_os_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 模块-os模块" /&gt;&lt;h2 id=&#34;模块-os模块&#34;&gt;模块-os模块
+        <guid>https://hellogitlab.com/backend/python/x_os_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 模块-os模块" /&gt;&lt;h2 id=&#34;模块-os模块&#34;&gt;模块-os模块
 &lt;/h2&gt;&lt;h3 id=&#34;os模块基本介绍&#34;&gt;os模块基本介绍
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;os&lt;/code&gt;模块包含操作系统功能&lt;/li&gt;
@@ -55344,11 +55344,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>模块-sys模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_system_module/</link>
+        <link>https://hellogitlab.com/backend/python/x_system_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_system_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 模块-sys模块" /&gt;&lt;h2 id=&#34;模块-sys模块&#34;&gt;模块-sys模块
+        <guid>https://hellogitlab.com/backend/python/x_system_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 模块-sys模块" /&gt;&lt;h2 id=&#34;模块-sys模块&#34;&gt;模块-sys模块
 &lt;/h2&gt;&lt;h3 id=&#34;模块与包基本介绍&#34;&gt;模块与包基本介绍
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;模块是可被重用的代码文件&lt;/li&gt;
@@ -55774,11 +55774,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>模块-UUID模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_univeral_unique_identifier/</link>
+        <link>https://hellogitlab.com/backend/python/x_univeral_unique_identifier/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_univeral_unique_identifier/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 模块-UUID模块" /&gt;&lt;h2 id=&#34;模块-uuid模块&#34;&gt;模块-UUID模块
+        <guid>https://hellogitlab.com/backend/python/x_univeral_unique_identifier/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 模块-UUID模块" /&gt;&lt;h2 id=&#34;模块-uuid模块&#34;&gt;模块-UUID模块
 &lt;/h2&gt;&lt;h3 id=&#34;背景知识&#34;&gt;背景知识
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;UUID&lt;/code&gt;: &lt;code&gt;通用唯一标识符 ( Universally Unique Identifier )&lt;/code&gt;，对于所有的&lt;code&gt;UUID&lt;/code&gt;它可以保证在空间和时间上的唯一性。它是通过&lt;code&gt;MAC&lt;/code&gt;地址，时间戳，命名空间，随机数，伪随机数来保证生成ID的唯一性，有着固定的大小( &lt;code&gt;128 bit&lt;/code&gt; )。 它的唯一性和一致性特点使得可以无需注册过程就能够产生一个新的&lt;code&gt;UUID&lt;/code&gt;。&lt;code&gt;UUID&lt;/code&gt;可以被用作多种用途，既可以用来短时间内标记一个对象，也可以可靠的辨别网络中的持久性对象。&lt;/p&gt;
 &lt;h3 id=&#34;为什么要使用uuid&#34;&gt;为什么要使用UUID？
@@ -55942,11 +55942,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>内建数据结构-列表，元组，字典</title>
-        <link>https://meizhaohui.github.io/backend/python/x_built-in_data_structure/</link>
+        <link>https://hellogitlab.com/backend/python/x_built-in_data_structure/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_built-in_data_structure/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 内建数据结构-列表，元组，字典" /&gt;&lt;h2 id=&#34;内建数据结构-列表元组字典&#34;&gt;内建数据结构-列表，元组，字典
+        <guid>https://hellogitlab.com/backend/python/x_built-in_data_structure/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 内建数据结构-列表，元组，字典" /&gt;&lt;h2 id=&#34;内建数据结构-列表元组字典&#34;&gt;内建数据结构-列表，元组，字典
 &lt;/h2&gt;&lt;h3 id=&#34;python内建数据结构介绍&#34;&gt;python内建数据结构介绍
 &lt;/h3&gt;&lt;p&gt;python内建数据结构包括 &lt;strong&gt;列表(&lt;code&gt;list&lt;/code&gt;)&lt;/strong&gt; 、&lt;strong&gt;元组(&lt;code&gt;tuple&lt;/code&gt;)&lt;/strong&gt; 和 &lt;strong&gt;字典(&lt;code&gt;dict&lt;/code&gt;)&lt;/strong&gt; 。&lt;/p&gt;
 &lt;ul&gt;
@@ -57571,11 +57571,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>剖析Web</title>
-        <link>https://meizhaohui.github.io/backend/python/x_web/</link>
+        <link>https://hellogitlab.com/backend/python/x_web/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_web/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 剖析Web" /&gt;&lt;h2 id=&#34;剖析web&#34;&gt;剖析Web
+        <guid>https://hellogitlab.com/backend/python/x_web/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 剖析Web" /&gt;&lt;h2 id=&#34;剖析web&#34;&gt;剖析Web
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;HTTP&lt;/code&gt;超文本传输协议，规则了网络客户端和服务端之间如何交换请求和响应。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;HTML&lt;/code&gt;超文本标记语言，结果的展示格式。&lt;/li&gt;
@@ -57584,7 +57584,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;h3 id=&#34;web客户端&#34;&gt;Web客户端
 &lt;/h3&gt;&lt;h4 id=&#34;使用telnet进行测试&#34;&gt;使用telnet进行测试
 &lt;/h4&gt;&lt;p&gt;使用windows操作系统时，可以在&amp;quot;打开或关闭Windows功能&amp;quot;中开启“Telnet客户端”，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/open_telnet_client.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/open_telnet_client.png&#34;
 	
 	
 	
@@ -58176,11 +58176,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`arrow`日期时间模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_arrow/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_arrow/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_arrow/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`arrow`日期时间模块" /&gt;&lt;h2 id=&#34;日期和时间模块-arrow日期时间模块&#34;&gt;日期和时间模块-&lt;code&gt;arrow&lt;/code&gt;日期时间模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_arrow/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`arrow`日期时间模块" /&gt;&lt;h2 id=&#34;日期和时间模块-arrow日期时间模块&#34;&gt;日期和时间模块-&lt;code&gt;arrow&lt;/code&gt;日期时间模块
 &lt;/h2&gt;&lt;h3 id=&#34;简介&#34;&gt;简介
 &lt;/h3&gt;&lt;p&gt;官方介绍如下：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -58301,7 +58301,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;时区图&#34;&gt;时区图
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/timezone.gif&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/timezone.gif&#34;
 	
 	
 	
@@ -60950,11 +60950,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`calendar`日历模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_calendar/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_calendar/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_calendar/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`calendar`日历模块" /&gt;&lt;h2 id=&#34;日期和时间模块-calendar日历模块&#34;&gt;日期和时间模块-&lt;code&gt;calendar&lt;/code&gt;日历模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_calendar/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`calendar`日历模块" /&gt;&lt;h2 id=&#34;日期和时间模块-calendar日历模块&#34;&gt;日期和时间模块-&lt;code&gt;calendar&lt;/code&gt;日历模块
 &lt;/h2&gt;&lt;h3 id=&#34;calendar模块&#34;&gt;&lt;code&gt;calendar&lt;/code&gt;模块
 &lt;/h3&gt;&lt;p&gt;查看&lt;code&gt;calendar&lt;/code&gt;模块有哪些函数或方法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -62520,11 +62520,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`datetime`日期时间模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_datetime/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_datetime/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_datetime/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`datetime`日期时间模块" /&gt;&lt;h2 id=&#34;日期和时间模块-datetime日期时间模块&#34;&gt;日期和时间模块-&lt;code&gt;datetime&lt;/code&gt;日期时间模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_datetime/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`datetime`日期时间模块" /&gt;&lt;h2 id=&#34;日期和时间模块-datetime日期时间模块&#34;&gt;日期和时间模块-&lt;code&gt;datetime&lt;/code&gt;日期时间模块
 &lt;/h2&gt;&lt;p&gt;查看&lt;code&gt;datetime&lt;/code&gt;模块有哪些函数或方法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -64895,11 +64895,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`dateutil`日期工具模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_dateutil/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_dateutil/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_dateutil/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`dateutil`日期工具模块" /&gt;&lt;h2 id=&#34;日期和时间模块-dateutil日期工具模块&#34;&gt;日期和时间模块-&lt;code&gt;dateutil&lt;/code&gt;日期工具模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_dateutil/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`dateutil`日期工具模块" /&gt;&lt;h2 id=&#34;日期和时间模块-dateutil日期工具模块&#34;&gt;日期和时间模块-&lt;code&gt;dateutil&lt;/code&gt;日期工具模块
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;dateutil - powerful extensions to datetime&lt;/code&gt;官方解释&lt;code&gt;dateutil&lt;/code&gt;模块是&lt;code&gt;datetime&lt;/code&gt;模块的超强扩展！&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;dateutil&lt;/code&gt;日期工具模块说明：&lt;/p&gt;
 &lt;ul&gt;
@@ -68608,11 +68608,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`fleming`时区模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_fleming/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_fleming/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_fleming/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`fleming`时区模块" /&gt;&lt;h2 id=&#34;日期和时间模块-fleming时区模块&#34;&gt;日期和时间模块-&lt;code&gt;fleming&lt;/code&gt;时区模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_fleming/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`fleming`时区模块" /&gt;&lt;h2 id=&#34;日期和时间模块-fleming时区模块&#34;&gt;日期和时间模块-&lt;code&gt;fleming&lt;/code&gt;时区模块
 &lt;/h2&gt;&lt;h3 id=&#34;介绍&#34;&gt;介绍
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;This package contains Fleming, which contains a set of routines for doing datetime manipulation. Named after Sandford Fleming, the father of worldwide standard timezones, this package is meant to aid datetime manipulations with regards to timezones.&lt;/p&gt;
@@ -69235,11 +69235,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`pytz`时区模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_pytz/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_pytz/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_pytz/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`pytz`时区模块" /&gt;&lt;h2 id=&#34;日期和时间模块-pytz时区模块&#34;&gt;日期和时间模块-&lt;code&gt;pytz&lt;/code&gt;时区模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_pytz/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`pytz`时区模块" /&gt;&lt;h2 id=&#34;日期和时间模块-pytz时区模块&#34;&gt;日期和时间模块-&lt;code&gt;pytz&lt;/code&gt;时区模块
 &lt;/h2&gt;&lt;h3 id=&#34;介绍&#34;&gt;介绍
 &lt;/h3&gt;&lt;p&gt;pypi上面pytz模块的介绍是&lt;code&gt;World timezone definitions, modern and historical&lt;/code&gt;，即世界野区定义，现代的和历史的。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -73630,11 +73630,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`time`时间模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_time/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_time/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_time/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`time`时间模块" /&gt;&lt;h2 id=&#34;日期和时间模块-time时间模块&#34;&gt;日期和时间模块-&lt;code&gt;time&lt;/code&gt;时间模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_time/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`time`时间模块" /&gt;&lt;h2 id=&#34;日期和时间模块-time时间模块&#34;&gt;日期和时间模块-&lt;code&gt;time&lt;/code&gt;时间模块
 &lt;/h2&gt;&lt;h3 id=&#34;time模块&#34;&gt;&lt;code&gt;time&lt;/code&gt;模块
 &lt;/h3&gt;&lt;p&gt;查看&lt;code&gt;time&lt;/code&gt;模块有哪些函数或方法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -75998,11 +75998,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>日期和时间模块-`timeit`程序运行时间统计模块</title>
-        <link>https://meizhaohui.github.io/backend/python/x_time_and_date_module_timeit/</link>
+        <link>https://hellogitlab.com/backend/python/x_time_and_date_module_timeit/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_time_and_date_module_timeit/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 日期和时间模块-`timeit`程序运行时间统计模块" /&gt;&lt;h2 id=&#34;日期和时间模块-timeit程序运行时间统计模块&#34;&gt;日期和时间模块-&lt;code&gt;timeit&lt;/code&gt;程序运行时间统计模块
+        <guid>https://hellogitlab.com/backend/python/x_time_and_date_module_timeit/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 日期和时间模块-`timeit`程序运行时间统计模块" /&gt;&lt;h2 id=&#34;日期和时间模块-timeit程序运行时间统计模块&#34;&gt;日期和时间模块-&lt;code&gt;timeit&lt;/code&gt;程序运行时间统计模块
 &lt;/h2&gt;&lt;p&gt;查看&lt;code&gt;timeit&lt;/code&gt;模块有哪些函数或方法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -76037,11 +76037,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>使用Faker生成虚拟数据</title>
-        <link>https://meizhaohui.github.io/backend/python/x_faker_generate_fake_data/</link>
+        <link>https://hellogitlab.com/backend/python/x_faker_generate_fake_data/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_faker_generate_fake_data/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 使用Faker生成虚拟数据" /&gt;&lt;h2 id=&#34;使用faker生成虚拟数据&#34;&gt;使用Faker生成虚拟数据
+        <guid>https://hellogitlab.com/backend/python/x_faker_generate_fake_data/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 使用Faker生成虚拟数据" /&gt;&lt;h2 id=&#34;使用faker生成虚拟数据&#34;&gt;使用Faker生成虚拟数据
 &lt;/h2&gt;&lt;h3 id=&#34;faker简介&#34;&gt;Faker简介
 &lt;/h3&gt;&lt;p&gt;在软件需求、开发、测试过程中，有时候需要使用一些测试数据，针对这种情况，我们一般要么使用已有的系统数据，要么需要手动制造一些数据。在手动制造数据的过程中，可能需要花费大量精力和工作量，而使用&lt;code&gt;faker&lt;/code&gt;生成虚拟数据可以为我们减少这部分的工作量。&lt;/p&gt;
 &lt;h3 id=&#34;安装&#34;&gt;安装
@@ -76671,7 +76671,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;查询MYSQL数据库的数据如下图:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/use_faker_1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/use_faker_1.png&#34;
 	
 	
 	
@@ -76691,7 +76691,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;则显示如下:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/use_faker_2.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/use_faker_2.png&#34;
 	
 	
 	
@@ -76713,11 +76713,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>数据库处理</title>
-        <link>https://meizhaohui.github.io/backend/python/x_database/</link>
+        <link>https://hellogitlab.com/backend/python/x_database/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_database/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 数据库处理" /&gt;&lt;h2 id=&#34;数据库处理&#34;&gt;数据库处理
+        <guid>https://hellogitlab.com/backend/python/x_database/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 数据库处理" /&gt;&lt;h2 id=&#34;数据库处理&#34;&gt;数据库处理
 &lt;/h2&gt;&lt;h3 id=&#34;sqlite3处理sqlite数据库&#34;&gt;sqlite3处理SQLite数据库
 &lt;/h3&gt;&lt;p&gt;安装&lt;code&gt;SQLite&lt;/code&gt;，请参照 &lt;a class=&#34;link&#34; href=&#34;http://www.runoob.com/sqlite/sqlite-installation.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;SQLite 安装 &lt;/a&gt; 。&lt;/p&gt;
@@ -78005,7 +78005,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;li&gt;&lt;code&gt;Engine&lt;/code&gt;是任何&lt;code&gt;SQLAlchemy&lt;/code&gt;应用程序的起点。 它是实际数据库及其&lt;code&gt;DBAPI&lt;/code&gt;的基础，通过&lt;code&gt;Pool&lt;/code&gt;连接池和&lt;code&gt;Dialect&lt;/code&gt;方言传递给&lt;code&gt;SQLAlchemy&lt;/code&gt;应用程序，该&lt;code&gt;Dialect&lt;/code&gt;方言描述了如何与特定类型的数据库&lt;code&gt;DBAPI&lt;/code&gt;组合进行通信。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;SQLAlchemy Engine&lt;/code&gt;的架构如下:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/sqla_engine_arch.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/sqla_engine_arch.png&#34;
 	
 	
 	
@@ -84579,7 +84579,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/div&gt;
 &lt;/div&gt;&lt;h5 id=&#34;redis命令的使用&#34;&gt;redis命令的使用
 &lt;/h5&gt;&lt;p&gt;Redis的命令非常多，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/redis_command_1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/redis_command_1.png&#34;
 	
 	
 	
@@ -84589,7 +84589,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/redis_command_2.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/redis_command_2.png&#34;
 	
 	
 	
@@ -86288,11 +86288,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>数据输出美化模块-`pprint`</title>
-        <link>https://meizhaohui.github.io/backend/python/x_pprint/</link>
+        <link>https://hellogitlab.com/backend/python/x_pprint/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_pprint/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 数据输出美化模块-`pprint`" /&gt;&lt;h2 id=&#34;数据输出美化模块-pprint&#34;&gt;数据输出美化模块-&lt;code&gt;pprint&lt;/code&gt;
+        <guid>https://hellogitlab.com/backend/python/x_pprint/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 数据输出美化模块-`pprint`" /&gt;&lt;h2 id=&#34;数据输出美化模块-pprint&#34;&gt;数据输出美化模块-&lt;code&gt;pprint&lt;/code&gt;
 &lt;/h2&gt;&lt;p&gt;查看&lt;code&gt;pprint&lt;/code&gt;模块有哪些函数或方法：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -86671,7 +86671,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;使用&lt;code&gt;jq&lt;/code&gt;命令查看：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-04-20_00-03-48.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-04-20_00-03-48.png&#34;
 	
 	
 	
@@ -86687,11 +86687,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>网络</title>
-        <link>https://meizhaohui.github.io/backend/python/x_internet/</link>
+        <link>https://hellogitlab.com/backend/python/x_internet/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_internet/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 网络" /&gt;&lt;h2 id=&#34;网络&#34;&gt;网络
+        <guid>https://hellogitlab.com/backend/python/x_internet/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 网络" /&gt;&lt;h2 id=&#34;网络&#34;&gt;网络
 &lt;/h2&gt;&lt;p&gt;在讨论并发时，主要讨论的是时间：单机解决方案(进程、线程和绿色线程)。还简单但是绝对了网络化的解决方案(Redis)。现在我们来单独介绍一下网络化，也就是跨空间的分布式计算。&lt;/p&gt;
 &lt;h3 id=&#34;模式&#34;&gt;模式
 &lt;/h3&gt;&lt;p&gt;你可以使用一些基础的模式来搭建网络化应用。&lt;/p&gt;
@@ -87788,7 +87788,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;p&gt;以上示例中，传输的消息都需要使用字节字符串形式发送，所以需要把字符串用UTF-8格式编码。你可以发送任意类型的消息，只要把它转换成&lt;code&gt;bytes&lt;/code&gt;字节就行。我们的消息是简单的文本字符串，所以&lt;code&gt;encode()&lt;/code&gt;和&lt;code&gt;decode()&lt;/code&gt;可以实现文本字符串和字节字符串的转换。如果你的消息包含其他数据类型，可以使用类似MessagePack&lt;a class=&#34;link&#34; href=&#34;https://msgpack.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://msgpack.org/&lt;/a&gt;的库来处理。&lt;/p&gt;
 &lt;p&gt;MessagePack：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/messagepack.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/messagepack.png&#34;
 	
 	
 	
@@ -87812,7 +87812,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
 &lt;h3 id=&#34;网络监控工具scapy&#34;&gt;网络监控工具Scapy
 &lt;/h3&gt;&lt;p&gt;有时候你需要深入网络流中处理字节，你可能想要调试Web API或者追踪一些安全问题。scapy库是一个优秀的Python数据包分析工具，比编写和调试C程序简单得多。实际上，它是一门简单的用来构建和分析数据包的语言。&lt;/p&gt;
 &lt;p&gt;Scapy是一款强大的交互式数据包处理工具、数据包生成器、网络扫描器、网络发现工具和包嗅探工具。它提供多种类别的交互式生成数据包或数据包集合、对 数据包进行操作、发送数据包、包嗅探、应答和反馈匹配等等功能。Python解释器提供交互功能，所以要用到Python编程知识（例如 variables、loops、和functions）。支持生成报告，且报告生成简单。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/animation-scapy-install.svg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/animation-scapy-install.svg&#34;
 	
 	
 	
@@ -87939,7 +87939,7 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
     &gt;https://docs.python.org/3/library/ftplib.html&lt;/a&gt;可以使用文件传输协议(FTP)来发送字节。虽然这是一个很古老的协议，但它的表现仍然非常优秀。&lt;/p&gt;
 &lt;p&gt;现在已经介绍了很多标准库中的模块，不过还是推荐你阅读一下标准库文档中的网络协议&lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/library/internet.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://docs.python.org/3/library/internet.html&lt;/a&gt;部分。
-&lt;img src=&#34;https://meizhaohui.github.io/img/internet_protocols.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/internet_protocols.png&#34;
 	
 	
 	
@@ -88708,11 +88708,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>文件的读写</title>
-        <link>https://meizhaohui.github.io/backend/python/x_file_read_write/</link>
+        <link>https://hellogitlab.com/backend/python/x_file_read_write/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_file_read_write/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 文件的读写" /&gt;&lt;h2 id=&#34;文件的读写&#34;&gt;文件的读写
+        <guid>https://hellogitlab.com/backend/python/x_file_read_write/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 文件的读写" /&gt;&lt;h2 id=&#34;文件的读写&#34;&gt;文件的读写
 &lt;/h2&gt;&lt;h3 id=&#34;文件读写内置方法open&#34;&gt;文件读写内置方法open
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;使用内置方法 &lt;code&gt;&amp;lt;built-in function open&amp;gt;&lt;/code&gt;对文件进行读写。&lt;/li&gt;
@@ -91570,11 +91570,11 @@ Python3.6.2安装文件的下载地址如下：&lt;code&gt;https://www.python.or
         </item>
         <item>
         <title>学会使用命令帮助</title>
-        <link>https://meizhaohui.github.io/backend/python/x_use_help/</link>
+        <link>https://hellogitlab.com/backend/python/x_use_help/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_use_help/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 学会使用命令帮助" /&gt;&lt;h2 id=&#34;学会使用命令帮助&#34;&gt;学会使用命令帮助
+        <guid>https://hellogitlab.com/backend/python/x_use_help/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 学会使用命令帮助" /&gt;&lt;h2 id=&#34;学会使用命令帮助&#34;&gt;学会使用命令帮助
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;p&gt;在python命令行，面对命令不知道怎么用，或不记得命令的拼写及参数时，我们需要求助于系统的帮助文档；
 python内置的帮助文档很详细，通常能解决我们的问题，我们需要掌握如何正确的去使用它们；&lt;/p&gt;
@@ -92831,11 +92831,11 @@ python内置的帮助文档很详细，通常能解决我们的问题，我们�
         </item>
         <item>
         <title>异常</title>
-        <link>https://meizhaohui.github.io/backend/python/x_try_except_else_finally/</link>
+        <link>https://hellogitlab.com/backend/python/x_try_except_else_finally/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_try_except_else_finally/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 异常" /&gt;&lt;h2 id=&#34;异常&#34;&gt;异常
+        <guid>https://hellogitlab.com/backend/python/x_try_except_else_finally/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 异常" /&gt;&lt;h2 id=&#34;异常&#34;&gt;异常
 &lt;/h2&gt;&lt;p&gt;本节介绍Python的异常。&lt;/p&gt;
 &lt;h3 id=&#34;异常的定义&#34;&gt;异常的定义
 &lt;/h3&gt;&lt;ul&gt;
@@ -94061,11 +94061,11 @@ python内置的帮助文档很详细，通常能解决我们的问题，我们�
         </item>
         <item>
         <title>引号与转义符的使用</title>
-        <link>https://meizhaohui.github.io/backend/python/x_quote_escape_character/</link>
+        <link>https://hellogitlab.com/backend/python/x_quote_escape_character/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_quote_escape_character/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 引号与转义符的使用" /&gt;&lt;h2 id=&#34;引号与转义符的使用&#34;&gt;引号与转义符的使用
+        <guid>https://hellogitlab.com/backend/python/x_quote_escape_character/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 引号与转义符的使用" /&gt;&lt;h2 id=&#34;引号与转义符的使用&#34;&gt;引号与转义符的使用
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;p&gt;在python中使用引号包裹字符串或doc说明文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -94220,11 +94220,11 @@ python内置的帮助文档很详细，通常能解决我们的问题，我们�
         </item>
         <item>
         <title>装饰器</title>
-        <link>https://meizhaohui.github.io/backend/python/x_decorator/</link>
+        <link>https://hellogitlab.com/backend/python/x_decorator/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/x_decorator/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 装饰器" /&gt;&lt;h2 id=&#34;装饰器&#34;&gt;装饰器
+        <guid>https://hellogitlab.com/backend/python/x_decorator/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 装饰器" /&gt;&lt;h2 id=&#34;装饰器&#34;&gt;装饰器
 &lt;/h2&gt;&lt;p&gt;本节全面介绍python中的装饰器(decorator)。&lt;/p&gt;
 &lt;h3 id=&#34;装饰器的引入&#34;&gt;装饰器的引入
 &lt;/h3&gt;&lt;ul&gt;
@@ -94872,11 +94872,11 @@ python内置的帮助文档很详细，通常能解决我们的问题，我们�
         </item>
         <item>
         <title>自动启动代理程序V2rayN</title>
-        <link>https://meizhaohui.github.io/backend/python/auto_start_proxy/</link>
+        <link>https://hellogitlab.com/backend/python/auto_start_proxy/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/python/auto_start_proxy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 自动启动代理程序V2rayN" /&gt;&lt;h2 id=&#34;自动启动代理程序v2rayn&#34;&gt;自动启动代理程序V2rayN
+        <guid>https://hellogitlab.com/backend/python/auto_start_proxy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 自动启动代理程序V2rayN" /&gt;&lt;h2 id=&#34;自动启动代理程序v2rayn&#34;&gt;自动启动代理程序V2rayN
 &lt;/h2&gt;&lt;h3 id=&#34;1-需求说明&#34;&gt;1. 需求说明
 &lt;/h3&gt;&lt;p&gt;我们有一个科学代理程序V2rayN，使用的规则是每天动态修改端口号，避免被墙。正常情况下，可以每天手动修改代理程序的端口号，然后重启程序。但每次手动修改并启动程序有点麻烦，因此想通过Python脚本自动启动程序。&lt;/p&gt;
 &lt;h3 id=&#34;2-程序说明&#34;&gt;2. 程序说明
@@ -95158,7 +95158,7 @@ python内置的帮助文档很详细，通常能解决我们的问题，我们�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-11_23-14-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-11_23-14-53.png&#34;
 	
 	
 	
@@ -95167,7 +95167,7 @@ python内置的帮助文档很详细，通常能解决我们的问题，我们�
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时可以看到V2rayN程序成功启动，并且端口号已经是配置好了的！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-11_23-16-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-11_23-16-13.png&#34;
 	
 	
 	

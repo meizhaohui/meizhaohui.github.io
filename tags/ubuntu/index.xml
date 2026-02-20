@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Ubuntu on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/ubuntu/</link>
+        <link>https://hellogitlab.com/tags/ubuntu/</link>
         <description>Recent content in Ubuntu on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Ubuntu Docs</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_docs/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ubuntu Docs" /&gt;&lt;h2 id=&#34;ubuntu-docs&#34;&gt;Ubuntu Docs
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ubuntu Docs" /&gt;&lt;h2 id=&#34;ubuntu-docs&#34;&gt;Ubuntu Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../ubuntu_init&#34; &gt;Ubuntu桌面初始化安装配置&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../ubuntu_change_repo&#34; &gt;更改ubuntu国内镜像源&lt;/a&gt;&lt;/li&gt;
@@ -23,11 +23,11 @@
         </item>
         <item>
         <title>Ubuntu UFW防火墙设置</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_firewall/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_firewall/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_firewall/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ubuntu UFW防火墙设置" /&gt;&lt;h2 id=&#34;ubuntu-ufw防火墙设置&#34;&gt;Ubuntu UFW防火墙设置
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_firewall/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ubuntu UFW防火墙设置" /&gt;&lt;h2 id=&#34;ubuntu-ufw防火墙设置&#34;&gt;Ubuntu UFW防火墙设置
 &lt;/h2&gt;&lt;h4 id=&#34;安装&#34;&gt;安装
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -280,11 +280,11 @@
         </item>
         <item>
         <title>Ubuntu初始化配置</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_init/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_init/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_init/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ubuntu初始化配置" /&gt;&lt;h2 id=&#34;ubuntu初始化配置&#34;&gt;Ubuntu初始化配置
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_init/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ubuntu初始化配置" /&gt;&lt;h2 id=&#34;ubuntu初始化配置&#34;&gt;Ubuntu初始化配置
 &lt;/h2&gt;&lt;h3 id=&#34;ubuntu下一个好用的终端&#34;&gt;Ubuntu下一个好用的终端
 &lt;/h3&gt;&lt;p&gt;在终端下输入：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -457,11 +457,11 @@
         </item>
         <item>
         <title>更改ubuntu国内镜像源</title>
-        <link>https://meizhaohui.github.io/os/ubuntu/ubuntu_change_repo/</link>
+        <link>https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/ubuntu/ubuntu_change_repo/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 更改ubuntu国内镜像源" /&gt;&lt;h2 id=&#34;更改ubuntu国内镜像源&#34;&gt;更改ubuntu国内镜像源
+        <guid>https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 更改ubuntu国内镜像源" /&gt;&lt;h2 id=&#34;更改ubuntu国内镜像源&#34;&gt;更改ubuntu国内镜像源
 &lt;/h2&gt;&lt;p&gt;我们使用docker运行一个ubuntu容器。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

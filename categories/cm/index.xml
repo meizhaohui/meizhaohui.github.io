@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>CM on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/cm/</link>
+        <link>https://hellogitlab.com/categories/cm/</link>
         <description>Recent content in CM on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/cm/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/cm/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>强制删除推送到git上的历史记录</title>
-        <link>https://meizhaohui.github.io/devops/git/force_delete_remote_commit/</link>
+        <link>https://hellogitlab.com/devops/git/force_delete_remote_commit/</link>
         <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/force_delete_remote_commit/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 强制删除推送到git上的历史记录" /&gt;&lt;h2 id=&#34;强制删除推送到git上的历史记录&#34;&gt;强制删除推送到git上的历史记录
+        <guid>https://hellogitlab.com/devops/git/force_delete_remote_commit/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 强制删除推送到git上的历史记录" /&gt;&lt;h2 id=&#34;强制删除推送到git上的历史记录&#34;&gt;强制删除推送到git上的历史记录
 &lt;/h2&gt;&lt;h3 id=&#34;1-应用场景&#34;&gt;1. 应用场景
 &lt;/h3&gt;&lt;p&gt;通常情况下，是提交代码后，发现提交到git仓库中的某个文件存在敏感信息，此时就要将这个敏感信息的提交从git中删除掉。&lt;/p&gt;
 &lt;p&gt;现在我有一个&lt;code&gt;testgit&lt;/code&gt;的仓库,尝试提交几次代码：&lt;/p&gt;
@@ -147,7 +147,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   8a91349..7ae40c0  main -&amp;gt; main
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_22-35-43.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_22-35-43.png&#34;
 	
 	
 	
@@ -244,7 +244,7 @@
 &lt;/div&gt;&lt;h4 id=&#34;24-强制推送到git仓库&#34;&gt;2.4 强制推送到git仓库
 &lt;/h4&gt;&lt;p&gt;使用&lt;code&gt;git push origin &amp;lt;branch-name&amp;gt; --force&lt;/code&gt;强制推送来更新远程git仓库记录。&lt;/p&gt;
 &lt;p&gt;在强制推送前，还可以看到git仓库中存在敏感信息的提交记录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_22-50-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_22-50-30.png&#34;
 	
 	
 	
@@ -277,7 +277,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;推送成功。&lt;/p&gt;
 &lt;p&gt;此时刷新一下git页面，可以看到有异常的的提交已经没有了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_22-52-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_22-52-35.png&#34;
 	
 	
 	
@@ -323,7 +323,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   8a91349..e290197  main -&amp;gt; main
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_23-04-51.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_23-04-51.png&#34;
 	
 	
 	
@@ -373,11 +373,11 @@
         </item>
         <item>
         <title>一步一步学role角色6-使用ansible配置redis数据库角色</title>
-        <link>https://meizhaohui.github.io/devops/ansible/role_6_redis/</link>
+        <link>https://hellogitlab.com/devops/ansible/role_6_redis/</link>
         <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/role_6_redis/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 一步一步学role角色6-使用ansible配置redis数据库角色" /&gt;&lt;h2 id=&#34;一步一步学role角色6-使用ansible配置redis数据库角色&#34;&gt;一步一步学role角色6-使用ansible配置redis数据库角色
+        <guid>https://hellogitlab.com/devops/ansible/role_6_redis/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 一步一步学role角色6-使用ansible配置redis数据库角色" /&gt;&lt;h2 id=&#34;一步一步学role角色6-使用ansible配置redis数据库角色&#34;&gt;一步一步学role角色6-使用ansible配置redis数据库角色
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -871,7 +871,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，执行成功了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-09_21-41-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-09_21-41-06.png&#34;
 	
 	
 	
@@ -1212,7 +1212,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-09_21-55-00.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-09_21-55-00.png&#34;
 	
 	
 	
@@ -1552,7 +1552,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-09_22-14-59.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-09_22-14-59.png&#34;
 	
 	
 	
@@ -1560,7 +1560,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-09_22-15-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-09_22-15-47.png&#34;
 	
 	
 	
@@ -1569,7 +1569,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，可以看到，两个节点上面的redis服务都正常启动了，快捷命令也可以用了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-09_22-19-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-09_22-19-00.png&#34;
 	
 	
 	
@@ -2560,7 +2560,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-14_10-25-06.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-14_10-25-06.png&#34;
 	
 	
 	
@@ -2568,7 +2568,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-14_10-25-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-14_10-25-40.png&#34;
 	
 	
 	
@@ -3354,7 +3354,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;一主多从架构图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-21_14-57-34.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-21_14-57-34.png&#34;
 	
 	
 	
@@ -4038,7 +4038,7 @@
 &lt;/div&gt;&lt;p&gt;64-84行是新增的两个任务。&lt;/p&gt;
 &lt;p&gt;特别注意，要使用&lt;code&gt;marker: &amp;quot;# {mark} meizhaohui add replicaof masterip masterport&amp;quot;&lt;/code&gt;和&lt;code&gt; marker: &amp;quot;# {mark} meizhaohui add masterauth master-password&amp;quot;&lt;/code&gt;标记不同的块。&lt;/p&gt;
 &lt;p&gt;最终ansible自动修改后，效果是这样的：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-15_23-08-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-15_23-08-18.png&#34;
 	
 	
 	
@@ -4342,7 +4342,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-15_22-59-12.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-15_22-59-12.png&#34;
 	
 	
 	
@@ -4350,7 +4350,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-15_22-59-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-15_22-59-43.png&#34;
 	
 	
 	
@@ -4569,7 +4569,7 @@
 &lt;li&gt;supervisor进程管理工具的应用配置文件&lt;code&gt;/etc/supervisord.d/redis.ini&lt;/code&gt;，也带上端口号，如&lt;code&gt;/etc/supervisord.d/redis_29736.ini&lt;/code&gt;。并且该配置文件中指定应用名称&lt;code&gt;[program:redis]&lt;/code&gt;的配置和启动命令配置&lt;code&gt;command = /srv/redis/bin/redis-server /srv/redis/conf/redis.conf&lt;/code&gt;也需要做相应修改。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;对剧本文件进行一些修改，以下截图是修改点：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-21_11-22-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-21_11-22-24.png&#34;
 	
 	
 	
@@ -5322,7 +5322,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;127.0.0.1:29736&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-21_12-00-21.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-21_12-00-21.png&#34;
 	
 	
 	
@@ -5574,7 +5574,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;当主节点出现故障时，Redis Sentinel哨兵模式能自动完成故障发现和故障转移，并通知应用方，从而实现真正的高可用。&lt;/p&gt;
 &lt;p&gt;下面是1个主节点、2个从节点、3个哨兵节点组成的的Redis Sentinel哨兵模式的架构图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-21_15-22-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-21_15-22-02.png&#34;
 	
 	
 	
@@ -5794,7 +5794,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-21_23-01-16.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-21_23-01-16.png&#34;
 	
 	
 	
@@ -6543,7 +6543,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这个时候就可以在三个节点上完成哨兵模式的部署。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-22_23-04-55.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-22_23-04-55.png&#34;
 	
 	
 	
@@ -6551,7 +6551,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-22_23-04-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-22_23-04-25.png&#34;
 	
 	
 	
@@ -7275,7 +7275,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后执行python程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-22_23-18-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-22_23-18-23.png&#34;
 	
 	
 	
@@ -7406,7 +7406,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们客户端程序再执行一次：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-22_23-24-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-22_23-24-31.png&#34;
 	
 	
 	
@@ -7654,7 +7654,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，此时主节点又切到第1个节点&lt;code&gt;192.168.56.121&lt;/code&gt;上面去了。&lt;/p&gt;
 &lt;p&gt;在应用端测试，可以看到能正常读写：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-23_20-35-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-23_20-35-37.png&#34;
 	
 	
 	
@@ -8230,7 +8230,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;num&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-27_22-46-20.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-27_22-46-20.png&#34;
 	
 	
 	
@@ -8368,7 +8368,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;对比两个模板文件的差异：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-31_21-47-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-31_21-47-46.png&#34;
 	
 	
 	
@@ -9266,7 +9266,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行过程最后几个任务的截图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-31_23-08-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-31_23-08-06.png&#34;
 	
 	
 	
@@ -9480,7 +9480,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，集群创建完成了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-31_23-17-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-31_23-17-51.png&#34;
 	
 	
 	
@@ -9684,7 +9684,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行脚本：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-07-31_23-29-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-07-31_23-29-38.png&#34;
 	
 	
 	
@@ -9721,11 +9721,11 @@
         </item>
         <item>
         <title>一步一步学role角色5-使用ansible配置supervisor进程管理角色</title>
-        <link>https://meizhaohui.github.io/devops/ansible/role_5_supervisor/</link>
+        <link>https://hellogitlab.com/devops/ansible/role_5_supervisor/</link>
         <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/role_5_supervisor/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 一步一步学role角色5-使用ansible配置supervisor进程管理角色" /&gt;&lt;h2 id=&#34;一步一步学role角色5-使用ansible配置supervisor进程管理角色&#34;&gt;一步一步学role角色5-使用ansible配置supervisor进程管理角色
+        <guid>https://hellogitlab.com/devops/ansible/role_5_supervisor/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 一步一步学role角色5-使用ansible配置supervisor进程管理角色" /&gt;&lt;h2 id=&#34;一步一步学role角色5-使用ansible配置supervisor进程管理角色&#34;&gt;一步一步学role角色5-使用ansible配置supervisor进程管理角色
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -10466,7 +10466,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行过程截图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-23_23-14-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-23_23-14-38.png&#34;
 	
 	
 	
@@ -10474,7 +10474,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-23_23-15-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-23_23-15-37.png&#34;
 	
 	
 	
@@ -10717,7 +10717,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-23_23-45-23.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-23_23-45-23.png&#34;
 	
 	
 	
@@ -10989,7 +10989,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行过程截图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_16-41-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_16-41-11.png&#34;
 	
 	
 	
@@ -11184,7 +11184,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行过程截图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-00-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-00-04.png&#34;
 	
 	
 	
@@ -11266,7 +11266,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行过程截图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-03-05.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-03-05.png&#34;
 	
 	
 	
@@ -11390,7 +11390,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行剧本报错了！！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-22-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-22-28.png&#34;
 	
 	
 	
@@ -11696,7 +11696,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-41-34.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-41-34.png&#34;
 	
 	
 	
@@ -11704,7 +11704,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-42-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-42-09.png&#34;
 	
 	
 	
@@ -12013,7 +12013,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-49-29.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-49-29.png&#34;
 	
 	
 	
@@ -12021,7 +12021,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-50-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-50-40.png&#34;
 	
 	
 	
@@ -12031,7 +12031,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，三个节点都顺利执行完成了。&lt;/p&gt;
 &lt;p&gt;再在三个节点上面检查一下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_17-55-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_17-55-13.png&#34;
 	
 	
 	
@@ -12055,7 +12055,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;SUPERVISOR_PASSWORD&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;admin@123&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_18-00-52.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_18-00-52.png&#34;
 	
 	
 	
@@ -12064,7 +12064,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;登陆后，可以正常看到supervisor管理的应用：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-05-25_18-03-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-05-25_18-03-25.png&#34;
 	
 	
 	
@@ -12079,11 +12079,11 @@
         </item>
         <item>
         <title>callback回调插件</title>
-        <link>https://meizhaohui.github.io/devops/ansible/callback/</link>
+        <link>https://hellogitlab.com/devops/ansible/callback/</link>
         <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/callback/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post callback回调插件" /&gt;&lt;h2 id=&#34;callback回调插件&#34;&gt;callback回调插件
+        <guid>https://hellogitlab.com/devops/ansible/callback/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post callback回调插件" /&gt;&lt;h2 id=&#34;callback回调插件&#34;&gt;callback回调插件
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;callback是Ansible的一个回调功能，我们可以在运行Ansible的时候调用这个功能。&lt;/li&gt;
@@ -12102,11 +12102,11 @@
         </item>
         <item>
         <title>优化Ansible速度</title>
-        <link>https://meizhaohui.github.io/devops/ansible/accelerate/</link>
+        <link>https://hellogitlab.com/devops/ansible/accelerate/</link>
         <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/accelerate/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 优化Ansible速度" /&gt;&lt;h2 id=&#34;优化ansible速度&#34;&gt;优化Ansible速度
+        <guid>https://hellogitlab.com/devops/ansible/accelerate/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 优化Ansible速度" /&gt;&lt;h2 id=&#34;优化ansible速度&#34;&gt;优化Ansible速度
 &lt;/h2&gt;&lt;h3 id=&#34;1-ansible与saltstack的对比&#34;&gt;1. Ansible与SaltStack的对比
 &lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -13252,7 +13252,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-17_12-22-48.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-17_12-22-48.png&#34;
 	
 	
 	
@@ -13691,7 +13691,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-17_12-29-59.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-17_12-29-59.png&#34;
 	
 	
 	
@@ -13790,7 +13790,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，开启了pipelining功能后，总用时约为13秒，相当于默认情况下约快了3秒钟。&lt;/p&gt;
 &lt;p&gt;如果开启&lt;code&gt;-vvvv&lt;/code&gt;详细日志参数，可以看到日志中会出现很多&lt;code&gt;Pipelining is enabled&lt;/code&gt;的信息:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-17_22-28-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-17_22-28-44.png&#34;
 	
 	
 	
@@ -13820,7 +13820,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;再执行剧本：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-17_22-33-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-17_22-33-12.png&#34;
 	
 	
 	
@@ -15256,11 +15256,11 @@
         </item>
         <item>
         <title>一步一步学role角色4-include的使用</title>
-        <link>https://meizhaohui.github.io/devops/ansible/role_4_include/</link>
+        <link>https://hellogitlab.com/devops/ansible/role_4_include/</link>
         <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/role_4_include/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 一步一步学role角色4-include的使用" /&gt;&lt;h2 id=&#34;一步一步学role角色4-include的使用&#34;&gt;一步一步学role角色4-include的使用
+        <guid>https://hellogitlab.com/devops/ansible/role_4_include/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 一步一步学role角色4-include的使用" /&gt;&lt;h2 id=&#34;一步一步学role角色4-include的使用&#34;&gt;一步一步学role角色4-include的使用
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -16000,7 +16000,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-14_20-45-19.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-14_20-45-19.png&#34;
 	
 	
 	
@@ -16699,7 +16699,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-14_22-20-47.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-14_22-20-47.png&#34;
 	
 	
 	
@@ -16709,7 +16709,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-14_22-21-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-14_22-21-17.png&#34;
 	
 	
 	
@@ -17286,11 +17286,11 @@
         </item>
         <item>
         <title>ansible-vault数据加密</title>
-        <link>https://meizhaohui.github.io/devops/ansible/ansible-vault/</link>
+        <link>https://hellogitlab.com/devops/ansible/ansible-vault/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/ansible-vault/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ansible-vault数据加密" /&gt;&lt;h2 id=&#34;ansible-vault数据加密&#34;&gt;ansible-vault数据加密
+        <guid>https://hellogitlab.com/devops/ansible/ansible-vault/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ansible-vault数据加密" /&gt;&lt;h2 id=&#34;ansible-vault数据加密&#34;&gt;ansible-vault数据加密
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Ansible Vault对变量和文件进行加密，这样您就可以保护密码或密钥等敏感内容，而不是将其作为明文显示在剧本或角色中。然后你可以将加密后的内容上传到版本管理仓库中，而不用担心密码泄露。&lt;/li&gt;
@@ -17470,7 +17470,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，会打开一个临时文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-10_21-46-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-10_21-46-45.png&#34;
 	
 	
 	
@@ -17576,7 +17576,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，会自动打开vim，只用在vim中对原文进行正常编辑，然后保存即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-10_22-08-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-10_22-08-44.png&#34;
 	
 	
 	
@@ -17888,7 +17888,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-10_23-08-27.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-10_23-08-27.png&#34;
 	
 	
 	
@@ -18051,7 +18051,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-10_23-29-34.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-10_23-29-34.png&#34;
 	
 	
 	
@@ -18335,7 +18335,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-11_22-59-59.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-11_22-59-59.png&#34;
 	
 	
 	
@@ -18408,11 +18408,11 @@
         </item>
         <item>
         <title>ansibleloop循环</title>
-        <link>https://meizhaohui.github.io/devops/ansible/loop/</link>
+        <link>https://hellogitlab.com/devops/ansible/loop/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/loop/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ansibleloop循环" /&gt;&lt;h2 id=&#34;ansible-loop循环&#34;&gt;ansible loop循环
+        <guid>https://hellogitlab.com/devops/ansible/loop/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ansibleloop循环" /&gt;&lt;h2 id=&#34;ansible-loop循环&#34;&gt;ansible loop循环
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ansible循环官方文档 &lt;a class=&#34;link&#34; href=&#34;https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -18623,7 +18623,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-30_20-34-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-30_20-34-02.png&#34;
 	
 	
 	
@@ -19540,7 +19540,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-05_21-34-22.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-05_21-34-22.png&#34;
 	
 	
 	
@@ -19655,7 +19655,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-05_21-49-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-05_21-49-37.png&#34;
 	
 	
 	
@@ -19757,7 +19757,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-05_22-21-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-05_22-21-59.png&#34;
 	
 	
 	
@@ -19767,7 +19767,7 @@
 &gt;
 可以看到，循环第一个item时，中间明显有等待效果，第二个item并没有马上显示出来。&lt;/p&gt;
 &lt;p&gt;过了段时间后，第二个item也显示出来了：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-05_22-23-02.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-05_22-23-02.png&#34;
 	
 	
 	
@@ -20085,7 +20085,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-08_22-30-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-08_22-30-59.png&#34;
 	
 	
 	
@@ -20169,11 +20169,11 @@
         </item>
         <item>
         <title>Ansible初体验</title>
-        <link>https://meizhaohui.github.io/devops/ansible/base/</link>
+        <link>https://hellogitlab.com/devops/ansible/base/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/base/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ansible初体验" /&gt;&lt;h2 id=&#34;ansible初体验&#34;&gt;Ansible初体验
+        <guid>https://hellogitlab.com/devops/ansible/base/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ansible初体验" /&gt;&lt;h2 id=&#34;ansible初体验&#34;&gt;Ansible初体验
 &lt;/h2&gt;&lt;h3 id=&#34;1-实验环境&#34;&gt;1. 实验环境
 &lt;/h3&gt;&lt;p&gt;准备四台CentOS7虚拟机，一台做为Ansible的主机(master),也叫&lt;code&gt;管理节点&lt;/code&gt;，三台做为Ansible的受控节点(node1, node2, node3)，也叫&lt;code&gt;受控节点&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;IP信息如下：&lt;/p&gt;
@@ -21919,7 +21919,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible all -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://meizhaohui.github.io/etc/hosts dest=/tmp/hosts&amp;#34;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible all -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://hellogitlab.com/etc/hosts dest=/tmp/hosts&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;node2 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;CHANGED&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;ansible_facts&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s2&#34;&gt;&amp;#34;discovered_interpreter_python&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/bin/python&amp;#34;&lt;/span&gt;
@@ -22016,7 +22016,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible all --become -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://meizhaohui.github.io/etc/hosts dest=/tmp/hosts&amp;#34;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible all --become -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://hellogitlab.com/etc/hosts dest=/tmp/hosts&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;node1 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;SUCCESS&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;ansible_facts&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s2&#34;&gt;&amp;#34;discovered_interpreter_python&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/bin/python&amp;#34;&lt;/span&gt;
@@ -22102,7 +22102,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible all --become -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://meizhaohui.github.io/etc/hosts dest=/tmp/hosts1&amp;#34;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible all --become -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://hellogitlab.com/etc/hosts dest=/tmp/hosts1&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;node2 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;CHANGED&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;ansible_facts&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s2&#34;&gt;&amp;#34;discovered_interpreter_python&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/bin/python&amp;#34;&lt;/span&gt;
@@ -24594,7 +24594,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ansible atlanta -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://meizhaohui.github.io/etc/hosts dest=/tmp/hosts&amp;#34;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ansible atlanta -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://hellogitlab.com/etc/hosts dest=/tmp/hosts&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果你要重复使用这样的任务，可以在Ansible剧本中使用&lt;code&gt;template&lt;/code&gt;模板。&lt;/p&gt;
@@ -26057,11 +26057,11 @@
         </item>
         <item>
         <title>Ansible学习笔记</title>
-        <link>https://meizhaohui.github.io/devops/ansible/ansible_docs/</link>
+        <link>https://hellogitlab.com/devops/ansible/ansible_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/ansible_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/ansible_logo_icon_169596.png" alt="Featured image of post Ansible学习笔记" /&gt;&lt;h2 id=&#34;ansible学习笔记&#34;&gt;Ansible学习笔记
+        <guid>https://hellogitlab.com/devops/ansible/ansible_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/ansible_logo_icon_169596.png" alt="Featured image of post Ansible学习笔记" /&gt;&lt;h2 id=&#34;ansible学习笔记&#34;&gt;Ansible学习笔记
 &lt;/h2&gt;&lt;p&gt;在官方文档中，你可以看到内置插件列表，传送门 &lt;a class=&#34;link&#34; href=&#34;https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html#plugin-index&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html#plugin-index&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -26352,11 +26352,11 @@
         </item>
         <item>
         <title>blockinfile文件块模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/blockinfile/</link>
+        <link>https://hellogitlab.com/devops/ansible/blockinfile/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/blockinfile/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post blockinfile文件块模块" /&gt;&lt;h2 id=&#34;blockinfile文件块模块&#34;&gt;blockinfile文件块模块
+        <guid>https://hellogitlab.com/devops/ansible/blockinfile/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post blockinfile文件块模块" /&gt;&lt;h2 id=&#34;blockinfile文件块模块&#34;&gt;blockinfile文件块模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;blockinfile模块可以在指定的文件中插入一段文本(即可以是多行)，这段文本是被标记过的，以便在以后的操作中可以通过标记找到这段文本，然后修改或者删除这段文本。&lt;/li&gt;
@@ -27046,11 +27046,11 @@
         </item>
         <item>
         <title>CentOS7用git-daemon搭建Git服务器</title>
-        <link>https://meizhaohui.github.io/devops/git/create_git_server/</link>
+        <link>https://hellogitlab.com/devops/git/create_git_server/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/create_git_server/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS7用git-daemon搭建Git服务器" /&gt;&lt;h2 id=&#34;centos7用git-daemon搭建git服务器&#34;&gt;CentOS7用git-daemon搭建Git服务器
+        <guid>https://hellogitlab.com/devops/git/create_git_server/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS7用git-daemon搭建Git服务器" /&gt;&lt;h2 id=&#34;centos7用git-daemon搭建git服务器&#34;&gt;CentOS7用git-daemon搭建Git服务器
 &lt;/h2&gt;&lt;p&gt;::: danger 危险&lt;/p&gt;
 &lt;p&gt;特别说明：使用git daemon开启&lt;code&gt;receive-pack&lt;/code&gt;服务后，任何人可以匿名访问git存储库，非常不安全，建议考虑使用gitolite项目来进行权限控制。&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
@@ -28138,7 +28138,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313170439.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313170439.png&#34;
 	
 	
 	
@@ -28159,7 +28159,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;warning: You appear to have cloned an empty repository.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313170701.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313170701.png&#34;
 	
 	
 	
@@ -28202,7 +28202,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，可以看到，提交失败，看看服务器端日志，发现有更新日志。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313175350.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313175350.png&#34;
 	
 	
 	
@@ -28690,7 +28690,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;102&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Ready to rumble
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313223752.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313223752.png&#34;
 	
 	
 	
@@ -28888,11 +28888,11 @@
         </item>
         <item>
         <title>changed_when与failed_when条件判断</title>
-        <link>https://meizhaohui.github.io/devops/ansible/changed_when/</link>
+        <link>https://hellogitlab.com/devops/ansible/changed_when/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/changed_when/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post changed_when与failed_when条件判断" /&gt;&lt;h2 id=&#34;changed_when与failed_when条件判断&#34;&gt;changed_when与failed_when条件判断
+        <guid>https://hellogitlab.com/devops/ansible/changed_when/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post changed_when与failed_when条件判断" /&gt;&lt;h2 id=&#34;changed_when与failed_when条件判断&#34;&gt;changed_when与failed_when条件判断
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;与&lt;code&gt;when&lt;/code&gt;条件语句类似，我们可以使用&lt;code&gt;changed_when&lt;/code&gt;语句和&lt;code&gt;failed_when&lt;/code&gt;语句来对命令运行的结果进行判断。对于Ansible来说，其很难判断一个命令的运行是否符合我们的实际预期，尤其是当我们使用&lt;code&gt;command&lt;/code&gt;模块和&lt;code&gt;shell&lt;/code&gt;模块时，如果不使用&lt;code&gt;changed_when&lt;/code&gt;语句，Ansible将永远返回&lt;code&gt;changed&lt;/code&gt;。大部分模块都能正确返回运行结果是否对目标主机产生影响，我们依然可以使用&lt;code&gt;changed_when&lt;/code&gt;语句来对返回信息进行重写，根据任务返回结果来判定任务的运行结果是否真正符合我们预期。&lt;/li&gt;
@@ -29140,7 +29140,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-10_21-35-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-10_21-35-32.png&#34;
 	
 	
 	
@@ -29275,7 +29275,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-10_23-06-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-10_23-06-16.png&#34;
 	
 	
 	
@@ -29295,11 +29295,11 @@
         </item>
         <item>
         <title>Command命令模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/command/</link>
+        <link>https://hellogitlab.com/devops/ansible/command/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/command/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Command命令模块" /&gt;&lt;h2 id=&#34;command命令模块&#34;&gt;Command命令模块
+        <guid>https://hellogitlab.com/devops/ansible/command/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Command命令模块" /&gt;&lt;h2 id=&#34;command命令模块&#34;&gt;Command命令模块
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;command&lt;/code&gt;模块在主机上面执行命令。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;command&lt;/code&gt;模块获取以空格分隔的列表组成的命令。&lt;/li&gt;
@@ -31417,11 +31417,11 @@
         </item>
         <item>
         <title>copy复制模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/copy/</link>
+        <link>https://hellogitlab.com/devops/ansible/copy/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/copy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post copy复制模块" /&gt;&lt;h2 id=&#34;copy复制模块&#34;&gt;copy复制模块
+        <guid>https://hellogitlab.com/devops/ansible/copy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post copy复制模块" /&gt;&lt;h2 id=&#34;copy复制模块&#34;&gt;copy复制模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;copy&lt;/code&gt;复制模块将文件从本地或远程计算机复制到远程计算机上的某个位置。&lt;/li&gt;
@@ -34967,7 +34967,7 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible node1 -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://meizhaohui.github.io/home/ansible/data dest=/home/ansible local_follow=no&amp;#34;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$ ansible node1 -m copy -a &lt;span class=&#34;s2&#34;&gt;&amp;#34;src=https://hellogitlab.com/home/ansible/data dest=/home/ansible local_follow=no&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;node1 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;CHANGED&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;changed&amp;#34;&lt;/span&gt;: true, 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;dest&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/home/ansible/&amp;#34;&lt;/span&gt;, 
@@ -36234,11 +36234,11 @@
         </item>
         <item>
         <title>cron定时任务模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/cron/</link>
+        <link>https://hellogitlab.com/devops/ansible/cron/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/cron/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post cron定时任务模块" /&gt;&lt;h2 id=&#34;cron定时任务模块&#34;&gt;cron定时任务模块
+        <guid>https://hellogitlab.com/devops/ansible/cron/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post cron定时任务模块" /&gt;&lt;h2 id=&#34;cron定时任务模块&#34;&gt;cron定时任务模块
 &lt;/h2&gt;&lt;p&gt;cron模块可以在远程主机上面创建定时任务，有点类似于&lt;code&gt;crontab&lt;/code&gt;命令。&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
@@ -38434,11 +38434,11 @@
         </item>
         <item>
         <title>debug调试模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/debug/</link>
+        <link>https://hellogitlab.com/devops/ansible/debug/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/debug/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post debug调试模块" /&gt;&lt;h2 id=&#34;debug调试模块&#34;&gt;debug调试模块
+        <guid>https://hellogitlab.com/devops/ansible/debug/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post debug调试模块" /&gt;&lt;h2 id=&#34;debug调试模块&#34;&gt;debug调试模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;该模块在执行期间打印语句，可用于调试变量或表达式，而不必暂停剧本。&lt;/li&gt;
@@ -42480,7 +42480,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-07-22_19-38-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-07-22_19-38-04.png&#34;
 	
 	
 	
@@ -42563,7 +42563,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-07-22_22-24-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-07-22_22-24-18.png&#34;
 	
 	
 	
@@ -42688,7 +42688,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-07-23_22-41-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-07-23_22-41-57.png&#34;
 	
 	
 	
@@ -42833,7 +42833,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-07-23_23-13-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-07-23_23-13-49.png&#34;
 	
 	
 	
@@ -43096,7 +43096,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，剧本执行成功，效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-07-25_00-19-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-07-25_00-19-19.png&#34;
 	
 	
 	
@@ -43188,11 +43188,11 @@
         </item>
         <item>
         <title>fetch从远程主机复制文件模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/fetch/</link>
+        <link>https://hellogitlab.com/devops/ansible/fetch/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/fetch/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post fetch从远程主机复制文件模块" /&gt;&lt;h2 id=&#34;fetch从远程主机复制文件模块&#34;&gt;fetch从远程主机复制文件模块
+        <guid>https://hellogitlab.com/devops/ansible/fetch/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post fetch从远程主机复制文件模块" /&gt;&lt;h2 id=&#34;fetch从远程主机复制文件模块&#34;&gt;fetch从远程主机复制文件模块
 &lt;/h2&gt;&lt;h3 id=&#34;概要&#34;&gt;概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;copy&lt;/code&gt;复制模块将文件从本地或远程计算机复制到远程计算机上的某个位置。但&lt;code&gt;fetch&lt;/code&gt;模块刚好相反，是从远程复制文件到ansible主机。&lt;/li&gt;
@@ -43552,11 +43552,11 @@
         </item>
         <item>
         <title>file文件模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/file/</link>
+        <link>https://hellogitlab.com/devops/ansible/file/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/file/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post file文件模块" /&gt;&lt;h2 id=&#34;file文件模块&#34;&gt;file文件模块
+        <guid>https://hellogitlab.com/devops/ansible/file/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post file文件模块" /&gt;&lt;h2 id=&#34;file文件模块&#34;&gt;file文件模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-基础知识储备&#34;&gt;1. 基础知识储备
 &lt;/h3&gt;&lt;p&gt;我们先来学习一下一些基础知识。主要涉及&lt;code&gt;stat&lt;/code&gt;、&lt;code&gt;chattr&lt;/code&gt;、&lt;code&gt;lsattr&lt;/code&gt;命令。&lt;/p&gt;
 &lt;ul&gt;
@@ -47491,11 +47491,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>filter过滤器</title>
-        <link>https://meizhaohui.github.io/devops/ansible/filter/</link>
+        <link>https://hellogitlab.com/devops/ansible/filter/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/filter/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post filter过滤器" /&gt;&lt;h2 id=&#34;filter过滤器&#34;&gt;filter过滤器
+        <guid>https://hellogitlab.com/devops/ansible/filter/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post filter过滤器" /&gt;&lt;h2 id=&#34;filter过滤器&#34;&gt;filter过滤器
 &lt;/h2&gt;&lt;h3 id=&#34;1-过滤器概述&#34;&gt;1. 过滤器概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Ansible有非常多的过滤器，详细可参考：&lt;a class=&#34;link&#34; href=&#34;https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html#filter-plugins&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -47506,7 +47506,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;li&gt;Jinja2内置过滤器也有很多，详细可参考&lt;a class=&#34;link&#34; href=&#34;https://jinja.palletsprojects.com/en/3.0.x/templates/#builtin-filters&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;List of Builtin Filters&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-10-01_23-03-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-10-01_23-03-22.png&#34;
 	
 	
 	
@@ -48686,7 +48686,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，自定义过滤器能够正常运行，最终生成的列表是&lt;code&gt;[u&#39;a&#39;, u&#39;b&#39;, u&#39;c&#39;, u&#39;d&#39;, u&#39;e&#39;, u&#39;f&#39;]&lt;/code&gt;，与我们测试得到的结果是一样的。&lt;/p&gt;
 &lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-10-16_23-02-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-10-16_23-02-50.png&#34;
 	
 	
 	
@@ -48698,11 +48698,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>find查找模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/find/</link>
+        <link>https://hellogitlab.com/devops/ansible/find/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/find/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post find查找模块" /&gt;&lt;h2 id=&#34;find查找模块&#34;&gt;find查找模块
+        <guid>https://hellogitlab.com/devops/ansible/find/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post find查找模块" /&gt;&lt;h2 id=&#34;find查找模块&#34;&gt;find查找模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;find&lt;/code&gt;查找模块会根据特定条件返回文件列表。&lt;/li&gt;
@@ -49058,11 +49058,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>firewalld模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/firewalld/</link>
+        <link>https://hellogitlab.com/devops/ansible/firewalld/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/firewalld/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post firewalld模块" /&gt;&lt;h2 id=&#34;firewalld模块&#34;&gt;firewalld模块
+        <guid>https://hellogitlab.com/devops/ansible/firewalld/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post firewalld模块" /&gt;&lt;h2 id=&#34;firewalld模块&#34;&gt;firewalld模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本模块可以用于添加或删除服务或端口的防火墙规则。&lt;/li&gt;
@@ -49327,11 +49327,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>get_url下载文件到远程节点模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/get_url/</link>
+        <link>https://hellogitlab.com/devops/ansible/get_url/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/get_url/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post get_url下载文件到远程节点模块" /&gt;&lt;h2 id=&#34;get_url下载文件到远程节点模块&#34;&gt;get_url下载文件到远程节点模块
+        <guid>https://hellogitlab.com/devops/ansible/get_url/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post get_url下载文件到远程节点模块" /&gt;&lt;h2 id=&#34;get_url下载文件到远程节点模块&#34;&gt;get_url下载文件到远程节点模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本模块是内置模块。&lt;/li&gt;
@@ -49724,11 +49724,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Git Docs</title>
-        <link>https://meizhaohui.github.io/devops/git/git_docs/</link>
+        <link>https://hellogitlab.com/devops/git/git_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/file_type_git_icon_130581.png" alt="Featured image of post Git Docs" /&gt;&lt;h2 id=&#34;git-docs&#34;&gt;Git Docs
+        <guid>https://hellogitlab.com/devops/git/git_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/file_type_git_icon_130581.png" alt="Featured image of post Git Docs" /&gt;&lt;h2 id=&#34;git-docs&#34;&gt;Git Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../install_git&#34; &gt;git的安装&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../basic_use&#34; &gt;git的基本使用&lt;/a&gt;&lt;/li&gt;
@@ -49748,11 +49748,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>git_config模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/git_config/</link>
+        <link>https://hellogitlab.com/devops/ansible/git_config/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/git_config/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post git_config模块" /&gt;&lt;h2 id=&#34;git_config模块&#34;&gt;git_config模块
+        <guid>https://hellogitlab.com/devops/ansible/git_config/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post git_config模块" /&gt;&lt;h2 id=&#34;git_config模块&#34;&gt;git_config模块
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;本模块用于设置&lt;code&gt;git&lt;/code&gt;的配置，用的较少，不展开。&lt;/li&gt;
 &lt;li&gt;官方文档：&lt;a class=&#34;link&#34; href=&#34;https://docs.ansible.com/ansible/latest/collections/community/general/git_config_module.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -49762,11 +49762,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Gitcommit提交模板</title>
-        <link>https://meizhaohui.github.io/devops/git/git_commit_template/</link>
+        <link>https://hellogitlab.com/devops/git/git_commit_template/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_commit_template/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Gitcommit提交模板" /&gt;&lt;h2 id=&#34;git-commit提交模板&#34;&gt;Git commit提交模板
+        <guid>https://hellogitlab.com/devops/git/git_commit_template/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Gitcommit提交模板" /&gt;&lt;h2 id=&#34;git-commit提交模板&#34;&gt;Git commit提交模板
 &lt;/h2&gt;&lt;p&gt;可以通过设置提交模板来规则自己的日志信息。&lt;/p&gt;
 &lt;p&gt;此处直接给出模板文件内容：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -49901,7 +49901,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，Git会自动加载模板文件的内容到临时的编辑器文件中，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320142253.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320142253.png&#34;
 	
 	
 	
@@ -49910,7 +49910,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，我们就可以参考模板说明修改我们的提交日志了，如我修改完成后，日志信息如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320142751.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320142751.png&#34;
 	
 	
 	
@@ -49955,11 +49955,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Githooks钩子脚本的使用</title>
-        <link>https://meizhaohui.github.io/devops/git/git_hooks/</link>
+        <link>https://hellogitlab.com/devops/git/git_hooks/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_hooks/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Githooks钩子脚本的使用" /&gt;&lt;h2 id=&#34;git-hooks钩子脚本的使用&#34;&gt;Git hooks钩子脚本的使用
+        <guid>https://hellogitlab.com/devops/git/git_hooks/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Githooks钩子脚本的使用" /&gt;&lt;h2 id=&#34;git-hooks钩子脚本的使用&#34;&gt;Git hooks钩子脚本的使用
 &lt;/h2&gt;&lt;h3 id=&#34;1-简介&#34;&gt;1. 简介
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;你可以使用Git钩子(hook)，任何时候当版本库中出现如提交或补丁这样的特殊事件时，都会触发执行一个或多个任意的脚本。&lt;/li&gt;
@@ -50093,7 +50093,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/ul&gt;
 &lt;h4 id=&#34;22-创建第一个钩子&#34;&gt;2.2 创建第一个钩子
 &lt;/h4&gt;&lt;p&gt;如我们在提交本文档时，gitee会返回一个带彩色输出的文本&amp;quot;remote: Powered by GITEE.COM [GNK-6.3]&amp;quot;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220318234705.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220318234705.png&#34;
 	
 	
 	
@@ -50126,7 +50126,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后，在本地客户端进行检出，并尝试提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220319001017.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220319001017.png&#34;
 	
 	
 	
@@ -50157,7 +50157,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后再尝试提交，可以看到已经变成我们自己设计的返回语句了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220319001909.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220319001909.png&#34;
 	
 	
 	
@@ -50893,7 +50893,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/h4&gt;&lt;p&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://www.git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;自定义 Git - Git 钩子&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;提交钩子的处理过程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320130150.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320130150.png&#34;
 	
 	
 	
@@ -50911,7 +50911,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/h4&gt;&lt;p&gt;当执行&lt;code&gt;git am&lt;/code&gt;时应用补丁时相关的钩子：&lt;code&gt;applypatch-msg&lt;/code&gt;、&lt;code&gt;pre-applypatch&lt;/code&gt;、&lt;code&gt;post-applypatch&lt;/code&gt;。&lt;/p&gt;
 &lt;h4 id=&#34;33-与推送相关的钩子&#34;&gt;3.3 与推送相关的钩子
 &lt;/h4&gt;&lt;p&gt;提交钩子的处理过程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320130302.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320130302.png&#34;
 	
 	
 	
@@ -51519,7 +51519,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;mzh@MacBookPro &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;master ✗&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;$ git commit
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320144930.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320144930.png&#34;
 	
 	
 	
@@ -51647,7 +51647,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，打开了提交信息编辑器，可以看到已经有了一个签名行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320155922.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320155922.png&#34;
 	
 	
 	
@@ -51733,7 +51733,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-off-by: Zhaohui Mei &amp;lt;mzh.whut@gmail.com&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320170824.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320170824.png&#34;
 	
 	
 	
@@ -52197,7 +52197,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;mzh@MacBookPro &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;master&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220322225235.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220322225235.png&#34;
 	
 	
 	
@@ -52213,11 +52213,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Gitstatus时中文文件名乱码</title>
-        <link>https://meizhaohui.github.io/devops/git/git_chinese_filename/</link>
+        <link>https://hellogitlab.com/devops/git/git_chinese_filename/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_chinese_filename/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Gitstatus时中文文件名乱码" /&gt;&lt;h2 id=&#34;git-status时中文文件名乱码&#34;&gt;Git status时中文文件名乱码
+        <guid>https://hellogitlab.com/devops/git/git_chinese_filename/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Gitstatus时中文文件名乱码" /&gt;&lt;h2 id=&#34;git-status时中文文件名乱码&#34;&gt;Git status时中文文件名乱码
 &lt;/h2&gt;&lt;p&gt;在创建中文文件名的文件时，使用&lt;code&gt;git status&lt;/code&gt;查看状态时，可以看到文件名乱码，不知道对应的文件到底是哪一个，如下所示：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -52329,11 +52329,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Git版本控制管理</title>
-        <link>https://meizhaohui.github.io/devops/git/version_control_with_git/</link>
+        <link>https://hellogitlab.com/devops/git/version_control_with_git/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/version_control_with_git/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Git版本控制管理" /&gt;&lt;h2 id=&#34;git版本控制管理&#34;&gt;Git版本控制管理
+        <guid>https://hellogitlab.com/devops/git/version_control_with_git/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Git版本控制管理" /&gt;&lt;h2 id=&#34;git版本控制管理&#34;&gt;Git版本控制管理
 &lt;/h2&gt;&lt;p&gt;本文是对Jon Loeliger等著的第二版《Git版本控制管理》一书的总结。&lt;/p&gt;
 &lt;h3 id=&#34;第1章-介绍&#34;&gt;第1章 介绍
 &lt;/h3&gt;&lt;h4 id=&#34;11-背景&#34;&gt;1.1 背景
@@ -61048,7 +61048,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;对比rebase前后的日志显示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220110213338.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220110213338.png&#34;
 	
 	
 	
@@ -62182,7 +62182,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mei@4144e8c22fff:~$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220113163404.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220113163404.png&#34;
 	
 	
 	
@@ -62761,7 +62761,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mei@4144e8c22fff:~/locals/nonbare$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220113230059.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220113230059.png&#34;
 	
 	
 	
@@ -63337,7 +63337,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;p&gt;我们按书的的示例改造测试一下，如编写本博客系统，在&lt;code&gt;docs&lt;/code&gt;目录下存在多个不同的子模块，如在&lt;code&gt;CM&lt;/code&gt;文件来下还有&lt;code&gt;git&lt;/code&gt;模块。&lt;/p&gt;
 &lt;p&gt;我们来模块在&lt;code&gt;myapp&lt;/code&gt;中增加一个&lt;code&gt;git&lt;/code&gt;模块的gitlink。&lt;/p&gt;
 &lt;p&gt;步骤1：在github上面创建测试仓库&lt;code&gt;myapp&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326204552.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326204552.png&#34;
 	
 	
 	
@@ -63346,7 +63346,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;步骤2：在github上面创建子模块仓库&lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326204857.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326204857.png&#34;
 	
 	
 	
@@ -63575,7 +63575,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;提交成功后，可以在github上面看到刚才提交的记录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326214007.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326214007.png&#34;
 	
 	
 	
@@ -64020,7 +64020,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，在github上面查看&lt;code&gt;git-docs&lt;/code&gt;目录，可以发现其不一样了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326230620.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326230620.png&#34;
 	
 	
 	
@@ -64546,7 +64546,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在github上面查看刚才提交的信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/image-20220328233954780.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/image-20220328233954780.png&#34;
 	
 	
 	
@@ -65632,7 +65632,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/git-top-check&#34; &gt;download git-top-check&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/git-top-check&#34; &gt;download git-top-check&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;将其存放在&lt;code&gt;/usr/bin&lt;/code&gt;目录下，并增加可执行权限：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -65996,11 +65996,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Git的安装</title>
-        <link>https://meizhaohui.github.io/devops/git/install_git/</link>
+        <link>https://hellogitlab.com/devops/git/install_git/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/install_git/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Git的安装" /&gt;&lt;h2 id=&#34;git的安装&#34;&gt;Git的安装
+        <guid>https://hellogitlab.com/devops/git/install_git/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Git的安装" /&gt;&lt;h2 id=&#34;git的安装&#34;&gt;Git的安装
 &lt;/h2&gt;&lt;p&gt;本文讲解在CentOS7中安装较高版本的git分布式版本控制系统。&lt;/p&gt;
 &lt;h3 id=&#34;实验环境&#34;&gt;实验环境
 &lt;/h3&gt;&lt;ul&gt;
@@ -66936,11 +66936,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>git的基本使用</title>
-        <link>https://meizhaohui.github.io/devops/git/basic_use/</link>
+        <link>https://hellogitlab.com/devops/git/basic_use/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/basic_use/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post git的基本使用" /&gt;&lt;h2 id=&#34;git的基本使用&#34;&gt;git的基本使用
+        <guid>https://hellogitlab.com/devops/git/basic_use/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post git的基本使用" /&gt;&lt;h2 id=&#34;git的基本使用&#34;&gt;git的基本使用
 &lt;/h2&gt;&lt;h3 id=&#34;修改github历史提交记录中的username和email信息&#34;&gt;修改Github历史提交记录中的username和email信息
 &lt;/h3&gt;&lt;p&gt;GitHub提交时，发现github没有统计贡献值，多半是由于邮箱没有关联。&lt;/p&gt;
 &lt;p&gt;下面是解决方法的具体步骤。&lt;/p&gt;
@@ -67050,7 +67050,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt; --tag-name-filter cat -- --branches --tags
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;下载脚本 &lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/change_history_commit_username_email.sh&#34; &gt;change_history_commit_username_email.sh&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;下载脚本 &lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/change_history_commit_username_email.sh&#34; &gt;change_history_commit_username_email.sh&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;修改脚本中的OLD_EMAIL、CORRECT_NAME、CORRECT_EMAIL等参数&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;执行shell脚本&lt;/li&gt;
@@ -67376,11 +67376,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Git多个远程仓库不同步时的补救办法</title>
-        <link>https://meizhaohui.github.io/devops/git/reset_diff_repos/</link>
+        <link>https://hellogitlab.com/devops/git/reset_diff_repos/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/reset_diff_repos/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Git多个远程仓库不同步时的补救办法" /&gt;&lt;h2 id=&#34;git多个远程仓库不同步时的补救办法&#34;&gt;Git多个远程仓库不同步时的补救办法
+        <guid>https://hellogitlab.com/devops/git/reset_diff_repos/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Git多个远程仓库不同步时的补救办法" /&gt;&lt;h2 id=&#34;git多个远程仓库不同步时的补救办法&#34;&gt;Git多个远程仓库不同步时的补救办法
 &lt;/h2&gt;&lt;p&gt;git本地仓库是可以与多个远程仓库关联的。我是一个本地仓库关联了github和gitee两个远程仓库：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -67409,7 +67409,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;li&gt;将备份的修改文件复制到仓库中，再进行正常推送到两个仓库。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;gitee上面多出的一条记录，未检出到本地：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-02-12_18-54-28.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-02-12_18-54-28.png&#34;
 	
 	
 	
@@ -67780,11 +67780,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>git异常处理</title>
-        <link>https://meizhaohui.github.io/devops/git/git_exceptions/</link>
+        <link>https://hellogitlab.com/devops/git/git_exceptions/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_exceptions/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post git异常处理" /&gt;&lt;h2 id=&#34;git异常处理&#34;&gt;git异常处理
+        <guid>https://hellogitlab.com/devops/git/git_exceptions/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post git异常处理" /&gt;&lt;h2 id=&#34;git异常处理&#34;&gt;git异常处理
 &lt;/h2&gt;&lt;h3 id=&#34;peers-certificate-issuer-is-not-recognized异常&#34;&gt;&lt;code&gt;Peer&#39;s Certificate issuer is not recognized&lt;/code&gt;异常
 &lt;/h3&gt;&lt;p&gt;在CentOS7操作系统中搭建了内部使用的gitlab平台，当使用&lt;code&gt;git clone&lt;/code&gt;下载代码时会提示以下异常：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -67873,7 +67873,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们先在Web界面上进行修改，然后提交。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-06_16-03-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-06_16-03-48.png&#34;
 	
 	
 	
@@ -68104,7 +68104,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，提交成功了！&lt;/p&gt;
 &lt;p&gt;此时，可以在浏览器中看到刚才的提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-06_16-26-05.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-06_16-26-05.png&#34;
 	
 	
 	
@@ -68122,11 +68122,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>git远程仓库检出模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/git/</link>
+        <link>https://hellogitlab.com/devops/ansible/git/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/git/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post git远程仓库检出模块" /&gt;&lt;h2 id=&#34;git远程仓库检出模块&#34;&gt;git远程仓库检出模块
+        <guid>https://hellogitlab.com/devops/ansible/git/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post git远程仓库检出模块" /&gt;&lt;h2 id=&#34;git远程仓库检出模块&#34;&gt;git远程仓库检出模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本模块用于管理Git仓库检出，用于发布文件或者软件。&lt;/li&gt;
@@ -68447,11 +68447,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>group用户组模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/group/</link>
+        <link>https://hellogitlab.com/devops/ansible/group/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/group/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post group用户组模块" /&gt;&lt;h2 id=&#34;group用户组模块&#34;&gt;group用户组模块
+        <guid>https://hellogitlab.com/devops/ansible/group/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post group用户组模块" /&gt;&lt;h2 id=&#34;group用户组模块&#34;&gt;group用户组模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;group&lt;/code&gt;模块，用于管理用户组。&lt;/li&gt;
@@ -68782,11 +68782,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>handlers触发器</title>
-        <link>https://meizhaohui.github.io/devops/ansible/handlers/</link>
+        <link>https://hellogitlab.com/devops/ansible/handlers/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/handlers/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post handlers触发器" /&gt;&lt;h2 id=&#34;handlers触发器&#34;&gt;handlers触发器
+        <guid>https://hellogitlab.com/devops/ansible/handlers/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post handlers触发器" /&gt;&lt;h2 id=&#34;handlers触发器&#34;&gt;handlers触发器
 &lt;/h2&gt;&lt;h3 id=&#34;0-场景引入&#34;&gt;0. 场景引入
 &lt;/h3&gt;&lt;p&gt;我们在 &lt;a class=&#34;link&#34; href=&#34;./lineinfile.md&#34; &gt;lineinfile文件内容修改模块&lt;/a&gt; 模块中曾经向nginx配置文件最后写入了三行无意义的备注信息：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -70025,11 +70025,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>hostname主机名模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/hostname/</link>
+        <link>https://hellogitlab.com/devops/ansible/hostname/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/hostname/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post hostname主机名模块" /&gt;&lt;h2 id=&#34;hostname主机名模块&#34;&gt;hostname主机名模块
+        <guid>https://hellogitlab.com/devops/ansible/hostname/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post hostname主机名模块" /&gt;&lt;h2 id=&#34;hostname主机名模块&#34;&gt;hostname主机名模块
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;本模块用于设置远程主机的主机名。&lt;/li&gt;
 &lt;li&gt;本模块不会修改&lt;code&gt;/etc/hosts&lt;/code&gt;,如果你要修改该文件，可以使用&lt;code&gt;template&lt;/code&gt;或&lt;code&gt;replace&lt;/code&gt;模块。&lt;/li&gt;
@@ -70239,11 +70239,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>htpasswd用户认证模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/htpasswd/</link>
+        <link>https://hellogitlab.com/devops/ansible/htpasswd/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/htpasswd/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post htpasswd用户认证模块" /&gt;&lt;h2 id=&#34;htpasswd用户认证模块&#34;&gt;htpasswd用户认证模块
+        <guid>https://hellogitlab.com/devops/ansible/htpasswd/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post htpasswd用户认证模块" /&gt;&lt;h2 id=&#34;htpasswd用户认证模块&#34;&gt;htpasswd用户认证模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;htpasswd&lt;/code&gt;模块用于管理使用&lt;code&gt;htpasswd&lt;/code&gt;进行用户认证的用户文件。&lt;/li&gt;
@@ -70304,11 +70304,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>jenkins_job_infoJenkins任务信息模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/jenkins_job_info/</link>
+        <link>https://hellogitlab.com/devops/ansible/jenkins_job_info/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/jenkins_job_info/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post jenkins_job_infoJenkins任务信息模块" /&gt;&lt;h2 id=&#34;jenkins_job_info-jenkins任务信息模块&#34;&gt;jenkins_job_info Jenkins任务信息模块
+        <guid>https://hellogitlab.com/devops/ansible/jenkins_job_info/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post jenkins_job_infoJenkins任务信息模块" /&gt;&lt;h2 id=&#34;jenkins_job_info-jenkins任务信息模块&#34;&gt;jenkins_job_info Jenkins任务信息模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本模块可以用于查询已经存在的Jenkins任务的信息。&lt;/li&gt;
@@ -70492,11 +70492,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>jenkins_jobJenkins任务管理模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/jenkins_job/</link>
+        <link>https://hellogitlab.com/devops/ansible/jenkins_job/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/jenkins_job/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post jenkins_jobJenkins任务管理模块" /&gt;&lt;h2 id=&#34;jenkins_job-jenkins任务管理模块&#34;&gt;jenkins_job Jenkins任务管理模块
+        <guid>https://hellogitlab.com/devops/ansible/jenkins_job/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post jenkins_jobJenkins任务管理模块" /&gt;&lt;h2 id=&#34;jenkins_job-jenkins任务管理模块&#34;&gt;jenkins_job Jenkins任务管理模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本模块是通过使用Jenkins的REST API来管理jenkins任务作业的。&lt;/li&gt;
@@ -70656,11 +70656,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>ldap_attrs模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/ldap_attr/</link>
+        <link>https://hellogitlab.com/devops/ansible/ldap_attr/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/ldap_attr/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ldap_attrs模块" /&gt;&lt;h2 id=&#34;ldap_attrs模块&#34;&gt;ldap_attrs模块
+        <guid>https://hellogitlab.com/devops/ansible/ldap_attr/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ldap_attrs模块" /&gt;&lt;h2 id=&#34;ldap_attrs模块&#34;&gt;ldap_attrs模块
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;本模块用于添加或删除LDAP属性值。&lt;/li&gt;
 &lt;li&gt;官方文档 &lt;a class=&#34;link&#34; href=&#34;https://docs.ansible.com/ansible/latest/collections/community/general/ldap_attrs_module.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -70681,29 +70681,29 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>ldap_entry模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/ldap_entry/</link>
+        <link>https://hellogitlab.com/devops/ansible/ldap_entry/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/ldap_entry/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ldap_entry模块" /&gt;&lt;h2 id=&#34;ldap_entry模块&#34;&gt;ldap_entry模块
+        <guid>https://hellogitlab.com/devops/ansible/ldap_entry/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ldap_entry模块" /&gt;&lt;h2 id=&#34;ldap_entry模块&#34;&gt;ldap_entry模块
 &lt;/h2&gt;</description>
         </item>
         <item>
         <title>ldap_passwd模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/ldap_passwd/</link>
+        <link>https://hellogitlab.com/devops/ansible/ldap_passwd/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/ldap_passwd/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ldap_passwd模块" /&gt;&lt;h2 id=&#34;ldap_passwd模块&#34;&gt;ldap_passwd模块
+        <guid>https://hellogitlab.com/devops/ansible/ldap_passwd/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ldap_passwd模块" /&gt;&lt;h2 id=&#34;ldap_passwd模块&#34;&gt;ldap_passwd模块
 &lt;/h2&gt;</description>
         </item>
         <item>
         <title>lineinfile文件内容修改模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/lineinfile/</link>
+        <link>https://hellogitlab.com/devops/ansible/lineinfile/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/lineinfile/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post lineinfile文件内容修改模块" /&gt;&lt;h2 id=&#34;lineinfile文件内容修改模块&#34;&gt;lineinfile文件内容修改模块
+        <guid>https://hellogitlab.com/devops/ansible/lineinfile/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post lineinfile文件内容修改模块" /&gt;&lt;h2 id=&#34;lineinfile文件内容修改模块&#34;&gt;lineinfile文件内容修改模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本模块确保文件中有特定行，或者使用反向引用的正则表达式来替换现有行。&lt;/li&gt;
@@ -72356,11 +72356,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>lookups插件</title>
-        <link>https://meizhaohui.github.io/devops/ansible/lookups/</link>
+        <link>https://hellogitlab.com/devops/ansible/lookups/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/lookups/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post lookups插件" /&gt;&lt;h2 id=&#34;lookups插件&#34;&gt;lookups插件
+        <guid>https://hellogitlab.com/devops/ansible/lookups/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post lookups插件" /&gt;&lt;h2 id=&#34;lookups插件&#34;&gt;lookups插件
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;我们在&lt;a class=&#34;link&#34; href=&#34;./debug.md&#34; &gt;debug调试模块&lt;/a&gt;中使用了多种方式定义变量，但这些变量的定义大部分是静态的，其实Ansible支持从外部数据拉取信息，比如从数据库里面读取信息然后定义给一个变量，这时候就可以使用&lt;code&gt;lookups&lt;/code&gt;插件。&lt;/li&gt;
@@ -73686,7 +73686,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;h4 id=&#34;34-编写获取手机号归属地和运营商信息插件&#34;&gt;3.4 编写获取手机号归属地和运营商信息插件
 &lt;/h4&gt;&lt;p&gt;可以通过&lt;a class=&#34;link&#34; href=&#34;https://www.apispace.com/explore/service#&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.apispace.com/explore/service#&lt;/a&gt; 来获取手机号码归属地信息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-10-21_23-36-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-10-21_23-36-31.png&#34;
 	
 	
 	
@@ -73695,7 +73695,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;如，我们随便查询一个靓号&lt;code&gt;18966666666&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-10-21_23-37-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-10-21_23-37-50.png&#34;
 	
 	
 	
@@ -73705,7 +73705,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &gt;
 可以知道其是陕西西安 联通的手机号。&lt;/p&gt;
 &lt;p&gt;再查询另一个靓号&lt;code&gt;15266666666&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-10-21_23-59-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-10-21_23-59-06.png&#34;
 	
 	
 	
@@ -73715,7 +73715,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &gt;
 可以知道其是山东临沂 中国移动的手机号。&lt;/p&gt;
 &lt;p&gt;在网页上面测试，可以看到对应的号码返回的结果是西安的：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-10-21_23-40-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-10-21_23-40-09.png&#34;
 	
 	
 	
@@ -73922,7 +73922,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行结果效果图:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-10-22_00-00-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-10-22_00-00-30.png&#34;
 	
 	
 	
@@ -73935,11 +73935,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>mail邮件模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/mail/</link>
+        <link>https://hellogitlab.com/devops/ansible/mail/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/mail/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post mail邮件模块" /&gt;&lt;h2 id=&#34;mail邮件模块&#34;&gt;mail邮件模块
+        <guid>https://hellogitlab.com/devops/ansible/mail/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post mail邮件模块" /&gt;&lt;h2 id=&#34;mail邮件模块&#34;&gt;mail邮件模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mail模块用于发送邮件通知。&lt;/li&gt;
@@ -74464,7 +74464,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;登陆邮箱服务器网页端，可以查看最新的邮件，可以看到，已经收到邮件了：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-11-08_21-34-35.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-11-08_21-34-35.png&#34;
 	
 	
 	
@@ -74477,11 +74477,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>make编译模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/make/</link>
+        <link>https://hellogitlab.com/devops/ansible/make/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/make/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post make编译模块" /&gt;&lt;h2 id=&#34;make编译模块&#34;&gt;make编译模块
+        <guid>https://hellogitlab.com/devops/ansible/make/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post make编译模块" /&gt;&lt;h2 id=&#34;make编译模块&#34;&gt;make编译模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;make模块可以运行Makefile中的目标target。&lt;/li&gt;
@@ -74894,21 +74894,21 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>Ping主机联通性测试模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/ping/</link>
+        <link>https://hellogitlab.com/devops/ansible/ping/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/ping/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Ping主机联通性测试模块" /&gt;&lt;h2 id=&#34;ping主机联通性测试模块&#34;&gt;Ping主机联通性测试模块
+        <guid>https://hellogitlab.com/devops/ansible/ping/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Ping主机联通性测试模块" /&gt;&lt;h2 id=&#34;ping主机联通性测试模块&#34;&gt;Ping主机联通性测试模块
 &lt;/h2&gt;&lt;p&gt;Ping模块请参考 &lt;a class=&#34;link&#34; href=&#34;./base.md#_17-3-ping%E6%A8%A1%E5%9D%97&#34; &gt;Ansible初体验&lt;/a&gt; 17.3 ping模块.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>pip模块-管理python库依赖</title>
-        <link>https://meizhaohui.github.io/devops/ansible/pip/</link>
+        <link>https://hellogitlab.com/devops/ansible/pip/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/pip/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post pip模块-管理python库依赖" /&gt;&lt;h2 id=&#34;pip模块-管理python库依赖&#34;&gt;pip模块-管理python库依赖
+        <guid>https://hellogitlab.com/devops/ansible/pip/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post pip模块-管理python库依赖" /&gt;&lt;h2 id=&#34;pip模块-管理python库依赖&#34;&gt;pip模块-管理python库依赖
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;官方文档: &lt;a class=&#34;link&#34; href=&#34;https://docs.ansible.com/ansible/latest/collections/ansible/builtin/pip_module.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -75664,11 +75664,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>proxmox Docs</title>
-        <link>https://meizhaohui.github.io/devops/proxmox/proxmox_docs/</link>
+        <link>https://hellogitlab.com/devops/proxmox/proxmox_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/proxmox/proxmox_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/proxmox_logo_icon_144960.png" alt="Featured image of post proxmox Docs" /&gt;&lt;h2 id=&#34;proxmox-docs&#34;&gt;proxmox Docs
+        <guid>https://hellogitlab.com/devops/proxmox/proxmox_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/proxmox_logo_icon_144960.png" alt="Featured image of post proxmox Docs" /&gt;&lt;h2 id=&#34;proxmox-docs&#34;&gt;proxmox Docs
 &lt;/h2&gt;&lt;p&gt;本文档主要是想将&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/wiki/Main_Page&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Proxmox wiki page&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://pve.proxmox.com/pve-docs/pve-admin-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Proxmox VE Administration Guide&lt;/a&gt;翻译成中文文档，方便大家学习。&lt;/p&gt;
@@ -75769,11 +75769,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>ProxmoxVE安装</title>
-        <link>https://meizhaohui.github.io/devops/proxmox/x2_installingproxmoxve/</link>
+        <link>https://hellogitlab.com/devops/proxmox/x2_installingproxmoxve/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/proxmox/x2_installingproxmoxve/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ProxmoxVE安装" /&gt;&lt;h2 id=&#34;proxmox-ve安装&#34;&gt;Proxmox VE安装
+        <guid>https://hellogitlab.com/devops/proxmox/x2_installingproxmoxve/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ProxmoxVE安装" /&gt;&lt;h2 id=&#34;proxmox-ve安装&#34;&gt;Proxmox VE安装
 &lt;/h2&gt;&lt;p&gt;Proxmox VE基于Debian，附带一个安装CD-ROM，其中包括一个完整的Debian系统（5.x版本的&amp;quot;stretch&amp;quot;）以及所有必需的&lt;code&gt;Proxmox VE&lt;/code&gt;软件包。&lt;/p&gt;
 &lt;p&gt;安装程序只询问您几个问题，然后对本地磁盘进行分区，安装所有必需的软件包，并配置系统，包括基本网络设置。 您可以在几分钟内获得功能齐全的系统。推荐使用这种方法安装。&lt;/p&gt;
 &lt;p&gt;Proxmox VE可以安装在现有的Debian系统之上。 但此选项仅建议高级用户使用，因为有必要详细了解Proxmox VE。&lt;/p&gt;
@@ -75825,7 +75825,7 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
 &lt;p&gt;在安装过程中，默认使用整个服务器，并删除所有现有数据。请对服务器数据提前进行备份！！！
 :::&lt;/p&gt;
 &lt;p&gt;请插入安装CD-ROM，然后从该驱动器启动。 之后您可以选择以下菜单选项：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/pve-grub-menu.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/pve-grub-menu.png&#34;
 	
 	
 	
@@ -75857,15 +75857,15 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>ProxmoxVE介绍</title>
-        <link>https://meizhaohui.github.io/devops/proxmox/x1_introduction/</link>
+        <link>https://hellogitlab.com/devops/proxmox/x1_introduction/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/proxmox/x1_introduction/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ProxmoxVE介绍" /&gt;&lt;h2 id=&#34;proxmox-ve介绍&#34;&gt;Proxmox VE介绍
+        <guid>https://hellogitlab.com/devops/proxmox/x1_introduction/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ProxmoxVE介绍" /&gt;&lt;h2 id=&#34;proxmox-ve介绍&#34;&gt;Proxmox VE介绍
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;Proxmox VE&lt;/code&gt;是基于&lt;code&gt;Debian Linux&lt;/code&gt;，开源的运行虚拟机和窗口的平台。&lt;code&gt;Proxmox VE&lt;/code&gt;中可以实现两种虚拟化技术，&lt;code&gt;Kernel-based Virtual Machine (KVM技术)&lt;/code&gt;和&lt;code&gt;container-based virtualization (LXC技术)&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;一个主要的设计目标是使管理尽可能简单。 您可以在单个节点上使用&lt;code&gt;Proxmox VE&lt;/code&gt;，也可以组装多个节点的集群。 所有管理任务都可以使用我们基于&lt;code&gt;Web&lt;/code&gt;的&lt;code&gt;GUI&lt;/code&gt;管理界面完成，即使是初学者也可以在几分钟内设置和安装&lt;code&gt;Proxmox VE&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;Proxmox的架构图如下图所示&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/proxmox_introduction.svg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/proxmox_introduction.svg&#34;
 	
 	
 	
@@ -75986,11 +75986,11 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。&lt
         </item>
         <item>
         <title>role角色</title>
-        <link>https://meizhaohui.github.io/devops/ansible/role/</link>
+        <link>https://hellogitlab.com/devops/ansible/role/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/role/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post role角色" /&gt;&lt;h2 id=&#34;role角色&#34;&gt;role角色
+        <guid>https://hellogitlab.com/devops/ansible/role/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post role角色" /&gt;&lt;h2 id=&#34;role角色&#34;&gt;role角色
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Ansible 在1.2版本以后就支持了role角色。在实际工作中有很多不同业务需要编写很多playbook剧本文件，如果时间一久，对些剧本文件很难进行维护，这个时候我们就可以采用role角色的方式管理playbook剧本。&lt;/li&gt;
@@ -76988,7 +76988,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;p&gt;Ansible包含其客户端&lt;code&gt;ansible-galaxy&lt;/code&gt;。Galaxy客户端允许您从Ansible Galaxy下载角色，并为创建自己的角色提供了一个出色的默认框架。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-19_19-54-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-19_19-54-07.png&#34;
 	
 	
 	
@@ -77039,11 +77039,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>script执行本地脚本模块-不推荐</title>
-        <link>https://meizhaohui.github.io/devops/ansible/script/</link>
+        <link>https://hellogitlab.com/devops/ansible/script/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/script/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post script执行本地脚本模块-不推荐" /&gt;&lt;h2 id=&#34;script执行本地脚本模块-不推荐&#34;&gt;script执行本地脚本模块-不推荐
+        <guid>https://hellogitlab.com/devops/ansible/script/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post script执行本地脚本模块-不推荐" /&gt;&lt;h2 id=&#34;script执行本地脚本模块-不推荐&#34;&gt;script执行本地脚本模块-不推荐
 &lt;/h2&gt;&lt;p&gt;::: warning 警告
 不要直接使用scipt模块执行脚本，请转换成Ansible其他模块！！
 :::&lt;/p&gt;
@@ -77446,11 +77446,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>service模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/service/</link>
+        <link>https://hellogitlab.com/devops/ansible/service/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/service/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post service模块" /&gt;&lt;h2 id=&#34;service模块&#34;&gt;service模块
+        <guid>https://hellogitlab.com/devops/ansible/service/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post service模块" /&gt;&lt;h2 id=&#34;service模块&#34;&gt;service模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;service&lt;/code&gt;模块用于控制远程主机上面的服务。&lt;/li&gt;
@@ -79046,11 +79046,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>setup事实变量模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/setup/</link>
+        <link>https://hellogitlab.com/devops/ansible/setup/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/setup/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post setup事实变量模块" /&gt;&lt;h2 id=&#34;setup事实变量模块&#34;&gt;setup事实变量模块
+        <guid>https://hellogitlab.com/devops/ansible/setup/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post setup事实变量模块" /&gt;&lt;h2 id=&#34;setup事实变量模块&#34;&gt;setup事实变量模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;playbook&lt;/code&gt;剧本会自动调用此模块，以收集有关剧本中可以使用的远程主机的有用变量。&lt;/li&gt;
@@ -79290,7 +79290,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们将&lt;code&gt;node2 | SUCCESS =&amp;gt;&lt;/code&gt;后面的内容保存到&lt;code&gt;setup.json&lt;/code&gt;文件中，并用Sublime Text编辑器打开，并将一些不关心的细节折叠起来：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-18_14-45-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-18_14-45-30.png&#34;
 	
 	
 	
@@ -79298,7 +79298,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-18_14-47-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-18_14-47-30.png&#34;
 	
 	
 	
@@ -79306,7 +79306,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-18_14-48-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-18_14-48-44.png&#34;
 	
 	
 	
@@ -80342,7 +80342,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@node2 facts.d&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-21_22-42-13.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-21_22-42-13.png&#34;
 	
 	
 	
@@ -80568,7 +80568,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-21_23-13-47.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-21_23-13-47.png&#34;
 	
 	
 	
@@ -80607,7 +80607,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;ansible@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-21_23-15-03.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-21_23-15-03.png&#34;
 	
 	
 	
@@ -81009,11 +81009,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>shell执行远程脚本模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/shell/</link>
+        <link>https://hellogitlab.com/devops/ansible/shell/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/shell/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post shell执行远程脚本模块" /&gt;&lt;h2 id=&#34;shell执行远程脚本模块&#34;&gt;shell执行远程脚本模块
+        <guid>https://hellogitlab.com/devops/ansible/shell/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post shell执行远程脚本模块" /&gt;&lt;h2 id=&#34;shell执行远程脚本模块&#34;&gt;shell执行远程脚本模块
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;shell&lt;/code&gt;模块在主机上面执行命令。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;shell&lt;/code&gt;模块获取以空格分隔的列表组成的命令。&lt;/li&gt;
@@ -82524,11 +82524,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>SSH隧道连接实现Git推送</title>
-        <link>https://meizhaohui.github.io/devops/git/use_ssh_git_push/</link>
+        <link>https://hellogitlab.com/devops/git/use_ssh_git_push/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/use_ssh_git_push/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post SSH隧道连接实现Git推送" /&gt;&lt;h2 id=&#34;ssh隧道连接实现git推送&#34;&gt;SSH隧道连接实现Git推送
+        <guid>https://hellogitlab.com/devops/git/use_ssh_git_push/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post SSH隧道连接实现Git推送" /&gt;&lt;h2 id=&#34;ssh隧道连接实现git推送&#34;&gt;SSH隧道连接实现Git推送
 &lt;/h2&gt;&lt;p&gt;我们来看看如何配置服务器端的 SSH 访问。 本例中，我们将使用 &lt;code&gt;authorized_keys&lt;/code&gt; 方法来对用户进行认证。&lt;/p&gt;
 &lt;p&gt;参考： &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;服务器上的 Git - 配置服务器&lt;/a&gt;&lt;/p&gt;
@@ -83095,11 +83095,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>svn Docs</title>
-        <link>https://meizhaohui.github.io/devops/svn/svn_docs/</link>
+        <link>https://hellogitlab.com/devops/svn/svn_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/svn/svn_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/svn_icon_132016.png" alt="Featured image of post svn Docs" /&gt;&lt;h2 id=&#34;svn-docs&#34;&gt;svn Docs
+        <guid>https://hellogitlab.com/devops/svn/svn_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/svn_icon_132016.png" alt="Featured image of post svn Docs" /&gt;&lt;h2 id=&#34;svn-docs&#34;&gt;svn Docs
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;svn官网地址： &lt;a class=&#34;link&#34; href=&#34;https://subversion.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Apache Subversion&lt;/a&gt;&lt;/li&gt;
@@ -83110,7 +83110,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
     &gt;Apache Subversion Binary Packages&lt;/a&gt; 进行安装。&lt;/p&gt;
 &lt;p&gt;也可以在 &lt;a class=&#34;link&#34; href=&#34;https://www.wandisco.com/source-code-management/subversion&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.wandisco.com/source-code-management/subversion&lt;/a&gt; 页面下载自动化安装程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-14_21-22-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-14_21-22-21.png&#34;
 	
 	
 	
@@ -84729,11 +84729,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>tags标签</title>
-        <link>https://meizhaohui.github.io/devops/ansible/tags/</link>
+        <link>https://hellogitlab.com/devops/ansible/tags/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/tags/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post tags标签" /&gt;&lt;h2 id=&#34;tags标签&#34;&gt;tags标签
+        <guid>https://hellogitlab.com/devops/ansible/tags/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post tags标签" /&gt;&lt;h2 id=&#34;tags标签&#34;&gt;tags标签
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;如果你有一个超大的playbook剧本文件，有时并不想运行剧本文件中所有的任务，这个时候&lt;code&gt;tags&lt;/code&gt;标签可以解决这个问题，通过&lt;code&gt;tags&lt;/code&gt;标签可以运行或者忽略(execute or skip)剧本中的部分任务。&lt;/li&gt;
@@ -85548,11 +85548,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>tempfile模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/tempfile/</link>
+        <link>https://hellogitlab.com/devops/ansible/tempfile/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/tempfile/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post tempfile模块" /&gt;&lt;h2 id=&#34;tempfile模块&#34;&gt;tempfile模块
+        <guid>https://hellogitlab.com/devops/ansible/tempfile/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post tempfile模块" /&gt;&lt;h2 id=&#34;tempfile模块&#34;&gt;tempfile模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;tempfile&lt;/code&gt;模块创建临时文件和目录。 &lt;code&gt;mktemp&lt;/code&gt;命令在不同的系统上采用不同的参数，这个模块有助于避免与此相关的麻烦。 模块创建的文件/目录只能由创建者访问。 如果您需要让它们可供其他人访问，您需要使用&lt;code&gt;ansible.builtin.file&lt;/code&gt; 模块。&lt;/li&gt;
@@ -85774,11 +85774,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>template模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/template/</link>
+        <link>https://hellogitlab.com/devops/ansible/template/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/template/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post template模块" /&gt;&lt;h2 id=&#34;template模块&#34;&gt;template模块
+        <guid>https://hellogitlab.com/devops/ansible/template/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post template模块" /&gt;&lt;h2 id=&#34;template模块&#34;&gt;template模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;template&lt;/code&gt;模块可以将Ansible主机上面的模板文件复制到远程被控主机上。&lt;/li&gt;
@@ -86756,7 +86756,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到页面已经正常渲染了：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-04_10-47-53.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-04_10-47-53.png&#34;
 	
 	
 	
@@ -86862,7 +86862,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时刷新页面，再次看看页面效果：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-04_19-22-39.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-04_19-22-39.png&#34;
 	
 	
 	
@@ -86995,7 +86995,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时检查页面效果：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-05_10-33-20.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-05_10-33-20.png&#34;
 	
 	
 	
@@ -87021,7 +87021,7 @@ When using vars: within the roles: section of a playbook, the variables are adde
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-05_10-51-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-05_10-51-11.png&#34;
 	
 	
 	
@@ -87036,11 +87036,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>timezone模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/timezone/</link>
+        <link>https://hellogitlab.com/devops/ansible/timezone/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/timezone/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post timezone模块" /&gt;&lt;h2 id=&#34;timezone模块&#34;&gt;timezone模块
+        <guid>https://hellogitlab.com/devops/ansible/timezone/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post timezone模块" /&gt;&lt;h2 id=&#34;timezone模块&#34;&gt;timezone模块
 &lt;/h2&gt;&lt;h3 id=&#34;0-时区说明&#34;&gt;0. 时区说明
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;CST表示中国标准时间(China Standard Time)。中国标准时间(CST)比世界协调时间(UTC)早08:00小时。该时区为标准时区时间，主要用于 亚洲。对应时区名称&lt;code&gt;Asia/Shanghai&lt;/code&gt;。&lt;/li&gt;
@@ -87592,11 +87592,11 @@ When using vars: within the roles: section of a playbook, the variables are adde
         </item>
         <item>
         <title>unarchive模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/unarchive/</link>
+        <link>https://hellogitlab.com/devops/ansible/unarchive/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/unarchive/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post unarchive模块" /&gt;&lt;h2 id=&#34;unarchive模块&#34;&gt;unarchive模块
+        <guid>https://hellogitlab.com/devops/ansible/unarchive/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post unarchive模块" /&gt;&lt;h2 id=&#34;unarchive模块&#34;&gt;unarchive模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;unarchive&lt;/code&gt;模块用于对归档文件进行解压。&lt;/li&gt;
@@ -88093,11 +88093,11 @@ Existing files/directories in the destination which are not in the archive are i
         </item>
         <item>
         <title>user模块--管理用户账号和属性</title>
-        <link>https://meizhaohui.github.io/devops/ansible/user/</link>
+        <link>https://hellogitlab.com/devops/ansible/user/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/user/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post user模块--管理用户账号和属性" /&gt;&lt;h2 id=&#34;user模块管理用户账号和属性&#34;&gt;user模块&amp;ndash;管理用户账号和属性
+        <guid>https://hellogitlab.com/devops/ansible/user/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post user模块--管理用户账号和属性" /&gt;&lt;h2 id=&#34;user模块管理用户账号和属性&#34;&gt;user模块&amp;ndash;管理用户账号和属性
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;user&lt;/code&gt;模块，用于管理用户账号和用户属性。&lt;/li&gt;
@@ -92407,11 +92407,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>wait_for_connection等待远程主机连接模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/wait_for_connection/</link>
+        <link>https://hellogitlab.com/devops/ansible/wait_for_connection/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/wait_for_connection/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post wait_for_connection等待远程主机连接模块" /&gt;&lt;h2 id=&#34;wait_for_connection等待远程主机连接模块&#34;&gt;wait_for_connection等待远程主机连接模块
+        <guid>https://hellogitlab.com/devops/ansible/wait_for_connection/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post wait_for_connection等待远程主机连接模块" /&gt;&lt;h2 id=&#34;wait_for_connection等待远程主机连接模块&#34;&gt;wait_for_connection等待远程主机连接模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;wait_for_connection模块，会等待远程系统，确定其是否可访问。&lt;/li&gt;
@@ -92659,11 +92659,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>wait_for条件等待模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/wait_for/</link>
+        <link>https://hellogitlab.com/devops/ansible/wait_for/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/wait_for/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post wait_for条件等待模块" /&gt;&lt;h2 id=&#34;wait_for条件等待模块&#34;&gt;wait_for条件等待模块
+        <guid>https://hellogitlab.com/devops/ansible/wait_for/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post wait_for条件等待模块" /&gt;&lt;h2 id=&#34;wait_for条件等待模块&#34;&gt;wait_for条件等待模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;wait_for条件等待模块会在继续执行之前等待一个条件成立。&lt;/li&gt;
@@ -93092,7 +93092,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;TASK &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Wait &lt;span class=&#34;k&#34;&gt;until&lt;/span&gt; the file /tmp/foo is present before continuing&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; *******************************************************
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-20_22-41-32.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-20_22-41-32.png&#34;
 	
 	
 	
@@ -93115,7 +93115,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，在Ansible控制节点可以看到，剧本向前运行了一步：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-20_22-44-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-20_22-44-22.png&#34;
 	
 	
 	
@@ -93143,7 +93143,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时程序又执行了一步：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-20_22-46-17.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-20_22-46-17.png&#34;
 	
 	
 	
@@ -93265,7 +93265,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;node1                      : &lt;span class=&#34;nv&#34;&gt;ok&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;4&lt;/span&gt;    &lt;span class=&#34;nv&#34;&gt;changed&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;    &lt;span class=&#34;nv&#34;&gt;unreachable&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;    &lt;span class=&#34;nv&#34;&gt;failed&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;    &lt;span class=&#34;nv&#34;&gt;skipped&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;    &lt;span class=&#34;nv&#34;&gt;rescued&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;    &lt;span class=&#34;nv&#34;&gt;ignored&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-20_23-11-22.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-20_23-11-22.png&#34;
 	
 	
 	
@@ -93279,7 +93279,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;li&gt;&lt;code&gt;delay&lt;/code&gt;参数和&lt;code&gt;timeout&lt;/code&gt;参数不同，&lt;code&gt;delay: 20&lt;/code&gt;表示等待20秒钟再去进行检查操作，而&lt;code&gt;timeout: 20&lt;/code&gt;是指程序不停检查最终等待20秒，如果还没检查成功，则会报超时异常，或&lt;code&gt;msg&lt;/code&gt;定义的异常。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;如我将剧本中最后一行的&lt;code&gt;msg: Timeout to find file /tmp/foo&lt;/code&gt;注释掉，再执行剧本显示效果如下：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-03-20_23-22-32.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-03-20_23-22-32.png&#34;
 	
 	
 	
@@ -93292,11 +93292,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>when条件判断</title>
-        <link>https://meizhaohui.github.io/devops/ansible/when/</link>
+        <link>https://hellogitlab.com/devops/ansible/when/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/when/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post when条件判断" /&gt;&lt;h2 id=&#34;when条件判断&#34;&gt;when条件判断
+        <guid>https://hellogitlab.com/devops/ansible/when/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post when条件判断" /&gt;&lt;h2 id=&#34;when条件判断&#34;&gt;when条件判断
 &lt;/h2&gt;&lt;h3 id=&#34;1-官方示例&#34;&gt;1. 官方示例
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;when&lt;/code&gt;条件判断，可参考官方文档 &lt;a class=&#34;link&#34; href=&#34;https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_conditionals.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -93482,7 +93482,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-06_13-48-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-06_13-48-39.png&#34;
 	
 	
 	
@@ -93703,7 +93703,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-27_21-22-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-27_21-22-35.png&#34;
 	
 	
 	
@@ -93913,7 +93913,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-27_23-03-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-27_23-03-57.png&#34;
 	
 	
 	
@@ -93926,11 +93926,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>yum包管理器模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/yum/</link>
+        <link>https://hellogitlab.com/devops/ansible/yum/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/yum/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post yum包管理器模块" /&gt;&lt;h2 id=&#34;yum包管理器模块&#34;&gt;yum包管理器模块
+        <guid>https://hellogitlab.com/devops/ansible/yum/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post yum包管理器模块" /&gt;&lt;h2 id=&#34;yum包管理器模块&#34;&gt;yum包管理器模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概要&#34;&gt;1. 概要
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;yum&lt;/code&gt;模块通过&lt;code&gt;yum&lt;/code&gt;包管理器来管理包。&lt;/li&gt;
@@ -97583,11 +97583,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>编写facts模块</title>
-        <link>https://meizhaohui.github.io/devops/ansible/facts_module/</link>
+        <link>https://hellogitlab.com/devops/ansible/facts_module/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/facts_module/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 编写facts模块" /&gt;&lt;h2 id=&#34;编写facts模块&#34;&gt;编写facts模块
+        <guid>https://hellogitlab.com/devops/ansible/facts_module/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 编写facts模块" /&gt;&lt;h2 id=&#34;编写facts模块&#34;&gt;编写facts模块
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;在&lt;a class=&#34;link&#34; href=&#34;./setup.md&#34; &gt;setup事实变量模块&lt;/a&gt;中我们可以自定义fact事实变量，但该方式灵活性不是很强，因为需要每台机器上都存在一个那样的文件。&lt;/li&gt;
@@ -98171,7 +98171,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-21_23-05-09.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-21_23-05-09.png&#34;
 	
 	
 	
@@ -98319,7 +98319,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-21_23-14-56.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-21_23-14-56.png&#34;
 	
 	
 	
@@ -98925,7 +98925,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;使用&lt;code&gt;jq&lt;/code&gt;命令会使json字符串更美观，效果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-24_17-28-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-24_17-28-04.png&#34;
 	
 	
 	
@@ -99129,7 +99129,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-24_17-51-32.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-24_17-51-32.png&#34;
 	
 	
 	
@@ -99177,7 +99177,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-24_22-37-00.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-24_22-37-00.png&#34;
 	
 	
 	
@@ -99742,7 +99742,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-24_23-56-17.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-24_23-56-17.png&#34;
 	
 	
 	
@@ -99911,7 +99911,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-27_22-41-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-27_22-41-54.png&#34;
 	
 	
 	
@@ -99947,11 +99947,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>第一个role角色</title>
-        <link>https://meizhaohui.github.io/devops/ansible/role_2/</link>
+        <link>https://hellogitlab.com/devops/ansible/role_2/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/role_2/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 第一个role角色" /&gt;&lt;h2 id=&#34;第一个role角色&#34;&gt;第一个role角色
+        <guid>https://hellogitlab.com/devops/ansible/role_2/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 第一个role角色" /&gt;&lt;h2 id=&#34;第一个role角色&#34;&gt;第一个role角色
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;在上一节 &lt;a class=&#34;link&#34; href=&#34;./role.md&#34; &gt;ansible role角色(1)&lt;/a&gt; 中，我们阅读了官方文档，并且知道了角色相关的概念。从这节开始，我们就开始使用Ansible role功能来搭建自己的自动化环境。&lt;/li&gt;
@@ -100116,7 +100116,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-19_23-01-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-19_23-01-02.png&#34;
 	
 	
 	
@@ -100140,11 +100140,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>什么是Signed-off-by</title>
-        <link>https://meizhaohui.github.io/devops/git/signed-off-by/</link>
+        <link>https://hellogitlab.com/devops/git/signed-off-by/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/signed-off-by/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 什么是Signed-off-by" /&gt;&lt;h2 id=&#34;什么是signed-off-by&#34;&gt;什么是Signed-off-by
+        <guid>https://hellogitlab.com/devops/git/signed-off-by/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 什么是Signed-off-by" /&gt;&lt;h2 id=&#34;什么是signed-off-by&#34;&gt;什么是Signed-off-by
 &lt;/h2&gt;&lt;p&gt;在看一些开源代码的 &lt;code&gt;git log&lt;/code&gt;查看历史提交日志的时候，往往会发现里面有些 日志信息中除了说明修改内容还有一行：&lt;code&gt;Signed-off-by: xxx&lt;/code&gt;。那这个&lt;code&gt;Signed-off-by&lt;/code&gt;到底是什么呢？&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
@@ -100249,7 +100249,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;mzh@MacBookPro git &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;master ✗&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;$ git commit -s
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320155922.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320155922.png&#34;
 	
 	
 	
@@ -100292,11 +100292,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>使gitstatus不显示某些文件</title>
-        <link>https://meizhaohui.github.io/devops/git/ignore_changed_files/</link>
+        <link>https://hellogitlab.com/devops/git/ignore_changed_files/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/ignore_changed_files/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 使gitstatus不显示某些文件" /&gt;&lt;h2 id=&#34;使git-status不显示某些文件&#34;&gt;使git status不显示某些文件
+        <guid>https://hellogitlab.com/devops/git/ignore_changed_files/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 使gitstatus不显示某些文件" /&gt;&lt;h2 id=&#34;使git-status不显示某些文件&#34;&gt;使git status不显示某些文件
 &lt;/h2&gt;&lt;p&gt;有的时候，一些文件已经在git仓库中，在本地测试时又进行了一些修改，此时在查看仓库状态时，不想显示这些文件。&lt;/p&gt;
 &lt;p&gt;注意，我这里设置了快捷命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -100308,7 +100308,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;比如，我现在使用&lt;code&gt;gs&lt;/code&gt;查看到仓库状态如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-20_23-55-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-20_23-55-32.png&#34;
 	
 	
 	
@@ -100434,7 +100434,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到&lt;code&gt;myblog/package.json&lt;/code&gt;也被忽略了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-21_00-04-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-21_00-04-19.png&#34;
 	
 	
 	
@@ -100446,11 +100446,11 @@ ECC 与 RSA 相比，有以下的优点：
         </item>
         <item>
         <title>一步一步学role角色-base基础角色配置</title>
-        <link>https://meizhaohui.github.io/devops/ansible/role_3/</link>
+        <link>https://hellogitlab.com/devops/ansible/role_3/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/ansible/role_3/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 一步一步学role角色-base基础角色配置" /&gt;&lt;h2 id=&#34;一步一步学role角色-base基础角色配置&#34;&gt;一步一步学role角色-base基础角色配置
+        <guid>https://hellogitlab.com/devops/ansible/role_3/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 一步一步学role角色-base基础角色配置" /&gt;&lt;h2 id=&#34;一步一步学role角色-base基础角色配置&#34;&gt;一步一步学role角色-base基础角色配置
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -100541,7 +100541,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;启动效果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-01_09-07-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-01_09-07-51.png&#34;
 	
 	
 	
@@ -101205,7 +101205,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，执行成功。&lt;/p&gt;
 &lt;p&gt;效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-12-24_15-44-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-12-24_15-44-01.png&#34;
 	
 	
 	
@@ -102644,7 +102644,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;## 验证文件复制&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# ansible -i base_hosts.ini  192.168.56.121 -m copy -a &amp;#34;src=https://meizhaohui.github.io/srv/safe-rm/safe-rm-0.12/safe-rm dest=/usr/bin/safe-rm remote_src=yes mode=0755&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@ansible ansible_playbooks&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# ansible -i base_hosts.ini  192.168.56.121 -m copy -a &amp;#34;src=https://hellogitlab.com/srv/safe-rm/safe-rm-0.12/safe-rm dest=/usr/bin/safe-rm remote_src=yes mode=0755&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;192.168.56.121 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;CHANGED&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;ansible_facts&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s2&#34;&gt;&amp;#34;discovered_interpreter_python&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/bin/python&amp;#34;&lt;/span&gt;
@@ -102962,7 +102962,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，此时已经正常执行完成，说明三个节点的&lt;code&gt;safe-rm&lt;/code&gt;和&lt;code&gt;trash-cli&lt;/code&gt;已经安装成功。&lt;/p&gt;
 &lt;p&gt;我们在三个节点上面测试一下。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-07_20-53-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-07_20-53-38.png&#34;
 	
 	
 	
@@ -103114,7 +103114,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到执行成功。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-07_21-35-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-07_21-35-06.png&#34;
 	
 	
 	
@@ -103374,7 +103374,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-10_20-22-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-10_20-22-12.png&#34;
 	
 	
 	
@@ -103515,7 +103515,7 @@ ECC 与 RSA 相比，有以下的优点：
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;正常执行，没有报错。&lt;/p&gt;
 &lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-19_06-38-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-19_06-38-35.png&#34;
 	
 	
 	

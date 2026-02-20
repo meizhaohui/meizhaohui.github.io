@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Coredns on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/coredns/</link>
+        <link>https://hellogitlab.com/tags/coredns/</link>
         <description>Recent content in Coredns on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 17 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/coredns/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 17 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/coredns/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CoreDNS的基本使用</title>
-        <link>https://meizhaohui.github.io/devops/coredns/base_use/</link>
+        <link>https://hellogitlab.com/devops/coredns/base_use/</link>
         <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/coredns/base_use/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/corednsio_logo_icon_168339.png" alt="Featured image of post CoreDNS的基本使用" /&gt;&lt;h3 id=&#34;1-coredns的基本使用&#34;&gt;1 CoreDNS的基本使用
+        <guid>https://hellogitlab.com/devops/coredns/base_use/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/corednsio_logo_icon_168339.png" alt="Featured image of post CoreDNS的基本使用" /&gt;&lt;h3 id=&#34;1-coredns的基本使用&#34;&gt;1 CoreDNS的基本使用
 &lt;/h3&gt;&lt;h4 id=&#34;11-查看coredns的插件&#34;&gt;1.1 查看CoreDNS的插件
 &lt;/h4&gt;&lt;p&gt;一旦有了&lt;code&gt;coredns&lt;/code&gt;二进制文件，你可以使用&lt;code&gt;-plugins&lt;/code&gt;标志列出所有已编译的插件。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1136,7 +1136,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后在浏览器中打开 URL &lt;a class=&#34;link&#34; href=&#34;http://mycoredns.com:8080/health&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://mycoredns.com:8080/health&lt;/a&gt;，则可以看到显示&lt;code&gt;OK&lt;/code&gt;，此时状态码也是200，说明coredns服务健康检查正常。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-01-03_16-00-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-01-03_16-00-00.png&#34;
 	
 	
 	
@@ -1170,7 +1170,7 @@
 &lt;/div&gt;&lt;p&gt;启用&lt;code&gt;ready :8181&lt;/code&gt;配置后，此时重启coredns服务后，则会监听8181端口。&lt;/p&gt;
 &lt;p&gt;然后在浏览器中打开 URL &lt;a class=&#34;link&#34; href=&#34;http://mycoredns.com:8181/ready&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://mycoredns.com:8181/ready&lt;/a&gt;，则可以看到显示&lt;code&gt;OK&lt;/code&gt;，此时状态码也是200，说明coredns服务就绪检查正常。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-01-03_18-29-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-01-03_18-29-30.png&#34;
 	
 	
 	
@@ -1698,7 +1698,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@localhost ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-01-03_20-32-05.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-01-03_20-32-05.png&#34;
 	
 	
 	
@@ -1958,7 +1958,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Jan &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; 22:47:17 localhost.localdomain coredns&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;1600&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;INFO&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; 192.168.56.102:37653 - &lt;span class=&#34;m&#34;&gt;20647&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;A IN www.mycoredns.com. udp 46 false 4096&amp;#34;&lt;/span&gt; NXDOMAIN qr,rd,ra &lt;span class=&#34;m&#34;&gt;125&lt;/span&gt; 0.06107392s
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-01-30_22-48-35.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-01-30_22-48-35.png&#34;
 	
 	
 	
@@ -2180,7 +2180,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Jan 30 23:20:40 localhost.localdomain coredns[1717]: [INFO] 192.168.56.102:41947 Request: 域名: jd.com. 类型: AAAA 查询 ID: 5511
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2026-01-30_23-25-14.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-01-30_23-25-14.png&#34;
 	
 	
 	
@@ -2195,11 +2195,11 @@
         </item>
         <item>
         <title>coreDNS Docs</title>
-        <link>https://meizhaohui.github.io/devops/coredns/coredns_docs/</link>
+        <link>https://hellogitlab.com/devops/coredns/coredns_docs/</link>
         <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/coredns/coredns_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/corednsio_logo_icon_168339.png" alt="Featured image of post coreDNS Docs" /&gt;&lt;h2 id=&#34;coredns-docs&#34;&gt;coreDNS Docs
+        <guid>https://hellogitlab.com/devops/coredns/coredns_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/corednsio_logo_icon_168339.png" alt="Featured image of post coreDNS Docs" /&gt;&lt;h2 id=&#34;coredns-docs&#34;&gt;coreDNS Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../deploy&#34; &gt;安装coreDNS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../base_use&#34; &gt;CoreDNS的基本使用&lt;/a&gt;&lt;/li&gt;
@@ -2208,11 +2208,11 @@
         </item>
         <item>
         <title>安装CoreDNS</title>
-        <link>https://meizhaohui.github.io/devops/coredns/deploy/</link>
+        <link>https://hellogitlab.com/devops/coredns/deploy/</link>
         <pubDate>Thu, 13 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/coredns/deploy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 安装CoreDNS" /&gt;&lt;h2 id=&#34;安装coredns&#34;&gt;安装CoreDNS
+        <guid>https://hellogitlab.com/devops/coredns/deploy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 安装CoreDNS" /&gt;&lt;h2 id=&#34;安装coredns&#34;&gt;安装CoreDNS
 &lt;/h2&gt;&lt;h3 id=&#34;1-为什么要引入coredns&#34;&gt;1. 为什么要引入CoreDNS
 &lt;/h3&gt;&lt;p&gt;看看豆包的回答：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2245,7 +2245,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;2-下载和安装coredns&#34;&gt;2. 下载和安装CoreDNS
 &lt;/h3&gt;&lt;p&gt;当前最新的版本是1.13.1：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-13_22-36-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-13_22-36-25.png&#34;
 	
 	
 	
@@ -2259,7 +2259,7 @@
     &gt;https://github.com/coredns/coredns/releases/tag/v1.13.1&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;下载第5项的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/coredns/coredns/releases/download/v1.13.1/coredns_1.13.1_linux_amd64.tgz&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;coredns_1.13.1_linux_amd64.tgz &lt;/a&gt; ：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-11-13_22-38-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-11-13_22-38-53.png&#34;
 	
 	
 	

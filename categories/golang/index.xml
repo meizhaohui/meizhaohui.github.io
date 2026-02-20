@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Golang on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/golang/</link>
+        <link>https://hellogitlab.com/categories/golang/</link>
         <description>Recent content in Golang on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/golang/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Golang并发编程</title>
-        <link>https://meizhaohui.github.io/backend/golang/golang-concurrency/</link>
+        <link>https://hellogitlab.com/backend/golang/golang-concurrency/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/golang/golang-concurrency/</guid>
+        <guid>https://hellogitlab.com/backend/golang/golang-concurrency/</guid>
         <description>&lt;h2 id=&#34;goroutine&#34;&gt;Goroutine
 &lt;/h2&gt;&lt;p&gt;Goroutine是Go语言的轻量级线程，使用go关键字即可启动。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -57,11 +57,11 @@
         </item>
         <item>
         <title>Go的基本使用</title>
-        <link>https://meizhaohui.github.io/backend/golang/base/</link>
+        <link>https://hellogitlab.com/backend/golang/base/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/golang/base/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Go的基本使用" /&gt;&lt;h2 id=&#34;go的基本使用&#34;&gt;Go的基本使用
+        <guid>https://hellogitlab.com/backend/golang/base/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Go的基本使用" /&gt;&lt;h2 id=&#34;go的基本使用&#34;&gt;Go的基本使用
 &lt;/h2&gt;&lt;p&gt;本文用于记录学习Golang相关知识点。&lt;/p&gt;
 &lt;p&gt;Go编程语言中文文档中介绍Go:&lt;/p&gt;
 &lt;ul&gt;
@@ -1097,11 +1097,11 @@
         </item>
         <item>
         <title>GO语言之旅</title>
-        <link>https://meizhaohui.github.io/backend/golang/go-tour/</link>
+        <link>https://hellogitlab.com/backend/golang/go-tour/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/golang/go-tour/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post GO语言之旅" /&gt;&lt;h2 id=&#34;go语言之旅&#34;&gt;GO语言之旅
+        <guid>https://hellogitlab.com/backend/golang/go-tour/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post GO语言之旅" /&gt;&lt;h2 id=&#34;go语言之旅&#34;&gt;GO语言之旅
 &lt;/h2&gt;&lt;h3 id=&#34;1-基础&#34;&gt;1. 基础
 &lt;/h3&gt;&lt;h4 id=&#34;11-注释&#34;&gt;1.1 注释
 &lt;/h4&gt;&lt;ul&gt;
@@ -2324,7 +2324,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;上面程序运行时，会不停执行&lt;code&gt;for&lt;/code&gt;循环语句，&lt;code&gt;i&lt;/code&gt;不断进行自增1，程序不断运行下去，必须手动进行终止。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-11-10_21-42-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-11-10_21-42-16.png&#34;
 	
 	
 	
@@ -3230,7 +3230,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到虽然&lt;code&gt;fmt.Println(&amp;quot;World&amp;quot;)&lt;/code&gt;语法在代码中先定义，但却是在&lt;code&gt;fmt.Println(&amp;quot;Hello&amp;quot;)&lt;/code&gt;执行后再执行的，说明&lt;code&gt;defer&lt;/code&gt;延迟语句起了作用。&lt;/p&gt;
 &lt;p&gt;同时，因为在&lt;code&gt;for&lt;/code&gt;循环体中也使用了&lt;code&gt;defer&lt;/code&gt;延迟语句，&lt;strong&gt;按照先进后出规则&lt;/strong&gt;，对于&lt;code&gt;for&lt;/code&gt;循环会依次打印3、2、1、0,&lt;code&gt;for&lt;/code&gt;循环结尾后，最后再打印栈底的&amp;quot;World&amp;quot;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-11-10_22-18-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-11-10_22-18-11.png&#34;
 	
 	
 	

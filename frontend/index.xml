@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>前端开发 on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/frontend/</link>
+        <link>https://hellogitlab.com/frontend/</link>
         <description>Recent content in 前端开发 on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/frontend/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/frontend/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>React Hooks指南</title>
-        <link>https://meizhaohui.github.io/frontend/react-hooks/</link>
+        <link>https://hellogitlab.com/frontend/react-hooks/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/frontend/react-hooks/</guid>
+        <guid>https://hellogitlab.com/frontend/react-hooks/</guid>
         <description>&lt;h2 id=&#34;usestate-hook&#34;&gt;useState Hook
 &lt;/h2&gt;&lt;p&gt;useState允许函数组件拥有状态。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -29,10 +29,10 @@
         </item>
         <item>
         <title>CSS Flexbox布局</title>
-        <link>https://meizhaohui.github.io/frontend/css-flexbox/</link>
+        <link>https://hellogitlab.com/frontend/css-flexbox/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/frontend/css-flexbox/</guid>
+        <guid>https://hellogitlab.com/frontend/css-flexbox/</guid>
         <description>&lt;h2 id=&#34;flexbox基础&#34;&gt;Flexbox基础
 &lt;/h2&gt;&lt;p&gt;Flexbox是一种一维布局方法。&lt;/p&gt;
 &lt;h2 id=&#34;主要属性&#34;&gt;主要属性
@@ -46,10 +46,10 @@
         </item>
         <item>
         <title>Vue 3 组合式API</title>
-        <link>https://meizhaohui.github.io/frontend/vue3-composition/</link>
+        <link>https://hellogitlab.com/frontend/vue3-composition/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/frontend/vue3-composition/</guid>
+        <guid>https://hellogitlab.com/frontend/vue3-composition/</guid>
         <description>&lt;h2 id=&#34;setup函数&#34;&gt;Setup函数
 &lt;/h2&gt;&lt;p&gt;setup函数是组合式API的入口点。&lt;/p&gt;
 &lt;h2 id=&#34;响应式数据&#34;&gt;响应式数据

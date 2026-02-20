@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Redis on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/dba/redis/</link>
+        <link>https://hellogitlab.com/dba/redis/</link>
         <description>Recent content in Redis on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 10 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/dba/redis/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/dba/redis/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CentOS7源码安装Redis6.2.14</title>
-        <link>https://meizhaohui.github.io/dba/redis/install_redis_with_source/</link>
+        <link>https://hellogitlab.com/dba/redis/install_redis_with_source/</link>
         <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/redis/install_redis_with_source/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS7源码安装Redis6.2.14" /&gt;&lt;h2 id=&#34;centos7源码安装redis6214&#34;&gt;CentOS7源码安装Redis6.2.14
+        <guid>https://hellogitlab.com/dba/redis/install_redis_with_source/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS7源码安装Redis6.2.14" /&gt;&lt;h2 id=&#34;centos7源码安装redis6214&#34;&gt;CentOS7源码安装Redis6.2.14
 &lt;/h2&gt;&lt;h3 id=&#34;1-下载并校验文件散列值&#34;&gt;1. 下载并校验文件散列值
 &lt;/h3&gt;&lt;p&gt;在这个页面 &lt;a class=&#34;link&#34; href=&#34;https://github.com/redis/redis-hashes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/redis/redis-hashes/&lt;/a&gt; 可以看到redis各版本版本对应的散列值：&lt;/p&gt;
@@ -7718,11 +7718,11 @@
         </item>
         <item>
         <title>Redis6安装与主从配置</title>
-        <link>https://meizhaohui.github.io/dba/redis/install_redis/</link>
+        <link>https://hellogitlab.com/dba/redis/install_redis/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/redis/install_redis/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Redis6安装与主从配置" /&gt;&lt;h2 id=&#34;redis6安装与主从配置&#34;&gt;Redis6安装与主从配置
+        <guid>https://hellogitlab.com/dba/redis/install_redis/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Redis6安装与主从配置" /&gt;&lt;h2 id=&#34;redis6安装与主从配置&#34;&gt;Redis6安装与主从配置
 &lt;/h2&gt;&lt;p&gt;本实验准备两台CentOS7主机：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -12782,11 +12782,11 @@
         </item>
         <item>
         <title>RedisDocs</title>
-        <link>https://meizhaohui.github.io/dba/redis/redis_docs/</link>
+        <link>https://hellogitlab.com/dba/redis/redis_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/redis/redis_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post RedisDocs" /&gt;&lt;h2 id=&#34;redis-docs&#34;&gt;Redis Docs
+        <guid>https://hellogitlab.com/dba/redis/redis_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post RedisDocs" /&gt;&lt;h2 id=&#34;redis-docs&#34;&gt;Redis Docs
 &lt;/h2&gt;&lt;p&gt;Redis学习笔记：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../install_redis&#34; &gt;Redis6安装与主从配置&lt;/a&gt;&lt;/li&gt;

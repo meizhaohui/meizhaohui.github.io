@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Deepseek on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/deepseek/</link>
+        <link>https://hellogitlab.com/categories/deepseek/</link>
         <description>Recent content in Deepseek on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/deepseek/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/deepseek/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>deepseek学习笔记</title>
-        <link>https://meizhaohui.github.io/agent/deepseek/deepseek_docs/</link>
+        <link>https://hellogitlab.com/agent/deepseek/deepseek_docs/</link>
         <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/agent/deepseek/deepseek_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/deepseek.png" alt="Featured image of post deepseek学习笔记" /&gt;&lt;h2 id=&#34;deepseek学习笔记&#34;&gt;deepseek学习笔记
+        <guid>https://hellogitlab.com/agent/deepseek/deepseek_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/deepseek.png" alt="Featured image of post deepseek学习笔记" /&gt;&lt;h2 id=&#34;deepseek学习笔记&#34;&gt;deepseek学习笔记
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../create_local_deepseek_environments&#34; &gt;本地部署deepseek环境&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../deepseek_in_wps&#34; &gt;wps接入deepseek大模型&lt;/a&gt;&lt;/li&gt;
@@ -22,17 +22,17 @@
         </item>
         <item>
         <title>wps接入deepseek大模型</title>
-        <link>https://meizhaohui.github.io/agent/deepseek/deepseek_in_wps/</link>
+        <link>https://hellogitlab.com/agent/deepseek/deepseek_in_wps/</link>
         <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/agent/deepseek/deepseek_in_wps/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post wps接入deepseek大模型" /&gt;&lt;h2 id=&#34;wps接入deepseek大模型&#34;&gt;wps接入deepseek大模型
+        <guid>https://hellogitlab.com/agent/deepseek/deepseek_in_wps/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post wps接入deepseek大模型" /&gt;&lt;h2 id=&#34;wps接入deepseek大模型&#34;&gt;wps接入deepseek大模型
 &lt;/h2&gt;&lt;p&gt;我们可以在wps中接入deepseek大模型，提升办公效率。&lt;/p&gt;
 &lt;p&gt;主要用的到工具：OfficeAI助手，官网地址 &lt;a class=&#34;link&#34; href=&#34;https://office-ai.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://office-ai.cn/&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1-安装officeai助手&#34;&gt;1. 安装OfficeAI助手
 &lt;/h3&gt;&lt;p&gt;打开OfficeAI助手官网：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_21-57-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_21-57-53.png&#34;
 	
 	
 	
@@ -43,7 +43,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击立即下载：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_21-59-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_21-59-53.png&#34;
 	
 	
 	
@@ -57,7 +57,7 @@
     &gt;https://office-ai.cn/static/introductions/officeai/introduction.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如果你安装过程中有问题，可以参考官方的常见问题说明 ： &lt;a class=&#34;link&#34; href=&#34;https://office-ai.cn/static/introductions/officeai/questions.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://office-ai.cn/static/introductions/officeai/questions.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-08-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-08-02.png&#34;
 	
 	
 	
@@ -68,7 +68,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;下城完成后，双击&amp;quot;OfficeAI.exe&amp;quot;安装：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-08-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-08-56.png&#34;
 	
 	
 	
@@ -79,7 +79,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击【运行】，勾选【同意】，并点击【下一步】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-09-33.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-09-33.png&#34;
 	
 	
 	
@@ -90,7 +90,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;修改默认的安装路径为【D:\ProgramFiles\OfficeAI】，然后点击【下一步】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-14-36.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-14-36.png&#34;
 	
 	
 	
@@ -101,7 +101,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时开始下载相关文件，等待下载完成：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-15-36.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-15-36.png&#34;
 	
 	
 	
@@ -112,7 +112,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;下载完成后，自动弹出 海鹦 OfficeAI助手安装，勾选【同意】，并点击【下一步】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-16-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-16-59.png&#34;
 	
 	
 	
@@ -123,7 +123,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;修改安装目录为【D:\ProgramFiles\HaiYingSoft\OfficeAI】，然后点击【下一步】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-19-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-19-11.png&#34;
 	
 	
 	
@@ -134,7 +134,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;安装完成后，默认会勾选【打开Word/WPS看效果】，点击【完成】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-19-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-19-49.png&#34;
 	
 	
 	
@@ -145,7 +145,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时打开的文档中，右侧有一个【微信登陆】的按钮，顶部菜单栏多了一个【OfficeAI】的选项：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-22-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-22-01.png&#34;
 	
 	
 	
@@ -158,7 +158,7 @@
 &lt;p&gt;如果没有出现的话，你可以参照这个打开的示例文档进行修复。&lt;/p&gt;
 &lt;p&gt;主要是要启用HyWordAI插件。或者&lt;strong&gt;右侧面板有时显示有时不显示&lt;/strong&gt;，直接参考打开的文档设置即可。&lt;/p&gt;
 &lt;p&gt;如果不显示右侧面板，则依次点击【OfficeAI】菜单，然后点击【右侧面板】，此时显示了【右侧面板】后，就可以点击【微信登陆】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-26-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-26-59.png&#34;
 	
 	
 	
@@ -169,7 +169,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时让使用微信扫描二维码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-28-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-28-51.png&#34;
 	
 	
 	
@@ -180,7 +180,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;登陆成功后，手机端会显示【登陆成功，请关闭此页面】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-30-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-30-50.png&#34;
 	
 	
 	
@@ -191,7 +191,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;登陆成功后，在wps右侧就会显示ai的面板了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-31-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-31-37.png&#34;
 	
 	
 	
@@ -204,7 +204,7 @@
 &lt;h3 id=&#34;2-officeai的使用&#34;&gt;2. OffIceAI的使用
 &lt;/h3&gt;&lt;h4 id=&#34;21-officeai大模型的配置&#34;&gt;2.1 OfficeAI大模型的配置
 &lt;/h4&gt;&lt;p&gt;上面的右侧面板正常登陆后，就可以点击右侧像笔一样的图标，进行设置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-33-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-33-09.png&#34;
 	
 	
 	
@@ -217,7 +217,7 @@
 &lt;p&gt;如果使用之前部署的deepseek本地大模型，需要在【大模型设置】里面选择【本地】，然后模型处选择【ollama】，模型名选择你下载好的【deepseek-r1:15.b】大模型！最后点击【保存】即可。&lt;/p&gt;
 &lt;p&gt;如何搭建本地大模型，可参考上一篇总结文档  &lt;a class=&#34;link&#34; href=&#34;./create_local_deepseek_environments.md&#34; &gt;本地部署deepseek环境&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;此时，会弹出需要下载依赖组件，点击【是】下载即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-39-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-39-23.png&#34;
 	
 	
 	
@@ -228,7 +228,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时会打开下载页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-43-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-43-19.png&#34;
 	
 	
 	
@@ -239,7 +239,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击【本地服务器端】超链接下载OfficeAI_Server.exe文件，下载完成后双击OfficeAI_Server.exe运行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-55-33.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-55-33.png&#34;
 	
 	
 	
@@ -250,7 +250,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;勾选【I accept the agreement】，并点击【Next】下一步：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_22-56-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_22-56-06.png&#34;
 	
 	
 	
@@ -261,7 +261,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;修改安装目录为【D:\ProgramFiles\HaiYingSoft\OfficeAI_Server】，并点击【Next】下一步：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-05-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-05-11.png&#34;
 	
 	
 	
@@ -272,7 +272,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;保持默认的【Full installation】,并点击【Next】下一步：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-05-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-05-39.png&#34;
 	
 	
 	
@@ -283,7 +283,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;勾选【Create a desktop shortcut】创建桌面快捷图标，以及【OfficeAI本地服务开机自启动】，并点击【Next】下一步：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-06-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-06-45.png&#34;
 	
 	
 	
@@ -294,7 +294,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;最后点击【Finish】完成安装，此时会自动运行OfficeAI本地服务器：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-11-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-11-01.png&#34;
 	
 	
 	
@@ -305,7 +305,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;OfficeAI本地服务器会检查本地运行的Ollama服务是否运行，或者修改Ollama服务的URL地址：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-13-10.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-13-10.png&#34;
 	
 	
 	
@@ -318,7 +318,7 @@
 &lt;p&gt;此时可以看到Ollama服务是正常运行的，如果你修改的Ollama的配置，就可以点击右侧的【Test】检查一下，提示Ollama配置成功，则说明OfficeAI本地服务器配置是正常的！点击右上角的x将窗口关掉即可，此时服务会隐藏在右下角任务栏中。&lt;/p&gt;
 &lt;p&gt;此时，重新启动WPS，再点击WPS里面的OfficeAI的设置【保存】就可以正常保存了！&lt;/p&gt;
 &lt;p&gt;此时会提示【大模型设置保存成功】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-24-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-24-08.png&#34;
 	
 	
 	
@@ -330,7 +330,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;点击右上角的x将窗口关掉即可。&lt;/p&gt;
 &lt;p&gt;此时，如我问大模型：如何实现财富自由，给我三条建议&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-47-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-47-38.png&#34;
 	
 	
 	
@@ -392,7 +392,7 @@
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;22-其他大模型&#34;&gt;2.2 其他大模型
 &lt;/h4&gt;&lt;p&gt;也可以选择默认内置的免费大模型：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-26-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-26-17.png&#34;
 	
 	
 	
@@ -403,7 +403,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;也可以选择通过ApiKey形式指定大模型平台：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-27-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-27-06.png&#34;
 	
 	
 	
@@ -415,7 +415,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;这个时候就需要去各个模型平台获取相应的API_KEY，这个就相对麻烦一些，可能也需要花费一些钱才能用！此处忽略！&lt;/p&gt;
 &lt;p&gt;如使用内置免费大模型【豆包】，使用测试的示例【帮我把背景颜色设置为蓝色】，此时文档马上变了效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-32-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-32-38.png&#34;
 	
 	
 	
@@ -426,7 +426,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我又给了一个命令：帮我把背景颜色蓝色去掉，并将标题设置成红色，英文字体设置成Times new romam：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-24_23-35-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-24_23-35-16.png&#34;
 	
 	
 	
@@ -441,14 +441,14 @@
         </item>
         <item>
         <title>本地部署deepseek环境</title>
-        <link>https://meizhaohui.github.io/agent/deepseek/create_local_deepseek_environments/</link>
+        <link>https://hellogitlab.com/agent/deepseek/create_local_deepseek_environments/</link>
         <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/agent/deepseek/create_local_deepseek_environments/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 本地部署deepseek环境" /&gt;&lt;h2 id=&#34;本地部署deepseek环境&#34;&gt;本地部署deepseek环境
+        <guid>https://hellogitlab.com/agent/deepseek/create_local_deepseek_environments/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 本地部署deepseek环境" /&gt;&lt;h2 id=&#34;本地部署deepseek环境&#34;&gt;本地部署deepseek环境
 &lt;/h2&gt;&lt;p&gt;DeepSeek官网地址 &lt;a class=&#34;link&#34; href=&#34;https://www.deepseek.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.deepseek.com/&lt;/a&gt; .&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-42-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-42-50.png&#34;
 	
 	
 	
@@ -593,7 +593,7 @@
 &lt;li&gt;OLLAMA_ORIGINS  = *&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;windows 11可以依次点击【此电脑】右键&amp;mdash;选择【属性】&amp;mdash;【高级系统设置】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-19-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-19-02.png&#34;
 	
 	
 	
@@ -604,7 +604,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在弹出的窗口点击【环境变量】，然后点击【新建】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-21-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-21-47.png&#34;
 	
 	
 	
@@ -616,7 +616,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;像我这样配置三个环境变量即可：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OLLAMA_MODELS  环境变量：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-22-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-22-46.png&#34;
 	
 	
 	
@@ -627,7 +627,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OLLAMA_HOST   环境变量：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-24-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-24-02.png&#34;
 	
 	
 	
@@ -638,7 +638,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OLLAMA_ORIGINS    环境变量：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-24-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-24-27.png&#34;
 	
 	
 	
@@ -650,7 +650,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;配置完成后，依次点击几个【确定】按钮，关闭环境变量配置窗口即可。&lt;/p&gt;
 &lt;p&gt;打开命令提示符窗口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-28-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-28-00.png&#34;
 	
 	
 	
@@ -670,7 +670,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果输出和我一样则说明配置的环境变量生效了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-29-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-29-40.png&#34;
 	
 	
 	
@@ -686,7 +686,7 @@
 &lt;h4 id=&#34;22-ollama安装&#34;&gt;2.2 Ollama安装
 &lt;/h4&gt;&lt;p&gt;可以访问 &lt;a class=&#34;link&#34; href=&#34;http://ollama.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ollama.com/&lt;/a&gt; 进入 Ollama 官网下载 Ollama ，下载时有三个系统的安装包可选择，这里只需要选择下载我们电脑对应的操作系统版本即可，这里我选择的是 Windows 版本。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-15_23-51-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-15_23-51-06.png&#34;
 	
 	
 	
@@ -697,7 +697,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;下载好安装包后，双击&lt;code&gt;OllamaSetup.exe&lt;/code&gt;，然后点击【运行】安装即可：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-44-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-44-22.png&#34;
 	
 	
 	
@@ -708,7 +708,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;安装完成后，选择开机启动，Ollama就会默认在后台启动，并在电脑右下角可以看到Ollama的图标：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-48-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-48-03.png&#34;
 	
 	
 	
@@ -722,7 +722,7 @@
     &gt;本地部署大模型Deepseek，更改Ollama模型储存位置，1.5B——14B样机演示&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;23-检查ollama命令行是否能正常工作&#34;&gt;2.3 检查Ollama命令行是否能正常工作
 &lt;/h4&gt;&lt;p&gt;打开命令提示符窗口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-28-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-28-00.png&#34;
 	
 	
 	
@@ -804,7 +804,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;\Users\mch&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-51-24.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-51-24.png&#34;
 	
 	
 	
@@ -818,7 +818,7 @@
 &lt;/h3&gt;&lt;p&gt;在浏览器中打开Ollama官网支持的大模型列表 &lt;a class=&#34;link&#34; href=&#34;https://ollama.com/search&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ollama.com/search&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;可以看到，最上面的就是deepseek大模型：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-54-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-54-59.png&#34;
 	
 	
 	
@@ -830,7 +830,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;点  &lt;a class=&#34;link&#34; href=&#34;https://ollama.com/library/deepseek-r1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;deepseek-r1&lt;/a&gt;  进去看一下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_01-09-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_01-09-16.png&#34;
 	
 	
 	
@@ -985,7 +985,7 @@
 &lt;p&gt;可以看到，我的电脑32G内存，最多可以尝试1.5b和7b两种模型，后面的其他模型文件大且对电脑配置要求高。&lt;/p&gt;
 &lt;p&gt;我们只尝试1.5b这个模型即可。&lt;/p&gt;
 &lt;p&gt;在Ollama模型处执行deepseek-r1 1.5b模型：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_01-27-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_01-27-45.png&#34;
 	
 	
 	
@@ -995,7 +995,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_01-32-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_01-32-58.png&#34;
 	
 	
 	
@@ -1026,7 +1026,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在命令行窗口执行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_01-36-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_01-36-27.png&#34;
 	
 	
 	
@@ -1037,7 +1037,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;下载一段时间后，发现下载速度越来越慢：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_01-38-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_01-38-12.png&#34;
 	
 	
 	
@@ -1050,7 +1050,7 @@
 &lt;p&gt;参考: &lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/22407172890&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Ollama Pull 很慢？这些方法帮你加速 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;由于Ollama支持断点续传，为了不写脚本，可以此在命令行窗口按 &lt;code&gt;Ctrl+C&lt;/code&gt;快捷键 取消下载，然后再按向上键重新开始下载：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_01-42-42.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_01-42-42.png&#34;
 	
 	
 	
@@ -1061,7 +1061,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;下载完成后，就会自动运行该大模型：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_01-59-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_01-59-38.png&#34;
 	
 	
 	
@@ -1092,7 +1092,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;qwen2.5:1.5b        65ec06548149    986 MB    2 days ago
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-01-13.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-01-13.png&#34;
 	
 	
 	
@@ -1103,7 +1103,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，在之前D盘dmx_modules目录下，也出现了很多文件，这些也是大模型相关的文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_00-32-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_00-32-19.png&#34;
 	
 	
 	
@@ -1209,7 +1209,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&amp;gt; Send a message (/? for help)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-11-37.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-11-37.png&#34;
 	
 	
 	
@@ -1221,7 +1221,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，第一个问题&lt;code&gt;哪吒2票房预测&lt;/code&gt;没有正常回答，第二个问题有答案输出，说明模型可以正常使用了！！&lt;/p&gt;
 &lt;p&gt;再问它“如何实现财富自由”：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-13-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-13-43.png&#34;
 	
 	
 	
@@ -1236,7 +1236,7 @@
 &lt;/h3&gt;&lt;p&gt;虽然我们可以在本地正常使用 Deepseek 这个模型了，但是这个 AI 工具的面板是非常简陋的，很多人使用不习惯，这时我们就可以通过 Chatbox 这个可视化图文交互界面来使用它。&lt;/p&gt;
 &lt;p&gt;点击 &lt;a class=&#34;link&#34; href=&#34;http://chatboxai.app/zh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://chatboxai.app/zh&lt;/a&gt; 进入 Chatbox 官网，Chatbox 虽然有本地客户端，但我们也可以直接使用网页版。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-19-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-19-51.png&#34;
 	
 	
 	
@@ -1247,7 +1247,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们点击下载客户端，下载完成后，双击下载好的安装包&lt;code&gt;Chatbox-1.9.8-Setup.exe&lt;/code&gt;安装：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-20-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-20-44.png&#34;
 	
 	
 	
@@ -1258,7 +1258,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;安装完成后，会在桌面创建一个快捷图标：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-22-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-22-22.png&#34;
 	
 	
 	
@@ -1270,7 +1270,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;双击Chatbox快捷方式，打开Chatbox客户端，然后点击【设置】：&lt;/p&gt;
 &lt;p&gt;在设置【模型】页模型提供方选择【OLLAMA API】，然后下面的模型选择【deepseek-r1:1.5b】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-25-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-25-25.png&#34;
 	
 	
 	
@@ -1282,7 +1282,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;最后点击【保存】后就可以使用Chatbox与deepseek大模型对话了！&lt;/p&gt;
 &lt;p&gt;在这里试下问它“如何实现财富自由”，会显示deepseek思考过程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-30-33.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-30-33.png&#34;
 	
 	
 	
@@ -1292,7 +1292,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-32-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-32-25.png&#34;
 	
 	
 	
@@ -1302,7 +1302,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-32-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-32-57.png&#34;
 	
 	
 	
@@ -1312,7 +1312,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-33-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-33-25.png&#34;
 	
 	
 	
@@ -1323,7 +1323,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;当然，在Chatbox中，给出了几个其他的智能体示例，如&lt;code&gt;Markdown 101&lt;/code&gt;、&lt;code&gt;Software Developer&lt;/code&gt;、&lt;code&gt;夸夸机&lt;/code&gt;等，你可以点击【我的搭档】创建自己的智能体！！！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-39-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-39-02.png&#34;
 	
 	
 	
@@ -1333,7 +1333,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-16_02-39-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-16_02-39-25.png&#34;
 	
 	
 	

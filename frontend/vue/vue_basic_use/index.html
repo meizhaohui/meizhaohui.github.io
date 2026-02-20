@@ -4,16 +4,16 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="vue的基本使用 vue官方文档：https://cn.vuejs.org/v2/guide/ vue官方指定的视频教程： https://learning.dcloud.io/#/?vid=0 vue教程：https://www.lookroot.cn/course/vuebasics/ 可以安装Vue DevTools，参考 Mac环境下安装Vue DevTools Vue.js的调试神器 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 开始尝试vue时，可以简单的创建一个html文件，并引用cdn上面的vue.js文件。 官方视频教程中老师是使用的HBuilder X来进行编码的。我们也使用HBuilder X工具来学习vue。在官方下载 https://www.dcloud.io/hbuilderx.html 安装即可。 1. 第一个vue程序 参考官方文档，需要新建一个html文件。并引入vue.js引用。\n使用HBuilder X新建一个app1.html的文件，新建后HBuilder X会自动为我们添加一些内容：\n1 2 3 4 5 6 7 8 9 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 视频教程中告诉我们引入vue.js文件需要在&lt;head&gt;&lt;/head&gt;头部标签中引用。\n我们引入标签:\n1 2 3 4 5 6 7 8 9 10 11 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&#34;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 在head头部标签内部增加了&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;，这样就引入了vue.js文件了。\n">
 <title>vue的基本使用</title>
 
-<link rel='canonical' href='https://meizhaohui.github.io/frontend/vue/vue_basic_use/'>
+<link rel='canonical' href='https://hellogitlab.com/frontend/vue/vue_basic_use/'>
 
 <link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="vue的基本使用">
 <meta property='og:description' content="vue的基本使用 vue官方文档：https://cn.vuejs.org/v2/guide/ vue官方指定的视频教程： https://learning.dcloud.io/#/?vid=0 vue教程：https://www.lookroot.cn/course/vuebasics/ 可以安装Vue DevTools，参考 Mac环境下安装Vue DevTools Vue.js的调试神器 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 开始尝试vue时，可以简单的创建一个html文件，并引用cdn上面的vue.js文件。 官方视频教程中老师是使用的HBuilder X来进行编码的。我们也使用HBuilder X工具来学习vue。在官方下载 https://www.dcloud.io/hbuilderx.html 安装即可。 1. 第一个vue程序 参考官方文档，需要新建一个html文件。并引入vue.js引用。\n使用HBuilder X新建一个app1.html的文件，新建后HBuilder X会自动为我们添加一些内容：\n1 2 3 4 5 6 7 8 9 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 视频教程中告诉我们引入vue.js文件需要在&lt;head&gt;&lt;/head&gt;头部标签中引用。\n我们引入标签:\n1 2 3 4 5 6 7 8 9 10 11 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&#34;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 在head头部标签内部增加了&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;，这样就引入了vue.js文件了。\n">
-<meta property='og:url' content='https://meizhaohui.github.io/frontend/vue/vue_basic_use/'>
+<meta property='og:url' content='https://hellogitlab.com/frontend/vue/vue_basic_use/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Frontend' /><meta property='article:tag' content='Frontend' /><meta property='article:tag' content='Vue' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://meizhaohui.github.io/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Frontend' /><meta property='article:tag' content='Frontend' /><meta property='article:tag' content='Vue' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="vue的基本使用">
 <meta name="twitter:description" content="vue的基本使用 vue官方文档：https://cn.vuejs.org/v2/guide/ vue官方指定的视频教程： https://learning.dcloud.io/#/?vid=0 vue教程：https://www.lookroot.cn/course/vuebasics/ 可以安装Vue DevTools，参考 Mac环境下安装Vue DevTools Vue.js的调试神器 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 开始尝试vue时，可以简单的创建一个html文件，并引用cdn上面的vue.js文件。 官方视频教程中老师是使用的HBuilder X来进行编码的。我们也使用HBuilder X工具来学习vue。在官方下载 https://www.dcloud.io/hbuilderx.html 安装即可。 1. 第一个vue程序 参考官方文档，需要新建一个html文件。并引入vue.js引用。\n使用HBuilder X新建一个app1.html的文件，新建后HBuilder X会自动为我们添加一些内容：\n1 2 3 4 5 6 7 8 9 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 视频教程中告诉我们引入vue.js文件需要在&lt;head&gt;&lt;/head&gt;头部标签中引用。\n我们引入标签:\n1 2 3 4 5 6 7 8 9 10 11 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&#34;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 在head头部标签内部增加了&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;，这样就引入了vue.js文件了。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://meizhaohui.github.io/img/default.jpg' />
+    <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -327,9 +327,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://meizhaohui.github.io/" selected>简体中文</option>
+                                    <option value="https://hellogitlab.com/" selected>简体中文</option>
                                 
-                                    <option value="https://meizhaohui.github.io/en/" >English</option>
+                                    <option value="https://hellogitlab.com/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -452,7 +452,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Database on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/dba/</link>
+        <link>https://hellogitlab.com/en/dba/</link>
         <description>Recent content in Database on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>阿梅的博客</copyright><atom:link href="https://meizhaohui.github.io/en/dba/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>阿梅的博客</copyright><atom:link href="https://hellogitlab.com/en/dba/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

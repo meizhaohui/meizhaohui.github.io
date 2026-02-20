@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>MacOS on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/macos/</link>
+        <link>https://hellogitlab.com/categories/macos/</link>
         <description>Recent content in MacOS on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/macos/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/macos/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MacOS使用总结</title>
-        <link>https://meizhaohui.github.io/os/macos/</link>
+        <link>https://hellogitlab.com/os/macos/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/macos/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/mac-apple-osx-desktop-software-hardware_icon-icons.com_59176.png" alt="Featured image of post MacOS使用总结" /&gt;&lt;h2 id=&#34;macos使用总结&#34;&gt;MacOS使用总结
+        <guid>https://hellogitlab.com/os/macos/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/mac-apple-osx-desktop-software-hardware_icon-icons.com_59176.png" alt="Featured image of post MacOS使用总结" /&gt;&lt;h2 id=&#34;macos使用总结&#34;&gt;MacOS使用总结
 &lt;/h2&gt;&lt;h3 id=&#34;1-打开访达文件夹的快捷键&#34;&gt;1. 打开访达文件夹的快捷键
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/finder_keymap.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/finder_keymap.png&#34;
 	
 	
 	
@@ -33,7 +33,7 @@
 &lt;li&gt;⇧ 代表&amp;quot;shift&amp;quot;键&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;通过快捷键⌃+⌘+空格键可以调出『表情符号与人物』窗口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/emoji.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/emoji.png&#34;
 	
 	
 	
@@ -44,7 +44,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击『表情符号与人物』窗口右下角的向右的箭头，调到『技术符号』处就可以看到常用的&amp;quot;command&amp;quot;等键的符号了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/emoji_command.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/emoji_command.png&#34;
 	
 	
 	
@@ -117,7 +117,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;另外，可以通过设置触发角来实现快速显示桌面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-07-23_06-42-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-07-23_06-42-16.png&#34;
 	
 	
 	
@@ -140,7 +140,7 @@
 &lt;li&gt;查找本地文件，按空格，再输入搜索关键字。&lt;/li&gt;
 &lt;li&gt;网页搜索，默认使用Google搜索，可以配置百度搜索，百度搜索的话，可以输入『bd 搜索关键字』进行搜索，Alfred中百度搜索配置如下：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/alfred_baidu_search.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/alfred_baidu_search.png&#34;
 	
 	
 	
@@ -154,7 +154,7 @@
 &lt;li&gt;简单数学计算，如输入「2+2」则会自动计算出结果4。&lt;/li&gt;
 &lt;li&gt;查字典，如输入「d lovely」则会显示lovely的翻译。Alfred中字典配置如下：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/alfred_dict_search.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/alfred_dict_search.png&#34;
 	
 	
 	
@@ -172,9 +172,9 @@
 &lt;/h3&gt;&lt;p&gt;macos中快捷键特别多，有时记不住快捷键，安装CheatSheet后，可以通过长按⌘键查看当前软件的快捷键。&lt;/p&gt;
 &lt;p&gt;你可以从&lt;a class=&#34;link&#34; href=&#34;https://cheatsheet-mac.en.softonic.com/mac&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://cheatsheet-mac.en.softonic.com/mac&lt;/a&gt;网站上面下载安装包。&lt;/p&gt;
-&lt;p&gt;你也可以从这里下载 &lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/resource/pkg/CheatSheet_1.0.1.zip&#34; &gt;CheatSheet_1.0.1.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;你也可以从这里下载 &lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/resource/pkg/CheatSheet_1.0.1.zip&#34; &gt;CheatSheet_1.0.1.zip&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如我的火狐浏览器中长按⌘键弹出的所有的快捷键如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/firefox_shortcuts.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/firefox_shortcuts.png&#34;
 	
 	
 	
@@ -189,7 +189,7 @@
     &gt;https://github.com/fitztrev/shuttle&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Shuttle是一款快捷操作管理软件，你可以通过自定义命令，将常用的命令设置成图标快捷方式显示在任务栏中，当点击自定义的命令的名称时，shuttle会自动打开终端，并执行相应的命令。&lt;/p&gt;
 &lt;p&gt;如我的shuttle配置后，显示如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/shuttle.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/shuttle.png&#34;
 	
 	
 	
@@ -408,7 +408,7 @@
 &lt;/div&gt;&lt;p&gt;如果以上不能运行，可能直接在&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/ohmyzsh/ohmyzsh/blob/master/tools/install.sh&lt;/a&gt;复制install.sh的内容下来保存到文件&lt;code&gt;install.sh&lt;/code&gt;中，使用&lt;code&gt;sh install.sh&lt;/code&gt;运行即可。&lt;/p&gt;
 &lt;p&gt;运行脚本后，自动安装&lt;code&gt;oh-my-zsh&lt;/code&gt;并设置默认的主题。 显示如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/installed_ohmyzsh.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/installed_ohmyzsh.png&#34;
 	
 	
 	
@@ -468,7 +468,7 @@
     &gt;https://github.com/ohmyzsh/ohmyzsh#selecting-a-theme&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;选择自己喜欢的主题，可以一直用一种主题，也可以使用随机主题。&lt;/p&gt;
 &lt;p&gt;像我配置的随机主题：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/oh_my_zsh_random_theme.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/oh_my_zsh_random_theme.png&#34;
 	
 	
 	
@@ -488,7 +488,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;显示如下：
-&lt;img src=&#34;https://meizhaohui.github.io/img/reload_random_theme.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/reload_random_theme.png&#34;
 	
 	
 	
@@ -704,7 +704,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;帮助文档非常的详细，你可以仔细阅读一下。&lt;/p&gt;
 &lt;p&gt;参考官方的示例：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpie.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpie.png&#34;
 	
 	
 	
@@ -761,7 +761,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;启动服务后，浏览器中打开&lt;code&gt;localhost&lt;/code&gt;，可以看到如下效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/docker_local_httpbin.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/docker_local_httpbin.png&#34;
 	
 	
 	
@@ -789,7 +789,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;上面几种方式都是向本地80端口的&amp;rsquo;/get&amp;rsquo;地址发送GET请求，返回结果相同：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpie_GET.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpie_GET.png&#34;
 	
 	
 	
@@ -869,7 +869,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;发送POST请求，返回结果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/httpie_POST.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/httpie_POST.png&#34;
 	
 	
 	
@@ -1034,7 +1034,7 @@
 &lt;li&gt;点击&lt;code&gt;MT&lt;/code&gt;应用图标，&lt;code&gt;⌘+,&lt;/code&gt;打开设置，&lt;code&gt;mtmr&lt;/code&gt;通过&lt;code&gt;items.json&lt;/code&gt;配置文件保存设置。你可以官网示例修改默认的设置。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我的触控条自定义后显示如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/touchbar_display.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/touchbar_display.png&#34;
 	
 	
 	
@@ -1450,7 +1450,7 @@
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://clang.llvm.org/docs/ClangFormat.html#vim-integration&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://clang.llvm.org/docs/ClangFormat.html#vim-integration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-03_21-55-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-03_21-55-23.png&#34;
 	
 	
 	

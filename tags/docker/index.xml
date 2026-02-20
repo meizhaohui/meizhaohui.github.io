@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Docker on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/docker/</link>
+        <link>https://hellogitlab.com/tags/docker/</link>
         <description>Recent content in Docker on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/docker/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Docker容器化部署</title>
-        <link>https://meizhaohui.github.io/devops/docker-deploy/</link>
+        <link>https://hellogitlab.com/devops/docker-deploy/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker-deploy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/file_type_docker_icon_130643.png" alt="Featured image of post Docker容器化部署" /&gt;&lt;h2 id=&#34;docker简介&#34;&gt;Docker简介
+        <guid>https://hellogitlab.com/devops/docker-deploy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/file_type_docker_icon_130643.png" alt="Featured image of post Docker容器化部署" /&gt;&lt;h2 id=&#34;docker简介&#34;&gt;Docker简介
 &lt;/h2&gt;&lt;p&gt;Docker是一个开源的容器化平台，可以将应用及其依赖打包成容器。&lt;/p&gt;
 &lt;h2 id=&#34;dockerfile示例&#34;&gt;Dockerfile示例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -46,11 +46,11 @@
         </item>
         <item>
         <title>只读用户reader执行部分docker命令</title>
-        <link>https://meizhaohui.github.io/devops/docker/reader_user_run_docker_commands/</link>
+        <link>https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/</link>
         <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/reader_user_run_docker_commands/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 只读用户reader执行部分docker命令" /&gt;&lt;h2 id=&#34;只读用户reader执行部分docker命令&#34;&gt;只读用户reader执行部分docker命令
+        <guid>https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 只读用户reader执行部分docker命令" /&gt;&lt;h2 id=&#34;只读用户reader执行部分docker命令&#34;&gt;只读用户reader执行部分docker命令
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;当一个普通用户（我们假设是只读用户&lt;code&gt;reader&lt;/code&gt;）执行&lt;code&gt;docker ps&lt;/code&gt;时，会报以下异常：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -176,11 +176,11 @@
         </item>
         <item>
         <title>搭建自己的nexus私有仓库12--Nexus权限配置</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_12_user_permission/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_12_user_permission/</link>
         <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_12_user_permission/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库12--Nexus权限配置" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库12nexus权限配置&#34;&gt;搭建自己的nexus私有仓库12&amp;ndash;Nexus权限配置
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_12_user_permission/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库12--Nexus权限配置" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库12nexus权限配置&#34;&gt;搭建自己的nexus私有仓库12&amp;ndash;Nexus权限配置
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第12篇，使用Nexus API接口配置用户权限。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -212,7 +212,7 @@
 &lt;/h3&gt;&lt;p&gt;在创建用户前，我们先分析一下现有用户是如何配置了。&lt;/p&gt;
 &lt;h4 id=&#34;11-本地账号分析&#34;&gt;1.1 本地账号分析
 &lt;/h4&gt;&lt;p&gt;在Nexus管理页面，依次点击【Security】-【Users】:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_19-57-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_19-57-47.png&#34;
 	
 	
 	
@@ -223,7 +223,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，当前有两个本地用户，一个是&lt;code&gt;admin&lt;/code&gt;管理员用户，另外一个是&lt;code&gt;anonymous&lt;/code&gt;匿名用户。点击一下&lt;code&gt;anonymous&lt;/code&gt;匿名用户，查看其有什么权限：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-01-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-01-31.png&#34;
 	
 	
 	
@@ -243,7 +243,7 @@
 &lt;li&gt;Roles: nx-anonymous&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;再看一下&lt;code&gt;admin&lt;/code&gt;管理员用户的信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-03-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-03-53.png&#34;
 	
 	
 	
@@ -265,7 +265,7 @@
 &lt;p&gt;可以看到，用户权限是通过Roles角色来控制的，管理员用户配置了&lt;code&gt;nx-admin&lt;/code&gt;角色，匿名用户配置了&lt;code&gt;nx-anonymous&lt;/code&gt;角色。&lt;/p&gt;
 &lt;h4 id=&#34;12-角色分析&#34;&gt;1.2 角色分析
 &lt;/h4&gt;&lt;p&gt;在Nexus管理页面，依次点击【Security】-【Roles】:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-08-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-08-16.png&#34;
 	
 	
 	
@@ -277,7 +277,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，有&lt;code&gt;nx-admin&lt;/code&gt;和&lt;code&gt;nx-anonymous&lt;/code&gt;两个角色。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;nx-admin&lt;/code&gt;角色详情如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-09-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-09-26.png&#34;
 	
 	
 	
@@ -303,7 +303,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;而&lt;code&gt;nx-anonymous&lt;/code&gt;角色详情如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-12-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-12-08.png&#34;
 	
 	
 	
@@ -330,7 +330,7 @@
 &lt;p&gt;通过分析匿名用户的权限可以知道，在未登陆Nexus系统时，匿名用户是可以搜索仓库和在Browse浏览器中浏览仓库信息的。我们要创建的devops用户，只需要比匿名用户新增朝&lt;code&gt;docker-hosted&lt;/code&gt;本地仓库推送镜像的权限即可。&lt;/p&gt;
 &lt;h4 id=&#34;13-权限分析&#34;&gt;1.3 权限分析
 &lt;/h4&gt;&lt;p&gt;在Nexus管理页面，依次点击【Security】-【Privileges】，并搜索docker关键字，查看docker查看的权限：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-24-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-24-06.png&#34;
 	
 	
 	
@@ -369,7 +369,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-55-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-55-22.png&#34;
 	
 	
 	
@@ -379,7 +379,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_20-58-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_20-58-53.png&#34;
 	
 	
 	
@@ -399,7 +399,7 @@
 &lt;li&gt;Status: Active&lt;/li&gt;
 &lt;li&gt;Roles: nx-test&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_21-03-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_21-03-00.png&#34;
 	
 	
 	
@@ -699,7 +699,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@nexus-test mysql&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_21-07-29.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_21-07-29.png&#34;
 	
 	
 	
@@ -716,7 +716,7 @@
 &lt;li&gt;创建&lt;code&gt;nx-devops&lt;/code&gt;角色，并分配&lt;code&gt;nx-repository-view-docker-docker-hosted-add&lt;/code&gt;和&lt;code&gt;nx-repository-view-docker-docker-hosted-edit&lt;/code&gt;权限，并且包含&lt;code&gt;nx-anonymous&lt;/code&gt;角色。需要使用&lt;code&gt;/v1/security/roles&lt;/code&gt; 接口，发送POST请求。&lt;/li&gt;
 &lt;li&gt;创建&lt;code&gt;devops&lt;/code&gt;用户，并授予&lt;code&gt;nx-devops&lt;/code&gt;角色。需要使用&lt;code&gt;/v1/security/users&lt;/code&gt;接口，发送POST请求。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_21-29-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_21-29-37.png&#34;
 	
 	
 	
@@ -726,7 +726,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-09_21-31-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-09_21-31-21.png&#34;
 	
 	
 	
@@ -741,7 +741,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;GET&lt;/code&gt;请求&lt;code&gt;/v1/security/roles&lt;/code&gt;接口。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_10-35-36.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_10-35-36.png&#34;
 	
 	
 	
@@ -901,7 +901,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;GET&lt;/code&gt;请求&lt;code&gt;/v1/security/users&lt;/code&gt;接口，并将&lt;code&gt;userid&lt;/code&gt;参数设置&lt;code&gt;test&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_11-03-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_11-03-28.png&#34;
 	
 	
 	
@@ -1005,7 +1005,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;33-创建角色和用户&#34;&gt;3.3 创建角色和用户
 &lt;/h4&gt;&lt;p&gt;创建角色和用户时，执行Python脚本效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_11-25-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_11-25-43.png&#34;
 	
 	
 	
@@ -1016,7 +1016,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;刚创建的&lt;code&gt;nx-devops&lt;/code&gt;角色:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_11-26-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_11-26-46.png&#34;
 	
 	
 	
@@ -1027,7 +1027,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;刚创建的&lt;code&gt;devops&lt;/code&gt;角色：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_11-27-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_11-27-49.png&#34;
 	
 	
 	
@@ -1037,7 +1037,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_11-28-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_11-28-13.png&#34;
 	
 	
 	
@@ -1501,7 +1501,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;推送效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_12-03-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_12-03-27.png&#34;
 	
 	
 	
@@ -1512,7 +1512,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在Nexus Browse浏览器中，可以看到刚才推送的镜像，也可以看到推送人是&lt;code&gt;devops&lt;/code&gt;，说明我们通过API接口创建的用户能够正常使用：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-10_11-56-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_11-56-22.png&#34;
 	
 	
 	
@@ -1527,11 +1527,11 @@
         </item>
         <item>
         <title>搭建自己的nexus私有仓库11--NexusAPI接口的使用优化</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/</link>
         <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库11--NexusAPI接口的使用优化" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库11nexus-api接口的使用优化&#34;&gt;搭建自己的nexus私有仓库11&amp;ndash;Nexus API接口的使用优化
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库11--NexusAPI接口的使用优化" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库11nexus-api接口的使用优化&#34;&gt;搭建自己的nexus私有仓库11&amp;ndash;Nexus API接口的使用优化
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第11篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -1563,7 +1563,7 @@
 &lt;li&gt;大部分的仓库可以直接根据json配置文件文件名来判断需要创建的仓库类型，为了自定义其他文件名，我们可以单独创建一个配置文件来定义json配置文件文件名与仓库类型的关系。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;创建nexus_api文件夹，并在其中创建&lt;code&gt;config&lt;/code&gt;配置文件夹：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-03_18-07-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-03_18-07-22.png&#34;
 	
 	
 	
@@ -1979,7 +1979,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行代码前，默认有以下7个仓库：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-05_23-00-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-05_23-00-24.png&#34;
 	
 	
 	
@@ -2193,7 +2193,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行日志截图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-05_23-03-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-05_23-03-35.png&#34;
 	
 	
 	
@@ -2204,7 +2204,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时再查看仓库情况：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-05_23-07-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-05_23-07-00.png&#34;
 	
 	
 	
@@ -2228,17 +2228,17 @@
         </item>
         <item>
         <title>docker Docs</title>
-        <link>https://meizhaohui.github.io/devops/docker/docker_docs/</link>
+        <link>https://hellogitlab.com/devops/docker/docker_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/docker_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/file_type_docker_icon_130643.png" alt="Featured image of post docker Docs" /&gt;&lt;h2 id=&#34;docker-docs&#34;&gt;docker Docs
+        <guid>https://hellogitlab.com/devops/docker/docker_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/file_type_docker_icon_130643.png" alt="Featured image of post docker Docs" /&gt;&lt;h2 id=&#34;docker-docs&#34;&gt;docker Docs
 &lt;/h2&gt;&lt;p&gt;最近docker官方镜像仓库&lt;a class=&#34;link&#34; href=&#34;https://hub.docker.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://hub.docker.com/&lt;/a&gt; 不能访问了，可以临时访问 &lt;a class=&#34;link&#34; href=&#34;https://hub-stage.docker.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://hub-stage.docker.com/&lt;/a&gt; 来查询镜像信息。&lt;/p&gt;
 &lt;p&gt;或者用这个 毫秒镜像 &lt;a class=&#34;link&#34; href=&#34;https://1ms.run/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://1ms.run/&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-26_22-16-52.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-26_22-16-52.png&#34;
 	
 	
 	
@@ -2281,11 +2281,11 @@
         </item>
         <item>
         <title>docker-compose的使用</title>
-        <link>https://meizhaohui.github.io/devops/docker/docker-compose/</link>
+        <link>https://hellogitlab.com/devops/docker/docker-compose/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/docker-compose/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post docker-compose的使用" /&gt;&lt;h2 id=&#34;docker-compose的使用&#34;&gt;docker-compose的使用
+        <guid>https://hellogitlab.com/devops/docker/docker-compose/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post docker-compose的使用" /&gt;&lt;h2 id=&#34;docker-compose的使用&#34;&gt;docker-compose的使用
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application&amp;rsquo;s services. Then, with a single command, you create and start all the services from your configuration.&lt;/p&gt;
@@ -2400,11 +2400,11 @@
         </item>
         <item>
         <title>DockerInfobridge-nf-call-iptablesisdisabled警告处理</title>
-        <link>https://meizhaohui.github.io/devops/docker/warning-bridge-nf-call-iptables_is_disabled/</link>
+        <link>https://hellogitlab.com/devops/docker/warning-bridge-nf-call-iptables_is_disabled/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/warning-bridge-nf-call-iptables_is_disabled/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post DockerInfobridge-nf-call-iptablesisdisabled警告处理" /&gt;&lt;h2 id=&#34;docker-info-bridge-nf-call-iptables-is-disabled警告处理&#34;&gt;Docker Info bridge-nf-call-iptables is disabled警告处理
+        <guid>https://hellogitlab.com/devops/docker/warning-bridge-nf-call-iptables_is_disabled/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post DockerInfobridge-nf-call-iptablesisdisabled警告处理" /&gt;&lt;h2 id=&#34;docker-info-bridge-nf-call-iptables-is-disabled警告处理&#34;&gt;Docker Info bridge-nf-call-iptables is disabled警告处理
 &lt;/h2&gt;&lt;p&gt;在执行&lt;code&gt;docker info&lt;/code&gt;命令时，会提示以下警告：&lt;/p&gt;
 &lt;h3 id=&#34;警告描述&#34;&gt;警告描述
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2487,11 +2487,11 @@
         </item>
         <item>
         <title>docker的基本使用</title>
-        <link>https://meizhaohui.github.io/devops/docker/docker_basic_use/</link>
+        <link>https://hellogitlab.com/devops/docker/docker_basic_use/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/docker_basic_use/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post docker的基本使用" /&gt;&lt;h2 id=&#34;docker的基本使用&#34;&gt;docker的基本使用
+        <guid>https://hellogitlab.com/devops/docker/docker_basic_use/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post docker的基本使用" /&gt;&lt;h2 id=&#34;docker的基本使用&#34;&gt;docker的基本使用
 &lt;/h2&gt;&lt;h3 id=&#34;安装docker&#34;&gt;安装docker
 &lt;/h3&gt;&lt;p&gt;如果你配置了&lt;code&gt;Homebrew&lt;/code&gt;工具的话，使用&lt;code&gt;brew cask install docker&lt;/code&gt;就可以快速安装docker桌面工具。&lt;/p&gt;
 &lt;p&gt;或者从docker官网&lt;a class=&#34;link&#34; href=&#34;https://www.docker.com/products/docker-desktop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2564,7 +2564,7 @@
 &lt;p&gt;可以参考&lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/docker/docker-mirror-acceleration.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Docker 镜像加速&lt;/a&gt; 配置docker的国内镜像。&lt;/p&gt;
 &lt;p&gt;在任务栏点击&lt;code&gt;Docker Desktop&lt;/code&gt;应用图标，打开&lt;code&gt;Perferences&lt;/code&gt;个人设置，切换到&lt;code&gt;Docker Engine&lt;/code&gt;标签页，可以看到默认的配置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/docker_setting_default.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/docker_setting_default.png&#34;
 	
 	
 	
@@ -2591,7 +2591,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/docker_add_registry_mirrors.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/docker_add_registry_mirrors.png&#34;
 	
 	
 	
@@ -5692,11 +5692,11 @@
         </item>
         <item>
         <title>docker配置PostgreSQL数据库</title>
-        <link>https://meizhaohui.github.io/devops/docker/postgresql_in_docker/</link>
+        <link>https://hellogitlab.com/devops/docker/postgresql_in_docker/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/postgresql_in_docker/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post docker配置PostgreSQL数据库" /&gt;&lt;h2 id=&#34;docker配置postgresql数据库&#34;&gt;docker配置PostgreSQL数据库
+        <guid>https://hellogitlab.com/devops/docker/postgresql_in_docker/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post docker配置PostgreSQL数据库" /&gt;&lt;h2 id=&#34;docker配置postgresql数据库&#34;&gt;docker配置PostgreSQL数据库
 &lt;/h2&gt;&lt;p&gt;参考官方文档 &lt;a class=&#34;link&#34; href=&#34;https://hub.docker.com/_/postgres&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://hub.docker.com/_/postgres&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1-下载镜像&#34;&gt;1. 下载镜像
@@ -6623,11 +6623,11 @@
         </item>
         <item>
         <title>docker配置redis缓存</title>
-        <link>https://meizhaohui.github.io/devops/docker/redis_in_docker/</link>
+        <link>https://hellogitlab.com/devops/docker/redis_in_docker/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/redis_in_docker/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post docker配置redis缓存" /&gt;&lt;h2 id=&#34;docker配置redis缓存&#34;&gt;docker配置redis缓存
+        <guid>https://hellogitlab.com/devops/docker/redis_in_docker/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post docker配置redis缓存" /&gt;&lt;h2 id=&#34;docker配置redis缓存&#34;&gt;docker配置redis缓存
 &lt;/h2&gt;&lt;p&gt;我们可以使用redis来配置缓存，加速网站访问。&lt;/p&gt;
 &lt;p&gt;redis镜像：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -6995,11 +6995,11 @@
         </item>
         <item>
         <title>docker容器增加端口映射</title>
-        <link>https://meizhaohui.github.io/devops/docker/add_port_to_container/</link>
+        <link>https://hellogitlab.com/devops/docker/add_port_to_container/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/add_port_to_container/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post docker容器增加端口映射" /&gt;&lt;h2 id=&#34;docker容器增加端口映射&#34;&gt;docker容器增加端口映射
+        <guid>https://hellogitlab.com/devops/docker/add_port_to_container/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post docker容器增加端口映射" /&gt;&lt;h2 id=&#34;docker容器增加端口映射&#34;&gt;docker容器增加端口映射
 &lt;/h2&gt;&lt;h3 id=&#34;1-查看需要增加端口映射的容器信息&#34;&gt;1. 查看需要增加端口映射的容器信息
 &lt;/h3&gt;&lt;p&gt;查看当前运行的容器:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -7671,7 +7671,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;先修改&lt;code&gt;hostconfig.jq.json&lt;/code&gt;配置文件，可以看到，在9行的&lt;code&gt;PortBindings&lt;/code&gt;配置属性下，已经有一个8081端口的配置，也就是10-15行的内容，我们复制一下，然后在下面新增8082和8083端口配置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-18_00-07-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-18_00-07-58.png&#34;
 	
 	
 	
@@ -7732,7 +7732,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;接着修改&lt;code&gt;config.v2.jq.json&lt;/code&gt;, 找到&lt;code&gt;ExposedPorts&lt;/code&gt;仿照之前内容添加端口映射:&lt;/p&gt;
 &lt;p&gt;修改后内容如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-18_00-02-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-18_00-02-02.png&#34;
 	
 	
 	
@@ -7829,11 +7829,11 @@
         </item>
         <item>
         <title>GitLab的替代者-轻量级Gogs安装与配置</title>
-        <link>https://meizhaohui.github.io/devops/docker/gogs_in_docker/</link>
+        <link>https://hellogitlab.com/devops/docker/gogs_in_docker/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/gogs_in_docker/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post GitLab的替代者-轻量级Gogs安装与配置" /&gt;&lt;h2 id=&#34;gitlab的替代者-轻量级gogs安装与配置&#34;&gt;GitLab的替代者-轻量级Gogs安装与配置
+        <guid>https://hellogitlab.com/devops/docker/gogs_in_docker/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post GitLab的替代者-轻量级Gogs安装与配置" /&gt;&lt;h2 id=&#34;gitlab的替代者-轻量级gogs安装与配置&#34;&gt;GitLab的替代者-轻量级Gogs安装与配置
 &lt;/h2&gt;&lt;p&gt;我们使用docker安装gogs服务。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;镜像地址：&lt;a class=&#34;link&#34; href=&#34;https://registry.hub.docker.com/r/gogs/gogs&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -7903,7 +7903,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;13-准备证书文件&#34;&gt;1.3 准备证书文件
 &lt;/h4&gt;&lt;p&gt;在腾讯云上面申请二级域名&lt;code&gt;gogs.hellogitlab.com&lt;/code&gt;的免费证书。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210423234735.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210423234735.png&#34;
 	
 	
 	
@@ -7913,7 +7913,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;为后面设置HTTPS协议做准备。&lt;/p&gt;
 &lt;p&gt;在创建证书的同时，我们也需要增加一个&lt;code&gt;gogs.hellogitlab.com&lt;/code&gt;的域名解析。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210425225729.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210425225729.png&#34;
 	
 	
 	
@@ -8070,7 +8070,7 @@
 :::&lt;/p&gt;
 &lt;h4 id=&#34;17-初始安装配置&#34;&gt;1.7 初始安装配置
 &lt;/h4&gt;&lt;p&gt;打开浏览器，访问页面&lt;code&gt;http://hellogitlab.com:10080&lt;/code&gt;,此时会自动跳转到首次运行安装程序页面。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424001244.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424001244.png&#34;
 	
 	
 	
@@ -8079,7 +8079,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们使用postgresql，填写刚才创建的数据库信息:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424004527.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424004527.png&#34;
 	
 	
 	
@@ -8088,7 +8088,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;最后需要对外暴露的域名和端口设置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424004639.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424004639.png&#34;
 	
 	
 	
@@ -8156,7 +8156,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后在&lt;code&gt;/etc/nginx/conf.d/&lt;/code&gt;目录下创建一个&lt;code&gt;gogs.conf&lt;/code&gt;的配置文件。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/nginx/gogs.conf&#34; &gt;download gogs.conf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/nginx/gogs.conf&#34; &gt;download gogs.conf&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;配置文件内容如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -8225,7 +8225,7 @@
 &lt;p&gt;可以在后面重新运行docker容器后，再进行配置。&lt;/p&gt;
 &lt;h4 id=&#34;110-头像优化&#34;&gt;1.10 头像优化
 &lt;/h4&gt;&lt;p&gt;默认情况下，会加载&lt;code&gt;gravatar.com&lt;/code&gt;网站上的头像，而在国内这个网站却被屏蔽了，导致Gogs系统显示头像会出现异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424225339.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424225339.png&#34;
 	
 	
 	
@@ -8403,7 +8403,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，我们可以访问&lt;code&gt;https://gogs.hellogitlab.com:10081/install&lt;/code&gt;，进行初始化安装配置。&lt;/p&gt;
 &lt;p&gt;数据库配置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424234958.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424234958.png&#34;
 	
 	
 	
@@ -8412,7 +8412,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;应用基本配置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424235044.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424235044.png&#34;
 	
 	
 	
@@ -8421,7 +8421,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;邮件服务配置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424235357.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424235357.png&#34;
 	
 	
 	
@@ -8430,7 +8430,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;注意，此处邮件服务时，应在SMTP主机处加上端口号，我们需要使用SMTP加密，使用465端口号。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210425000119.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210425000119.png&#34;
 	
 	
 	
@@ -8441,7 +8441,7 @@
 &lt;p&gt;此处我们启用邮件通知提醒。&lt;/p&gt;
 &lt;p&gt;另外，在服务器和其他服务设置中。我们&lt;code&gt;禁用Gravatar服务&lt;/code&gt;，以及&lt;code&gt;禁用用户自主注册&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;最后要设置一个管理员账号。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210424235721.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210424235721.png&#34;
 	
 	
 	
@@ -8451,7 +8451,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;配置好后，点击&lt;code&gt;立即安装&lt;/code&gt;按钮。&lt;/p&gt;
 &lt;p&gt;安装成功后，系统自动进入到&lt;code&gt;控制面板&lt;/code&gt;页面:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210425000235.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210425000235.png&#34;
 	
 	
 	
@@ -8554,7 +8554,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们刷新页面，可以看到刚才的提交已经显示在页面上了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210425001637.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210425001637.png&#34;
 	
 	
 	
@@ -8565,7 +8565,7 @@
 &lt;p&gt;说明HTTPS方式配置正常！&lt;/p&gt;
 &lt;p&gt;同样，使用SSH方式下载试一下。&lt;/p&gt;
 &lt;p&gt;使用SSH方式下载前，需要将自动的电脑公钥加到Gogs系统的个人账号的SSH密钥当中。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210425002015.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210425002015.png&#34;
 	
 	
 	
@@ -8709,7 +8709,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在Gogs系统上面，刷新页面，可以看到刚才的提交已经正常显示了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210425003300.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210425003300.png&#34;
 	
 	
 	
@@ -8799,7 +8799,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时在浏览器中打开&lt;code&gt;https://gogs.hellogitlab.com/&lt;/code&gt;，可以正常访问，但查看我们仓库中的&lt;code&gt;HTTPS&lt;/code&gt;形式下载的URL并没有更新过来，还是&lt;code&gt;https://gogs.hellogitlab.com:10081/meizhaohui/testrepo.git&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210426235941.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210426235941.png&#34;
 	
 	
 	
@@ -8878,7 +8878,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到&lt;code&gt;gogs&lt;/code&gt;容器启动成功。我们在浏览器再检查一下。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20210427003703.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20210427003703.png&#34;
 	
 	
 	
@@ -8982,11 +8982,11 @@
         </item>
         <item>
         <title>查看下载的docker镜像的版本信息</title>
-        <link>https://meizhaohui.github.io/devops/docker/the_latest_image/</link>
+        <link>https://hellogitlab.com/devops/docker/the_latest_image/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/the_latest_image/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 查看下载的docker镜像的版本信息" /&gt;&lt;h2 id=&#34;查看下载的docker镜像的版本信息&#34;&gt;查看下载的docker镜像的版本信息
+        <guid>https://hellogitlab.com/devops/docker/the_latest_image/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 查看下载的docker镜像的版本信息" /&gt;&lt;h2 id=&#34;查看下载的docker镜像的版本信息&#34;&gt;查看下载的docker镜像的版本信息
 &lt;/h2&gt;&lt;h3 id=&#34;1-现象描述&#34;&gt;1. 现象描述
 &lt;/h3&gt;&lt;p&gt;通常我们喜欢使用&lt;code&gt;docker pull 镜像名&lt;/code&gt;这种方式下载docker镜像，如下载&lt;code&gt;redis&lt;/code&gt;或&lt;code&gt;nginx&lt;/code&gt;镜像：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -9315,7 +9315,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-15_21-46-06.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-15_21-46-06.png&#34;
 	
 	
 	
@@ -9513,11 +9513,11 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
         </item>
         <item>
         <title>搭建自己的nexus私有仓库1--nexus初体验</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库1--nexus初体验" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库1nexus初体验&#34;&gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库1--nexus初体验" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库1nexus初体验&#34;&gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验
 &lt;/h2&gt;&lt;p&gt;本&lt;del&gt;文&lt;/del&gt;系列计划做以下事情：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;使用docker sonatype/nexus3镜像创建nexus容器。&lt;/li&gt;
@@ -9668,7 +9668,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/div&gt;&lt;h4 id=&#34;13-nexus管理端的使用&#34;&gt;1.3 nexus管理端的使用
 &lt;/h4&gt;&lt;p&gt;访问nexus管理网站 &lt;a class=&#34;link&#34; href=&#34;http://nexushub.com:8081/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://nexushub.com:8081/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-20-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-20-19.png&#34;
 	
 	
 	
@@ -9677,7 +9677,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击右上角的登陆&amp;quot;Sign in&amp;quot;，会提示输入用户名密码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-22-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-22-31.png&#34;
 	
 	
 	
@@ -9700,7 +9700,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到&lt;code&gt;cb417bf4-eb29-43e5-89c8-304860c41ede&lt;/code&gt;就是nexus的初始密码。&lt;/p&gt;
 &lt;p&gt;输入账号&lt;code&gt;admin&lt;/code&gt;，密码&lt;code&gt;cb417bf4-eb29-43e5-89c8-304860c41ede&lt;/code&gt;，然后点击【Sign in】登陆：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-25-41.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-25-41.png&#34;
 	
 	
 	
@@ -9709,7 +9709,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;向导提示处，直接点【Next】下一步:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-26-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-26-58.png&#34;
 	
 	
 	
@@ -9718,7 +9718,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;
 此时让重新设置admin密码，注意设置一个强密码，不要让别人知道：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-29-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-29-38.png&#34;
 	
 	
 	
@@ -9727,7 +9727,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们勾选允许匿名访问：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-31-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-31-20.png&#34;
 	
 	
 	
@@ -9736,7 +9736,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;最后点击【Finish】完成即可：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-32-29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-32-29.png&#34;
 	
 	
 	
@@ -9745,7 +9745,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;
 点击左侧的【Browse】浏览器，可以随意看一下系统自带的几个示例仓库：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-34-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-34-48.png&#34;
 	
 	
 	
@@ -9754,7 +9754,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;通过点击页面顶部的齿轮设置图标：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-21_23-38-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-21_23-38-38.png&#34;
 	
 	
 	
@@ -9765,7 +9765,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;p&gt;可以看到很多相关的设置，上图是API页面视图。&lt;/p&gt;
 &lt;h4 id=&#34;14-创建第一个代理仓库&#34;&gt;1.4 创建第一个代理仓库
 &lt;/h4&gt;&lt;p&gt;上一节中，我们知道通过点击页面顶部的齿轮设置图标：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-33-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-33-54.png&#34;
 	
 	
 	
@@ -9788,7 +9788,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;ul&gt;
 &lt;li&gt;Step 1: 点击【Create Repository】按钮&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-47-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-47-01.png&#34;
 	
 	
 	
@@ -9800,7 +9800,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;li&gt;Step 2: 【Select Recipe】选项仓库类型&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Select Recipe 表示选择配方，也就是选择仓库类型的意思。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-52-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-52-22.png&#34;
 	
 	
 	
@@ -9809,7 +9809,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;
 可以看到，在仓库类型选择界面有非常多的仓库类型，如常用的docker、maven2、npm等都有proxy、hosted、group三种类型的仓库。我们需要使用的yum仓库，将页面拉到最底部，可以看到&lt;code&gt;yum(proxy)&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-54-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-54-44.png&#34;
 	
 	
 	
@@ -9818,7 +9818,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;
 我们直接点击&lt;code&gt;yum(proxy)&lt;/code&gt;进入到yum代理仓库配置界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-56-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-56-46.png&#34;
 	
 	
 	
@@ -9849,7 +9849,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;li&gt;HTTP request setting，HTTP请求设置，我们一般只需要设置一下User-Agent请求头即可，如填写&amp;quot;Sync yum repo. email: &lt;a class=&#34;link&#34; href=&#34;mailto:mzh.whut@gmail.com&#34; &gt;mzh.whut@gmail.com&lt;/a&gt;&amp;quot;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;按以上说明填写即可：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_23-27-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_23-27-38.png&#34;
 	
 	
 	
@@ -9857,7 +9857,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_23-28-52.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_23-28-52.png&#34;
 	
 	
 	
@@ -9867,7 +9867,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &gt;
 最后，点击【Create Repository】按钮，就完成仓库的创建了。&lt;/p&gt;
 &lt;p&gt;这时候在仓库列表处，可以看到刚才创建的&lt;code&gt;yum-proxy&lt;/code&gt;代理仓库：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_23-30-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_23-30-16.png&#34;
 	
 	
 	
@@ -9876,7 +9876,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;
 点击仓库行中的【copy】图标，可以查看仓库对应的URL信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_23-32-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_23-32-25.png&#34;
 	
 	
 	
@@ -10208,7 +10208,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，是从我们配置的代理仓库下载的！&lt;/p&gt;
 &lt;p&gt;在nexus浏览器处，也可以看到刚才下载的包被缓存下来了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_23-57-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_23-57-04.png&#34;
 	
 	
 	
@@ -10230,7 +10230,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
     &gt;https://mirrors.tuna.tsinghua.edu.cn/epel/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;User Agent: Sync yum repo&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-27_19-24-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-27_19-24-47.png&#34;
 	
 	
 	
@@ -10238,7 +10238,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 	
 &gt;
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-25_07-17-35.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-25_07-17-35.png&#34;
 	
 	
 	
@@ -10248,7 +10248,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &gt;
 信息填写完成后，点击【Create Repository】按钮，就完成仓库的创建了。&lt;/p&gt;
 &lt;p&gt;可以看到刚才创建的仓库，已经出现在仓库列表中：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-25_07-19-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-25_07-19-06.png&#34;
 	
 	
 	
@@ -10578,11 +10578,11 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
         </item>
         <item>
         <title>搭建自己的nexus私有仓库10--NexusAPI接口的使用2</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_10_nexus_api_2/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_10_nexus_api_2/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_10_nexus_api_2/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库10--NexusAPI接口的使用2" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库10nexus-api接口的使用2&#34;&gt;搭建自己的nexus私有仓库10&amp;ndash;Nexus API接口的使用2
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_10_nexus_api_2/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库10--NexusAPI接口的使用2" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库10nexus-api接口的使用2&#34;&gt;搭建自己的nexus私有仓库10&amp;ndash;Nexus API接口的使用2
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第9篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -10712,7 +10712,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_20-42-20.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_20-42-20.png&#34;
 	
 	
 	
@@ -10920,7 +10920,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后在ApiPost中发送请求，可以看到返回了201状态码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_21-39-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_21-39-08.png&#34;
 	
 	
 	
@@ -11022,7 +11022,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，在Nexus上面可以看到刚才通过API创建的仓库：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_21-41-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_21-41-20.png&#34;
 	
 	
 	
@@ -11411,7 +11411,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在Nexus Browse浏览器页面可以看到telnet的包已经被缓存了下来：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_22-05-52.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_22-05-52.png&#34;
 	
 	
 	
@@ -11638,7 +11638,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;刷新Nexus页面，可以看到，pypi-proxy代理仓库创建成功！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_22-31-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_22-31-58.png&#34;
 	
 	
 	
@@ -11732,7 +11732,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，可以在Nexus Browse浏览器页面看到已经有pypi-proxy代理仓库的缓存数据了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_22-41-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_22-41-56.png&#34;
 	
 	
 	
@@ -11795,7 +11795,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;没问题，通过代理仓库下载了相关的包，Nexus Browse浏览器页面也有新的更新了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_22-45-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_22-45-27.png&#34;
 	
 	
 	
@@ -12044,7 +12044,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;刷新Nexus页面，可以看到，maven-proxy代理仓库创建成功！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-23_21-49-41.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-23_21-49-41.png&#34;
 	
 	
 	
@@ -12055,7 +12055,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;代理仓库详情：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-23_21-56-06.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-23_21-56-06.png&#34;
 	
 	
 	
@@ -12129,7 +12129,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后创建maven项目：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-23_22-06-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-23_22-06-03.png&#34;
 	
 	
 	
@@ -12139,7 +12139,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-23_22-06-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-23_22-06-54.png&#34;
 	
 	
 	
@@ -12151,7 +12151,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到maven项目创建成功，能够正常从代理仓库下载依赖包。&lt;/p&gt;
 &lt;p&gt;然后打开对应的maven项目，可以看到能够正常运行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-23_22-45-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-23_22-45-47.png&#34;
 	
 	
 	
@@ -12162,7 +12162,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在nexus browse浏览器页面也可以看到maven-proxy仓库缓存了数据：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-23_22-47-41.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-23_22-47-41.png&#34;
 	
 	
 	
@@ -12469,7 +12469,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;刷新Nexus页面，可以看到，docker-proxy代理仓库创建成功！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-27_20-35-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-27_20-35-18.png&#34;
 	
 	
 	
@@ -12479,7 +12479,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-27_20-37-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-27_20-37-39.png&#34;
 	
 	
 	
@@ -12671,7 +12671,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;刷新Nexus页面，可以看到，docker-hosted本地仓库创建成功！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-01_23-40-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-01_23-40-57.png&#34;
 	
 	
 	
@@ -12856,7 +12856,7 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;刷新Nexus页面，可以看到，docker-group聚合仓库创建成功！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-03-01_23-58-41.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-01_23-58-41.png&#34;
 	
 	
 	
@@ -12870,11 +12870,11 @@ jq命令的使用，可以参考我的总结文档&lt;a class=&#34;link&#34; hre
         </item>
         <item>
         <title>搭建自己的nexus私有仓库2--创建pythonpypi代理</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_2/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_2/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_2/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库2--创建pythonpypi代理" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库2创建python-pypi代理&#34;&gt;搭建自己的nexus私有仓库2&amp;ndash;创建python pypi代理
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_2/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库2--创建pythonpypi代理" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库2创建python-pypi代理&#34;&gt;搭建自己的nexus私有仓库2&amp;ndash;创建python pypi代理
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第2篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -12968,7 +12968,7 @@ pip
 &lt;p&gt;URL链接 &lt;code&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/code&gt;就是我们需要使用的代理地址。&lt;/p&gt;
 &lt;h3 id=&#34;1-nexus创建pypi代理仓库&#34;&gt;1. nexus创建pypi代理仓库
 &lt;/h3&gt;&lt;p&gt;上一节中，我们知道通过点击页面顶部的齿轮设置图标：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-33-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-33-54.png&#34;
 	
 	
 	
@@ -12977,7 +12977,7 @@ pip
 	
 &gt;
 进入到设置页面后，点击左侧的【Repositories】进入到仓库管理页面，点击【Create Repository】按钮，然后选择【pypi (proxy)】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-12_22-33-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-12_22-33-48.png&#34;
 	
 	
 	
@@ -12994,7 +12994,7 @@ pip
 &lt;/ul&gt;
 &lt;p&gt;配置完成后，保存。&lt;/p&gt;
 &lt;p&gt;保存后，点击新创建的&lt;code&gt;pypi-proxy&lt;/code&gt;仓库，可以看到仓库详情：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-12_22-55-32.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-12_22-55-32.png&#34;
 	
 	
 	
@@ -13087,7 +13087,7 @@ pip
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，成功通过代理安装了Flask 2.0.3版本。&lt;/p&gt;
 &lt;p&gt;此时，在nexus界面Browse浏览器里面也可以看到刚才下载的Flask包被缓存了下来：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-12_23-05-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-12_23-05-22.png&#34;
 	
 	
 	
@@ -13147,11 +13147,11 @@ pip
         </item>
         <item>
         <title>搭建自己的nexus私有仓库3--创建yumius代理</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_3/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_3/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_3/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库3--创建yumius代理" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库3创建yum-ius代理&#34;&gt;搭建自己的nexus私有仓库3&amp;ndash;创建yum ius代理
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_3/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库3--创建yumius代理" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库3创建yum-ius代理&#34;&gt;搭建自己的nexus私有仓库3&amp;ndash;创建yum ius代理
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第3篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -13266,7 +13266,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;1-nexus创建yum-ius代理仓库&#34;&gt;1. nexus创建yum ius代理仓库
 &lt;/h3&gt;&lt;p&gt;上一节中，我们知道通过点击页面顶部的齿轮设置图标：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-33-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-33-54.png&#34;
 	
 	
 	
@@ -13275,7 +13275,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 	
 &gt;
 进入到设置页面后，点击左侧的【Repositories】进入到仓库管理页面，点击【Create Repository】按钮，我们需要使用的yum仓库，将页面拉到最底部，可以看到&lt;code&gt;yum(proxy)&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-54-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-54-44.png&#34;
 	
 	
 	
@@ -13284,7 +13284,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 	
 &gt;
 我们直接点击&lt;code&gt;yum(proxy)&lt;/code&gt;进入到yum代理仓库配置界面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-56-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-56-46.png&#34;
 	
 	
 	
@@ -13301,7 +13301,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &lt;/ul&gt;
 &lt;p&gt;配置完成后，保存。&lt;/p&gt;
 &lt;p&gt;保存后，点击新创建的&lt;code&gt;ius-proxy&lt;/code&gt;仓库，可以看到仓库详情：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-20_15-52-08.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-20_15-52-08.png&#34;
 	
 	
 	
@@ -13663,11 +13663,11 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
         </item>
         <item>
         <title>搭建自己的nexus私有仓库4--搭建docker私有仓库</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_4_docker_proxy/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_4_docker_proxy/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_4_docker_proxy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库4--搭建docker私有仓库" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库4搭建docker私有仓库&#34;&gt;搭建自己的nexus私有仓库4&amp;ndash;搭建docker私有仓库
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_4_docker_proxy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库4--搭建docker私有仓库" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库4搭建docker私有仓库&#34;&gt;搭建自己的nexus私有仓库4&amp;ndash;搭建docker私有仓库
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第4篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -13825,7 +13825,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &lt;h3 id=&#34;3-nexus创建docker-proxy代理仓库&#34;&gt;3. nexus创建docker proxy代理仓库
 &lt;/h3&gt;&lt;h4 id=&#34;31-docker代理未暴露端口说明&#34;&gt;3.1 docker代理未暴露端口说明
 &lt;/h4&gt;&lt;p&gt;在系列文章第一篇中，我们知道通过点击页面顶部的齿轮设置图标：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-08-22_22-33-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-08-22_22-33-54.png&#34;
 	
 	
 	
@@ -13834,7 +13834,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 	
 &gt;
 进入到设置页面后，点击左侧的【Repositories】进入到仓库管理页面，点击【Create Repository】按钮，我们需要使用的docker仓库，以看到&lt;code&gt;docker(proxy)&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-20_23-04-27.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-20_23-04-27.png&#34;
 	
 	
 	
@@ -13879,7 +13879,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &lt;p&gt;HTTP request setting，HTTP请求设置，我们一般只需要设置一下User-Agent请求头即可，如填写&amp;quot;Sync docker image. email: &lt;a class=&#34;link&#34; href=&#34;mailto:mzh.whut@gmail.com&#34; &gt;mzh.whut@gmail.com&lt;/a&gt;&amp;quot;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-20_23-21-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-20_23-21-03.png&#34;
 	
 	
 	
@@ -13896,7 +13896,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &lt;p&gt;我自己通过测试发现在腾讯云主机上面使用腾讯内网地址https://mirror.ccs.tencentyun.com 加速更稳定。&lt;/p&gt;
 &lt;p&gt;由于我们是测试阶段，docker使用的blob还是使用默认&lt;code&gt;default&lt;/code&gt; Blob存储即可，最后点击【Create repository】创建仓库即可。&lt;/p&gt;
 &lt;p&gt;创建后，点击新创建的&lt;code&gt;docker-proxy&lt;/code&gt;仓库，可以看到仓库详情：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-20_23-25-34.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-20_23-25-34.png&#34;
 	
 	
 	
@@ -13906,7 +13906,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &gt;
 这里的URL &lt;a class=&#34;link&#34; href=&#34;http://nexushub.com:8081/repository/docker-proxy/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://nexushub.com:8081/repository/docker-proxy/&lt;/a&gt; 并不是我们docker代理仓库使用的地址，如果直接在浏览器中访问，可以看到以下说明：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-20_23-27-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-20_23-27-03.png&#34;
 	
 	
 	
@@ -14082,7 +14082,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &lt;/div&gt;&lt;p&gt;注意密码是&lt;code&gt;b0466c4f-aeb5-49a4-b61a-f2904890c5fa&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;使用初始密码登陆后，需要修改密码。&lt;/p&gt;
 &lt;p&gt;登陆后，可以看到，之前我手动创建的仓库都没有了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_19-42-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_19-42-50.png&#34;
 	
 	
 	
@@ -14095,7 +14095,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 &lt;h5 id=&#34;322-创建docker-blob-对象&#34;&gt;3.2.2 创建docker blob 对象
 &lt;/h5&gt;&lt;p&gt;为了使docker的blob和其他的不同，我们创建一个docker的blob，用来存储docker相关的文件。&lt;/p&gt;
 &lt;p&gt;依次点击【Repository】&amp;ndash;【Blob Stores】&amp;ndash;【Create Blob Store】:
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_19-53-57.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_19-53-57.png&#34;
 	
 	
 	
@@ -14104,7 +14104,7 @@ IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方�
 	
 &gt;
 Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_19-56-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_19-56-08.png&#34;
 	
 	
 	
@@ -14113,7 +14113,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后，名称设置为&lt;code&gt;docker&lt;/code&gt;，不勾选【Soft Quota】，最后点击【Save】保存:
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_20-04-37.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_20-04-37.png&#34;
 	
 	
 	
@@ -14122,7 +14122,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;
 可以看到，新的Blob创建成功：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_20-06-44.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_20-06-44.png&#34;
 	
 	
 	
@@ -14145,7 +14145,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;li&gt;Blob store: 选择【docker】blob对象&lt;/li&gt;
 &lt;li&gt;Deployment policy: 测试时，先可以选择【Allow redeploy】允许重复发布，后期如果用在正式生产环境时，可以将该修改为【Disable redeploy】。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_20-14-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_20-14-28.png&#34;
 	
 	
 	
@@ -14168,7 +14168,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;li&gt;Blob store: 选择【docker】blob对象&lt;/li&gt;
 &lt;li&gt;Group: Member Repositories，将【docker-hosted】和 【docker-proxy】添加到右侧，这里成员仓库的顺序可以稍微规划下，一般来说将本地的放前面，代理第三方的放后面，好处就是优先使用本地或小众的镜像仓库。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_20-30-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_20-30-45.png&#34;
 	
 	
 	
@@ -14176,7 +14176,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_20-31-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_20-31-43.png&#34;
 	
 	
 	
@@ -14186,7 +14186,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;
 相关信息填写好后，最后点击【Create repository】创建仓库即可。&lt;/p&gt;
 &lt;p&gt;这样我们三个docker仓库已经创建好了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_20-41-29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_20-41-29.png&#34;
 	
 	
 	
@@ -14196,7 +14196,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;325-开启匿名访问权限&#34;&gt;3.2.5 开启匿名访问权限
 &lt;/h5&gt;&lt;p&gt;依次点击【Security】&amp;ndash;【Realms】,将【Docker Bearer Token Tealm】添加到右侧：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-21_21-25-38.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-21_21-25-38.png&#34;
 	
 	
 	
@@ -14294,7 +14294,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@nexus ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-24_06-24-00.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-24_06-24-00.png&#34;
 	
 	
 	
@@ -14363,7 +14363,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在nexus上面检查：&lt;/p&gt;
 &lt;p&gt;Blob中显示已经有10个blob对象了：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-24_06-28-20.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-24_06-28-20.png&#34;
 	
 	
 	
@@ -14372,7 +14372,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在nexus Browse中也可以看到对应的镜像信息:
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-24_06-27-30.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-24_06-27-30.png&#34;
 	
 	
 	
@@ -14386,11 +14386,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>搭建自己的nexus私有仓库5--测试docker仓库pull和push</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_5_test_docker_proxy/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_5_test_docker_proxy/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_5_test_docker_proxy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库5--测试docker仓库pull和push" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库5测试docker仓库pull和push&#34;&gt;搭建自己的nexus私有仓库5&amp;ndash;测试docker仓库pull和push
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_5_test_docker_proxy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库5--测试docker仓库pull和push" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库5测试docker仓库pull和push&#34;&gt;搭建自己的nexus私有仓库5&amp;ndash;测试docker仓库pull和push
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第5篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -14639,7 +14639,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，能够正常下载。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-24_21-38-45.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-24_21-38-45.png&#34;
 	
 	
 	
@@ -15103,7 +15103,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@master ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-26_21-39-25.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-26_21-39-25.png&#34;
 	
 	
 	
@@ -15201,7 +15201,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，正常推送到远程仓库了。&lt;/p&gt;
 &lt;p&gt;此时，在Nexus Browse浏览器中，可以看到docker-hosted仓库中已经有blob对象数据了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-26_21-53-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-26_21-53-43.png&#34;
 	
 	
 	
@@ -15423,7 +15423,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在Nexus Browse浏览器中，可以看到docker-group仓库中已经有blob对象数据了:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-26_22-21-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-26_22-21-56.png&#34;
 	
 	
 	
@@ -15547,7 +15547,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，提示异常&amp;quot;denied: Deploying to groups is a PRO-licensed feature. See &lt;a class=&#34;link&#34; href=&#34;https://links.sonatype.com/product-nexus-repository%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://links.sonatype.com/product-nexus-repository&#34;&lt;/a&gt; 权限拒绝，部署到组需要PRO许可。&lt;/p&gt;
 &lt;p&gt;即要专业版才让朝聚合仓库里面推送镜像，我们简单看下官方的报价：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-26_22-41-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-26_22-41-01.png&#34;
 	
 	
 	
@@ -15557,7 +15557,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;即，如果你有50个用户，那一个用户一个月要127美元！按 2024-01-26 的汇率，每个月约要911.39元。&lt;/p&gt;
 &lt;p&gt;看看免费版和专业版的区别：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-26_22-43-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-26_22-43-15.png&#34;
 	
 	
 	
@@ -15605,11 +15605,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>搭建自己的nexus私有仓库6--使用nginx反向代理</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_6_nginx_proxy/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_6_nginx_proxy/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_6_nginx_proxy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库6--使用nginx反向代理" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库6使用nginx反向代理&#34;&gt;搭建自己的nexus私有仓库6&amp;ndash;使用nginx反向代理
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_6_nginx_proxy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库6--使用nginx反向代理" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库6使用nginx反向代理&#34;&gt;搭建自己的nexus私有仓库6&amp;ndash;使用nginx反向代理
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第6篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -15764,7 +15764,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;为了子域名能够正常使用，需要在&lt;code&gt;hellogitlab.com&lt;/code&gt;域名中添加以下解析，如果你不使用子域名，则可以忽略此步：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-27_23-53-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-27_23-53-57.png&#34;
 	
 	
 	
@@ -15780,7 +15780,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.net&lt;/code&gt;后面的点是腾讯自己加的。&lt;/p&gt;
 &lt;h4 id=&#34;22-域名解析&#34;&gt;2.2 域名解析
 &lt;/h4&gt;&lt;p&gt;你应该在你对应的域名服务商那里配置域名解析，我直接在腾讯云上面配置域名解析：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-02-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-02-08.png&#34;
 	
 	
 	
@@ -15789,7 +15789,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;域名解析时，需要添加&lt;code&gt;@&lt;/code&gt;和&lt;code&gt;www&lt;/code&gt;解析：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-06-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-06-00.png&#34;
 	
 	
 	
@@ -15797,7 +15797,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-07-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-07-38.png&#34;
 	
 	
 	
@@ -15807,7 +15807,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;23-ssl证书申请&#34;&gt;2.3 SSL证书申请
 &lt;/h4&gt;&lt;p&gt;我在腾讯云上面申请免费的SSL证书。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-27_18-26-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-27_18-26-50.png&#34;
 	
 	
 	
@@ -15815,7 +15815,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-27_21-51-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-27_21-51-18.png&#34;
 	
 	
 	
@@ -15830,7 +15830,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;建议使用【自动DNS验证】，那样腾讯会自动将域名解析记录添加到域名解析列表中，这样腾讯会快速颁发SSL证书给我们。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
 &lt;p&gt;证书申请成功后，就可以下载域名使用的SSL证书文件。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-27_23-42-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-27_23-42-54.png&#34;
 	
 	
 	
@@ -15839,7 +15839,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在【我的证书】页面，点击证书信息的右侧【下载】：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-27_23-44-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-27_23-44-39.png&#34;
 	
 	
 	
@@ -15850,7 +15850,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;根据你使用服务器类型，选择相应的证书即可。我因为使用的Nginx服务器，直接点击Nginx右侧的下载即可。&lt;/p&gt;
 &lt;p&gt;下载的证书是一个压缩包，使用压缩软件解压即可。&lt;/p&gt;
 &lt;p&gt;解压后，查看文件夹中的文件列表信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-27_23-48-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-27_23-48-15.png&#34;
 	
 	
 	
@@ -16054,7 +16054,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;你可以直接点&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/nginx/nexus.conf&#34; &gt;download nexus.conf&lt;/a&gt; 下载我配置好的nginx配置文件。配置文件中关键信息直接使用注释添加说明了。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;你可以直接点&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/nginx/nexus.conf&#34; &gt;download nexus.conf&lt;/a&gt; 下载我配置好的nginx配置文件。配置文件中关键信息直接使用注释添加说明了。&lt;/p&gt;
 &lt;p&gt;或者复制以下配置文件内容：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -16392,7 +16392,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;h4 id=&#34;35-访问域名&#34;&gt;3.5 访问域名
 &lt;/h4&gt;&lt;p&gt;访问web管理控制台 &lt;a class=&#34;link&#34; href=&#34;https://nexus.hellogitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://nexus.hellogitlab.com/&lt;/a&gt;，可以正常显示，随意点下看：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-19-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-19-01.png&#34;
 	
 	
 	
@@ -16401,7 +16401,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，我们之前下载的一些镜像：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-20-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-20-25.png&#34;
 	
 	
 	
@@ -16412,7 +16412,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;说明web管理控制台是可以正常访问的。&lt;/p&gt;
 &lt;p&gt;在浏览器中访问&lt;a class=&#34;link&#34; href=&#34;https://docker-registry.hellogitlab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://docker-registry.hellogitlab.com/&lt;/a&gt;，提示不是一个正常的docker请求，说明Nginx代理正常，有后端响应：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-22-42.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-22-42.png&#34;
 	
 	
 	
@@ -16421,7 +16421,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在浏览器上面也可以看到证书是有效证书：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-24-46.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-24-46.png&#34;
 	
 	
 	
@@ -16429,7 +16429,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-23-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-23-51.png&#34;
 	
 	
 	
@@ -16538,7 +16538,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，很快就下载下来了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_00-28-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_00-28-39.png&#34;
 	
 	
 	
@@ -16914,7 +16914,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，这次正常推送镜像到远程仓库了！&lt;/p&gt;
 &lt;p&gt;在Nexus Browse浏览器中检查一下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_17-05-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_17-05-02.png&#34;
 	
 	
 	
@@ -17103,7 +17103,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，修改Nginx配置&lt;code&gt;proxy_set_header X-Forwarded-Proto https;&lt;/code&gt;后，从Neuxs中拉取镜像不受影响。&lt;/p&gt;
 &lt;p&gt;此时在Nexus Browse浏览器上，再次查看&lt;code&gt;mysql-client:push-by-ssl&lt;/code&gt;镜像信息，可以看到&lt;code&gt;Last downloaded&lt;/code&gt;信息发生了变化，从【&lt;strong&gt;Last downloaded&lt;/strong&gt;	has not been downloaded】变成了【&lt;strong&gt;Last downloaded&lt;/strong&gt;	Sun Jan 28 2024 17:06:50 GMT+0800 (中国标准时间)】，发生变化是正常的，因为我们刚才从Nexus中下载了该镜像：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_17-26-33.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_17-26-33.png&#34;
 	
 	
 	
@@ -17121,11 +17121,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>搭建自己的nexus私有仓库7--修改nexus容器时区</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_7_change_timezone/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_7_change_timezone/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_7_change_timezone/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库7--修改nexus容器时区" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库7修改nexus容器时区&#34;&gt;搭建自己的nexus私有仓库7&amp;ndash;修改nexus容器时区
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_7_change_timezone/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库7--修改nexus容器时区" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库7修改nexus容器时区&#34;&gt;搭建自己的nexus私有仓库7&amp;ndash;修改nexus容器时区
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第7篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -17233,7 +17233,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;h3 id=&#34;2-现象说明&#34;&gt;2. 现象说明
 &lt;/h3&gt;&lt;h4 id=&#34;21-nexus-web页面显示&#34;&gt;2.1 Nexus web页面显示
 &lt;/h4&gt;&lt;p&gt;我们在上一篇中，最后推送镜像到Nexus docket-hosted本地仓库时，可以在页面上面看到以下信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-28_22-56-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-28_22-56-48.png&#34;
 	
 	
 	
@@ -17816,7 +17816,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到日志时间已经是正常的北京时间了，说明通过这种方法配置的时区没有问题。&lt;/p&gt;
 &lt;p&gt;再次在Nexus web管理控制台查看之前推送镜像到Nexus docket-hosted本地仓库的 mysql-client: push-by-ssl 镜像，其属性&lt;code&gt;last_modified&lt;/code&gt;显示已经更新成北京时间了:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-29_21-11-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-29_21-11-12.png&#34;
 	
 	
 	
@@ -17855,11 +17855,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>搭建自己的nexus私有仓库8--Nexus3的数据库结构</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_8_nexus_database/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_8_nexus_database/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_8_nexus_database/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库8--Nexus3的数据库结构" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库8nexus3的数据库结构&#34;&gt;搭建自己的nexus私有仓库8&amp;ndash;Nexus3的数据库结构
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_8_nexus_database/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库8--Nexus3的数据库结构" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库8nexus3的数据库结构&#34;&gt;搭建自己的nexus私有仓库8&amp;ndash;Nexus3的数据库结构
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第8篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -17872,7 +17872,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;1-情况说明&#34;&gt;1. 情况说明
 &lt;/h3&gt;&lt;p&gt;之前有一个需求，是在docker启动nexus容器后，自动创建代理仓库，不用手动在Web上面操作，最开始的思路是想通过修改数据库来实现。但后来发现nexus有api接口可以使用，因此改用&lt;code&gt;curl&lt;/code&gt;或Python程序调用nexus的API接口来创建代理仓库。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-29_23-14-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-29_23-14-31.png&#34;
 	
 	
 	
@@ -18397,11 +18397,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>搭建自己的nexus私有仓库9--NexusAPI接口的使用1</title>
-        <link>https://meizhaohui.github.io/devops/docker/create_your_nexus_9_nexus_api/</link>
+        <link>https://hellogitlab.com/devops/docker/create_your_nexus_9_nexus_api/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/create_your_nexus_9_nexus_api/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库9--NexusAPI接口的使用1" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库9nexus-api接口的使用1&#34;&gt;搭建自己的nexus私有仓库9&amp;ndash;Nexus API接口的使用1
+        <guid>https://hellogitlab.com/devops/docker/create_your_nexus_9_nexus_api/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 搭建自己的nexus私有仓库9--NexusAPI接口的使用1" /&gt;&lt;h2 id=&#34;搭建自己的nexus私有仓库9nexus-api接口的使用1&#34;&gt;搭建自己的nexus私有仓库9&amp;ndash;Nexus API接口的使用1
 &lt;/h2&gt;&lt;p&gt;本文档是nexus系列课程第9篇。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;nexus系列课程第1篇，请参考 &lt;a class=&#34;link&#34; href=&#34;./create_your_nexus.md&#34; &gt;搭建自己的nexus私有仓库1&amp;ndash;nexus初体验&lt;/a&gt;&lt;/li&gt;
@@ -18415,7 +18415,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;0-情况说明&#34;&gt;0. 情况说明
 &lt;/h3&gt;&lt;p&gt;之前有一个需求，是在docker启动nexus容器后，自动创建代理仓库，不用手动在Web上面操作，最开始的思路是想通过修改数据库来实现，上一篇&lt;a class=&#34;link&#34; href=&#34;./create_your_nexus_8_nexus_database.md&#34; &gt;搭建自己的nexus私有仓库8-Nexus3的数据库结构&lt;/a&gt; 中看到数据库结构很复杂，不适合直接修改数据库，本篇主要来学习Neuxs API接口的使用。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-29_23-14-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-29_23-14-31.png&#34;
 	
 	
 	
@@ -18670,7 +18670,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;即初始密码是&lt;code&gt;ffbbad55-ef5b-443f-ba95-1895374a7007&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;打开浏览器访问 &lt;a class=&#34;link&#34; href=&#34;http://nexusapi.com:8081/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://nexusapi.com:8081/&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-30_21-57-42.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-30_21-57-42.png&#34;
 	
 	
 	
@@ -18691,7 +18691,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;31-测试获取blob列表信息list-the-blob-stores&#34;&gt;3.1 测试获取Blob列表信息List the blob stores
 &lt;/h4&gt;&lt;p&gt;测试List the blob stores接口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-30_23-32-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-30_23-32-54.png&#34;
 	
 	
 	
@@ -18799,7 +18799,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，通过Python代码正常获取到了API接口的输出。&lt;/p&gt;
 &lt;p&gt;与在Nexus UI上面获取到结果是一致的，说明Python代码是正常可用的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-30_23-37-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-30_23-37-37.png&#34;
 	
 	
 	
@@ -18813,7 +18813,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;32-测试创建blob对象存储接口create-a-file-blob-store&#34;&gt;3.2 测试创建Blob对象存储接口Create a file blob store
 &lt;/h4&gt;&lt;p&gt;测试Create a file blob store接口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_22-16-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_22-16-13.png&#34;
 	
 	
 	
@@ -18838,7 +18838,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;POST请求的URL是&lt;code&gt;http://nexusapi.com:8081/service/rest/v1/blobstores/file&lt;/code&gt;，创建成功时返回码是204。&lt;/p&gt;
 &lt;p&gt;此时的Nexus界面上面查看，可以看到刚通过接口创建的Blob对象存储已经创建成功：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_22-30-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_22-30-18.png&#34;
 	
 	
 	
@@ -18846,7 +18846,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_22-31-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_22-31-21.png&#34;
 	
 	
 	
@@ -18901,7 +18901,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，执行代码，会同样创建出blobname Blob对象存储。&lt;/p&gt;
 &lt;p&gt;再次用List the blob stores接口查看当前的Blob对象存储信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_22-39-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_22-39-15.png&#34;
 	
 	
 	
@@ -18916,7 +18916,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;如果创建docker对象存储，只用设置&lt;code&gt;path&lt;/code&gt;和&lt;code&gt;name&lt;/code&gt;参数的值都是&lt;code&gt;docker&lt;/code&gt;即可。&lt;/p&gt;
 &lt;h4 id=&#34;33-realm权限设置&#34;&gt;3.3 Realm权限设置
 &lt;/h4&gt;&lt;p&gt;在Nexus页面上面可以看到有9个有效的Realm配置:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_22-58-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_22-58-43.png&#34;
 	
 	
 	
@@ -18926,7 +18926,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;为了能够匿名下载Docker镜像,需要将【Docker Bearer Token Realm】加入到右侧的激活列表中。&lt;/p&gt;
 &lt;p&gt;涉及这三个接口：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_23-01-25.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_23-01-25.png&#34;
 	
 	
 	
@@ -18937,7 +18937,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;h5 id=&#34;331--获取所有有效realm&#34;&gt;3.3.1  获取所有有效Realm
 &lt;/h5&gt;&lt;p&gt;List the available realms。&lt;/p&gt;
 &lt;p&gt;GET方法调用&lt;code&gt;/service/rest/v1/security/realms/available&lt;/code&gt;接口，可以返回所有有效的Realm信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_23-04-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_23-04-02.png&#34;
 	
 	
 	
@@ -19032,7 +19032,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;h5 id=&#34;332--获取激活的realm&#34;&gt;3.3.2  获取激活的Realm
 &lt;/h5&gt;&lt;p&gt;List the active realm IDs in order。&lt;/p&gt;
 &lt;p&gt;GET方法调用&lt;code&gt;/service/rest/v1/security/realms/active&lt;/code&gt;接口，可以返回所有激活的Realm信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_23-06-38.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_23-06-38.png&#34;
 	
 	
 	
@@ -19060,7 +19060,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;h5 id=&#34;333-设置激活的realm&#34;&gt;3.3.3 设置激活的Realm&lt;Badge type=&#34;danger&#34; text=&#34;危险&#34; /&gt;
 &lt;/h5&gt;&lt;p&gt;Set the active security realms in the order they should be used。&lt;/p&gt;
 &lt;p&gt;PUT方法调用&lt;code&gt;/service/rest/v1/security/realms/active&lt;/code&gt;接口，可以设置激活的Realm信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_23-09-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_23-09-37.png&#34;
 	
 	
 	
@@ -19088,7 +19088,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;Nexus无法正常访问，还需要将原来有的&amp;quot;NexusAuthenticatingRealm&amp;quot;和 &amp;ldquo;NexusAuthorizingRealm&amp;quot;保留着。&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
 &lt;p&gt;由于我直接按上面这样操作了，Nexus挂了，admin账号进去不了，显示要认证：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_23-39-14.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_23-39-14.png&#34;
 	
 	
 	
@@ -19170,7 +19170,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;再次发送请求：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_23-47-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_23-47-50.png&#34;
 	
 	
 	
@@ -19180,7 +19180,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;状态码204， 表示请求已经执行成功, 但没有内容。&lt;/p&gt;
 &lt;p&gt;我们在Nexus页面上面看一下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-01-31_23-49-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-01-31_23-49-57.png&#34;
 	
 	
 	
@@ -19229,7 +19229,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;这样[√]  激活【Docker Bearer Token Realm】，让能够匿名下载Docker镜像，这件事情也可以通过API接口完成了！！&lt;/p&gt;
 &lt;h4 id=&#34;34-nexus仓库管理&#34;&gt;3.4 Nexus仓库管理
 &lt;/h4&gt;&lt;p&gt;Nexus仓库管理(Repository Management)相关的接口就非常多了，仓库类型不一样，其接口也不同。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_07-22-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_07-22-56.png&#34;
 	
 	
 	
@@ -19237,7 +19237,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_07-24-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_07-24-17.png&#34;
 	
 	
 	
@@ -19245,7 +19245,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_07-25-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_07-25-16.png&#34;
 	
 	
 	
@@ -19257,7 +19257,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;h5 id=&#34;341-列出所有仓库&#34;&gt;3.4.1 列出所有仓库
 &lt;/h5&gt;&lt;p&gt;List repositories。&lt;/p&gt;
 &lt;p&gt;GET方法调用&lt;code&gt;/service/rest/v1/repositories&lt;/code&gt;接口，可以列出当前Nexus上有的所有仓库：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_07-31-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_07-31-20.png&#34;
 	
 	
 	
@@ -19392,7 +19392,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这些信息，就是罗列了当前存在的仓库，跟下面这个页面看到的差不多：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_07-33-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_07-33-49.png&#34;
 	
 	
 	
@@ -19403,7 +19403,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;h5 id=&#34;342-列出所有仓库的设置&#34;&gt;3.4.2 列出所有仓库的设置
 &lt;/h5&gt;&lt;p&gt;List repositorySettings。&lt;/p&gt;
 &lt;p&gt;GET方法调用&lt;code&gt;/service/rest/v1/repositorySettings&lt;/code&gt;接口，可以列出当前Nexus上有的所有仓库的设置信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-02-01_20-23-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-02-01_20-23-54.png&#34;
 	
 	
 	
@@ -19776,11 +19776,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>使用clair扫描Docker镜像漏洞</title>
-        <link>https://meizhaohui.github.io/devops/docker/clair/</link>
+        <link>https://hellogitlab.com/devops/docker/clair/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/clair/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 使用clair扫描Docker镜像漏洞" /&gt;&lt;h2 id=&#34;使用clair扫描docker镜像漏洞&#34;&gt;使用clair扫描Docker镜像漏洞
+        <guid>https://hellogitlab.com/devops/docker/clair/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 使用clair扫描Docker镜像漏洞" /&gt;&lt;h2 id=&#34;使用clair扫描docker镜像漏洞&#34;&gt;使用clair扫描Docker镜像漏洞
 &lt;/h2&gt;&lt;p&gt;参考:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/arminc/clair-scanner&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -20001,7 +20001,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/image-20220407000359957.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/image-20220407000359957.png&#34;
 	
 	
 	
@@ -20033,11 +20033,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>使用docker搭建nextcloud私有云盘</title>
-        <link>https://meizhaohui.github.io/devops/docker/nextcloud_in_docker/</link>
+        <link>https://hellogitlab.com/devops/docker/nextcloud_in_docker/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/nextcloud_in_docker/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 使用docker搭建nextcloud私有云盘" /&gt;&lt;h2 id=&#34;使用docker搭建nextcloud私有云盘&#34;&gt;使用docker搭建nextcloud私有云盘
+        <guid>https://hellogitlab.com/devops/docker/nextcloud_in_docker/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 使用docker搭建nextcloud私有云盘" /&gt;&lt;h2 id=&#34;使用docker搭建nextcloud私有云盘&#34;&gt;使用docker搭建nextcloud私有云盘
 &lt;/h2&gt;&lt;h3 id=&#34;1-docker国内镜像配置&#34;&gt;1. docker国内镜像配置
 &lt;/h3&gt;&lt;p&gt;Docker的国内镜像源的资源站也比较丰富：&lt;/p&gt;
 &lt;ul&gt;
@@ -20344,7 +20344,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;4-在浏览器中访问nextcloud&#34;&gt;4. 在浏览器中访问nextcloud
 &lt;/h3&gt;&lt;p&gt;在浏览器中输入&lt;code&gt;http://hellogitlab.com:8080/&lt;/code&gt;，可以正常打开nextcloud页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-24_21-52-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-24_21-52-18.png&#34;
 	
 	
 	
@@ -20353,7 +20353,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;创建一个管理员账号：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-24_21-53-00.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-24_21-53-00.png&#34;
 	
 	
 	
@@ -20373,7 +20373,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;5-配置域名解析并申请证书&#34;&gt;5. 配置域名解析并申请证书
 &lt;/h3&gt;&lt;p&gt;在腾讯DNS解析界面增加一条新的域名解析：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-26_00-33-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-26_00-33-12.png&#34;
 	
 	
 	
@@ -20411,7 +20411,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
     &gt;https://console.cloud.tencent.com/ssl&lt;/a&gt; 为新的域名&lt;code&gt;nextcloud.hellogitlab.com&lt;/code&gt;申请一个免费证书。&lt;/p&gt;
 &lt;p&gt;证书申请成功后，过一会腾讯云就会颁发证书成功，并在域名解析中添加一条TXT记录。我们下载证书文件，并解压。&lt;/p&gt;
 &lt;p&gt;将解压后的Nginx文件夹中的两个文件上传到服务器端。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-26_00-39-52.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-26_00-39-52.png&#34;
 	
 	
 	
@@ -21007,7 +21007,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在浏览器中访问新的域名：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-26_01-22-04.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-26_01-22-04.png&#34;
 	
 	
 	
@@ -21015,7 +21015,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-26_01-30-33.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-26_01-30-33.png&#34;
 	
 	
 	
@@ -21025,7 +21025,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;8-邮件通知配置&#34;&gt;8. 邮件通知配置
 &lt;/h3&gt;&lt;p&gt;使用&lt;code&gt;postmaster&lt;/code&gt;账号登陆企业邮箱，创建一个企业邮箱的通知账号用户&lt;code&gt;notice@hellogitlab.com&lt;/code&gt;，然后在nextcloud设置&lt;code&gt;个人信息&lt;/code&gt;中配置自己的&lt;code&gt;电子邮箱&lt;/code&gt;，然后在管理&lt;code&gt;基本设置&lt;/code&gt;界面，设置一下&lt;code&gt;电子邮件服务器&lt;/code&gt;，按下图方式设置：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-27_15-23-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-27_15-23-30.png&#34;
 	
 	
 	
@@ -21034,7 +21034,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;设置完成后，点击&lt;code&gt;发送电子邮件&lt;/code&gt;按钮，查看一下自己的邮箱中是否会收到测试邮件通知,过一会儿收到邮件通知：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/%e7%94%b5%e5%ad%90%e9%82%ae%e4%bb%b6%e8%ae%be%e7%bd%ae%e6%b5%8b%e8%af%95.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/%e7%94%b5%e5%ad%90%e9%82%ae%e4%bb%b6%e8%ae%be%e7%bd%ae%e6%b5%8b%e8%af%95.png&#34;
 	
 	
 	
@@ -21228,7 +21228,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-27_20-37-48.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-27_20-37-48.png&#34;
 	
 	
 	
@@ -21248,7 +21248,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后再在nextcloud中可以看到视频已经的缩略图了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-27_20-41-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-27_20-41-56.png&#34;
 	
 	
 	
@@ -21294,7 +21294,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;在nextcloud应用界面点击&lt;code&gt;下载并启用&lt;/code&gt;时，会经常下载不成功。我们通过手动下载安装app。&lt;/p&gt;
 &lt;p&gt;nextcloud App Store: &lt;a class=&#34;link&#34; href=&#34;https://apps.nextcloud.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://apps.nextcloud.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_14-21-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_14-21-15.png&#34;
 	
 	
 	
@@ -21303,7 +21303,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在右上角的搜索框输入&lt;code&gt;music&lt;/code&gt;,并按回车搜索，点击进入到第一个搜索结果中：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_14-22-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_14-22-22.png&#34;
 	
 	
 	
@@ -21312,7 +21312,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在Music详情页面，下方有一个&lt;code&gt;Downloads&lt;/code&gt;列表，我们选择一个下载版本，右键复制链接地址：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_14-24-05.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_14-24-05.png&#34;
 	
 	
 	
@@ -21462,7 +21462,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;修改权限后，在应用界面可以看到&lt;code&gt;Music&lt;/code&gt;应用：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_14-35-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_14-35-21.png&#34;
 	
 	
 	
@@ -21472,7 +21472,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;我们点击&lt;code&gt;启用&lt;/code&gt;按钮，此时让输入&lt;code&gt;授权密码&lt;/code&gt;,输入你的密码，并确认即可。&lt;/p&gt;
 &lt;p&gt;上传一首歌曲到nextcloud，然后点击页面顶部的&lt;code&gt;音乐&lt;/code&gt;图标，就可以打开音乐界面，可以看到刚才上传的音乐了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_14-40-44.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_14-40-44.png&#34;
 	
 	
 	
@@ -21483,7 +21483,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;点击播放按钮就可以听音乐🎵了！&lt;/p&gt;
 &lt;h3 id=&#34;12-优化定时任务cron&#34;&gt;12. 优化定时任务cron
 &lt;/h3&gt;&lt;p&gt;使用cron去执行后台任务：在设置中将设置从ajax调整到cron，然后在宿主机建立crontab任务。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_15-51-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_15-51-53.png&#34;
 	
 	
 	
@@ -21551,7 +21551,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在界面上可以看到同步成功了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_15-58-12.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_15-58-12.png&#34;
 	
 	
 	
@@ -21628,7 +21628,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时在nextcloud上面并没有显示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_21-06-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_21-06-58.png&#34;
 	
 	
 	
@@ -21662,7 +21662,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，刷新一下nextcloud页面，可以看到，刚才手动添加的文件已经正常显示了:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-28_21-11-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-28_21-11-39.png&#34;
 	
 	
 	
@@ -22010,7 +22010,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;说明能够正常写入数据到redis中。&lt;/p&gt;
 &lt;p&gt;配置nextcloud的缓存，参考官方指导：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-29_01-42-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-29_01-42-08.png&#34;
 	
 	
 	
@@ -23007,7 +23007,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们参考&lt;code&gt;redis-server&lt;/code&gt;的数据对&lt;code&gt;nextcloud&lt;/code&gt;容器的配置文件进行修改，我们在临时文件中进行修改。&lt;/p&gt;
 &lt;p&gt;修改前，&lt;code&gt;new_config.v2.json&lt;/code&gt;关于挂载点的信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-31_07-25-59.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-31_07-25-59.png&#34;
 	
 	
 	
@@ -23016,7 +23016,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们使用vim进行修改，修改后挂载点的信息如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-31_07-28-58.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-31_07-28-58.png&#34;
 	
 	
 	
@@ -23037,7 +23037,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;同样修改一下&lt;code&gt;hostconfig.json&lt;/code&gt;文件，这个只需要&lt;code&gt;Bind&lt;/code&gt;处：&lt;/p&gt;
 &lt;p&gt;修改前：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-31_07-38-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-31_07-38-53.png&#34;
 	
 	
 	
@@ -23046,7 +23046,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;修改后：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-03-31_07-39-50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-03-31_07-39-50.png&#34;
 	
 	
 	
@@ -23230,7 +23230,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行发现转换失败：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-01_08-11-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-01_08-11-09.png&#34;
 	
 	
 	
@@ -23238,7 +23238,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-01_08-09-09.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-01_08-09-09.png&#34;
 	
 	
 	
@@ -23308,7 +23308,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://github.com/nextcloud/server/issues/24884&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Syntax Error on db:convert-type when converting any DB to -&amp;gt;PostgreSQL | NC 20&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;说是要禁用	text&lt;code&gt;应用，并删除&lt;/code&gt;-app-apps`参数。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-02_06-49-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-02_06-49-54.png&#34;
 	
 	
 	
@@ -23350,7 +23350,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;我们直接通过配置环境变量来连接数据库。&lt;/p&gt;
 &lt;h3 id=&#34;18-通过配置环境变量文件来运行nextcloud&#34;&gt;18. 通过配置环境变量文件来运行nextcloud
 &lt;/h3&gt;&lt;p&gt;在dockerhub nextcloud官方镜像中，提到我们可以通过配置环境变量来自动配置nextcloud。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-02_21-20-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-02_21-20-35.png&#34;
 	
 	
 	
@@ -23662,7 +23662,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;打开nextcloud链接地址 &lt;a class=&#34;link&#34; href=&#34;https://nextcloud.hellogitlab.com:444/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://nextcloud.hellogitlab.com:444/&lt;/a&gt;,页面提示&lt;code&gt;通过不被信任的域名访问&lt;/code&gt;异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-07_07-56-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-07_07-56-32.png&#34;
 	
 	
 	
@@ -23727,7 +23727,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;再次打开web页面：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-07_08-09-31.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-07_08-09-31.png&#34;
 	
 	
 	
@@ -23738,7 +23738,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;页面正常显示。&lt;/p&gt;
 &lt;p&gt;我们输入一下登陆用户名和密码，看看能不能登陆进去。此时可以正常登陆进入到nextcloud页面，说明配置正确！&lt;/p&gt;
 &lt;p&gt;我们在&lt;code&gt;概览&lt;/code&gt;页面可以看到有&lt;code&gt;数据库丢失了一些索引&lt;/code&gt;的警告：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-10_19-19-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-10_19-19-35.png&#34;
 	
 	
 	
@@ -23780,7 +23780,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;刷新页面，这样&lt;code&gt;概览&lt;/code&gt;页面就不会显示警告了！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-08_08-20-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-08_08-20-47.png&#34;
 	
 	
 	
@@ -24034,7 +24034,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;19--手机客户端多次登陆出现请求过多的问题&#34;&gt;19.  手机客户端多次登陆出现请求过多的问题
 &lt;/h3&gt;&lt;p&gt;多次手机登陆后，有可能手机客户端被拦截住:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/IMG_0676BDB6CA5B-1.jpeg&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/IMG_0676BDB6CA5B-1.jpeg&#34;
 	
 	
 	
@@ -24128,7 +24128,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;自制镜像示例，参考https://engr-z.com/278.html：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2021-04-10_22-45-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2021-04-10_22-45-15.png&#34;
 	
 	
 	
@@ -24138,7 +24138,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;21-照片自动上传&#34;&gt;21. 照片自动上传
 &lt;/h3&gt;&lt;p&gt;在手机客户端可以设置照片自动上传，并设置文件名格式，默认的文件名中包含空格，我不喜欢文件名上包含空格，改成不带空格的格式，设置如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/750-1334-max.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/750-1334-max.png&#34;
 	
 	
 	
@@ -24199,11 +24199,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>通过进程pid查询对应docker容器信息</title>
-        <link>https://meizhaohui.github.io/devops/docker/get_container_by_pid/</link>
+        <link>https://hellogitlab.com/devops/docker/get_container_by_pid/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/get_container_by_pid/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 通过进程pid查询对应docker容器信息" /&gt;&lt;h2 id=&#34;通过进程pid查询对应docker容器信息&#34;&gt;通过进程pid查询对应docker容器信息
+        <guid>https://hellogitlab.com/devops/docker/get_container_by_pid/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 通过进程pid查询对应docker容器信息" /&gt;&lt;h2 id=&#34;通过进程pid查询对应docker容器信息&#34;&gt;通过进程pid查询对应docker容器信息
 &lt;/h2&gt;&lt;h3 id=&#34;1-一般获取方法&#34;&gt;1. 一般获取方法
 &lt;/h3&gt;&lt;p&gt;我们都知道Docker容器的哲学是一个Docker容器只运行一个进程。在这种情况下，我们可以很容器找到进程和容器的对应关系。&lt;/p&gt;
 &lt;p&gt;如，我们在进程中发现有一个&lt;code&gt;redis-server&lt;/code&gt;的程序：&lt;/p&gt;
@@ -24273,7 +24273,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@docker ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-09_23-46-25.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-09_23-46-25.png&#34;
 	
 	
 	
@@ -24334,7 +24334,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-09_23-52-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-09_23-52-15.png&#34;
 	
 	
 	
@@ -24370,7 +24370,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;17942&lt;/span&gt; 11:blkio:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,10:pids:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,9:devices:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,8:freezer:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,7:cpuset:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,6:perf_event:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,5:memory:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,4:hugetlb:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,3:cpuacct,cpu:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,2:net_prio,net_cls:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095,1:name&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;systemd:/docker/790a0902c36417b1388820b59d9156181d718a327bb6fa09880c4568fdd07095
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-10_00-01-14.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-10_00-01-14.png&#34;
 	
 	
 	
@@ -24603,7 +24603,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@docker ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-10_00-31-24.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-10_00-31-24.png&#34;
 	
 	
 	
@@ -24726,7 +24726,7 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@docker ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-10_00-58-11.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-10_00-58-11.png&#34;
 	
 	
 	
@@ -24752,11 +24752,11 @@ Blob类型选择&lt;code&gt;File&lt;/code&gt;：&lt;/p&gt;
         </item>
         <item>
         <title>修改默认数据存储目录</title>
-        <link>https://meizhaohui.github.io/devops/docker/change_root_dir/</link>
+        <link>https://hellogitlab.com/devops/docker/change_root_dir/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/change_root_dir/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 修改默认数据存储目录" /&gt;&lt;h2 id=&#34;修改默认数据存储目录&#34;&gt;修改默认数据存储目录
+        <guid>https://hellogitlab.com/devops/docker/change_root_dir/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 修改默认数据存储目录" /&gt;&lt;h2 id=&#34;修改默认数据存储目录&#34;&gt;修改默认数据存储目录
 &lt;/h2&gt;&lt;p&gt;默认情况下，docker数据存储目录为&lt;code&gt;/var/lib/docker&lt;/code&gt;,可以通过&lt;code&gt;docker info&lt;/code&gt;查看：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

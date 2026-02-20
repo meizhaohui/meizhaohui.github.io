@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>容器化 on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/</link>
+        <link>https://hellogitlab.com/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/</link>
         <description>Recent content in 容器化 on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Docker容器化部署</title>
-        <link>https://meizhaohui.github.io/devops/docker-deploy/</link>
+        <link>https://hellogitlab.com/devops/docker-deploy/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker-deploy/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/file_type_docker_icon_130643.png" alt="Featured image of post Docker容器化部署" /&gt;&lt;h2 id=&#34;docker简介&#34;&gt;Docker简介
+        <guid>https://hellogitlab.com/devops/docker-deploy/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/file_type_docker_icon_130643.png" alt="Featured image of post Docker容器化部署" /&gt;&lt;h2 id=&#34;docker简介&#34;&gt;Docker简介
 &lt;/h2&gt;&lt;p&gt;Docker是一个开源的容器化平台，可以将应用及其依赖打包成容器。&lt;/p&gt;
 &lt;h2 id=&#34;dockerfile示例&#34;&gt;Dockerfile示例
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

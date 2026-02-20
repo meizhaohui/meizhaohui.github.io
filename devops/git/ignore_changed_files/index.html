@@ -4,16 +4,16 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="使git status不显示某些文件 有的时候，一些文件已经在git仓库中，在本地测试时又进行了一些修改，此时在查看仓库状态时，不想显示这些文件。\n注意，我这里设置了快捷命令：\n1 alias gs=&#39;git status&#39; 比如，我现在使用gs查看到仓库状态如下：\n显示如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 gs On branch master Your branch is up to date with &#39;origin/master&#39;. Changes not staged for commit: (use &#34;git add &lt;file&gt;...&#34; to update what will be committed) (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory) modified: myblog/config/pluginConfig.js modified: myblog/package.json modified: myblog/yarn.lock Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) myblog/package-lock.json no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;) 我不想要以下几行显示出来：\n">
 <title>使gitstatus不显示某些文件</title>
 
-<link rel='canonical' href='https://meizhaohui.github.io/devops/git/ignore_changed_files/'>
+<link rel='canonical' href='https://hellogitlab.com/devops/git/ignore_changed_files/'>
 
 <link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="使gitstatus不显示某些文件">
 <meta property='og:description' content="使git status不显示某些文件 有的时候，一些文件已经在git仓库中，在本地测试时又进行了一些修改，此时在查看仓库状态时，不想显示这些文件。\n注意，我这里设置了快捷命令：\n1 alias gs=&#39;git status&#39; 比如，我现在使用gs查看到仓库状态如下：\n显示如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 gs On branch master Your branch is up to date with &#39;origin/master&#39;. Changes not staged for commit: (use &#34;git add &lt;file&gt;...&#34; to update what will be committed) (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory) modified: myblog/config/pluginConfig.js modified: myblog/package.json modified: myblog/yarn.lock Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) myblog/package-lock.json no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;) 我不想要以下几行显示出来：\n">
-<meta property='og:url' content='https://meizhaohui.github.io/devops/git/ignore_changed_files/'>
+<meta property='og:url' content='https://hellogitlab.com/devops/git/ignore_changed_files/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://meizhaohui.github.io/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="使gitstatus不显示某些文件">
 <meta name="twitter:description" content="使git status不显示某些文件 有的时候，一些文件已经在git仓库中，在本地测试时又进行了一些修改，此时在查看仓库状态时，不想显示这些文件。\n注意，我这里设置了快捷命令：\n1 alias gs=&#39;git status&#39; 比如，我现在使用gs查看到仓库状态如下：\n显示如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 gs On branch master Your branch is up to date with &#39;origin/master&#39;. Changes not staged for commit: (use &#34;git add &lt;file&gt;...&#34; to update what will be committed) (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory) modified: myblog/config/pluginConfig.js modified: myblog/package.json modified: myblog/yarn.lock Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) myblog/package-lock.json no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;) 我不想要以下几行显示出来：\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://meizhaohui.github.io/img/default.jpg' />
+    <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -327,9 +327,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://meizhaohui.github.io/" selected>简体中文</option>
+                                    <option value="https://hellogitlab.com/" selected>简体中文</option>
                                 
-                                    <option value="https://meizhaohui.github.io/en/" >English</option>
+                                    <option value="https://hellogitlab.com/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -431,7 +431,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

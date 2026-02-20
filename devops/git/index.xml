@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Git on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/devops/git/</link>
+        <link>https://hellogitlab.com/devops/git/</link>
         <description>Recent content in Git on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/devops/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/devops/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>强制删除推送到git上的历史记录</title>
-        <link>https://meizhaohui.github.io/devops/git/force_delete_remote_commit/</link>
+        <link>https://hellogitlab.com/devops/git/force_delete_remote_commit/</link>
         <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/force_delete_remote_commit/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 强制删除推送到git上的历史记录" /&gt;&lt;h2 id=&#34;强制删除推送到git上的历史记录&#34;&gt;强制删除推送到git上的历史记录
+        <guid>https://hellogitlab.com/devops/git/force_delete_remote_commit/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 强制删除推送到git上的历史记录" /&gt;&lt;h2 id=&#34;强制删除推送到git上的历史记录&#34;&gt;强制删除推送到git上的历史记录
 &lt;/h2&gt;&lt;h3 id=&#34;1-应用场景&#34;&gt;1. 应用场景
 &lt;/h3&gt;&lt;p&gt;通常情况下，是提交代码后，发现提交到git仓库中的某个文件存在敏感信息，此时就要将这个敏感信息的提交从git中删除掉。&lt;/p&gt;
 &lt;p&gt;现在我有一个&lt;code&gt;testgit&lt;/code&gt;的仓库,尝试提交几次代码：&lt;/p&gt;
@@ -147,7 +147,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   8a91349..7ae40c0  main -&amp;gt; main
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_22-35-43.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_22-35-43.png&#34;
 	
 	
 	
@@ -244,7 +244,7 @@
 &lt;/div&gt;&lt;h4 id=&#34;24-强制推送到git仓库&#34;&gt;2.4 强制推送到git仓库
 &lt;/h4&gt;&lt;p&gt;使用&lt;code&gt;git push origin &amp;lt;branch-name&amp;gt; --force&lt;/code&gt;强制推送来更新远程git仓库记录。&lt;/p&gt;
 &lt;p&gt;在强制推送前，还可以看到git仓库中存在敏感信息的提交记录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_22-50-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_22-50-30.png&#34;
 	
 	
 	
@@ -277,7 +277,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;推送成功。&lt;/p&gt;
 &lt;p&gt;此时刷新一下git页面，可以看到有异常的的提交已经没有了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_22-52-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_22-52-35.png&#34;
 	
 	
 	
@@ -323,7 +323,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   8a91349..e290197  main -&amp;gt; main
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2024-09-03_23-04-51.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-09-03_23-04-51.png&#34;
 	
 	
 	
@@ -373,11 +373,11 @@
         </item>
         <item>
         <title>CentOS7用git-daemon搭建Git服务器</title>
-        <link>https://meizhaohui.github.io/devops/git/create_git_server/</link>
+        <link>https://hellogitlab.com/devops/git/create_git_server/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/create_git_server/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS7用git-daemon搭建Git服务器" /&gt;&lt;h2 id=&#34;centos7用git-daemon搭建git服务器&#34;&gt;CentOS7用git-daemon搭建Git服务器
+        <guid>https://hellogitlab.com/devops/git/create_git_server/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS7用git-daemon搭建Git服务器" /&gt;&lt;h2 id=&#34;centos7用git-daemon搭建git服务器&#34;&gt;CentOS7用git-daemon搭建Git服务器
 &lt;/h2&gt;&lt;p&gt;::: danger 危险&lt;/p&gt;
 &lt;p&gt;特别说明：使用git daemon开启&lt;code&gt;receive-pack&lt;/code&gt;服务后，任何人可以匿名访问git存储库，非常不安全，建议考虑使用gitolite项目来进行权限控制。&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
@@ -1465,7 +1465,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313170439.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313170439.png&#34;
 	
 	
 	
@@ -1486,7 +1486,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;warning: You appear to have cloned an empty repository.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313170701.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313170701.png&#34;
 	
 	
 	
@@ -1529,7 +1529,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，可以看到，提交失败，看看服务器端日志，发现有更新日志。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313175350.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313175350.png&#34;
 	
 	
 	
@@ -2017,7 +2017,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;102&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Ready to rumble
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220313223752.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220313223752.png&#34;
 	
 	
 	
@@ -2215,11 +2215,11 @@
         </item>
         <item>
         <title>Git Docs</title>
-        <link>https://meizhaohui.github.io/devops/git/git_docs/</link>
+        <link>https://hellogitlab.com/devops/git/git_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/file_type_git_icon_130581.png" alt="Featured image of post Git Docs" /&gt;&lt;h2 id=&#34;git-docs&#34;&gt;Git Docs
+        <guid>https://hellogitlab.com/devops/git/git_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/file_type_git_icon_130581.png" alt="Featured image of post Git Docs" /&gt;&lt;h2 id=&#34;git-docs&#34;&gt;Git Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../install_git&#34; &gt;git的安装&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../basic_use&#34; &gt;git的基本使用&lt;/a&gt;&lt;/li&gt;
@@ -2239,11 +2239,11 @@
         </item>
         <item>
         <title>Gitcommit提交模板</title>
-        <link>https://meizhaohui.github.io/devops/git/git_commit_template/</link>
+        <link>https://hellogitlab.com/devops/git/git_commit_template/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_commit_template/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Gitcommit提交模板" /&gt;&lt;h2 id=&#34;git-commit提交模板&#34;&gt;Git commit提交模板
+        <guid>https://hellogitlab.com/devops/git/git_commit_template/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Gitcommit提交模板" /&gt;&lt;h2 id=&#34;git-commit提交模板&#34;&gt;Git commit提交模板
 &lt;/h2&gt;&lt;p&gt;可以通过设置提交模板来规则自己的日志信息。&lt;/p&gt;
 &lt;p&gt;此处直接给出模板文件内容：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2378,7 +2378,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，Git会自动加载模板文件的内容到临时的编辑器文件中，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320142253.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320142253.png&#34;
 	
 	
 	
@@ -2387,7 +2387,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，我们就可以参考模板说明修改我们的提交日志了，如我修改完成后，日志信息如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320142751.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320142751.png&#34;
 	
 	
 	
@@ -2432,11 +2432,11 @@
         </item>
         <item>
         <title>Githooks钩子脚本的使用</title>
-        <link>https://meizhaohui.github.io/devops/git/git_hooks/</link>
+        <link>https://hellogitlab.com/devops/git/git_hooks/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_hooks/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Githooks钩子脚本的使用" /&gt;&lt;h2 id=&#34;git-hooks钩子脚本的使用&#34;&gt;Git hooks钩子脚本的使用
+        <guid>https://hellogitlab.com/devops/git/git_hooks/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Githooks钩子脚本的使用" /&gt;&lt;h2 id=&#34;git-hooks钩子脚本的使用&#34;&gt;Git hooks钩子脚本的使用
 &lt;/h2&gt;&lt;h3 id=&#34;1-简介&#34;&gt;1. 简介
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;你可以使用Git钩子(hook)，任何时候当版本库中出现如提交或补丁这样的特殊事件时，都会触发执行一个或多个任意的脚本。&lt;/li&gt;
@@ -2570,7 +2570,7 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;22-创建第一个钩子&#34;&gt;2.2 创建第一个钩子
 &lt;/h4&gt;&lt;p&gt;如我们在提交本文档时，gitee会返回一个带彩色输出的文本&amp;quot;remote: Powered by GITEE.COM [GNK-6.3]&amp;quot;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220318234705.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220318234705.png&#34;
 	
 	
 	
@@ -2603,7 +2603,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后，在本地客户端进行检出，并尝试提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220319001017.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220319001017.png&#34;
 	
 	
 	
@@ -2634,7 +2634,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后再尝试提交，可以看到已经变成我们自己设计的返回语句了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220319001909.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220319001909.png&#34;
 	
 	
 	
@@ -3370,7 +3370,7 @@
 &lt;/h4&gt;&lt;p&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://www.git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;自定义 Git - Git 钩子&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;提交钩子的处理过程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320130150.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320130150.png&#34;
 	
 	
 	
@@ -3388,7 +3388,7 @@
 &lt;/h4&gt;&lt;p&gt;当执行&lt;code&gt;git am&lt;/code&gt;时应用补丁时相关的钩子：&lt;code&gt;applypatch-msg&lt;/code&gt;、&lt;code&gt;pre-applypatch&lt;/code&gt;、&lt;code&gt;post-applypatch&lt;/code&gt;。&lt;/p&gt;
 &lt;h4 id=&#34;33-与推送相关的钩子&#34;&gt;3.3 与推送相关的钩子
 &lt;/h4&gt;&lt;p&gt;提交钩子的处理过程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320130302.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320130302.png&#34;
 	
 	
 	
@@ -3996,7 +3996,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;mzh@MacBookPro &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;master ✗&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;$ git commit
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320144930.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320144930.png&#34;
 	
 	
 	
@@ -4124,7 +4124,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，打开了提交信息编辑器，可以看到已经有了一个签名行：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320155922.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320155922.png&#34;
 	
 	
 	
@@ -4210,7 +4210,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Signed-off-by: Zhaohui Mei &amp;lt;mzh.whut@gmail.com&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320170824.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320170824.png&#34;
 	
 	
 	
@@ -4674,7 +4674,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;mzh@MacBookPro &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;master&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220322225235.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220322225235.png&#34;
 	
 	
 	
@@ -4690,11 +4690,11 @@
         </item>
         <item>
         <title>Gitstatus时中文文件名乱码</title>
-        <link>https://meizhaohui.github.io/devops/git/git_chinese_filename/</link>
+        <link>https://hellogitlab.com/devops/git/git_chinese_filename/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_chinese_filename/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Gitstatus时中文文件名乱码" /&gt;&lt;h2 id=&#34;git-status时中文文件名乱码&#34;&gt;Git status时中文文件名乱码
+        <guid>https://hellogitlab.com/devops/git/git_chinese_filename/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Gitstatus时中文文件名乱码" /&gt;&lt;h2 id=&#34;git-status时中文文件名乱码&#34;&gt;Git status时中文文件名乱码
 &lt;/h2&gt;&lt;p&gt;在创建中文文件名的文件时，使用&lt;code&gt;git status&lt;/code&gt;查看状态时，可以看到文件名乱码，不知道对应的文件到底是哪一个，如下所示：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4806,11 +4806,11 @@
         </item>
         <item>
         <title>Git版本控制管理</title>
-        <link>https://meizhaohui.github.io/devops/git/version_control_with_git/</link>
+        <link>https://hellogitlab.com/devops/git/version_control_with_git/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/version_control_with_git/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Git版本控制管理" /&gt;&lt;h2 id=&#34;git版本控制管理&#34;&gt;Git版本控制管理
+        <guid>https://hellogitlab.com/devops/git/version_control_with_git/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Git版本控制管理" /&gt;&lt;h2 id=&#34;git版本控制管理&#34;&gt;Git版本控制管理
 &lt;/h2&gt;&lt;p&gt;本文是对Jon Loeliger等著的第二版《Git版本控制管理》一书的总结。&lt;/p&gt;
 &lt;h3 id=&#34;第1章-介绍&#34;&gt;第1章 介绍
 &lt;/h3&gt;&lt;h4 id=&#34;11-背景&#34;&gt;1.1 背景
@@ -13525,7 +13525,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;对比rebase前后的日志显示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220110213338.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220110213338.png&#34;
 	
 	
 	
@@ -14659,7 +14659,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mei@4144e8c22fff:~$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220113163404.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220113163404.png&#34;
 	
 	
 	
@@ -15238,7 +15238,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mei@4144e8c22fff:~/locals/nonbare$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220113230059.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220113230059.png&#34;
 	
 	
 	
@@ -15814,7 +15814,7 @@
 &lt;p&gt;我们按书的的示例改造测试一下，如编写本博客系统，在&lt;code&gt;docs&lt;/code&gt;目录下存在多个不同的子模块，如在&lt;code&gt;CM&lt;/code&gt;文件来下还有&lt;code&gt;git&lt;/code&gt;模块。&lt;/p&gt;
 &lt;p&gt;我们来模块在&lt;code&gt;myapp&lt;/code&gt;中增加一个&lt;code&gt;git&lt;/code&gt;模块的gitlink。&lt;/p&gt;
 &lt;p&gt;步骤1：在github上面创建测试仓库&lt;code&gt;myapp&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326204552.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326204552.png&#34;
 	
 	
 	
@@ -15823,7 +15823,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;步骤2：在github上面创建子模块仓库&lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326204857.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326204857.png&#34;
 	
 	
 	
@@ -16052,7 +16052,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;提交成功后，可以在github上面看到刚才提交的记录：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326214007.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326214007.png&#34;
 	
 	
 	
@@ -16497,7 +16497,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，在github上面查看&lt;code&gt;git-docs&lt;/code&gt;目录，可以发现其不一样了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220326230620.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220326230620.png&#34;
 	
 	
 	
@@ -17023,7 +17023,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在github上面查看刚才提交的信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/image-20220328233954780.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/image-20220328233954780.png&#34;
 	
 	
 	
@@ -18109,7 +18109,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/git-top-check&#34; &gt;download git-top-check&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/git-top-check&#34; &gt;download git-top-check&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;将其存放在&lt;code&gt;/usr/bin&lt;/code&gt;目录下，并增加可执行权限：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -18473,11 +18473,11 @@
         </item>
         <item>
         <title>Git的安装</title>
-        <link>https://meizhaohui.github.io/devops/git/install_git/</link>
+        <link>https://hellogitlab.com/devops/git/install_git/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/install_git/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Git的安装" /&gt;&lt;h2 id=&#34;git的安装&#34;&gt;Git的安装
+        <guid>https://hellogitlab.com/devops/git/install_git/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Git的安装" /&gt;&lt;h2 id=&#34;git的安装&#34;&gt;Git的安装
 &lt;/h2&gt;&lt;p&gt;本文讲解在CentOS7中安装较高版本的git分布式版本控制系统。&lt;/p&gt;
 &lt;h3 id=&#34;实验环境&#34;&gt;实验环境
 &lt;/h3&gt;&lt;ul&gt;
@@ -19413,11 +19413,11 @@
         </item>
         <item>
         <title>git的基本使用</title>
-        <link>https://meizhaohui.github.io/devops/git/basic_use/</link>
+        <link>https://hellogitlab.com/devops/git/basic_use/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/basic_use/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post git的基本使用" /&gt;&lt;h2 id=&#34;git的基本使用&#34;&gt;git的基本使用
+        <guid>https://hellogitlab.com/devops/git/basic_use/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post git的基本使用" /&gt;&lt;h2 id=&#34;git的基本使用&#34;&gt;git的基本使用
 &lt;/h2&gt;&lt;h3 id=&#34;修改github历史提交记录中的username和email信息&#34;&gt;修改Github历史提交记录中的username和email信息
 &lt;/h3&gt;&lt;p&gt;GitHub提交时，发现github没有统计贡献值，多半是由于邮箱没有关联。&lt;/p&gt;
 &lt;p&gt;下面是解决方法的具体步骤。&lt;/p&gt;
@@ -19527,7 +19527,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt; --tag-name-filter cat -- --branches --tags
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;下载脚本 &lt;a class=&#34;link&#34; href=&#34;https://meizhaohui.github.io/scripts/shell/change_history_commit_username_email.sh&#34; &gt;change_history_commit_username_email.sh&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;下载脚本 &lt;a class=&#34;link&#34; href=&#34;https://hellogitlab.com/scripts/shell/change_history_commit_username_email.sh&#34; &gt;change_history_commit_username_email.sh&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;修改脚本中的OLD_EMAIL、CORRECT_NAME、CORRECT_EMAIL等参数&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;执行shell脚本&lt;/li&gt;
@@ -19853,11 +19853,11 @@
         </item>
         <item>
         <title>Git多个远程仓库不同步时的补救办法</title>
-        <link>https://meizhaohui.github.io/devops/git/reset_diff_repos/</link>
+        <link>https://hellogitlab.com/devops/git/reset_diff_repos/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/reset_diff_repos/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Git多个远程仓库不同步时的补救办法" /&gt;&lt;h2 id=&#34;git多个远程仓库不同步时的补救办法&#34;&gt;Git多个远程仓库不同步时的补救办法
+        <guid>https://hellogitlab.com/devops/git/reset_diff_repos/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Git多个远程仓库不同步时的补救办法" /&gt;&lt;h2 id=&#34;git多个远程仓库不同步时的补救办法&#34;&gt;Git多个远程仓库不同步时的补救办法
 &lt;/h2&gt;&lt;p&gt;git本地仓库是可以与多个远程仓库关联的。我是一个本地仓库关联了github和gitee两个远程仓库：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -19886,7 +19886,7 @@
 &lt;li&gt;将备份的修改文件复制到仓库中，再进行正常推送到两个仓库。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;gitee上面多出的一条记录，未检出到本地：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-02-12_18-54-28.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-02-12_18-54-28.png&#34;
 	
 	
 	
@@ -20257,11 +20257,11 @@
         </item>
         <item>
         <title>git异常处理</title>
-        <link>https://meizhaohui.github.io/devops/git/git_exceptions/</link>
+        <link>https://hellogitlab.com/devops/git/git_exceptions/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/git_exceptions/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post git异常处理" /&gt;&lt;h2 id=&#34;git异常处理&#34;&gt;git异常处理
+        <guid>https://hellogitlab.com/devops/git/git_exceptions/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post git异常处理" /&gt;&lt;h2 id=&#34;git异常处理&#34;&gt;git异常处理
 &lt;/h2&gt;&lt;h3 id=&#34;peers-certificate-issuer-is-not-recognized异常&#34;&gt;&lt;code&gt;Peer&#39;s Certificate issuer is not recognized&lt;/code&gt;异常
 &lt;/h3&gt;&lt;p&gt;在CentOS7操作系统中搭建了内部使用的gitlab平台，当使用&lt;code&gt;git clone&lt;/code&gt;下载代码时会提示以下异常：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -20350,7 +20350,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;我们先在Web界面上进行修改，然后提交。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-06_16-03-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-06_16-03-48.png&#34;
 	
 	
 	
@@ -20581,7 +20581,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，提交成功了！&lt;/p&gt;
 &lt;p&gt;此时，可以在浏览器中看到刚才的提交：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-08-06_16-26-05.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-08-06_16-26-05.png&#34;
 	
 	
 	
@@ -20599,11 +20599,11 @@
         </item>
         <item>
         <title>SSH隧道连接实现Git推送</title>
-        <link>https://meizhaohui.github.io/devops/git/use_ssh_git_push/</link>
+        <link>https://hellogitlab.com/devops/git/use_ssh_git_push/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/use_ssh_git_push/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post SSH隧道连接实现Git推送" /&gt;&lt;h2 id=&#34;ssh隧道连接实现git推送&#34;&gt;SSH隧道连接实现Git推送
+        <guid>https://hellogitlab.com/devops/git/use_ssh_git_push/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post SSH隧道连接实现Git推送" /&gt;&lt;h2 id=&#34;ssh隧道连接实现git推送&#34;&gt;SSH隧道连接实现Git推送
 &lt;/h2&gt;&lt;p&gt;我们来看看如何配置服务器端的 SSH 访问。 本例中，我们将使用 &lt;code&gt;authorized_keys&lt;/code&gt; 方法来对用户进行认证。&lt;/p&gt;
 &lt;p&gt;参考： &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;服务器上的 Git - 配置服务器&lt;/a&gt;&lt;/p&gt;
@@ -21170,11 +21170,11 @@
         </item>
         <item>
         <title>什么是Signed-off-by</title>
-        <link>https://meizhaohui.github.io/devops/git/signed-off-by/</link>
+        <link>https://hellogitlab.com/devops/git/signed-off-by/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/signed-off-by/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 什么是Signed-off-by" /&gt;&lt;h2 id=&#34;什么是signed-off-by&#34;&gt;什么是Signed-off-by
+        <guid>https://hellogitlab.com/devops/git/signed-off-by/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 什么是Signed-off-by" /&gt;&lt;h2 id=&#34;什么是signed-off-by&#34;&gt;什么是Signed-off-by
 &lt;/h2&gt;&lt;p&gt;在看一些开源代码的 &lt;code&gt;git log&lt;/code&gt;查看历史提交日志的时候，往往会发现里面有些 日志信息中除了说明修改内容还有一行：&lt;code&gt;Signed-off-by: xxx&lt;/code&gt;。那这个&lt;code&gt;Signed-off-by&lt;/code&gt;到底是什么呢？&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
@@ -21279,7 +21279,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;mzh@MacBookPro git &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;master ✗&lt;span class=&#34;o&#34;&gt;)]&lt;/span&gt;$ git commit -s
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220320155922.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220320155922.png&#34;
 	
 	
 	
@@ -21322,11 +21322,11 @@
         </item>
         <item>
         <title>使gitstatus不显示某些文件</title>
-        <link>https://meizhaohui.github.io/devops/git/ignore_changed_files/</link>
+        <link>https://hellogitlab.com/devops/git/ignore_changed_files/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/git/ignore_changed_files/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 使gitstatus不显示某些文件" /&gt;&lt;h2 id=&#34;使git-status不显示某些文件&#34;&gt;使git status不显示某些文件
+        <guid>https://hellogitlab.com/devops/git/ignore_changed_files/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 使gitstatus不显示某些文件" /&gt;&lt;h2 id=&#34;使git-status不显示某些文件&#34;&gt;使git status不显示某些文件
 &lt;/h2&gt;&lt;p&gt;有的时候，一些文件已经在git仓库中，在本地测试时又进行了一些修改，此时在查看仓库状态时，不想显示这些文件。&lt;/p&gt;
 &lt;p&gt;注意，我这里设置了快捷命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -21338,7 +21338,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;比如，我现在使用&lt;code&gt;gs&lt;/code&gt;查看到仓库状态如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-20_23-55-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-20_23-55-32.png&#34;
 	
 	
 	
@@ -21464,7 +21464,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到&lt;code&gt;myblog/package.json&lt;/code&gt;也被忽略了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-11-21_00-04-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-11-21_00-04-19.png&#34;
 	
 	
 	

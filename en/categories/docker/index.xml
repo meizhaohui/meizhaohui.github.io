@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Docker on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/categories/docker/</link>
+        <link>https://hellogitlab.com/en/categories/docker/</link>
         <description>Recent content in Docker on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/categories/docker/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/categories/docker/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Docker Container Deployment</title>
-        <link>https://meizhaohui.github.io/en/devops/docker-deploy/</link>
+        <link>https://hellogitlab.com/en/devops/docker-deploy/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/docker-deploy/</guid>
+        <guid>https://hellogitlab.com/en/devops/docker-deploy/</guid>
         <description>&lt;h2 id=&#34;docker-overview&#34;&gt;Docker Overview
 &lt;/h2&gt;&lt;p&gt;Docker is an open-source containerization platform for packaging applications and dependencies.&lt;/p&gt;
 &lt;h2 id=&#34;dockerfile-example&#34;&gt;Dockerfile Example

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Cobbler on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/cobbler/</link>
+        <link>https://hellogitlab.com/categories/cobbler/</link>
         <description>Recent content in Cobbler on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/cobbler/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/cobbler/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Cobbler自动化系统安装环境配置</title>
-        <link>https://meizhaohui.github.io/os/cobbler/</link>
+        <link>https://hellogitlab.com/os/cobbler/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/os/cobbler/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/logo-cobbler-new.svg" alt="Featured image of post Cobbler自动化系统安装环境配置" /&gt;&lt;h2 id=&#34;cobbler自动化系统安装环境配置&#34;&gt;Cobbler自动化系统安装环境配置
+        <guid>https://hellogitlab.com/os/cobbler/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/logo-cobbler-new.svg" alt="Featured image of post Cobbler自动化系统安装环境配置" /&gt;&lt;h2 id=&#34;cobbler自动化系统安装环境配置&#34;&gt;Cobbler自动化系统安装环境配置
 &lt;/h2&gt;&lt;p&gt;网络安装服务器套件 Cobbler(补鞋匠)是RedHat在2008年发布的，用于快速建立Linux网络安装环境。今天我们就用Cobbler来配置一套自动化系统安装环境。&lt;/p&gt;
 &lt;h3 id=&#34;0-参考文档&#34;&gt;0. 参考文档
 &lt;/h3&gt;&lt;ul&gt;
@@ -197,7 +197,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;记录好这些信息，后面配置Cobbler DHCP时需要使用到。&lt;/p&gt;
 &lt;p&gt;另外，我们关闭VirtualBox主机网络管理器中的&amp;quot;DHCP服务器&amp;quot;，不启用服务器即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/virual_network_dhcp.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/virual_network_dhcp.png&#34;
 	
 	
 	
@@ -3280,7 +3280,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时打开浏览器，访问地址 &lt;a class=&#34;link&#34; href=&#34;https://192.168.2.20/cobbler/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.2.20/cobbler/&lt;/a&gt;，可以看到如下文件列表信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler_index.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler_index.png&#34;
 	
 	
 	
@@ -3290,7 +3290,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;访问：&lt;a class=&#34;link&#34; href=&#34;https://192.168.2.20/cobbler_web/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.2.20/cobbler_web/&lt;/a&gt; 可以访问Cobbler的Web管理系统：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler_web.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler_web.png&#34;
 	
 	
 	
@@ -3302,7 +3302,7 @@
 &lt;h3 id=&#34;10-新建虚拟机节点&#34;&gt;10. 新建虚拟机节点
 &lt;/h3&gt;&lt;p&gt;我们尝试新建一个虚拟机节点，看是否能够从网络安装。&lt;/p&gt;
 &lt;p&gt;新建一个名称为&lt;code&gt;cobbler-node1&lt;/code&gt;的虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/new_virtual_os.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/new_virtual_os.png&#34;
 	
 	
 	
@@ -3312,7 +3312,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;内存设置为2048MB，虚拟硬盘大小设置为40GB。&lt;/p&gt;
 &lt;p&gt;系统设置为从“网络”启动：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/start_from_network.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/start_from_network.png&#34;
 	
 	
 	
@@ -3321,7 +3321,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;并且设置网络为桥接模式：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/network_settings.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/network_settings.png&#34;
 	
 	
 	
@@ -3330,7 +3330,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时启动虚拟机节点， 发现不能正常启动，报以下异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/start_error.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/start_error.png&#34;
 	
 	
 	
@@ -3379,7 +3379,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，再启动&lt;code&gt;cobbler-node1&lt;/code&gt;虚拟机，发现还是启动不了，但是出现的结果不一样了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/start_error_again.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/start_error_again.png&#34;
 	
 	
 	
@@ -4783,7 +4783,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;再次在浏览器中打开应答文件，可以发现没有提示异常。&lt;/p&gt;
 &lt;p&gt;重新启动&lt;code&gt;cobbler_node1&lt;/code&gt;虚拟机。仍然提示异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_012.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_012.png&#34;
 	
 	
 	
@@ -4792,7 +4792,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在VMware中安装虚拟机，尝试开机启动也会提示异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/CentOS7test_VMware_Workstation_013.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/CentOS7test_VMware_Workstation_013.png&#34;
 	
 	
 	
@@ -4803,7 +4803,7 @@
 &lt;p&gt;我们尝试手动连接一下TFTP。&lt;/p&gt;
 &lt;p&gt;我们可以Web浏览器中访问 &lt;a class=&#34;link&#34; href=&#34;https://192.168.2.20/cobbler/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://192.168.2.20/cobbler/&lt;/a&gt; 查看FTP的数据：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/ftp_data.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/ftp_data.png&#34;
 	
 	
 	
@@ -4988,7 +4988,7 @@
 &lt;p&gt;说明是因为宿主机的防火墙开启导致安装新的系统时，新系统不能下载FTP的数据。&lt;/p&gt;
 &lt;p&gt;我们再次尝试在VMware和VirtualBox中启动系统。&lt;/p&gt;
 &lt;p&gt;注意，我们在VirtualBox或VMware中配置的新系统都使用桥接网络：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Selection_015.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Selection_015.png&#34;
 	
 	
 	
@@ -4997,7 +4997,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;启动&lt;code&gt;cobbler_node1&lt;/code&gt;虚拟机：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_016.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_016.png&#34;
 	
 	
 	
@@ -5006,7 +5006,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;由于我长时间没有选择，系统自动从&lt;code&gt;local&lt;/code&gt;启动，而我们&lt;code&gt;local&lt;/code&gt;本地没有启动程序，出现异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_017.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_017.png&#34;
 	
 	
 	
@@ -5015,7 +5015,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们关闭系统，重新启动：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/cobbler-node1_Oracle_VM_VirtualBox_018.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/cobbler-node1_Oracle_VM_VirtualBox_018.png&#34;
 	
 	
 	

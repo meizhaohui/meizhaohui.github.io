@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Golang on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/backend/golang/</link>
+        <link>https://hellogitlab.com/en/backend/golang/</link>
         <description>Recent content in Golang on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/backend/golang/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/backend/golang/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Golang Concurrency Programming</title>
-        <link>https://meizhaohui.github.io/en/backend/golang/golang-concurrency/</link>
+        <link>https://hellogitlab.com/en/backend/golang/golang-concurrency/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/backend/golang/golang-concurrency/</guid>
+        <guid>https://hellogitlab.com/en/backend/golang/golang-concurrency/</guid>
         <description>&lt;h2 id=&#34;goroutine&#34;&gt;Goroutine
 &lt;/h2&gt;&lt;p&gt;Goroutine is Go&amp;rsquo;s lightweight thread, started with the go keyword.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

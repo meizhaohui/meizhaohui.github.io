@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Process on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/tags/process/</link>
+        <link>https://hellogitlab.com/en/tags/process/</link>
         <description>Recent content in Process on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/tags/process/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/tags/process/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux Process Management</title>
-        <link>https://meizhaohui.github.io/en/os/linux-process/</link>
+        <link>https://hellogitlab.com/en/os/linux-process/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/os/linux-process/</guid>
+        <guid>https://hellogitlab.com/en/os/linux-process/</guid>
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;Process management is a fundamental aspect of operating systems.&lt;/p&gt;
 </description>

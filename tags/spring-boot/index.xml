@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Spring-Boot on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/spring-boot/</link>
+        <link>https://hellogitlab.com/tags/spring-boot/</link>
         <description>Recent content in Spring-Boot on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Spring Boot快速入门</title>
-        <link>https://meizhaohui.github.io/backend/java/spring-boot-intro/</link>
+        <link>https://hellogitlab.com/backend/java/spring-boot-intro/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/java/spring-boot-intro/</guid>
+        <guid>https://hellogitlab.com/backend/java/spring-boot-intro/</guid>
         <description>&lt;h2 id=&#34;spring-boot简介&#34;&gt;Spring Boot简介
 &lt;/h2&gt;&lt;p&gt;Spring Boot简化了Spring应用的开发，提供了开箱即用的配置。&lt;/p&gt;
 &lt;h2 id=&#34;创建rest-api&#34;&gt;创建REST API

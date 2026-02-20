@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/page/</link>
+        <link>https://hellogitlab.com/page/</link>
         <description>Recent content in Pages on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>归档</title>
-        <link>https://meizhaohui.github.io/page/archives/</link>
+        <link>https://hellogitlab.com/page/archives/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/page/archives/</guid>
+        <guid>https://hellogitlab.com/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://meizhaohui.github.io/page/search/</link>
+        <link>https://hellogitlab.com/page/search/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/page/search/</guid>
+        <guid>https://hellogitlab.com/page/search/</guid>
         <description></description>
         </item>
         

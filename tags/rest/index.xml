@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Rest on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/rest/</link>
+        <link>https://hellogitlab.com/tags/rest/</link>
         <description>Recent content in Rest on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/rest/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/rest/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>RESTful API设计</title>
-        <link>https://meizhaohui.github.io/backend/rest-api/</link>
+        <link>https://hellogitlab.com/backend/rest-api/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/backend/rest-api/</guid>
+        <guid>https://hellogitlab.com/backend/rest-api/</guid>
         <description>&lt;h2 id=&#34;rest原则&#34;&gt;REST原则
 &lt;/h2&gt;&lt;p&gt;REST使用HTTP方法进行CRUD操作。&lt;/p&gt;
 &lt;h2 id=&#34;http方法&#34;&gt;HTTP方法

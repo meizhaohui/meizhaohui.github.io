@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Etcd on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/etcd/</link>
+        <link>https://hellogitlab.com/categories/etcd/</link>
         <description>Recent content in Etcd on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/etcd/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/etcd/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>ETCD相关快捷命令</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_compaction/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_compaction/</link>
         <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_compaction/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post ETCD相关快捷命令" /&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
+        <guid>https://hellogitlab.com/devops/etcd/etcd_compaction/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post ETCD相关快捷命令" /&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第1节 &lt;a class=&#34;link&#34; href=&#34;../install&#34; &gt;安装etcd&lt;/a&gt; 中，在CentOS7上面安装etcd。&lt;/li&gt;
@@ -215,7 +215,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h4 id=&#34;13-现象说明&#34;&gt;1.3 现象说明
 &lt;/h4&gt;&lt;p&gt;使用etcd-workbench可以查看键的历史版本对比，如新建一个&lt;code&gt;timekey&lt;/code&gt;键，初始值为当前时间&lt;code&gt;2025年6月15日11:33:01&lt;/code&gt;，然后过一会儿再修改该键的值为&lt;code&gt;2025年6月15日11:38:31&lt;/code&gt;，此时点击键右上角的“Version Diff”查看版本差异：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-15_11-39-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-15_11-39-20.png&#34;
 	
 	
 	
@@ -227,7 +227,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，正常显示了两个版本间的差异了！&lt;/p&gt;
 &lt;p&gt;而对于历史的键&lt;code&gt;config&lt;/code&gt;，我们尝试查看版本差异，却提示&lt;code&gt; No multiple versions, required revision has been compacted&lt;/code&gt;异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-15_11-42-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-15_11-42-17.png&#34;
 	
 	
 	
@@ -255,7 +255,7 @@
 &lt;li&gt;在 etcd 配置中，&lt;code&gt;auto-compaction-retention: 1&lt;/code&gt; 和 &lt;code&gt;auto-compaction-mode: periodic&lt;/code&gt; 组合起来定义了 etcd 的自动压缩行为，用于控制历史数据的保留策略。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这种情况是1小时前的版本会被清理掉：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-17_22-33-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-17_22-33-24.png&#34;
 	
 	
 	
@@ -357,7 +357,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h5 id=&#34;213-手动压缩&#34;&gt;2.1.3 手动压缩
 &lt;/h5&gt;&lt;p&gt;由于我有时将虚拟机关机了，再次启动虚拟机时，仍然可以看到之前的版本对比差异。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-15_11-39-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-15_11-39-20.png&#34;
 	
 	
 	
@@ -499,7 +499,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，再查看&lt;code&gt;timekey&lt;/code&gt;的差异对比，可以看到已经没有了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-21_20-57-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-21_20-57-18.png&#34;
 	
 	
 	
@@ -560,7 +560,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时，在etcd-workbench中进行修改&lt;code&gt;timekey&lt;/code&gt;的值，修改两次后，可以看到差异：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-21_22-47-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-21_22-47-49.png&#34;
 	
 	
 	
@@ -571,7 +571,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;再修改一次，还是可以看到差异：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-21_22-48-35.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-21_22-48-35.png&#34;
 	
 	
 	
@@ -594,7 +594,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;说明etcd自动启动了压缩服务。&lt;/p&gt;
 &lt;p&gt;只是压缩到版本38了，我们刚新建的三个版本 39、40、 41没有被压缩，此时仍然可以看到三个版本之间的对比。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-21_22-54-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-21_22-54-16.png&#34;
 	
 	
 	
@@ -606,7 +606,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;再新建两个版本。最新版本到43呢！&lt;/p&gt;
 &lt;p&gt;过了一会儿，日志中显示压缩到版本41了！！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-21_22-55-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-21_22-55-57.png&#34;
 	
 	
 	
@@ -617,7 +617,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，再在etcd-workbench中查看版本信息，可以看到&lt;code&gt;timekey&lt;/code&gt;最早只能查看到版本41。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-21_22-57-23.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-21_22-57-23.png&#34;
 	
 	
 	
@@ -629,7 +629,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;此时，不再新建版本，并保持etcd服务持续运行！过一会儿看看是不是43版本前面的版本都会被压缩！！&lt;/p&gt;
 &lt;p&gt;过几分钟再看，看不到差异对比了！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-21_23-09-40.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-21_23-09-40.png&#34;
 	
 	
 	
@@ -644,11 +644,11 @@
         </item>
         <item>
         <title>etcd集群ID和成员ID的不同显示方式</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_id_is_different/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_id_is_different/</link>
         <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_id_is_different/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd集群ID和成员ID的不同显示方式" /&gt;&lt;h2 id=&#34;etcd-集群id和成员id的不同显示方式&#34;&gt;etcd 集群ID和成员ID的不同显示方式
+        <guid>https://hellogitlab.com/devops/etcd/etcd_id_is_different/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd集群ID和成员ID的不同显示方式" /&gt;&lt;h2 id=&#34;etcd-集群id和成员id的不同显示方式&#34;&gt;etcd 集群ID和成员ID的不同显示方式
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -862,7 +862,7 @@
 &lt;li&gt;节点2 ID:  &lt;strong&gt;15371828803313365603&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;节点3 ID:   &lt;strong&gt;12094329508124611099&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-34-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-34-39.png&#34;
 	
 	
 	
@@ -1019,7 +1019,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-04_23-04-18.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-04_23-04-18.png&#34;
 	
 	
 	
@@ -1131,11 +1131,11 @@
         </item>
         <item>
         <title>etcd配置initial-cluster-state</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_initial-cluster-state/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_initial-cluster-state/</link>
         <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_initial-cluster-state/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd配置initial-cluster-state" /&gt;&lt;h2 id=&#34;etcd-配置-initial-cluster-state&#34;&gt;etcd 配置 initial-cluster-state
+        <guid>https://hellogitlab.com/devops/etcd/etcd_initial-cluster-state/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd配置initial-cluster-state" /&gt;&lt;h2 id=&#34;etcd-配置-initial-cluster-state&#34;&gt;etcd 配置 initial-cluster-state
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -1409,7 +1409,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 etcd&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-03_22-37-46.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-03_22-37-46.png&#34;
 	
 	
 	
@@ -1487,7 +1487,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 node&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-03_22-43-18.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-03_22-43-18.png&#34;
 	
 	
 	
@@ -1622,7 +1622,7 @@
 &lt;li&gt;节点2 ID是  15371828803313365603&lt;/li&gt;
 &lt;li&gt;节点3 ID是  12094329508124611099&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-34-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-34-39.png&#34;
 	
 	
 	
@@ -1688,7 +1688,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 node&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-03_23-02-36.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-03_23-02-36.png&#34;
 	
 	
 	
@@ -2204,7 +2204,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，此时集群id和成员发生了变化！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-04_00-05-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-04_00-05-13.png&#34;
 	
 	
 	
@@ -2379,7 +2379,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 node&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-04_22-09-38.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-04_22-09-38.png&#34;
 	
 	
 	
@@ -2391,7 +2391,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，etcd恢复正常，集群ID和成员ID也与测试前的一致！！此时使用etcd-workbench登陆查看集群信息也是恢复正常的！&lt;/p&gt;
 &lt;h3 id=&#34;3-etcd启动顺序&#34;&gt;3. etcd启动顺序
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-04_20-57-53.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-04_20-57-53.png&#34;
 	
 	
 	
@@ -2402,7 +2402,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;根据前面第2节的实验，绘制了一个流程图，在什么情况下集群ID和成员ID会保持不变，或者重新生成新的集群ID和成员ID信息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-06-04_21-58-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-06-04_21-58-32.png&#34;
 	
 	
 	
@@ -2416,11 +2416,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcd可视化工具</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_visualization_tool/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_visualization_tool/</link>
         <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_visualization_tool/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd可视化工具" /&gt;&lt;h2 id=&#34;etcd可视化工具&#34;&gt;etcd可视化工具
+        <guid>https://hellogitlab.com/devops/etcd/etcd_visualization_tool/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd可视化工具" /&gt;&lt;h2 id=&#34;etcd可视化工具&#34;&gt;etcd可视化工具
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -2626,7 +2626,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;h3 id=&#34;2-etcd工具介绍&#34;&gt;2. etcd工具介绍
 &lt;/h3&gt;&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://etcd.io/docs/v3.5/integrations/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://etcd.io/docs/v3.5/integrations/&lt;/a&gt;罗列了etcd相关的库和工具：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_22-35-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_22-35-20.png&#34;
 	
 	
 	
@@ -2638,7 +2638,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &gt;&lt;/p&gt;
 &lt;p&gt;以前用过一款etcd可视化工具etcdkeeper: &lt;a class=&#34;link&#34; href=&#34;https://github.com/evildecay/etcdkeeper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/evildecay/etcdkeeper&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/etcdkeeper_ui.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/etcdkeeper_ui.png&#34;
 	
 	
 	
@@ -2653,7 +2653,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
     &gt;etcd-workbench一款免费好用的ETCD客户端，支持SSHTunnel、版本对比等功能&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;可参考官方中文介绍 &lt;a class=&#34;link&#34; href=&#34;https://github.com/tzfun/etcd-workbench/blob/master/README_ZH.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/tzfun/etcd-workbench/blob/master/README_ZH.md&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_22-50-52.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_22-50-52.png&#34;
 	
 	
 	
@@ -2665,7 +2665,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &gt;&lt;/p&gt;
 &lt;p&gt;在这个页面 &lt;a class=&#34;link&#34; href=&#34;https://tzfun.github.io/etcd-workbench/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://tzfun.github.io/etcd-workbench/&lt;/a&gt; 可以下载etcd workbench的桌面app或者web服务用的jar包：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_22-55-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_22-55-24.png&#34;
 	
 	
 	
@@ -2675,7 +2675,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_22-55-53.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_22-55-53.png&#34;
 	
 	
 	
@@ -2688,7 +2688,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;p&gt;windows系统直接双击下载下来的&lt;code&gt;etcd-workbench-1.1.6-windows-x86_64.exe&lt;/code&gt;之类的安装包，安装桌面app即可。&lt;/p&gt;
 &lt;h4 id=&#34;21-桌面app的使用&#34;&gt;2.1 桌面app的使用
 &lt;/h4&gt;&lt;p&gt;双击桌面的快捷图标“Etcd Workbench”，此时会打开Etcd Workbench 桌面app:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_22-59-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_22-59-57.png&#34;
 	
 	
 	
@@ -2707,7 +2707,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;li&gt;&lt;code&gt;Namespace&lt;/code&gt;，可理解为查询的键的前缀，可以保持默认为空即可。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;此时点下方的“Test Connect”测试连接，可以发现会报异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-10-49.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-10-49.png&#34;
 	
 	
 	
@@ -2749,7 +2749,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果作为管理员，我们就用&lt;code&gt;root&lt;/code&gt;这个账号信息和密码，注意，你不应让别人知道你etcd的&lt;code&gt;root&lt;/code&gt;账号的密码，此处是测试，使用的密码是&lt;code&gt;securePassword&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;此时，虽然输出了正确的用户名和密码，尝试连接还是报错：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-28-02.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-28-02.png&#34;
 	
 	
 	
@@ -2762,7 +2762,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;p&gt;因为我们ETCD服务器开启了SSL认证，必须要设置相关证书才能正常连接。这就是在1.3节中下载相关证书的原因。&lt;/p&gt;
 &lt;h5 id=&#34;212-ssl认证&#34;&gt;2.1.2 SSL认证
 &lt;/h5&gt;&lt;p&gt;勾选&lt;code&gt;SSL&lt;/code&gt;框后，就弹出SSL相关的信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-35-34.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-35-34.png&#34;
 	
 	
 	
@@ -2791,7 +2791,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;此时测试连接可以看到测试连接成功：
-&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-50-34.png&#34;
+&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-50-34.png&#34;
 	
 	
 	
@@ -2802,7 +2802,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;注意，此时一定要点击&lt;code&gt;Save To Favorites&lt;/code&gt;收藏该连接，要不然下次打开桌面App后，又要重新输入相关信息，会比较麻烦。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-54-48.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-54-48.png&#34;
 	
 	
 	
@@ -2813,7 +2813,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;收藏后，左侧就会显示这个收藏的etcd服务器连接：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-55-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-55-24.png&#34;
 	
 	
 	
@@ -2826,7 +2826,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;p&gt;最后，点击“Connect”就可以连接到etcd服务器了！&lt;/p&gt;
 &lt;h5 id=&#34;213-app界面说明&#34;&gt;2.1.3 app界面说明
 &lt;/h5&gt;&lt;p&gt;进入到app后，就可以看到etcd集群各节点信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-56-43.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-56-43.png&#34;
 	
 	
 	
@@ -2837,7 +2837,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;键值信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-29_23-58-07.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-29_23-58-07.png&#34;
 	
 	
 	
@@ -2848,7 +2848,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;用户管理：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-30_00-00-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-30_00-00-17.png&#34;
 	
 	
 	
@@ -2859,7 +2859,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;角色管理：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-30_00-00-51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-30_00-00-51.png&#34;
 	
 	
 	
@@ -2870,7 +2870,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;对比不同版本的键值差异：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-30_00-06-03.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-30_00-06-03.png&#34;
 	
 	
 	
@@ -2886,7 +2886,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
     &gt;https://tzfun.github.io/etcd-workbench/&lt;/a&gt; 下载web使用的jar，并且&lt;strong&gt;需要安装jdk 11&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;详细参考 &lt;a class=&#34;link&#34; href=&#34;https://github.com/tzfun/etcd-workbench-web&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/tzfun/etcd-workbench-web&lt;/a&gt; 。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_21-30-24.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_21-30-24.png&#34;
 	
 	
 	
@@ -3161,7 +3161,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;日志中，提示可以通过&lt;code&gt;http://192.168.56.121:8003&lt;/code&gt;来访问work-bench UI服务。&lt;/p&gt;
 &lt;p&gt;在浏览器中打开该URL地址，可以看到以下效果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-16-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-16-57.png&#34;
 	
 	
 	
@@ -3185,7 +3185,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如使用用户名&lt;code&gt;username1&lt;/code&gt;和密码&lt;code&gt;password1&lt;/code&gt;登陆：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-19-34.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-19-34.png&#34;
 	
 	
 	
@@ -3196,7 +3196,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;登陆后，效果图如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-14-26.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-14-26.png&#34;
 	
 	
 	
@@ -3208,7 +3208,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &gt;&lt;/p&gt;
 &lt;p&gt;此时看到的效果，与使用桌面app看到的效果是一样的！！&lt;/p&gt;
 &lt;p&gt;尝试输入&lt;code&gt;Auth&lt;/code&gt;和&lt;code&gt;SSL&lt;/code&gt;相关信息，具体填写可参考2.1节：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-23-15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-23-15.png&#34;
 	
 	
 	
@@ -3220,7 +3220,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &gt;&lt;/p&gt;
 &lt;p&gt;点击&lt;code&gt;Test Connect&lt;/code&gt;可以看到连接成功！&lt;strong&gt;注意，此时建议将该连接保存到收藏，即点击&lt;code&gt;Save to Favorites&lt;/code&gt;，然后再点击&lt;code&gt;Connect&lt;/code&gt;连接到ETCD服务器，避免下次登陆需要重新连接！！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;此时，连接上ETCD服务器，但可以看到，功能相对本地桌面App相对来说少一些：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-29-36.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-29-36.png&#34;
 	
 	
 	
@@ -3230,7 +3230,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-34-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-34-39.png&#34;
 	
 	
 	
@@ -3256,7 +3256,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时使用&lt;code&gt;username3&lt;/code&gt;直接登陆，会提示不正确的用户名和密码：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-31_22-43-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-31_22-43-11.png&#34;
 	
 	
 	
@@ -3320,11 +3320,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcd配置文件</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_configuration_file/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_configuration_file/</link>
         <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_configuration_file/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd配置文件" /&gt;&lt;h2 id=&#34;etcd配置文件&#34;&gt;etcd配置文件
+        <guid>https://hellogitlab.com/devops/etcd/etcd_configuration_file/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd配置文件" /&gt;&lt;h2 id=&#34;etcd配置文件&#34;&gt;etcd配置文件
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -4329,7 +4329,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/div&gt;&lt;p&gt;可以看到读写正常！&lt;/p&gt;
 &lt;h4 id=&#34;23-节点2和节点3使用配置文件方式启动etcd&#34;&gt;2.3 节点2和节点3使用配置文件方式启动etcd
 &lt;/h4&gt;&lt;p&gt;复制一份node1的配置文件&lt;code&gt;etcd.yaml&lt;/code&gt;并进行修改，主要修改以下几个部分：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-07_22-46-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-07_22-46-11.png&#34;
 	
 	
 	
@@ -4339,7 +4339,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-07_22-48-22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-07_22-48-22.png&#34;
 	
 	
 	
@@ -5365,7 +5365,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;到此三个节点都使用配置文件方式启动了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-07_23-10-56.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-07_23-10-56.png&#34;
 	
 	
 	
@@ -5376,7 +5376,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;启动etcdkeeper，也可以看到在界面能够正常读取配置。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-05-07_23-12-54.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-05-07_23-12-54.png&#34;
 	
 	
 	
@@ -5439,11 +5439,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcd证书过期处理</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_certificate_expired/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_certificate_expired/</link>
         <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_certificate_expired/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd证书过期处理" /&gt;&lt;h2 id=&#34;etcd证书过期处理&#34;&gt;etcd证书过期处理
+        <guid>https://hellogitlab.com/devops/etcd/etcd_certificate_expired/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd证书过期处理" /&gt;&lt;h2 id=&#34;etcd证书过期处理&#34;&gt;etcd证书过期处理
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -5850,7 +5850,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;分发后，在三个节点上面查看证书文件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-12_22-28-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-12_22-28-01.png&#34;
 	
 	
 	
@@ -5966,7 +5966,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-12_22-47-06.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-12_22-47-06.png&#34;
 	
 	
 	
@@ -5981,11 +5981,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcd基于角色的权限控制</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_role/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_role/</link>
         <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_role/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd基于角色的权限控制" /&gt;&lt;h2 id=&#34;etcd基于角色的权限控制&#34;&gt;etcd基于角色的权限控制
+        <guid>https://hellogitlab.com/devops/etcd/etcd_role/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd基于角色的权限控制" /&gt;&lt;h2 id=&#34;etcd基于角色的权限控制&#34;&gt;etcd基于角色的权限控制
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -7289,7 +7289,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;也就是说&lt;code&gt;appA_readonly_user&lt;/code&gt;只读用户只有&lt;code&gt;/apps/appA/&lt;/code&gt;下面键的读权限，没有创建和删除权限。&lt;/p&gt;
 &lt;p&gt;在etcdkeeper界面尝试使用&lt;code&gt;appA_readonly_user&lt;/code&gt;只读用户登陆后，然后修改&lt;code&gt;/apps/appA/key1&lt;/code&gt;键的值，也会提示权限拒绝异常：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-15_23-57-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-15_23-57-28.png&#34;
 	
 	
 	
@@ -7321,11 +7321,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcdTLS集群部署</title>
-        <link>https://meizhaohui.github.io/devops/etcd/tls_etcd_cluster/</link>
+        <link>https://hellogitlab.com/devops/etcd/tls_etcd_cluster/</link>
         <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/tls_etcd_cluster/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcdTLS集群部署" /&gt;&lt;h2 id=&#34;etcd-tls集群部署&#34;&gt;etcd TLS集群部署
+        <guid>https://hellogitlab.com/devops/etcd/tls_etcd_cluster/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcdTLS集群部署" /&gt;&lt;h2 id=&#34;etcd-tls集群部署&#34;&gt;etcd TLS集群部署
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -7763,7 +7763,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 cacenter&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-06_22-59-38.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-06_22-59-38.png&#34;
 	
 	
 	
@@ -8298,7 +8298,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时三个节点的证书都分发完成。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-08_23-11-08.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-08_23-11-08.png&#34;
 	
 	
 	
@@ -8948,7 +8948,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;实际效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-08_23-42-01.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-08_23-42-01.png&#34;
 	
 	
 	
@@ -8984,7 +8984,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;实际效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-08_23-43-32.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-08_23-43-32.png&#34;
 	
 	
 	
@@ -9020,7 +9020,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;实际效果图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-08_23-44-39.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-08_23-44-39.png&#34;
 	
 	
 	
@@ -9064,7 +9064,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-08_23-47-54.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-08_23-47-54.png&#34;
 	
 	
 	
@@ -9277,7 +9277,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-04-08_23-57-41.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-04-08_23-57-41.png&#34;
 	
 	
 	
@@ -9303,11 +9303,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcd集群部署</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_cluster/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_cluster/</link>
         <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_cluster/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd集群部署" /&gt;&lt;h2 id=&#34;etcd集群部署&#34;&gt;etcd集群部署
+        <guid>https://hellogitlab.com/devops/etcd/etcd_cluster/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd集群部署" /&gt;&lt;h2 id=&#34;etcd集群部署&#34;&gt;etcd集群部署
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -9853,7 +9853,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-03-03_23-00-35.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-03-03_23-00-35.png&#34;
 	
 	
 	
@@ -10076,7 +10076,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-03-19_22-56-05.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-03-19_22-56-05.png&#34;
 	
 	
 	
@@ -10091,11 +10091,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>单节点运行etcd</title>
-        <link>https://meizhaohui.github.io/devops/etcd/single_etcd/</link>
+        <link>https://hellogitlab.com/devops/etcd/single_etcd/</link>
         <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/single_etcd/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 单节点运行etcd" /&gt;&lt;h2 id=&#34;单节点运行etcd&#34;&gt;单节点运行etcd
+        <guid>https://hellogitlab.com/devops/etcd/single_etcd/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 单节点运行etcd" /&gt;&lt;h2 id=&#34;单节点运行etcd&#34;&gt;单节点运行etcd
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -10655,7 +10655,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-27_23-39-59.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-27_23-39-59.png&#34;
 	
 	
 	
@@ -10802,7 +10802,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;root@etcd-node1 ~&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-03-03_23-18-23.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-03-03_23-18-23.png&#34;
 	
 	
 	
@@ -10858,11 +10858,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcd Docs</title>
-        <link>https://meizhaohui.github.io/devops/etcd/etcd_docs/</link>
+        <link>https://hellogitlab.com/devops/etcd/etcd_docs/</link>
         <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/etcd_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/etcd_logo_icon_248925.png" alt="Featured image of post etcd Docs" /&gt;&lt;h2 id=&#34;etcd-docs&#34;&gt;etcd Docs
+        <guid>https://hellogitlab.com/devops/etcd/etcd_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/etcd_logo_icon_248925.png" alt="Featured image of post etcd Docs" /&gt;&lt;h2 id=&#34;etcd-docs&#34;&gt;etcd Docs
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../install&#34; &gt;安装etcd&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../single_etcd&#34; &gt;单节点运行etcd&lt;/a&gt;&lt;/li&gt;
@@ -10880,11 +10880,11 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
         </item>
         <item>
         <title>etcd系列总结--安装etcd</title>
-        <link>https://meizhaohui.github.io/devops/etcd/install/</link>
+        <link>https://hellogitlab.com/devops/etcd/install/</link>
         <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/etcd/install/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post etcd系列总结--安装etcd" /&gt;&lt;h2 id=&#34;etcd系列总结安装etcd&#34;&gt;etcd系列总结&amp;ndash;安装etcd
+        <guid>https://hellogitlab.com/devops/etcd/install/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post etcd系列总结--安装etcd" /&gt;&lt;h2 id=&#34;etcd系列总结安装etcd&#34;&gt;etcd系列总结&amp;ndash;安装etcd
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;这是一个序列总结文档。&lt;/p&gt;
 &lt;ul&gt;
@@ -10976,7 +10976,7 @@ etcd 启动时首先检查 &lt;code&gt;--data-dir&lt;/code&gt; 目录：
 &lt;/h3&gt;&lt;p&gt;当前时间（2025年2月19日22:51:33）etcd最新的版本是v3.5.18，可以打开链接 &lt;a class=&#34;link&#34; href=&#34;https://github.com/etcd-io/etcd/releases/tag/v3.5.18&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/etcd-io/etcd/releases/tag/v3.5.18&lt;/a&gt; 下载对应的预编译二进制文件。&lt;/p&gt;
 &lt;p&gt;我们选择&lt;code&gt;etcd-v3.5.18-linux-amd64.tar.gz&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2025-02-19_22-57-20.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2025-02-19_22-57-20.png&#34;
 	
 	
 	

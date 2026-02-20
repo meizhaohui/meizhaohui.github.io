@@ -4,16 +4,16 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="docker配置redis缓存 我们可以使用redis来配置缓存，加速网站访问。\nredis镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 [root@hellogitlab ~]# docker pull redis Using default tag: latest Trying to pull repository docker.io/library/redis ... latest: Pulling from docker.io/library/redis a076a628af6f: Already exists f40dd07fe7be: Pull complete ce21c8a3dbee: Pull complete ee99c35818f8: Pull complete 56b9a72e68ff: Pull complete 3f703e7f380f: Pull complete Digest: sha256:0f97c1c9daf5b69b93390ccbe8d3e2971617ec4801fd0882c72bf7cad3a13494 Status: Downloaded newer image for docker.io/redis:latest [root@hellogitlab dockerdata]# docker images redis REPOSITORY TAG IMAGE ID CREATED SIZE docker.io/redis latest 621ceef7494a 2 months ago 104 MB 在Redis官网下载一份redis安装程序，并解压，修改其中的redis.conf配置文件。\n">
 <title>docker配置redis缓存</title>
 
-<link rel='canonical' href='https://meizhaohui.github.io/devops/docker/redis_in_docker/'>
+<link rel='canonical' href='https://hellogitlab.com/devops/docker/redis_in_docker/'>
 
 <link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="docker配置redis缓存">
 <meta property='og:description' content="docker配置redis缓存 我们可以使用redis来配置缓存，加速网站访问。\nredis镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 [root@hellogitlab ~]# docker pull redis Using default tag: latest Trying to pull repository docker.io/library/redis ... latest: Pulling from docker.io/library/redis a076a628af6f: Already exists f40dd07fe7be: Pull complete ce21c8a3dbee: Pull complete ee99c35818f8: Pull complete 56b9a72e68ff: Pull complete 3f703e7f380f: Pull complete Digest: sha256:0f97c1c9daf5b69b93390ccbe8d3e2971617ec4801fd0882c72bf7cad3a13494 Status: Downloaded newer image for docker.io/redis:latest [root@hellogitlab dockerdata]# docker images redis REPOSITORY TAG IMAGE ID CREATED SIZE docker.io/redis latest 621ceef7494a 2 months ago 104 MB 在Redis官网下载一份redis安装程序，并解压，修改其中的redis.conf配置文件。\n">
-<meta property='og:url' content='https://meizhaohui.github.io/devops/docker/redis_in_docker/'>
+<meta property='og:url' content='https://hellogitlab.com/devops/docker/redis_in_docker/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://meizhaohui.github.io/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="docker配置redis缓存">
 <meta name="twitter:description" content="docker配置redis缓存 我们可以使用redis来配置缓存，加速网站访问。\nredis镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 [root@hellogitlab ~]# docker pull redis Using default tag: latest Trying to pull repository docker.io/library/redis ... latest: Pulling from docker.io/library/redis a076a628af6f: Already exists f40dd07fe7be: Pull complete ce21c8a3dbee: Pull complete ee99c35818f8: Pull complete 56b9a72e68ff: Pull complete 3f703e7f380f: Pull complete Digest: sha256:0f97c1c9daf5b69b93390ccbe8d3e2971617ec4801fd0882c72bf7cad3a13494 Status: Downloaded newer image for docker.io/redis:latest [root@hellogitlab dockerdata]# docker images redis REPOSITORY TAG IMAGE ID CREATED SIZE docker.io/redis latest 621ceef7494a 2 months ago 104 MB 在Redis官网下载一份redis安装程序，并解压，修改其中的redis.conf配置文件。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://meizhaohui.github.io/img/default.jpg' />
+    <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -327,9 +327,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://meizhaohui.github.io/" selected>简体中文</option>
+                                    <option value="https://hellogitlab.com/" selected>简体中文</option>
                                 
-                                    <option value="https://meizhaohui.github.io/en/" >English</option>
+                                    <option value="https://hellogitlab.com/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -431,7 +431,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

@@ -4,16 +4,16 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="etcd系列总结&ndash;安装etcd 1. 概述 这是一个序列总结文档。\n第1节 安装etcd 中，在CentOS7上面安装etcd。 第2节 单节点运行etcd 在单节点上面运行etcd。 第3节 三节点部署etcd集群 在三节点上面部署etcd集群，并为etcd配置了一些快捷命令。 第4节 etcd TLS集群部署 在三节点上面部署etcd集群，并开启TLS协议的加密通讯。 第5节 etcd角色权限控制 在三节点上面部署etcd TLS集群的基础上，开启角色控制。详细可参考 https://etcd.io/docs/v3.5/demo/ 。 第6节 etcd证书过期处理，在etcd证书过期后，etcd相关命令行都操作不了，讲解如何处理这个问题。 第7节 etcd配置文件, 通过etcd配置文件来配置相关参数，然后启动etcd服务。 第8节 etcd可视化工具, 介绍一款好用的etcd可视化工具etcd-workbench。 第9节 etcd的关键配置initial-cluster-state, 介绍initial-cluster-state设置成new和existing的区别。 第10节 集群ID和成员ID的不同显示方式, 介绍etcd集群ID和成员ID的不同显示方式，以及ID值如何在十六进制和十进制间进行转换。 第11节 etcd compaction压缩, 介绍etcd compaction压缩相关说明，如何修改压缩配置等。 1.1 VirtualBox虚拟机信息记录 学习etcd时，使用以下几个虚拟机:\n序号 虚拟机 主机名 IP CPU 内存 说明 1 ansible-master ansible 192.168.56.120 2核 4G Ansible控制节点 2 ansible-node1 etcd-node1 192.168.56.121 2核 2G Ansible工作节点1 3 ansible-node2 etcd-node2 192.168.56.122 2核 2G Ansible工作节点2 4 ansible-node3 etcd-node3 192.168.56.123 2核 2G Ansible工作节点3 后面会编写使用ansible部署etcd集群的剧本。\n">
 <title>etcd系列总结--安装etcd</title>
 
-<link rel='canonical' href='https://meizhaohui.github.io/devops/etcd/install/'>
+<link rel='canonical' href='https://hellogitlab.com/devops/etcd/install/'>
 
 <link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="etcd系列总结--安装etcd">
 <meta property='og:description' content="etcd系列总结&ndash;安装etcd 1. 概述 这是一个序列总结文档。\n第1节 安装etcd 中，在CentOS7上面安装etcd。 第2节 单节点运行etcd 在单节点上面运行etcd。 第3节 三节点部署etcd集群 在三节点上面部署etcd集群，并为etcd配置了一些快捷命令。 第4节 etcd TLS集群部署 在三节点上面部署etcd集群，并开启TLS协议的加密通讯。 第5节 etcd角色权限控制 在三节点上面部署etcd TLS集群的基础上，开启角色控制。详细可参考 https://etcd.io/docs/v3.5/demo/ 。 第6节 etcd证书过期处理，在etcd证书过期后，etcd相关命令行都操作不了，讲解如何处理这个问题。 第7节 etcd配置文件, 通过etcd配置文件来配置相关参数，然后启动etcd服务。 第8节 etcd可视化工具, 介绍一款好用的etcd可视化工具etcd-workbench。 第9节 etcd的关键配置initial-cluster-state, 介绍initial-cluster-state设置成new和existing的区别。 第10节 集群ID和成员ID的不同显示方式, 介绍etcd集群ID和成员ID的不同显示方式，以及ID值如何在十六进制和十进制间进行转换。 第11节 etcd compaction压缩, 介绍etcd compaction压缩相关说明，如何修改压缩配置等。 1.1 VirtualBox虚拟机信息记录 学习etcd时，使用以下几个虚拟机:\n序号 虚拟机 主机名 IP CPU 内存 说明 1 ansible-master ansible 192.168.56.120 2核 4G Ansible控制节点 2 ansible-node1 etcd-node1 192.168.56.121 2核 2G Ansible工作节点1 3 ansible-node2 etcd-node2 192.168.56.122 2核 2G Ansible工作节点2 4 ansible-node3 etcd-node3 192.168.56.123 2核 2G Ansible工作节点3 后面会编写使用ansible部署etcd集群的剧本。\n">
-<meta property='og:url' content='https://meizhaohui.github.io/devops/etcd/install/'>
+<meta property='og:url' content='https://hellogitlab.com/devops/etcd/install/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Etcd' /><meta property='article:published_time' content='2025-02-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-19T00:00:00&#43;00:00'/><meta property='og:image' content='https://meizhaohui.github.io/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Etcd' /><meta property='article:published_time' content='2025-02-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-19T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="etcd系列总结--安装etcd">
 <meta name="twitter:description" content="etcd系列总结&ndash;安装etcd 1. 概述 这是一个序列总结文档。\n第1节 安装etcd 中，在CentOS7上面安装etcd。 第2节 单节点运行etcd 在单节点上面运行etcd。 第3节 三节点部署etcd集群 在三节点上面部署etcd集群，并为etcd配置了一些快捷命令。 第4节 etcd TLS集群部署 在三节点上面部署etcd集群，并开启TLS协议的加密通讯。 第5节 etcd角色权限控制 在三节点上面部署etcd TLS集群的基础上，开启角色控制。详细可参考 https://etcd.io/docs/v3.5/demo/ 。 第6节 etcd证书过期处理，在etcd证书过期后，etcd相关命令行都操作不了，讲解如何处理这个问题。 第7节 etcd配置文件, 通过etcd配置文件来配置相关参数，然后启动etcd服务。 第8节 etcd可视化工具, 介绍一款好用的etcd可视化工具etcd-workbench。 第9节 etcd的关键配置initial-cluster-state, 介绍initial-cluster-state设置成new和existing的区别。 第10节 集群ID和成员ID的不同显示方式, 介绍etcd集群ID和成员ID的不同显示方式，以及ID值如何在十六进制和十进制间进行转换。 第11节 etcd compaction压缩, 介绍etcd compaction压缩相关说明，如何修改压缩配置等。 1.1 VirtualBox虚拟机信息记录 学习etcd时，使用以下几个虚拟机:\n序号 虚拟机 主机名 IP CPU 内存 说明 1 ansible-master ansible 192.168.56.120 2核 4G Ansible控制节点 2 ansible-node1 etcd-node1 192.168.56.121 2核 2G Ansible工作节点1 3 ansible-node2 etcd-node2 192.168.56.122 2核 2G Ansible工作节点2 4 ansible-node3 etcd-node3 192.168.56.123 2核 2G Ansible工作节点3 后面会编写使用ansible部署etcd集群的剧本。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://meizhaohui.github.io/img/default.jpg' />
+    <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -327,9 +327,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://meizhaohui.github.io/" selected>简体中文</option>
+                                    <option value="https://hellogitlab.com/" selected>简体中文</option>
                                 
-                                    <option value="https://meizhaohui.github.io/en/" >English</option>
+                                    <option value="https://hellogitlab.com/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -450,7 +450,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

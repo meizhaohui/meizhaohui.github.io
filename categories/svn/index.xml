@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Svn on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/svn/</link>
+        <link>https://hellogitlab.com/categories/svn/</link>
         <description>Recent content in Svn on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/svn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/svn/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>svn Docs</title>
-        <link>https://meizhaohui.github.io/devops/svn/svn_docs/</link>
+        <link>https://hellogitlab.com/devops/svn/svn_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/svn/svn_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/svn_icon_132016.png" alt="Featured image of post svn Docs" /&gt;&lt;h2 id=&#34;svn-docs&#34;&gt;svn Docs
+        <guid>https://hellogitlab.com/devops/svn/svn_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/svn_icon_132016.png" alt="Featured image of post svn Docs" /&gt;&lt;h2 id=&#34;svn-docs&#34;&gt;svn Docs
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;svn官网地址： &lt;a class=&#34;link&#34; href=&#34;https://subversion.apache.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Apache Subversion&lt;/a&gt;&lt;/li&gt;
@@ -24,7 +24,7 @@
     &gt;Apache Subversion Binary Packages&lt;/a&gt; 进行安装。&lt;/p&gt;
 &lt;p&gt;也可以在 &lt;a class=&#34;link&#34; href=&#34;https://www.wandisco.com/source-code-management/subversion&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.wandisco.com/source-code-management/subversion&lt;/a&gt; 页面下载自动化安装程序：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2022-09-14_21-22-21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2022-09-14_21-22-21.png&#34;
 	
 	
 	

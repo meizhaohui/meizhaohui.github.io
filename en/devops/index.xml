@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Devops on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/devops/</link>
+        <link>https://hellogitlab.com/en/devops/</link>
         <description>Recent content in Devops on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/devops/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/devops/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CI/CD Pipeline Configuration</title>
-        <link>https://meizhaohui.github.io/en/devops/cicd-pipeline/</link>
+        <link>https://hellogitlab.com/en/devops/cicd-pipeline/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/cicd-pipeline/</guid>
+        <guid>https://hellogitlab.com/en/devops/cicd-pipeline/</guid>
         <description>&lt;h2 id=&#34;gitlab-cicd&#34;&gt;GitLab CI/CD
 &lt;/h2&gt;&lt;p&gt;Implement automated build and deployment with GitLab CI/CD.&lt;/p&gt;
 &lt;h2 id=&#34;gitlab-ciyml-example&#34;&gt;.gitlab-ci.yml Example
@@ -76,10 +76,10 @@
         </item>
         <item>
         <title>Docker Container Deployment</title>
-        <link>https://meizhaohui.github.io/en/devops/docker-deploy/</link>
+        <link>https://hellogitlab.com/en/devops/docker-deploy/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/docker-deploy/</guid>
+        <guid>https://hellogitlab.com/en/devops/docker-deploy/</guid>
         <description>&lt;h2 id=&#34;docker-overview&#34;&gt;Docker Overview
 &lt;/h2&gt;&lt;p&gt;Docker is an open-source containerization platform for packaging applications and dependencies.&lt;/p&gt;
 &lt;h2 id=&#34;dockerfile-example&#34;&gt;Dockerfile Example
@@ -113,10 +113,10 @@
         </item>
         <item>
         <title>Kubernetes Cluster Management</title>
-        <link>https://meizhaohui.github.io/en/devops/kubernetes-cluster/</link>
+        <link>https://hellogitlab.com/en/devops/kubernetes-cluster/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/devops/kubernetes-cluster/</guid>
+        <guid>https://hellogitlab.com/en/devops/kubernetes-cluster/</guid>
         <description>&lt;h2 id=&#34;kubernetes-overview&#34;&gt;Kubernetes Overview
 &lt;/h2&gt;&lt;p&gt;Kubernetes (K8s) is an open-source container orchestration platform.&lt;/p&gt;
 &lt;h2 id=&#34;deploy-application&#34;&gt;Deploy Application

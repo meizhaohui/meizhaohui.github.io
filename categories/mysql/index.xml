@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Mysql on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/categories/mysql/</link>
+        <link>https://hellogitlab.com/categories/mysql/</link>
         <description>Recent content in Mysql on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 24 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/categories/mysql/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CentOS7安装mysql</title>
-        <link>https://meizhaohui.github.io/dba/mysql/x_00_install_mysql/</link>
+        <link>https://hellogitlab.com/dba/mysql/x_00_install_mysql/</link>
         <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/mysql/x_00_install_mysql/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post CentOS7安装mysql" /&gt;&lt;h2 id=&#34;centos7安装mysql&#34;&gt;CentOS7安装mysql
+        <guid>https://hellogitlab.com/dba/mysql/x_00_install_mysql/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS7安装mysql" /&gt;&lt;h2 id=&#34;centos7安装mysql&#34;&gt;CentOS7安装mysql
 &lt;/h2&gt;&lt;h3 id=&#34;1-概述&#34;&gt;1. 概述
 &lt;/h3&gt;&lt;p&gt;本文档记录在CentOS7系统上面安装mariadb，然后启动mysql。&lt;/p&gt;
 &lt;p&gt;MariaDB数据库管理系统是MySQL的一个分支。&lt;/p&gt;
@@ -1178,11 +1178,11 @@
         </item>
         <item>
         <title>mysqlDocs</title>
-        <link>https://meizhaohui.github.io/dba/mysql/mysql_docs/</link>
+        <link>https://hellogitlab.com/dba/mysql/mysql_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/mysql/mysql_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post mysqlDocs" /&gt;&lt;h2 id=&#34;mysql-docs&#34;&gt;mysql Docs
+        <guid>https://hellogitlab.com/dba/mysql/mysql_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post mysqlDocs" /&gt;&lt;h2 id=&#34;mysql-docs&#34;&gt;mysql Docs
 &lt;/h2&gt;&lt;p&gt;mysql学习笔记：&lt;/p&gt;
 &lt;ol start=&#34;0&#34;&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_00_install_mysql&#34; &gt;CentOS7安装Mariadb数据库&lt;/a&gt;&lt;/li&gt;
@@ -1195,11 +1195,11 @@
         </item>
         <item>
         <title>mysql数据库的创建、删除与使用</title>
-        <link>https://meizhaohui.github.io/dba/mysql/x_01_insert_select_update_delete/</link>
+        <link>https://hellogitlab.com/dba/mysql/x_01_insert_select_update_delete/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/mysql/x_01_insert_select_update_delete/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post mysql数据库的创建、删除与使用" /&gt;&lt;h2 id=&#34;mysql数据库的创建删除与使用&#34;&gt;mysql数据库的创建、删除与使用
+        <guid>https://hellogitlab.com/dba/mysql/x_01_insert_select_update_delete/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post mysql数据库的创建、删除与使用" /&gt;&lt;h2 id=&#34;mysql数据库的创建删除与使用&#34;&gt;mysql数据库的创建、删除与使用
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;p&gt;本文档包括数据库的创建、删除和使用。&lt;/p&gt;
 &lt;h3 id=&#34;查看mysql版本号&#34;&gt;查看mysql版本号
@@ -1600,11 +1600,11 @@
         </item>
         <item>
         <title>mysql数据库求字段的总和、总数与均值</title>
-        <link>https://meizhaohui.github.io/dba/mysql/x_02_sum_count_avg/</link>
+        <link>https://hellogitlab.com/dba/mysql/x_02_sum_count_avg/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/mysql/x_02_sum_count_avg/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post mysql数据库求字段的总和、总数与均值" /&gt;&lt;h2 id=&#34;mysql数据库求字段的总和总数与均值&#34;&gt;mysql数据库求字段的总和、总数与均值
+        <guid>https://hellogitlab.com/dba/mysql/x_02_sum_count_avg/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post mysql数据库求字段的总和、总数与均值" /&gt;&lt;h2 id=&#34;mysql数据库求字段的总和总数与均值&#34;&gt;mysql数据库求字段的总和、总数与均值
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -1666,11 +1666,11 @@
         </item>
         <item>
         <title>mysql数据库求字段的最大值和最小值</title>
-        <link>https://meizhaohui.github.io/dba/mysql/x_03_greatest_least/</link>
+        <link>https://hellogitlab.com/dba/mysql/x_03_greatest_least/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/mysql/x_03_greatest_least/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post mysql数据库求字段的最大值和最小值" /&gt;&lt;h2 id=&#34;mysql数据库求字段的最大值和最小值&#34;&gt;mysql数据库求字段的最大值和最小值
+        <guid>https://hellogitlab.com/dba/mysql/x_03_greatest_least/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post mysql数据库求字段的最大值和最小值" /&gt;&lt;h2 id=&#34;mysql数据库求字段的最大值和最小值&#34;&gt;mysql数据库求字段的最大值和最小值
 &lt;/h2&gt;&lt;h3 id=&#34;概述&#34;&gt;概述
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -1721,11 +1721,11 @@
         </item>
         <item>
         <title>解决Mysql Index column size too large.The maximum column size is767bytes异常</title>
-        <link>https://meizhaohui.github.io/dba/mysql/x_04_index_column_size_too_large_the_maximum_column_size_is_767_bytes/</link>
+        <link>https://hellogitlab.com/dba/mysql/x_04_index_column_size_too_large_the_maximum_column_size_is_767_bytes/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/dba/mysql/x_04_index_column_size_too_large_the_maximum_column_size_is_767_bytes/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post 解决Mysql Index column size too large.The maximum column size is767bytes异常" /&gt;&lt;h2 id=&#34;解决mysql-index-column-size-too-large-the-maximum-column-size-is-767-bytes异常&#34;&gt;解决Mysql &amp;ldquo;Index column size too large. The maximum column size is 767 bytes.&amp;ldquo;异常
+        <guid>https://hellogitlab.com/dba/mysql/x_04_index_column_size_too_large_the_maximum_column_size_is_767_bytes/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 解决Mysql Index column size too large.The maximum column size is767bytes异常" /&gt;&lt;h2 id=&#34;解决mysql-index-column-size-too-large-the-maximum-column-size-is-767-bytes异常&#34;&gt;解决Mysql &amp;ldquo;Index column size too large. The maximum column size is 767 bytes.&amp;ldquo;异常
 &lt;/h2&gt;&lt;p&gt;在mysql插入数据时有时会出现以下异常：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

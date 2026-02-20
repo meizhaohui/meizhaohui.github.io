@@ -4,16 +4,16 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="ansible loop循环 1. 概述 ansible循环官方文档 Loops ansible提供loop、with_&lt;lookup&gt;、until等关键字来多次执行任务。 ansible在2.5版本中引入了loop循环，它尚未完全替代 with_&lt;lookup&gt;，但ansible官方建议在大多数用例中使用它。 ansible并没有废弃with_&lt;lookup&gt;,目前认为该语法仍然是有效的。 2. loop与with_的区别 The with_lookup keywords rely on Lookup plugins - even items is a lookup.\nThe loop keyword is equivalent to with_list, and is the best choice for simple loops.\nThe loop keyword will not accept a string as input, see Ensuring list input for loop: using query rather than lookup.\nGenerally speaking, any use of with_* covered in Migrating from with_X to loop can be updated to use loop.\n">
 <title>ansibleloop循环</title>
 
-<link rel='canonical' href='https://meizhaohui.github.io/devops/ansible/loop/'>
+<link rel='canonical' href='https://hellogitlab.com/devops/ansible/loop/'>
 
 <link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="ansibleloop循环">
 <meta property='og:description' content="ansible loop循环 1. 概述 ansible循环官方文档 Loops ansible提供loop、with_&lt;lookup&gt;、until等关键字来多次执行任务。 ansible在2.5版本中引入了loop循环，它尚未完全替代 with_&lt;lookup&gt;，但ansible官方建议在大多数用例中使用它。 ansible并没有废弃with_&lt;lookup&gt;,目前认为该语法仍然是有效的。 2. loop与with_的区别 The with_lookup keywords rely on Lookup plugins - even items is a lookup.\nThe loop keyword is equivalent to with_list, and is the best choice for simple loops.\nThe loop keyword will not accept a string as input, see Ensuring list input for loop: using query rather than lookup.\nGenerally speaking, any use of with_* covered in Migrating from with_X to loop can be updated to use loop.\n">
-<meta property='og:url' content='https://meizhaohui.github.io/devops/ansible/loop/'>
+<meta property='og:url' content='https://hellogitlab.com/devops/ansible/loop/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://meizhaohui.github.io/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="ansibleloop循环">
 <meta name="twitter:description" content="ansible loop循环 1. 概述 ansible循环官方文档 Loops ansible提供loop、with_&lt;lookup&gt;、until等关键字来多次执行任务。 ansible在2.5版本中引入了loop循环，它尚未完全替代 with_&lt;lookup&gt;，但ansible官方建议在大多数用例中使用它。 ansible并没有废弃with_&lt;lookup&gt;,目前认为该语法仍然是有效的。 2. loop与with_的区别 The with_lookup keywords rely on Lookup plugins - even items is a lookup.\nThe loop keyword is equivalent to with_list, and is the best choice for simple loops.\nThe loop keyword will not accept a string as input, see Ensuring list input for loop: using query rather than lookup.\nGenerally speaking, any use of with_* covered in Migrating from with_X to loop can be updated to use loop.\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://meizhaohui.github.io/img/default.jpg' />
+    <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -327,9 +327,9 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="https://meizhaohui.github.io/" selected>简体中文</option>
+                                    <option value="https://hellogitlab.com/" selected>简体中文</option>
                                 
-                                    <option value="https://meizhaohui.github.io/en/" >English</option>
+                                    <option value="https://hellogitlab.com/en/" >English</option>
                                 
                             </select>
                         </li>
@@ -464,7 +464,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

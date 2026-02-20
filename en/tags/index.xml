@@ -2,249 +2,249 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Programming Technology Sharing</title>
-        <link>https://meizhaohui.github.io/en/tags/</link>
+        <link>https://hellogitlab.com/en/tags/</link>
         <description>Recent content in Tags on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Automation</title>
-        <link>https://meizhaohui.github.io/en/tags/automation/</link>
+        <link>https://hellogitlab.com/en/tags/automation/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/automation/</guid>
+        <guid>https://hellogitlab.com/en/tags/automation/</guid>
         <description></description>
         </item>
         <item>
         <title>Channel</title>
-        <link>https://meizhaohui.github.io/en/tags/channel/</link>
+        <link>https://hellogitlab.com/en/tags/channel/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/channel/</guid>
+        <guid>https://hellogitlab.com/en/tags/channel/</guid>
         <description></description>
         </item>
         <item>
         <title>Containerization</title>
-        <link>https://meizhaohui.github.io/en/tags/containerization/</link>
+        <link>https://hellogitlab.com/en/tags/containerization/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/containerization/</guid>
+        <guid>https://hellogitlab.com/en/tags/containerization/</guid>
         <description></description>
         </item>
         <item>
         <title>Docker</title>
-        <link>https://meizhaohui.github.io/en/tags/docker/</link>
+        <link>https://hellogitlab.com/en/tags/docker/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/docker/</guid>
+        <guid>https://hellogitlab.com/en/tags/docker/</guid>
         <description></description>
         </item>
         <item>
         <title>Flask</title>
-        <link>https://meizhaohui.github.io/en/tags/flask/</link>
+        <link>https://hellogitlab.com/en/tags/flask/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/flask/</guid>
+        <guid>https://hellogitlab.com/en/tags/flask/</guid>
         <description></description>
         </item>
         <item>
         <title>Gitlab-Ci</title>
-        <link>https://meizhaohui.github.io/en/tags/gitlab-ci/</link>
+        <link>https://hellogitlab.com/en/tags/gitlab-ci/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/gitlab-ci/</guid>
+        <guid>https://hellogitlab.com/en/tags/gitlab-ci/</guid>
         <description></description>
         </item>
         <item>
         <title>Goroutine</title>
-        <link>https://meizhaohui.github.io/en/tags/goroutine/</link>
+        <link>https://hellogitlab.com/en/tags/goroutine/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/goroutine/</guid>
+        <guid>https://hellogitlab.com/en/tags/goroutine/</guid>
         <description></description>
         </item>
         <item>
         <title>Java</title>
-        <link>https://meizhaohui.github.io/en/tags/java/</link>
+        <link>https://hellogitlab.com/en/tags/java/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/java/</guid>
+        <guid>https://hellogitlab.com/en/tags/java/</guid>
         <description></description>
         </item>
         <item>
         <title>K8s</title>
-        <link>https://meizhaohui.github.io/en/tags/k8s/</link>
+        <link>https://hellogitlab.com/en/tags/k8s/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/k8s/</guid>
+        <guid>https://hellogitlab.com/en/tags/k8s/</guid>
         <description></description>
         </item>
         <item>
         <title>Orchestration</title>
-        <link>https://meizhaohui.github.io/en/tags/orchestration/</link>
+        <link>https://hellogitlab.com/en/tags/orchestration/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/orchestration/</guid>
+        <guid>https://hellogitlab.com/en/tags/orchestration/</guid>
         <description></description>
         </item>
         <item>
         <title>Spring-Boot</title>
-        <link>https://meizhaohui.github.io/en/tags/spring-boot/</link>
+        <link>https://hellogitlab.com/en/tags/spring-boot/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/spring-boot/</guid>
+        <guid>https://hellogitlab.com/en/tags/spring-boot/</guid>
         <description></description>
         </item>
         <item>
         <title>Web-Framework</title>
-        <link>https://meizhaohui.github.io/en/tags/web-framework/</link>
+        <link>https://hellogitlab.com/en/tags/web-framework/</link>
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/web-framework/</guid>
+        <guid>https://hellogitlab.com/en/tags/web-framework/</guid>
         <description></description>
         </item>
         <item>
         <title>Api</title>
-        <link>https://meizhaohui.github.io/en/tags/api/</link>
+        <link>https://hellogitlab.com/en/tags/api/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/api/</guid>
+        <guid>https://hellogitlab.com/en/tags/api/</guid>
         <description></description>
         </item>
         <item>
         <title>Javascript</title>
-        <link>https://meizhaohui.github.io/en/tags/javascript/</link>
+        <link>https://hellogitlab.com/en/tags/javascript/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/javascript/</guid>
+        <guid>https://hellogitlab.com/en/tags/javascript/</guid>
         <description></description>
         </item>
         <item>
         <title>Linux</title>
-        <link>https://meizhaohui.github.io/en/tags/linux/</link>
+        <link>https://hellogitlab.com/en/tags/linux/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/linux/</guid>
+        <guid>https://hellogitlab.com/en/tags/linux/</guid>
         <description></description>
         </item>
         <item>
         <title>Memory</title>
-        <link>https://meizhaohui.github.io/en/tags/memory/</link>
+        <link>https://hellogitlab.com/en/tags/memory/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/memory/</guid>
+        <guid>https://hellogitlab.com/en/tags/memory/</guid>
         <description></description>
         </item>
         <item>
         <title>React</title>
-        <link>https://meizhaohui.github.io/en/tags/react/</link>
+        <link>https://hellogitlab.com/en/tags/react/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/react/</guid>
+        <guid>https://hellogitlab.com/en/tags/react/</guid>
         <description></description>
         </item>
         <item>
         <title>Rest</title>
-        <link>https://meizhaohui.github.io/en/tags/rest/</link>
+        <link>https://hellogitlab.com/en/tags/rest/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/rest/</guid>
+        <guid>https://hellogitlab.com/en/tags/rest/</guid>
         <description></description>
         </item>
         <item>
         <title>Css</title>
-        <link>https://meizhaohui.github.io/en/tags/css/</link>
+        <link>https://hellogitlab.com/en/tags/css/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/css/</guid>
+        <guid>https://hellogitlab.com/en/tags/css/</guid>
         <description></description>
         </item>
         <item>
         <title>Database</title>
-        <link>https://meizhaohui.github.io/en/tags/database/</link>
+        <link>https://hellogitlab.com/en/tags/database/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/database/</guid>
+        <guid>https://hellogitlab.com/en/tags/database/</guid>
         <description></description>
         </item>
         <item>
         <title>Layout</title>
-        <link>https://meizhaohui.github.io/en/tags/layout/</link>
+        <link>https://hellogitlab.com/en/tags/layout/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/layout/</guid>
+        <guid>https://hellogitlab.com/en/tags/layout/</guid>
         <description></description>
         </item>
         <item>
         <title>Performance</title>
-        <link>https://meizhaohui.github.io/en/tags/performance/</link>
+        <link>https://hellogitlab.com/en/tags/performance/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/performance/</guid>
+        <guid>https://hellogitlab.com/en/tags/performance/</guid>
         <description></description>
         </item>
         <item>
         <title>Process</title>
-        <link>https://meizhaohui.github.io/en/tags/process/</link>
+        <link>https://hellogitlab.com/en/tags/process/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/process/</guid>
+        <guid>https://hellogitlab.com/en/tags/process/</guid>
         <description></description>
         </item>
         <item>
         <title>Architecture</title>
-        <link>https://meizhaohui.github.io/en/tags/architecture/</link>
+        <link>https://hellogitlab.com/en/tags/architecture/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/architecture/</guid>
+        <guid>https://hellogitlab.com/en/tags/architecture/</guid>
         <description></description>
         </item>
         <item>
         <title>Filesystem</title>
-        <link>https://meizhaohui.github.io/en/tags/filesystem/</link>
+        <link>https://hellogitlab.com/en/tags/filesystem/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/filesystem/</guid>
+        <guid>https://hellogitlab.com/en/tags/filesystem/</guid>
         <description></description>
         </item>
         <item>
         <title>Microservices</title>
-        <link>https://meizhaohui.github.io/en/tags/microservices/</link>
+        <link>https://hellogitlab.com/en/tags/microservices/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/microservices/</guid>
+        <guid>https://hellogitlab.com/en/tags/microservices/</guid>
         <description></description>
         </item>
         <item>
         <title>Storage</title>
-        <link>https://meizhaohui.github.io/en/tags/storage/</link>
+        <link>https://hellogitlab.com/en/tags/storage/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/storage/</guid>
+        <guid>https://hellogitlab.com/en/tags/storage/</guid>
         <description></description>
         </item>
         <item>
         <title>Vue</title>
-        <link>https://meizhaohui.github.io/en/tags/vue/</link>
+        <link>https://hellogitlab.com/en/tags/vue/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/vue/</guid>
+        <guid>https://hellogitlab.com/en/tags/vue/</guid>
         <description></description>
         </item>
         <item>
         <title>Scheduling</title>
-        <link>https://meizhaohui.github.io/en/tags/scheduling/</link>
+        <link>https://hellogitlab.com/en/tags/scheduling/</link>
         <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/scheduling/</guid>
+        <guid>https://hellogitlab.com/en/tags/scheduling/</guid>
         <description></description>
         </item>
         <item>
         <title>Threads</title>
-        <link>https://meizhaohui.github.io/en/tags/threads/</link>
+        <link>https://hellogitlab.com/en/tags/threads/</link>
         <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/en/tags/threads/</guid>
+        <guid>https://hellogitlab.com/en/tags/threads/</guid>
         <description></description>
         </item>
         

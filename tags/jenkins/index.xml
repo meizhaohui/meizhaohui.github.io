@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Jenkins on 编程技术分享</title>
-        <link>https://meizhaohui.github.io/tags/jenkins/</link>
+        <link>https://hellogitlab.com/tags/jenkins/</link>
         <description>Recent content in Jenkins on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://meizhaohui.github.io/tags/jenkins/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/tags/jenkins/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Jenkins Docs</title>
-        <link>https://meizhaohui.github.io/devops/docker/jenkins_docs/</link>
+        <link>https://hellogitlab.com/devops/docker/jenkins_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/jenkins_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/jenkins_logo_icon_170552.png" alt="Featured image of post Jenkins Docs" /&gt;&lt;h2 id=&#34;jenkins-docs&#34;&gt;Jenkins Docs
+        <guid>https://hellogitlab.com/devops/docker/jenkins_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/jenkins_logo_icon_170552.png" alt="Featured image of post Jenkins Docs" /&gt;&lt;h2 id=&#34;jenkins-docs&#34;&gt;Jenkins Docs
 &lt;/h2&gt;&lt;h3 id=&#34;目录&#34;&gt;目录
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../install&#34; &gt;Jenkins安装与基本配置&lt;/a&gt;&lt;/li&gt;
@@ -23,11 +23,11 @@
         </item>
         <item>
         <title>Jenkins Docs</title>
-        <link>https://meizhaohui.github.io/devops/jenkins/jenkins_docs/</link>
+        <link>https://hellogitlab.com/devops/jenkins/jenkins_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/jenkins/jenkins_docs/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/jenkins_logo_icon_170552.png" alt="Featured image of post Jenkins Docs" /&gt;&lt;h2 id=&#34;jenkins-docs&#34;&gt;Jenkins Docs
+        <guid>https://hellogitlab.com/devops/jenkins/jenkins_docs/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/jenkins_logo_icon_170552.png" alt="Featured image of post Jenkins Docs" /&gt;&lt;h2 id=&#34;jenkins-docs&#34;&gt;Jenkins Docs
 &lt;/h2&gt;&lt;h3 id=&#34;目录&#34;&gt;目录
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../install&#34; &gt;Jenkins安装与基本配置&lt;/a&gt;&lt;/li&gt;
@@ -37,11 +37,11 @@
         </item>
         <item>
         <title>Jenkins安装与基本配置</title>
-        <link>https://meizhaohui.github.io/devops/docker/install/</link>
+        <link>https://hellogitlab.com/devops/docker/install/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/install/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Jenkins安装与基本配置" /&gt;&lt;h2 id=&#34;jenkins安装与基本配置&#34;&gt;Jenkins安装与基本配置
+        <guid>https://hellogitlab.com/devops/docker/install/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Jenkins安装与基本配置" /&gt;&lt;h2 id=&#34;jenkins安装与基本配置&#34;&gt;Jenkins安装与基本配置
 &lt;/h2&gt;&lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jenkins.io/doc/book/installing/linux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -320,7 +320,7 @@
 &lt;/div&gt;&lt;p&gt;此时，就可以在浏览器中打开jenkins了，如果你没有域名，可以用主机http://IP:8080 方式访问Jenkins。&lt;/p&gt;
 &lt;h3 id=&#34;4-基本配置&#34;&gt;4. 基本配置
 &lt;/h3&gt;&lt;h4 id=&#34;41-解锁-jenkins&#34;&gt;4.1 解锁 Jenkins
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203005.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203005.png&#34;
 	
 	
 	
@@ -341,7 +341,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;将查看到的密码填写到页面中，并点击“继续”按钮。&lt;/p&gt;
 &lt;h4 id=&#34;42-自定义jenkins&#34;&gt;4.2 自定义Jenkins
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203246.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203246.png&#34;
 	
 	
 	
@@ -350,7 +350,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时点击“安装推荐的插件”，此时会自动安装推荐的插件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203349.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203349.png&#34;
 	
 	
 	
@@ -361,7 +361,7 @@
 &lt;p&gt;等待安装完成。&lt;/p&gt;
 &lt;h4 id=&#34;43-创建管理员账号&#34;&gt;4.3 创建管理员账号
 &lt;/h4&gt;&lt;p&gt;推荐的插件安装完成后，可以创建一个管理员账号，如创建的管理员账号&amp;quot;meizhaohui&amp;quot;，并设置密码。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203954.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203954.png&#34;
 	
 	
 	
@@ -372,7 +372,7 @@
 &lt;p&gt;点击“保存并完成”。&lt;/p&gt;
 &lt;h4 id=&#34;44-实例配置&#34;&gt;4.4 实例配置
 &lt;/h4&gt;&lt;p&gt;此时会自动生成Jenkins对应的URL路径：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327204125.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327204125.png&#34;
 	
 	
 	
@@ -384,7 +384,7 @@
 &lt;p&gt;这样，Jenkins就安装完成并可以正常使用了。&lt;/p&gt;
 &lt;h3 id=&#34;5-更新jenkins&#34;&gt;5. 更新Jenkins
 &lt;/h3&gt;&lt;p&gt;在jenkins管理页面，可以看到，存在漏洞风险：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327205127.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327205127.png&#34;
 	
 	
 	
@@ -677,7 +677,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;启动后，然后浏览器中打开jenkins服务，并进行配置即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220328002204.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220328002204.png&#34;
 	
 	
 	
@@ -690,11 +690,11 @@
         </item>
         <item>
         <title>Jenkins安装与基本配置</title>
-        <link>https://meizhaohui.github.io/devops/jenkins/install/</link>
+        <link>https://hellogitlab.com/devops/jenkins/install/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/jenkins/install/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Jenkins安装与基本配置" /&gt;&lt;h2 id=&#34;jenkins安装与基本配置&#34;&gt;Jenkins安装与基本配置
+        <guid>https://hellogitlab.com/devops/jenkins/install/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Jenkins安装与基本配置" /&gt;&lt;h2 id=&#34;jenkins安装与基本配置&#34;&gt;Jenkins安装与基本配置
 &lt;/h2&gt;&lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jenkins.io/doc/book/installing/linux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -973,7 +973,7 @@
 &lt;/div&gt;&lt;p&gt;此时，就可以在浏览器中打开jenkins了，如果你没有域名，可以用主机http://IP:8080 方式访问Jenkins。&lt;/p&gt;
 &lt;h3 id=&#34;4-基本配置&#34;&gt;4. 基本配置
 &lt;/h3&gt;&lt;h4 id=&#34;41-解锁-jenkins&#34;&gt;4.1 解锁 Jenkins
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203005.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203005.png&#34;
 	
 	
 	
@@ -994,7 +994,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;将查看到的密码填写到页面中，并点击“继续”按钮。&lt;/p&gt;
 &lt;h4 id=&#34;42-自定义jenkins&#34;&gt;4.2 自定义Jenkins
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203246.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203246.png&#34;
 	
 	
 	
@@ -1003,7 +1003,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;此时点击“安装推荐的插件”，此时会自动安装推荐的插件：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203349.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203349.png&#34;
 	
 	
 	
@@ -1014,7 +1014,7 @@
 &lt;p&gt;等待安装完成。&lt;/p&gt;
 &lt;h4 id=&#34;43-创建管理员账号&#34;&gt;4.3 创建管理员账号
 &lt;/h4&gt;&lt;p&gt;推荐的插件安装完成后，可以创建一个管理员账号，如创建的管理员账号&amp;quot;meizhaohui&amp;quot;，并设置密码。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327203954.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327203954.png&#34;
 	
 	
 	
@@ -1025,7 +1025,7 @@
 &lt;p&gt;点击“保存并完成”。&lt;/p&gt;
 &lt;h4 id=&#34;44-实例配置&#34;&gt;4.4 实例配置
 &lt;/h4&gt;&lt;p&gt;此时会自动生成Jenkins对应的URL路径：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327204125.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327204125.png&#34;
 	
 	
 	
@@ -1037,7 +1037,7 @@
 &lt;p&gt;这样，Jenkins就安装完成并可以正常使用了。&lt;/p&gt;
 &lt;h3 id=&#34;5-更新jenkins&#34;&gt;5. 更新Jenkins
 &lt;/h3&gt;&lt;p&gt;在jenkins管理页面，可以看到，存在漏洞风险：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220327205127.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220327205127.png&#34;
 	
 	
 	
@@ -1330,7 +1330,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;启动后，然后浏览器中打开jenkins服务，并进行配置即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/20220328002204.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/20220328002204.png&#34;
 	
 	
 	
@@ -1343,11 +1343,11 @@
         </item>
         <item>
         <title>Jenkins插件推荐</title>
-        <link>https://meizhaohui.github.io/devops/docker/plugins/</link>
+        <link>https://hellogitlab.com/devops/docker/plugins/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/docker/plugins/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Jenkins插件推荐" /&gt;&lt;h2 id=&#34;jenkins插件推荐&#34;&gt;Jenkins插件推荐
+        <guid>https://hellogitlab.com/devops/docker/plugins/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Jenkins插件推荐" /&gt;&lt;h2 id=&#34;jenkins插件推荐&#34;&gt;Jenkins插件推荐
 &lt;/h2&gt;&lt;h3 id=&#34;1-配置jenkins插件清华源加速&#34;&gt;1. 配置jenkins插件清华源加速
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;清华大学jenkins代理地址 &lt;a class=&#34;link&#34; href=&#34;https://mirrors.tuna.tsinghua.edu.cn/jenkins/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1457,7 +1457,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-13_22-05-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-13_22-05-47.png&#34;
 	
 	
 	
@@ -1473,7 +1473,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以上两个插件安装后，在Job任务配置中，需要勾选&lt;code&gt;Add timestamps to the Console Output&lt;/code&gt;和&lt;code&gt;Color ANSI Console Output&lt;/code&gt;选项：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-13_22-09-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-13_22-09-37.png&#34;
 	
 	
 	
@@ -1489,7 +1489,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-13_22-20-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-13_22-20-57.png&#34;
 	
 	
 	
@@ -1506,11 +1506,11 @@
         </item>
         <item>
         <title>Jenkins插件推荐</title>
-        <link>https://meizhaohui.github.io/devops/jenkins/plugins/</link>
+        <link>https://hellogitlab.com/devops/jenkins/plugins/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://meizhaohui.github.io/devops/jenkins/plugins/</guid>
-        <description>&lt;img src="https://meizhaohui.github.io/img/default.jpg" alt="Featured image of post Jenkins插件推荐" /&gt;&lt;h2 id=&#34;jenkins插件推荐&#34;&gt;Jenkins插件推荐
+        <guid>https://hellogitlab.com/devops/jenkins/plugins/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post Jenkins插件推荐" /&gt;&lt;h2 id=&#34;jenkins插件推荐&#34;&gt;Jenkins插件推荐
 &lt;/h2&gt;&lt;h3 id=&#34;1-配置jenkins插件清华源加速&#34;&gt;1. 配置jenkins插件清华源加速
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;清华大学jenkins代理地址 &lt;a class=&#34;link&#34; href=&#34;https://mirrors.tuna.tsinghua.edu.cn/jenkins/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1625,7 +1625,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-13_22-05-47.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-13_22-05-47.png&#34;
 	
 	
 	
@@ -1641,7 +1641,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以上两个插件安装后，在Job任务配置中，需要勾选&lt;code&gt;Add timestamps to the Console Output&lt;/code&gt;和&lt;code&gt;Color ANSI Console Output&lt;/code&gt;选项：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-13_22-09-37.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-13_22-09-37.png&#34;
 	
 	
 	
@@ -1657,7 +1657,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://meizhaohui.github.io/img/Snipaste_2023-09-13_22-20-57.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2023-09-13_22-20-57.png&#34;
 	
 	
 	
