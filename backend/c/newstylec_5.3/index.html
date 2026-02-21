@@ -440,7 +440,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -539,7 +539,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -828,6 +828,305 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 </pre>
 
 <p>我们只需要知道，在用户按下字母按键后，该键对应的ASCII码值就会被送到键盘缓冲区中，等待被程序读取。</p>
+<ul>
+<li>当需要把用户输入的内容当作字符处理时，就使用获取字符输入的函数，例如<code>getchar</code>、<code>getch</code>等。</li>
+<li>当需要把用户输入的内容转换成其他类型的数值时，最简单的方法是使用<code>scanf</code>函数，它提供了类型转换功能。<code>scanf</code>函数也可以用于输入多个字符（即字符串）。</li>
+<li>需要说明的是，C语言的标准输入采用了“行缓冲”机制，只有在用户按下回车键并在键盘缓冲区中产生换行符后才会认为输入已完成，程序中的函数才可以读取键盘缓冲区中的内容。</li>
+</ul>
+<h6 id="5352-使用getchar函数获取用户输入的单个字符">5.3.5.2 使用getchar函数获取用户输入的单个字符
+</h6><p>请看以下示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L05_14_GETCHAR.cpp : 此文件包含 &#34;main&#34; 函数。程序执行将在此处开始并结束。
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序时，输入字母<code>a</code>并按下回车键：</p>
+<p><img src="/img/Snipaste_2026-02-21_21-08-45.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-21_21-08-45.png"
+	
+	
+></p>
+<p>从以上程序可以看出<code>getchar</code>函数调用时无须参数，它将用户输入的第1个字符的ASCII码值(97)作为返回值。我们用字符型变量<code>ch</code>存储它，并在第7行代码中分别以字符(<code>%c</code>)和整数(<code>%d</code>)格式显示出来。</p>
+<p>此时，需要注意的是<code>getchar()</code>读取到<code>a</code>后，键盘缓冲区的<code>a</code>会被移出键盘缓冲区，但如下的内容（如回换行符）仍然保留在键盘缓冲区。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_14_GETCHAR.cpp : 此文件包含 &#34;main&#34; 函数。程序执行将在此处开始并结束。
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch1</span><span class="p">,</span> <span class="n">ch1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>像这样运行代码后，可以看到第一次输入<code>a</code>回车后，<code>ch1</code>是直接读取到回车键数据的。</p>
+<p><img src="/img/Snipaste_2026-02-21_21-58-18.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-21_21-58-18.png"
+	
+	
+></p>
+<p>通过以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_14_GETCHAR.cpp : 此文件包含 &#34;main&#34; 函数。程序执行将在此处开始并结束。
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch1</span><span class="p">,</span> <span class="n">ch1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch2</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch2</span><span class="p">,</span> <span class="n">ch2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行输出：</p>
+<p><img src="/img/Snipaste_2026-02-21_22-00-14.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-21_22-00-14.png"
+	
+	
+></p>
+<p>可以看到，当用户输入<code>abcd</code>并回车后，程序直接运行输出了结果，程序并没有等待用户再次输入，而是直接从键盘缓冲区中取出了第1次输入的字符<code>b</code>和<code>c</code>。</p>
+<h6 id="5353-清空键盘缓冲区">5.3.5.3 清空键盘缓冲区
+</h6><p>可以使用<code>rewind</code>函数来清空键盘缓冲区，这样可以让<code>getchar</code>函数每次都读取用户重新输入的数据。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_14_GETCHAR.cpp : 此文件包含 &#34;main&#34; 函数。程序执行将在此处开始并结束。
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空键盘缓冲区
+</span></span></span><span class="line"><span class="cl">    <span class="nf">rewind</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch1</span><span class="p">,</span> <span class="n">ch1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空键盘缓冲区
+</span></span></span><span class="line"><span class="cl">    <span class="nf">rewind</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch2</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是%c,它的ASCII码值是%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch2</span><span class="p">,</span> <span class="n">ch2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 清空键盘缓冲区
+</span></span></span><span class="line"><span class="cl">    <span class="nf">rewind</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出如下：</p>
+<p><img src="/img/Snipaste_2026-02-21_22-14-14.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-21_22-14-14.png"
+	
+	
+></p>
+<p>可以看到，使用<code>rewind(stdin)</code>清空标准输入(standard input)后，后面的<code>getchar</code>不会从前面的输入中数据数据，而是重新从用户输入读取数据。</p>
+<p><strong>清空键盘缓冲区有时特别重要，例如，程序在询问用户“确定要删除全部数据吗? (Y/N)”，而恰好键盘缓冲区中残留着一个“Y”，惨剧就会发生！！</strong></p>
+<ul>
+<li>在需要精准获取用户交互式确认（如 Y/N）前，必须清空键盘缓冲区，避免残留字符被误读。</li>
+</ul>
+<p>但通过实验发现<code>rewind(stdin);</code>也不是很靠谱！！</p>
+<p>看以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_15_CLEAN_CACHE.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 正确的清空缓冲区函数
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">clearInputBuffer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">((</span><span class="n">c</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">())</span> <span class="o">!=</span> <span class="sc">&#39;\n&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">!=</span> <span class="n">EOF</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 模拟场景：先输入 &#34;Y123&#34; + 回车，scanf(&#34;%d&#34;) 只读取123，缓冲区残留 &#34;Y\n&#34;
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入带字母的数字（如 Y123）：&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// %*c 跳过非数字字符（仅模拟残留，实际是用户输入不规范导致）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%*c%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ========== 测试 clearInputBuffer ==========
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">--- 测试 clearInputBuffer ---&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">clearInputBuffer</span><span class="p">();</span> <span class="c1">// 清空残留的 Y\n
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">confirm1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">确定删除？(Y/N)：&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">confirm1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你实际输入的是：%c → 逻辑正确</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">confirm1</span><span class="p">);</span> <span class="c1">// 只会读你手动输入的字符
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ========== 测试 rewind(stdin) ==========
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 重新模拟残留 Y\n
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">--- 测试 rewind(stdin) ---&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">rewind</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span> <span class="c1">// 仅重置指针，Y\n 仍在缓冲区
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">confirm2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">确定删除？(Y/N)：&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">confirm2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取到的是：%c → 误读缓冲区残留的Y！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">confirm2</span><span class="p">);</span> <span class="c1">// 直接读Y，触发误删
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/img/Snipaste_2026-02-21_22-46-08.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-21_22-46-08.png"
+	
+	
+></p>
+<p>推荐使用<code>clearInputBuffer</code>函数来清空缓冲区。</p>
 
 </section>
 
