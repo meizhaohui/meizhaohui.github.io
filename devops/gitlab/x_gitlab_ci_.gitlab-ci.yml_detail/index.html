@@ -399,13 +399,42 @@
             <li><a href="#stages"><code>stages</code></a></li>
             <li><a href="#stage"><code>stage</code></a></li>
             <li><a href="#only和except"><code>only</code>和<code>except</code></a></li>
-            <li><a href="#only和except高级用法"><code>only</code>和<code>except</code>高级用法</a></li>
+            <li><a href="#only和except高级用法"><code>only</code>和<code>except</code>高级用法</a>
+              <ul>
+                <li><a href="#onlyrefsexceptrefs"><code>only:refs/except:refs</code></a></li>
+                <li><a href="#onlykubernetesexceptkubernetes"><code>only:kubernetes/except:kubernetes</code></a></li>
+                <li><a href="#onlyvariablesexceptvariables"><code>only:variables/except:variables</code></a></li>
+                <li><a href="#onlychangesexceptchanges"><code>only:changes/except:changes</code></a></li>
+                <li><a href="#only和except综合示例"><code>only</code>和<code>except</code>综合示例</a></li>
+                <li><a href="#匹配issue-开头的分支">匹配<code>issue-</code>开头的分支</a></li>
+                <li><a href="#大小写不敏感匹配">大小写不敏感匹配</a></li>
+                <li><a href="#git-tag打标签的使用">git tag打标签的使用</a></li>
+                <li><a href="#仅当tag标签提交时才触发流水线执行">仅当tag标签提交时，才触发流水线执行</a></li>
+                <li><a href="#使用流水线触发器触发流水线执行">使用流水线触发器触发流水线执行</a></li>
+              </ul>
+            </li>
             <li><a href="#tags"><code>tags</code></a></li>
             <li><a href="#allow_failure"><code>allow_failure</code></a></li>
             <li><a href="#when"><code>when</code></a></li>
-            <li><a href="#environment"><code>environment</code></a></li>
+            <li><a href="#environment"><code>environment</code></a>
+              <ul>
+                <li><a href="#environmentname"><code>environment:name</code></a></li>
+                <li><a href="#environmenturl"><code>environment:url</code></a></li>
+                <li><a href="#environmenton_stop与environmentaction"><code>environment:on_stop</code>与<code>environment:action</code></a></li>
+                <li><a href="#dynamic-environments-动态环境">Dynamic environments 动态环境</a></li>
+              </ul>
+            </li>
             <li><a href="#cache"><code>cache</code></a></li>
-            <li><a href="#artifacts"><code>artifacts</code></a></li>
+            <li><a href="#artifacts"><code>artifacts</code></a>
+              <ul>
+                <li><a href="#artifactspaths"><code>artifacts:paths</code></a></li>
+                <li><a href="#artifactsname"><code>artifacts:name</code></a></li>
+                <li><a href="#artifactsuntracked"><code>artifacts:untracked</code></a></li>
+                <li><a href="#artifactswhen"><code>artifacts:when</code></a></li>
+                <li><a href="#artifactsexpire_in"><code>artifacts:expire_in</code></a></li>
+                <li><a href="#artifactsreports"><code>artifacts:reports</code></a></li>
+              </ul>
+            </li>
             <li><a href="#dependencies"><code>dependencies</code></a></li>
             <li><a href="#coverage"><code>coverage</code></a></li>
             <li><a href="#retry"><code>retry</code></a></li>
@@ -413,10 +442,31 @@
             <li><a href="#include"><code>include</code></a></li>
             <li><a href="#extends"><code>extends</code></a></li>
             <li><a href="#pages"><code>pages</code></a></li>
-            <li><a href="#variables"><code>variables</code></a></li>
+            <li><a href="#variables"><code>variables</code></a>
+              <ul>
+                <li><a href="#variables变量的优先级"><code>variables</code>变量的优先级</a></li>
+                <li><a href="#使用export导出的变量示例">使用export导出的变量示例</a></li>
+                <li><a href="#关闭全局层级定义的变量">关闭全局层级定义的变量</a></li>
+                <li><a href="#变量定义时使用其他变量">变量定义时使用其他变量</a></li>
+                <li><a href="#克隆策略git-strategy-git_strategy">克隆策略Git strategy <code>GIT_STRATEGY</code></a></li>
+                <li><a href="#子模块策略git-submodule-strategy-git_submodule_strategy">子模块策略Git submodule strategy <code>GIT_SUBMODULE_STRATEGY</code></a></li>
+                <li><a href="#检出分支设置git-checkout-git_checkout">检出分支设置Git checkout <code>GIT_CHECKOUT</code></a></li>
+                <li><a href="#作业重试次数-job-stages-attempts">作业重试次数 Job stages attempts</a></li>
+                <li><a href="#浅克隆-shallow-cloninggit_depth">浅克隆 Shallow cloning<code>GIT_DEPTH</code></a></li>
+              </ul>
+            </li>
             <li><a href="#废弃的关键字types和type">废弃的关键字<code>types</code>和<code>type</code></a></li>
-            <li><a href="#使用git_clone_path自定义构建目录">使用<code>GIT_CLONE_PATH</code>自定义构建目录</a></li>
-            <li><a href="#特殊的yaml功能">特殊的YAML功能</a></li>
+            <li><a href="#使用git_clone_path自定义构建目录">使用<code>GIT_CLONE_PATH</code>自定义构建目录</a>
+              <ul>
+                <li><a href="#处理并发handling-concurrency">处理并发(Handling concurrency)</a></li>
+                <li><a href="#嵌套路径nested-paths">嵌套路径(Nested paths)</a></li>
+              </ul>
+            </li>
+            <li><a href="#特殊的yaml功能">特殊的YAML功能</a>
+              <ul>
+                <li><a href="#隐藏关键字或作业">隐藏关键字或作业</a></li>
+              </ul>
+            </li>
             <li><a href="#锚点anchors">锚点(Anchors)</a></li>
           </ul>
         </li>
@@ -470,7 +520,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

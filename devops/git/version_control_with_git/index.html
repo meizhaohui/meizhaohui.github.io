@@ -411,9 +411,32 @@
         </li>
         <li><a href="#第4章-基本的git概念">第4章 基本的Git概念</a>
           <ul>
-            <li><a href="#41-基本概念">4.1 基本概念</a></li>
+            <li><a href="#41-基本概念">4.1 基本概念</a>
+              <ul>
+                <li><a href="#411-版本库">4.1.1 版本库</a></li>
+                <li><a href="#412-git对象类型">4.1.2 Git对象类型</a></li>
+                <li><a href="#413-索引">4.1.3 索引</a></li>
+                <li><a href="#414-可寻址内容名称">4.1.4 可寻址内容名称</a></li>
+                <li><a href="#415-git追踪内容">4.1.5 Git追踪内容</a></li>
+                <li><a href="#416-路径名与内容">4.1.6 路径名与内容</a></li>
+                <li><a href="#417-打包文件">4.1.7 打包文件</a></li>
+              </ul>
+            </li>
             <li><a href="#42--对象库图示">4.2  对象库图示</a></li>
-            <li><a href="#43-git在工作时的概念">4.3 Git在工作时的概念</a></li>
+            <li><a href="#43-git在工作时的概念">4.3 Git在工作时的概念</a>
+              <ul>
+                <li><a href="#431-创建版本库">4.3.1 创建版本库</a></li>
+                <li><a href="#431-扩展-git是如何计算散列值的">4.3.1 扩展 Git是如何计算散列值的？</a></li>
+                <li><a href="#432--对象散列和blob">4.3.2  对象、散列和blob</a></li>
+                <li><a href="#433--文件和树">4.3.3  文件和树</a></li>
+                <li><a href="#433-扩展-git是如何生成树对象的散列值的">4.3.3 扩展 Git是如何生成树对象的散列值的？</a></li>
+                <li><a href="#434-对git使用sha1的一点说明">4.3.4 对Git使用SHA1的一点说明</a></li>
+                <li><a href="#435-树层次结构">4.3.5 树层次结构</a></li>
+                <li><a href="#436-提交">4.3.6 提交</a></li>
+                <li><a href="#436-扩展-提交">4.3.6 扩展 提交</a></li>
+                <li><a href="#437-标签">4.3.7 标签</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#第5章-文件管理和索引">第5章 文件管理和索引</a>
@@ -421,7 +444,12 @@
             <li><a href="#51-关于索引的一切">5.1 关于索引的一切</a></li>
             <li><a href="#52-git中的文件分类">5.2 Git中的文件分类</a></li>
             <li><a href="#53-使用git-add暂存文件">5.3 使用<code>git add</code>暂存文件</a></li>
-            <li><a href="#54--使用git-commit的一些注意事项">5.4 使用<code>git commit</code>的一些注意事项</a></li>
+            <li><a href="#54--使用git-commit的一些注意事项">5.4 使用<code>git commit</code>的一些注意事项</a>
+              <ul>
+                <li><a href="#541-使用git-commit---all">5.4.1 使用<code>git commit --all</code></a></li>
+                <li><a href="#542-编写提交日志消息">5.4.2 编写提交日志消息</a></li>
+              </ul>
+            </li>
             <li><a href="#55-使用git-rm">5.5 使用<code>git rm</code></a></li>
             <li><a href="#56-使用git-mv">5.6 使用<code>git mv</code></a></li>
             <li><a href="#57-追踪重命名注解">5.7 追踪重命名注解</a></li>
@@ -431,14 +459,35 @@
         <li><a href="#第6章-提交">第6章 提交</a>
           <ul>
             <li><a href="#61-原子变更集">6.1 原子变更集</a></li>
-            <li><a href="#62-识别提交">6.2 识别提交</a></li>
-            <li><a href="#63--提交历史记录">6.3  提交历史记录</a></li>
-            <li><a href="#64-查找提交">6.4 查找提交</a></li>
+            <li><a href="#62-识别提交">6.2 识别提交</a>
+              <ul>
+                <li><a href="#621-绝对提交名">6.2.1 绝对提交名</a></li>
+                <li><a href="#622-引用和符号引用">6.2.2 引用和符号引用</a></li>
+                <li><a href="#623-相对提交名">6.2.3 相对提交名</a></li>
+              </ul>
+            </li>
+            <li><a href="#63--提交历史记录">6.3  提交历史记录</a>
+              <ul>
+                <li><a href="#631-查看旧提交">6.3.1 查看旧提交</a></li>
+                <li><a href="#632-提交图">6.3.2 提交图</a></li>
+                <li><a href="#633-提交范围">6.3.3 提交范围</a></li>
+              </ul>
+            </li>
+            <li><a href="#64-查找提交">6.4 查找提交</a>
+              <ul>
+                <li><a href="#641-使用git-bisect查找bug是哪个提交引入的">6.4.1 使用<code>git bisect</code>查找bug是哪个提交引入的</a></li>
+                <li><a href="#642-git-blame代码行最后是谁修改的">6.4.2 <code>git blame</code>代码行最后是谁修改的</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#第7章-分支">第7章 分支</a>
           <ul>
-            <li><a href="#71-使用分支的原因">7.1 使用分支的原因</a></li>
+            <li><a href="#71-使用分支的原因">7.1 使用分支的原因</a>
+              <ul>
+                <li><a href="#711-分支还是标签">7.1.1 分支还是标签</a></li>
+              </ul>
+            </li>
             <li><a href="#72-分支名">7.2 分支名</a></li>
             <li><a href="#73-使用分支">7.3 使用分支</a></li>
             <li><a href="#74-创建分支">7.4 创建分支</a></li>
@@ -453,7 +502,12 @@
         <li><a href="#第10章-更改提交">第10章 更改提交</a>
           <ul>
             <li><a href="#101-关于修改历史记录的注意事项">10.1 关于修改历史记录的注意事项</a></li>
-            <li><a href="#102-使用git-reset">10.2 使用<code>git reset</code></a></li>
+            <li><a href="#102-使用git-reset">10.2 使用<code>git reset</code></a>
+              <ul>
+                <li><a href="#1021-还原提交示例">10.2.1 还原提交示例</a></li>
+                <li><a href="#1022-查看版本库引用变化的历史记录">10.2.2 查看版本库引用变化的历史记录</a></li>
+              </ul>
+            </li>
             <li><a href="#103-使用git-cherry-pick">10.3 使用git cherry-pick</a></li>
             <li><a href="#104-使用git-revert撤销修改">10.4 使用git revert撤销修改</a></li>
             <li><a href="#105-resetrevert与checkout">10.5 reset、revert与checkout</a></li>
@@ -469,7 +523,12 @@
         </li>
         <li><a href="#第12章-远程版本库">第12章 远程版本库</a>
           <ul>
-            <li><a href="#121-版本库概念">12.1 版本库概念</a></li>
+            <li><a href="#121-版本库概念">12.1 版本库概念</a>
+              <ul>
+                <li><a href="#1211-祼版本库和开发版本库">12.1.1 祼版本库和开发版本库</a></li>
+                <li><a href="#1212-版本库克隆">12.1.2 版本库克隆</a></li>
+              </ul>
+            </li>
             <li><a href="#122--引用其他版本库">12.2  引用其他版本库</a></li>
             <li><a href="#123-使用远程版本库的示例">12.3 使用远程版本库的示例</a></li>
             <li><a href="#124-图解远程版本库开发周期">12.4 图解远程版本库开发周期</a></li>
@@ -482,7 +541,14 @@
         <li><a href="#第13章-版本库管理">第13章 版本库管理</a>
           <ul>
             <li><a href="#131-谈谈服务器">13.1 谈谈服务器</a></li>
-            <li><a href="#132-发布版本库">13.2 发布版本库</a></li>
+            <li><a href="#132-发布版本库">13.2 发布版本库</a>
+              <ul>
+                <li><a href="#1321--带访问控制的版本库">13.2.1  带访问控制的版本库</a></li>
+                <li><a href="#1322--允许匿名读取访问的版本库">13.2.2  允许匿名读取访问的版本库</a></li>
+                <li><a href="#1323--允许匿名写入权限的版本库">13.2.3  允许匿名写入权限的版本库</a></li>
+                <li><a href="#1324-在githb上发面版本库">13.2.4 在GitHb上发面版本库</a></li>
+              </ul>
+            </li>
             <li><a href="#133--有关发布版本库的建议">13.3  有关发布版本库的建议</a></li>
             <li><a href="#134-版本库结构">13.4 版本库结构</a></li>
             <li><a href="#135-分布式开发指南">13.5 分布式开发指南</a></li>
@@ -497,7 +563,12 @@
             <li><a href="#161-旧解决方案部分检出">16.1 旧解决方案：部分检出</a></li>
             <li><a href="#162-显而易见的解决方案将代码导入项目">16.2 显而易见的解决方案：将代码导入项目</a></li>
             <li><a href="#163-自动化解决方案使用自定义脚本检出子项目">16.3 自动化解决方案：使用自定义脚本检出子项目</a></li>
-            <li><a href="#164-原生解决方案gitlink和git-submodule">16.4 原生解决方案：gitlink和git submodule</a></li>
+            <li><a href="#164-原生解决方案gitlink和git-submodule">16.4 原生解决方案：gitlink和git submodule</a>
+              <ul>
+                <li><a href="#1641-gitlink">16.4.1 gitlink</a></li>
+                <li><a href="#1642-git-submodule命令">16.4.2 <code>git submodule</code>命令</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#第17章-子模块最佳实践">第17章 子模块最佳实践</a></li>
@@ -562,7 +633,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

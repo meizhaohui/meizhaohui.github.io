@@ -389,18 +389,56 @@
         <li><a href="#1-安装">1. 安装</a></li>
         <li><a href="#2-基本使用">2. 基本使用</a>
           <ul>
-            <li><a href="#21-按tutorial教程进行简单测试">2.1 按tutorial教程进行简单测试</a></li>
+            <li><a href="#21-按tutorial教程进行简单测试">2.1 按tutorial教程进行简单测试</a>
+              <ul>
+                <li><a href="#211-获取原始数据">2.1.1 获取原始数据</a></li>
+                <li><a href="#212-美化json输出">2.1.2 美化json输出</a></li>
+                <li><a href="#213-获取单一子元素">2.1.3 获取单一子元素</a></li>
+                <li><a href="#214-元素过滤">2.1.4 元素过滤</a></li>
+                <li><a href="#215-对所有元素进行过滤">2.1.5 对所有元素进行过滤</a></li>
+                <li><a href="#216-生成单个数组">2.1.6 生成单个数组</a></li>
+                <li><a href="#217-获取子元素的列表">2.1.7 获取子元素的列表</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#3-jq手册页">3. jq手册页</a>
           <ul>
-            <li><a href="#31--调用jq">3.1 调用<code>jq</code></a></li>
+            <li><a href="#31--调用jq">3.1 调用<code>jq</code></a>
+              <ul>
+                <li><a href="#311-查看jq版本信息">3.1.1 查看<code>jq</code>版本信息</a></li>
+                <li><a href="#312-查看帮助信息">3.1.2 查看帮助信息</a></li>
+                <li><a href="#313--忽略参数">3.1.3  忽略参数</a></li>
+                <li><a href="#314-将json数据一次读入到数组中">3.1.4 将JSON数据一次读入到数组中</a></li>
+                <li><a href="#315-不解析json数据">3.1.5 不解析JSON数据</a></li>
+                <li><a href="#316-不解析任何输入流">3.1.6 不解析任何输入流</a></li>
+                <li><a href="#317-输出紧凑的数据">3.1.7 输出紧凑的数据</a></li>
+                <li><a href="#318-使用tab作为缩进">3.1.8 使用Tab作为缩进</a></li>
+                <li><a href="#319-设置缩进的空格数">3.1.9 设置缩进的空格数</a></li>
+                <li><a href="#3110-颜色开关设置">3.1.10 颜色开关设置</a></li>
+                <li><a href="#3111--以ascii码输出数据">3.1.11  以ASCII码输出数据</a></li>
+                <li><a href="#3112-对对象的键进行排序">3.1.12 对对象的键进行排序</a></li>
+                <li><a href="#3113-输出原始字符串而非json字符串">3.1.13 输出原始字符串而非JSON字符串</a></li>
+                <li><a href="#3114-从文件中读取过滤器">3.1.14 从文件中读取过滤器</a></li>
+                <li><a href="#3115-向过滤中传递参数">3.1.15 向过滤中传递参数</a></li>
+                <li><a href="#3116-运行测试用例">3.1.16 运行测试用例</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#4-基本过滤器">4. 基本过滤器</a>
           <ul>
             <li><a href="#41-身份运算符">4.1 身份运算符<code>.</code></a></li>
-            <li><a href="#42-对象标识符-索引foofoobar">4.2 对象标识符-索引<code>.foo</code>、<code>.foo.bar</code></a></li>
+            <li><a href="#42-对象标识符-索引foofoobar">4.2 对象标识符-索引<code>.foo</code>、<code>.foo.bar</code></a>
+              <ul>
+                <li><a href="#421-包含点号的键">4.2.1 包含点号的键</a></li>
+                <li><a href="#422-包含双引号的键">4.2.2 包含双引号的键</a></li>
+                <li><a href="#423-包含其他特殊字符的键">4.2.3 包含其他特殊字符的键</a></li>
+                <li><a href="#424-数字处于键的开始位置">4.2.4 数字处于键的开始位置</a></li>
+                <li><a href="#425-可选的对象标识符foo">4.2.5 可选的对象标识符<code>.foo?</code></a></li>
+                <li><a href="#436-对象索引">4.3.6 对象索引</a></li>
+              </ul>
+            </li>
             <li><a href="#43-列表索引2">4.3 列表索引<code>.[2]</code></a></li>
             <li><a href="#44-列表字符串切片">4.4 列表/字符串切片</a></li>
             <li><a href="#45-列表对象迭代器">4.5 列表/对象迭代器</a></li>
@@ -419,15 +457,88 @@
         <li><a href="#6-配色方案设置">6. 配色方案设置</a></li>
         <li><a href="#7-内置运算符和函数">7. 内置运算符和函数</a>
           <ul>
-            <li><a href="#71-内置运算符">7.1 内置运算符</a></li>
-            <li><a href="#72-内置函数">7.2 内置函数</a></li>
+            <li><a href="#71-内置运算符">7.1 内置运算符</a>
+              <ul>
+                <li><a href="#711-加法运算符">7.1.1 加法运算符</a></li>
+                <li><a href="#712-减法运算符">7.1.2 减法运算符</a></li>
+                <li><a href="#713-乘法">7.1.3 乘法</a></li>
+                <li><a href="#714-除法">7.1.4 除法</a></li>
+                <li><a href="#715-取模运算符">7.1.5 取模运算符</a></li>
+              </ul>
+            </li>
+            <li><a href="#72-内置函数">7.2 内置函数</a>
+              <ul>
+                <li><a href="#721-length长度">7.2.1 length长度</a></li>
+                <li><a href="#722-utf8bytelength-utf8字节长度">7.2.2 utf8bytelength UTF8字节长度</a></li>
+                <li><a href="#723-keys-所有的键">7.2.3 keys 所有的键</a></li>
+                <li><a href="#724-map-将过滤器应用到所有元素">7.2.4 map 将过滤器应用到所有元素</a></li>
+                <li><a href="#725-has-检查是否有给定键">7.2.5 has 检查是否有给定键</a></li>
+                <li><a href="#726-del删除元素">7.2.6 del删除元素</a></li>
+                <li><a href="#727-to_entries-对象转换成健值对组成的列表">7.2.7 to_entries 对象转换成健值对组成的列表</a></li>
+                <li><a href="#728-select-筛选">7.2.8 select 筛选</a></li>
+                <li><a href="#729-arrays等-筛选出指定的元素">7.2.9 arrays等 筛选出指定的元素</a></li>
+                <li><a href="#7210-empty-不返回任何值">7.2.10 empty 不返回任何值</a></li>
+                <li><a href="#7211-自己抛出带消息的异常">7.2.11 自己抛出带消息的异常</a></li>
+                <li><a href="#7212-halt退出">7.2.12 halt退出</a></li>
+                <li><a href="#7213-add-操作">7.2.13 add 操作</a></li>
+                <li><a href="#7214-any有元素为true">7.2.14 any有元素为true</a></li>
+                <li><a href="#7215-all所有元素为true">7.2.15 all所有元素为true</a></li>
+                <li><a href="#7216-flatten-展平数组">7.2.16 flatten 展平数组</a></li>
+                <li><a href="#7217-range数字系列">7.2.17 range数字系列</a></li>
+                <li><a href="#7218-floor-向下取整">7.2.18 floor 向下取整</a></li>
+                <li><a href="#7219-sqrt-开方">7.2.19 sqrt 开方</a></li>
+                <li><a href="#7220-tonumber-字符串转换成数字">7.2.20 tonumber 字符串转换成数字</a></li>
+                <li><a href="#7221-type类型">7.2.21 type类型</a></li>
+                <li><a href="#7222-sort数组排序">7.2.22 sort数组排序</a></li>
+                <li><a href="#7223-group_by分组">7.2.23 group_by分组</a></li>
+                <li><a href="#7224-minmax-最小最大值">7.2.24 min/max 最小最大值</a></li>
+                <li><a href="#7225-unique-数组去重">7.2.25 unique 数组去重</a></li>
+                <li><a href="#7226-reverse-数组反转">7.2.26 reverse 数组反转</a></li>
+                <li><a href="#7227-contains-包含">7.2.27 contains 包含</a></li>
+                <li><a href="#7228-indices-索引位置">7.2.28 indices 索引位置</a></li>
+                <li><a href="#7229-startswithendswith-以字符串开头结尾">7.2.29 startswith/endswith 以字符串开头/结尾</a></li>
+                <li><a href="#7230-combinations数组元素组合">7.2.30 combinations数组元素组合</a></li>
+                <li><a href="#7231-移除字符串两端指定字符">7.2.31 移除字符串两端指定字符</a></li>
+                <li><a href="#7232-字符串与字符串代码点编号之间的转换">7.2.32 字符串与字符串代码点编号之间的转换</a></li>
+                <li><a href="#7233-字符串拆分与拼接">7.2.33 字符串拆分与拼接</a></li>
+                <li><a href="#7234-字符串大小写转换">7.2.34 字符串大小写转换</a></li>
+                <li><a href="#7235-循环控制函数">7.2.35 循环控制函数</a></li>
+                <li><a href="#7236-recurse-递归">7.2.36 recurse 递归</a></li>
+                <li><a href="#7237-walk遍历">7.2.37 walk遍历</a></li>
+                <li><a href="#7238-envenv环境变量">7.2.38 $ENV,env环境变量</a></li>
+                <li><a href="#7239-transpose转置">7.2.39 <code>transpose</code>转置</a></li>
+                <li><a href="#7240-bsearchx二分搜索">7.2.40 bsearch(x)二分搜索</a></li>
+                <li><a href="#7241-字符串插值">7.2.41 字符串插值</a></li>
+                <li><a href="#7242-tojsonfromjson-将数据转为json">7.2.42 tojson/fromjson 将数据转为JSON</a></li>
+                <li><a href="#7243-格式化字符串和转义">7.2.43 格式化字符串和转义</a></li>
+                <li><a href="#7244-dates日期相关">7.2.44 Dates日期相关</a></li>
+                <li><a href="#7245-builtins获取内置函数数组">7.2.45 builtins获取内置函数数组</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#8-条件与比较">8. 条件与比较</a>
           <ul>
-            <li><a href="#81-比较">8.1 比较</a></li>
-            <li><a href="#82-条件语句">8.2 条件语句</a></li>
-            <li><a href="#83-其他">8.3 其他</a></li>
+            <li><a href="#81-比较">8.1 比较</a>
+              <ul>
+                <li><a href="#811-等与不等">8.1.1 等与不等</a></li>
+                <li><a href="#812-大于小于">8.1.2 大于小于</a></li>
+              </ul>
+            </li>
+            <li><a href="#82-条件语句">8.2 条件语句</a>
+              <ul>
+                <li><a href="#821-if条件语法">8.2.1 if条件语法</a></li>
+              </ul>
+            </li>
+            <li><a href="#83-其他">8.3 其他</a>
+              <ul>
+                <li><a href="#831-布尔运算符">8.3.1 布尔运算符</a></li>
+                <li><a href="#832-替代运算符">8.3.2 替代运算符</a></li>
+                <li><a href="#833-异常捕获trycatch">8.3.3 异常捕获try..catch</a></li>
+                <li><a href="#834-跳出控制语句">8.3.4 跳出控制语句</a></li>
+                <li><a href="#835-错误抑制可选运算符">8.3.5 错误抑制/可选运算符</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#9-正则表达式pcre">9 正则表达式PCRE</a>
@@ -448,7 +559,14 @@
             <li><a href="#104-isempty是否为空">10.4 isempty是否为空</a></li>
             <li><a href="#105-limit输出最多n个值">10.5 limit输出最多n个值</a></li>
             <li><a href="#106-foreach对每个元素执行操作">10.6 foreach对每个元素执行操作</a></li>
-            <li><a href="#107-模块">10.7 模块</a></li>
+            <li><a href="#107-模块">10.7 模块</a>
+              <ul>
+                <li><a href="#1071-导入自定义模块">10.7.1 导入自定义模块</a></li>
+                <li><a href="#1072-包含模块文件">10.7.2 包含模块文件</a></li>
+                <li><a href="#1073-导入json数据">10.7.3 导入JSON数据</a></li>
+                <li><a href="#1074-将模块放在jq文件中">10.7.4 将模块放在<code>~/.jq</code>文件中</a></li>
+              </ul>
+            </li>
             <li><a href="#108-其他主题">10.8 其他主题</a></li>
           </ul>
         </li>
@@ -500,7 +618,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -546,8 +664,8 @@
             
             
             
-            <a href="/categories/os/" style="background-color: hsl(167, 60%, 84%); color: hsl(167, 60%, 15%);">
-                Os
+            <a href="/categories/os/" style="background-color: hsl(135, 60%, 84%); color: hsl(135, 60%, 15%);">
+                OS
             </a>
         
             

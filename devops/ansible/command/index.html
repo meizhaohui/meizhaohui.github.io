@@ -390,7 +390,21 @@
         <li><a href="#2-command模块返回值">2. command模块返回值</a></li>
         <li><a href="#3-执行剧本">3. 执行剧本</a>
           <ul>
-            <li><a href="#31-剧本文件语法检查彩排和运行">3.1 剧本文件语法检查、彩排和运行</a></li>
+            <li><a href="#31-剧本文件语法检查彩排和运行">3.1 剧本文件语法检查、彩排和运行</a>
+              <ul>
+                <li><a href="#311-命令添加其他参数">3.1.1 命令添加其他参数</a></li>
+                <li><a href="#312-增加creates参数如果文件存在则不会执行命令">3.1.2 增加<code>creates</code>参数，如果文件存在则不会执行命令</a></li>
+                <li><a href="#313-同时执行多个任务">3.1.3 同时执行多个任务</a></li>
+                <li><a href="#314--使用args任务关键字和cmd模块参数">3.1.4 使用<code>args</code>任务关键字和<code>cmd</code>模块参数</a></li>
+                <li><a href="#315--使用chdir改变工作路径以及argv增加命令列表">3.1.5 使用<code>chdir</code>改变工作路径以及<code>argv</code>增加命令列表</a></li>
+                <li><a href="#316-注册变量和打印">3.1.6 注册变量和打印</a></li>
+                <li><a href="#317-测试free_form参数">3.1.7 测试free_form参数</a></li>
+                <li><a href="#318-使用removes参数检查文件是否存在存在则执行任务">3.1.8 使用<code>removes</code>参数检查文件是否存在，存在则执行任务</a></li>
+                <li><a href="#319-stdin与stdin_add_newline标准输入设置">3.1.9 <code>stdin</code>与<code>stdin_add_newline</code>标准输入设置</a></li>
+                <li><a href="#3110-strip_empty_ends移除标准输出标准异常最后的空行">3.1.10 <code>strip_empty_ends</code>移除标准输出、标准异常最后的空行</a></li>
+                <li><a href="#3111-ansible警告warn设置">3.1.11 Ansible警告<code>warn</code>设置</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -441,7 +455,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

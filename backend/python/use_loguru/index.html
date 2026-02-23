@@ -394,17 +394,39 @@
             <li><a href="#14-将日志输出到标准输出">1.4 将日志输出到标准输出</a></li>
             <li><a href="#15-将日志记录到文件中">1.5 将日志记录到文件中</a></li>
             <li><a href="#16-将日志存放到指定日志文件夹中">1.6 将日志存放到指定日志文件夹中</a></li>
-            <li><a href="#17-设置日志输出格式">1.7 设置日志输出格式</a></li>
-            <li><a href="#18-日志轮转">1.8 日志轮转</a></li>
+            <li><a href="#17-设置日志输出格式">1.7 设置日志输出格式</a>
+              <ul>
+                <li><a href="#171--使用关键字指令">1.7.1  使用关键字指令</a></li>
+                <li><a href="#172-颜色标记">1.7.2 颜色标记</a></li>
+              </ul>
+            </li>
+            <li><a href="#18-日志轮转">1.8 日志轮转</a>
+              <ul>
+                <li><a href="#181-按字节大小轮转">1.8.1 按字节大小轮转</a></li>
+                <li><a href="#182-使用-datetimetimedelta-设置轮转时间频率">1.8.2 使用 datetime.timedelta 设置轮转时间频率</a></li>
+                <li><a href="#183--使用字符串表示轮转">1.8.3  使用字符串表示轮转</a></li>
+                <li><a href="#184--retention--轮转保留多少日志文件">1.8.4 <code>retention</code> 轮转保留多少日志文件</a></li>
+                <li><a href="#185-对归档文件进行压缩">1.8.5 对归档文件进行压缩</a></li>
+              </ul>
+            </li>
             <li><a href="#19-异常日志捕获">1.9 异常日志捕获</a></li>
           </ul>
         </li>
         <li><a href="#2-loguru的高级用法">2. loguru的高级用法</a>
           <ul>
             <li><a href="#21-日志序列化">2.1 日志序列化</a></li>
-            <li><a href="#22-使用bind函数给日志增加额外属性">2.2 使用<code>bind()</code>函数给日志增加额外属性</a></li>
+            <li><a href="#22-使用bind函数给日志增加额外属性">2.2 使用<code>bind()</code>函数给日志增加额外属性</a>
+              <ul>
+                <li><a href="#221-为根日志绑定默认属性">2.2.1 为根日志绑定默认属性</a></li>
+                <li><a href="#222-通过-filter-补全默认属性推荐">2.2.2 通过 <code>filter</code> 补全默认属性（推荐）</a></li>
+              </ul>
+            </li>
             <li><a href="#23-使用filter过滤器">2.3 使用filter过滤器</a></li>
-            <li><a href="#24-定义新的日志级别">2.4 定义新的日志级别</a></li>
+            <li><a href="#24-定义新的日志级别">2.4 定义新的日志级别</a>
+              <ul>
+                <li><a href="#241-不使用loggerlog而使用loggersnaky">2.4.1 不使用logger.log而使用logger.snaky</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -455,7 +477,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

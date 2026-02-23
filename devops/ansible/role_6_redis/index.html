@@ -401,15 +401,42 @@
             <li><a href="#25-任务二-优化系统设置">2.5 任务二-优化系统设置</a></li>
             <li><a href="#26--任务三和任务四">2.6  任务三和任务四</a></li>
             <li><a href="#27-复查所有任务">2.7 复查所有任务</a></li>
-            <li><a href="#28-优化剧本">2.8 优化剧本</a></li>
+            <li><a href="#28-优化剧本">2.8 优化剧本</a>
+              <ul>
+                <li><a href="#281-只创建一次随机密码">2.8.1 只创建一次随机密码</a></li>
+                <li><a href="#282-修改redis启动用户">2.8.2 修改redis启动用户</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#3-redis多节点集群配置">3. Redis多节点集群配置</a>
           <ul>
             <li><a href="#31-redis主从模式配置">3.1 Redis主从模式配置</a></li>
             <li><a href="#32-优化redis主从模式配置">3.2 优化Redis主从模式配置</a></li>
-            <li><a href="#33-redis-sentinel哨兵模式配置">3.3 Redis Sentinel哨兵模式配置</a></li>
-            <li><a href="#34-redis-cluster集群模式配置">3.4 Redis cluster集群模式配置</a></li>
+            <li><a href="#33-redis-sentinel哨兵模式配置">3.3 Redis Sentinel哨兵模式配置</a>
+              <ul>
+                <li><a href="#331--默认变量修改">3.3.1  默认变量修改</a></li>
+                <li><a href="#332-增加哨兵程序配置文件模板">3.3.2 增加哨兵程序配置文件模板</a></li>
+                <li><a href="#333-快捷命令修改">3.3.3 快捷命令修改</a></li>
+                <li><a href="#334--supervisor应用配置文件修改">3.3.4  supervisor应用配置文件修改</a></li>
+                <li><a href="#335-增加哨兵程序任务配置文件">3.3.5 增加哨兵程序任务配置文件</a></li>
+                <li><a href="#336-角色入口mainyml修改">3.3.6 角色入口main.yml修改</a></li>
+                <li><a href="#337-测试哨兵模式的自动切换">3.3.7 测试哨兵模式的自动切换</a></li>
+              </ul>
+            </li>
+            <li><a href="#34-redis-cluster集群模式配置">3.4 Redis cluster集群模式配置</a>
+              <ul>
+                <li><a href="#341-单主机测试redis集群模式">3.4.1 单主机测试Redis集群模式</a></li>
+                <li><a href="#342-三虚拟机部署三主三从6节点集群">3.4.2 三虚拟机部署三主三从6节点集群</a></li>
+                <li><a href="#343-默认变量修改">3.4.3 默认变量修改</a></li>
+                <li><a href="#344-增加集群程序配置文件模板">3.4.4 增加集群程序配置文件模板</a></li>
+                <li><a href="#345-快捷命令修改">3.4.5 快捷命令修改</a></li>
+                <li><a href="#346-supervisor应用配置文件修改">3.4.6 supervisor应用配置文件修改</a></li>
+                <li><a href="#347-增加集群程序任务配置文件">3.4.7 增加集群程序任务配置文件</a></li>
+                <li><a href="#348--角色入口mainyml修改">3.4.8  角色入口main.yml修改</a></li>
+                <li><a href="#349--测试集群模式读写">3.4.9  测试集群模式读写</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -460,7 +487,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

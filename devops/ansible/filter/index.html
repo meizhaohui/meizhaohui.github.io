@@ -390,8 +390,21 @@
         <li><a href="#2-jinja2过滤器的使用">2. Jinja2过滤器的使用</a></li>
         <li><a href="#3-ansible内置过滤器的使用">3. Ansible内置过滤器的使用</a>
           <ul>
-            <li><a href="#31-base64编解码">3.1 base64编解码</a></li>
-            <li><a href="#32-path路径相关过滤器">3.2 Path路径相关过滤器</a></li>
+            <li><a href="#31-base64编解码">3.1 base64编解码</a>
+              <ul>
+                <li><a href="#311-命令行测试base64编解码">3.1.1 命令行测试base64编解码</a></li>
+                <li><a href="#312-使用ansible剧本进行base64编解码">3.1.2 使用Ansible剧本进行base64编解码</a></li>
+              </ul>
+            </li>
+            <li><a href="#32-path路径相关过滤器">3.2 Path路径相关过滤器</a>
+              <ul>
+                <li><a href="#321-获取路径的文件名或目录路径">3.2.1 获取路径的文件名或目录路径</a></li>
+                <li><a href="#322-规范化路径">3.2.2 规范化路径</a></li>
+                <li><a href="#323-获取文件扩展名">3.2.3 获取文件扩展名</a></li>
+                <li><a href="#324-获取软链接真实路径">3.2.4 获取软链接真实路径</a></li>
+                <li><a href="#325-其他路径相关过滤器">3.2.5 其他路径相关过滤器</a></li>
+              </ul>
+            </li>
             <li><a href="#33-hash散列相关过滤器">3.3 hash散列相关过滤器</a></li>
           </ul>
         </li>
@@ -449,7 +462,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

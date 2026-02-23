@@ -389,7 +389,17 @@
         <li><a href="#0-说明">0. 说明</a></li>
         <li><a href="#5-获取完整的牌价数据">5. 获取完整的牌价数据</a>
           <ul>
-            <li><a href="#53-字符和字符串">5.3 字符和字符串</a></li>
+            <li><a href="#53-字符和字符串">5.3 字符和字符串</a>
+              <ul>
+                <li><a href="#531-计算机中的字符">5.3.1 计算机中的字符</a></li>
+                <li><a href="#532-字符编码">5.3.2 字符编码</a></li>
+                <li><a href="#533-编码是如何被显示成字符的">5.3.3 编码是如何被显示成字符的</a></li>
+                <li><a href="#534-c语言中的字符">5.3.4 C语言中的字符</a></li>
+                <li><a href="#535-从键盘输入字符并显示">5.3.5 从键盘输入字符并显示</a></li>
+                <li><a href="#536-c语言中的字符串">5.3.6 C语言中的字符串</a></li>
+                <li><a href="#537-使用scanf函数输入字符串">5.3.7 使用scanf函数输入字符串</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -440,7 +450,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -539,7 +549,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 5 分钟
                 </time>
             </div>
         
@@ -1127,6 +1137,366 @@ C语言不提供字符串类型是为了保持语言的简洁性、灵活性和�
 	
 ></p>
 <p>推荐使用<code>clearInputBuffer</code>函数来清空缓冲区。</p>
+<h5 id="536-c语言中的字符串">5.3.6 C语言中的字符串
+</h5><p><code>char</code>型变量只能存储单个ASCII值，但是在程序设计中更多的时候是使用“字符串”，例如一个人的名字，一种货币的名称都是字符串。</p>
+<h6 id="5361-字符串常量">5.3.6.1 字符串常量
+</h6><ul>
+<li>如果要描述一个固定不变的字符串，可以使用【字符串常量】。</li>
+<li><code>printf(&quot;Hello,World\n&quot;);</code>中的&quot;Hello,World\n&quot;就是字符串常量。</li>
+</ul>
+<div class="custom-block tip">
+    <div class="custom-block-heading">💡 提示</div>
+    <div class="custom-block-body">
+        <p>字符常量与字符串常量的区别：</p>
+<ul>
+<li>使用一对单引号包含的单个字符，称为【字符常量】，如， <code>char ch = 'A';</code></li>
+<li>使用一对双引号包含的一个字符或多个字符，称为【字符串常量】，如， <code>printf(&quot;Hello&quot;);</code></li>
+</ul>
+    </div>
+</div>
+
+<p>编译器在处理被双引号包含的字符串常量时，会根据字符串的内容自动为其分配一块内存空间，将双引号内的字符逐一存入这块内存空间。</p>
+<ul>
+<li>编译器会自动字符末尾追加一个ASCII码值为0的字符标识字符串结束，这个字符被称为【字符串终止符】，当处理这个字符串的程序遇到字符串终止符时就知道这个字符串到此结束了，不再理会之后的内容。</li>
+</ul>
+<p><img src="/img/Snipaste_2026-02-23_19-57-22.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-23_19-57-22.png"
+	
+	
+></p>
+<p>直接使用<code>char* str = &quot;Hello&quot;;</code> 编译器会提示异常：<code>&quot;const char *&quot; 类型的值不能用于初始化 &quot;char *&quot; 类型的实体</code>和<code>“初始化”: 无法从“const char [6]”转换为“char *”</code>。这并是因为我们对字符串常量理解有误，而是编译器在试图阻止你犯错误。</p>
+<ul>
+<li>编译器在处理被双引号包含的字符串常量时，会根据字符串的内容自动为其分配一块内存空间，这块内存空间是在“常量区”的，修改常量区的数据是不常见且危险的，因此新的编译器不允许你这么干。</li>
+</ul>
+<p>要解决这个问题，只需要在声明指针时前面加一个<code>const</code>限定符。</p>
+<p>优化后的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_16_STRING_CONST.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Hello,World!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;存储字符常量的地址是: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="s">&#34;Hello&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 限定指针str所指向区域的值不会修改
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取字符串首地址的值
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="o">*</span><span class="n">str</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行代码：</p>
+<p><img src="/img/Snipaste_2026-02-23_20-13-50.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-23_20-13-50.png"
+	
+	
+></p>
+<p>如果尝试使用<code>*str = 'B';</code>来改变字符串常量的内容，编译器会立即阻止程序。</p>
+<p><img src="/img/Snipaste_2026-02-23_20-18-15.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-23_20-18-15.png"
+	
+	
+></p>
+<ul>
+<li>被双引号包含的若干个字符称为【字符串常量】。</li>
+<li>程序编译时会为字符串常量分配一块内存空间，并将这些字符连续存入其中，且在末尾追加一个字符串终止符<code>'\0'</code>。</li>
+<li>在表达式中，字符串常量的值是存储字符串的内存空间的首地址，可以将其赋值给指针变量。</li>
+<li>不允许通过上述指针变量修改这块内存空间的内容，以确保字符串常量的安全。</li>
+</ul>
+<h6 id="5362-c语言中存储可变化字符串的方法">5.3.6.2 C语言中存储可变化字符串的方法
+</h6><p>既然字符串常量的内容是不可以变化的，那么该如何存储可能会变化的字符串呢？例如我们从服务器获取到的货币名称该如何存储？</p>
+<p>在有些编程语言里存在“字符串”这种数据类型，可以直接声明字符串变量用于存储字符串。但是C语言没有设计“字符串”这种数据类型，只能使用“字符数组”来存储字符串。</p>
+<ul>
+<li>数组是在内存中的一块连续空间，空间的大小取决于数组的定义。</li>
+<li><code>char</code>型变量可以用于存储单个字符。</li>
+<li>可以使用字符型数据来存储字符串。</li>
+</ul>
+<p>声明一个100个字符的字符型数组<code>str</code>的方法如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后就可以将多个字符按次序存入其中，<strong>但不要试图使用这样的方法</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">str</span> <span class="o">=</span> <span class="s">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>虽然它看上去很容易理解，在很多语言里面也都可以这么做，但在前面我们讲过“在表达式中，字符串常量的值存储的是字符串的内存空间的首地址”，你不能将一个地址赋值给数组<code>str</code>，因此上面的写法是错误的！！！</strong></p>
+<p>在C语言里面要向字符数组写入字符串“Hello”的最朴素的方法是一个数组元素写一个字符。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_17_STRING_VARIABLE.cpp
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 声明一个100个字符的字符型数组str
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 给数据元素赋值
+</span></span></span><span class="line"><span class="cl">    <span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;H&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">str</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;e&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">str</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;l&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">str</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;l&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">str</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;o&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">str</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 打印字符串
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序：</p>
+<p><img src="/img/Snipaste_2026-02-23_20-52-49.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-23_20-52-49.png"
+	
+	
+></p>
+<p>需要注意的是，虽然程序在运行时只使用了100个数组元素中的6个，但数组<code>str</code>仍然占用100个字节的内存空间，而且未赋值的数组元素的值是不确定的。使用固定大小的字符数组和字符串终止符的方式存储字符串会带来浪费，但这是一种最简便的方法。</p>
+<ul>
+<li>如果要存储大量文本，也一样可以使用<code>malloc</code>函数来动态分配内存。5.1节详细介绍了<code>mailloc</code>的使用。</li>
+</ul>
+<p>示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_17_STRING_VARIABLE_MALLOC.cpp
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 引入stdlib.h头文件，方便使用malloc和free函数
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 使用malloc函数动态分配的内存空间
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span><span class="o">*</span> <span class="n">str</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="nf">malloc</span><span class="p">(</span><span class="n">N</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 给数据元素赋值
+</span></span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;H&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;e&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;l&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;l&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;o&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 打印字符串
+</span></span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 使用完分配的内存后，要及时释放
+</span></span></span><span class="line"><span class="cl">        <span class="nf">free</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;内存分配失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面的程序使用逐个给数组元素赋值的方法演示了字符串的存储方式，但我们定义字符数组的目的是为了存储可变的字符串。最情况就是让用户输入字符串的内容，此时可以使用<code>scanf</code>函数。</p>
+<h5 id="537-使用scanf函数输入字符串">5.3.7 使用scanf函数输入字符串
+</h5><ul>
+<li>相对于<code>getchar</code>函数从键盘缓冲区取得单个字符，<code>scanf</code>函数可以从键盘缓冲区中获取多个字符，并将其存入字符数组。</li>
+</ul>
+<p>以下程序是从键盘输入字符串的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L05_18_KEY_IN_STR.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入字符(最多100个)：&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%s&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符串是:%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序：</p>
+<p><img src="/img/Snipaste_2026-02-23_22-21-29.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-23_22-21-29.png"
+	
+	
+></p>
+<p>当我输入<code>abcdeABCDE12345</code>时，<code>scanf</code>马上读取到我的输入，<code>printf</code>函数就打印出了我的输入。</p>
+<p>第13行代码使用<code>scanf</code>函数获取键盘输入内容，第1个参数<code>%s</code>表示要将用户的输入作为字符串处理，第2个参数<code>str</code>表示要将获取的字符串送入数组<code>str</code>中，此时<code>scanf</code>函数相当于一个搬运工。</p>
+<p>当我在输入字符串中间有空格时，<code>scanf</code>也不会读取空格后面的字符：</p>
+<p><img src="/img/Snipaste_2026-02-23_22-26-47.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-02-23_22-26-47.png"
+	
+	
+></p>
+<p>如我输入<code>abcde   ABCDE  12345</code>，最终输出的是<code>abcde</code>，说明<code>e</code>后面空格开始的字符都没读取到。</p>
+<ul>
+<li>在<code>scanf</code>函数运行时，如果键盘缓冲区中没有包含换行符的内容，会停下来等待用户输入；在用户输入若干个字符并按下回车键后，开始进行处理；</li>
+<li><code>scanf</code>函数将键盘缓冲区中的内容复制到数组中，但也不是全部复制&mdash;&ndash;当<code>scanf</code>函数遇到空格或换行符时将不再复制，没有复制完的字符仍然留在键盘缓冲区中；</li>
+<li><code>scanf</code>函数还做了一件事：自动在用户输入的最后一个字符后加上字符串终止符<code>\n</code>并一起送入到数组，这一点很重要！！！</li>
+<li>默认情况下，从键盘缓冲区取字符串时遇到空格就“停止搬运”是C语言标准中对<code>scanf</code>函数的规定。</li>
+</ul>
+<p>以下是C语言中使用字符数组存储字符串变量的方法：</p>
+<ul>
+<li>预先定义一个固定大小的字符数组；</li>
+<li>在字符数组中逐个存储组成字符串的字符；</li>
+<li>约定字符串中以<code>\0</code>表示字符串结束。</li>
+</ul>
+<p>我们可以通过逐个给字符数组中的元素赋值来改变字符串的内容，也可以通过<code>scanf</code>函数从键盘输入字符串到字符数组中。后面还会学习其他方法。</p>
 
 </section>
 

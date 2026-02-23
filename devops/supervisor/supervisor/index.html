@@ -404,21 +404,87 @@
         <li><a href="#3-运行supervisor">3. 运行Supervisor</a>
           <ul>
             <li><a href="#31-增加管理程序">3.1 增加管理程序</a></li>
-            <li><a href="#32-运行supervisord">3.2 运行supervisord</a></li>
-            <li><a href="#33-运行supervisorctl">3.3 运行supervisorctl</a></li>
-            <li><a href="#34-signals信号">3.4 Signals信号</a></li>
+            <li><a href="#32-运行supervisord">3.2 运行supervisord</a>
+              <ul>
+                <li><a href="#321-root用户不指定配置文件参数运行">3.2.1 root用户不指定配置文件参数运行</a></li>
+                <li><a href="#322-root用户指定配置文件参数运行">3.2.2 root用户指定配置文件参数运行</a></li>
+                <li><a href="#323-查看supervisord版本信息">3.2.3 查看supervisord版本信息</a></li>
+                <li><a href="#324-查看supervisor日志文件">3.2.4 查看Supervisor日志文件</a></li>
+                <li><a href="#325-root用户指定日志文件参数运行">3.2.5 root用户指定日志文件参数运行</a></li>
+                <li><a href="#326-不在后台运行">3.2.6 不在后台运行</a></li>
+                <li><a href="#327-指定pid文件运行">3.2.7 指定PID文件运行</a></li>
+                <li><a href="#328-以systemctl服务运行">3.2.8 以systemctl服务运行</a></li>
+              </ul>
+            </li>
+            <li><a href="#33-运行supervisorctl">3.3 运行supervisorctl</a>
+              <ul>
+                <li><a href="#331-设置supervisorctl别名spctl">3.3.1 设置<code>supervisorctl</code>别名<code>spctl</code></a></li>
+                <li><a href="#332-指定配置文件">3.3.2 指定配置文件</a></li>
+                <li><a href="#333-进入交互模式">3.3.3 进入交互模式</a></li>
+                <li><a href="#334--supervisorctl-actions动作">3.3.4 <strong>supervisorctl</strong> Actions动作</a></li>
+              </ul>
+            </li>
+            <li><a href="#34-signals信号">3.4 Signals信号</a>
+              <ul>
+                <li><a href="#341-signal-handlers信号处理">3.4.1 Signal Handlers信号处理</a></li>
+                <li><a href="#342-sigterm信号">3.4.2 SIGTERM信号</a></li>
+                <li><a href="#343-sigint信号">3.4.3 SIGINT信号</a></li>
+                <li><a href="#344-sigquit信号">3.4.4 SIGQUIT信号</a></li>
+                <li><a href="#345-sighup信号">3.4.5 SIGHUP信号</a></li>
+                <li><a href="#346-sigusr2信号">3.4.6 SIGUSR2信号</a></li>
+              </ul>
+            </li>
             <li><a href="#35-运行时安全">3.5 运行时安全</a></li>
           </ul>
         </li>
         <li><a href="#4-配置文件">4. 配置文件</a>
           <ul>
             <li><a href="#41-配置文件搜索顺序">4.1 配置文件搜索顺序</a></li>
-            <li><a href="#42-文件格式">4.2 文件格式</a></li>
-            <li><a href="#43-unix_http_server块设置">4.3 <code>[unix_http_server]</code>块设置</a></li>
-            <li><a href="#44-inet_http_server块设置">4.4 <code>[inet_http_server]</code>块设置</a></li>
-            <li><a href="#45-supervisord块设置">4.5 <code>[supervisord]</code>块设置</a></li>
-            <li><a href="#46-supervisorctl块设置">4.6 <code>[supervisorctl]</code>块设置</a></li>
-            <li><a href="#47-programx块设置">4.7 <code>[program:x]</code>块设置</a></li>
+            <li><a href="#42-文件格式">4.2 文件格式</a>
+              <ul>
+                <li><a href="#421--环境变量">4.2.1  环境变量</a></li>
+              </ul>
+            </li>
+            <li><a href="#43-unix_http_server块设置">4.3 <code>[unix_http_server]</code>块设置</a>
+              <ul>
+                <li><a href="#431-修改套接字文件权限">4.3.1 修改套接字文件权限</a></li>
+                <li><a href="#432-使用明文密码开启身份验证">4.3.2 使用明文密码开启身份验证</a></li>
+                <li><a href="#433-使用加密密码开启身份验证">4.3.3 使用加密密码开启身份验证</a></li>
+              </ul>
+            </li>
+            <li><a href="#44-inet_http_server块设置">4.4 <code>[inet_http_server]</code>块设置</a>
+              <ul>
+                <li><a href="#441-开启web服务">4.4.1 开启Web服务</a></li>
+                <li><a href="#442-防火墙设置">4.4.2 防火墙设置</a></li>
+                <li><a href="#443-远程访问web服务">4.4.3 远程访问Web服务</a></li>
+                <li><a href="#444-使用加密密码开启身份验证">4.4.4 使用加密密码开启身份验证</a></li>
+              </ul>
+            </li>
+            <li><a href="#45-supervisord块设置">4.5 <code>[supervisord]</code>块设置</a>
+              <ul>
+                <li><a href="#451-调整日志文件大小">4.5.1 调整日志文件大小</a></li>
+              </ul>
+            </li>
+            <li><a href="#46-supervisorctl块设置">4.6 <code>[supervisorctl]</code>块设置</a>
+              <ul>
+                <li><a href="#461-修改supervisorctl命令行提示符">4.6.1 修改<code>supervisorctl</code>命令行提示符</a></li>
+              </ul>
+            </li>
+            <li><a href="#47-programx块设置">4.7 <code>[program:x]</code>块设置</a>
+              <ul>
+                <li><a href="#471-command启动程序的命令-必需字段">4.7.1 <code>command</code>启动程序的命令-必需字段</a></li>
+                <li><a href="#472-process_name程序名称">4.7.2 <code>process_name</code>程序名称</a></li>
+                <li><a href="#473-numprocs设置进程实例数">4.7.3 <code>numprocs</code>设置进程实例数</a></li>
+                <li><a href="#474-numprocs_start设置进程实例序号起始值">4.7.4 <code>numprocs_start</code>设置进程实例序号起始值</a></li>
+                <li><a href="#475-priority改变进程优先级">4.7.5 <code>priority</code>改变进程优先级</a></li>
+                <li><a href="#476-autorestart自动重启异常退出的应用">4.7.6 <code>autorestart</code>自动重启异常退出的应用</a></li>
+                <li><a href="#477-autostart自动启动应用">4.7.7 <code>autostart</code>自动启动应用</a></li>
+                <li><a href="#478-user改变运行应用的用户">4.7.8 <code>user</code>改变运行应用的用户</a></li>
+                <li><a href="#479-directory修改工作目录">4.7.9 <code>directory</code>修改工作目录</a></li>
+                <li><a href="#4710-stdout_logfile日志文件设置">4.7.10 <code>stdout_logfile</code>日志文件设置</a></li>
+                <li><a href="#4711-environment设置环境变量">4.7.11 <code>environment</code>设置环境变量</a></li>
+              </ul>
+            </li>
             <li><a href="#48-include块设置">4.8 <code>[include]</code>块设置</a></li>
             <li><a href="#49-其他块设置">4.9 其他块设置</a></li>
           </ul>
@@ -426,7 +492,14 @@
         <li><a href="#5-子进程">5. 子进程</a>
           <ul>
             <li><a href="#51-非守护的子进程">5.1 非守护的子进程</a></li>
-            <li><a href="#52-进程状态">5.2 进程状态</a></li>
+            <li><a href="#52-进程状态">5.2 进程状态</a>
+              <ul>
+                <li><a href="#521-runningbackofffatal状态切换">5.2.1 RUNNING、BACKOFF、FATAL状态切换</a></li>
+                <li><a href="#522-重试说明">5.2.2 重试说明</a></li>
+                <li><a href="#523-exited退出的程序会重启吗">5.2.3 <code>EXITED</code>退出的程序会重启吗</a></li>
+                <li><a href="#524-程序无法启动状态异常怎么处理">5.2.4 程序无法启动状态异常怎么处理</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#6-日志">6. 日志</a></li>
@@ -434,7 +507,15 @@
         <li><a href="#8-xml-rpc-api接口">8. XML-RPC API接口</a>
           <ul>
             <li><a href="#81-配置xml-rpx-接口工厂模式">8.1 配置XML-RPX 接口工厂模式</a></li>
-            <li><a href="#82-api接口的使用">8.2 API接口的使用</a></li>
+            <li><a href="#82-api接口的使用">8.2 API接口的使用</a>
+              <ul>
+                <li><a href="#821-python2-连接示例">8.2.1 Python2 连接示例</a></li>
+                <li><a href="#822-python3-连接示例">8.2.2 Python3 连接示例</a></li>
+                <li><a href="#823-状态与控制">8.2.3 状态与控制</a></li>
+                <li><a href="#824-进程控制">8.2.4 进程控制</a></li>
+                <li><a href="#825-获取系统方法和帮助信息">8.2.5 获取系统方法和帮助信息</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#9-使用supervisor管理tomcat应用">9. 使用Supervisor管理Tomcat应用</a></li>
@@ -486,7 +567,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

@@ -394,8 +394,24 @@
             <li><a href="#while语句"><code>while</code>语句</a></li>
             <li><a href="#for语句"><code>for</code>语句</a></li>
             <li><a href="#define定义符号常量"><code>#define</code>定义符号常量</a></li>
-            <li><a href="#getcharputchar字符输入与输出"><code>getchar()</code>,<code>putchar()</code>字符输入与输出</a></li>
-            <li><a href="#数组的使用">数组的使用</a></li>
+            <li><a href="#getcharputchar字符输入与输出"><code>getchar()</code>,<code>putchar()</code>字符输入与输出</a>
+              <ul>
+                <li><a href="#将输入流原样显示在输出流">将输入流原样显示在输出流</a></li>
+                <li><a href="#打印eof的值">打印EOF的值</a></li>
+                <li><a href="#字符统计">字符统计</a></li>
+                <li><a href="#行统计">行统计</a></li>
+                <li><a href="#将连续的多个空格用一个空格代替">将连续的多个空格用一个空格代替</a></li>
+                <li><a href="#将制表符用t代替显示">将制表符用&rdquo;\t&quot;代替显示</a></li>
+                <li><a href="#统计文件的行数单词数字符数">统计文件的行数、单词数、字符数</a></li>
+                <li><a href="#每行一个单词的形式打印输出">每行一个单词的形式打印输出</a></li>
+              </ul>
+            </li>
+            <li><a href="#数组的使用">数组的使用</a>
+              <ul>
+                <li><a href="#绘制输入中单词长度的直方图">绘制输入中单词长度的直方图</a></li>
+                <li><a href="#绘制输入中各个字符出现频度的直方图">绘制输入中各个字符出现频度的直方图</a></li>
+              </ul>
+            </li>
             <li><a href="#函数">函数</a></li>
             <li><a href="#参数-传值调用">参数-传值调用</a></li>
             <li><a href="#字符数组">字符数组</a></li>
@@ -406,9 +422,21 @@
           <ul>
             <li><a href="#变量名的限定">变量名的限定</a></li>
             <li><a href="#数据类型及长度">数据类型及长度</a></li>
-            <li><a href="#常量">常量</a></li>
+            <li><a href="#常量">常量</a>
+              <ul>
+                <li><a href="#字符串常量">字符串常量</a></li>
+                <li><a href="#枚举常量">枚举常量</a></li>
+              </ul>
+            </li>
             <li><a href="#声明">声明</a></li>
-            <li><a href="#运算符">运算符</a></li>
+            <li><a href="#运算符">运算符</a>
+              <ul>
+                <li><a href="#二元运算符的简单使用">二元运算符的简单使用</a></li>
+                <li><a href="#判断用户输入的年份是否是闰年">判断用户输入的年份是否是闰年</a></li>
+                <li><a href="#统计整数对应的二进制数中1的个数">统计整数对应的二进制数中1的个数</a></li>
+                <li><a href="#不同形式输出二进制数">不同形式输出二进制数</a></li>
+              </ul>
+            </li>
             <li><a href="#条件表达式-三目运算符">条件表达式-三目运算符?:</a></li>
             <li><a href="#运算符优先级">运算符优先级</a></li>
             <li><a href="#运算符优先级和结合性一览表">运算符优先级和结合性一览表</a></li>
@@ -435,9 +463,23 @@
             <li><a href="#46-静态变量">4.6 静态变量</a></li>
             <li><a href="#47-寄存器变量">4.7 寄存器变量</a></li>
             <li><a href="#48-程序块结构">4.8 程序块结构</a></li>
-            <li><a href="#49-初始化">4.9 初始化</a></li>
-            <li><a href="#410-递归">4.10 递归</a></li>
-            <li><a href="#411--c预处理器">4.11  C预处理器</a></li>
+            <li><a href="#49-初始化">4.9 初始化</a>
+              <ul>
+                <li><a href="#491-字符串数组">4.9.1 字符串数组</a></li>
+              </ul>
+            </li>
+            <li><a href="#410-递归">4.10 递归</a>
+              <ul>
+                <li><a href="#4101-快速排序">4.10.1 快速排序</a></li>
+              </ul>
+            </li>
+            <li><a href="#411--c预处理器">4.11  C预处理器</a>
+              <ul>
+                <li><a href="#4111--文件包含include指令">4.11.1 文件包含<code>#include</code>指令</a></li>
+                <li><a href="#4112-宏定义">4.11.2 宏定义</a></li>
+                <li><a href="#4113-条件包含">4.11.3 条件包含</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#第5章-指针与数组">第5章 指针与数组</a>
@@ -472,13 +514,29 @@
         <li><a href="#第7章-输入与输出">第7章 输入与输出</a>
           <ul>
             <li><a href="#71-标准输入输出">7.1 标准输入、输出</a></li>
-            <li><a href="#72-格式化输出-printf函数">7.2 格式化输出-<code>printf</code>函数</a></li>
+            <li><a href="#72-格式化输出-printf函数">7.2 格式化输出-<code>printf</code>函数</a>
+              <ul>
+                <li><a href="#721-输出控制符">7.2.1 输出控制符</a></li>
+                <li><a href="#722-对齐方式设置">7.2.2 对齐方式设置</a></li>
+                <li><a href="#723-填充">7.2.3 填充</a></li>
+                <li><a href="#724-数字显示正负号">7.2.4 数字显示正负号</a></li>
+              </ul>
+            </li>
             <li><a href="#73-变长参数表的使用">7.3 变长参数表的使用</a></li>
-            <li><a href="#74-格式化输入-scanf函数">7.4 格式化输入-<code>scanf</code>函数</a></li>
+            <li><a href="#74-格式化输入-scanf函数">7.4 格式化输入-<code>scanf</code>函数</a>
+              <ul>
+                <li><a href="#741-读取用户信息">7.4.1 读取用户信息</a></li>
+              </ul>
+            </li>
             <li><a href="#75-文件访问">7.5 文件访问</a></li>
             <li><a href="#76-错误处理-stderr和exit">7.6 错误处理-stderr和exit</a></li>
             <li><a href="#77-行输入和行输出">7.7 行输入和行输出</a></li>
-            <li><a href="#78-其他函数">7.8 其他函数</a></li>
+            <li><a href="#78-其他函数">7.8 其他函数</a>
+              <ul>
+                <li><a href="#781-字符串操作函数">7.8.1 字符串操作函数</a></li>
+                <li><a href="#782-字符类别测试和转换函数">7.8.2 字符类别测试和转换函数</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -529,7 +587,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

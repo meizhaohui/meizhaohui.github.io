@@ -1,0 +1,38 @@
+nexus_info:
+  API_base_path: http://nexusapi.com:8081/service/rest
+  # nexus 用户名:密码 生成的base64加密字符串
+  # echo -n 'admin:admin123'|base64
+  base64_info: YWRtaW46YWRtaW4xMjM=
+  Repositories:
+    - name: yum-proxy.json
+      type: proxy
+      format: yum
+
+    - name: epel-yum-proxy.json
+      type: proxy
+      format: yum
+
+    - name: ius-yum-proxy.json
+      type: proxy
+      format: yum
+
+    - name: pypi-proxy.json
+      type: proxy
+      format: pypi
+
+    - name: maven-proxy.json
+      type: proxy
+      format: maven
+
+    - name: docker-proxy.json
+      type: proxy
+      format: docker
+
+    - name: docker-hosted.json
+      type: hosted
+      format: docker
+
+    - name: docker-group.json
+      type: group
+      format: docker
+

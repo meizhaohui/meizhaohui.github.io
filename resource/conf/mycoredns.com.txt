@@ -1,0 +1,37 @@
+; Filename: /etc/coredns/zones/mycoredns.com
+; 用 ; 作为注释符, 不要用#井号作为注释符，也不要在行内进行注释
+; 关键：必须指定，且末尾带 . （绝对域名标识）
+$ORIGIN mycoredns.com.
+; 默认 TTL 时间
+$TTL 3600
+
+; 必备 SOA 记录（无行内注释，格式规范）
+; 必备 SOA 记录（不可缺失，否则 file 插件初始化失败）
+; 格式说明：区域域名 TTL 类型 主DNS服务器 管理员邮箱 序列号 刷新时间 重试时间 过期时间 最小TTL
+; 序列号 2026010303 ，这个每次修改配置时，建议值加1，避免缓存
+; 刷新时间 3600
+; 重试时间 1800
+; 过期时间 604800
+; 最小TTL  3600
+@       IN      SOA     ns1.mycoredns.com.  admin.mycoredns.com.  (
+                                2026010304
+                                3600
+                                1800
+                                604800
+                                3600
+                                )
+								
+; NS 记录
+@       IN      NS      ns1.mycoredns.com.
+@       IN      NS      ns2.mycoredns.com.
+
+
+; A 记录 - 先写整行注释说明，再写记录（合法写法）
+@       IN      A       192.168.56.101
+; ns1/ns2 子域名绑定
+ns1     IN      A       192.168.56.101
+ns2     IN      A       192.168.56.101
+; 这些相对域名会被补全为 api.mycoredns.com.、test.mycoredns.com.
+www     IN      A       192.168.56.101
+api     IN      A       192.168.56.101
+test    IN      A       192.168.56.102

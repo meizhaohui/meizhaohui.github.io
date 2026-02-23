@@ -389,7 +389,14 @@
         <li><a href="#0-说明">0. 说明</a></li>
         <li><a href="#5-获取完整的牌价数据">5. 获取完整的牌价数据</a>
           <ul>
-            <li><a href="#51-使用数组存储数据">5.1 使用数组存储数据</a></li>
+            <li><a href="#51-使用数组存储数据">5.1 使用数组存储数据</a>
+              <ul>
+                <li><a href="#511-数据的声明方法">5.1.1 数据的声明方法</a></li>
+                <li><a href="#512-将外汇牌价数据存入数组">5.1.2 将外汇牌价数据存入数组</a></li>
+                <li><a href="#513-访问数组元素">5.1.3 访问数组元素</a></li>
+                <li><a href="#514-突破数组大小的限制">5.1.4 突破数组大小的限制</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -440,7 +447,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -1989,10 +1996,15 @@
 </div><p>此时运行程序也可以得到相同的结果。</p>
 <p>修改后的程序是完全可以运行的，所不同的时，第10和17行使用和数组元素一样的访问方式——中括号加下标<code>ptr[i]</code>，之所以可以这样做是因为之前在访问数组时，编译器实际上也会把<code>ptr[i]</code>转换成<code>*(ptr+i)</code>的形式，所以<code>ptr[i]</code>和<code>*ptr(i)</code>是完全等同的。</p>
 <p>由此可见，这里的<code>ptr</code>虽然是一个指针变量名，也完全可以把它当作一个数组名来使用。我们终于“伪造”了一个大数组，用于存储超过栈区容量的数据。</p>
-<p>::: warning 警告</p>
-<p>虽然我们使用动态内存分配的方式伪造了一个大数组，但<code>ptr</code>毕竟不是数组，而是一个指向内存区域的指针变量。不要试图使用<code>sizeof</code>运算符来获取这块内存区域的总字节数，表达式<code>sizeof(ptr)</code>的结果会是4，而不是164840，因为它计算的是指针变量<code>ptr</code>的大小。</p>
+<div class="custom-block warning">
+    <div class="custom-block-heading">⚠️ 警告</div>
+    <div class="custom-block-body">
+        <p>虽然我们使用动态内存分配的方式伪造了一个大数组，但<code>ptr</code>毕竟不是数组，而是一个指向内存区域的指针变量。不要试图使用<code>sizeof</code>运算符来获取这块内存区域的总字节数，表达式<code>sizeof(ptr)</code>的结果会是4，而不是164840，因为它计算的是指针变量<code>ptr</code>的大小。</p>
 <p>在程序设计中如果进行了动态内存分配，就必须记住这块内存区域的大小，使用一个变量来存储它，或者和上面一样在循环时使用固定的数字（N，或者40960）。</p>
-<p>:::</p>
+
+    </div>
+</div>
+
 <h6 id="5147-动态分配的内存的注意事项">5.1.4.7 动态分配的内存的注意事项
 </h6><p>在使用<code>malloc</code>函数动态分配内存时，需要注意以下事项：</p>
 <ul>
@@ -2072,9 +2084,13 @@
 	
 	
 ></p>
-<p>::: tip 温馨提示</p>
-<p>通过指针变量访问内存地址前，检查指针变量是否为<code>NULL</code>是必须养成的编程习惯。</p>
-<p>:::</p>
+<div class="custom-block tip">
+    <div class="custom-block-heading">💡 提示</div>
+    <div class="custom-block-body">
+        通过指针变量访问内存地址前，检查指针变量是否为<code>NULL</code>是必须养成的编程习惯。
+    </div>
+</div>
+
 <p><strong>2）大多数情况下需要对<code>malloc</code>函数的返回值进行类型转换</strong></p>
 <ul>
 <li><code>malloc</code>函数是一个通用的函数，动态分配的内存可以用于存储任何类型的数据。</li>
@@ -2112,22 +2128,31 @@
 <li>因此C语言的程序员应养成一个好习惯——及时释放使用完的内存。</li>
 <li>如果不停地申请空间却没有及时释放或者干脆不释放，会造成占用的内存不停地增长，这就是所谓的【内存泄露】。</li>
 </ul>
-<p>::: tip 温馨提示</p>
-<p>内存泄露指由于疏忽或错误造成程序未能释放已经不再使用的内存的情况。内存泄露会因为减少可用内存的数量从而降低计算机的性能。在最糟糕的情况下，过多的可用内存被分配掉会导致操作系统或应用程序崩溃。</p>
-<p>:::</p>
+<div class="custom-block tip">
+    <div class="custom-block-heading">💡 提示</div>
+    <div class="custom-block-body">
+        内存泄露指由于疏忽或错误造成程序未能释放已经不再使用的内存的情况。内存泄露会因为减少可用内存的数量从而降低计算机的性能。在最糟糕的情况下，过多的可用内存被分配掉会导致操作系统或应用程序崩溃。
+    </div>
+</div>
+
 <ul>
 <li>释放内存使用<code>free</code>函数，它的声明位于<code>stdlib.h</code>头文件中，不需要重复包含。</li>
 <li>释放内存时将存储空间首地址的指针变量<code>ptr</code>作为参数调用<code>free</code>函数即可。如<code>free(ptr)</code>。</li>
 <li>操作系统会根据指针变量<code>ptr</code>的值查询之前内存分配的记录，然后根据记录将这块内存标记为【未使用】，之后其他程序就可以使用这块内存了。</li>
 </ul>
 <p>释放内存需要注意的是：</p>
-<p>::: warning 注意</p>
-<ul>
+<div class="custom-block warning">
+    <div class="custom-block-heading">⚠️ 警告</div>
+    <div class="custom-block-body">
+        <ul>
 <li>释放内存时只需要向<code>free</code>函数传入内存空间的首地址就可以了，这块内存空间具体有多大，操作系统在分配内存时就已经记录过。</li>
 <li>如果传入的不是分配内存空间时得到的首地址，则会发生错误。</li>
 <li>调用了<code>free</code>函数后，对应内存的内容不会立刻被破坏，直到该内存被其他程序使用，里面的内容才会被覆盖。</li>
 </ul>
-<p>:::</p>
+
+    </div>
+</div>
+
 <p>加上<code>free</code>释放内存后的代码：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

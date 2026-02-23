@@ -1,0 +1,46 @@
+---
+- name: Copy install shell file
+  ansible.builtin.copy:
+    src: "{{ MINICONDA_SHELL_FILENAME }}"
+    dest: "/tmp/{{ MINICONDA_SHELL_FILENAME }}"
+    force: yes
+    backup: yes
+    remote_src: no
+    mode: u=rwx,g=r,o=r
+
+- name: Copy the sha256 info file
+  ansible.builtin.copy:
+    src: sha256info.txt
+    dest: /tmp/sha256info.txt
+    force: yes
+    backup: yes
+    remote_src: no
+
+- name: Check the sha256 value of the shell file
+  # 在执行sha256sum校验前，先切换目录，避免因目录中找不到文件出现校验异常问题
+  ansible.builtin.command:
+    cmd: sha256sum -c sha256info.txt
+    chdir: /tmp
+  register: result
+  failed_when:
+    - result.rc != 0
+
+- name: Copy condarc config file
+  ansible.builtin.template:
+    src: condarc.j2
+    dest: "/root/.condarc"
+    force: yes
+    backup: yes
+    remote_src: no
+
+- name: Install miniconda
+  ansible.builtin.command:
+    # cmd: "/tmp/Miniconda3-py310_24.1.2-0-Linux-x86_64.sh -b -p /srv/miniconda3"
+    cmd: "/tmp/{{ MINICONDA_SHELL_FILENAME }} -b -p {{ MINICONDA_BASE_DIR }}"
+    # 如果对应的文件存在，则忽略此步
+    creates: "{{ MINICONDA_BASE_DIR }}"
+
+- name: Remove install shell file
+  ansible.builtin.file:
+    path: "/tmp/{{ MINICONDA_SHELL_FILENAME }}"
+    state: absent

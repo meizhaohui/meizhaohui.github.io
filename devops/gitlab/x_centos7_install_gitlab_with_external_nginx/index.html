@@ -394,7 +394,22 @@
             <li><a href="#安装依赖">安装依赖</a></li>
             <li><a href="#新增gitlab的国内清华大学的yum源">新增GitLab的国内清华大学的yum源</a></li>
             <li><a href="#安装gitlab-ce-11100">安装gitlab-ce-11.10.0</a></li>
-            <li><a href="#配置gitlab配置文件">配置GitLab配置文件</a></li>
+            <li><a href="#配置gitlab配置文件">配置GitLab配置文件</a>
+              <ul>
+                <li><a href="#外部urlexternal-url配置">外部URL(external URL)配置</a></li>
+                <li><a href="#时区配置">时区配置</a></li>
+                <li><a href="#email邮箱设置">Email邮箱设置</a></li>
+                <li><a href="#禁止用户创建顶层组">禁止用户创建顶层组</a></li>
+                <li><a href="#禁止用户修改用户名">禁止用户修改用户名</a></li>
+                <li><a href="#gitlab-trusted_proxies可信代理配置">GitLab trusted_proxies可信代理配置</a></li>
+                <li><a href="#git仓库存储目录配置">git仓库存储目录配置</a></li>
+                <li><a href="#smtp外部邮箱设置">SMTP外部邮箱设置</a></li>
+                <li><a href="#改变git有用户和组信息">改变Git有用户和组信息</a></li>
+                <li><a href="#设置非捆绑web服务器的用户名">设置非捆绑WEB服务器的用户名</a></li>
+                <li><a href="#设置非捆绑web服务器为nginx">设置非捆绑WEB服务器为Nginx</a></li>
+                <li><a href="#配置gitlab的nginx配置文件">配置GitLab的Nginx配置文件</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#加载配置">加载配置</a></li>
@@ -403,7 +418,11 @@
         <li><a href="#访问gitlab">访问GitLab</a></li>
         <li><a href="#gitlab异常调试">GitLab异常调试</a>
           <ul>
-            <li></li>
+            <li>
+              <ul>
+                <li><a href="#检查selinux配置">检查SELinux配置</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#关闭selinux后重新配置gitlab服务">关闭SELinux后，重新配置GitLab服务</a></li>
@@ -458,7 +477,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

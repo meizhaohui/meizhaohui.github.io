@@ -390,7 +390,21 @@
         <li><a href="#使用subprocess创建进程">使用<code>subprocess</code>创建进程</a>
           <ul>
             <li><a href="#subprocessrun函数运行指定的命令">subprocess.run函数运行指定的命令</a></li>
-            <li><a href="#subprocess的使用">subprocess的使用</a></li>
+            <li><a href="#subprocess的使用">subprocess的使用</a>
+              <ul>
+                <li><a href="#指定shell参数使用shell执行子进程命令">指定<code>shell</code>参数，使用<code>shell</code>执行子进程命令</a></li>
+                <li><a href="#cwd指定子进程的工作目录"><code>cwd</code>指定子进程的工作目录</a></li>
+                <li><a href="#env设置子进程的环境变量"><code>env</code>设置子进程的环境变量</a></li>
+                <li><a href="#timeout设置命令超时时间"><code>timeout</code>设置命令超时时间</a></li>
+                <li><a href="#input设置子进程输入参数"><code>input</code>设置子进程输入参数</a></li>
+                <li><a href="#设置子进程的标准输出">设置子进程的标准输出</a></li>
+                <li><a href="#设置子进程的标准输出和标准错误">设置子进程的标准输出和标准错误</a></li>
+                <li><a href="#stderrsubprocessstdout设置子进程的标准错误合并到标准输出中"><code> stderr=subprocess.STDOUT</code>设置子进程的标准错误合并到标准输出中</a></li>
+                <li><a href="#通过文件名柄设置标准错误和标准输出">通过文件名柄设置标准错误和标准输出</a></li>
+                <li><a href="#将输出从二进制字符转换成字符串">将输出从二进制字符转换成字符串</a></li>
+                <li><a href="#标准输出编码处理">标准输出编码处理</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -399,7 +413,14 @@
       <ul>
         <li>
           <ul>
-            <li></li>
+            <li>
+              <ul>
+                <li><a href="#设置编码格式为utf-8">设置编码格式为UTF-8</a></li>
+                <li><a href="#检查子进程的运行状态是否正常">检查子进程的运行状态是否正常</a></li>
+                <li><a href="#将异常重定向到空设备文件devnull">将异常重定向到空设备文件<code>DEVNULL</code></a></li>
+                <li><a href="#subprocesspopen类"><code>subprocess.Popen</code>类</a></li>
+              </ul>
+            </li>
             <li><a href="#subprocess的安全问题"><code>subprocess</code>的安全问题</a></li>
           </ul>
         </li>
@@ -452,7 +473,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
