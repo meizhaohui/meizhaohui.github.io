@@ -852,6 +852,24 @@
     <loc>https://hellogitlab.com/more/friendlink/dalao/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://hellogitlab.com/backend/c/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/categories/c/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/c/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/%E7%BC%96%E7%A0%81/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/backend/c/newstylec_5.4/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/%E5%AD%97%E7%AC%A6/</loc>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hellogitlab.com/devops/etcd/tls_etcd_cluster/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -882,15 +900,6 @@
     <loc>https://hellogitlab.com/agent/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hellogitlab.com/backend/c/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/categories/c/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/c/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hellogitlab.com/categories/deepseek/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -909,13 +918,7 @@
     <loc>https://hellogitlab.com/agent/deepseek/create_local_deepseek_environments/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hellogitlab.com/tags/%E7%BC%96%E7%A0%81/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_5.3/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/%E5%AD%97%E7%AC%A6/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_5.2/</loc>

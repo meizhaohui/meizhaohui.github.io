@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="C程序设计语言总结 注：实验环境MacOS系统。 MacOS系统：\n1 2 3 4 [mzh@MacBookPro ~ ]$ sw_vers ProductName:\tMac OS X ProductVersion:\t10.15.5 BuildVersion:\t19F101 学习一门新程序设计语言的唯一途径就是使用它编写程序。 总结主要基于《C程序设计语言 第2版新版 徐宝文译》一书。 第1章 导言 第一个程序hello world helloworld.c文件内容如下：\n1 2 3 4 5 6 ##include &lt;stdio.h&gt; int main() { printf(&#34;Hello,world\\n&#34;); } 编译：\n1 cc helloworld.c 此时默认输出a.out。\n通过下面的方式可以指定输出文件的名称：\n1 cc helloworld.c -o helloworld.out 运行：\n1 2 3 4 $ ./a.out Hello,world $ ./helloworld.out Hello,world 一个C语言程序，无论其大小如何，都是由函数和变量组成的。 每个程序都从main函数的起点开始执行，每个程序必须在某个位置包含一个main函数。 函数之间进行数据交换的一种方法是调用函数向被调用函数提供参数列表。函数名后面的圆括号()将参数包裹起来，括号中没有内容时表示没有参数。函数体由{}花括号包裹起来。 main函数通常会调用其他函数来帮助完成某些工作，被调用的函数可以是程序设计人员自己编写的，也可以来自于函数库。 #include &lt;stdio.h&gt;用于告诉编译器在本程序中包含标准输入、输出库的信息。 printf函数用于打印输出。printf永远不会自动换行。 用双引号括起来的字符序列称为字符串或字符常量。 \\n转义字符表示换行。 \\t转义字符表示制表符tab。 \\b转义字符表示回退符。 \\&ldquo;转义字符表示双引号。 \\\\转义字符表示反斜杠本身。 变量与算术表达式 打印华氏温度与摄氏温度对照表，对应关系为 C=(5/9)(F-32)。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="C程序设计语言总结 注：实验环境MacOS系统。 MacOS系统：\n1 2 3 4 [mzh@MacBookPro ~ ]$ sw_vers ProductName:\tMac OS X ProductVersion:\t10.15.5 BuildVersion:\t19F101 学习一门新程序设计语言的唯一途径就是使用它编写程序。 总结主要基于《C程序设计语言 第2版新版 徐宝文译》一书。 第1章 导言 第一个程序hello world helloworld.c文件内容如下：\n1 2 3 4 5 6 #include &lt;stdio.h&gt; int main() { printf(&#34;Hello,world\\n&#34;); } 编译：\n1 cc helloworld.c 此时默认输出a.out。\n通过下面的方式可以指定输出文件的名称：\n1 cc helloworld.c -o helloworld.out 运行：\n1 2 3 4 $ ./a.out Hello,world $ ./helloworld.out Hello,world 一个C语言程序，无论其大小如何，都是由函数和变量组成的。 每个程序都从main函数的起点开始执行，每个程序必须在某个位置包含一个main函数。 函数之间进行数据交换的一种方法是调用函数向被调用函数提供参数列表。函数名后面的圆括号()将参数包裹起来，括号中没有内容时表示没有参数。函数体由{}花括号包裹起来。 main函数通常会调用其他函数来帮助完成某些工作，被调用的函数可以是程序设计人员自己编写的，也可以来自于函数库。 #include &lt;stdio.h&gt;用于告诉编译器在本程序中包含标准输入、输出库的信息。 printf函数用于打印输出。printf永远不会自动换行。 用双引号括起来的字符序列称为字符串或字符常量。 \\n转义字符表示换行。 \\t转义字符表示制表符tab。 \\b转义字符表示回退符。 \\&ldquo;转义字符表示双引号。 \\\\转义字符表示反斜杠本身。 变量与算术表达式 打印华氏温度与摄氏温度对照表，对应关系为 C=(5/9)(F-32)。\n">
 <title>C程序设计语言总结</title>
 
 <link rel='canonical' href='https://hellogitlab.com/backend/c/the_c_programming_language_second_edition/'>
 
 <link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="C程序设计语言总结">
-<meta property='og:description' content="C程序设计语言总结 注：实验环境MacOS系统。 MacOS系统：\n1 2 3 4 [mzh@MacBookPro ~ ]$ sw_vers ProductName:\tMac OS X ProductVersion:\t10.15.5 BuildVersion:\t19F101 学习一门新程序设计语言的唯一途径就是使用它编写程序。 总结主要基于《C程序设计语言 第2版新版 徐宝文译》一书。 第1章 导言 第一个程序hello world helloworld.c文件内容如下：\n1 2 3 4 5 6 ##include &lt;stdio.h&gt; int main() { printf(&#34;Hello,world\\n&#34;); } 编译：\n1 cc helloworld.c 此时默认输出a.out。\n通过下面的方式可以指定输出文件的名称：\n1 cc helloworld.c -o helloworld.out 运行：\n1 2 3 4 $ ./a.out Hello,world $ ./helloworld.out Hello,world 一个C语言程序，无论其大小如何，都是由函数和变量组成的。 每个程序都从main函数的起点开始执行，每个程序必须在某个位置包含一个main函数。 函数之间进行数据交换的一种方法是调用函数向被调用函数提供参数列表。函数名后面的圆括号()将参数包裹起来，括号中没有内容时表示没有参数。函数体由{}花括号包裹起来。 main函数通常会调用其他函数来帮助完成某些工作，被调用的函数可以是程序设计人员自己编写的，也可以来自于函数库。 #include &lt;stdio.h&gt;用于告诉编译器在本程序中包含标准输入、输出库的信息。 printf函数用于打印输出。printf永远不会自动换行。 用双引号括起来的字符序列称为字符串或字符常量。 \\n转义字符表示换行。 \\t转义字符表示制表符tab。 \\b转义字符表示回退符。 \\&ldquo;转义字符表示双引号。 \\\\转义字符表示反斜杠本身。 变量与算术表达式 打印华氏温度与摄氏温度对照表，对应关系为 C=(5/9)(F-32)。\n">
+<meta property='og:description' content="C程序设计语言总结 注：实验环境MacOS系统。 MacOS系统：\n1 2 3 4 [mzh@MacBookPro ~ ]$ sw_vers ProductName:\tMac OS X ProductVersion:\t10.15.5 BuildVersion:\t19F101 学习一门新程序设计语言的唯一途径就是使用它编写程序。 总结主要基于《C程序设计语言 第2版新版 徐宝文译》一书。 第1章 导言 第一个程序hello world helloworld.c文件内容如下：\n1 2 3 4 5 6 #include &lt;stdio.h&gt; int main() { printf(&#34;Hello,world\\n&#34;); } 编译：\n1 cc helloworld.c 此时默认输出a.out。\n通过下面的方式可以指定输出文件的名称：\n1 cc helloworld.c -o helloworld.out 运行：\n1 2 3 4 $ ./a.out Hello,world $ ./helloworld.out Hello,world 一个C语言程序，无论其大小如何，都是由函数和变量组成的。 每个程序都从main函数的起点开始执行，每个程序必须在某个位置包含一个main函数。 函数之间进行数据交换的一种方法是调用函数向被调用函数提供参数列表。函数名后面的圆括号()将参数包裹起来，括号中没有内容时表示没有参数。函数体由{}花括号包裹起来。 main函数通常会调用其他函数来帮助完成某些工作，被调用的函数可以是程序设计人员自己编写的，也可以来自于函数库。 #include &lt;stdio.h&gt;用于告诉编译器在本程序中包含标准输入、输出库的信息。 printf函数用于打印输出。printf永远不会自动换行。 用双引号括起来的字符序列称为字符串或字符常量。 \\n转义字符表示换行。 \\t转义字符表示制表符tab。 \\b转义字符表示回退符。 \\&ldquo;转义字符表示双引号。 \\\\转义字符表示反斜杠本身。 变量与算术表达式 打印华氏温度与摄氏温度对照表，对应关系为 C=(5/9)(F-32)。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/the_c_programming_language_second_edition/'>
 <meta property='og:site_name' content='编程技术分享'>
 <meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="C程序设计语言总结">
-<meta name="twitter:description" content="C程序设计语言总结 注：实验环境MacOS系统。 MacOS系统：\n1 2 3 4 [mzh@MacBookPro ~ ]$ sw_vers ProductName:\tMac OS X ProductVersion:\t10.15.5 BuildVersion:\t19F101 学习一门新程序设计语言的唯一途径就是使用它编写程序。 总结主要基于《C程序设计语言 第2版新版 徐宝文译》一书。 第1章 导言 第一个程序hello world helloworld.c文件内容如下：\n1 2 3 4 5 6 ##include &lt;stdio.h&gt; int main() { printf(&#34;Hello,world\\n&#34;); } 编译：\n1 cc helloworld.c 此时默认输出a.out。\n通过下面的方式可以指定输出文件的名称：\n1 cc helloworld.c -o helloworld.out 运行：\n1 2 3 4 $ ./a.out Hello,world $ ./helloworld.out Hello,world 一个C语言程序，无论其大小如何，都是由函数和变量组成的。 每个程序都从main函数的起点开始执行，每个程序必须在某个位置包含一个main函数。 函数之间进行数据交换的一种方法是调用函数向被调用函数提供参数列表。函数名后面的圆括号()将参数包裹起来，括号中没有内容时表示没有参数。函数体由{}花括号包裹起来。 main函数通常会调用其他函数来帮助完成某些工作，被调用的函数可以是程序设计人员自己编写的，也可以来自于函数库。 #include &lt;stdio.h&gt;用于告诉编译器在本程序中包含标准输入、输出库的信息。 printf函数用于打印输出。printf永远不会自动换行。 用双引号括起来的字符序列称为字符串或字符常量。 \\n转义字符表示换行。 \\t转义字符表示制表符tab。 \\b转义字符表示回退符。 \\&ldquo;转义字符表示双引号。 \\\\转义字符表示反斜杠本身。 变量与算术表达式 打印华氏温度与摄氏温度对照表，对应关系为 C=(5/9)(F-32)。\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="C程序设计语言总结 注：实验环境MacOS系统。 MacOS系统：\n1 2 3 4 [mzh@MacBookPro ~ ]$ sw_vers ProductName:\tMac OS X ProductVersion:\t10.15.5 BuildVersion:\t19F101 学习一门新程序设计语言的唯一途径就是使用它编写程序。 总结主要基于《C程序设计语言 第2版新版 徐宝文译》一书。 第1章 导言 第一个程序hello world helloworld.c文件内容如下：\n1 2 3 4 5 6 #include &lt;stdio.h&gt; int main() { printf(&#34;Hello,world\\n&#34;); } 编译：\n1 cc helloworld.c 此时默认输出a.out。\n通过下面的方式可以指定输出文件的名称：\n1 cc helloworld.c -o helloworld.out 运行：\n1 2 3 4 $ ./a.out Hello,world $ ./helloworld.out Hello,world 一个C语言程序，无论其大小如何，都是由函数和变量组成的。 每个程序都从main函数的起点开始执行，每个程序必须在某个位置包含一个main函数。 函数之间进行数据交换的一种方法是调用函数向被调用函数提供参数列表。函数名后面的圆括号()将参数包裹起来，括号中没有内容时表示没有参数。函数体由{}花括号包裹起来。 main函数通常会调用其他函数来帮助完成某些工作，被调用的函数可以是程序设计人员自己编写的，也可以来自于函数库。 #include &lt;stdio.h&gt;用于告诉编译器在本程序中包含标准输入、输出库的信息。 printf函数用于打印输出。printf永远不会自动换行。 用双引号括起来的字符序列称为字符串或字符常量。 \\n转义字符表示换行。 \\t转义字符表示制表符tab。 \\b转义字符表示回退符。 \\&ldquo;转义字符表示双引号。 \\\\转义字符表示反斜杠本身。 变量与算术表达式 打印华氏温度与摄氏温度对照表，对应关系为 C=(5/9)(F-32)。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -566,7 +566,7 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/backend/" class="font_size_75">
+            <a href="/categories/backend/" class="font_size_76">
                 Backend
             </a>
         
@@ -587,7 +587,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -737,7 +737,7 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -837,7 +837,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -977,7 +977,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -1092,7 +1092,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -1212,7 +1212,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -1312,7 +1312,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -1434,7 +1434,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define LOWER 0  </span><span class="c1">// 温度表的下限
 </span></span></span><span class="line"><span class="cl"><span class="cp">##define UPPER 300  </span><span class="c1">// 温度表的上限
@@ -1552,7 +1552,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -1636,7 +1636,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -1682,7 +1682,7 @@
 </span></span><span class="line"><span class="cl"> * Last Modified: 2021-01-06 22:15:43
 </span></span><span class="line"><span class="cl"> */
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">##include&lt;stdio.h&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#include&lt;stdio.h&gt;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">int main<span class="o">()</span>
 </span></span><span class="line"><span class="cl"><span class="o">{</span>
@@ -1741,7 +1741,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return nc
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -1849,7 +1849,7 @@
 </span></span><span class="line"><span class="cl"> * Last Modified: 2021-01-07 07:32:10
 </span></span><span class="line"><span class="cl"> */
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">##include&lt;stdio.h&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#include&lt;stdio.h&gt;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">int main<span class="o">()</span>
 </span></span><span class="line"><span class="cl"><span class="o">{</span>
@@ -1944,7 +1944,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return nl
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -2031,7 +2031,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0 
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -2113,7 +2113,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -2213,7 +2213,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define IN 1  </span><span class="cm">/* 定义符号常量，在单词中 */</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">##define OUT 0  </span><span class="cm">/* 定义符号常量，不在单词中 */</span><span class="cp">
@@ -2315,7 +2315,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-01-17 23:01:09
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define IN 1
 </span></span></span><span class="line"><span class="cl"><span class="cp">##define OUT 0
@@ -2423,7 +2423,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-01-18 20:49:03
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -2531,7 +2531,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-01-19 21:11:17
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">power</span><span class="p">(</span><span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>  <span class="c1">// 函数原型
 </span></span></span><span class="line"><span class="cl">
@@ -2619,7 +2619,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-01-24 15:56:30
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">power</span><span class="p">(</span><span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
@@ -2791,8 +2791,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0                                                     
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>                                                             
 </span></span><span class="line"><span class="cl">                                                               
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;                                             
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;limits.h&gt;                                            
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;                                             </span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;limits.h&gt;                                            </span><span class="cp">
 </span></span></span><span class="line"><span class="cl">                                                               
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>                                                     
 </span></span><span class="line"><span class="cl"><span class="p">{</span>                                                              
@@ -2905,8 +2905,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;limits.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;limits.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -2974,8 +2974,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-21 19:25:41
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;limits.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;limits.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -3085,7 +3085,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-21 19:18:20
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -3304,7 +3304,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-22 06:50:21
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define NUM 31
 </span></span></span><span class="line"><span class="cl">
@@ -3418,8 +3418,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl"><span class="c1">// my_strlen函数返回a的长度
 </span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">my_strlen</span><span class="p">(</span><span class="kt">char</span> <span class="n">a</span><span class="p">[])</span>
@@ -3519,7 +3519,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *   Create Time: 2021-02-25 06:32:03
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-25 07:32:27
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAX 1000 </span><span class="c1">// 最多支持1000个字符
@@ -3634,7 +3634,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *   Create Time: 2021-02-25 06:32:03
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-25 07:35:48
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAX 1000 </span><span class="c1">// 最多支持1000个字符
@@ -3760,7 +3760,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-23 06:19:02
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">enum</span> <span class="n">season</span> <span class="p">{</span><span class="n">spring</span><span class="p">,</span> <span class="n">summer</span><span class="p">,</span> <span class="n">autumn</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">winter</span><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
@@ -3837,7 +3837,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *   Create Time: 2021-02-24 21:29:54
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-24 21:35:26
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -3922,7 +3922,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *   Create Time: 2021-02-24 21:29:54
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-24 21:48:29
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -4029,7 +4029,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-23 06:49:02
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">                                                        
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;                                      
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;                                      </span><span class="cp">
 </span></span></span><span class="line"><span class="cl">                                                        
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">test</span><span class="p">()</span>                                             
 </span></span><span class="line"><span class="cl"><span class="p">{</span>                                                       
@@ -4116,7 +4116,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-23 06:57:41
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -4195,7 +4195,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-23 06:57:41
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -4268,7 +4268,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-24 06:30:50
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -4345,7 +4345,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-24 06:37:41
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -4460,7 +4460,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-27 06:49:26
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -4555,7 +4555,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-02-27 07:30:54
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* 判断给定的年份是否是闰年。 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">is_leap</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span> <span class="n">year</span><span class="p">)</span>
@@ -4723,7 +4723,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *   Create Time: 2021-02-28 16:18:42
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-02 06:42:08
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">bit_count</span><span class="p">(</span><span class="kt">unsigned</span> <span class="n">x</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">bit_count_with_and</span><span class="p">(</span><span class="kt">unsigned</span> <span class="n">x</span><span class="p">);</span>
@@ -5097,7 +5097,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *     Reference: http://www.srcmini.com/1099.html
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">print_bin</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">num</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">print_bin_with_space</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">num</span><span class="p">);</span>
@@ -5340,7 +5340,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-02 07:49:36
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 函数声明
 </span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">print_list_content</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">);</span>
@@ -5445,7 +5445,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *   Create Time: 2021-03-02 19:36:30
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-02 21:20:24
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">print_multiplication_table</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -5559,7 +5559,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define N 100
 </span></span></span><span class="line"><span class="cl">
@@ -5722,8 +5722,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-07 06:36:27
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdlib.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 函数声明
 </span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">binsearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">v</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
@@ -5903,7 +5903,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-07 06:43:38
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 函数声明
@@ -6107,7 +6107,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 函数声明
@@ -6239,8 +6239,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;ctype.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;ctype.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 函数声明
 </span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">my_atoi</span><span class="p">(</span><span class="kt">char</span> <span class="n">s</span><span class="p">[]);</span>
@@ -6349,7 +6349,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-16 07:30:13
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* shellsort函数，按递增顺序对v[0]...v[n-1]进行排序 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">shellsort</span><span class="p">(</span><span class="kt">int</span> <span class="n">v</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
@@ -6454,8 +6454,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-16 22:25:36
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">reverse</span><span class="p">(</span><span class="kt">char</span> <span class="n">s</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -6555,7 +6555,7 @@
 </span><span class="lnt">42
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include&lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">expand</span><span class="p">(</span><span class="kt">char</span> <span class="n">s1</span><span class="p">[],</span><span class="kt">char</span> <span class="n">s2</span><span class="p">[]);</span>
 </span></span><span class="line"><span class="cl">
@@ -6706,8 +6706,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-17 23:46:59
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAX 100    </span><span class="c1">// 定义最长字符数
 </span></span></span><span class="line"><span class="cl">
@@ -6917,8 +6917,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-19 20:47:04
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* 将字符串反转 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">reverse</span><span class="p">(</span><span class="kt">char</span> <span class="n">s</span><span class="p">[]);</span>
@@ -7051,8 +7051,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm">*@return 0
 </span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 函数声明
 </span></span></span><span class="line"><span class="cl"><span class="kt">char</span><span class="o">*</span> <span class="nf">my_trim</span><span class="p">(</span><span class="kt">char</span> <span class="n">s</span><span class="p">[]);</span>
@@ -7159,8 +7159,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *   Create Time: 2021-03-19 21:48:16
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-19 21:59:12
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAX 1000    </span><span class="c1">// 定义最长字符串
 </span></span></span><span class="line"><span class="cl">
@@ -7292,7 +7292,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-19 22:56:07
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* 测试goto语句 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">test_goto</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
@@ -7485,8 +7485,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-03-24 07:14:38
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAXLINE 1000 </span><span class="cm">/* 最大输入行长度 */</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
@@ -7848,9 +7848,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-04-15 22:57:34
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;ctype.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;ctype.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAX 1000    </span><span class="c1">// 定义最长字符串
 </span></span></span><span class="line"><span class="cl">
@@ -7983,9 +7983,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-04-15 23:16:23
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;ctype.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;ctype.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAX 1000    </span><span class="c1">// 定义最长字符串
 </span></span></span><span class="line"><span class="cl">
@@ -8265,9 +8265,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-06-26 21:57:47
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;ctype.h&gt; </span><span class="cm">/* 提供isdigit()函数 */</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdlib.h&gt; </span><span class="cm">/* 提供atof()函数 */</span><span class="cp">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;ctype.h&gt; /* 提供isdigit()函数 */</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt; /* 提供atof()函数 */</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define MAXOP 100   </span><span class="cm">/* max size of operand or operator 操作数或运算符的最大长度 */</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">##define NUMBER &#39;0&#39;  </span><span class="cm">/* signal that a number was found 标识找到一个数*/</span><span class="cp">
@@ -8701,7 +8701,7 @@
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">printd</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -8804,7 +8804,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * Last Modified: 2021-10-07 23:25:07
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* swap函数，交换v[i]与v[j]的值 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">swap</span><span class="p">(</span><span class="kt">int</span> <span class="n">v</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">j</span><span class="p">)</span>
@@ -8984,7 +8984,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * 作者: 梅朝辉
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * 日期: 2021-10-07 22:51:38
 </span></span></span><span class="line"><span class="cl"><span class="cm"> **********************************/</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* swap函数，交换v[i]与v[j]的值 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">swap</span><span class="p">(</span><span class="kt">int</span> <span class="n">v</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">j</span><span class="p">)</span>
@@ -9121,7 +9121,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &#34;文件名&#34;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;文件名&#34;</span><span class="cp">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>或：</p>
@@ -9130,7 +9130,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;文件名&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;文件名&gt;</span><span class="cp">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>的行都将被替换为由<em>文件名</em>指定的文件的内容。</p>
@@ -9398,7 +9398,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">##include &lt;stdio.h&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1">#include &lt;stdio.h&gt;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">int main<span class="o">(</span> <span class="o">)</span>
 </span></span><span class="line"><span class="cl"><span class="o">{</span>
@@ -9477,7 +9477,7 @@
 </span><span class="lnt">46
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">oldswap</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">swap</span><span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="n">px</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">py</span><span class="p">);</span>
@@ -9603,7 +9603,7 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -9743,8 +9743,8 @@
 </span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;string.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// my_strlen函数返回字符串s的长度
 </span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">my_strlen</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">s</span><span class="p">)</span>
@@ -9835,7 +9835,7 @@
 </span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">##define ALLOCSIZE 100 </span><span class="cm">/* 可用空间大小 */</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 静态字符数组，对外不可见
@@ -9926,7 +9926,7 @@
 </span><span class="lnt">52
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">##define ALLOCSIZE 8 </span><span class="cm">/* 可用空间大小 */</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 静态字符数组，对外不可见
@@ -10035,7 +10035,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -10131,7 +10131,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: strcpy.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* 4种不同的实现方法 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">str_copy1</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">s</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">t</span><span class="p">);</span>
@@ -10254,7 +10254,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: year_day.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">char</span> <span class="n">daytab</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">//   1   2   3   4   5   6   7  8   9   10  11  12
@@ -10324,7 +10324,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: month_name.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="o">*</span><span class="nf">month_name</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="p">)</span>
@@ -10436,7 +10436,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: myecho.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* 回显命令行参数，版本1 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
@@ -10535,7 +10535,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: myecho.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cm">/* 回显命令行参数，版本2 */</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
@@ -10648,7 +10648,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: mystruct.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 定义结构体point，表示一个点
 </span></span></span><span class="line"><span class="cl"><span class="c1">// x代表横坐标，y代表纵坐标
@@ -10750,8 +10750,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: mystruct.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;math.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;math.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 定义结构体point，表示一个点
 </span></span></span><span class="line"><span class="cl"><span class="c1">// x代表横坐标，y代表纵坐标
@@ -10905,8 +10905,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: mystruct.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;math.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;math.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 定义结构体point，表示一个点
 </span></span></span><span class="line"><span class="cl"><span class="c1">// x代表横坐标，y代表纵坐标
@@ -11101,8 +11101,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: struct_function.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;math.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;math.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 定义结构体point，表示一个点
 </span></span></span><span class="line"><span class="cl"><span class="c1">// x代表横坐标，y代表纵坐标
@@ -11272,7 +11272,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: struct_pointer.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 定义结构体point，表示一个点
 </span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">point</span> <span class="p">{</span>
@@ -11355,7 +11355,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: typedefine.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">int</span> <span class="n">Length</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -11439,8 +11439,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: mylower.c */</span>
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;ctype.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;ctype.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -11531,7 +11531,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: print_name.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">##define N 100
 </span></span></span><span class="line"><span class="cl">
@@ -11705,7 +11705,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_printf.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -11782,7 +11782,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_printf.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -11832,7 +11832,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_printf.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -11885,7 +11885,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_printf.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -11963,8 +11963,8 @@
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_variable_length_parameter.c */</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// stdarg.h头文件包含一组宏定义，它们对如何遍历参数表进行了定义
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdarg.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdarg.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 省略号...表示参数表参数的数量和类型是可变的。
 </span></span></span><span class="line"><span class="cl"><span class="c1">// 省略号...只能出现在参数表的尾部
@@ -12040,7 +12040,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_scanf.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -12198,7 +12198,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_scanf_1.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -12282,7 +12282,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: use_scanf_1.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -12448,7 +12448,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: read_file.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -12569,8 +12569,8 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cm">/* filename: read_file.c */</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdio.h&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp">##include &lt;stdlib.h&gt;
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -12731,6 +12731,25 @@
             
                 
 <article class="has-image">
+    <a href="/backend/c/newstylec_5.4/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/default.jpg" loading="lazy" data-key="" data-hash="/img/default.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">换个姿势学C语言第5章5.4</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/backend/c/newstylec_5.3/">
         
         
@@ -12800,25 +12819,6 @@
 
         <div class="article-details">
             <h2 class="article-title">换个姿势学C语言第4章</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/backend/c/newstylec/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/img/default.jpg" loading="lazy" data-key="" data-hash="/img/default.jpg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">换个姿势学C语言1-3章</h2>
         </div>
     </a>
 </article>
