@@ -572,17 +572,17 @@ dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：&lt;/
         <guid>https://hellogitlab.com/os/centos/centos_docs/</guid>
         <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post CentOS Docs" /&gt;&lt;h2 id=&#34;centos-docs&#34;&gt;CentOS Docs
 &lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_use_help&#34; &gt;学会使用命令帮助&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_how_to_use_vim&#34; &gt;VIM编辑器的使用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_wildcard_regular_expression_in_bash_script&#34; &gt;Bash script中的通配符与正则表达式&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_how_to_install_htop_in_linux&#34; &gt;linux下安装htop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_echo_color_font&#34; &gt;echo输出带颜色的字体&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_forbit_use_rm_to_delete_root_path&#34; &gt;防止rm -rf /误删除的方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_hotkey_in_terminal&#34; &gt;终端快捷键的使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_use_help&#34; &gt;学会使用命令帮助&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_how_to_use_vim&#34; &gt;VIM编辑器的使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_wildcard_regular_expression_in_bash_script&#34; &gt;Bash script中的通配符与正则表达式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_how_to_install_htop_in_linux&#34; &gt;linux下安装htop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_echo_color_font&#34; &gt;echo输出带颜色的字体&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_forbit_use_rm_to_delete_root_path&#34; &gt;防止rm -rf /误删除的方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_hotkey_in_terminal&#34; &gt;终端快捷键的使用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../certificate_authority_for_https&#34; &gt;CentOS 7 搭建CA认证中心实现https认证&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_enhance_centos_secure&#34; &gt;CentOS7增加系统安全性&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_virtualbox_install_centos7&#34; &gt;在VirtualBox中安装CentOS7虚拟机系统&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../X_VirtualBox_enhance_hdds&#34; &gt;VirtualBox虚拟机磁盘空间扩容&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_enhance_centos_secure&#34; &gt;CentOS7增加系统安全性&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_virtualbox_install_centos7&#34; &gt;在VirtualBox中安装CentOS7虚拟机系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../x_VirtualBox_enhance_hdds&#34; &gt;VirtualBox虚拟机磁盘空间扩容&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../json_tool_jq&#34; &gt;JSON解析工具jq&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../create_password&#34; &gt;创建随机密码&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;../linux_boot&#34; &gt;Linux操作系统的启动过程&lt;/a&gt;&lt;/li&gt;

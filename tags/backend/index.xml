@@ -10885,14 +10885,19 @@ CRC64：E223917AE8FC0CF6&lt;/p&gt;
 &lt;li&gt;管理规范的公司不允许开发人员使用盗版软件，这是选择IDE的第1个要素。&lt;/li&gt;
 &lt;li&gt;软件公司里通常是由很多程序员在一起协同工作的，同一个团队使用不同的IDE可能会带来兼容性问题，因此软件公司一般会选用同一个版本的IDE并且对升级非常谨慎。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;::: warning 警告&lt;/p&gt;
-&lt;p&gt;注意，安装VS时，在【工作负载】界面选择【使用C++的桌面开发】。并在【单个组件】选项卡选择以下两个选项：&lt;/p&gt;
+&lt;div class=&#34;custom-block warning&#34;&gt;
+    &lt;div class=&#34;custom-block-heading&#34;&gt;⚠️ 警告&lt;/div&gt;
+    &lt;div class=&#34;custom-block-body&#34;&gt;
+        &lt;p&gt;注意，安装VS时，在【工作负载】界面选择【使用C++的桌面开发】。并在【单个组件】选项卡选择以下两个选项：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;【适用于最新v143生成工具的C++ATL(x86和x64)】&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;【适用于最新v143生成工具的C++MFC(x86和x64)】&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;由于上面两个组件存在多个平台版本，所以此处一定要谨慎、认真地确认自己选择了正确的选项，否则会在后面遇到错误。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h4 id=&#34;23-编写和运行第1个c语言程序&#34;&gt;2.3 编写和运行第1个C语言程序
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;解决方案：大型应用系统往往需要拆分成若干个独立的项目（Project），每一个独立的项目又包含一个或多个源程序文件 ；将多个项目组织到一起就称为解决方案（Solution）。解决方案类似于一个容器。&lt;/li&gt;
