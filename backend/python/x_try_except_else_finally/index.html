@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_try_except_else_finally/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="异常">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="异常">
 <meta property='og:description' content="异常 本节介绍Python的异常。\n异常的定义 异常是一个事件，该事件会在程序执行时发生，影响程序的正常执行。 一般情况下，在Python无法正常处理程序时就会发生一个异常。 异常是Python对象，表示一个错误。 当Python脚本发生异常时，我们需要捕获处理它，否则程序会终止运行。 当你执行可能出错的代码时，需要适当的异常处理程序用于阻止潜在的错误发生。 在异常可能发生的地方添加异常处理程序，对于用户明确错误是一种好办法。 常见的异常 ZeroDivisionError除零异常 1 2 3 4 5 6 7 In [1]: 1/0 --------------------------------------------------------------------------- ZeroDivisionError Traceback (most recent call last) &lt;ipython-input-1-9e1622b385b6&gt; in &lt;module&gt; ----&gt; 1 1/0 ZeroDivisionError: division by zero AttributeError属性异常 1 2 3 4 5 6 7 8 9 10 11 12 In [2]: import os In [3]: os.name Out[3]: &#39;posix&#39; In [4]: os.Name --------------------------------------------------------------------------- AttributeError Traceback (most recent call last) &lt;ipython-input-4-edb55bc87dba&gt; in &lt;module&gt; ----&gt; 1 os.Name AttributeError: module &#39;os&#39; has no attribute &#39;Name&#39; ImportError导入异常 1 2 3 4 5 6 7 8 9 In [5]: import maths --------------------------------------------------------------------------- ImportError Traceback (most recent call last) &lt;ipython-input-8-6e25cba24411&gt; in &lt;module&gt; ----&gt; 1 import maths ImportError: No module named &#39;maths&#39; In [6]: import math IndexError索引异常 1 2 3 4 5 6 7 8 9 In [7]: list1=[&#39;a&#39;,&#39;b&#39;] In [8]: list1[3] --------------------------------------------------------------------------- IndexError Traceback (most recent call last) &lt;ipython-input-8-831b15cbf272&gt; in &lt;module&gt; ----&gt; 1 list1[3] IndexError: list index out of range SyntaxError语法异常 1 2 3 4 5 In [9]: print &#39;hello&#39; File &#34;&lt;ipython-input-9-5a1ef41e7057&gt;&#34;, line 1 print &#39;hello&#39; ^ SyntaxError: Missing parentheses in call to &#39;print&#39; IndentationError缩进异常 1 2 3 4 5 6 7 8 9 In [10]: a = 1 In [11]: if a &gt; 0: ...: print(a) ...: print(a + 1) File &#34;&lt;tokenize&gt;&#34;, line 3 print(a + 1) ^ IndentationError: unindent does not match any outer indentation level 内置异常 Python所有的错误都是从BaseException类派生的，内置异常见如下:\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_try_except_else_finally/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="异常 本节介绍Python的异常。\n异常的定义 异常是一个事件，该事件会在程序执行时发生，影响程序的正常执行。 一般情况下，在Python无法正常处理程序时就会发生一个异常。 异常是Python对象，表示一个错误。 当Python脚本发生异常时，我们需要捕获处理它，否则程序会终止运行。 当你执行可能出错的代码时，需要适当的异常处理程序用于阻止潜在的错误发生。 在异常可能发生的地方添加异常处理程序，对于用户明确错误是一种好办法。 常见的异常 ZeroDivisionError除零异常 1 2 3 4 5 6 7 In [1]: 1/0 --------------------------------------------------------------------------- ZeroDivisionError Traceback (most recent call last) &lt;ipython-input-1-9e1622b385b6&gt; in &lt;module&gt; ----&gt; 1 1/0 ZeroDivisionError: division by zero AttributeError属性异常 1 2 3 4 5 6 7 8 9 10 11 12 In [2]: import os In [3]: os.name Out[3]: &#39;posix&#39; In [4]: os.Name --------------------------------------------------------------------------- AttributeError Traceback (most recent call last) &lt;ipython-input-4-edb55bc87dba&gt; in &lt;module&gt; ----&gt; 1 os.Name AttributeError: module &#39;os&#39; has no attribute &#39;Name&#39; ImportError导入异常 1 2 3 4 5 6 7 8 9 In [5]: import maths --------------------------------------------------------------------------- ImportError Traceback (most recent call last) &lt;ipython-input-8-6e25cba24411&gt; in &lt;module&gt; ----&gt; 1 import maths ImportError: No module named &#39;maths&#39; In [6]: import math IndexError索引异常 1 2 3 4 5 6 7 8 9 In [7]: list1=[&#39;a&#39;,&#39;b&#39;] In [8]: list1[3] --------------------------------------------------------------------------- IndexError Traceback (most recent call last) &lt;ipython-input-8-831b15cbf272&gt; in &lt;module&gt; ----&gt; 1 list1[3] IndexError: list index out of range SyntaxError语法异常 1 2 3 4 5 In [9]: print &#39;hello&#39; File &#34;&lt;ipython-input-9-5a1ef41e7057&gt;&#34;, line 1 print &#39;hello&#39; ^ SyntaxError: Missing parentheses in call to &#39;print&#39; IndentationError缩进异常 1 2 3 4 5 6 7 8 9 In [10]: a = 1 In [11]: if a &gt; 0: ...: print(a) ...: print(a + 1) File &#34;&lt;tokenize&gt;&#34;, line 3 print(a + 1) ^ IndentationError: unindent does not match any outer indentation level 内置异常 Python所有的错误都是从BaseException类派生的，内置异常见如下:\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

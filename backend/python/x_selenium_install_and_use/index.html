@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_selenium_install_and_use/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="Selenium安装与使用">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Selenium安装与使用">
 <meta property='og:description' content="Selenium安装与使用 Python3.6.2下载 下载地址：https://www.python.org/downloads\npython -V查看python版本:\n1 2 $ python -V Python 3.6.2 selenium安装 使用pip安装selenium:\n1 2 3 4 5 6 $ pip install selenium Collecting selenium Downloading https://files.pythonhosted.org/packages/5e/1f/6c2204b9ae14eddab615c5e2ee4956c65ed533e0a9986c23eabd801ae849/selenium-3.11.0-py2.py3-none-any.whl (943kB) 100% |████████████████████████████████| 952kB 644kB/s Installing collected packages: selenium Successfully installed selenium-3.11.0 Pycharm 下载 下载地址：https://www.jetbrains.com/pycharm/download/\n驱动下载 chromedriver驱动下载 chromedriver下载地址： http://chromedriver.storage.googleapis.com/index.html\n下载完成后，将解压的chromedriver.exe文件复制到Python的安装目录中的Scripts文件夹中，如D:\\\\Program Files (x86)\\\\python3.6.2\\\\Scripts文件夹下。\nchromedriver版本与chrome各版本如下表：\nChromeDriver版本 支持的Chrome版本 发布时间 ChromeDriver v2.38 v65-67 2018-04-17 ChromeDriver v2.37 v64-66 2018-03-16 ChromeDriver v2.36 v63-65 2018-03-02 ChromeDriver v2.35 v62-64 2018-01-10 ChromeDriver v2.34 v61-63 2017-12-10 ChromeDriver v2.33 v60-62 2017-10-03 ChromeDriver v2.32 v59-61 2017-08-30 ChromeDriver v2.31 v58-60 2017-07-21 ChromeDriver v2.30 v58-60 2017-06-07 ChromeDriver v2.29 v56-58 2017-04-04 ChromeDriver v2.28 v55-57 2017-03-09 ChromeDriver v2.27 v54-56 2016-12-23 ChromeDriver v2.26 v53-55 2016-12-09 ::: tip 说明 此表仅罗列了部分chromediriver的版本，详细可在http://chromedriver.storage.googleapis.com/index.html查看。 :::\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_selenium_install_and_use/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="Selenium安装与使用 Python3.6.2下载 下载地址：https://www.python.org/downloads\npython -V查看python版本:\n1 2 $ python -V Python 3.6.2 selenium安装 使用pip安装selenium:\n1 2 3 4 5 6 $ pip install selenium Collecting selenium Downloading https://files.pythonhosted.org/packages/5e/1f/6c2204b9ae14eddab615c5e2ee4956c65ed533e0a9986c23eabd801ae849/selenium-3.11.0-py2.py3-none-any.whl (943kB) 100% |████████████████████████████████| 952kB 644kB/s Installing collected packages: selenium Successfully installed selenium-3.11.0 Pycharm 下载 下载地址：https://www.jetbrains.com/pycharm/download/\n驱动下载 chromedriver驱动下载 chromedriver下载地址： http://chromedriver.storage.googleapis.com/index.html\n下载完成后，将解压的chromedriver.exe文件复制到Python的安装目录中的Scripts文件夹中，如D:\\\\Program Files (x86)\\\\python3.6.2\\\\Scripts文件夹下。\nchromedriver版本与chrome各版本如下表：\nChromeDriver版本 支持的Chrome版本 发布时间 ChromeDriver v2.38 v65-67 2018-04-17 ChromeDriver v2.37 v64-66 2018-03-16 ChromeDriver v2.36 v63-65 2018-03-02 ChromeDriver v2.35 v62-64 2018-01-10 ChromeDriver v2.34 v61-63 2017-12-10 ChromeDriver v2.33 v60-62 2017-10-03 ChromeDriver v2.32 v59-61 2017-08-30 ChromeDriver v2.31 v58-60 2017-07-21 ChromeDriver v2.30 v58-60 2017-06-07 ChromeDriver v2.29 v56-58 2017-04-04 ChromeDriver v2.28 v55-57 2017-03-09 ChromeDriver v2.27 v54-56 2016-12-23 ChromeDriver v2.26 v53-55 2016-12-09 ::: tip 说明 此表仅罗列了部分chromediriver的版本，详细可在http://chromedriver.storage.googleapis.com/index.html查看。 :::\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_glob_module/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="模块-glob模块">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="模块-glob模块">
 <meta property='og:description' content="模块-glob模块 glob模块基本介绍 glob是python自带的一个操作文件的相关模块。 glob模块使用Unix Shell的规则来匹配文件或文件夹目录，而不是更复杂的正则表达式。 *星号会匹配任意名称（re正则中是.*）。 ?问号会匹配一个字符。 [abc]会匹配字符a、b和c。 [!abc]会匹配除了字符a、b和c之外的所有字符。 1 2 3 4 5 6 7 8 9 [root@ea4bbe1c189d /]# python3 Python 3.6.7 (default, Dec 5 2018, 15:02:05) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)] on linux Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import glob &gt;&gt;&gt; glob. glob.escape( glob.glob0( glob.iglob( glob.os glob.fnmatch glob.glob1( glob.magic_check glob.re glob.glob( glob.has_magic( glob.magic_check_bytes glob的使用 1 2 3 4 5 6 [root@ea4bbe1c189d /]# python3 Python 3.6.7 (default, Dec 5 2018, 15:02:05) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)] on linux Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import glob &gt;&gt;&gt; import os 查看根目录下面存在的目录或文件 1 2 &gt;&gt;&gt; os.listdir() [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;dev&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;root&#39;, &#39;.dockerenv&#39;, &#39;boot&#39;] 获取以lib开头的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;lib*&#39;) [&#39;lib&#39;, &#39;lib64&#39;] 获取以bin结尾的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;*bin&#39;) [&#39;sbin&#39;, &#39;bin&#39;] 获取所有名称为5个字符的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;?????&#39;) [&#39;media&#39;, &#39;lib64&#39;] 获取所有名称为3个字符的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;???&#39;) [&#39;sys&#39;, &#39;lib&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;run&#39;, &#39;dev&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;bin&#39;] 获取所有名称以指定字符开头的文件和目录 1 2 3 4 5 6 7 8 9 10 11 12 ## 以a开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[a]*&#39;) [&#39;anaconda-post.log&#39;] ## 以a或者b开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[ab]*&#39;) [&#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;boot&#39;] ## 以a或者b或者c开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[abc]*&#39;) [&#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;boot&#39;] ## 以a或者b或者c或者d开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[abcd]*&#39;) [&#39;dev&#39;, &#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;boot&#39;] 获取所有名称不是以指定字符开头的文件和目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 ## 不是以a或者b或者d开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abd]*&#39;) [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abde]*&#39;) [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e或者h开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdeh]*&#39;) [&#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e或者h或者l开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdehl]*&#39;) [&#39;sbin&#39;, &#39;sys&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e或者h或者l或者r开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdehlr]*&#39;) [&#39;sbin&#39;, &#39;sys&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;] ## 不是以a或者b或者d或者e或者h或者l或者r或者s开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdehlrs]*&#39;) [&#39;media&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;] 获取所有名称以指定字符开头或结尾的文件和目录 1 2 3 ## 获取以o或者t开头，并且以p或者t结尾的文件和目录 &gt;&gt;&gt; glob.glob(&#39;[ot]*[pt]&#39;) [&#39;tmp&#39;, &#39;opt&#39;] 匹配以数字结尾的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;*[0-9]&#39;) [&#39;lib64&#39;] 匹配以点号开头的隐藏的文件和目录 1 2 3 4 &gt;&gt;&gt; glob.glob(&#39;.*&#39;) [&#39;.dockerenv&#39;] &gt;&gt;&gt; glob.glob(&#39;*&#39;) [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;dev&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;root&#39;, &#39;boot&#39;] ::: tip 注意 直接使用星号不能匹配到隐藏文件！ :::\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_glob_module/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="模块-glob模块 glob模块基本介绍 glob是python自带的一个操作文件的相关模块。 glob模块使用Unix Shell的规则来匹配文件或文件夹目录，而不是更复杂的正则表达式。 *星号会匹配任意名称（re正则中是.*）。 ?问号会匹配一个字符。 [abc]会匹配字符a、b和c。 [!abc]会匹配除了字符a、b和c之外的所有字符。 1 2 3 4 5 6 7 8 9 [root@ea4bbe1c189d /]# python3 Python 3.6.7 (default, Dec 5 2018, 15:02:05) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)] on linux Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import glob &gt;&gt;&gt; glob. glob.escape( glob.glob0( glob.iglob( glob.os glob.fnmatch glob.glob1( glob.magic_check glob.re glob.glob( glob.has_magic( glob.magic_check_bytes glob的使用 1 2 3 4 5 6 [root@ea4bbe1c189d /]# python3 Python 3.6.7 (default, Dec 5 2018, 15:02:05) [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)] on linux Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import glob &gt;&gt;&gt; import os 查看根目录下面存在的目录或文件 1 2 &gt;&gt;&gt; os.listdir() [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;dev&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;root&#39;, &#39;.dockerenv&#39;, &#39;boot&#39;] 获取以lib开头的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;lib*&#39;) [&#39;lib&#39;, &#39;lib64&#39;] 获取以bin结尾的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;*bin&#39;) [&#39;sbin&#39;, &#39;bin&#39;] 获取所有名称为5个字符的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;?????&#39;) [&#39;media&#39;, &#39;lib64&#39;] 获取所有名称为3个字符的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;???&#39;) [&#39;sys&#39;, &#39;lib&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;run&#39;, &#39;dev&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;bin&#39;] 获取所有名称以指定字符开头的文件和目录 1 2 3 4 5 6 7 8 9 10 11 12 ## 以a开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[a]*&#39;) [&#39;anaconda-post.log&#39;] ## 以a或者b开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[ab]*&#39;) [&#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;boot&#39;] ## 以a或者b或者c开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[abc]*&#39;) [&#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;boot&#39;] ## 以a或者b或者c或者d开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[abcd]*&#39;) [&#39;dev&#39;, &#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;boot&#39;] 获取所有名称不是以指定字符开头的文件和目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 ## 不是以a或者b或者d开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abd]*&#39;) [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abde]*&#39;) [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e或者h开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdeh]*&#39;) [&#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e或者h或者l开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdehl]*&#39;) [&#39;sbin&#39;, &#39;sys&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;root&#39;] ## 不是以a或者b或者d或者e或者h或者l或者r开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdehlr]*&#39;) [&#39;sbin&#39;, &#39;sys&#39;, &#39;media&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;] ## 不是以a或者b或者d或者e或者h或者l或者r或者s开头的文件或目录 &gt;&gt;&gt; glob.glob(&#39;[!abdehlrs]*&#39;) [&#39;media&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;proc&#39;, &#39;var&#39;, &#39;opt&#39;] 获取所有名称以指定字符开头或结尾的文件和目录 1 2 3 ## 获取以o或者t开头，并且以p或者t结尾的文件和目录 &gt;&gt;&gt; glob.glob(&#39;[ot]*[pt]&#39;) [&#39;tmp&#39;, &#39;opt&#39;] 匹配以数字结尾的文件和目录 1 2 &gt;&gt;&gt; glob.glob(&#39;*[0-9]&#39;) [&#39;lib64&#39;] 匹配以点号开头的隐藏的文件和目录 1 2 3 4 &gt;&gt;&gt; glob.glob(&#39;.*&#39;) [&#39;.dockerenv&#39;] &gt;&gt;&gt; glob.glob(&#39;*&#39;) [&#39;home&#39;, &#39;sbin&#39;, &#39;sys&#39;, &#39;lib&#39;, &#39;media&#39;, &#39;etc&#39;, &#39;srv&#39;, &#39;usr&#39;, &#39;tmp&#39;, &#39;mnt&#39;, &#39;lib64&#39;, &#39;run&#39;, &#39;proc&#39;, &#39;dev&#39;, &#39;var&#39;, &#39;opt&#39;, &#39;anaconda-post.log&#39;, &#39;bin&#39;, &#39;root&#39;, &#39;boot&#39;] ::: tip 注意 直接使用星号不能匹配到隐藏文件！ :::\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

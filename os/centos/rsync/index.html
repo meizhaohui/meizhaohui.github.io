@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/centos/rsync/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="rsync+inotify实现数据实时同步">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="rsync+inotify实现数据实时同步">
 <meta property='og:description' content="rsync+inotify实现数据实时同步 1. 实验环境说明 序列 服务器 操作系统 IP 主机名 1 源端服务器(需要备份数据的机器) CentOS Linux release 7.7.1908 192.168.56.11 src-host 2 目标端服务器(备份数据存放的机器) CentOS Linux release 7.7.1908 192.168.56.12 dest-host 在源端配置/etc/hosts增加域名解析：\n1 2 [root@src-host ~]# echo &#39;192.168.56.11 src-host&#39; &gt;&gt; /etc/hosts [root@src-host ~]# echo &#39;192.168.56.12 dest-host&#39; &gt;&gt; /etc/hosts 2. 概述 rsync与传统的cp、tar备份方式相比，rsync具有安全性高、备份迅速、支持增量备份等优点，通过rsync可以解决对实时性要求不高的数据备份需求，例如定期的备份文件服务器数据到远端服务器，对本地磁盘定期做数据镜像等。 随着应用系统规模的不断扩大，对数据的安全性和可靠性也提出的更好的要求，rsync在高端业务系统中也逐渐暴露出了很多不足，首先，rsync同步数据时，需要扫描所有文件后进行比对，进行差量传输。如果文件数量达到了百万甚至千万量级，扫描所有文件将是非常耗时的。而且正在发生变化的往往是其中很少的一部分，这是非常低效的方式。其次，rsync不能实时的去监测、同步数据，虽然它可以通过linux守护进程的方式进行触发同步，但是两次触发动作一定会有时间差，这样就导致了服务端和客户端数据可能出现不一致，无法在应用故障时完全的恢复数据。基于以上原因，rsync+inotify组合出现了。 我们通过inotify监控源服务器上待备份的文件夹，当文件夹有变化时则触发rsync进行同步。 3. rsync的使用 rsync官方地址：https://rsync.samba.org/ 3.1 安装rsync 在源端服务器上面安装rsync包：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 [root@src-host ~]# yum install -y rsync Loaded plugins: fastestmirror Loading mirror speeds from cached hostfile Resolving Dependencies --&gt; Running transaction check ---&gt; Package rsync.x86_64 0:3.1.2-11.el7_9 will be installed --&gt; Finished Dependency Resolution Dependencies Resolved ======================================================================================================================== Package Arch Version Repository Size ======================================================================================================================== Installing: rsync x86_64 3.1.2-11.el7_9 updates 408 k Transaction Summary ======================================================================================================================== Install 1 Package Total download size: 408 k Installed size: 820 k Downloading packages: rsync-3.1.2-11.el7_9.x86_64.rpm | 408 kB 00:00:01 Running transaction check Running transaction test Transaction test succeeded Running transaction Installing : rsync-3.1.2-11.el7_9.x86_64 1/1 Verifying : rsync-3.1.2-11.el7_9.x86_64 1/1 Installed: rsync.x86_64 0:3.1.2-11.el7_9 Complete! [root@src-host ~]# 查看rsync版本信息：\n">
 <meta property='og:url' content='https://hellogitlab.com/os/centos/rsync/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="rsync+inotify实现数据实时同步 1. 实验环境说明 序列 服务器 操作系统 IP 主机名 1 源端服务器(需要备份数据的机器) CentOS Linux release 7.7.1908 192.168.56.11 src-host 2 目标端服务器(备份数据存放的机器) CentOS Linux release 7.7.1908 192.168.56.12 dest-host 在源端配置/etc/hosts增加域名解析：\n1 2 [root@src-host ~]# echo &#39;192.168.56.11 src-host&#39; &gt;&gt; /etc/hosts [root@src-host ~]# echo &#39;192.168.56.12 dest-host&#39; &gt;&gt; /etc/hosts 2. 概述 rsync与传统的cp、tar备份方式相比，rsync具有安全性高、备份迅速、支持增量备份等优点，通过rsync可以解决对实时性要求不高的数据备份需求，例如定期的备份文件服务器数据到远端服务器，对本地磁盘定期做数据镜像等。 随着应用系统规模的不断扩大，对数据的安全性和可靠性也提出的更好的要求，rsync在高端业务系统中也逐渐暴露出了很多不足，首先，rsync同步数据时，需要扫描所有文件后进行比对，进行差量传输。如果文件数量达到了百万甚至千万量级，扫描所有文件将是非常耗时的。而且正在发生变化的往往是其中很少的一部分，这是非常低效的方式。其次，rsync不能实时的去监测、同步数据，虽然它可以通过linux守护进程的方式进行触发同步，但是两次触发动作一定会有时间差，这样就导致了服务端和客户端数据可能出现不一致，无法在应用故障时完全的恢复数据。基于以上原因，rsync+inotify组合出现了。 我们通过inotify监控源服务器上待备份的文件夹，当文件夹有变化时则触发rsync进行同步。 3. rsync的使用 rsync官方地址：https://rsync.samba.org/ 3.1 安装rsync 在源端服务器上面安装rsync包：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 [root@src-host ~]# yum install -y rsync Loaded plugins: fastestmirror Loading mirror speeds from cached hostfile Resolving Dependencies --&gt; Running transaction check ---&gt; Package rsync.x86_64 0:3.1.2-11.el7_9 will be installed --&gt; Finished Dependency Resolution Dependencies Resolved ======================================================================================================================== Package Arch Version Repository Size ======================================================================================================================== Installing: rsync x86_64 3.1.2-11.el7_9 updates 408 k Transaction Summary ======================================================================================================================== Install 1 Package Total download size: 408 k Installed size: 820 k Downloading packages: rsync-3.1.2-11.el7_9.x86_64.rpm | 408 kB 00:00:01 Running transaction check Running transaction test Transaction test succeeded Running transaction Installing : rsync-3.1.2-11.el7_9.x86_64 1/1 Verifying : rsync-3.1.2-11.el7_9.x86_64 1/1 Installed: rsync.x86_64 0:3.1.2-11.el7_9 Complete! [root@src-host ~]# 查看rsync版本信息：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

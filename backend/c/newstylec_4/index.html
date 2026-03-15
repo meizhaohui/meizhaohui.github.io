@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/c/newstylec_4/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="换个姿势学C语言第4章">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="换个姿势学C语言第4章">
 <meta property='og:description' content="换个姿势学C语言 第4章 获取和显示外汇实时牌价 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 4. 获取和显示外汇实时牌价 绝大多数程序只做四件事：输入数据、存储数据、处理数据和输出数据。 在没有编程思路的时候考虑这样几个问题：\n要处理的数据从哪里来？ 数据在内存中如何存储？ 如何处理（计算）数据？ 如何输出数据？ 把这几个问题考虑清楚了，并按照这个顺序来编程就是常规的编程思路。甚至不用一次把这四个问题都考虑清楚，有时候先解决一个问题，下一个问题的答案就自动浮现了。\n对于外汇牌价看板程序来说，第一个问题是：汇率数据从何处来？\n4.1 如何获取实时牌价数据 很显然，程序员不可能写一个程序自动计算出实时汇率，汇率只能从权威发布渠道获取。\n银行或金融机构通过专用网络或者安装在楼顶的卫星天线收发数据，程序员不太可能连接到它们的网络来获取最新的外汇牌价数据。\n有些数据服务商会提供外汇牌价数据。但这是要花钱的。\n作者开发了一个函数库供大家调用，这个库就是【牌价接口库】。这种库就是第三方库。\n第三方库，既不是编译器自带的函数，也不是读者自己写的。 4.2 下载和引用外汇牌价接口库 4.2.1 下载外汇牌价接口库 何老师在书的前言中给出了清华大学出版社的下载二维码。\n在规划项目目录结构 中已经给出了目录结构的规划。\n我们将下载好的接口库文件存放到 D:\\BC101\\Libraries\\BOCRates目录下，该目录下一共有两个文件。\nBOCRates.h ， 包含接口库函数声明的头文件，在你的程序中需要包含它才可以调用相关的函数。 BOCRates.lib， 接口库函数代码编译后的二进制代码，在链接时其中的代码将与你的程序一起生成可执行文件。 注意，本外汇牌价接口库返回的小数部分会进行随机处理，不保证每一次调用返回的结果都与中行公布的实时汇率完全一致。\n4.2.2 显示美元的中行折算价 完整的外汇牌价包含多种货币的多种牌价（现汇买入价、现钞买入价、现汇卖出价、现钞卖出价、银行折算价），一开始就要完整地显示它们颇有难度，但我们可以先解决一个小问题——显示美元的中行折算价。\n此处可以看到，将复杂问题进行拆分，先解决简单的一部分，再解决其它比较难的部分。\n4.2.2.1 显示美元中行折算价的例子 我们下载好第三方库后，就可以着手编写一个程序了。\n创建一个空项目：\n项目名称：L04_01_RATES_EXAMPLE 位置：D:\\BC101\\Examples\\L04 并编写以下代码：\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_4/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="换个姿势学C语言 第4章 获取和显示外汇实时牌价 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 4. 获取和显示外汇实时牌价 绝大多数程序只做四件事：输入数据、存储数据、处理数据和输出数据。 在没有编程思路的时候考虑这样几个问题：\n要处理的数据从哪里来？ 数据在内存中如何存储？ 如何处理（计算）数据？ 如何输出数据？ 把这几个问题考虑清楚了，并按照这个顺序来编程就是常规的编程思路。甚至不用一次把这四个问题都考虑清楚，有时候先解决一个问题，下一个问题的答案就自动浮现了。\n对于外汇牌价看板程序来说，第一个问题是：汇率数据从何处来？\n4.1 如何获取实时牌价数据 很显然，程序员不可能写一个程序自动计算出实时汇率，汇率只能从权威发布渠道获取。\n银行或金融机构通过专用网络或者安装在楼顶的卫星天线收发数据，程序员不太可能连接到它们的网络来获取最新的外汇牌价数据。\n有些数据服务商会提供外汇牌价数据。但这是要花钱的。\n作者开发了一个函数库供大家调用，这个库就是【牌价接口库】。这种库就是第三方库。\n第三方库，既不是编译器自带的函数，也不是读者自己写的。 4.2 下载和引用外汇牌价接口库 4.2.1 下载外汇牌价接口库 何老师在书的前言中给出了清华大学出版社的下载二维码。\n在规划项目目录结构 中已经给出了目录结构的规划。\n我们将下载好的接口库文件存放到 D:\\BC101\\Libraries\\BOCRates目录下，该目录下一共有两个文件。\nBOCRates.h ， 包含接口库函数声明的头文件，在你的程序中需要包含它才可以调用相关的函数。 BOCRates.lib， 接口库函数代码编译后的二进制代码，在链接时其中的代码将与你的程序一起生成可执行文件。 注意，本外汇牌价接口库返回的小数部分会进行随机处理，不保证每一次调用返回的结果都与中行公布的实时汇率完全一致。\n4.2.2 显示美元的中行折算价 完整的外汇牌价包含多种货币的多种牌价（现汇买入价、现钞买入价、现汇卖出价、现钞卖出价、银行折算价），一开始就要完整地显示它们颇有难度，但我们可以先解决一个小问题——显示美元的中行折算价。\n此处可以看到，将复杂问题进行拆分，先解决简单的一部分，再解决其它比较难的部分。\n4.2.2.1 显示美元中行折算价的例子 我们下载好第三方库后，就可以着手编写一个程序了。\n创建一个空项目：\n项目名称：L04_01_RATES_EXAMPLE 位置：D:\\BC101\\Examples\\L04 并编写以下代码：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

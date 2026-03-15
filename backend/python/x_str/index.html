@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_str/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="python字符串处理">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="python字符串处理">
 <meta property='og:description' content="python字符串处理 python字符串 Python3中字符串是Unicode字符串而不是数组，这是与Python2相比最大的区别。\nPython2中需要区分普通的以字节为单位的字符串以及Unicode字符串。\nPython标准文本编码格式是UTF-8，这种编码方式简单快速，字符覆盖面广，出错率低。\nUTF-8动态编码方案：\n为ASCII字符分配1字节； 为拉丁语系(除西里尔语)的语言分配2字节； 为其他的位于基本多语言平面的字符分配3字节； 为剩下的字符集分配4字节，这包括一些亚洲语言及符号。 如果你知道某个字符的Unicode ID，可以直接在Python字符串中引用这个ID获取对应字符。\n可以使用N{name}来引用某一字符，其中name为该字符的标准名称，在 Unicode字符名称索引页可以查到字符对应的标准名称。\nPython中的unicodedata模块提供了下面两个方向的转换函数：\nlookup() 接受不区分大小写的标准名称，返回一个Unicode字符。 name() 接受一个Unicode字符，返回大写形式的名称。 从官网截取的部分字符标准名称对照表:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Unicode® Character Name Index A Name, Alias, or Category\tChart Link A WITH ACUTE, LATIN CAPITAL LETTER\t00C1 A WITH ACUTE, LATIN SMALL LETTER\t00E1 A WITH BREVE, LATIN SMALL LETTER\t0103 A WITH CARON, LATIN SMALL LETTER\t01CE A WITH CIRCUMFLEX, LATIN CAPITAL LETTER\t00C2 A WITH CIRCUMFLEX, LATIN SMALL LETTER\t00E2 A WITH DIAERESIS, LATIN CAPITAL LETTER\t00C4 A WITH DIAERESIS, LATIN SMALL LETTER\t00E4 A WITH DOT ABOVE, LATIN SMALL LETTER\t0227 A WITH DOT BELOW, LATIN SMALL LETTER\t1EA1 A WITH DOUBLE GRAVE, LATIN SMALL LETTER\t0201 A WITH GRAVE, LATIN CAPITAL LETTER\t00C0 说明: 为了方便查阅，Unicode字符名称索引页列出的字符名称是经过修改的，因此与由unicodedata.name()得到的名称有所不同，如果需要将它们转换为真实的Unicode名称(Python使用的)，只需要将逗号舍去，并将逗号后面的内容移动到最前面即可。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_str/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="python字符串处理 python字符串 Python3中字符串是Unicode字符串而不是数组，这是与Python2相比最大的区别。\nPython2中需要区分普通的以字节为单位的字符串以及Unicode字符串。\nPython标准文本编码格式是UTF-8，这种编码方式简单快速，字符覆盖面广，出错率低。\nUTF-8动态编码方案：\n为ASCII字符分配1字节； 为拉丁语系(除西里尔语)的语言分配2字节； 为其他的位于基本多语言平面的字符分配3字节； 为剩下的字符集分配4字节，这包括一些亚洲语言及符号。 如果你知道某个字符的Unicode ID，可以直接在Python字符串中引用这个ID获取对应字符。\n可以使用N{name}来引用某一字符，其中name为该字符的标准名称，在 Unicode字符名称索引页可以查到字符对应的标准名称。\nPython中的unicodedata模块提供了下面两个方向的转换函数：\nlookup() 接受不区分大小写的标准名称，返回一个Unicode字符。 name() 接受一个Unicode字符，返回大写形式的名称。 从官网截取的部分字符标准名称对照表:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Unicode® Character Name Index A Name, Alias, or Category\tChart Link A WITH ACUTE, LATIN CAPITAL LETTER\t00C1 A WITH ACUTE, LATIN SMALL LETTER\t00E1 A WITH BREVE, LATIN SMALL LETTER\t0103 A WITH CARON, LATIN SMALL LETTER\t01CE A WITH CIRCUMFLEX, LATIN CAPITAL LETTER\t00C2 A WITH CIRCUMFLEX, LATIN SMALL LETTER\t00E2 A WITH DIAERESIS, LATIN CAPITAL LETTER\t00C4 A WITH DIAERESIS, LATIN SMALL LETTER\t00E4 A WITH DOT ABOVE, LATIN SMALL LETTER\t0227 A WITH DOT BELOW, LATIN SMALL LETTER\t1EA1 A WITH DOUBLE GRAVE, LATIN SMALL LETTER\t0201 A WITH GRAVE, LATIN CAPITAL LETTER\t00C0 说明: 为了方便查阅，Unicode字符名称索引页列出的字符名称是经过修改的，因此与由unicodedata.name()得到的名称有所不同，如果需要将它们转换为真实的Unicode名称(Python使用的)，只需要将逗号舍去，并将逗号后面的内容移动到最前面即可。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

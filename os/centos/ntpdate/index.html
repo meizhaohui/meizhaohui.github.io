@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/centos/ntpdate/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="NTP时间同步">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="NTP时间同步">
 <meta property='og:description' content="NTP时间同步 NTP是用于同步网络中计算机时间的协议，全称为网络时间协议（Network Time Protocol）。\n时区和时间一致性对于服务器非常重要，有时会直接影响到任务执行的结果。例如，您在更新数据库或者分析日志时，时间顺序对结果有很大影响。为避免在服务器上运行业务时出现逻辑混乱和网络请求错误等问题，您需要统一相关服务器的时区设置。另外，您还可以通过NTP服务同步各网络中服务器的本地时间。\n1. NTP服务器列表 推荐您使用域名，而非IP地址，以免出现IP地址变动影响使用的情况！\n序号 服务器名称 域名 1 阿里云NTP服务器 ntp.aliyun.com 2 中国 cn.ntp.org.cn 3 中国教育网 edu.ntp.org.cn 4 中国香港 hk.ntp.org.cn 5 中国台湾 tw.ntp.org.cn 6 日本 jp.ntp.org.cn 7 韩国 kr.ntp.org.cn 8 新加坡 sgp.ntp.org.cn 9 美国 us.ntp.org.cn 10 德国 de.ntp.org.cn 11 印度尼西亚 ina.ntp.org.cn 2. 配置定时同步 我们使用阿里云NTP服务器。\n定时任务配置文件/var/spool/cron/root。 使用crontab -e命令打开定时任务编辑器，输入以下内容：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 SHELL=/bin/bash PATH=/sbin:/bin:/usr/sbin:/usr/bin MAILTO=root ## For details see man 4 crontabs ## Example of job definition: ## .---------------- minute (0 - 59) ## | .------------- hour (0 - 23) ## | | .---------- day of month (1 - 31) ## | | | .------- month (1 - 12) OR jan,feb,mar,apr ... ## | | | | .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat ## | | | | | ## * * * * * user-name command to be executed ## time sync */2 * * * * ntpdate ntp.aliyun.com 即每两分钟同步一次时间。\n">
 <meta property='og:url' content='https://hellogitlab.com/os/centos/ntpdate/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="NTP时间同步 NTP是用于同步网络中计算机时间的协议，全称为网络时间协议（Network Time Protocol）。\n时区和时间一致性对于服务器非常重要，有时会直接影响到任务执行的结果。例如，您在更新数据库或者分析日志时，时间顺序对结果有很大影响。为避免在服务器上运行业务时出现逻辑混乱和网络请求错误等问题，您需要统一相关服务器的时区设置。另外，您还可以通过NTP服务同步各网络中服务器的本地时间。\n1. NTP服务器列表 推荐您使用域名，而非IP地址，以免出现IP地址变动影响使用的情况！\n序号 服务器名称 域名 1 阿里云NTP服务器 ntp.aliyun.com 2 中国 cn.ntp.org.cn 3 中国教育网 edu.ntp.org.cn 4 中国香港 hk.ntp.org.cn 5 中国台湾 tw.ntp.org.cn 6 日本 jp.ntp.org.cn 7 韩国 kr.ntp.org.cn 8 新加坡 sgp.ntp.org.cn 9 美国 us.ntp.org.cn 10 德国 de.ntp.org.cn 11 印度尼西亚 ina.ntp.org.cn 2. 配置定时同步 我们使用阿里云NTP服务器。\n定时任务配置文件/var/spool/cron/root。 使用crontab -e命令打开定时任务编辑器，输入以下内容：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 SHELL=/bin/bash PATH=/sbin:/bin:/usr/sbin:/usr/bin MAILTO=root ## For details see man 4 crontabs ## Example of job definition: ## .---------------- minute (0 - 59) ## | .------------- hour (0 - 23) ## | | .---------- day of month (1 - 31) ## | | | .------- month (1 - 12) OR jan,feb,mar,apr ... ## | | | | .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat ## | | | | | ## * * * * * user-name command to be executed ## time sync */2 * * * * ntpdate ntp.aliyun.com 即每两分钟同步一次时间。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

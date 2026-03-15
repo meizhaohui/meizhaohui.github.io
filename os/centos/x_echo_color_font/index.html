@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/centos/x_echo_color_font/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="echo输出带颜色的字体">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="echo输出带颜色的字体">
 <meta property='og:description' content="echo输出带颜色的字体 概述 在Linux命令行终端或Bash Shell脚本中适当使用颜色，能够让第一时间感觉到您的命令或脚本执行过程中差异。本文主要介绍使用echo输出带颜色的字体。\necho不带参数输出字符串 当echo命令不带参数时，可以直接输出字符串，如下所示:\n1 2 3 4 [meizhaohui@localhost ~]$ echo &#34;abc&#34; abc [meizhaohui@localhost ~]$ echo def def echo带参数输出字符串 当echo命令带-e参数时，可以使用反斜杠\\输出特殊的字符。\necho输出带颜色的字体格式如下:\n1 2 3 $ echo -e &#34;\\033[字背景颜色;字体颜色m字符串\\033[0m&#34; ## 其中: &#34;\\033&#34; 引导非常规字符序列。”m”意味着设置属性然后结束非常规字符序列。 例如:\n1 2 3 $ echo -e &#34;\\033[41;32m红色背景绿色文字\\033[0m&#34; ## 其中: 41的位置代表底色, 32的位置是代表字的颜色。 下面是代码输出绿色文字:\n1 $ echo -e &#34;\\033[32m绿色文字\\033[0m&#34; 使用复杂的颜色输出 输出红字和绿字 1 $ echo -e &#34;\\033[31m红字\\033[32m绿字\\033[0m&#34; # 输出红字和绿字 输出红字和带黄色背景的绿字 1 $ echo -e &#34;\\033[31m红字\\033[43;32m绿字带黄色背景\\033[0m&#34; # 输出红字和带黄色背景的绿字 带下划线的白色背景的红字、高亮的红色背景的绿字 1 $ echo -e &#34;\\033[4;47;31m带下划线的白色背景的红字\\033[0m\\033[1;41;32m高亮的红色背景的绿字\\033[0m&#34; ">
 <meta property='og:url' content='https://hellogitlab.com/os/centos/x_echo_color_font/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="echo输出带颜色的字体 概述 在Linux命令行终端或Bash Shell脚本中适当使用颜色，能够让第一时间感觉到您的命令或脚本执行过程中差异。本文主要介绍使用echo输出带颜色的字体。\necho不带参数输出字符串 当echo命令不带参数时，可以直接输出字符串，如下所示:\n1 2 3 4 [meizhaohui@localhost ~]$ echo &#34;abc&#34; abc [meizhaohui@localhost ~]$ echo def def echo带参数输出字符串 当echo命令带-e参数时，可以使用反斜杠\\输出特殊的字符。\necho输出带颜色的字体格式如下:\n1 2 3 $ echo -e &#34;\\033[字背景颜色;字体颜色m字符串\\033[0m&#34; ## 其中: &#34;\\033&#34; 引导非常规字符序列。”m”意味着设置属性然后结束非常规字符序列。 例如:\n1 2 3 $ echo -e &#34;\\033[41;32m红色背景绿色文字\\033[0m&#34; ## 其中: 41的位置代表底色, 32的位置是代表字的颜色。 下面是代码输出绿色文字:\n1 $ echo -e &#34;\\033[32m绿色文字\\033[0m&#34; 使用复杂的颜色输出 输出红字和绿字 1 $ echo -e &#34;\\033[31m红字\\033[32m绿字\\033[0m&#34; # 输出红字和绿字 输出红字和带黄色背景的绿字 1 $ echo -e &#34;\\033[31m红字\\033[43;32m绿字带黄色背景\\033[0m&#34; # 输出红字和带黄色背景的绿字 带下划线的白色背景的红字、高亮的红色背景的绿字 1 $ echo -e &#34;\\033[4;47;31m带下划线的白色背景的红字\\033[0m\\033[1;41;32m高亮的红色背景的绿字\\033[0m&#34; "><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

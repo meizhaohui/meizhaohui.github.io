@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/macos/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="MacOS使用总结">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="MacOS使用总结">
 <meta property='og:description' content="MacOS使用总结 1. 打开访达文件夹的快捷键 说明：\n⌘ 代表 &ldquo;command&quot;键 ⎇ 代表&quot;option&quot;键 ⌃ 代表&quot;control&quot;键 ⇧ 代表&quot;shift&quot;键 通过快捷键⌃+⌘+空格键可以调出『表情符号与人物』窗口：\n点击『表情符号与人物』窗口右下角的向右的箭头，调到『技术符号』处就可以看到常用的&quot;command&quot;等键的符号了。\n2. 常用快捷键 cmd+, 个人偏好设置 cmd+shift+. 显示或隐藏.开头的隐藏文件 cmd+tab 程序之间的切换 cmd+h 窗口隐藏 cmd+m 窗口最小化 cmd+n 新建窗口 cmd+o 打开，等同于双击打开 cmd+s 保存 cmd+shift+s 另存为 cmd+p 打印 print cmd+w 关闭 close window cmd+q 退出quit cmd+a 全选select all cmd+i 显示信息show info cmd+f 搜索search cmd+c 复制copy cmd+v 粘贴paste cmd+delete 删除选中文件或文件夹 或者删除一行 option+delete 删除一个单词 cmd+c 复制 cmd+v 粘贴 cmd+z 撤销 cmd+shift+delete 清空回收站 cmd++ 放大 cmd+- 缩小 cmd+t 新建选项卡tab cmd+r 刷新refresh cmd+shift+3 截取整个屏幕 cmd+shift+4 截取选择区域 cmd+shift+6 截取触控条 fn+left 到顶部home fn+right 到底部end fn+up 上一页pageup fn+down 下一页pagedown control+cmd+F 进入全屏模式 esc 退出全屏模式 control+up 打开调度中心，点击右上角的+加号可以创建多桌面 control+down 应用程序窗口 F11 显示桌面 control+A 移动到行首 control+E 移动到行尾 注：以上&quot;cmd&quot;代表「command」键。\n">
 <meta property='og:url' content='https://hellogitlab.com/os/macos/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="MacOS使用总结 1. 打开访达文件夹的快捷键 说明：\n⌘ 代表 &ldquo;command&quot;键 ⎇ 代表&quot;option&quot;键 ⌃ 代表&quot;control&quot;键 ⇧ 代表&quot;shift&quot;键 通过快捷键⌃+⌘+空格键可以调出『表情符号与人物』窗口：\n点击『表情符号与人物』窗口右下角的向右的箭头，调到『技术符号』处就可以看到常用的&quot;command&quot;等键的符号了。\n2. 常用快捷键 cmd+, 个人偏好设置 cmd+shift+. 显示或隐藏.开头的隐藏文件 cmd+tab 程序之间的切换 cmd+h 窗口隐藏 cmd+m 窗口最小化 cmd+n 新建窗口 cmd+o 打开，等同于双击打开 cmd+s 保存 cmd+shift+s 另存为 cmd+p 打印 print cmd+w 关闭 close window cmd+q 退出quit cmd+a 全选select all cmd+i 显示信息show info cmd+f 搜索search cmd+c 复制copy cmd+v 粘贴paste cmd+delete 删除选中文件或文件夹 或者删除一行 option+delete 删除一个单词 cmd+c 复制 cmd+v 粘贴 cmd+z 撤销 cmd+shift+delete 清空回收站 cmd++ 放大 cmd+- 缩小 cmd+t 新建选项卡tab cmd+r 刷新refresh cmd+shift+3 截取整个屏幕 cmd+shift+4 截取选择区域 cmd+shift+6 截取触控条 fn+left 到顶部home fn+right 到底部end fn+up 上一页pageup fn+down 下一页pagedown control+cmd+F 进入全屏模式 esc 退出全屏模式 control+up 打开调度中心，点击右上角的+加号可以创建多桌面 control+down 应用程序窗口 F11 显示桌面 control+A 移动到行首 control+E 移动到行尾 注：以上&quot;cmd&quot;代表「command」键。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/mac-apple-osx-desktop-software-hardware_icon-icons.com_59176.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

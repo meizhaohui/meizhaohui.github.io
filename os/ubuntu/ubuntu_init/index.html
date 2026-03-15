@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/ubuntu/ubuntu_init/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="Ubuntu初始化配置">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Ubuntu初始化配置">
 <meta property='og:description' content="Ubuntu初始化配置 Ubuntu下一个好用的终端 在终端下输入：\n1 sudo apt-get install terminator 快捷键：\n1 2 3 shift+ctrl+e 在当前窗口右侧新开一个窗口 shift+ctrl+w 关闭当前活动的窗口 ALT+方向键 实现光标在几个屏中切换 json工具jq的安装 1 sudo apt-get install jq Ubuntu搜狗输入法 参考: https://pinyin.sogou.com/linux/help.php\nWPS 下载： https://www.wps.cn/product/wpslinux\npycharm 下载: https://www.jetbrains.com/pycharm/download/#section=linux\nPyCharm is also available as a snap package. If you’re on Ubuntu 16.04 or later, you can install PyCharm from the command line.\n1 sudo snap install [pycharm-professional|pycharm-community] --classic codeblocks 1 sudo apt install codeblocks typora 命令行安装，以下命令都执行即可。\n">
 <meta property='og:url' content='https://hellogitlab.com/os/ubuntu/ubuntu_init/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="Ubuntu初始化配置 Ubuntu下一个好用的终端 在终端下输入：\n1 sudo apt-get install terminator 快捷键：\n1 2 3 shift+ctrl+e 在当前窗口右侧新开一个窗口 shift+ctrl+w 关闭当前活动的窗口 ALT+方向键 实现光标在几个屏中切换 json工具jq的安装 1 sudo apt-get install jq Ubuntu搜狗输入法 参考: https://pinyin.sogou.com/linux/help.php\nWPS 下载： https://www.wps.cn/product/wpslinux\npycharm 下载: https://www.jetbrains.com/pycharm/download/#section=linux\nPyCharm is also available as a snap package. If you’re on Ubuntu 16.04 or later, you can install PyCharm from the command line.\n1 sudo snap install [pycharm-professional|pycharm-community] --classic codeblocks 1 sudo apt install codeblocks typora 命令行安装，以下命令都执行即可。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

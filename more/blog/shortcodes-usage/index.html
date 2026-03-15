@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/more/blog/shortcodes-usage/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="Hugo 自定义 Shortcode 使用指南">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Hugo 自定义 Shortcode 使用指南">
 <meta property='og:description' content="Hugo 自定义 Shortcode 使用指南 本文档说明项目中自定义的 shortcode 使用方法。\n📦 提示框 Shortcodes 项目中创建了 4 种类型的提示框，用于在 Markdown 文章中高亮显示重要信息。\n文件位置 Shortcode 文件: layouts/shortcodes/ warning.html - 警告框 tip.html - 提示框 note.html - 注意框 info.html - 信息框 样式文件: assets/scss/custom.scss 使用方法 1. ⚠️ Warning（警告框）- 黄色 用于显示警告或需要特别注意的内容。\n1 ⚠️ 警告 这是一条警告信息，支持 Markdown 格式！\n可以包含多行内容和各种 Markdown 语法。\n视觉效果：\n黄色背景（浅色模式：#fff3cd，深色模式：#3d3420） 黄色左边框（#ffc107） 图标：⚠️ 标题：警告 2. 💡 Tip（提示框）- 绿色 用于显示有用的提示或建议。\n1 💡 提示 这是一条提示信息\n支持列表 支持所有 Markdown 语法 视觉效果：\n">
 <meta property='og:url' content='https://hellogitlab.com/more/blog/shortcodes-usage/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="Hugo 自定义 Shortcode 使用指南 本文档说明项目中自定义的 shortcode 使用方法。\n📦 提示框 Shortcodes 项目中创建了 4 种类型的提示框，用于在 Markdown 文章中高亮显示重要信息。\n文件位置 Shortcode 文件: layouts/shortcodes/ warning.html - 警告框 tip.html - 提示框 note.html - 注意框 info.html - 信息框 样式文件: assets/scss/custom.scss 使用方法 1. ⚠️ Warning（警告框）- 黄色 用于显示警告或需要特别注意的内容。\n1 ⚠️ 警告 这是一条警告信息，支持 Markdown 格式！\n可以包含多行内容和各种 Markdown 语法。\n视觉效果：\n黄色背景（浅色模式：#fff3cd，深色模式：#3d3420） 黄色左边框（#ffc107） 图标：⚠️ 标题：警告 2. 💡 Tip（提示框）- 绿色 用于显示有用的提示或建议。\n1 💡 提示 这是一条提示信息\n支持列表 支持所有 Markdown 语法 视觉效果：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

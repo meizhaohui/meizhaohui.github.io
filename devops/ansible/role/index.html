@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/role/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="role角色">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="role角色">
 <meta property='og:description' content="role角色 1. 概述 Ansible 在1.2版本以后就支持了role角色。在实际工作中有很多不同业务需要编写很多playbook剧本文件，如果时间一久，对些剧本文件很难进行维护，这个时候我们就可以采用role角色的方式管理playbook剧本。 role角色是对日常使用的playbook的目录结构进行一些规范。 role角色官方文档Roles 2. 角色目录结构 Ansible角色具有定义的目录结构，其中包含8个主要标准目录。每个角色中必须至少包含一个这样的目录。您可以省略角色中不使用的任何目录。 默认情况下，Ansible 将在角色内的每个目录中查找main.yml文件以获取相关内容,也可以命名为main.yaml或main。 目录结构说明：\n序号 名称 类型 说明 1 tasks 目录 保存角色功能实现任务所在的目录 1 tasks/main.yml 文件 角色的入口文件，执行角色时会从此文件开始执行 2 handlers 目录 触发器目录 2 handlers/main.yml 文件 存放触发器配置文件 3 library 目录 自定义模块目录 3 library/my_module.py 文件 自己编写的模块文件 4 defaults 目录 存放默认配置信息的目录 4 defaults/main.yml 文件 存放默认配置变量的文件，此配置中定义的变量优先级最低 5 vars 目录 保存变量配置信息的目录 5 vars/main.yml 文件 用于保存变量配置信息，可以重写默认配置文件中定义的变量 6 files 目录 存放文件的目录，在此目录下copy等模块可以直接使用 6 files/main.yml 文件 角色部署文件 7 templates 目录 存放模版文件的目录 7 templates/main.yml 文件 模版文件 9 meta 目录 存放元信息相关的配置文件的目录 9 meta/main.yml 文件 存放此模块的一些元信息，比如所支持的Ansible最小版本以及操作系统类型等 10 tests 目录 存放角色测试相关的内容的目录 10 tests/inventory 文件 测试所使用的inventory文件 10 tests/test.yml 文件 测试所使用的playbook 11 README.md 文件 用于模块说明和介绍的文件 你也可以在文件夹中添加其他YAML文件。 如你可以将平台独有的任务写到单独的YAML文件中，然后在tasks/main.yml中引用，就像下面这样：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/role/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="role角色 1. 概述 Ansible 在1.2版本以后就支持了role角色。在实际工作中有很多不同业务需要编写很多playbook剧本文件，如果时间一久，对些剧本文件很难进行维护，这个时候我们就可以采用role角色的方式管理playbook剧本。 role角色是对日常使用的playbook的目录结构进行一些规范。 role角色官方文档Roles 2. 角色目录结构 Ansible角色具有定义的目录结构，其中包含8个主要标准目录。每个角色中必须至少包含一个这样的目录。您可以省略角色中不使用的任何目录。 默认情况下，Ansible 将在角色内的每个目录中查找main.yml文件以获取相关内容,也可以命名为main.yaml或main。 目录结构说明：\n序号 名称 类型 说明 1 tasks 目录 保存角色功能实现任务所在的目录 1 tasks/main.yml 文件 角色的入口文件，执行角色时会从此文件开始执行 2 handlers 目录 触发器目录 2 handlers/main.yml 文件 存放触发器配置文件 3 library 目录 自定义模块目录 3 library/my_module.py 文件 自己编写的模块文件 4 defaults 目录 存放默认配置信息的目录 4 defaults/main.yml 文件 存放默认配置变量的文件，此配置中定义的变量优先级最低 5 vars 目录 保存变量配置信息的目录 5 vars/main.yml 文件 用于保存变量配置信息，可以重写默认配置文件中定义的变量 6 files 目录 存放文件的目录，在此目录下copy等模块可以直接使用 6 files/main.yml 文件 角色部署文件 7 templates 目录 存放模版文件的目录 7 templates/main.yml 文件 模版文件 9 meta 目录 存放元信息相关的配置文件的目录 9 meta/main.yml 文件 存放此模块的一些元信息，比如所支持的Ansible最小版本以及操作系统类型等 10 tests 目录 存放角色测试相关的内容的目录 10 tests/inventory 文件 测试所使用的inventory文件 10 tests/test.yml 文件 测试所使用的playbook 11 README.md 文件 用于模块说明和介绍的文件 你也可以在文件夹中添加其他YAML文件。 如你可以将平台独有的任务写到单独的YAML文件中，然后在tasks/main.yml中引用，就像下面这样：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

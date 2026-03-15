@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/c/newstylec_5/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="换个姿势学C语言第5章5.1">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="换个姿势学C语言第5章5.1">
 <meta property='og:description' content="换个姿势学C语言 第5章 获取完整的牌价数据 5.1节 使用数组存储数据 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 5. 获取完整的牌价数据 在第4章的程序中已经实现了显示一项数据的功能——100美元折算人民币的金额，这项计算是根据【中行折算价】计算的，但外汇牌价还包括现汇买入价、现钞买入价、现汇卖出价、现钞卖出价。\n存储这5种价格需要声明5个double型变量吗？在中行网站上面可以看到，有35种外汇可以选择：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 &lt;select name=&#34;pjname&#34; id=&#34;pjname&#34;&gt; &lt;option value=&#34;0&#34;&gt;选择货币&lt;/option&gt; &lt;option value=&#34;英镑&#34;&gt;英镑&lt;/option&gt; &lt;option value=&#34;港币&#34;&gt;港币&lt;/option&gt; &lt;option value=&#34;美元&#34; selected=&#34;&#34;&gt;美元&lt;/option&gt; &lt;option value=&#34;瑞士法郎&#34;&gt;瑞士法郎&lt;/option&gt; &lt;option value=&#34;德国马克&#34;&gt;德国马克&lt;/option&gt; &lt;option value=&#34;法国法郎&#34;&gt;法国法郎&lt;/option&gt; &lt;option value=&#34;新加坡元&#34;&gt;新加坡元&lt;/option&gt; &lt;option value=&#34;瑞典克朗&#34;&gt;瑞典克朗&lt;/option&gt; &lt;option value=&#34;丹麦克朗&#34;&gt;丹麦克朗&lt;/option&gt; &lt;option value=&#34;挪威克朗&#34;&gt;挪威克朗&lt;/option&gt; &lt;option value=&#34;日元&#34;&gt;日元&lt;/option&gt; &lt;option value=&#34;加拿大元&#34;&gt;加拿大元&lt;/option&gt; &lt;option value=&#34;澳大利亚元&#34;&gt;澳大利亚元&lt;/option&gt; &lt;option value=&#34;欧元&#34;&gt;欧元&lt;/option&gt; &lt;option value=&#34;澳门元&#34;&gt;澳门元&lt;/option&gt; &lt;option value=&#34;菲律宾比索&#34;&gt;菲律宾比索&lt;/option&gt; &lt;option value=&#34;泰国铢&#34;&gt;泰国铢&lt;/option&gt; &lt;option value=&#34;新西兰元&#34;&gt;新西兰元&lt;/option&gt; &lt;option value=&#34;韩国元&#34;&gt;韩元&lt;/option&gt; &lt;option value=&#34;卢布&#34;&gt;卢布&lt;/option&gt; &lt;option value=&#34;林吉特&#34;&gt;林吉特&lt;/option&gt; &lt;option value=&#34;新台币&#34;&gt;新台币&lt;/option&gt; &lt;option value=&#34;西班牙比塞塔&#34;&gt;西班牙比塞塔&lt;/option&gt; &lt;option value=&#34;意大利里拉&#34;&gt;意大利里拉&lt;/option&gt; &lt;option value=&#34;荷兰盾&#34;&gt;荷兰盾&lt;/option&gt; &lt;option value=&#34;比利时法郎&#34;&gt;比利时法郎&lt;/option&gt; &lt;option value=&#34;芬兰马克&#34;&gt;芬兰马克&lt;/option&gt; &lt;option value=&#34;印度卢比&#34;&gt;印度卢比&lt;/option&gt; &lt;option value=&#34;印尼卢比&#34;&gt;印尼卢比&lt;/option&gt; &lt;option value=&#34;巴西里亚尔&#34;&gt;巴西里亚尔&lt;/option&gt; &lt;option value=&#34;阿联酋迪拉姆&#34;&gt;阿联酋迪拉姆&lt;/option&gt; &lt;option value=&#34;印度卢比&#34;&gt;印度卢比&lt;/option&gt; &lt;option value=&#34;南非兰特&#34;&gt;南非兰特&lt;/option&gt; &lt;option value=&#34;沙特里亚尔&#34;&gt;沙特里亚尔&lt;/option&gt; &lt;option value=&#34;土耳其里拉&#34;&gt;土耳其里拉&lt;/option&gt; &lt;/select&gt; 如果这35种货币都定义5个变量，则需要定义35 * 5 = 175个变量。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_5/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="换个姿势学C语言 第5章 获取完整的牌价数据 5.1节 使用数组存储数据 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 5. 获取完整的牌价数据 在第4章的程序中已经实现了显示一项数据的功能——100美元折算人民币的金额，这项计算是根据【中行折算价】计算的，但外汇牌价还包括现汇买入价、现钞买入价、现汇卖出价、现钞卖出价。\n存储这5种价格需要声明5个double型变量吗？在中行网站上面可以看到，有35种外汇可以选择：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 &lt;select name=&#34;pjname&#34; id=&#34;pjname&#34;&gt; &lt;option value=&#34;0&#34;&gt;选择货币&lt;/option&gt; &lt;option value=&#34;英镑&#34;&gt;英镑&lt;/option&gt; &lt;option value=&#34;港币&#34;&gt;港币&lt;/option&gt; &lt;option value=&#34;美元&#34; selected=&#34;&#34;&gt;美元&lt;/option&gt; &lt;option value=&#34;瑞士法郎&#34;&gt;瑞士法郎&lt;/option&gt; &lt;option value=&#34;德国马克&#34;&gt;德国马克&lt;/option&gt; &lt;option value=&#34;法国法郎&#34;&gt;法国法郎&lt;/option&gt; &lt;option value=&#34;新加坡元&#34;&gt;新加坡元&lt;/option&gt; &lt;option value=&#34;瑞典克朗&#34;&gt;瑞典克朗&lt;/option&gt; &lt;option value=&#34;丹麦克朗&#34;&gt;丹麦克朗&lt;/option&gt; &lt;option value=&#34;挪威克朗&#34;&gt;挪威克朗&lt;/option&gt; &lt;option value=&#34;日元&#34;&gt;日元&lt;/option&gt; &lt;option value=&#34;加拿大元&#34;&gt;加拿大元&lt;/option&gt; &lt;option value=&#34;澳大利亚元&#34;&gt;澳大利亚元&lt;/option&gt; &lt;option value=&#34;欧元&#34;&gt;欧元&lt;/option&gt; &lt;option value=&#34;澳门元&#34;&gt;澳门元&lt;/option&gt; &lt;option value=&#34;菲律宾比索&#34;&gt;菲律宾比索&lt;/option&gt; &lt;option value=&#34;泰国铢&#34;&gt;泰国铢&lt;/option&gt; &lt;option value=&#34;新西兰元&#34;&gt;新西兰元&lt;/option&gt; &lt;option value=&#34;韩国元&#34;&gt;韩元&lt;/option&gt; &lt;option value=&#34;卢布&#34;&gt;卢布&lt;/option&gt; &lt;option value=&#34;林吉特&#34;&gt;林吉特&lt;/option&gt; &lt;option value=&#34;新台币&#34;&gt;新台币&lt;/option&gt; &lt;option value=&#34;西班牙比塞塔&#34;&gt;西班牙比塞塔&lt;/option&gt; &lt;option value=&#34;意大利里拉&#34;&gt;意大利里拉&lt;/option&gt; &lt;option value=&#34;荷兰盾&#34;&gt;荷兰盾&lt;/option&gt; &lt;option value=&#34;比利时法郎&#34;&gt;比利时法郎&lt;/option&gt; &lt;option value=&#34;芬兰马克&#34;&gt;芬兰马克&lt;/option&gt; &lt;option value=&#34;印度卢比&#34;&gt;印度卢比&lt;/option&gt; &lt;option value=&#34;印尼卢比&#34;&gt;印尼卢比&lt;/option&gt; &lt;option value=&#34;巴西里亚尔&#34;&gt;巴西里亚尔&lt;/option&gt; &lt;option value=&#34;阿联酋迪拉姆&#34;&gt;阿联酋迪拉姆&lt;/option&gt; &lt;option value=&#34;印度卢比&#34;&gt;印度卢比&lt;/option&gt; &lt;option value=&#34;南非兰特&#34;&gt;南非兰特&lt;/option&gt; &lt;option value=&#34;沙特里亚尔&#34;&gt;沙特里亚尔&lt;/option&gt; &lt;option value=&#34;土耳其里拉&#34;&gt;土耳其里拉&lt;/option&gt; &lt;/select&gt; 如果这35种货币都定义5个变量，则需要定义35 * 5 = 175个变量。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

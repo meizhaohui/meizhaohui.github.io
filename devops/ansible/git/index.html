@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/git/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="git远程仓库检出模块">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="git远程仓库检出模块">
 <meta property='og:description' content="git远程仓库检出模块 1. 概述 本模块用于管理Git仓库检出，用于发布文件或者软件。 远程主机需要安装命令行工具git，且git版本&gt;=1.7.1。 官方文档：https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html 注意，如果使用ssh方式下载的话，则远程主机应将公钥配置到git服务器上。因此推荐使用http或https方式下载远程仓库。 2. 参数 参数较多，此处仅列出几个常用参数。\n参数 描述 repo string/必需 远程仓库路径 dest path/必需 仓库检出存放路径 version string 需要检出的版本，可以是HEAD，或者分支名称、标签名称、提交散列值等 single_branch boolean 仅克隆与指定分支相关的历史记录，默认no depth integer 创建一个浅克隆，其历史记录被截断为指定的编号或修订版 3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 - name: Git checkout ansible.builtin.git: repo: &#39;https://foosball.example.org/path/to/repo.git&#39; dest: /srv/checkout version: release-0.22 - name: Read-write git checkout from github ansible.builtin.git: repo: git@github.com:mylogin/hello.git dest: /home/mylogin/hello - name: Just ensuring the repo checkout exists ansible.builtin.git: repo: &#39;https://foosball.example.org/path/to/repo.git&#39; dest: /srv/checkout update: no - name: Just get information about the repository whether or not it has already been cloned locally ansible.builtin.git: repo: &#39;https://foosball.example.org/path/to/repo.git&#39; dest: /srv/checkout clone: no update: no - name: Checkout a github repo and use refspec to fetch all pull requests ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples refspec: &#39;+refs/pull/*:refs/heads/*&#39; - name: Create git archive from repo ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples archive: /tmp/ansible-examples.zip - name: Clone a repo with separate git directory ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples separate_git_dir: /src/ansible-examples.git - name: Example clone of a single branch ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples single_branch: yes version: master - name: Avoid hanging when http(s) password is missing ansible.builtin.git: repo: https://github.com/ansible/could-be-a-private-repo dest: /src/from-private-repo environment: GIT_TERMINAL_PROMPT: 0 # reports &#34;terminal prompts disabled&#34; on missing password # or GIT_ASKPASS: /bin/true # for git before version 2.3.0, reports &#34;Authentication failed&#34; on missing password 4. 使用剧本 尝试下载gitee测试仓库中的代码，编写git.yml文件：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/git/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="git远程仓库检出模块 1. 概述 本模块用于管理Git仓库检出，用于发布文件或者软件。 远程主机需要安装命令行工具git，且git版本&gt;=1.7.1。 官方文档：https://docs.ansible.com/ansible/latest/collections/ansible/builtin/git_module.html 注意，如果使用ssh方式下载的话，则远程主机应将公钥配置到git服务器上。因此推荐使用http或https方式下载远程仓库。 2. 参数 参数较多，此处仅列出几个常用参数。\n参数 描述 repo string/必需 远程仓库路径 dest path/必需 仓库检出存放路径 version string 需要检出的版本，可以是HEAD，或者分支名称、标签名称、提交散列值等 single_branch boolean 仅克隆与指定分支相关的历史记录，默认no depth integer 创建一个浅克隆，其历史记录被截断为指定的编号或修订版 3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 - name: Git checkout ansible.builtin.git: repo: &#39;https://foosball.example.org/path/to/repo.git&#39; dest: /srv/checkout version: release-0.22 - name: Read-write git checkout from github ansible.builtin.git: repo: git@github.com:mylogin/hello.git dest: /home/mylogin/hello - name: Just ensuring the repo checkout exists ansible.builtin.git: repo: &#39;https://foosball.example.org/path/to/repo.git&#39; dest: /srv/checkout update: no - name: Just get information about the repository whether or not it has already been cloned locally ansible.builtin.git: repo: &#39;https://foosball.example.org/path/to/repo.git&#39; dest: /srv/checkout clone: no update: no - name: Checkout a github repo and use refspec to fetch all pull requests ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples refspec: &#39;+refs/pull/*:refs/heads/*&#39; - name: Create git archive from repo ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples archive: /tmp/ansible-examples.zip - name: Clone a repo with separate git directory ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples separate_git_dir: /src/ansible-examples.git - name: Example clone of a single branch ansible.builtin.git: repo: https://github.com/ansible/ansible-examples.git dest: /src/ansible-examples single_branch: yes version: master - name: Avoid hanging when http(s) password is missing ansible.builtin.git: repo: https://github.com/ansible/could-be-a-private-repo dest: /src/from-private-repo environment: GIT_TERMINAL_PROMPT: 0 # reports &#34;terminal prompts disabled&#34; on missing password # or GIT_ASKPASS: /bin/true # for git before version 2.3.0, reports &#34;Authentication failed&#34; on missing password 4. 使用剧本 尝试下载gitee测试仓库中的代码，编写git.yml文件：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

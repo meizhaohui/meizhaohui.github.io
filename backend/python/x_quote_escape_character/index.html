@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_quote_escape_character/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="引号与转义符的使用">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="引号与转义符的使用">
 <meta property='og:description' content="引号与转义符的使用 概述 在python中使用引号包裹字符串或doc说明文档。\n单引号',使用单引号指示字符串，所有的空白都会原样保留 双引号&quot;,在双引号中的字符串与单引号的使用相同 三引号'''或&quot;&quot;&quot;,利用三引号可以指示一个多行的字符串，在三引号中可以自由的使用单引号或双引号 注意：若引号在页面中显示不正常，则以下面的代码显示为准。\n引号的使用 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 &gt;&gt;&gt; &#39;Quote me on this&#39; &#39;Quote me on this&#39; &gt;&gt;&gt; &#34;Quote me on this&#34; &#39;Quote me on this&#39; &gt;&gt;&gt; &#39;&#39;&#39;Quote me on this ... the second line ... the third line ... &#39;&#39;&#39; &#39;Quote me on this\\nthe second line\\nthe third line\\n&#39; &gt;&gt;&gt; &#34;&#34;&#34;Quote me on this ... the second line ... the third line ... &#34;&#34;&#34; &#39;Quote me on this\\nthe second line\\nthe third line\\n&#39; &gt;&gt;&gt; print(&#39;Quote me on this\\nthe second line\\nthe third line\\n&#39;) Quote me on this the second line the third line &gt;&gt;&gt; print(&#39;Quote me on this\\nthe second line\\nthe third line\\n&#39;) Quote me on this the second line the third line 转义符 使用反斜杠\\作为转义符\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_quote_escape_character/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="引号与转义符的使用 概述 在python中使用引号包裹字符串或doc说明文档。\n单引号',使用单引号指示字符串，所有的空白都会原样保留 双引号&quot;,在双引号中的字符串与单引号的使用相同 三引号'''或&quot;&quot;&quot;,利用三引号可以指示一个多行的字符串，在三引号中可以自由的使用单引号或双引号 注意：若引号在页面中显示不正常，则以下面的代码显示为准。\n引号的使用 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 &gt;&gt;&gt; &#39;Quote me on this&#39; &#39;Quote me on this&#39; &gt;&gt;&gt; &#34;Quote me on this&#34; &#39;Quote me on this&#39; &gt;&gt;&gt; &#39;&#39;&#39;Quote me on this ... the second line ... the third line ... &#39;&#39;&#39; &#39;Quote me on this\\nthe second line\\nthe third line\\n&#39; &gt;&gt;&gt; &#34;&#34;&#34;Quote me on this ... the second line ... the third line ... &#34;&#34;&#34; &#39;Quote me on this\\nthe second line\\nthe third line\\n&#39; &gt;&gt;&gt; print(&#39;Quote me on this\\nthe second line\\nthe third line\\n&#39;) Quote me on this the second line the third line &gt;&gt;&gt; print(&#39;Quote me on this\\nthe second line\\nthe third line\\n&#39;) Quote me on this the second line the third line 转义符 使用反斜杠\\作为转义符\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

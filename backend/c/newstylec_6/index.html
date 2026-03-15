@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/c/newstylec_6/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="换个姿势学C语言第6章">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="换个姿势学C语言第6章">
 <meta property='og:description' content="换个姿势学C语言 第6章 创建自己的函数库 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第6章总结参考换个姿势学C语言 第6章 6. 创建自己的函数库 渐渐地，读者已经发现在程序设计中实现某种功能的代码经常被重复使用。不建议在写程序时经常复制和粘贴那些代码，这会使程序变得臃肿和复杂，可以将这些功能设计成独立的函数，在需要使用时可以随时调用它们。\n除此之外，还可以建立自己的函数库，将函数代码编译成库文件代他人或自己使用。\n本章涉及：\n函数库的类型 自定义处理字符串的函数 自定义处理键盘输入的函数 在Visual Studio 2020中创建静态库 本章将实现一些字符串的函数：\n计算字符串长度&mdash; strLength; 在字符串是查找特定字符的位置&mdash; indexOfChar; 转换字符串中大写字母为小写字母&mdash;toLowerCase; 转换字符串大小写字母为大写字母&mdash;toUpperCase; 复制字符串&mdash;strCopy。 还要实现几个用于提高键盘输入数据效率的函数：\n输入整数型&mdash;inputInteger; 输入字符&mdash;inputChar; 输入字符串&mdash;inputStr。 这些函数可以用于一下的外汇牌价看板的开发。\n6.1 什么是函数库 函数库是以重复利用程序为目的的且经过编译的函数的二进制代码 。 函数库分为动态链接库和静态链接库两种。在生成可执行文件时，这两种库文件的处理方式是不同的。 6.1.1 静态链接库 静态链接库是最简单的处理方式。如果在程序中引用一个静态函数库，编译时程序会先被编译成一个目标文件（二进制代码），然后链接器会将这个目标文件和静态函数库中的二进制代码一起合并成一个可执行文件，这个可执行文件就可以脱离函数库而独立运行。\n前面使用的外汇牌价接口库就是一个静态链接库，它的二进制代码会和调用它的代码一起生成一个可执行文件。\n⚠️ 警告 静态函数库的缺点：当有很多个程序都引用同一个库时，每个程序的可执行文件都要包含一份同样的函数代码，这样就会浪费内存和磁盘空间；如果这个函数库需要升级，则所有使用该静态函数库的程序都要重新编译和链接！！ 6.1.2 动态链接库 动态链接库克服了静态链接库的缺点。动态函数库文件独立地存在于某些系统目录下，在编译程序时动态函数库中的代码不被包含在可执行文件中，程序在使用到库函数时再从内存或磁盘的指定位置寻找动态函数库的代码。如在windows操作系统中，部分动态链接库被存放于C:\\Windows\\System32目录下。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_6/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="换个姿势学C语言 第6章 创建自己的函数库 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第6章总结参考换个姿势学C语言 第6章 6. 创建自己的函数库 渐渐地，读者已经发现在程序设计中实现某种功能的代码经常被重复使用。不建议在写程序时经常复制和粘贴那些代码，这会使程序变得臃肿和复杂，可以将这些功能设计成独立的函数，在需要使用时可以随时调用它们。\n除此之外，还可以建立自己的函数库，将函数代码编译成库文件代他人或自己使用。\n本章涉及：\n函数库的类型 自定义处理字符串的函数 自定义处理键盘输入的函数 在Visual Studio 2020中创建静态库 本章将实现一些字符串的函数：\n计算字符串长度&mdash; strLength; 在字符串是查找特定字符的位置&mdash; indexOfChar; 转换字符串中大写字母为小写字母&mdash;toLowerCase; 转换字符串大小写字母为大写字母&mdash;toUpperCase; 复制字符串&mdash;strCopy。 还要实现几个用于提高键盘输入数据效率的函数：\n输入整数型&mdash;inputInteger; 输入字符&mdash;inputChar; 输入字符串&mdash;inputStr。 这些函数可以用于一下的外汇牌价看板的开发。\n6.1 什么是函数库 函数库是以重复利用程序为目的的且经过编译的函数的二进制代码 。 函数库分为动态链接库和静态链接库两种。在生成可执行文件时，这两种库文件的处理方式是不同的。 6.1.1 静态链接库 静态链接库是最简单的处理方式。如果在程序中引用一个静态函数库，编译时程序会先被编译成一个目标文件（二进制代码），然后链接器会将这个目标文件和静态函数库中的二进制代码一起合并成一个可执行文件，这个可执行文件就可以脱离函数库而独立运行。\n前面使用的外汇牌价接口库就是一个静态链接库，它的二进制代码会和调用它的代码一起生成一个可执行文件。\n⚠️ 警告 静态函数库的缺点：当有很多个程序都引用同一个库时，每个程序的可执行文件都要包含一份同样的函数代码，这样就会浪费内存和磁盘空间；如果这个函数库需要升级，则所有使用该静态函数库的程序都要重新编译和链接！！ 6.1.2 动态链接库 动态链接库克服了静态链接库的缺点。动态函数库文件独立地存在于某些系统目录下，在编译程序时动态函数库中的代码不被包含在可执行文件中，程序在使用到库函数时再从内存或磁盘的指定位置寻找动态函数库的代码。如在windows操作系统中，部分动态链接库被存放于C:\\Windows\\System32目录下。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

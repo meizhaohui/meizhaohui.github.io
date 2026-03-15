@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/java/basic/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="Java开发环境配置">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Java开发环境配置">
 <meta property='og:description' content="Java开发环境配置 1. java编程环境配置 1.1 windows jdk环境安装配置 JDK是Java开发工具包，JDK包含JRE，JRE包含JVM和基础类库。\n可以去Oracle官方下载 jdk 1.8 https://www.oracle.com/java/technologies/downloads/#java8-windows 。\nOracle官方下载需要注册账号登陆后才能下载。\n安装可参考 JDK8.0的下载、安装、配置环境变量。需要注意以下几点：\nJava安装时，不用选择【 公共JRE】，因为JDK中包含JRE。 安装路径设置在D:\\ProgramFiles\\Java\\jdk-1.8,不要直接安装到C盘。 安装完成后，设置环境变量JAVA_HOME值为D:\\ProgramFiles\\Java\\jdk-1.8。 并将D:\\ProgramFiles\\Java\\jdk-1.8\\bin加入到Path环境变量中。 完成以上配置后，在命令行输入java -version，如果能够正常输出以下信息，则说明Java环境配置正常。\n1 2 3 4 $ java -version java version &#34;1.8.0_401&#34; Java(TM) SE Runtime Environment (build 1.8.0_401-b10) Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode) 1.2 vscode配置java环境 1.2.1 安装插件 vscode中安装以下三个插件：\nExtension Pack for Java Debugger for Java Language support for Java ™ for Visual Studio Code 1.2.2 修改配置 使用快捷键Ctrl+Shift+P， 打开用户setting页面:\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/java/basic/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="Java开发环境配置 1. java编程环境配置 1.1 windows jdk环境安装配置 JDK是Java开发工具包，JDK包含JRE，JRE包含JVM和基础类库。\n可以去Oracle官方下载 jdk 1.8 https://www.oracle.com/java/technologies/downloads/#java8-windows 。\nOracle官方下载需要注册账号登陆后才能下载。\n安装可参考 JDK8.0的下载、安装、配置环境变量。需要注意以下几点：\nJava安装时，不用选择【 公共JRE】，因为JDK中包含JRE。 安装路径设置在D:\\ProgramFiles\\Java\\jdk-1.8,不要直接安装到C盘。 安装完成后，设置环境变量JAVA_HOME值为D:\\ProgramFiles\\Java\\jdk-1.8。 并将D:\\ProgramFiles\\Java\\jdk-1.8\\bin加入到Path环境变量中。 完成以上配置后，在命令行输入java -version，如果能够正常输出以下信息，则说明Java环境配置正常。\n1 2 3 4 $ java -version java version &#34;1.8.0_401&#34; Java(TM) SE Runtime Environment (build 1.8.0_401-b10) Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode) 1.2 vscode配置java环境 1.2.1 安装插件 vscode中安装以下三个插件：\nExtension Pack for Java Debugger for Java Language support for Java ™ for Visual Studio Code 1.2.2 修改配置 使用快捷键Ctrl+Shift+P， 打开用户setting页面:\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

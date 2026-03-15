@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/git/git_exceptions/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="git异常处理">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="git异常处理">
 <meta property='og:description' content="git异常处理 Peer's Certificate issuer is not recognized异常 在CentOS7操作系统中搭建了内部使用的gitlab平台，当使用git clone下载代码时会提示以下异常：\n1 fatal: unable to access &#39;https://*****/xx.git/&#39;: Peer&#39;s Certificate issuer is not recognized. 导致该问题的原因是系统证书问题，因为系统会对SSL证书进行验证，操作系统判断这个操作可能会造成不好的影响，并进行了阻止，停止了下载操作。\n因为该gitlab仓库是我们信任的，我们只需要设置跳过SSL证书验证就可以，执行以下命令：\n1 git config --global http.sslVerify false GitHub无法访问或访问缓慢解决办法 在终端执行指令sudo vi /etc/hosts打开hosts文件进行编辑 插入如下内容，保存退出即可！\n1 2 3 4 5 6 7 8 9 10 ## github 204.232.175.78 http://documentcloud.github.com 207.97.227.239 http://github.com 204.232.175.94 http://gist.github.com 107.21.116.220 http://help.github.com 207.97.227.252 http://nodeload.github.com 199.27.76.130 http://raw.github.com 107.22.3.110 http://status.github.com 204.232.175.78 http://training.github.com 207.97.227.243 http://www.github.com Please commit your changes or stash them before you merge 解决方法：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/git/git_exceptions/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="git异常处理 Peer's Certificate issuer is not recognized异常 在CentOS7操作系统中搭建了内部使用的gitlab平台，当使用git clone下载代码时会提示以下异常：\n1 fatal: unable to access &#39;https://*****/xx.git/&#39;: Peer&#39;s Certificate issuer is not recognized. 导致该问题的原因是系统证书问题，因为系统会对SSL证书进行验证，操作系统判断这个操作可能会造成不好的影响，并进行了阻止，停止了下载操作。\n因为该gitlab仓库是我们信任的，我们只需要设置跳过SSL证书验证就可以，执行以下命令：\n1 git config --global http.sslVerify false GitHub无法访问或访问缓慢解决办法 在终端执行指令sudo vi /etc/hosts打开hosts文件进行编辑 插入如下内容，保存退出即可！\n1 2 3 4 5 6 7 8 9 10 ## github 204.232.175.78 http://documentcloud.github.com 207.97.227.239 http://github.com 204.232.175.94 http://gist.github.com 107.21.116.220 http://help.github.com 207.97.227.252 http://nodeload.github.com 199.27.76.130 http://raw.github.com 107.22.3.110 http://status.github.com 204.232.175.78 http://training.github.com 207.97.227.243 http://www.github.com Please commit your changes or stash them before you merge 解决方法：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

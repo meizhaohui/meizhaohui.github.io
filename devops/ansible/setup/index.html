@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/setup/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="setup事实变量模块">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="setup事实变量模块">
 <meta property='og:description' content="setup事实变量模块 1. 概要 playbook剧本会自动调用此模块，以收集有关剧本中可以使用的远程主机的有用变量。 也可以通过ansible命令来调用该模块，以获取主机可以使用哪些变量。 fact是指Ansible管理事实，是指被控主机上自动检查到的变量。 可以在剧本中像常规变量一样使用这些fact事实变量。 官方文档: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html 自定义事实变量 https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html#adding-custom-facts 特殊变量 https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html#special-variables 2. 参数 Parameter参数 Comments 说明 fact_path path 远程主机事实文件 (*.fact)存放的路径.可以是可执行文件，也可以是json或ini格式的可读文件。 默认值: “/etc/ansible/facts.d” filter list / elements=string 需要过滤的fact事实列表. 默认值: [] gather_subset list / elements=string 事实子集. 可取值: all, all_ipv4_addresses, all_ipv6_addresses, apparmor, architecture, caps, chroot,cmdline, date_time, default_ipv4, default_ipv6, devices, distribution, distribution_major_version, distribution_release, distribution_version, dns, effective_group_ids, effective_user_id, env, facter, fips, hardware, interfaces, is_chroot, iscsi, kernel, local, lsb, machine, machine_id, mounts, network, ohai, os_family, pkg_mgr, platform, processor, processor_cores, processor_count, python, python_version, real_user_id, selinux, service_mgr, ssh_host_key_dsa_public, ssh_host_key_ecdsa_public, ssh_host_key_ed25519_public, ssh_host_key_rsa_public, ssh_host_pub_keys, ssh_pub_keys, system, system_capabilities, system_capabilities_enforced, user, user_dir, user_gecos, user_gid, user_id, user_shell, user_uid, virtual, virtualization_role, virtualization_type. 可用多个值组成列表形成一个大的子集.也可以使用!表示取反，不包括对应的事实， 如: !hardware,!network,!virtual,!ohai,!facter. !all 则表示只取最小的事实子集. 如果连最小的事实子集也不像要，则指定成 !all,!min. 为了收集指定事实，则可以使用 !all,!min, 并指定这些特定事实子集. 如果你不想展示某些事实，请使用filter参数。 默认值: “all” gather_timeout integer 超时时间(秒). 默认值: 10 3. 注意事项 filter参数只能过滤ansible_facts下的第一级子键。 4. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 ## Display facts from all hosts and store them indexed by I(hostname) at C(/tmp/facts). ## ansible all -m ansible.builtin.setup --tree /tmp/facts ## Display only facts regarding memory found by ansible on all hosts and output them. ## ansible all -m ansible.builtin.setup -a &#39;filter=ansible_*_mb&#39; ## Display only facts returned by facter. ## ansible all -m ansible.builtin.setup -a &#39;filter=facter_*&#39; ## Collect only facts returned by facter. ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all,facter&#39; - name: Collect only facts returned by facter ansible.builtin.setup: gather_subset: - &#39;!all&#39; - &#39;!&lt;any valid subset&gt;&#39; - facter - name: Collect only selected facts ansible.builtin.setup: filter: - &#39;ansible_distribution&#39; - &#39;ansible_machine_id&#39; - &#39;ansible_*_mb&#39; ## Display only facts about certain interfaces. ## ansible all -m ansible.builtin.setup -a &#39;filter=ansible_eth[0-2]&#39; ## Restrict additional gathered facts to network and virtual (includes default minimum facts) ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=network,virtual&#39; ## Collect only network and virtual (excludes default minimum facts) ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all,network,virtual&#39; ## Do not call puppet facter or ohai even if present. ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!facter,!ohai&#39; ## Only collect the default minimum amount of facts: ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all&#39; ## Collect no facts, even the default minimum subset of facts: ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all,!min&#39; ## Display facts from Windows hosts with custom facts stored in C:\\custom_facts. ## ansible windows -m ansible.builtin.setup -a &#34;fact_path=&#39;c:\\custom_facts&#39;&#34; ## Gathers facts for the machines in the dbservers group (a.k.a Delegating facts) - hosts: app_servers tasks: - name: Gather facts from db servers ansible.builtin.setup: delegate_to: &#34;{{ item }}&#34; delegate_facts: true loop: &#34;{{ groups[&#39;dbservers&#39;] }}&#34; 5. 临时命令的使用 5.1 获取节点的所有fact事实变量 我们直接使用ansible node2 -m setup查看node2节点包含哪些fact事实变量：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/setup/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="setup事实变量模块 1. 概要 playbook剧本会自动调用此模块，以收集有关剧本中可以使用的远程主机的有用变量。 也可以通过ansible命令来调用该模块，以获取主机可以使用哪些变量。 fact是指Ansible管理事实，是指被控主机上自动检查到的变量。 可以在剧本中像常规变量一样使用这些fact事实变量。 官方文档: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html 自定义事实变量 https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html#adding-custom-facts 特殊变量 https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html#special-variables 2. 参数 Parameter参数 Comments 说明 fact_path path 远程主机事实文件 (*.fact)存放的路径.可以是可执行文件，也可以是json或ini格式的可读文件。 默认值: “/etc/ansible/facts.d” filter list / elements=string 需要过滤的fact事实列表. 默认值: [] gather_subset list / elements=string 事实子集. 可取值: all, all_ipv4_addresses, all_ipv6_addresses, apparmor, architecture, caps, chroot,cmdline, date_time, default_ipv4, default_ipv6, devices, distribution, distribution_major_version, distribution_release, distribution_version, dns, effective_group_ids, effective_user_id, env, facter, fips, hardware, interfaces, is_chroot, iscsi, kernel, local, lsb, machine, machine_id, mounts, network, ohai, os_family, pkg_mgr, platform, processor, processor_cores, processor_count, python, python_version, real_user_id, selinux, service_mgr, ssh_host_key_dsa_public, ssh_host_key_ecdsa_public, ssh_host_key_ed25519_public, ssh_host_key_rsa_public, ssh_host_pub_keys, ssh_pub_keys, system, system_capabilities, system_capabilities_enforced, user, user_dir, user_gecos, user_gid, user_id, user_shell, user_uid, virtual, virtualization_role, virtualization_type. 可用多个值组成列表形成一个大的子集.也可以使用!表示取反，不包括对应的事实， 如: !hardware,!network,!virtual,!ohai,!facter. !all 则表示只取最小的事实子集. 如果连最小的事实子集也不像要，则指定成 !all,!min. 为了收集指定事实，则可以使用 !all,!min, 并指定这些特定事实子集. 如果你不想展示某些事实，请使用filter参数。 默认值: “all” gather_timeout integer 超时时间(秒). 默认值: 10 3. 注意事项 filter参数只能过滤ansible_facts下的第一级子键。 4. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 ## Display facts from all hosts and store them indexed by I(hostname) at C(/tmp/facts). ## ansible all -m ansible.builtin.setup --tree /tmp/facts ## Display only facts regarding memory found by ansible on all hosts and output them. ## ansible all -m ansible.builtin.setup -a &#39;filter=ansible_*_mb&#39; ## Display only facts returned by facter. ## ansible all -m ansible.builtin.setup -a &#39;filter=facter_*&#39; ## Collect only facts returned by facter. ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all,facter&#39; - name: Collect only facts returned by facter ansible.builtin.setup: gather_subset: - &#39;!all&#39; - &#39;!&lt;any valid subset&gt;&#39; - facter - name: Collect only selected facts ansible.builtin.setup: filter: - &#39;ansible_distribution&#39; - &#39;ansible_machine_id&#39; - &#39;ansible_*_mb&#39; ## Display only facts about certain interfaces. ## ansible all -m ansible.builtin.setup -a &#39;filter=ansible_eth[0-2]&#39; ## Restrict additional gathered facts to network and virtual (includes default minimum facts) ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=network,virtual&#39; ## Collect only network and virtual (excludes default minimum facts) ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all,network,virtual&#39; ## Do not call puppet facter or ohai even if present. ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!facter,!ohai&#39; ## Only collect the default minimum amount of facts: ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all&#39; ## Collect no facts, even the default minimum subset of facts: ## ansible all -m ansible.builtin.setup -a &#39;gather_subset=!all,!min&#39; ## Display facts from Windows hosts with custom facts stored in C:\\custom_facts. ## ansible windows -m ansible.builtin.setup -a &#34;fact_path=&#39;c:\\custom_facts&#39;&#34; ## Gathers facts for the machines in the dbservers group (a.k.a Delegating facts) - hosts: app_servers tasks: - name: Gather facts from db servers ansible.builtin.setup: delegate_to: &#34;{{ item }}&#34; delegate_facts: true loop: &#34;{{ groups[&#39;dbservers&#39;] }}&#34; 5. 临时命令的使用 5.1 获取节点的所有fact事实变量 我们直接使用ansible node2 -m setup查看node2节点包含哪些fact事实变量：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

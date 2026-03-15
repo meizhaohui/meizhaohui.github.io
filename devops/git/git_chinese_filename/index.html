@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/git/git_chinese_filename/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="Gitstatus时中文文件名乱码">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Gitstatus时中文文件名乱码">
 <meta property='og:description' content="Git status时中文文件名乱码 在创建中文文件名的文件时，使用git status查看状态时，可以看到文件名乱码，不知道对应的文件到底是哪一个，如下所示：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 [mzh@MacBookPro test (master)]$ ll total 8 drwxr-xr-x 4 mzh wheel 128B 3 20 11:29 . drwxrwxrwt 7 root wheel 224B 3 20 10:30 .. drwxr-xr-x 14 mzh wheel 448B 3 20 11:29 .git -rw-r--r-- 1 mzh wheel 53B 3 19 00:17 data.txt [mzh@MacBookPro test (master)]$ ls -l total 8 -rw-r--r-- 1 mzh wheel 53 3 19 00:17 data.txt [mzh@MacBookPro test (master)]$ echo &#39;测试钩子&#39; &gt; 钩子.txt [mzh@MacBookPro test (master ✗)]$ ls -l total 16 -rw-r--r-- 1 mzh wheel 53 3 19 00:17 data.txt -rw-r--r-- 1 mzh wheel 13 3 20 11:29 钩子.txt [mzh@MacBookPro test (master ✗)]$ git status On branch master Your branch is up to date with &#39;origin/master&#39;. Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) &#34;\\351\\222\\251\\345\\255\\220.txt&#34; nothing added to commit but untracked files present (use &#34;git add&#34; to track) [mzh@MacBookPro test (master ✗)]$ 可以看到，当我们创建“钩子.txt”文件时，查看状态时，文件被显示为“\\351\\222\\251\\345\\255\\220.txt”， 这是什么，看不懂。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/git/git_chinese_filename/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="Git status时中文文件名乱码 在创建中文文件名的文件时，使用git status查看状态时，可以看到文件名乱码，不知道对应的文件到底是哪一个，如下所示：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 [mzh@MacBookPro test (master)]$ ll total 8 drwxr-xr-x 4 mzh wheel 128B 3 20 11:29 . drwxrwxrwt 7 root wheel 224B 3 20 10:30 .. drwxr-xr-x 14 mzh wheel 448B 3 20 11:29 .git -rw-r--r-- 1 mzh wheel 53B 3 19 00:17 data.txt [mzh@MacBookPro test (master)]$ ls -l total 8 -rw-r--r-- 1 mzh wheel 53 3 19 00:17 data.txt [mzh@MacBookPro test (master)]$ echo &#39;测试钩子&#39; &gt; 钩子.txt [mzh@MacBookPro test (master ✗)]$ ls -l total 16 -rw-r--r-- 1 mzh wheel 53 3 19 00:17 data.txt -rw-r--r-- 1 mzh wheel 13 3 20 11:29 钩子.txt [mzh@MacBookPro test (master ✗)]$ git status On branch master Your branch is up to date with &#39;origin/master&#39;. Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) &#34;\\351\\222\\251\\345\\255\\220.txt&#34; nothing added to commit but untracked files present (use &#34;git add&#34; to track) [mzh@MacBookPro test (master ✗)]$ 可以看到，当我们创建“钩子.txt”文件时，查看状态时，文件被显示为“\\351\\222\\251\\345\\255\\220.txt”， 这是什么，看不懂。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/dba/mysql/x_01_insert_select_update_delete/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="mysql数据库的创建、删除与使用">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="mysql数据库的创建、删除与使用">
 <meta property='og:description' content="mysql数据库的创建、删除与使用 概述 本文档包括数据库的创建、删除和使用。\n查看mysql版本号 使用mysql -version查看mysql的版本号:\n1 2 [root@hopewait mysql]# mysql –version mysql Ver 14.14 Distrib 5.6.35, for Linux (x86_64) using EditLine wrapper mysql数据库物理文件存放位置 使用%datadir%查看物理文件存放目录:\n1 2 3 4 5 mysql&gt; show global variables like &#34;%datadir%&#34; \\G *************************** 1. row *************************** Variable_name: datadir Value: /usr/local/mysql/data/ 1 row in set (0.06 sec) 显示存在的数据库 使用show databases查看当前数据库系统中所有的数据库名称:\n1 2 3 4 5 6 7 8 9 10 11 12 mysql&gt; show databases\\G *************************** 1. row *************************** Database: information_schema *************************** 2. row *************************** Database: mysql *************************** 3. row *************************** Database: performance_schema *************************** 4. row *************************** Database: test *************************** 5. row *************************** Database: wordpress 5 rows in set (0.08 sec) 创建数据库 使用create database database_name创建数据库:\n">
 <meta property='og:url' content='https://hellogitlab.com/dba/mysql/x_01_insert_select_update_delete/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="mysql数据库的创建、删除与使用 概述 本文档包括数据库的创建、删除和使用。\n查看mysql版本号 使用mysql -version查看mysql的版本号:\n1 2 [root@hopewait mysql]# mysql –version mysql Ver 14.14 Distrib 5.6.35, for Linux (x86_64) using EditLine wrapper mysql数据库物理文件存放位置 使用%datadir%查看物理文件存放目录:\n1 2 3 4 5 mysql&gt; show global variables like &#34;%datadir%&#34; \\G *************************** 1. row *************************** Variable_name: datadir Value: /usr/local/mysql/data/ 1 row in set (0.06 sec) 显示存在的数据库 使用show databases查看当前数据库系统中所有的数据库名称:\n1 2 3 4 5 6 7 8 9 10 11 12 mysql&gt; show databases\\G *************************** 1. row *************************** Database: information_schema *************************** 2. row *************************** Database: mysql *************************** 3. row *************************** Database: performance_schema *************************** 4. row *************************** Database: test *************************** 5. row *************************** Database: wordpress 5 rows in set (0.08 sec) 创建数据库 使用create database database_name创建数据库:\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/hostname/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="hostname主机名模块">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="hostname主机名模块">
 <meta property='og:description' content="hostname主机名模块 本模块用于设置远程主机的主机名。 本模块不会修改/etc/hosts,如果你要修改该文件，可以使用template或replace模块。 1. 参数 参数 描述 name string/必需 主机名 use string 使用哪种策略来更新主机名，可选值：alpine, debian, freebsd, generic, macos, macosx, darwin, openbsd, openrc, redhat, sles, solaris, systemd 2. 官方示例 1 2 3 4 5 6 7 8 - name: Set a hostname ansible.builtin.hostname: name: web01 - name: Set a hostname specifying strategy ansible.builtin.hostname: name: web01 use: systemd 3. 使用剧本测试修改主机名 为了能够还原回来各节点原来的主机名，我们先用ansible查看一下当前节点主机名信息：\n1 2 3 4 5 [ansible@master ansible_playbooks]$ ansible all -m command -a &#34;hostname&#34; node1 | CHANGED | rc=0 &gt;&gt; node1.hellogitlab.com node2 | CHANGED | rc=0 &gt;&gt; node2.hellogitlab.com 我们在主机清单配置文件中，增加每个需要修改主机的主机名变量ansible_hostname，修改完成后，查看主机清单文件：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/hostname/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="hostname主机名模块 本模块用于设置远程主机的主机名。 本模块不会修改/etc/hosts,如果你要修改该文件，可以使用template或replace模块。 1. 参数 参数 描述 name string/必需 主机名 use string 使用哪种策略来更新主机名，可选值：alpine, debian, freebsd, generic, macos, macosx, darwin, openbsd, openrc, redhat, sles, solaris, systemd 2. 官方示例 1 2 3 4 5 6 7 8 - name: Set a hostname ansible.builtin.hostname: name: web01 - name: Set a hostname specifying strategy ansible.builtin.hostname: name: web01 use: systemd 3. 使用剧本测试修改主机名 为了能够还原回来各节点原来的主机名，我们先用ansible查看一下当前节点主机名信息：\n1 2 3 4 5 [ansible@master ansible_playbooks]$ ansible all -m command -a &#34;hostname&#34; node1 | CHANGED | rc=0 &gt;&gt; node1.hellogitlab.com node2 | CHANGED | rc=0 &gt;&gt; node2.hellogitlab.com 我们在主机清单配置文件中，增加每个需要修改主机的主机名变量ansible_hostname，修改完成后，查看主机清单文件：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/frontend/vue/vue_basic_use/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="vue的基本使用">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="vue的基本使用">
 <meta property='og:description' content="vue的基本使用 vue官方文档：https://cn.vuejs.org/v2/guide/ vue官方指定的视频教程： https://learning.dcloud.io/#/?vid=0 vue教程：https://www.lookroot.cn/course/vuebasics/ 可以安装Vue DevTools，参考 Mac环境下安装Vue DevTools Vue.js的调试神器 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 开始尝试vue时，可以简单的创建一个html文件，并引用cdn上面的vue.js文件。 官方视频教程中老师是使用的HBuilder X来进行编码的。我们也使用HBuilder X工具来学习vue。在官方下载 https://www.dcloud.io/hbuilderx.html 安装即可。 1. 第一个vue程序 参考官方文档，需要新建一个html文件。并引入vue.js引用。\n使用HBuilder X新建一个app1.html的文件，新建后HBuilder X会自动为我们添加一些内容：\n1 2 3 4 5 6 7 8 9 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 视频教程中告诉我们引入vue.js文件需要在&lt;head&gt;&lt;/head&gt;头部标签中引用。\n我们引入标签:\n1 2 3 4 5 6 7 8 9 10 11 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&#34;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 在head头部标签内部增加了&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;，这样就引入了vue.js文件了。\n">
 <meta property='og:url' content='https://hellogitlab.com/frontend/vue/vue_basic_use/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="vue的基本使用 vue官方文档：https://cn.vuejs.org/v2/guide/ vue官方指定的视频教程： https://learning.dcloud.io/#/?vid=0 vue教程：https://www.lookroot.cn/course/vuebasics/ 可以安装Vue DevTools，参考 Mac环境下安装Vue DevTools Vue.js的调试神器 Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。 开始尝试vue时，可以简单的创建一个html文件，并引用cdn上面的vue.js文件。 官方视频教程中老师是使用的HBuilder X来进行编码的。我们也使用HBuilder X工具来学习vue。在官方下载 https://www.dcloud.io/hbuilderx.html 安装即可。 1. 第一个vue程序 参考官方文档，需要新建一个html文件。并引入vue.js引用。\n使用HBuilder X新建一个app1.html的文件，新建后HBuilder X会自动为我们添加一些内容：\n1 2 3 4 5 6 7 8 9 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 视频教程中告诉我们引入vue.js文件需要在&lt;head&gt;&lt;/head&gt;头部标签中引用。\n我们引入标签:\n1 2 3 4 5 6 7 8 9 10 11 &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;&lt;/title&gt; &lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&#34;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 在head头部标签内部增加了&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;，这样就引入了vue.js文件了。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/git/ignore_changed_files/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="使gitstatus不显示某些文件">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="使gitstatus不显示某些文件">
 <meta property='og:description' content="使git status不显示某些文件 有的时候，一些文件已经在git仓库中，在本地测试时又进行了一些修改，此时在查看仓库状态时，不想显示这些文件。\n注意，我这里设置了快捷命令：\n1 alias gs=&#39;git status&#39; 比如，我现在使用gs查看到仓库状态如下：\n显示如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 gs On branch master Your branch is up to date with &#39;origin/master&#39;. Changes not staged for commit: (use &#34;git add &lt;file&gt;...&#34; to update what will be committed) (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory) modified: myblog/config/pluginConfig.js modified: myblog/package.json modified: myblog/yarn.lock Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) myblog/package-lock.json no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;) 我不想要以下几行显示出来：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/git/ignore_changed_files/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="使git status不显示某些文件 有的时候，一些文件已经在git仓库中，在本地测试时又进行了一些修改，此时在查看仓库状态时，不想显示这些文件。\n注意，我这里设置了快捷命令：\n1 alias gs=&#39;git status&#39; 比如，我现在使用gs查看到仓库状态如下：\n显示如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 gs On branch master Your branch is up to date with &#39;origin/master&#39;. Changes not staged for commit: (use &#34;git add &lt;file&gt;...&#34; to update what will be committed) (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory) modified: myblog/config/pluginConfig.js modified: myblog/package.json modified: myblog/yarn.lock Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) myblog/package-lock.json no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;) 我不想要以下几行显示出来：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

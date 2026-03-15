@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/create_your_nexus_5_test_docker_proxy/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="搭建自己的nexus私有仓库5--测试docker仓库pull和push">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="搭建自己的nexus私有仓库5--测试docker仓库pull和push">
 <meta property='og:description' content="搭建自己的nexus私有仓库5&ndash;测试docker仓库pull和push 本文档是nexus系列课程第5篇。\nnexus系列课程第1篇，请参考 搭建自己的nexus私有仓库1&ndash;nexus初体验 nexus系列课程第2篇，请参考 搭建自己的nexus私有仓库2&ndash;创建python pypi代理 nexus系列课程第3篇，请参考 搭建自己的nexus私有仓库3&ndash;创建yum ius代理 nexus系列课程第4篇，请参考 搭建自己的nexus私有仓库4&ndash;创建docker私有仓库 第4篇中，已经使用nexus创建docker代理仓库(proxy)、本地仓库(hosted)和聚合仓库(group)，并尝试通过HTTP方式从代理仓库下载镜像，并且可以正常下载镜像。\n本文计划做以下事情：\n使用HTTP形式，分别测试从代理仓库、本地仓库、聚合仓库下载镜像，构建镜像并上传到私有仓库。 使用HTTPS形式，配置nginx反向代理，从代理仓库下载镜像，构建镜像并上传到私有仓库。（下一篇再处理。） 以下是实验环境：\n主机 IP 主机名 操作系统 docker版本 自定义域名 1 192.168.56.11 nexus CentOS 7.6.1810 20.10.5 nexushub.com 2 192.168.56.12 master CentOS 7.6.1810 20.10.5 0. 准备工作 请在主机2以及你的电脑上面配置域名解析：\n1 2 [root@master ~]# tail -n 1 /etc/hosts 192.168.56.11 nexushub.com 注意，实际操作时，请将192.168.56.11替换成你服务器的内网IP或者公网IP，nexushub.com替换成你想使用的域名。\n1. 前情回顾 我们在搭建自己的nexus私有仓库4&ndash;创建docker私有仓库 中是使用的以下命令启动nexus容器：\n1 2 3 4 5 6 7 8 9 10 11 [root@nexus ~]# docker run -d --restart always -p 8081:8081 -p 8001-8003:8001-8003 -v /some/dir/nexus-data:/nexus-data --name nexus sonatype/nexus3:3.59.0 8b931229efd4a2749a16342b149901a74674ec5b771591a808baebc744ebcdc4 [root@nexus ~]# docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 8b931229efd4 sonatype/nexus3:3.59.0 &#34;/opt/sonatype/nexus…&#34; 4 seconds ago Up 3 seconds 0.0.0.0:8001-8003-&gt;8001-8003/tcp, 0.0.0.0:8081-&gt;8081/tcp nexus [root@nexus ~]# netstat -tunlp|grep docker tcp 0 0 0.0.0.0:8081 0.0.0.0:* LISTEN 24765/docker-proxy tcp 0 0 0.0.0.0:8001 0.0.0.0:* LISTEN 24801/docker-proxy tcp 0 0 0.0.0.0:8002 0.0.0.0:* LISTEN 24789/docker-proxy tcp 0 0 0.0.0.0:8003 0.0.0.0:* LISTEN 24777/docker-proxy [root@nexus ~]# 可以看到，除了管理端口8081监听了，8001、8002和8003端口也监听了。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/create_your_nexus_5_test_docker_proxy/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="搭建自己的nexus私有仓库5&ndash;测试docker仓库pull和push 本文档是nexus系列课程第5篇。\nnexus系列课程第1篇，请参考 搭建自己的nexus私有仓库1&ndash;nexus初体验 nexus系列课程第2篇，请参考 搭建自己的nexus私有仓库2&ndash;创建python pypi代理 nexus系列课程第3篇，请参考 搭建自己的nexus私有仓库3&ndash;创建yum ius代理 nexus系列课程第4篇，请参考 搭建自己的nexus私有仓库4&ndash;创建docker私有仓库 第4篇中，已经使用nexus创建docker代理仓库(proxy)、本地仓库(hosted)和聚合仓库(group)，并尝试通过HTTP方式从代理仓库下载镜像，并且可以正常下载镜像。\n本文计划做以下事情：\n使用HTTP形式，分别测试从代理仓库、本地仓库、聚合仓库下载镜像，构建镜像并上传到私有仓库。 使用HTTPS形式，配置nginx反向代理，从代理仓库下载镜像，构建镜像并上传到私有仓库。（下一篇再处理。） 以下是实验环境：\n主机 IP 主机名 操作系统 docker版本 自定义域名 1 192.168.56.11 nexus CentOS 7.6.1810 20.10.5 nexushub.com 2 192.168.56.12 master CentOS 7.6.1810 20.10.5 0. 准备工作 请在主机2以及你的电脑上面配置域名解析：\n1 2 [root@master ~]# tail -n 1 /etc/hosts 192.168.56.11 nexushub.com 注意，实际操作时，请将192.168.56.11替换成你服务器的内网IP或者公网IP，nexushub.com替换成你想使用的域名。\n1. 前情回顾 我们在搭建自己的nexus私有仓库4&ndash;创建docker私有仓库 中是使用的以下命令启动nexus容器：\n1 2 3 4 5 6 7 8 9 10 11 [root@nexus ~]# docker run -d --restart always -p 8081:8081 -p 8001-8003:8001-8003 -v /some/dir/nexus-data:/nexus-data --name nexus sonatype/nexus3:3.59.0 8b931229efd4a2749a16342b149901a74674ec5b771591a808baebc744ebcdc4 [root@nexus ~]# docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 8b931229efd4 sonatype/nexus3:3.59.0 &#34;/opt/sonatype/nexus…&#34; 4 seconds ago Up 3 seconds 0.0.0.0:8001-8003-&gt;8001-8003/tcp, 0.0.0.0:8081-&gt;8081/tcp nexus [root@nexus ~]# netstat -tunlp|grep docker tcp 0 0 0.0.0.0:8081 0.0.0.0:* LISTEN 24765/docker-proxy tcp 0 0 0.0.0.0:8001 0.0.0.0:* LISTEN 24801/docker-proxy tcp 0 0 0.0.0.0:8002 0.0.0.0:* LISTEN 24789/docker-proxy tcp 0 0 0.0.0.0:8003 0.0.0.0:* LISTEN 24777/docker-proxy [root@nexus ~]# 可以看到，除了管理端口8081监听了，8001、8002和8003端口也监听了。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

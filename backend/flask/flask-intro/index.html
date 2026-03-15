@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/flask/flask-intro/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="Flask Web框架入门">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Flask Web框架入门">
 <meta property='og:description' content="Flask简介 Flask是一个轻量级的Python Web框架，非常适合快速开发Web应用。\n快速开始 1 2 3 4 5 6 7 8 9 10 from flask import Flask app = Flask(__name__) @app.route(&#39;/&#39;) def hello(): return &#39;Hello, World!&#39; if __name__ == &#39;__main__&#39;: app.run(debug=True) 路由配置 Flask使用装饰器来定义路由，非常简洁。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/flask/flask-intro/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -14,6 +14,68 @@
 <meta name="twitter:title" content="Flask Web框架入门">
 <meta name="twitter:description" content="Flask简介 Flask是一个轻量级的Python Web框架，非常适合快速开发Web应用。\n快速开始 1 2 3 4 5 6 7 8 9 10 from flask import Flask app = Flask(__name__) @app.route(&#39;/&#39;) def hello(): return &#39;Hello, World!&#39; if __name__ == &#39;__main__&#39;: app.run(debug=True) 路由配置 Flask使用装饰器来定义路由，非常简洁。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

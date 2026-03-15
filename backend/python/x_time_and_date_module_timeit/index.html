@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_time_and_date_module_timeit/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="日期和时间模块-`timeit`程序运行时间统计模块">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="日期和时间模块-`timeit`程序运行时间统计模块">
 <meta property='og:description' content="日期和时间模块-timeit程序运行时间统计模块 查看timeit模块有哪些函数或方法：\n1 2 3 4 5 6 7 8 9 10 $ python Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:10:22) [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import timeit &gt;&gt;&gt; timeit. timeit.default_number timeit.dummy_src_name timeit.main( timeit.sys timeit.timeit( timeit.default_repeat timeit.gc timeit.reindent( timeit.template timeit.Timer( timeit.default_timer( timeit.itertools timeit.repeat( timeit.time &gt;&gt;&gt; exit() 参考：\nhttps://docs.python.org/3.6/library/timeit.html\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_time_and_date_module_timeit/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="日期和时间模块-timeit程序运行时间统计模块 查看timeit模块有哪些函数或方法：\n1 2 3 4 5 6 7 8 9 10 $ python Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:10:22) [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import timeit &gt;&gt;&gt; timeit. timeit.default_number timeit.dummy_src_name timeit.main( timeit.sys timeit.timeit( timeit.default_repeat timeit.gc timeit.reindent( timeit.template timeit.Timer( timeit.default_timer( timeit.itertools timeit.repeat( timeit.time &gt;&gt;&gt; exit() 参考：\nhttps://docs.python.org/3.6/library/timeit.html\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/the_latest_image/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="查看下载的docker镜像的版本信息">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="查看下载的docker镜像的版本信息">
 <meta property='og:description' content="查看下载的docker镜像的版本信息 1. 现象描述 通常我们喜欢使用docker pull 镜像名这种方式下载docker镜像，如下载redis或nginx镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 下载redis镜像 [root@node1 ~]# docker pull redis Using default tag: latest latest: Pulling from library/redis Digest: sha256:b0bdc1a83caf43f9eb74afca0fcfd6f09bea38bb87f6add4a858f06ef4617538 Status: Image is up to date for redis:latest docker.io/library/redis:latest ## 下载nginx镜像 [root@node1 ~]# docker pull nginx Using default tag: latest latest: Pulling from library/nginx Digest: sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca Status: Image is up to date for nginx:latest docker.io/library/nginx:latest 当我们不指定标签名称时，docker默认会下载最新的latest镜像，此时查看镜像信息：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/the_latest_image/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="查看下载的docker镜像的版本信息 1. 现象描述 通常我们喜欢使用docker pull 镜像名这种方式下载docker镜像，如下载redis或nginx镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 下载redis镜像 [root@node1 ~]# docker pull redis Using default tag: latest latest: Pulling from library/redis Digest: sha256:b0bdc1a83caf43f9eb74afca0fcfd6f09bea38bb87f6add4a858f06ef4617538 Status: Image is up to date for redis:latest docker.io/library/redis:latest ## 下载nginx镜像 [root@node1 ~]# docker pull nginx Using default tag: latest latest: Pulling from library/nginx Digest: sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca Status: Image is up to date for nginx:latest docker.io/library/nginx:latest 当我们不指定标签名称时，docker默认会下载最新的latest镜像，此时查看镜像信息：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_operational_character/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="Python的运算符">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Python的运算符">
 <meta property='og:description' content="Python的运算符 常用运算符 常用运算符详细介绍见下表：\n运算符 名称 说明 示例 + 加 两个对象相加 &gt;&gt;&gt; 1+2 结果为 3 &gt;&gt;&gt; 'ab'+'cd'结果为 &lsquo;abcd&rsquo; - 减 两个对象相减 &gt;&gt;&gt; 2-1 结果为 1 &gt;&gt;&gt; 1-2 结果为 -1 * 乘 两个数相乘或重复字符 &gt;&gt;&gt; 3\\*4 结果为 12 &gt;&gt;&gt; &quot;-&quot;*6 结果为 &lsquo;&mdash;&mdash;&rsquo; ** 幂 x**y 返回x的y次幂 &gt;&gt;&gt; 3**4 结果为 81 , 同pow(3,4) = 81 / 除以 x/y x除以y &gt;&gt;&gt; 4/2 结果为 2.0 &gt;&gt;&gt; 4.0/2 结果为 2.0 // 取整除 返回商的整数部分 &gt;&gt;&gt; 4//2结果为2 &gt;&gt;&gt; 4//3结果为1 &gt;&gt;&gt; 4//3.0结果为1.0 &gt;&gt;&gt; 4//2.0结果为2.0 % 取模 返回除法的余数 &raquo;&gt; 4%2.0结果为0.0 &raquo;&gt; 4%3.0结果为1.0 &raquo;&gt; 4%3结果为1 &raquo;&gt; 4%2结果为0 &laquo; 左移 x&lt;&lt;y 把x的二进制数值左移y位 &gt;&gt;&gt; 2&lt;&lt;1结果为4 &gt;&gt;&gt; 2&lt;&lt;2结果为8 &raquo; 右移 x&raquo;y 把x的二进制数值右移y位 &gt;&gt;&gt; 16&gt;&gt;1结果为8 &gt;&gt;&gt; 16&gt;&gt;2结果为4 &gt;&gt;&gt; 16&gt;&gt;3结果为2 &gt;&gt;&gt; 16&gt;&gt;4结果为1 &amp; 按位与 数的按位与(同时为1则为1，否则为0) ^ 按位异或 数的按位异或(异则为1，同则为0) ~ 按位翻转 x的按位翻转为-(x+1) 运算符有优先级，但建议使用圆括号来分组运算符和操作数，使程序尽可能的易读。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_operational_character/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="Python的运算符 常用运算符 常用运算符详细介绍见下表：\n运算符 名称 说明 示例 + 加 两个对象相加 &gt;&gt;&gt; 1+2 结果为 3 &gt;&gt;&gt; 'ab'+'cd'结果为 &lsquo;abcd&rsquo; - 减 两个对象相减 &gt;&gt;&gt; 2-1 结果为 1 &gt;&gt;&gt; 1-2 结果为 -1 * 乘 两个数相乘或重复字符 &gt;&gt;&gt; 3\\*4 结果为 12 &gt;&gt;&gt; &quot;-&quot;*6 结果为 &lsquo;&mdash;&mdash;&rsquo; ** 幂 x**y 返回x的y次幂 &gt;&gt;&gt; 3**4 结果为 81 , 同pow(3,4) = 81 / 除以 x/y x除以y &gt;&gt;&gt; 4/2 结果为 2.0 &gt;&gt;&gt; 4.0/2 结果为 2.0 // 取整除 返回商的整数部分 &gt;&gt;&gt; 4//2结果为2 &gt;&gt;&gt; 4//3结果为1 &gt;&gt;&gt; 4//3.0结果为1.0 &gt;&gt;&gt; 4//2.0结果为2.0 % 取模 返回除法的余数 &raquo;&gt; 4%2.0结果为0.0 &raquo;&gt; 4%3.0结果为1.0 &raquo;&gt; 4%3结果为1 &raquo;&gt; 4%2结果为0 &laquo; 左移 x&lt;&lt;y 把x的二进制数值左移y位 &gt;&gt;&gt; 2&lt;&lt;1结果为4 &gt;&gt;&gt; 2&lt;&lt;2结果为8 &raquo; 右移 x&raquo;y 把x的二进制数值右移y位 &gt;&gt;&gt; 16&gt;&gt;1结果为8 &gt;&gt;&gt; 16&gt;&gt;2结果为4 &gt;&gt;&gt; 16&gt;&gt;3结果为2 &gt;&gt;&gt; 16&gt;&gt;4结果为1 &amp; 按位与 数的按位与(同时为1则为1，否则为0) ^ 按位异或 数的按位异或(异则为1，同则为0) ~ 按位翻转 x的按位翻转为-(x+1) 运算符有优先级，但建议使用圆括号来分组运算符和操作数，使程序尽可能的易读。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="

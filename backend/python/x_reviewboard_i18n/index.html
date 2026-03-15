@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_reviewboard_i18n/'>
 
-<link rel="stylesheet" href="/scss/style.min.87755bfde2d931e93a5e9c86b5524615406f579b6c9dfe211086f24f2e889e6d.css"><meta property='og:title' content="ReviewBoard国际化配置">
+<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="ReviewBoard国际化配置">
 <meta property='og:description' content="ReviewBoard国际化配置 ReviewBoard是一个代码评审系统，当前默认没有配置中文翻译，本节主要讲解如何将ReviewBoard系统汉化。\n基本信息 查看Django版本:\n1 2 3 [root@helloreview ~]# pip list|grep Django DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won&#39;t be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support Django 1.6.11 查看Django安装目录\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 [root@helloreview ~]# ls -lah /usr/lib/python2.7/site-packages/django total 36K drwxr-xr-x 17 root root 255 Aug 27 11:01 . drwxr-xr-x. 95 root root 8.0K Sep 5 20:23 .. drwxr-xr-x 3 root root 217 Aug 27 11:01 bin drwxr-xr-x 6 root root 168 Sep 5 22:38 conf drwxr-xr-x 19 root root 317 Aug 27 11:01 contrib drwxr-xr-x 10 root root 4.0K Aug 27 11:01 core drwxr-xr-x 4 root root 153 Aug 27 11:01 db drwxr-xr-x 2 root root 125 Aug 27 11:01 dispatch drwxr-xr-x 3 root root 269 Aug 27 11:01 forms drwxr-xr-x 2 root root 242 Aug 27 11:01 http -rw-r--r-- 1 root root 270 Aug 27 11:00 __init__.py -rw-r--r-- 1 root root 465 Aug 27 11:01 __init__.pyc drwxr-xr-x 2 root root 4.0K Sep 1 09:52 middleware drwxr-xr-x 2 root root 45 Aug 27 11:01 shortcuts drwxr-xr-x 3 root root 4.0K Aug 27 11:01 template drwxr-xr-x 2 root root 237 Aug 27 11:01 templatetags drwxr-xr-x 2 root root 331 Aug 27 11:01 test drwxr-xr-x 5 root root 4.0K Aug 27 11:01 utils drwxr-xr-x 4 root root 247 Aug 27 11:01 views 查看ReviewBoard版本\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_reviewboard_i18n/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -15,6 +15,68 @@
 <meta name="twitter:description" content="ReviewBoard国际化配置 ReviewBoard是一个代码评审系统，当前默认没有配置中文翻译，本节主要讲解如何将ReviewBoard系统汉化。\n基本信息 查看Django版本:\n1 2 3 [root@helloreview ~]# pip list|grep Django DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won&#39;t be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support Django 1.6.11 查看Django安装目录\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 [root@helloreview ~]# ls -lah /usr/lib/python2.7/site-packages/django total 36K drwxr-xr-x 17 root root 255 Aug 27 11:01 . drwxr-xr-x. 95 root root 8.0K Sep 5 20:23 .. drwxr-xr-x 3 root root 217 Aug 27 11:01 bin drwxr-xr-x 6 root root 168 Sep 5 22:38 conf drwxr-xr-x 19 root root 317 Aug 27 11:01 contrib drwxr-xr-x 10 root root 4.0K Aug 27 11:01 core drwxr-xr-x 4 root root 153 Aug 27 11:01 db drwxr-xr-x 2 root root 125 Aug 27 11:01 dispatch drwxr-xr-x 3 root root 269 Aug 27 11:01 forms drwxr-xr-x 2 root root 242 Aug 27 11:01 http -rw-r--r-- 1 root root 270 Aug 27 11:00 __init__.py -rw-r--r-- 1 root root 465 Aug 27 11:01 __init__.pyc drwxr-xr-x 2 root root 4.0K Sep 1 09:52 middleware drwxr-xr-x 2 root root 45 Aug 27 11:01 shortcuts drwxr-xr-x 3 root root 4.0K Aug 27 11:01 template drwxr-xr-x 2 root root 237 Aug 27 11:01 templatetags drwxr-xr-x 2 root root 331 Aug 27 11:01 test drwxr-xr-x 5 root root 4.0K Aug 27 11:01 utils drwxr-xr-x 4 root root 247 Aug 27 11:01 views 查看ReviewBoard版本\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
+
+<div class="img-lightbox-overlay" id="imgLightbox">
+    <span class="img-lightbox-close" id="imgLightboxClose">&times;</span>
+    <img src="" alt="" id="imgLightboxImg">
+</div>
+<script>
+(function () {
+    function initLightbox() {
+        var overlay = document.getElementById('imgLightbox');
+        var lightboxImg = document.getElementById('imgLightboxImg');
+        var closeBtn = document.getElementById('imgLightboxClose');
+
+        if (!overlay || !lightboxImg) return;
+
+        
+        var articleContent = document.querySelector('.article-content');
+        if (!articleContent) return;
+
+        articleContent.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'IMG') {
+                lightboxImg.src = target.src;
+                lightboxImg.alt = target.alt || '';
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        
+        lightboxImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+                closeLightbox();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightbox);
+    } else {
+        initLightbox();
+    }
+})();
+</script>
 
     </head>
     <body class="
