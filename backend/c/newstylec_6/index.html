@@ -398,6 +398,7 @@
             <li><a href="#62-自定义字符串处理函数">6.2 自定义字符串处理函数</a>
               <ul>
                 <li><a href="#621-计算字符串长度">6.2.1 计算字符串长度</a></li>
+                <li><a href="#622-在字符串是查找特定字符的位置">6.2.2 在字符串是查找特定字符的位置</a></li>
               </ul>
             </li>
           </ul>
@@ -450,7 +451,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -549,7 +550,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 5 分钟
                 </time>
             </div>
         
@@ -934,7 +935,320 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h5 id="622-在字符串是查找特定字符的位置">6.2.2 在字符串是查找特定字符的位置
+</h5><p>查找字符串是是否包含指定的字符是经常要进行的工作，例如用户输入Email地址，就需要判断其中是否存在字母<code>@</code>或<code>.</code>点字符。</p>
+<p>查找的结果有两种：</p>
+<ul>
+<li>找到了这个字符，此时应该返回字符的位置（第几个，从0开始计数），以便 程序进行进一步的处理。</li>
+<li>没有找到，此时可以返回负数，以区别于找到的情况。</li>
+</ul>
+<p>用与前文同样的方法考虑这个函数的设计：</p>
+<blockquote>
+<ol>
+<li><strong>函数的功能是什么？</strong></li>
+</ol>
+<p>在一个字符串中查找特定字符的出现位置（从0开始计数），未找到返回-1。</p>
+<ol start="2">
+<li><strong>函数的名字是什么？</strong></li>
+</ol>
+<p><code>indexOfChar</code>，意思是“字符的索引”。</p>
+<ol start="3">
+<li><strong>函数需要传入哪些参数？</strong></li>
+</ol>
+<p>需要传入字符串的首地址，参数类型是字符指针（<code>char*</code>），名为<code>str</code>，但由于函数中不允许修改字符串的值，所以参数类型应为<code>const char*</code>。另外，还需要传入需要查找的字符，类型为<code>char</code>。</p>
+<ol start="4">
+<li><strong>函数是否需要返回值？返回何种类型的值？</strong></li>
+</ol>
+<p>当然需要，返回有符号整型值，使用<code>int</code>型（有符号整型）。</p>
+</blockquote>
+<p>确定了这些后，函数的原型就确定了！！！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span> <span class="kt">char</span> <span class="n">ch</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><p>此时参考上一节的方法来实现该函数并写测试程序：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L06_01_COMMON_TOOLS.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 通用工具库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 在字符串中查找特定字符的位置
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span> <span class="kt">char</span> <span class="n">ch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义存储索引的位置
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针str指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 打印当前字符和内存地址
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// printf(&#34;当前字符%c的地址为：%p\n&#34;, *str, str);
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// 判断是否相等
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">==</span> <span class="n">ch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;在字符串%s当前索引是 %d，对应字符是：%c ，与目前字符 %c 匹配</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="o">*</span><span class="n">str</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">index</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;在字符串%s当前索引是 %d，对应字符是：%c ，与目前字符 %c 不匹配</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="o">*</span><span class="n">str</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量str的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个字符串
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">string</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string的首地址为：%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">&#39;e&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符%c在字符串%s的位置是：%d</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">string</span><span class="p">,</span> <span class="n">index</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="sc">&#39;l&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index1</span> <span class="o">=</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">ch1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符%c在字符串%s的位置是：%d</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch1</span><span class="p">,</span> <span class="n">string</span><span class="p">,</span> <span class="n">index1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch2</span> <span class="o">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index2</span> <span class="o">=</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">ch2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符%c在字符串%s的位置是：%d</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch2</span><span class="p">,</span> <span class="n">string</span><span class="p">,</span> <span class="n">index2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时，运行代码，输出如下：</p>
+<p><img src="/img/Snipaste_2026-03-15_20-02-15.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-03-15_20-02-15.png"
+	
+	
+></p>
+<p>此时，能正常在字符串中查找到特定字符，输出结果是对的。但输出的原始字符串在不停的变。原因：</p>
+<ul>
+<li>
+<p><strong><code>str++</code> 会改变指针指向的位置</strong></p>
+</li>
+<li>
+<p><strong>一旦移动，原来的开头就访问不到了</strong></p>
+</li>
+<li>
+<p><strong>遍历字符串一定要用临时指针，不要动原始指针！</strong></p>
+</li>
+</ul>
+<p>因此，对代码进行代码，优化后代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L06_01_COMMON_TOOLS.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 通用工具库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 在字符串中查找特定字符的位置
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span> <span class="kt">char</span> <span class="n">ch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义存储索引的位置
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 遍历字符串一定要用临时指针，不要动原始指针！
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 用临时指针遍历，不修改原始 str
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针str指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 打印当前字符和内存地址
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// printf(&#34;当前字符%c的地址为：%p\n&#34;, *p, p);
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// 判断是否相等
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">==</span> <span class="n">ch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;在字符串%s当前索引是 %d，对应字符是：%c ，与目前字符 %c 匹配</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">index</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;在字符串%s当前索引是 %d，对应字符是：%c ，与目前字符 %c 不匹配</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="o">*</span><span class="n">p</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 临时指针变量p的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个字符串
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">string</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string的首地址为：%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch</span> <span class="o">=</span> <span class="sc">&#39;e&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符%c在字符串%s的位置是：%d</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">string</span><span class="p">,</span> <span class="n">index</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="sc">&#39;l&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index1</span> <span class="o">=</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">ch1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符%c在字符串%s的位置是：%d</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch1</span><span class="p">,</span> <span class="n">string</span><span class="p">,</span> <span class="n">index1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">ch2</span> <span class="o">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">index2</span> <span class="o">=</span> <span class="nf">indexOfChar</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">ch2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符%c在字符串%s的位置是：%d</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ch2</span><span class="p">,</span> <span class="n">string</span><span class="p">,</span> <span class="n">index2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时运行代码，输出结果如下：</p>
+<p><img src="/img/Snipaste_2026-03-15_20-13-09.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-03-15_20-13-09.png"
+	
+	
+></p>
+
 </section>
 
 

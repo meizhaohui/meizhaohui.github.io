@@ -469,7 +469,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -1787,8 +1787,10 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以看到，登陆成功！</p>
-<p>::: tip 提示</p>
-<p>配置文件中<code>~/.docker/config.json</code>存储了每个仓库的用户名和密码信息，<code>auth</code>键的值就是<code>username:password</code>加密后的值。</p>
+<div class="custom-block tip">
+    <div class="custom-block-heading">💡 提示</div>
+    <div class="custom-block-body">
+        <p>配置文件中<code>~/.docker/config.json</code>存储了每个仓库的用户名和密码信息，<code>auth</code>键的值就是<code>username:password</code>加密后的值。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1803,7 +1805,10 @@
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> -n <span class="s2">&#34;xxx&#34;</span> <span class="p">|</span> base64 -d
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>:::</p>
+</div>
+    </div>
+</div>
+
 <p>再次推送镜像：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
