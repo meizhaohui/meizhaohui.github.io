@@ -462,6 +462,7 @@
                 <li><a href="#621-计算字符串长度">6.2.1 计算字符串长度</a></li>
                 <li><a href="#622-在字符串是查找特定字符的位置">6.2.2 在字符串是查找特定字符的位置</a></li>
                 <li><a href="#623-转换字符串中的大写字母为小写字母">6.2.3 转换字符串中的大写字母为小写字母</a></li>
+                <li><a href="#624-复制字符串">6.2.4 复制字符串</a></li>
               </ul>
             </li>
           </ul>
@@ -514,7 +515,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -613,7 +614,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 6 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -1568,6 +1569,172 @@
 	
 ></p>
 <p>字符串正常都变成大写了！！！</p>
+<h5 id="624-复制字符串">6.2.4 复制字符串
+</h5><p>将一个内存区域内的字符串复制到另外一个区域，也是程序中经常需要进行的操作。</p>
+<p>如有两个数组：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span>  <span class="n">str_a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span>  <span class="n">str_b</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>字符数组<code>str_a</code>的前6个元素已经被初始化，后4个没有；字符数组<code>str_b</code>完全没有被初始化。</p>
+<p>我们的任务是把<code>str_a</code>所指向的内存区域的字符串复制到<code>str_b</code>所指向的内存区域。</p>
+<p>用与前文同样的方法考虑这个函数的设计：</p>
+<blockquote>
+<ol>
+<li><strong>函数的功能是什么？</strong></li>
+</ol>
+<p>复制字符串，把一个内存位置的字符串（包括字符串终止符）复制到另一个内存位置上去。</p>
+<ol start="2">
+<li><strong>函数的名字是什么？</strong></li>
+</ol>
+<p><code>strCopy</code>，意思是“字符串复制”。</p>
+<ol start="3">
+<li><strong>函数需要传入哪些参数？</strong></li>
+</ol>
+<p>需要传入源字符串的首地址，参数类型是字符指针（<code>const char*</code>），名为<code>source</code>; 还需要传入目标字符串的首地址，参数类型是字符指针(<code>char*</code>)， 名为<code>destination</code>。</p>
+<ol start="4">
+<li><strong>函数是否需要返回值？返回何种类型的值？</strong></li>
+</ol>
+<p>不需要，暂时不需要返回值。</p>
+</blockquote>
+<p>确定了这些后，函数的原型就确定了！！！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">strCopy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">destination</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">source</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后我来实现这个函数：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将源字符串复制到目标字符串中
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">strCopy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">destination</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">source</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">source</span> <span class="o">==</span> <span class="nb">NULL</span> <span class="o">||</span> <span class="n">destination</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 遍历字符串一定要用临时指针，不要动原始指针！
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 用临时指针遍历，不修改原始 source
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">source</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针p指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 直接将当前字符复制到目录字符对应位置
+</span></span></span><span class="line"><span class="cl">        <span class="o">*</span><span class="n">destination</span> <span class="o">=</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量p的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">destination</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 最后补字符串结束符
+</span></span></span><span class="line"><span class="cl">    <span class="o">*</span><span class="n">destination</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个字符串
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">str_a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;L&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">str_b</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_a的首地址为：%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_a中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">str_b</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_b中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 测试空指针异常
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">source</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;ABCDefgh&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串source的内容是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">source</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">dest</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 未初始化的字符串不要去打印，会出现奇怪的 烫 字
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;字符串dest复制前是：%s\n&#34;, dest);
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">source</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串dest  复制后是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">dest</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后运行程序：</p>
+<p><img src="/img/Snipaste_2026-03-24_23-37-43.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-03-24_23-37-43.png"
+	
+	
+></p>
+<p>可以看到，正常将源字符串复制到目录字符串上面了。</p>
 
 </section>
 
