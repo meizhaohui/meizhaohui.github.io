@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一步一步学role角色4-include的使用 1. 概述 这是一个序列总结文档。\n第1节 ansible role角色(1) 中，我们阅读了官方文档，并且知道了角色相关的概念。 第2节 ansible role角色(2)&ndash;创建第一个role角色 创建一个简单的测试role角色。 第3节 ansible role角色(3)&ndash;一步一步学role角色，base基础角色配置。 本节是在上节的基础上，使用include关键字来优化base剧本。\n1.1 VirtualBox虚拟机信息记录 序号 虚拟机 主机名 IP CPU 内存 说明 1 ansible-master ansible 192.168.56.120 2核 4G Ansible控制节点 2 ansible-node1 node1 192.168.56.121 2核 2G Ansible工作节点1 3 ansible-node2 node2 192.168.56.122 2核 2G Ansible工作节点2 4 ansible-node3 node3 192.168.56.123 2核 2G Ansible工作节点3 1.2. 回顾 上节我编写了一个可以实际使用的角色，命名为base角色。该角色包含以下功能：\n设置主机名称。 永久关闭SELINUX。 添加yum、epel源，用来加速软件安装。 配置pip国内镜像加速。 安装vim、telnet、python3、ntpdate、java、wget、lrzsz、dos2unix、git等基础包。 安装safe-rm和trash-cli防误删工具。 设置时间同步定时任务。 生成主机公钥私钥对。 设置常用快捷命令。（这个功能上节未处理） 1.3 角色目录结构 最开始我们的角色目录结构比较简单，仅创建base目录，然后创建tasks目录，再在tasks目录下面创建main.yml任务文件，目录结构如下：\n1 2 3 4 5 $ tree . +--- base | +--- tasks | | +--- main.yml 目录结构和任务文件创建完成后，我们就开始进行任务分解，构建自己的自动化任务。\n">
 <title>一步一步学role角色4-include的使用</title>

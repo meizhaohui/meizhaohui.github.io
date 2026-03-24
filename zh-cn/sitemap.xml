@@ -20,7 +20,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/"
                 />
   </url><url>
@@ -42,7 +42,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/"
                 />
   </url><url>
@@ -61,7 +61,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/"
                 />
   </url><url>
@@ -74,7 +74,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/backend/"
                 />
   </url><url>
@@ -87,7 +87,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/channel/"
                 />
   </url><url>
@@ -100,7 +100,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/devops/cicd-pipeline/"
                 />
   </url><url>
@@ -113,7 +113,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/cicd/"
                 />
   </url><url>
@@ -126,7 +126,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/devops/"
                 />
   </url><url>
@@ -139,7 +139,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/devops/"
                 />
   </url><url>
@@ -152,7 +152,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/docker/"
                 />
   </url><url>
@@ -165,7 +165,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/docker/"
                 />
   </url><url>
@@ -178,7 +178,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/devops/docker-deploy/"
                 />
   </url><url>
@@ -194,7 +194,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/flask/"
                 />
   </url><url>
@@ -210,7 +210,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/gitlab-ci/"
                 />
   </url><url>
@@ -223,7 +223,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/golang/"
                 />
   </url><url>
@@ -236,7 +236,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/golang/"
                 />
   </url><url>
@@ -249,7 +249,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/golang/golang-concurrency/"
                 />
   </url><url>
@@ -262,7 +262,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/goroutine/"
                 />
   </url><url>
@@ -275,7 +275,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/java/"
                 />
   </url><url>
@@ -288,7 +288,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/java/"
                 />
   </url><url>
@@ -301,7 +301,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/java/"
                 />
   </url><url>
@@ -314,7 +314,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/k8s/"
                 />
   </url><url>
@@ -327,7 +327,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/kubernetes/"
                 />
   </url><url>
@@ -346,7 +346,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/page/"
                 />
   </url><url>
@@ -359,7 +359,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/python/"
                 />
   </url><url>
@@ -372,7 +372,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/java/spring-boot-intro/"
                 />
   </url><url>
@@ -385,7 +385,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/spring-boot/"
                 />
   </url><url>
@@ -401,7 +401,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/page/archives/"
                 />
   </url><url>
@@ -414,7 +414,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/"
                 />
   </url><url>
@@ -433,7 +433,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/page/search/"
                 />
   </url><url>
@@ -449,7 +449,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/api/"
                 />
   </url><url>
@@ -462,7 +462,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/frontend/"
                 />
   </url><url>
@@ -475,7 +475,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/javascript/"
                 />
   </url><url>
@@ -488,7 +488,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/linux/"
                 />
   </url><url>
@@ -501,7 +501,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/os/memory-management/"
                 />
   </url><url>
@@ -514,7 +514,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/os/"
                 />
   </url><url>
@@ -527,7 +527,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/react/"
                 />
   </url><url>
@@ -540,7 +540,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/frontend/react-hooks/"
                 />
   </url><url>
@@ -553,7 +553,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/rest/"
                 />
   </url><url>
@@ -566,7 +566,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/rest-api/"
                 />
   </url><url>
@@ -579,7 +579,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/os/"
                 />
   </url><url>
@@ -595,7 +595,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/frontend/"
                 />
   </url><url>
@@ -608,7 +608,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/css/"
                 />
   </url><url>
@@ -621,7 +621,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/frontend/css-flexbox/"
                 />
   </url><url>
@@ -634,7 +634,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/dba/"
                 />
   </url><url>
@@ -653,7 +653,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/database-index/"
                 />
   </url><url>
@@ -672,7 +672,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/vue/"
                 />
   </url><url>
@@ -685,7 +685,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/frontend/vue3-composition/"
                 />
   </url><url>
@@ -707,7 +707,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/microservices/"
                 />
   </url><url>
@@ -723,7 +723,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/os/filesystem/"
                 />
   </url><url>
@@ -742,7 +742,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/os/thread-scheduling/"
                 />
   </url><url>
@@ -797,7 +797,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/backend/python/"
                 />
   </url><url>
@@ -969,7 +969,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
+                hreflang="zh-CN"
                 href="https://hellogitlab.com/tags/database/"
                 />
   </url><url>

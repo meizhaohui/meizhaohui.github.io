@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Docker Info bridge-nf-call-iptables is disabled警告处理 在执行docker info命令时，会提示以下警告：\n警告描述 1 2 3 4 5 6 ## docker info .... docker相关信息，此处省略 Live Restore Enabled: false WARNING: bridge-nf-call-iptables is disabled WARNING: bridge-nf-call-ip6tables is disabled 解决办法 执行以下命令：\n1 2 ## echo &#39;net.bridge.bridge-nf-call-ip6tables = 1&#39; &gt;&gt; /etc/sysctl.conf ## echo &#39;net.bridge.bridge-nf-call-iptables = 1&#39; &gt;&gt; /etc/sysctl.conf 查看配置是否生效：\n1 2 3 ## sysctl -p|grep &#39;net.bridge&#39; net.bridge.bridge-nf-call-ip6tables = 1 net.bridge.bridge-nf-call-iptables = 1 校验 再次执行docker info命令：\n1 2 3 4 5 6 7 8 9 10 11 12 ## docker info Client: Context: default Debug Mode: false Plugins: app: Docker App (Docker Inc., v0.9.1-beta3) buildx: Docker Buildx (Docker Inc., v0.7.1-docker) scan: Docker Scan (Docker Inc., v0.12.0) ... 省略 Live Restore Enabled: false ## echo $? 0 可以看到，已经没有警告信息了。\n">
 <title>DockerInfobridge-nf-call-iptablesisdisabled警告处理</title>

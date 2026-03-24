@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="换个姿势学C语言 第6章 创建自己的函数库 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第6章总结参考换个姿势学C语言 第6章 6. 创建自己的函数库 渐渐地，读者已经发现在程序设计中实现某种功能的代码经常被重复使用。不建议在写程序时经常复制和粘贴那些代码，这会使程序变得臃肿和复杂，可以将这些功能设计成独立的函数，在需要使用时可以随时调用它们。\n除此之外，还可以建立自己的函数库，将函数代码编译成库文件代他人或自己使用。\n本章涉及：\n函数库的类型 自定义处理字符串的函数 自定义处理键盘输入的函数 在Visual Studio 2020中创建静态库 本章将实现一些字符串的函数：\n计算字符串长度&mdash; strLength; 在字符串是查找特定字符的位置&mdash; indexOfChar; 转换字符串中大写字母为小写字母&mdash;toLowerCase; 转换字符串大小写字母为大写字母&mdash;toUpperCase; 复制字符串&mdash;strCopy。 还要实现几个用于提高键盘输入数据效率的函数：\n输入整数型&mdash;inputInteger; 输入字符&mdash;inputChar; 输入字符串&mdash;inputStr。 这些函数可以用于一下的外汇牌价看板的开发。\n6.1 什么是函数库 函数库是以重复利用程序为目的的且经过编译的函数的二进制代码 。 函数库分为动态链接库和静态链接库两种。在生成可执行文件时，这两种库文件的处理方式是不同的。 6.1.1 静态链接库 静态链接库是最简单的处理方式。如果在程序中引用一个静态函数库，编译时程序会先被编译成一个目标文件（二进制代码），然后链接器会将这个目标文件和静态函数库中的二进制代码一起合并成一个可执行文件，这个可执行文件就可以脱离函数库而独立运行。\n前面使用的外汇牌价接口库就是一个静态链接库，它的二进制代码会和调用它的代码一起生成一个可执行文件。\n⚠️ 警告 静态函数库的缺点：当有很多个程序都引用同一个库时，每个程序的可执行文件都要包含一份同样的函数代码，这样就会浪费内存和磁盘空间；如果这个函数库需要升级，则所有使用该静态函数库的程序都要重新编译和链接！！ 6.1.2 动态链接库 动态链接库克服了静态链接库的缺点。动态函数库文件独立地存在于某些系统目录下，在编译程序时动态函数库中的代码不被包含在可执行文件中，程序在使用到库函数时再从内存或磁盘的指定位置寻找动态函数库的代码。如在windows操作系统中，部分动态链接库被存放于C:\\Windows\\System32目录下。\n">
 <title>换个姿势学C语言第6章</title>
@@ -461,6 +461,7 @@
               <ul>
                 <li><a href="#621-计算字符串长度">6.2.1 计算字符串长度</a></li>
                 <li><a href="#622-在字符串是查找特定字符的位置">6.2.2 在字符串是查找特定字符的位置</a></li>
+                <li><a href="#623-转换字符串中的大写字母为小写字母">6.2.3 转换字符串中的大写字母为小写字母</a></li>
               </ul>
             </li>
           </ul>
@@ -612,7 +613,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 6 分钟
                 </time>
             </div>
         
@@ -1310,6 +1311,263 @@
 	
 	
 ></p>
+<h5 id="623-转换字符串中的大写字母为小写字母">6.2.3 转换字符串中的大写字母为小写字母
+</h5><p>在一个字符串中，可能同时存在大写、小写字母和其他字母，在程序设计中经常要对其中的大小写字母相互转换。绝大多数的编程语言都提供大小写字母转换的函数，如Python里面字符串的<code>.upper()</code>方法和<code>.lower()</code>方法就可以实现字符串大小写转换。</p>
+<p>我们先进行大写字母转换成小写字母的原型设计，再完成测试程序。</p>
+<p>用与前文同样的方法考虑这个函数的设计：</p>
+<blockquote>
+<ol>
+<li><strong>函数的功能是什么？</strong></li>
+</ol>
+<p>将现在字符串中的大写字母转换成小写字母。</p>
+<ol start="2">
+<li><strong>函数的名字是什么？</strong></li>
+</ol>
+<p><code>toLowerCase</code>，意思是“转换为小写”。</p>
+<ol start="3">
+<li><strong>函数需要传入哪些参数？</strong></li>
+</ol>
+<p>需要传入字符串的首地址，参数类型是字符指针（<code>char*</code>），名为<code>str</code>，之所以参数类型不是<code>const char*</code>，是因为我们要通过传入的字符指针改变其指向位置的值（原地转换）。</p>
+<ol start="4">
+<li><strong>函数是否需要返回值？返回何种类型的值？</strong></li>
+</ol>
+<p>不需要，因为函数已经处理了字符数组中的字符。</p>
+</blockquote>
+<p>确定了这些后，函数的原型就确定了！！！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">toLowerCase</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在第五章5.3节总结参考<a class="link" href="../newstylec_5.3/" >换个姿势学C语言 第5章 5.3节</a> 中已经知道了字母在ASCII中的值：</p>
+<ul>
+<li>a-z是97-122，而A-Z是65-90。</li>
+</ul>
+<p>因些，我们们可以像之前的函数一样，一个个的读取字符串中的字符，然后进行判断就行了！</p>
+<p>然后，我的代码就成这样了：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将字符串中大写字母转换成小写字符
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">toLowerCase</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 由于需要对原始字符串进行修改，此处不使用临时指针
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针str指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 打印当前字符和内存地址
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// printf(&#34;当前字符%c的地址为：%p\n&#34;, *p, p);
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// 判断是否是大写字母
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">&gt;=</span> <span class="sc">&#39;A&#39;</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str</span> <span class="o">&lt;=</span> <span class="sc">&#39;Z&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="o">*</span><span class="n">str</span> <span class="o">+=</span> <span class="sc">&#39;a&#39;</span> <span class="o">-</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量str的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个字符串
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">string</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;L&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string的首地址为：%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toLowerCase</span><span class="p">(</span><span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 测试空指针异常
+</span></span></span><span class="line"><span class="cl">    <span class="nf">toLowerCase</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">str</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;ABCDefgh&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串str转换前是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toLowerCase</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串str转换后是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行结果：</p>
+<p><img src="/img/Snipaste_2026-03-24_22-10-53.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-03-24_22-10-53.png"
+	
+	
+></p>
+<p>相应的，将小写转换成大写也比较简单了：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将字符串中小写字母转换成大写字符
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">toUpperCase</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 由于需要对原始字符串进行修改，此处不使用临时指针
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针str指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 打印当前字符和内存地址
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// printf(&#34;当前字符%c的地址为：%p\n&#34;, *p, p);
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// 判断是否是小写字母
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">&gt;=</span> <span class="sc">&#39;a&#39;</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str</span> <span class="o">&lt;=</span> <span class="sc">&#39;z&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="o">*</span><span class="n">str</span> <span class="o">-=</span> <span class="sc">&#39;a&#39;</span> <span class="o">-</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量str的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个字符串
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">string</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;L&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string的首地址为：%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toUpperCase</span><span class="p">(</span><span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组string中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 测试空指针异常
+</span></span></span><span class="line"><span class="cl">    <span class="nf">toUpperCase</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">str</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;ABCDefgh&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串str转换前是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toUpperCase</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串str转换后是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个时候，运行程序：</p>
+<p><img src="/img/Snipaste_2026-03-24_22-20-48.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-03-24_22-20-48.png"
+	
+	
+></p>
+<p>字符串正常都变成大写了！！！</p>
 
 </section>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="docker容器增加端口映射 1. 查看需要增加端口映射的容器信息 查看当前运行的容器:\n1 2 3 [root@node1 ~]$ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 6f8cca028493 1e1d45f195b1 &#34;sh -c ${SONATYPE_DI…&#34; 15 months ago Up 34 minutes 0.0.0.0:8081-&gt;8081/tcp nexus 可以看到nexus当前开放了8081端口，我们想给该容器增加8082和8083两个新的端口映射，并开放8082和8083端口。\n查看容器ID信息：\n1 2 [root@node1 ~]$ docker inspect nexus|grep Id &#34;Id&#34;: &#34;6f8cca02849370b4c271511229f36a5a0b76d20ba5b8e8391564c5d3bd0c1f44&#34;, 记住这个ID信息，后面需要用到。\n查看docker数据文件存放目录：\n1 2 [root@master docker]# docker info|grep &#39;Docker Root Dir:.*&#39;|sed &#39;s/.*Docker Root Dir: //g&#39; /var/lib/docker 我们要找的容器配置文件就在/var/lib/docker/containers/6f8cca02849370b4c271511229f36a5a0b76d20ba5b8e8391564c5d3bd0c1f44目录下。\n2. 停止容器和docker服务 首先停止所有启动的docker容器，如我们停止nexus容器：\n1 2 [root@node1 ~]$ docker stop nexus nexus 再停止docker和docker.socket服务：\n">
 <title>docker容器增加端口映射</title>

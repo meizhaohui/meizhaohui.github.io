@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="GitLab的替代者-轻量级Gogs安装与配置 我们使用docker安装gogs服务。\n镜像地址：https://registry.hub.docker.com/r/gogs/gogs 源码地址：https://github.com/gogs/gogs/tree/main/docker 1. 安装 1.1 下载镜像 使用dockerhub中给定的命令docker pull gogs/gogs下载镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 [root@hellogitlab ~]# docker pull gogs/gogs Using default tag: latest Trying to pull repository docker.io/gogs/gogs ... latest: Pulling from docker.io/gogs/gogs e95f33c60a64: Pull complete 6629f7b66676: Pull complete 95248f7b0231: Pull complete 1a4b11e4c1b9: Pull complete 1613ead921c8: Pull complete 37949e6160d8: Pull complete 38df9b14eb06: Pull complete 93d905b51231: Pull complete Digest: sha256:7607fee4a463fdda91e7126fcc8504e7d972c4b80e79b2102c0de7175c1d3b81 Status: Downloaded newer image for docker.io/gogs/gogs:latest [root@hellogitlab ~]# 1.2 数据库准备 我们在postgresql中创建一个gogs的数据库，并授权。\n">
 <title>GitLab的替代者-轻量级Gogs安装与配置</title>

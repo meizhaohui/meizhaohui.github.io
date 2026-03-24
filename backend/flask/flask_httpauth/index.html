@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="接口认证管理之Flask_HTTPAuth pypi页面：https://pypi.org/project/Flask-HTTPAuth/ 官方文档：https://flask-httpauth.readthedocs.io/en/latest/ 安装：pip install Flask-HTTPAuth。 用户名密码认证 可以使用用户名密码的方式进行基本认证。官方给出的示例代码：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 from flask import Flask from flask_httpauth import HTTPBasicAuth from werkzeug.security import generate_password_hash, check_password_hash app = Flask(__name__) auth = HTTPBasicAuth() users = { &#34;john&#34;: generate_password_hash(&#34;hello&#34;), &#34;susan&#34;: generate_password_hash(&#34;bye&#34;) } @auth.verify_password def verify_password(username, password): if username in users and \\ check_password_hash(users.get(username), password): return username @app.route(&#39;/&#39;) @auth.login_required def index(): return &#34;Hello, {}!&#34;.format(auth.current_user()) if __name__ == &#39;__main__&#39;: app.run() 函数verify_password将会校验用户名，以及加密后的用户密码。\n">
 <title>接口认证管理之Flask_HTTPAuth</title>

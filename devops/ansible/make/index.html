@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="make编译模块 1. 概述 make模块可以运行Makefile中的目标target。 官方文档链接 https://docs.ansible.com/ansible/2.9/modules/make_module.html 运行本模块远程主机必须要安装有make程序。 2. 参数 参数 描述 chdir path 切换工作目录 file path 使用自定义Makefile params dictionary 需要传递给make的参数，字典形式 target string 需要运行的目标target，如install、test、all等等 3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 - name: Build the default target make: chdir: /home/ubuntu/cool-project - name: Run &#39;install&#39; target as root make: chdir: /home/ubuntu/cool-project target: install become: yes - name: Build &#39;all&#39; target with extra arguments make: chdir: /home/ubuntu/cool-project target: all params: NUM_THREADS: 4 BACKEND: lapack - name: Build &#39;all&#39; target with a custom Makefile make: chdir: /home/ubuntu/cool-project target: all file: /some-project/Makefile 4. Makefile基础 此处仅简单的编写一个Makefile文件：\n">
 <title>make编译模块</title>

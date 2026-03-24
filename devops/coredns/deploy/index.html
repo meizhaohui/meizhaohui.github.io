@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="安装CoreDNS 1. 为什么要引入CoreDNS 看看豆包的回答：\n引入 CoreDNS 主要是为了解决传统 DNS 服务在现代分布式系统（尤其是 Kubernetes 等容器编排环境）中存在的局限性，同时提供更灵活、可扩展、插件化的 DNS 解决方案。其核心价值体现在以下几个方面：\n传统 DNS 服务的局限性\n传统 DNS 服务（如 BIND）设计初衷是为静态网络环境提供域名解析，在动态、分布式的现代架构中存在明显不足：\n配置复杂：依赖大量静态文件（如 Zone 文件），修改需重启服务，难以应对频繁变化的网络（如容器的创建 / 销毁）。 扩展性差：功能扩展需修改源码或依赖第三方补丁，无法按需组合功能。 适配云原生场景弱：对服务发现、动态域名更新、多集群解析等云原生需求支持不足。 性能与资源占用：部分传统 DNS 服务资源占用较高，在容器化环境中不够轻量。 CoreDNS 的引入本质上是 DNS 服务从 “静态、单一功能” 向 “动态、可扩展、云原生友好” 的演进。它通过插件化架构、动态更新能力、轻量部署特性，完美适配了现代分布式系统（尤其是 Kubernetes）的需求，同时兼顾了传统 DNS 场景的灵活性和可管理性，因此成为当前主流的 DNS 解决方案。\n即解决传统DNS服务的局限性，适配现代化分布式系统的需求。\n废话不多说，直接拿来用看看。\nCoreDNS官网：https://coredns.io/ 英文的。 Github源码仓库: https://github.com/coredns/coredns 。 英文手册：https://coredns.io/manual/toc/ 。 中文手册：https://coredns.golang.ac.cn/manual/toc/ 。 插件列表：https://coredns.io/explugins/ 。 中文插件列表：https://coredns.golang.ac.cn/explugins/，看起来和官方默认的插件列表不一样。 2. 下载和安装CoreDNS 当前最新的版本是1.13.1：\n点击页面的【Download】按钮，直接跳转到github下载页面：https://github.com/coredns/coredns/releases/tag/v1.13.1 .\n下载第5项的 coredns_1.13.1_linux_amd64.tgz ：\n">
 <title>安装CoreDNS</title>

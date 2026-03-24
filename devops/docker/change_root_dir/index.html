@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="修改默认数据存储目录 默认情况下，docker数据存储目录为/var/lib/docker,可以通过docker info查看：\n1 2 ## docker info|grep &#39;Docker Root Dir&#39; Docker Root Dir: /var/lib/docker 可以通过以下方式个性数据存储目录。\n方式一，修改启动配置/usr/lib/systemd/system/docker.service。 方式二，修改配置文件/etc/docker/daemon.json。 1. 修改启动配置 查看默认的启动配置：\n1 2 ## grep &#39;ExecStart&#39; /usr/lib/systemd/system/docker.service ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock 查看dockerd帮助信息：\n1 2 ## dockerd --help|grep &#39;data-root&#39; --data-root string Root directory of persistent Docker state (default &#34;/var/lib/docker&#34;) 可以看到，只用增加--data-root参数就可以设置数据存储目录，我们在启动配置中增加--data-root=/data/docker配置，修改后配置如下：\n1 2 ## grep &#39;ExecStart&#39; /usr/lib/systemd/system/docker.service ExecStart=/usr/bin/dockerd -H fd:// --data-root=/data/docker --containerd=/run/containerd/containerd.sock 注意，此处的数据存储目录/data/docker不需要我们手动创建。\n重新加载配置并重启docker服务：\n1 2 3 4 5 6 7 8 ## 重新加载配置 ## systemctl daemon-reload ## 重启docker服务 ## systemctl restart docker ## 查看docker服务状态 ## systemctl status docker 查看目录信息：\n">
 <title>修改默认数据存储目录</title>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第一个role角色 1. 概述 在上一节 ansible role角色(1) 中，我们阅读了官方文档，并且知道了角色相关的概念。从这节开始，我们就开始使用Ansible role功能来搭建自己的自动化环境。 2. 编写第一个role角色 2.1 编写角色文件 我是在~/ansible_playbooks目录下进行一系列测试操作的。为了测试角色，在该目录下创建roles目录，我将第一个角色命名为first_role。\n首先创建roles文件夹，用于存放自动编写的各种角色文件。\n1 2 3 [ansible@ansible ~]$ cd ansible_playbooks/ [ansible@ansible ansible_playbooks]$ mkdir -p roles [ansible@ansible ansible_playbooks]$ 创建第一个角色文件夹first_role：\n1 2 3 [ansible@ansible ansible_playbooks]$ cd roles/ [ansible@ansible roles]$ mkdir -p first_role [ansible@ansible roles]$ 创建第一个角色对应的tasks文件夹，用于存放对应任务文件：\n1 [ansible@ansible roles]$ mkdir -p first_role/tasks 然后，创建角色任务main.yml：\n1 [ansible@ansible roles]$ touch first_role/tasks/main.yml 然后使用vim编辑其内容，任务文件first_role/tasks/main.yml内容如下：\n1 2 3 4 --- - name: Say hello ansible.builtin.debug: msg: &#34;Hello world!&#34; 这样一个最简单的role角色就配置好了！！\n">
 <title>第一个role角色</title>

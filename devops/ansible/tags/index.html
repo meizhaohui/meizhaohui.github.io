@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="tags标签 1. 概述 如果你有一个超大的playbook剧本文件，有时并不想运行剧本文件中所有的任务，这个时候tags标签可以解决这个问题，通过tags标签可以运行或者忽略(execute or skip)剧本中的部分任务。 你需要给任务添加标签，然后在运行剧本时选项相应的标签。 详细可参考官方文档 Tags 2. 官方示例 你可以给任务添加一个或多个标签。 你可以在剧本中添加标签，也可以在task任务文件，或者role角色中添加标签。 以下示例是不同任务设置不同的标签：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 tasks: - name: Install the servers ansible.builtin.yum: name: - httpd - memcached state: present tags: - packages - webservers - name: Configure the service ansible.builtin.template: src: templates/src.j2 dest: /etc/foo.conf tags: - configuration 你也可以给不同的任务设置相同的标签信息。 以下示例中，有3个任务被设置成了相同的标签ntp：\n">
 <title>tags标签</title>

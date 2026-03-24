@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="docker配置redis缓存 我们可以使用redis来配置缓存，加速网站访问。\nredis镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 [root@hellogitlab ~]# docker pull redis Using default tag: latest Trying to pull repository docker.io/library/redis ... latest: Pulling from docker.io/library/redis a076a628af6f: Already exists f40dd07fe7be: Pull complete ce21c8a3dbee: Pull complete ee99c35818f8: Pull complete 56b9a72e68ff: Pull complete 3f703e7f380f: Pull complete Digest: sha256:0f97c1c9daf5b69b93390ccbe8d3e2971617ec4801fd0882c72bf7cad3a13494 Status: Downloaded newer image for docker.io/redis:latest [root@hellogitlab dockerdata]# docker images redis REPOSITORY TAG IMAGE ID CREATED SIZE docker.io/redis latest 621ceef7494a 2 months ago 104 MB 在Redis官网下载一份redis安装程序，并解压，修改其中的redis.conf配置文件。\n">
 <title>docker配置redis缓存</title>

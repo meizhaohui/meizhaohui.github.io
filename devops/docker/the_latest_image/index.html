@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="查看下载的docker镜像的版本信息 1. 现象描述 通常我们喜欢使用docker pull 镜像名这种方式下载docker镜像，如下载redis或nginx镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 下载redis镜像 [root@node1 ~]# docker pull redis Using default tag: latest latest: Pulling from library/redis Digest: sha256:b0bdc1a83caf43f9eb74afca0fcfd6f09bea38bb87f6add4a858f06ef4617538 Status: Image is up to date for redis:latest docker.io/library/redis:latest ## 下载nginx镜像 [root@node1 ~]# docker pull nginx Using default tag: latest latest: Pulling from library/nginx Digest: sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca Status: Image is up to date for nginx:latest docker.io/library/nginx:latest 当我们不指定标签名称时，docker默认会下载最新的latest镜像，此时查看镜像信息：\n">
 <title>查看下载的docker镜像的版本信息</title>

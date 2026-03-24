@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Bash script中的通配符与正则表达式 通配符符号与其意义 符号\u3000意义 *\u3000代表任意个（包括0个）字符 ?\u3000代表一定有一个任意字符 []\u3000代表至少有一个中括号内的字符。[abc]代表一定有一个字符，是a/b/c中任一个 [-]\u3000代表编码顺序内所有字符。[0-9]代表数字，[a-z]代表小写字母，[A-Z]代表大写字母 [^]\u3000非。[^abc]代表一定有一个字符，只要是非a/b/c的其他字符就行 正则表达式 正则表达式（regular expression） RE字符\u3000意义 * 重复0个或多个前面的RE字符 . 点号,任意字符（一定有一个） ^word\u3000待查找字符（word）在行首 word$\u3000待查找字符（word）在行尾 \\\u3000转义字符，将特殊符号的特殊意义去除 [list] 从字符集list中任意选取一个。如[abc]代表a或b或c [-] 代表编码顺序内所有字符。[0-9]代表数字，[a-z]代表小写字母，[A-Z]代表大写字母 [^]\u3000非。[^abc]代表一定有一个字符，只要是非a/b/c的其他字符就行。 [^a-z] 代表非小写字母 [^A-Z] 代表非大写字母 [^0-9] 代表非数字 {n,m}\u3000连续n到m个前一个RE字符 {n}\u3000连续n个前一个RE字符 {n,}\u3000连续n个以上前一个RE字符 扩展正则表达式（extended regular expression) 扩展符号\u3000意义 ?\u3000匹配0个或一个在其之前的那个普通字符 +\u3000匹配一个或多个在其之前的那个普通字符 ( )\u3000表示一个字符集合或用在expr中 |\u3000表示“或”，匹配一组可选的字符 ">
 <title>Bash script中的通配符与正则表达式</title>

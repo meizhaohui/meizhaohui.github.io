@@ -5,7 +5,7 @@
         <link>https://hellogitlab.com/devops/git/</link>
         <description>Recent content in Git on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
+        <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
         <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/devops/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>强制删除推送到git上的历史记录</title>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Docker简介 Docker是一个开源的容器化平台，可以将应用及其依赖打包成容器。\nDockerfile示例 1 2 3 4 5 6 7 FROM node:18-alpine WORKDIR /app COPY package*.json ./ RUN npm install COPY . . EXPOSE 3000 CMD [&#34;npm&#34;, &#34;start&#34;] 常用命令 docker build -t myapp . - 构建镜像 docker run -p 3000:3000 myapp - 运行容器 docker ps - 查看运行中的容器 ">
 <title>Docker容器化部署</title>

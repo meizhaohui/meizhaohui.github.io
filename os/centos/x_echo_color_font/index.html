@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="echo输出带颜色的字体 概述 在Linux命令行终端或Bash Shell脚本中适当使用颜色，能够让第一时间感觉到您的命令或脚本执行过程中差异。本文主要介绍使用echo输出带颜色的字体。\necho不带参数输出字符串 当echo命令不带参数时，可以直接输出字符串，如下所示:\n1 2 3 4 [meizhaohui@localhost ~]$ echo &#34;abc&#34; abc [meizhaohui@localhost ~]$ echo def def echo带参数输出字符串 当echo命令带-e参数时，可以使用反斜杠\\输出特殊的字符。\necho输出带颜色的字体格式如下:\n1 2 3 $ echo -e &#34;\\033[字背景颜色;字体颜色m字符串\\033[0m&#34; ## 其中: &#34;\\033&#34; 引导非常规字符序列。”m”意味着设置属性然后结束非常规字符序列。 例如:\n1 2 3 $ echo -e &#34;\\033[41;32m红色背景绿色文字\\033[0m&#34; ## 其中: 41的位置代表底色, 32的位置是代表字的颜色。 下面是代码输出绿色文字:\n1 $ echo -e &#34;\\033[32m绿色文字\\033[0m&#34; 使用复杂的颜色输出 输出红字和绿字 1 $ echo -e &#34;\\033[31m红字\\033[32m绿字\\033[0m&#34; # 输出红字和绿字 输出红字和带黄色背景的绿字 1 $ echo -e &#34;\\033[31m红字\\033[43;32m绿字带黄色背景\\033[0m&#34; # 输出红字和带黄色背景的绿字 带下划线的白色背景的红字、高亮的红色背景的绿字 1 $ echo -e &#34;\\033[4;47;31m带下划线的白色背景的红字\\033[0m\\033[1;41;32m高亮的红色背景的绿字\\033[0m&#34; ">
 <title>echo输出带颜色的字体</title>
