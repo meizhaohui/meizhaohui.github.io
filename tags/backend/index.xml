@@ -6551,7 +6551,20 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 &lt;li&gt;&lt;code&gt;abort()&lt;/code&gt;函数 属于 &lt;strong&gt;C 标准库&lt;/strong&gt;，头文件是&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;626-字符串处理的库函数&#34;&gt;6.2.6 字符串处理的库函数
-&lt;/h5&gt;</description>
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;我们自己编写字符串处理函数的目的主要是为了加深对字符串处理的理解和练习，C语言的标准库也包含一些常用的字符串处理函数。在日常开发中可以使用这些库函数，但首先应包含头文件&lt;code&gt;string.h&lt;/code&gt;：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;string.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;其中，&lt;code&gt;strlen&lt;/code&gt;函数与我们定义的&lt;code&gt;strLength&lt;/code&gt;函数是一致的，&lt;code&gt;strchr&lt;/code&gt;和&lt;code&gt;indexOfChar&lt;/code&gt;函数功能接近，&lt;code&gt;strcpy&lt;/code&gt;函数和&lt;code&gt;strCopy&lt;/code&gt;函数功能接近。&lt;/p&gt;
+&lt;p&gt;没必要记住所有的库函数，在需要使用时再去检查它们的使用方法即可。&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>换个姿势学C语言第5章5.4</title>

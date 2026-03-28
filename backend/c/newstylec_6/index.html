@@ -517,7 +517,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -2111,7 +2111,20 @@
 <li><code>abort()</code>函数 属于 <strong>C 标准库</strong>，头文件是<code>#include &lt;stdlib.h&gt;</code>。</li>
 </ul>
 <h5 id="626-字符串处理的库函数">6.2.6 字符串处理的库函数
-</h5>
+</h5><ul>
+<li>我们自己编写字符串处理函数的目的主要是为了加深对字符串处理的理解和练习，C语言的标准库也包含一些常用的字符串处理函数。在日常开发中可以使用这些库函数，但首先应包含头文件<code>string.h</code>：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>其中，<code>strlen</code>函数与我们定义的<code>strLength</code>函数是一致的，<code>strchr</code>和<code>indexOfChar</code>函数功能接近，<code>strcpy</code>函数和<code>strCopy</code>函数功能接近。</p>
+<p>没必要记住所有的库函数，在需要使用时再去检查它们的使用方法即可。</p>
+
 </section>
 
 
