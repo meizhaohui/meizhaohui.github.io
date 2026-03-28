@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/create_your_nexus_4_docker_proxy/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="搭建自己的nexus私有仓库4--搭建docker私有仓库">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="搭建自己的nexus私有仓库4--搭建docker私有仓库">
 <meta property='og:description' content="搭建自己的nexus私有仓库4&ndash;搭建docker私有仓库 本文档是nexus系列课程第4篇。\nnexus系列课程第1篇，请参考 搭建自己的nexus私有仓库1&ndash;nexus初体验 nexus系列课程第2篇，请参考 搭建自己的nexus私有仓库2&ndash;创建python pypi代理 nexus系列课程第3篇，请参考 搭建自己的nexus私有仓库3&ndash;创建yum ius代理 本文计划做以下事情：\n使用nexus创建docker代理仓库(proxy)、本地仓库(hosted)和组仓库(group)。 使用HTTP形式，从代理仓库下载镜像，构建镜像并上传到私有仓库。 使用HTTPS形式，配置nginx反向代理，从代理仓库下载镜像，构建镜像并上传到私有仓库。 以下是实验环境：\n主机 IP 主机名 操作系统 docker版本 自定义域名 1 192.168.56.11 nexus CentOS 7.6.1810 20.10.5 nexushub.com 2 192.168.56.12 master CentOS 7.6.1810 20.10.5 0. 准备工作 请在主机2以及你的电脑上面配置域名解析：\n1 2 [root@master ~]# tail -n 1 /etc/hosts 192.168.56.11 nexushub.com 注意，实际操作时，请将192.168.56.11替换成你服务器的内网IP或者公网IP，nexushub.com替换成你想使用的域名。\n1. 前情回顾 我们在搭建自己的nexus私有仓库1&ndash;nexus初体验中是使用的以下命令启动nexus容器：\n1 2 3 [root@nexus ~]# docker run -d --restart always -p 8081:8081 --name nexus sonatype/nexus3:3.59.0 80bbd285db0bc84a50b785a2aeb688d8bf6879e5fa1381357fa1426a9f38148a [root@nexus ~]# 可以看到，docker容器启动没有没有设置持久化映射。当前只暴露了一个8081端口：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/create_your_nexus_4_docker_proxy/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -514,7 +514,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

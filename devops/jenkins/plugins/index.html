@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/jenkins/plugins/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="Jenkins插件推荐">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="Jenkins插件推荐">
 <meta property='og:description' content="Jenkins插件推荐 1. 配置jenkins插件清华源加速 清华大学jenkins代理地址 https://mirrors.tuna.tsinghua.edu.cn/jenkins/。 清华大学jenkins插件更新地址 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json。 ⚠️ 警告 hudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\nhudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\nhudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\n1.1 修改hudson.model.UpdateCenter.xml 直接进入到jenkins安装目录/var/lib/jenkins：\n1 2 [root@jenkins ~]# cd /var/lib/jenkins/ [root@jenkins jenkins]# 备份默认配置文件：\n1 [root@jenkins jenkins]# cp -p hudson.model.UpdateCenter.xml{,.bak} 修改配置文件：\n1 [root@jenkins jenkins]# sed -i &#39;s@https://updates.jenkins.io/update-center.json@https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json@g&#39; hudson.model.UpdateCenter.xml 修改完成后，查看配置信息：\n1 2 3 4 5 6 7 8 9 [root@jenkins jenkins]# cat hudson.model.UpdateCenter.xml &lt;?xml version=&#39;1.1&#39; encoding=&#39;UTF-8&#39;?&gt; &lt;sites&gt; &lt;site&gt; &lt;id&gt;default&lt;/id&gt; &lt;url&gt;https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json&lt;/url&gt; &lt;/site&gt; &lt;/sites&gt; [root@jenkins jenkins]# 1.2 修改default.json 切换到/var/lib/jenkins/updates/目录，查看default.json：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/jenkins/plugins/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -503,7 +503,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -853,25 +853,6 @@
             
                 
 <article class="has-image">
-    <a href="/devops/docker/jenkins_docs/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/img/jenkins_logo_icon_170552.png" loading="lazy" data-key="" data-hash="/img/jenkins_logo_icon_170552.png"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Jenkins Docs</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
     <a href="/devops/jenkins/jenkins_docs/">
         
         
@@ -891,7 +872,26 @@
             
                 
 <article class="has-image">
-    <a href="/devops/jenkins/install/">
+    <a href="/devops/docker/jenkins_docs/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/jenkins_logo_icon_170552.png" loading="lazy" data-key="" data-hash="/img/jenkins_logo_icon_170552.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Jenkins Docs</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/devops/docker/install/">
         
         
             <div class="article-image">
@@ -910,7 +910,7 @@
             
                 
 <article class="has-image">
-    <a href="/devops/docker/install/">
+    <a href="/devops/jenkins/install/">
         
         
             <div class="article-image">

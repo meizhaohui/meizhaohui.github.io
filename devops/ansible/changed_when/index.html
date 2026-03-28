@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/changed_when/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="changed_when与failed_when条件判断">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="changed_when与failed_when条件判断">
 <meta property='og:description' content="changed_when与failed_when条件判断 1. 概述 与when条件语句类似，我们可以使用changed_when语句和failed_when语句来对命令运行的结果进行判断。对于Ansible来说，其很难判断一个命令的运行是否符合我们的实际预期，尤其是当我们使用command模块和shell模块时，如果不使用changed_when语句，Ansible将永远返回changed。大部分模块都能正确返回运行结果是否对目标主机产生影响，我们依然可以使用changed_when语句来对返回信息进行重写，根据任务返回结果来判定任务的运行结果是否真正符合我们预期。 有一些命令会将自己的运行结果写入标准错误输出stderr中，而不是通常的标准输出stdout中，这时可以使用failed_when来对结果进行判断，从而告诉Ansible真正的运行结果到底是成功还是失败。 changed_when条件判断官方文档 Defining “changed” 。 failed_when条件判断官方文档 Defining failure 。 2. 官方示例 2.1 changed_when官方示例 通过changed_when可以让你通过程序退出码或输出结果决定是否向Ansible报告该任务的任务状态为changed改变状态。 多个 changed_when 条件的列表使用隐式and连接，这意味着任务仅在满足所有条件时报告更改。 如果要在满足任何条件时报告更改，则必须使用显式or运算符。 1 2 3 4 5 6 7 8 9 10 tasks: - name: Report &#39;changed&#39; when the return code is not equal to 2 ansible.builtin.shell: /usr/bin/billybass --mode=&#34;take me to the river&#34; register: bass_result changed_when: &#34;bass_result.rc != 2&#34; - name: This will never report &#39;changed&#39; status ansible.builtin.shell: wall &#39;beep&#39; changed_when: False 你也可以使用多个条件：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/changed_when/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -509,7 +509,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

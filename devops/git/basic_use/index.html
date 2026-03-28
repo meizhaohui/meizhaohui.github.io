@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/git/basic_use/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="git的基本使用">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="git的基本使用">
 <meta property='og:description' content="git的基本使用 修改Github历史提交记录中的username和email信息 GitHub提交时，发现github没有统计贡献值，多半是由于邮箱没有关联。\n下面是解决方法的具体步骤。\n克隆项目 克隆项目，并切换到项目根目录下：\n1 2 $ git clone git@github.com:meizhaohui/vueblog.git $ cd vueblog 查看本地配置的用户名和邮箱地址 1 2 3 4 5 6 7 8 $ git config --global user.email mistake@email.com $ git config user.email mistake@email.com $ git config --global user.name Zhaohui Mei $ git config user.name Zhaohui Mei 可以发现全局的和本项目的邮箱都是错的邮箱。\n修改全局和本项目的邮箱地址 将本地邮箱地址改成正确的邮箱。\n1 2 3 4 5 6 $ git config --global user.email &#34;mzh.whut@gmail.com&#34; $ git config user.email &#34;mzh.whut@gmail.com&#34; $ git config --global user.email mzh.whut@gmail.com $ git config user.email mzh.whut@gmail.com 配置修改脚本 项目根目录下面修改脚本文件，脚本内容如下：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/git/basic_use/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -512,7 +512,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

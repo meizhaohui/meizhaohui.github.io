@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_time_and_date_module_datetime/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="日期和时间模块-`datetime`日期时间模块">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="日期和时间模块-`datetime`日期时间模块">
 <meta property='og:description' content="日期和时间模块-datetime日期时间模块 查看datetime模块有哪些函数或方法：\n1 2 3 4 5 6 7 8 9 $ python Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:10:22) [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. &gt;&gt;&gt; import datetime &gt;&gt;&gt; datetime. datetime.date( datetime.datetime_CAPI datetime.MINYEAR datetime.time( datetime.timezone( datetime.datetime( datetime.MAXYEAR datetime.sys datetime.timedelta( datetime.tzinfo( &gt;&gt;&gt; exit() 似乎看起来datetime模块没有多少函数或方法，我们一个个的了解一下。\n参考：\nhttps://docs.python.org/3/library/datetime.html https://docs.python.org/zh-cn/3/library/datetime.html datetime模块提供用于处理日期和时间的类。\n在支持日期时间数学运算的同时，实现的关注点更着重于如何能够更有效地解析其属性用于格式化输出和数据操作。\n常量 date和datetime对象允许的最小、最大年份，最小年份为1，最大年份为9999。\n1 2 3 4 &gt;&gt;&gt; datetime.MINYEAR 1 &gt;&gt;&gt; datetime.MAXYEAR 9999 有效的类型 class datetime.date理想化的日期类。 class datetime.time理想化的时间类。 class datetime.datetime理想化日期和时间的结合。 class datetime.timedelta时间间隔。 class datetime.tzinfo抽象类，给date或time类提供自定义的时间调整概念。 class datetime.timezone时区设置，是tzinfo类的子类。 通用的特征属性 date, datetime, time和timezone类型共享这些通用特性:\n这些类型的对象都是不可变的。 这些类型的对象是可哈希的，这意味着它们可被作为字典的键。 这些类型的对象支持通过 pickle 模块进行高效的封存。 datetime.date日期类 初步使用date类：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 $ ipython Python 3.6.8 (v3.6.8:3c6b436a57, Dec 24 2018, 02:10:22) Type &#39;copyright&#39;, &#39;credits&#39; or &#39;license&#39; for more information IPython 7.13.0 -- An enhanced Interactive Python. Type &#39;?&#39; for help. &gt;&gt;&gt; import datetime &gt;&gt;&gt; datetime.date? Init signature: datetime.date(self, /, *args, **kwargs) Docstring: date(year, month, day) --&gt; date object File: /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/datetime.py Type: type Subclasses: datetime &gt;&gt;&gt; datetime.date() --------------------------------------------------------------------------- TypeError Traceback (most recent call last) &lt;ipython-input-3-76bd6ecec42c&gt; in &lt;module&gt; ----&gt; 1 datetime.date() TypeError: Required argument &#39;year&#39; (pos 1) not found 可以看到datetime.date类实例化时需要提供year, month, day三个参数。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_time_and_date_module_datetime/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -531,7 +531,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

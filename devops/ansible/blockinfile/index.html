@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/blockinfile/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="blockinfile文件块模块">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="blockinfile文件块模块">
 <meta property='og:description' content="blockinfile文件块模块 1. 概述 blockinfile模块可以在指定的文件中插入一段文本(即可以是多行)，这段文本是被标记过的，以便在以后的操作中可以通过标记找到这段文本，然后修改或者删除这段文本。 官方文档链接 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/blockinfile_module.html#ansible-collections-ansible-builtin-blockinfile-module blockinfile大部分参数与lineinfile模块参数相同，此处不再赘述。 2. 参数 参数 描述 block string 需要插入的文本行 marker string 标记器，默认值为“# {mark} ANSIBLE MANAGED BLOCK”，{mark}将会被marker_begin和marker_end的值替换 marker_begin string 块开头前的标记，默认BEGIN marker_end string 块结束时的标记，默认END 其他参数请参考官方文档。\n3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 ## Before Ansible 2.3, option &#39;dest&#39; or &#39;name&#39; was used instead of &#39;path&#39; - name: Insert/Update &#34;Match User&#34; configuration block in /etc/ssh/sshd_config ansible.builtin.blockinfile: path: /etc/ssh/sshd_config block: | Match User ansible-agent PasswordAuthentication no - name: Insert/Update eth0 configuration stanza in /etc/network/interfaces (it might be better to copy files into /etc/network/interfaces.d/) ansible.builtin.blockinfile: path: /etc/network/interfaces block: | iface eth0 inet static address 192.0.2.23 netmask 255.255.255.0 - name: Insert/Update configuration using a local file and validate it ansible.builtin.blockinfile: block: &#34;{{ lookup(&#39;ansible.builtin.file&#39;, &#39;./local/sshd_config&#39;) }}&#34; path: /etc/ssh/sshd_config backup: yes validate: /usr/sbin/sshd -T -f %s - name: Insert/Update HTML surrounded by custom markers after &lt;body&gt; line ansible.builtin.blockinfile: path: /var/www/html/index.html marker: &#34;&lt;!-- {mark} ANSIBLE MANAGED BLOCK --&gt;&#34; insertafter: &#34;&lt;body&gt;&#34; block: | &lt;h1&gt;Welcome to {{ ansible_hostname }}&lt;/h1&gt; &lt;p&gt;Last updated on {{ ansible_date_time.iso8601 }}&lt;/p&gt; - name: Remove HTML as well as surrounding markers ansible.builtin.blockinfile: path: /var/www/html/index.html marker: &#34;&lt;!-- {mark} ANSIBLE MANAGED BLOCK --&gt;&#34; block: &#34;&#34; - name: Add mappings to /etc/hosts ansible.builtin.blockinfile: path: /etc/hosts block: | {{ item.ip }} {{ item.name }} marker: &#34;# {mark} ANSIBLE MANAGED BLOCK {{ item.name }}&#34; loop: - { name: host1, ip: 10.10.1.10 } - { name: host2, ip: 10.10.1.11 } - { name: host3, ip: 10.10.1.12 } 4. 脚本的使用 4.1 添加块 我们参照官方示例进行测试，不使用真实的服务器文件，在/tmp目录下临时自动新建测试文件。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/blockinfile/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -507,7 +507,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

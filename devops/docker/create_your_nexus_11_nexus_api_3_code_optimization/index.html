@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="搭建自己的nexus私有仓库11--NexusAPI接口的使用优化">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="搭建自己的nexus私有仓库11--NexusAPI接口的使用优化">
 <meta property='og:description' content="搭建自己的nexus私有仓库11&ndash;Nexus API接口的使用优化 本文档是nexus系列课程第11篇。\nnexus系列课程第1篇，请参考 搭建自己的nexus私有仓库1&ndash;nexus初体验 nexus系列课程第2篇，请参考 搭建自己的nexus私有仓库2&ndash;创建python pypi代理 nexus系列课程第3篇，请参考 搭建自己的nexus私有仓库3&ndash;创建yum ius代理 nexus系列课程第4篇，请参考 搭建自己的nexus私有仓库4&ndash;创建docker私有仓库 nexus系列课程第5篇，请参考 搭建自己的nexus私有仓库5&ndash;测试docker仓库pull和push nexus系列课程第6篇，请参考 搭建自己的nexus私有仓库6&ndash;使用nginx反向代理 nexus系列课程第7篇，请参考 搭建自己的nexus私有仓库7&ndash;修改nexus容器时区 nexus系列课程第8篇，请参考 搭建自己的nexus私有仓库8&ndash;Nexus3的数据库结构 nexus系列课程第9篇，请参考 搭建自己的nexus私有仓库9&ndash;Nexus API接口的使用1 nexus系列课程第10篇，请参考 搭建自己的nexus私有仓库10&ndash;Nexus API接口的使用2 0. 情况说明 本篇是在前两篇的基础上，通过Python调用Nexus API接口创建Nexus相关仓库。\n需要完成以下需求：\n[√] Neuxs API接口调用时，是否有动态Token，如何正确获取API接口Token值。 [√] 创建docker blob对象存储，将docker单独存放在该blob对象存储中。 [√] 激活【Docker Bearer Token Realm】，让能够匿名下载Docker镜像。 [√] 创建yum、pypi、maven、docker之类的仓库，docker仓库由于涉及到三种类型的仓库创建，并且有端口配置，使用API时优先创建yum和pypi代理代理仓库来测试API接口。 快速创建一个用户账号，如账号名为devops，并将给其授权能够朝docker-hosted仓库推送镜像。 1. 优化Python代码 通过对比观察前两篇的Python代码可以发现以下特点：\npayload对应的json数据，可以直接写到Python代码中，也可以通过Python代码读取json文件来获取对应配置信息。 除了请求的API接口的url路径不一样，代码其他位置内容是一样的。 大部分的仓库可以直接根据json配置文件文件名来判断需要创建的仓库类型，为了自定义其他文件名，我们可以单独创建一个配置文件来定义json配置文件文件名与仓库类型的关系。 创建nexus_api文件夹，并在其中创建config配置文件夹：\nnexus_api文件夹目录结构如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 $ find . ./config ./config/docker-group.json ./config/docker-hosted.json ./config/docker-proxy.json ./config/epel-yum-proxy.json ./config/ius-yum-proxy.json ./config/maven-proxy.json ./config/nexus.yaml ./config/pypi-proxy.json ./config/yum-proxy.json ./main.py ./requirements.txt 1.1 定义nexus仓库的配置文件 config/nexus.yaml配置文件用于定义需要创建的仓库的配置文件与仓库类型的对应关系。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -505,7 +505,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

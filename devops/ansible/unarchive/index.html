@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/unarchive/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="unarchive模块">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="unarchive模块">
 <meta property='og:description' content="unarchive模块 1. 概要 unarchive模块用于对归档文件进行解压。 默认情况下，它会在解包之前将源文件从本地系统复制到目标系统。 如果设置remote_src=yes则表示解压远程主机上面的归档文件。 如果需要校验文件,请使用get_urlhttps://docs.ansible.com/ansible/2.9/modules/get_url_module.html#get-url-module或urlhttps://docs.ansible.com/ansible/2.9/modules/uri_module.html#uri-module模块，而不是fetch模块来获取文件，并且设置remote_src=yes。 官方文档：https://docs.ansible.com/ansible/latest/collections/ansible/builtin/unarchive_module.html#ansible-collections-ansible-builtin-unarchive-module 或 https://docs.ansible.com/ansible/2.9/modules/unarchive_module.html ::: warning 注意 Requires zipinfo and gtar/unzip command on target host.\nRequires zstd command on target host to expand .tar.zst files. Can handle .zip files using unzip as well as .tar, .tar.gz, .tar.bz2, .tar.xz, and .tar.zst files using gtar. Does not handle .gz files, .bz2 files, .xz, or .zst files that do not contain a .tar archive. Existing files/directories in the destination which are not in the archive are not touched. This is the same behavior as a normal archive extraction. Existing files/directories in the destination which are not in the archive are ignored for purposes of deciding if the archive should be unpacked or not. :::\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/unarchive/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -505,7 +505,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

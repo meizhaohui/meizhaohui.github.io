@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/zabbix/permission_denied/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="zabbix日志监控Permissiondenied权限异常处理">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="zabbix日志监控Permissiondenied权限异常处理">
 <meta property='og:description' content="zabbix日志监控Permission denied权限异常处理 1. 问题描述 配置了zabbix监控日志/var/log/messages时，页面显示监控项是“Not supported”不支持的。\n登陆到zabbix-agent节点，查看节点日志信息，发现日志报以下异常：\n1 2 3 4 5 6 7 8 9 10 11 [root@zabbix-agent ~]# tail -f /srv/zabbix/logs/zabbix_agentd.log 1687:20230315:202950.434 TLS support: NO 1687:20230315:202950.434 ************************** 1687:20230315:202950.434 using configuration file: /srv/zabbix/etc/zabbix_agentd.conf 1687:20230315:202950.434 agent #0 started [main process] 1688:20230315:202950.435 agent #1 started [collector] 1691:20230315:202950.435 agent #4 started [listener #3] 1689:20230315:202950.435 agent #2 started [listener #1] 1690:20230315:202950.435 agent #3 started [listener #2] 1692:20230315:202950.436 agent #5 started [active checks #1] 1692:20230315:220454.113 active check &#34;log[/var/log/messages,&#34;ERROR&#34;,,,skip,]&#34; is not supported: Cannot open file &#34;/var/log/messages&#34;: [13] Permission denied 即可知zabbix无/var/log/messages文件的权限。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/zabbix/permission_denied/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -504,7 +504,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

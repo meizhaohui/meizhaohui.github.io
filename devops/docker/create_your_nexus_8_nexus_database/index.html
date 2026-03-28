@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/create_your_nexus_8_nexus_database/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="搭建自己的nexus私有仓库8--Nexus3的数据库结构">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="搭建自己的nexus私有仓库8--Nexus3的数据库结构">
 <meta property='og:description' content="搭建自己的nexus私有仓库8&ndash;Nexus3的数据库结构 本文档是nexus系列课程第8篇。\nnexus系列课程第1篇，请参考 搭建自己的nexus私有仓库1&ndash;nexus初体验 nexus系列课程第2篇，请参考 搭建自己的nexus私有仓库2&ndash;创建python pypi代理 nexus系列课程第3篇，请参考 搭建自己的nexus私有仓库3&ndash;创建yum ius代理 nexus系列课程第4篇，请参考 搭建自己的nexus私有仓库4&ndash;创建docker私有仓库 nexus系列课程第5篇，请参考 搭建自己的nexus私有仓库5&ndash;测试docker仓库pull和push nexus系列课程第6篇，请参考 搭建自己的nexus私有仓库6&ndash;使用nginx反向代理 nexus系列课程第7篇，请参考 搭建自己的nexus私有仓库7&ndash;修改nexus容器时区 1. 情况说明 之前有一个需求，是在docker启动nexus容器后，自动创建代理仓库，不用手动在Web上面操作，最开始的思路是想通过修改数据库来实现。但后来发现nexus有api接口可以使用，因此改用curl或Python程序调用nexus的API接口来创建代理仓库。\n但此处还是简单看一下数据库的里面的表信息。\n1.1 登陆进neuxs容器命令行 1 2 3 [root@nexus ~]# docker exec -it nexus /bin/bash bash-4.4$ pwd /opt/sonatype 1.2 查看db文件夹文件信息 查看db目录下的文件夹的信息：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 bash-4.4$ cd /opt/sonatype/sonatype-work/nexus3/db bash-4.4$ pwd /opt/sonatype/sonatype-work/nexus3/db bash-4.4$ ls -lah total 48K drwxr-xr-x 6 nexus nexus 4.0K Jan 21 19:37 . drwxrwxrwx 16 root root 4.0K Jan 29 21:07 .. drwxr-xr-x 2 nexus nexus 4.0K Jan 28 23:19 OSystem drwxr-xr-x 2 nexus nexus 12K Jan 29 22:14 component drwxr-xr-x 2 nexus nexus 12K Jan 29 21:13 config -rw-r--r-- 1 nexus nexus 2 Jan 21 19:37 frozen.marker -rw-r--r-- 1 nexus nexus 93 Jan 21 19:37 model.properties drwxr-xr-x 2 nexus nexus 4.0K Jan 29 21:08 security bash-4.4$ 2.数据库查询 2.1 数据库component组件库命令行操作 2.1.1 进入到数据库component组件库命令行 进入到数据库命令行：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/create_your_nexus_8_nexus_database/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -524,7 +524,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

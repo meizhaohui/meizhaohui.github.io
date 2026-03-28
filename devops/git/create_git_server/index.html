@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/git/create_git_server/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="CentOS7用git-daemon搭建Git服务器">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="CentOS7用git-daemon搭建Git服务器">
 <meta property='og:description' content="CentOS7用git-daemon搭建Git服务器 ::: danger 危险\n特别说明：使用git daemon开启receive-pack服务后，任何人可以匿名访问git存储库，非常不安全，建议考虑使用gitolite项目来进行权限控制。\n:::\n为方便测试，我们在服务器上面使用docker 和 docker-compose来运行CentOS7容器，并在容器中运行git-daemon服务。\n1. 准备工作 安装docker，并启动docker服务。 安装docker-compose包。 查看docker和docker-compose版本信息：\n1 2 3 4 5 [root@hellogitlab ~]# docker --version Docker version 20.10.12, build e91ed57 [root@hellogitlab ~]# docker-compose --version docker-compose version 1.26.2, build unknown [root@hellogitlab ~]# 2. 容器配置 2.1 编写docker-compose.yaml文件 创建文件夹/dockerdata/gitserver并在该文件中创建docker-compose.yaml文件：\n1 2 3 4 5 6 ## 创建gitserver目录 [root@hellogitlab ~]# mkdir -p /dockerdata/gitserver ## 创建持久化目录 [root@hellogitlab ~]# mkdir -p /dockerdata/gitserver/repos [root@hellogitlab ~]# cd /dockerdata/gitserver [root@hellogitlab gitserver]# touch docker-compose.yaml 然后使用vim编辑该文件，其内容如下：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/git/create_git_server/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -514,7 +514,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

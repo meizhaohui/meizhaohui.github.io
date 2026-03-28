@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/file/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="file文件模块">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="file文件模块">
 <meta property='og:description' content="file文件模块 1. 基础知识储备 我们先来学习一下一些基础知识。主要涉及stat、chattr、lsattr命令。\nstat，display file or file system status，显示文件或文件系统状态。\nchattr，change file attributes on a Linux file system，改变文件属性。\nlsattr ， list file attributes on a Linux second extended file system，查看文件属性。\n下面摘录了chattr的man手册页部分内容：\nNAME chattr - change file attributes on a Linux file system\nSYNOPSIS chattr [ -RVf ] [ -v version ] [ mode ] files&hellip;\nDESCRIPTION chattr changes the file attributes on a Linux file system.\nThe format of a symbolic mode is +-=[aAcCdDeijsStTu]. The operator '+' causes the selected attributes to be added to the existing attributes of the files; '-' causes them to be removed; and '=' causes them to be the only attributes that the files have. The letters 'aAcCdDeijsStTu' select the new attributes for the files: append only (a), no atime updates (A), compressed (c), no copy on write (C), no dump (d), synchronous directory updates (D), extent format (e), immutable (i), data journalling (j), secure deletion (s), synchronous updates (S), no tail-merging (t), top of directory hierarchy (T), and undeletable (u). The following attributes are read-only, and may be listed by lsattr(1) but not modified by chattr: compression error (E), huge file (h), indexed direc‐ tory (I), inline data (N), compression raw access (X), and compressed dirty file (Z). Not all flags are supported or utilized by all filesystems; refer to filesystem-specific man pages such as btrfs(5), ext4(5), and xfs(5) for more filesystem-specific details. 需要注意一点是，并不是所有的文件系统都支持所有标志，如可以通过man ext4和man xfs查看ext4或xfs文件格式支持的文件属性标志。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/file/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -523,7 +523,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

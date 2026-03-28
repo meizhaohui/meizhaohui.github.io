@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/centos/x_virtualbox_install_centos7/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="在VirtualBox中安装CentOS7虚拟机系统">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="在VirtualBox中安装CentOS7虚拟机系统">
 <meta property='og:description' content="在VirtualBox中安装CentOS7虚拟机系统 有时我们在学习一些新的知识时，需要使用VitualBox或者VMware配置和安装虚拟机系统，并在虚拟机系统中进行一些实验操作。\n今天再次总结一下在VirtualBox中安装CentOS7虚拟机。你也可以使用VMware workstation创建虚拟机，由于我使用VMware workstation创建虚拟机时，VMware workstation启动卡顿，感觉电脑卡顿严重，VitualBox相对来说轻量一些。\nWindows系统中安装VirtualBox 可以在腾讯软件中心下载VirtualBox, https://pc.qq.com/detail/3/detail_1023.html,也可以在官网下载，下载完成后直接双击virtualbox-Win-latest_6.0.12.exe可执行文件安装即可。\n双击桌面中的Oracle VM VirtualBox图标，可以打开VirtualBox应用。\n下载CentOS7镜像 可以在CentOS官网https://www.centos.org/download下载镜像，但由于网络原因在官网下载速度可能很慢，因此建议使用国内的镜像站去下载，如阿里云的镜像站，清华大学的镜像站。\n我们使用CentOS-7-x86_64-Minimal-1810.iso这个版本。\n新建CentOS7虚拟机 我们在VirtualBox中新建虚拟机。\n新建虚拟机，设置虚拟机名称： ::: warning 警告\n如果你看到的版本选项只有32-bit，没有64-bit的话，极有可能你的电脑BIOS未开启虚拟化技术，请进入BIOS修改。\n:::\n设置虚拟机内存 将默认的1024MB改成2048MB：\n现在创建虚拟机 点击&quot;创建&quot;即可：\n使用默认的硬盘文件类型 设置动态分配物理硬盘 创建虚拟硬盘 设置虚拟硬盘大小为20GB，并点击“创建”按钮：\n此时创建出了一个CentOS7的虚拟机：\n注意，此时不要点击“启动”按钮，还需要进行一些配置。我们先关注一下网络配置，待会再来设置虚拟机的其他设置。\nVirtualBox虚拟机网络环境配置 VirtualBox安装完成后，会在设备管理器-&gt;网络适配器中增加一个名称为&quot;VirutalBox Host-Only Ethernet Adapter&quot;的适配器：\n我们在控制面板\\网络和 Internet\\网络连接中查看这个网络：\n可以看到它现在没有发包也没有接收包：\n我们为“以太网2”配置一下DNS.\nVitualBox网络适配器DNS配置 首先，我们查看宿主机的网络详情：\n可以看到宿主机的IPv4 DNS服务器信息，记录下这两个IP字段信息，我的信息如上图中的：\n192.168.1.1 202.103.x.x 我们给VirtualBox网络适配器配置一下DNS:\n查看VirtualBox主机网络管理器 记住上面的最小地址和最大地址：\n最小地址：192.168.56.3\n">
 <meta property='og:url' content='https://hellogitlab.com/os/centos/x_virtualbox_install_centos7/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -532,7 +532,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -578,8 +578,8 @@
             
             
             
-            <a href="/categories/os/" style="background-color: hsl(167, 60%, 84%); color: hsl(167, 60%, 15%);">
-                Os
+            <a href="/categories/os/" style="background-color: hsl(135, 60%, 84%); color: hsl(135, 60%, 15%);">
+                OS
             </a>
         
             

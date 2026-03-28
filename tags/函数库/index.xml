@@ -1492,7 +1492,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;abort()&lt;/code&gt;函数 属于 &lt;strong&gt;C 标准库&lt;/strong&gt;，头文件是&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-</description>
+&lt;h5 id=&#34;626-字符串处理的库函数&#34;&gt;6.2.6 字符串处理的库函数
+&lt;/h5&gt;</description>
         </item>
         
     </channel>

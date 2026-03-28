@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/miniconda/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="miniconda的使用">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="miniconda的使用">
 <meta property='og:description' content="miniconda的使用 1. 概述 Python最新版本信息，可在Python官网查看 https://www.python.org/downloads/ 。 miniconda与Python最新版本的对应关系，请参考 Latest Miniconda installer links by Python version 。 如果在公司里面使用，担心miniconda授权问题的话，可以使用 miniforge 替代。使用方法类似。 如果 Miniconda 使用到 Anaconda 的包，也是需要收费的。而 Miniconda 默认使用 defaults 仓库，这是 Anaconda提供的官方仓库。也就是说，如果你直接下载 Miniconda 而不做任何配置，那肯定会用到 Anaconda 中的商业包。如果在公司使用，就会违反协议，给公司带来不必要的麻烦。\n2. 下载和安装miniconda 2.1 下载miniconda 在Python官网下载页面 https://www.python.org/downloads/ 可以看到当前Python 安全版本是Python 3.10：\n然后在 Latest Miniconda installer links by Python version 页面下载Python 3.10版本对应的miniconda：\n在这个位置可以看到文件的SHA256 哈希值是: 8eb5999c2f7ac6189690d95ae5ec911032fa6697ae4b34eb3235802086566d78 。\n2.2 检验miniconda文件 将下载下来的Miniconda3-py310_24.1.2-0-Linux-x86_64.sh文件上传到远程Linux服务器root家目录下。\n校验文件：\n1 2 3 [root@ansible-node3 ~]# sha256sum Miniconda3-py310_24.1.2-0-Linux-x86_64.sh |grep &#39;8eb5999c2f7ac6189690d95ae5ec911032fa6697ae4b34eb3235802086566d78&#39; 8eb5999c2f7ac6189690d95ae5ec911032fa6697ae4b34eb3235802086566d78 Miniconda3-py310_24.1.2-0-Linux-x86_64.sh [root@ansible-node3 ~]# 可以看到校验通过，说明文件正常。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/miniconda/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -511,7 +511,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

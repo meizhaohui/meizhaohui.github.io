@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/timezone/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="timezone模块">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="timezone模块">
 <meta property='og:description' content="timezone模块 0. 时区说明 CST表示中国标准时间(China Standard Time)。中国标准时间(CST)比世界协调时间(UTC)早08:00小时。该时区为标准时区时间，主要用于 亚洲。对应时区名称Asia/Shanghai。 JST表示日本标准时间(Japan Standard Time)。日本标准时间(JST)比世界协调时间(UTC)早09:00小时。该时区为标准时区时间，主要用于 亚洲。对应时区名称Asia/Tokyo。 UTC(Universal Time Coordinated)，协调世界时，又称世界统一时间、世界标准时间、国际协调时间。由于英文（CUT）和法文（TUC）的缩写不同，作为妥协，简称UTC。 1. 概要 timezona模块可以用来设置远程主机的时区信息。 推荐在修改时区信息后，重启一下crond定时任务服务，避免定时任务在错误的时间运行。 官方文档：https://docs.ansible.com/ansible/2.9/modules/timezone_module.html 2. 参数 参数 可选值 默认值 说明 name string，系统时钟的时区名称。 hwclock local、UTC string，硬件时钟是采用 UTC 还是采用本地时区。默认是保持当前设置。注意这个选项建议不要更改，可能会配置失败，尤其是在AWS等虚拟环境中。name和hwclock参数至少要配置一个。 3. 官方示例 1 2 3 - name: Set timezone to Asia/Tokyo timezone: name: Asia/Tokyo 4. 剧本的使用 先在node1节点上面检查一下当前时间和crond服务信息：\n1 2 3 4 5 6 7 8 9 10 11 12 13 [root@node1 ~]# date Sun Mar 19 08:28:22 CST 2023 [root@node1 ~]# systemctl status crond ● crond.service - Command Scheduler Loaded: loaded (/usr/lib/systemd/system/crond.service; enabled; vendor preset: enabled) Active: active (running) since Thu 2022-03-17 09:12:52 CST; 1 years 0 months ago Main PID: 1582 (crond) Tasks: 1 Memory: 1.5M CGroup: /system.slice/crond.service └─1582 /usr/sbin/crond -n Warning: Journal has been rotated since unit was started. Log output is incomplete or unavailable. 可知node1节点当前系统使用的是CST中国标准时间。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/timezone/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -501,7 +501,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

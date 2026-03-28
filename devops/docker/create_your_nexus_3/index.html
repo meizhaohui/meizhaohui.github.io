@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/create_your_nexus_3/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="搭建自己的nexus私有仓库3--创建yumius代理">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="搭建自己的nexus私有仓库3--创建yumius代理">
 <meta property='og:description' content="搭建自己的nexus私有仓库3&ndash;创建yum ius代理 本文档是nexus系列课程第3篇。\nnexus系列课程第1篇，请参考 搭建自己的nexus私有仓库1&ndash;nexus初体验 nexus系列课程第2篇，请参考 搭建自己的nexus私有仓库2&ndash;创建python pypi代理 本文计划做以下事情：\n使用nexus创建yum ius代理仓库。 以下是实验环境：\n主机 IP 主机名 操作系统 docker版本 自定义域名 1 192.168.56.11 nexus CentOS 7.6.1810 20.10.5 nexushub.com 2 192.168.56.12 master CentOS 7.6.1810 20.10.5 0. 准备工作 请在主机2以及你的电脑上面配置域名解析：\n1 2 [root@master ~]# tail -n 1 /etc/hosts 192.168.56.11 nexushub.com 注意，实际操作时，请将192.168.56.11替换成你服务器的内网IP或者公网IP，nexushub.com替换成你想使用的域名。\nIUS相关介绍:\n使用centos 经常发现官方提供的软件包版本过低，很多时候大家会选择下载源码自行编译，带来了很多麻烦。centos安装最新版本软件包，例如git,python等，可以通过红帽官方提供的software collection，或者社区提供的ius实现。 IUS是一个社区维护的软件源，全名是Inline with Upstream Stable，官网为https://ius.io/，通过github组织社区https://github.com/iuscommunity IUS被git帮助文档推荐作为centos等系统安装新版本git的第三方源：https://git-scm.com/download/linux 。\n清华大学源使用的ius.repo文件：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 [ius] name = IUS for Enterprise Linux 7 - $basearch baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/$basearch/ enabled = 1 repo_gpgcheck = 0 gpgcheck = 1 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-IUS-7 [ius-debuginfo] name = IUS for Enterprise Linux 7 - $basearch - Debug baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/$basearch/debug/ enabled = 0 repo_gpgcheck = 0 gpgcheck = 1 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-IUS-7 [ius-source] name = IUS for Enterprise Linux 7 - Source baseurl = https://mirrors.tuna.tsinghua.edu.cn/ius/7/src/ enabled = 0 repo_gpgcheck = 0 gpgcheck = 1 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-IUS-7 1. nexus创建yum ius代理仓库 上一节中，我们知道通过点击页面顶部的齿轮设置图标：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/create_your_nexus_3/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -500,7 +500,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="只读用户reader执行部分docker命令">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="只读用户reader执行部分docker命令">
 <meta property='og:description' content="只读用户reader执行部分docker命令 1. 概述 当一个普通用户（我们假设是只读用户reader）执行docker ps时，会报以下异常：\n1 2 3 [reader@nexus ~]$ docker ps Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json: dial unix /var/run/docker.sock: connect: permission denied [reader@nexus ~]$ docker进程使用Unix Socket而不是TCP端口。而默认情况下，Unix socket属于root用户，需要root权限才能访问。可通过以下命令可以确认：\n1 2 3 4 5 6 7 8 9 10 11 12 [root@nexus ~]# ls -lah /var/run/docker.sock srw-rw---- 1 root docker 0 Jan 29 2024 /var/run/docker.sock [root@nexus ~]# stat /var/run/docker.sock File: ‘/var/run/docker.sock’ Size: 0 Blocks: 0 IO Block: 4096 socket Device: 14h/20d Inode: 279557849 Links: 1 Access: (0660/srw-rw----) Uid: ( 0/ root) Gid: ( 991/ docker) Access: 2025-02-23 22:29:56.307183105 +0800 Modify: 2024-01-29 20:42:31.572778347 +0800 Change: 2024-01-29 20:42:31.594778249 +0800 Birth: - [root@nexus ~]# 可以看到，root用户和docker组可以对其进行操作。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -498,7 +498,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">

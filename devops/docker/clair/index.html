@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/clair/'>
 
-<link rel="stylesheet" href="/scss/style.min.15dac538e2a5a35a405cc2691325bba57ece6d9e18177ccec3e368d176d4c386.css"><meta property='og:title' content="使用clair扫描Docker镜像漏洞">
+<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="使用clair扫描Docker镜像漏洞">
 <meta property='og:description' content="使用clair扫描Docker镜像漏洞 参考:\nhttps://github.com/arminc/clair-scanner 我们可以通过clair来扫描Docker镜像漏洞。\n1. 安装基础工具 我们需要安装git和golang:\n1 $ sudo yum install -y git golang 查看git和golang的版本信息：\n1 2 3 4 $ git --version git version 2.24.4 $ go version go version go1.16.13 linux/amd64 配置go加速：\n1 2 3 4 5 6 7 ## Golang environment settings export GOROOT=/usr/lib/golang # golang install path export GOPATH=~/data/go_data # golang workspace export GOBIN=${GOPATH}/bin # golang exe files export PATH=${GOBIN}:${PATH} export GOPROXY=https://goproxy.cn export GO111MODULE=on 将以上配置加入到~/.bashrc文件中，并使用source ~/.bashrc加载配置。\n2. 编译安装clair-scanner 1 2 3 4 5 6 7 8 9 10 ## Clone the repo 下载代码 $ git clone https://github.com/arminc/clair-scanner.git ## Build and install 构建和安装 $ cd clair-scanner $ make build $ make installLocal ## Run 运行 $ ./clair-scanner -h 3. 下载镜像 1 2 3 4 5 ## 下载漏洞数据库镜像 $ docker pull arminc/clair-db ## 下载clair-local-scan镜像 $ docker pull arminc/clair-local-scan:v2.1.8_9bca9a9a7bce2fd2e84efcc98ab00c040177e258 查看镜像：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/clair/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -502,7 +502,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
