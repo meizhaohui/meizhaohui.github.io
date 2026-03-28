@@ -463,6 +463,7 @@
                 <li><a href="#622-在字符串是查找特定字符的位置">6.2.2 在字符串是查找特定字符的位置</a></li>
                 <li><a href="#623-转换字符串中的大写字母为小写字母">6.2.3 转换字符串中的大写字母为小写字母</a></li>
                 <li><a href="#624-复制字符串">6.2.4 复制字符串</a></li>
+                <li><a href="#625-自定义字符串函数的其他需求">6.2.5 自定义字符串函数的其他需求</a></li>
               </ul>
             </li>
           </ul>
@@ -515,7 +516,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -614,7 +615,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 7 分钟
+                    阅读时长: 10 分钟
                 </time>
             </div>
         
@@ -1735,6 +1736,379 @@
 	
 ></p>
 <p>可以看到，正常将源字符串复制到目录字符串上面了。</p>
+<h5 id="625-自定义字符串函数的其他需求">6.2.5 自定义字符串函数的其他需求
+</h5><ul>
+<li>让函数支持链式表达式。这种就希望函数有返回值。以上面的<code>strCopy</code>函数为例，当<code>return destination</code>时，就可以返回目标字符串的首地址。</li>
+</ul>
+<p>我们来测试一下：</p>
+<p>对程序进行一下优化：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将源字符串复制到目标字符串中
+</span></span></span><span class="line"><span class="cl"><span class="kt">char</span><span class="o">*</span> <span class="nf">strCopy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">destination</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">source</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span><span class="o">*</span> <span class="n">returnValue</span> <span class="o">=</span> <span class="n">destination</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">source</span> <span class="o">==</span> <span class="nb">NULL</span> <span class="o">||</span> <span class="n">destination</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 遍历字符串一定要用临时指针，不要动原始指针！
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 用临时指针遍历，不修改原始 source
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">source</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针p指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 直接将当前字符复制到目录字符对应位置
+</span></span></span><span class="line"><span class="cl">        <span class="o">*</span><span class="n">destination</span> <span class="o">=</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量p的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">destination</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 最后补字符串结束符
+</span></span></span><span class="line"><span class="cl">    <span class="o">*</span><span class="n">destination</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">returnValue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将字符串中小写字母转换成大写字符
+</span></span></span><span class="line"><span class="cl"><span class="kt">char</span><span class="o">*</span> <span class="nf">toUpperCase</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span><span class="o">*</span> <span class="n">returnValue</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 由于需要对原始字符串进行修改，此处不使用临时指针
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针str指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 打印当前字符和内存地址
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// printf(&#34;当前字符%c的地址为：%p\n&#34;, *p, p);
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// 判断是否是小写字母
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">&gt;=</span> <span class="sc">&#39;a&#39;</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str</span> <span class="o">&lt;=</span> <span class="sc">&#39;z&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="o">*</span><span class="n">str</span> <span class="o">-=</span> <span class="sc">&#39;a&#39;</span> <span class="o">-</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量str的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">returnValue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个字符串
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">str_a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;L&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">str_b</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_a的首地址为：%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_a中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toUpperCase</span><span class="p">(</span><span class="nf">strCopy</span><span class="p">(</span><span class="n">str_b</span><span class="p">,</span> <span class="n">str_a</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_b中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 测试空指针异常
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">source</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;ABCDefgh&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串source的内容是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">source</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">dest</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toUpperCase</span><span class="p">(</span><span class="nf">strCopy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">source</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串dest  复制转换后是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">dest</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/img/Snipaste_2026-03-28_20-23-11.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-03-28_20-23-11.png"
+	
+	
+></p>
+<p>可以看到<code>toUpperCase(strCopy(str_b, str_a));</code>和<code>toUpperCase(strCopy(dest, source));</code>实现了字符串的复制，并将复制后的字符串变成大写字母。</p>
+<ul>
+<li>使用断方检查非法参数值。函数的作者和调用者可能不是一个人，即使是同一个人写的程序在调用函数时也可能会犯错。作为函数的作者，我们要防范函数的调用者传入不恰当的参数。比如画圆的时候，用户传入了一个负值作为圆的半径，这个时候用负数画圆就会有问题。</li>
+<li>C语言中可以使用<code>断言(assert)</code>，程序运行到断言处如果断言不成立，则立即终止程序运行，而不会执行后面的语句。这种机制可以帮助程序员快速发现可能存在问题的地方，而不是等到一个错误导致了另一个错误时再来追查。</li>
+</ul>
+<p>以上面的代码为例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// L06_01_COMMON_TOOLS.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 通用工具库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;assert.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将源字符串复制到目标字符串中
+</span></span></span><span class="line"><span class="cl"><span class="kt">char</span><span class="o">*</span> <span class="nf">strCopy</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">destination</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">source</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span><span class="o">*</span> <span class="n">returnValue</span> <span class="o">=</span> <span class="n">destination</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">assert</span><span class="p">(</span><span class="n">source</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">destination</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">source</span> <span class="o">==</span> <span class="nb">NULL</span> <span class="o">||</span> <span class="n">destination</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 遍历字符串一定要用临时指针，不要动原始指针！
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 用临时指针遍历，不修改原始 source
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="n">source</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针p指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">p</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 直接将当前字符复制到目录字符对应位置
+</span></span></span><span class="line"><span class="cl">        <span class="o">*</span><span class="n">destination</span> <span class="o">=</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量p的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">destination</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 最后补字符串结束符
+</span></span></span><span class="line"><span class="cl">    <span class="o">*</span><span class="n">destination</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">returnValue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 将字符串中小写字母转换成大写字符
+</span></span></span><span class="line"><span class="cl"><span class="kt">char</span><span class="o">*</span> <span class="nf">toUpperCase</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span><span class="o">*</span> <span class="n">returnValue</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">assert</span><span class="p">(</span><span class="n">str</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 由于需要对原始字符串进行修改，此处不使用临时指针
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 判断指针str指向的值是否为字符串结束符&#39;\0&#39;
+</span></span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 打印当前字符和内存地址
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// printf(&#34;当前字符%c的地址为：%p\n&#34;, *p, p);
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// 判断是否是小写字母
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span> <span class="o">&gt;=</span> <span class="sc">&#39;a&#39;</span> <span class="o">&amp;&amp;</span> <span class="o">*</span><span class="n">str</span> <span class="o">&lt;=</span> <span class="sc">&#39;z&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="o">*</span><span class="n">str</span> <span class="o">-=</span> <span class="sc">&#39;a&#39;</span> <span class="o">-</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指针变量str的值+1,表示指向下一个元素
+</span></span></span><span class="line"><span class="cl">        <span class="n">str</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">returnValue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个字符串
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">str_a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;L&#39;</span><span class="p">,</span><span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span>  <span class="n">str_b</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_a的首地址为：%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_a中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toUpperCase</span><span class="p">(</span><span class="nf">strCopy</span><span class="p">(</span><span class="n">str_b</span><span class="p">,</span> <span class="n">str_a</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符数组str_b中存储的字符串是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">str_b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 测试空指针异常
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">str_a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">source</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;ABCDefgh&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串source的内容是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">source</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">dest</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">toUpperCase</span><span class="p">(</span><span class="nf">strCopy</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">source</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;字符串dest  复制转换后是：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">dest</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>11行加入了个断言判断<code>assert(source != NULL &amp;&amp; destination != NULL);</code>，然后执行程序：</p>
+<p><img src="/img/Snipaste_2026-03-28_21-16-01.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-03-28_21-16-01.png"
+	
+	
+></p>
+<p>前面的运行正常了，在运行测试空指针异常时代码时，就直接调用<code>abort()</code>，并且输出中<code>file D:\BC101\Examples\L06\L06_01_COMMON_TOOLS\L06_01_COMMON_TOOLS.cpp, line 11</code> 暴露<strong>源码路径、行号</strong>，不安全。</p>
+<ul>
+<li><code>abort()</code>函数 属于 <strong>C 标准库</strong>，头文件是<code>#include &lt;stdlib.h&gt;</code>。</li>
+</ul>
 
 </section>
 
