@@ -467,7 +467,11 @@
                 <li><a href="#626-字符串处理的库函数">6.2.6 字符串处理的库函数</a></li>
               </ul>
             </li>
-            <li><a href="#63-处理键盘输入">6.3 处理键盘输入</a></li>
+            <li><a href="#63-处理键盘输入">6.3 处理键盘输入</a>
+              <ul>
+                <li><a href="#631-使用scanf函数输入数值">6.3.1 使用scanf函数输入数值</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -518,7 +522,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -2135,7 +2139,8 @@
 <li><code>scanf</code>函数还做了一件事：自动在用户输入的最后一个字符后加上字符串终止符<code>\n</code>并一起送入到数组，这一点很重要！！！</li>
 <li>默认情况下，从键盘缓冲区取字符串时遇到空格就“停止搬运”是C语言标准中对<code>scanf</code>函数的规定。</li>
 </ul>
-<p><code>scanf</code>函数的原型如下：</p>
+<h5 id="631-使用scanf函数输入数值">6.3.1 使用scanf函数输入数值
+</h5><p><code>scanf</code>函数的原型如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2893,6 +2898,9 @@
 ></p>
 <p>没有出现异常读回车符的现象了！！</p>
 <p>通过以上测试，后续任何时候，只要<code>scanf</code>读取用户输入，就马上用<code>clearInputBuffer();</code>清空键盘缓冲区。</p>
+<ul>
+<li>让用户在一行中输入多项数据不是一个很好的主意，这会降低用户界面的友好性，用户也容易发生错误！</li>
+</ul>
 
 </section>
 

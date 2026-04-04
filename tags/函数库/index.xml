@@ -1516,7 +1516,8 @@
 &lt;li&gt;&lt;code&gt;scanf&lt;/code&gt;函数还做了一件事：自动在用户输入的最后一个字符后加上字符串终止符&lt;code&gt;\n&lt;/code&gt;并一起送入到数组，这一点很重要！！！&lt;/li&gt;
 &lt;li&gt;默认情况下，从键盘缓冲区取字符串时遇到空格就“停止搬运”是C语言标准中对&lt;code&gt;scanf&lt;/code&gt;函数的规定。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;scanf&lt;/code&gt;函数的原型如下：&lt;/p&gt;
+&lt;h5 id=&#34;631-使用scanf函数输入数值&#34;&gt;6.3.1 使用scanf函数输入数值
+&lt;/h5&gt;&lt;p&gt;&lt;code&gt;scanf&lt;/code&gt;函数的原型如下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2274,6 +2275,9 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;没有出现异常读回车符的现象了！！&lt;/p&gt;
 &lt;p&gt;通过以上测试，后续任何时候，只要&lt;code&gt;scanf&lt;/code&gt;读取用户输入，就马上用&lt;code&gt;clearInputBuffer();&lt;/code&gt;清空键盘缓冲区。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;让用户在一行中输入多项数据不是一个很好的主意，这会降低用户界面的友好性，用户也容易发生错误！&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         
