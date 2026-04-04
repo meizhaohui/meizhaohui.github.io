@@ -518,7 +518,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -617,7 +617,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 12 分钟
+                    阅读时长: 14 分钟
                 </time>
             </div>
         
@@ -2585,6 +2585,9 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时输入超长字符也不会溢出。 <strong>用 scanf_s 会直接拦截超长并返回 0</strong> 。</p>
+<ul>
+<li><code>scanf_s</code>函数这样设计体现了一个重要的原则：<strong>一个操作要么全部成功，要么全部失败。</strong></li>
+</ul>
 <p>输出示例：</p>
 <p><img src="/img/Snipaste_2026-04-03_22-59-37.png"
 	
@@ -2597,6 +2600,299 @@
 	
 ></p>
 <p>如果是需要跨平台执行，则还是推荐使用 <strong><code>%9s</code> 这种带长度的格式</strong> 。</p>
+<p>使用scanf函数输入多项数据，请看以下示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L06_07_SCANF_MULTI_VARIABLES.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入三个字符，中间用英文逗号,分隔开</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%c,%c,%c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的三个字符是:</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序：</p>
+<p><img src="/img/Snipaste_2026-04-04_16-25-12.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-04_16-25-12.png"
+	
+	
+></p>
+<p>由于我故意在输入<code>a</code>字母前输入了空格，这个时候程序就先读了空格，然后空格后面又没有<code>,</code>逗号，所以后面的字符b和字符c都没有匹配到，打印出了两个问题。</p>
+<p>如果严格按字符后面加<code>,</code>逗号输入则可以正常显示：</p>
+<p><img src="/img/Snipaste_2026-04-04_16-45-10.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-04_16-45-10.png"
+	
+	
+></p>
+<p>为了让用户不严格输入，也能正常接收，可以在<code>%c</code>前后都加空格：</p>
+<ul>
+<li>
+<p><code>scanf</code> 里的<strong>空格 = 匹配任意空白（空格、换行、Tab）</strong></p>
+</li>
+<li>
+<p>想让输入<strong>不严格、不挑剔</strong>，就在 <code>%c</code> 和 <code>,</code> <strong>前后都加空格</strong></p>
+</li>
+</ul>
+<p>优化版本1，代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L06_07_SCANF_MULTI_VARIABLES.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入三个字符，中间用英文逗号,分隔开</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// scanf(&#34;%c,%c,%c&#34;, &amp;a, &amp;b, &amp;c);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 优化，支持换行、空格、Tab
+</span></span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34; %c , %c , %c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的三个字符是:</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出如下：</p>
+<p><img src="/img/Snipaste_2026-04-04_16-48-35.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-04_16-48-35.png"
+	
+	
+></p>
+<p>可以看到， 在输入字符<code>a</code>前面是输入了多个空格，然后<code>a</code>后面有个空格，然后再是<code>,</code>逗号，再输入了一个<code>Tab</code>键，<code>b</code>后面又接了2个空格，再是一个<code>,</code>逗号，然后是输入了回车（也就是一个换行符），最后再输入的<code>c</code>。</p>
+<p><code>scanf</code>正常读取到三个字母，然后正常输出了！！！</p>
+<p>这个时候虽然输入字符没问题，但是还是存在隐藏bug。如果后面还有一个<code>scanf</code>读取字符，会直接读取键盘缓冲区的回车！！</p>
+<p>请看以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L06_07_SCANF_MULTI_VARIABLES.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入三个字符，中间用英文逗号,分隔开</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// scanf(&#34;%c,%c,%c&#34;, &amp;a, &amp;b, &amp;c);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 优化，支持换行、空格、Tab
+</span></span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34; %c , %c , %c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的三个字符是:</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序：</p>
+<p><img src="/img/Snipaste_2026-04-04_17-05-45.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-04_17-05-45.png"
+	
+	
+></p>
+<p>在输入<code>a,b,c</code>按回车后，第一个<code>scanf</code>将<code>a,b,c</code>字符读取到到，此时键盘缓冲区还存在一个回车！！</p>
+<p><strong><code>%c</code> 不会跳过任何字符，直接读取缓冲区里的第一个东西 → <code>\n</code></strong></p>
+<p>此时，<strong>变量 d 读到的不是你新输入的字符</strong>，<strong>而是上一次输入残留的回车符！</strong></p>
+<p>还没来得及输入程序就自动输出了回车符（现象就是 输出一个<strong>空行</strong>。 ），这就复现了这个隐藏bug了。</p>
+<p>因此， <strong>每次 scanf 后清空缓冲区 = 最稳健的编程习惯</strong> 。</p>
+<p>优化版本2，代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L06_07_SCANF_MULTI_VARIABLES.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 正确的清空缓冲区函数
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">clearInputBuffer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">((</span><span class="n">c</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">())</span> <span class="o">!=</span> <span class="sc">&#39;\n&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">!=</span> <span class="n">EOF</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入三个字符，中间用英文逗号,分隔开</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// scanf(&#34;%c,%c,%c&#34;, &amp;a, &amp;b, &amp;c);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 优化，支持换行、空格、Tab
+</span></span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34; %c , %c , %c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">clearInputBuffer</span><span class="p">();</span> <span class="c1">// 每次读完都清空缓冲区
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的三个字符是:</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;再输入一个字符</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%c&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">clearInputBuffer</span><span class="p">();</span> <span class="c1">// 每次读完都清空缓冲区
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你输入的字符是:</span><span class="se">\n</span><span class="s">%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时再运行程序：</p>
+<p><img src="/img/Snipaste_2026-04-04_17-14-07.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-04_17-14-07.png"
+	
+	
+></p>
+<p>没有出现异常读回车符的现象了！！</p>
+<p>通过以上测试，后续任何时候，只要<code>scanf</code>读取用户输入，就马上用<code>clearInputBuffer();</code>清空键盘缓冲区。</p>
 
 </section>
 
