@@ -470,6 +470,7 @@
             <li><a href="#63-处理键盘输入">6.3 处理键盘输入</a>
               <ul>
                 <li><a href="#631-使用scanf函数输入数值">6.3.1 使用scanf函数输入数值</a></li>
+                <li><a href="#632-自定义数据输入函数">6.3.2 自定义数据输入函数</a></li>
               </ul>
             </li>
           </ul>
@@ -522,7 +523,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -621,7 +622,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 14 分钟
+                    阅读时长: 15 分钟
                 </time>
             </div>
         
@@ -2901,6 +2902,224 @@
 <ul>
 <li>让用户在一行中输入多项数据不是一个很好的主意，这会降低用户界面的友好性，用户也容易发生错误！</li>
 </ul>
+<h5 id="632-自定义数据输入函数">6.3.2 自定义数据输入函数
+</h5><p><code>scanf</code>函数是用于获取键盘输入的标准库函数，其使用方法也非常多，这一方面给我们带来了很大的灵活性，另一方面也会增加编程的复杂度。同时，在实际编程时要从用户处得到输入，往往还有其他事要处理，包括：</p>
+<ul>
+<li>在输入之前给用户提示；</li>
+<li>清空键盘缓冲区；</li>
+<li>检查用户的输入是否有效。</li>
+</ul>
+<p>这些都是<code>scanf</code>不能单独完成的。接下来我们将自行定义几个函数来实现上面的功能。</p>
+<p>下面我们来实现三个自定义函数：</p>
+<ul>
+<li>输入整数。</li>
+<li>输入字符。</li>
+<li>输入字符串。</li>
+</ul>
+<h6 id="6321-输入整数">6.3.2.1 输入整数
+</h6><p>和以前一样，在开始进行函数设计之前考虑下面的问题。</p>
+<blockquote>
+<ol>
+<li><strong>函数的功能是什么？</strong></li>
+</ol>
+<p>计显示提示信息，清空键盘缓冲区并要求用户输入一个整型值；当用户输入了不符合要求的数据时，要求用户重新输入，直到用户输入了符合要求的数据。</p>
+<ol start="2">
+<li><strong>函数的名字是什么？</strong></li>
+</ol>
+<p><code>inputInteger</code>，意思是“输入整数”。</p>
+<ol start="3">
+<li><strong>函数需要传入哪些参数？</strong></li>
+</ol>
+<p>既然要求输入之前给出提示，则提示的内容（字符串）应该通过参数传递给函数，这个参数应该是一个指向字符串的指针，且不允许修改字符串的值，参数名可以是<code>prompt</code>，参数类型应为<code>const char*</code>，所以第一个参数是<code>const char* prompt</code>。</p>
+<p>除此之外，还要限制允许输入的最大值(max)和最小值(min)，这两个值需要通过参数传入，类型是整型。</p>
+<ol start="4">
+<li><strong>函数是否需要返回值？返回何种类型的值？</strong></li>
+</ol>
+<p>当然需要，返回用户输入的整型值。</p>
+</blockquote>
+<p>确定了这些后，函数的原型就确定了！！！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">inputInteger</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">prompt</span><span class="p">,</span> <span class="kt">int</span> <span class="n">min</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>下面我们来实现这个函数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L06_01_COMMON_TOOLS.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 通用工具库
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 正确的清空缓冲区函数
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">clearInputBuffer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">((</span><span class="n">c</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">())</span> <span class="o">!=</span> <span class="sc">&#39;\n&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">!=</span> <span class="n">EOF</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 输入整数
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">inputInteger</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">prompt</span><span class="p">,</span> <span class="kt">int</span> <span class="n">min</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">prompt</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 增加空指针判断，避免崩溃
+</span></span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;提示语不能为空</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">min</span> <span class="o">&gt;</span> <span class="n">max</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;最小值不能大于最大值</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">inputFlag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">inputValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 读取用户输入的整数
+</span></span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%s&#34;</span><span class="p">,</span> <span class="n">prompt</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 使用 &#34; %d&#34; 跳过前面所有空白（空格、回车、Tab）
+</span></span></span><span class="line"><span class="cl">        <span class="n">inputFlag</span> <span class="o">=</span> <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34; %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">inputValue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">inputFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 【关键】检查后面是不是还有非法字符（. 或 字母）
+</span></span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">ch</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">ch</span> <span class="o">!=</span> <span class="sc">&#39;\n&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">ch</span> <span class="o">!=</span> <span class="n">EOF</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 还有内容 → 不是纯整数！
+</span></span></span><span class="line"><span class="cl">                <span class="n">inputFlag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 强制标记为输入失败
+</span></span></span><span class="line"><span class="cl">                <span class="c1">// 清空缓冲区
+</span></span></span><span class="line"><span class="cl">                <span class="nf">clearInputBuffer</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 清空缓冲区
+</span></span></span><span class="line"><span class="cl">            <span class="nf">clearInputBuffer</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 用户输入错误时进行提示，提升用户体验
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">inputFlag</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;==&gt; 输入无效，请输入整数！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">inputValue</span> <span class="o">&lt;</span> <span class="n">min</span> <span class="o">||</span> <span class="n">inputValue</span> <span class="o">&gt;</span> <span class="n">max</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;==&gt; 输入超出范围，请输入 %d ~ %d 之间的整数！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">min</span><span class="p">,</span> <span class="n">max</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">inputFlag</span> <span class="o">!=</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">inputValue</span> <span class="o">&lt;</span> <span class="n">min</span> <span class="o">||</span> <span class="n">inputValue</span> <span class="o">&gt;</span> <span class="n">max</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">inputValue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="nf">inputInteger</span><span class="p">(</span><span class="s">&#34;请输入一个整数（1-10之间）&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;用户输入的值为:%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时霆代码：</p>
+<p><img src="/img/Snipaste_2026-04-10_22-51-17.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-10_22-51-17.png"
+	
+	
+></p>
+<p>可以看到，程序能正常运行，并且处理常见异常！</p>
+<p><strong>现在代码完美支持所有正常输入：</strong></p>
+<ul>
+<li>✅ 输入 5 → 正常通过</li>
+<li>✅ 输入 5（空格 + 5）→ 正常通过</li>
+<li>✅ 输入 10 → 正常通过</li>
+<li>❌ 输入 123 → 正确提示：超出范围</li>
+<li>❌ 输入 1.23 → 正确提示：输入无效</li>
+<li>❌ 输入 abc → 正确提示：输入无效</li>
+<li>❌ 输入 12a3 → 正确提示：输入无效</li>
+<li>✅ 回车、空格乱输 → 不卡死</li>
+</ul>
+<p><strong>所有日常使用场景全部正常！</strong></p>
+<p>这个版本已经很完美了，但实际运行可以发现<code>prompt</code>这个参数可以不需要用户输入，由函数自己生成，可以避免用户输入的提示词与实际的数值范围不一致。</p>
 
 </section>
 
