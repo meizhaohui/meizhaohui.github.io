@@ -34,7 +34,7 @@
 &lt;li&gt;第五章5.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.2/&#34; &gt;换个姿势学C语言 第5章 5.2节&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;第五章5.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.3/&#34; &gt;换个姿势学C语言 第5章 5.3节&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;第五章5.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.4/&#34; &gt;换个姿势学C语言 第5章 5.4节&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;第6章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_6/&#34; &gt;换个姿势学C语言 第6章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第六章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_6/&#34; &gt;换个姿势学C语言 第6章&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;6-创建自己的函数库&#34;&gt;6. 创建自己的函数库
 &lt;/h3&gt;&lt;p&gt;渐渐地，读者已经发现在程序设计中实现某种功能的代码经常被重复使用。不建议在写程序时经常复制和粘贴那些代码，这会使程序变得臃肿和复杂，可以将这些功能设计成独立的函数，在需要使用时可以随时调用它们。&lt;/p&gt;
@@ -3052,6 +3052,137 @@
 &lt;li&gt;支持空格、长度区间控制&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>换个姿势学C语言第6章-6.4 在Visual Studio 2022中创建静态库</title>
+        <link>https://hellogitlab.com/backend/c/newstylec_6_4/</link>
+        <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hellogitlab.com/backend/c/newstylec_6_4/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第6章-6.4 在Visual Studio 2022中创建静态库" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第6章-创建自己的函数库64-在visual-studio-2022中创建静态库&#34;&gt;换个姿势学C语言 第6章 创建自己的函数库&amp;ndash;6.4 在Visual Studio 2022中创建静态库
+&lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
+&lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这是一本非常不错的书！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一、二、三章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec/&#34; &gt;换个姿势学C语言 第1-3章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第四章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_4/&#34; &gt;换个姿势学C语言 第4章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.1节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5/&#34; &gt;换个姿势学C语言 第5章 5.1节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.2/&#34; &gt;换个姿势学C语言 第5章 5.2节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.3/&#34; &gt;换个姿势学C语言 第5章 5.3节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.4/&#34; &gt;换个姿势学C语言 第5章 5.4节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第六章总结6.1-6.3参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_6/&#34; &gt;换个姿势学C语言 第6章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第六章总结6.4参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_6_4/&#34; &gt;换个姿势学C语言 第6章6.4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6-创建自己的函数库&#34;&gt;6. 创建自己的函数库
+&lt;/h3&gt;&lt;p&gt;渐渐地，读者已经发现在程序设计中实现某种功能的代码经常被重复使用。不建议在写程序时经常复制和粘贴那些代码，这会使程序变得臃肿和复杂，可以将这些功能设计成独立的函数，在需要使用时可以随时调用它们。&lt;/p&gt;
+&lt;p&gt;除此之外，还可以建立自己的函数库，将函数代码编译成库文件代他人或自己使用。&lt;/p&gt;
+&lt;p&gt;本章涉及：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;函数库的类型&lt;/li&gt;
+&lt;li&gt;自定义处理字符串的函数&lt;/li&gt;
+&lt;li&gt;自定义处理键盘输入的函数&lt;/li&gt;
+&lt;li&gt;在Visual Studio 2020中创建静态库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本章将实现一些字符串的函数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算字符串长度&amp;mdash; strLength;&lt;/li&gt;
+&lt;li&gt;在字符串是查找特定字符的位置&amp;mdash; indexOfChar;&lt;/li&gt;
+&lt;li&gt;转换字符串中大写字母为小写字母&amp;mdash;toLowerCase;&lt;/li&gt;
+&lt;li&gt;转换字符串大小写字母为大写字母&amp;mdash;toUpperCase;&lt;/li&gt;
+&lt;li&gt;复制字符串&amp;mdash;strCopy。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还要实现几个用于提高键盘输入数据效率的函数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;输入整数型&amp;mdash;inputInteger;&lt;/li&gt;
+&lt;li&gt;输入字符&amp;mdash;inputChar;&lt;/li&gt;
+&lt;li&gt;输入字符串&amp;mdash;inputStr。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些函数可以用于一下的外汇牌价看板的开发。&lt;/p&gt;
+&lt;h4 id=&#34;61-什么是函数库&#34;&gt;6.1 什么是函数库
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;函数库是以重复利用程序为目的的且经过编译的函数的二进制代码 。&lt;/li&gt;
+&lt;li&gt;函数库分为动态链接库和静态链接库两种。在生成可执行文件时，这两种库文件的处理方式是不同的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;611-静态链接库&#34;&gt;6.1.1 静态链接库
+&lt;/h5&gt;&lt;p&gt;静态链接库是最简单的处理方式。如果在程序中引用一个静态函数库，编译时程序会先被编译成一个目标文件（二进制代码），然后链接器会将这个目标文件和静态函数库中的二进制代码一起合并成一个可执行文件，这个可执行文件就可以脱离函数库而独立运行。&lt;/p&gt;
+&lt;p&gt;前面使用的外汇牌价接口库就是一个静态链接库，它的二进制代码会和调用它的代码一起生成一个可执行文件。&lt;/p&gt;
+&lt;div class=&#34;custom-block warning&#34;&gt;
+    &lt;div class=&#34;custom-block-heading&#34;&gt;⚠️ 警告&lt;/div&gt;
+    &lt;div class=&#34;custom-block-body&#34;&gt;
+        静态函数库的缺点：当有很多个程序都引用同一个库时，每个程序的可执行文件都要包含一份同样的函数代码，这样就会浪费内存和磁盘空间；如果这个函数库需要升级，则所有使用该静态函数库的程序都要重新编译和链接！！
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h5 id=&#34;612-动态链接库&#34;&gt;6.1.2 动态链接库
+&lt;/h5&gt;&lt;p&gt;动态链接库克服了静态链接库的缺点。动态函数库文件独立地存在于某些系统目录下，在编译程序时动态函数库中的代码不被包含在可执行文件中，程序在使用到库函数时再从内存或磁盘的指定位置寻找动态函数库的代码。如在windows操作系统中，部分动态链接库被存放于&lt;code&gt;C:\Windows\System32&lt;/code&gt;目录下。&lt;/p&gt;
+&lt;p&gt;动态链接库有两个好处，首先是可以节约内存和磁盘空间，其次是在函数库升级时不需要重新编译、链接使用该库的程序。&lt;/p&gt;
+&lt;p&gt;凡事总有例外，有时某些软件的安装包中并不包含运行时所需的动态链接库文件，而运行它的计算机上恰好也没有该动态链接库文件，这时候就会报错！！！&lt;/p&gt;
+&lt;h4 id=&#34;64-在visual-studio-2022中创建静态库&#34;&gt;6.4 在Visual Studio 2022中创建静态库
+&lt;/h4&gt;&lt;p&gt;现在我们已经创建了好几个函数了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;strLength&lt;/code&gt;函数，计算字符串长度&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;indexOfChar&lt;/code&gt;函数，在字符串中查找特定字符的位置&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;toLowerCase&lt;/code&gt;函数，将字符串中大写字母转换成小写字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;toUpperCase&lt;/code&gt;函数，将字符串中小写字母转换成大写字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;strCopy&lt;/code&gt;函数，将源字符串复制到目标字符串中&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inputInteger&lt;/code&gt;函数，输入整数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inputChar&lt;/code&gt;函数，输入单个字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inputString&lt;/code&gt;函数，输入字符串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clearInputBuffer&lt;/code&gt;函数，这个是我自己加的，正确的清空缓冲区函数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些函数之间可以相互调用，而每次我们需要使用另外一个函数时就不得不将代码复制粘贴过来，这不是一个好办法。&lt;/p&gt;
+&lt;p&gt;接下来，我们将创建一个静态链接库并将这些函数包含其中，未来就可以方便地在不同程序中快速引用这个静态链接库，而不用每次都到处复制源代码。&lt;/p&gt;
+&lt;h5 id=&#34;641-创建静态库项目&#34;&gt;6.4.1 创建静态库项目
+&lt;/h5&gt;&lt;p&gt;在Visual Studio中可以创建静态链接库，然后编译成&lt;code&gt;.lib&lt;/code&gt;文件以便其他项目调用。&lt;/p&gt;
+&lt;p&gt;第1步：创建项目，然后给项目取一个名字（如Mars），并为其选择存储位置&lt;code&gt;D:\BC101\Examples\L06&lt;/code&gt;,如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-04-12_16-32-44.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-04-12_16-32-44.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后点击【创建】。&lt;/p&gt;
+&lt;p&gt;第2步：修改配置类型。如果采用默认设置，Visual Studio创建的项目会被编译成可执行文件（.exe)，所以需要修改项目属性。在“解决方案资源管理器”中，选择刚刚创建的项目并右击，选择&amp;quot;属性&amp;quot;，在弹出的对话框中将“常规”属性中的“配置类型”项由“应用程序(.exe)”修改为“静态库(.lib)”：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-04-12_16-35-23.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-04-12_16-35-23.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;第3步：属性修改完成后，就可以像以前一样在源代码中添加文件。&lt;/p&gt;
+&lt;h5 id=&#34;642-函数库中的代码组织&#34;&gt;6.4.2 函数库中的代码组织
+&lt;/h5&gt;&lt;p&gt;之前，我们几乎将所有的代码都写在同一个源代码文件中，但这并不是必须的。&lt;strong&gt;将源代码分门别类地放在不同文件中会使使用结构更清晰、更便于开发，尤其适合多人协作的项目。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在函数库中，应按照以下原则来组织文件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果一个函数库中包含多种用途的函数，应该将其功能进行分类。每种类别的函数源代码应该独立放在一个源代码文件(.cpp文件或.c文件)中。例如我们之前完成的函数，用于字符串处理的函数代码可以放在&lt;code&gt;str.cpp&lt;/code&gt;文件中，用于键盘输入的函数代码可以放在&lt;code&gt;input.cpp&lt;/code&gt;文件中。&lt;/li&gt;
+&lt;li&gt;单独使用一个头文件(.h文件)来包含类型、函数的声明。这个头文件的文件名通常与函数定义的源代码文件相同（扩展名不同）。&lt;/li&gt;
+&lt;li&gt;源文件（.cpp文件或.c文件）中包含函数的定义代码，函数库的用户（其他程序员）不需要或不允许获得这些代码，他们将获得的编译过的库文件（.lib文件或.dll文件）。但是在使用这些函数时用户需要使用包含函数声明的头文件（就像我们需要&lt;code&gt;stdio.h&lt;/code&gt;一样），因此我们将函数的声明写在单独的头文件中，而这些函数的定义写在另一个源代码文件中。在编译顺序上是先添加头文件，再添加同名的源代码文件（扩展名不同）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此，我们将建议以下文件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;str.h&lt;/code&gt;和&lt;code&gt;str.cpp&lt;/code&gt;，将字符串处理函数的声明和定义分别放入这两个文件中，之所以采用&lt;code&gt;str&lt;/code&gt;作为文件名是为了避免和标准库函数&lt;code&gt;string.h&lt;/code&gt;产生冲突。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;input.h&lt;/code&gt;和&lt;code&gt;input.cpp&lt;/code&gt;，将输入函数的声明和定义分别放入这两个文件中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下来分别在之前创建的静态库项目Mars中，增加&lt;code&gt;str.h&lt;/code&gt;、&lt;code&gt;str.cpp&lt;/code&gt;、&lt;code&gt;input.h&lt;/code&gt;和&lt;code&gt;input.cpp&lt;/code&gt;文件并在其中加入代码，在添加新文件时需要注意文件类型分别是“头文件(.h)”和&amp;quot;C++文件(.cpp)&amp;quot;。&lt;/p&gt;
 </description>
         </item>
         <item>
