@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-CN" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 ">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n">
 <title>换个姿势学C语言第7章</title>
 
 <link rel='canonical' href='https://hellogitlab.com/backend/c/newstylec_7/'>
 
 <link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="换个姿势学C语言第7章">
-<meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 ">
+<meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7/'>
 <meta property='og:site_name' content='编程技术分享'>
 <meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='函数库' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7章">
-<meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 "><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -449,6 +449,11 @@
     <li><a href="#换个姿势学c语言-第7章-获取全部外币牌价数据并保存为文件">换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件</a>
       <ul>
         <li><a href="#0-说明">0. 说明</a></li>
+        <li><a href="#7-获取全部外币牌价数据并保存为文件">7. 获取全部外币牌价数据并保存为文件</a>
+          <ul>
+            <li><a href="#70-结构体">7.0 结构体</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -596,7 +601,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -634,6 +639,207 @@
 <li>第五章5.4节总结参考<a class="link" href="../newstylec_5.4/" >换个姿势学C语言 第5章 5.4节</a></li>
 <li>第六章总结参考<a class="link" href="../newstylec_6/" >换个姿势学C语言 第6章</a></li>
 </ul>
+<h3 id="7-获取全部外币牌价数据并保存为文件">7. 获取全部外币牌价数据并保存为文件
+</h3><p>变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。</p>
+<p>在一些较底层的语言里，<strong>程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。</strong></p>
+<p>因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。</p>
+<p>本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。</p>
+<p>结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。</p>
+<h4 id="70-结构体">7.0 结构体
+</h4><p>在学习课本内容前，我们先自己倒腾一下结构体的使用。</p>
+<p>之前已经学习过 C 语言的许多基本数据类型，如整型<code>int</code>、浮点<code>float</code>、字符型 <code>char</code> 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。</p>
+<p>除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？</p>
+<p>C语言中，<strong>可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。</strong></p>
+<p>结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="k">struct</span> <span class="err">结构体名称</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="err">类型</span> <span class="err">成员名称</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="err">类型</span> <span class="err">成员名称</span><span class="mi">2</span><span class="p">;</span>   
+</span></span><span class="line"><span class="cl">    <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。</strong></li>
+</ul>
+<p>现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_00_BOOK_STRUCT.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/Mars
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;str.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;input.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/Mars.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;Mars.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 定义结构体：描述一本书的信息
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 书名，作者，出版社，出版时间，定价等属性，
+</span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">Book</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">title</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>   <span class="c1">// 书名。如:换个姿势学C语言
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">author</span><span class="p">[</span><span class="mi">15</span><span class="p">];</span>   <span class="c1">// 作者。如:何旭辉
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">press</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>   <span class="c1">// 出版社。如:清华大学出版社
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">date</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>   <span class="c1">// 出版时间，如:2022-09-01
+</span></span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">price</span><span class="p">;</span>   <span class="c1">// 定价。如:118.00
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 1. 初始化书籍
+</span></span></span><span class="line"><span class="cl"><span class="c1">// struct Book* book：这里的 book 是【指针】，不是普通变量！
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">initBook</span><span class="p">(</span><span class="k">struct</span> <span class="n">Book</span><span class="o">*</span> <span class="n">book</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">title</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">author</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">press</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">date</span><span class="p">,</span> <span class="kt">float</span> <span class="n">price</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// -&gt; 解释：
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// book 是指针，不能用 book.price
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 必须用 book-&gt;title 表示：指针指向的结构体变量的成员
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 等价于 (*book).title，但是 -&gt; 更简洁
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// strCopy是Mars中自定义的静态函数
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">book</span><span class="o">-&gt;</span><span class="n">title</span><span class="p">,</span> <span class="n">title</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">book</span><span class="o">-&gt;</span><span class="n">author</span><span class="p">,</span> <span class="n">author</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">book</span><span class="o">-&gt;</span><span class="n">press</span><span class="p">,</span> <span class="n">press</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">book</span><span class="o">-&gt;</span><span class="n">date</span><span class="p">,</span> <span class="n">date</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">book</span><span class="o">-&gt;</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 2. 打印书籍信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">printBook</span><span class="p">(</span><span class="k">struct</span> <span class="n">Book</span><span class="o">*</span> <span class="n">book</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;书名: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">book</span><span class="o">-&gt;</span><span class="n">title</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;作者: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">book</span><span class="o">-&gt;</span><span class="n">author</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;出版社: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">book</span><span class="o">-&gt;</span><span class="n">press</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;出版时间: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">book</span><span class="o">-&gt;</span><span class="n">date</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;定价: %.2f</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">book</span><span class="o">-&gt;</span><span class="n">price</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 3. 修改书籍定价
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setPrice</span><span class="p">(</span><span class="k">struct</span> <span class="n">Book</span><span class="o">*</span> <span class="n">book</span><span class="p">,</span> <span class="kt">float</span> <span class="n">newPrice</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">book</span><span class="o">-&gt;</span><span class="n">price</span> <span class="o">=</span> <span class="n">newPrice</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义一个普通结构体变量 book1
+</span></span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">Book</span> <span class="n">book1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// &amp;book1：取变量的地址，传给函数
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 函数接收的是指针，所以传 &amp;
+</span></span></span><span class="line"><span class="cl">    <span class="nf">initBook</span><span class="p">(</span><span class="o">&amp;</span><span class="n">book1</span><span class="p">,</span> <span class="s">&#34;换个姿势学C语言&#34;</span><span class="p">,</span> <span class="s">&#34;何旭辉&#34;</span><span class="p">,</span> <span class="s">&#34;清华大学出版社&#34;</span><span class="p">,</span> <span class="s">&#34;2022-09-01&#34;</span><span class="p">,</span> <span class="mf">118.00</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;===== 书籍1 =====</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printBook</span><span class="p">(</span><span class="o">&amp;</span><span class="n">book1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">setPrice</span><span class="p">(</span><span class="o">&amp;</span><span class="n">book1</span><span class="p">,</span> <span class="mf">120.00</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;===== 书籍1修改定价后信息如下 =====</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printBook</span><span class="p">(</span><span class="o">&amp;</span><span class="n">book1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序，输出如下：</p>
+<p><img src="/img/Snipaste_2026-04-16_23-02-37.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-16_23-02-37.png"
+	
+	
+></p>
 
 </section>
 
