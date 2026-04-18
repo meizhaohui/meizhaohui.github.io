@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/changed_when/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="changed_when与failed_when条件判断">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="changed_when与failed_when条件判断">
 <meta property='og:description' content="changed_when与failed_when条件判断 1. 概述 与when条件语句类似，我们可以使用changed_when语句和failed_when语句来对命令运行的结果进行判断。对于Ansible来说，其很难判断一个命令的运行是否符合我们的实际预期，尤其是当我们使用command模块和shell模块时，如果不使用changed_when语句，Ansible将永远返回changed。大部分模块都能正确返回运行结果是否对目标主机产生影响，我们依然可以使用changed_when语句来对返回信息进行重写，根据任务返回结果来判定任务的运行结果是否真正符合我们预期。 有一些命令会将自己的运行结果写入标准错误输出stderr中，而不是通常的标准输出stdout中，这时可以使用failed_when来对结果进行判断，从而告诉Ansible真正的运行结果到底是成功还是失败。 changed_when条件判断官方文档 Defining “changed” 。 failed_when条件判断官方文档 Defining failure 。 2. 官方示例 2.1 changed_when官方示例 通过changed_when可以让你通过程序退出码或输出结果决定是否向Ansible报告该任务的任务状态为changed改变状态。 多个 changed_when 条件的列表使用隐式and连接，这意味着任务仅在满足所有条件时报告更改。 如果要在满足任何条件时报告更改，则必须使用显式or运算符。 1 2 3 4 5 6 7 8 9 10 tasks: - name: Report &#39;changed&#39; when the return code is not equal to 2 ansible.builtin.shell: /usr/bin/billybass --mode=&#34;take me to the river&#34; register: bass_result changed_when: &#34;bass_result.rc != 2&#34; - name: This will never report &#39;changed&#39; status ansible.builtin.shell: wall &#39;beep&#39; changed_when: False 你也可以使用多个条件：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/changed_when/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="changed_when与failed_when条件判断">
 <meta name="twitter:description" content="changed_when与failed_when条件判断 1. 概述 与when条件语句类似，我们可以使用changed_when语句和failed_when语句来对命令运行的结果进行判断。对于Ansible来说，其很难判断一个命令的运行是否符合我们的实际预期，尤其是当我们使用command模块和shell模块时，如果不使用changed_when语句，Ansible将永远返回changed。大部分模块都能正确返回运行结果是否对目标主机产生影响，我们依然可以使用changed_when语句来对返回信息进行重写，根据任务返回结果来判定任务的运行结果是否真正符合我们预期。 有一些命令会将自己的运行结果写入标准错误输出stderr中，而不是通常的标准输出stdout中，这时可以使用failed_when来对结果进行判断，从而告诉Ansible真正的运行结果到底是成功还是失败。 changed_when条件判断官方文档 Defining “changed” 。 failed_when条件判断官方文档 Defining failure 。 2. 官方示例 2.1 changed_when官方示例 通过changed_when可以让你通过程序退出码或输出结果决定是否向Ansible报告该任务的任务状态为changed改变状态。 多个 changed_when 条件的列表使用隐式and连接，这意味着任务仅在满足所有条件时报告更改。 如果要在满足任何条件时报告更改，则必须使用显式or运算符。 1 2 3 4 5 6 7 8 9 10 tasks: - name: Report &#39;changed&#39; when the return code is not equal to 2 ansible.builtin.shell: /usr/bin/billybass --mode=&#34;take me to the river&#34; register: bass_result changed_when: &#34;bass_result.rc != 2&#34; - name: This will never report &#39;changed&#39; status ansible.builtin.shell: wall &#39;beep&#39; changed_when: False 你也可以使用多个条件：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1049,7 +1049,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     

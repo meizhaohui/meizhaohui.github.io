@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/clair/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="使用clair扫描Docker镜像漏洞">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="使用clair扫描Docker镜像漏洞">
 <meta property='og:description' content="使用clair扫描Docker镜像漏洞 参考:\nhttps://github.com/arminc/clair-scanner 我们可以通过clair来扫描Docker镜像漏洞。\n1. 安装基础工具 我们需要安装git和golang:\n1 $ sudo yum install -y git golang 查看git和golang的版本信息：\n1 2 3 4 $ git --version git version 2.24.4 $ go version go version go1.16.13 linux/amd64 配置go加速：\n1 2 3 4 5 6 7 ## Golang environment settings export GOROOT=/usr/lib/golang # golang install path export GOPATH=~/data/go_data # golang workspace export GOBIN=${GOPATH}/bin # golang exe files export PATH=${GOBIN}:${PATH} export GOPROXY=https://goproxy.cn export GO111MODULE=on 将以上配置加入到~/.bashrc文件中，并使用source ~/.bashrc加载配置。\n2. 编译安装clair-scanner 1 2 3 4 5 6 7 8 9 10 ## Clone the repo 下载代码 $ git clone https://github.com/arminc/clair-scanner.git ## Build and install 构建和安装 $ cd clair-scanner $ make build $ make installLocal ## Run 运行 $ ./clair-scanner -h 3. 下载镜像 1 2 3 4 5 ## 下载漏洞数据库镜像 $ docker pull arminc/clair-db ## 下载clair-local-scan镜像 $ docker pull arminc/clair-local-scan:v2.1.8_9bca9a9a7bce2fd2e84efcc98ab00c040177e258 查看镜像：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/clair/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T23:49:31&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="使用clair扫描Docker镜像漏洞">
 <meta name="twitter:description" content="使用clair扫描Docker镜像漏洞 参考:\nhttps://github.com/arminc/clair-scanner 我们可以通过clair来扫描Docker镜像漏洞。\n1. 安装基础工具 我们需要安装git和golang:\n1 $ sudo yum install -y git golang 查看git和golang的版本信息：\n1 2 3 4 $ git --version git version 2.24.4 $ go version go version go1.16.13 linux/amd64 配置go加速：\n1 2 3 4 5 6 7 ## Golang environment settings export GOROOT=/usr/lib/golang # golang install path export GOPATH=~/data/go_data # golang workspace export GOBIN=${GOPATH}/bin # golang exe files export PATH=${GOBIN}:${PATH} export GOPROXY=https://goproxy.cn export GO111MODULE=on 将以上配置加入到~/.bashrc文件中，并使用source ~/.bashrc加载配置。\n2. 编译安装clair-scanner 1 2 3 4 5 6 7 8 9 10 ## Clone the repo 下载代码 $ git clone https://github.com/arminc/clair-scanner.git ## Build and install 构建和安装 $ cd clair-scanner $ make build $ make installLocal ## Run 运行 $ ./clair-scanner -h 3. 下载镜像 1 2 3 4 5 ## 下载漏洞数据库镜像 $ docker pull arminc/clair-db ## 下载clair-local-scan镜像 $ docker pull arminc/clair-local-scan:v2.1.8_9bca9a9a7bce2fd2e84efcc98ab00c040177e258 查看镜像：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -892,7 +892,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 23:49 &#43;0800
+        </span>
+    </section></footer>
 
 
     

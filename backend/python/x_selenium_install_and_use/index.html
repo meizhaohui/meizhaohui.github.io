@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_selenium_install_and_use/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="Selenium安装与使用">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="Selenium安装与使用">
 <meta property='og:description' content="Selenium安装与使用 Python3.6.2下载 下载地址：https://www.python.org/downloads\npython -V查看python版本:\n1 2 $ python -V Python 3.6.2 selenium安装 使用pip安装selenium:\n1 2 3 4 5 6 $ pip install selenium Collecting selenium Downloading https://files.pythonhosted.org/packages/5e/1f/6c2204b9ae14eddab615c5e2ee4956c65ed533e0a9986c23eabd801ae849/selenium-3.11.0-py2.py3-none-any.whl (943kB) 100% |████████████████████████████████| 952kB 644kB/s Installing collected packages: selenium Successfully installed selenium-3.11.0 Pycharm 下载 下载地址：https://www.jetbrains.com/pycharm/download/\n驱动下载 chromedriver驱动下载 chromedriver下载地址： http://chromedriver.storage.googleapis.com/index.html\n下载完成后，将解压的chromedriver.exe文件复制到Python的安装目录中的Scripts文件夹中，如D:\\\\Program Files (x86)\\\\python3.6.2\\\\Scripts文件夹下。\nchromedriver版本与chrome各版本如下表：\nChromeDriver版本 支持的Chrome版本 发布时间 ChromeDriver v2.38 v65-67 2018-04-17 ChromeDriver v2.37 v64-66 2018-03-16 ChromeDriver v2.36 v63-65 2018-03-02 ChromeDriver v2.35 v62-64 2018-01-10 ChromeDriver v2.34 v61-63 2017-12-10 ChromeDriver v2.33 v60-62 2017-10-03 ChromeDriver v2.32 v59-61 2017-08-30 ChromeDriver v2.31 v58-60 2017-07-21 ChromeDriver v2.30 v58-60 2017-06-07 ChromeDriver v2.29 v56-58 2017-04-04 ChromeDriver v2.28 v55-57 2017-03-09 ChromeDriver v2.27 v54-56 2016-12-23 ChromeDriver v2.26 v53-55 2016-12-09 ::: tip 说明 此表仅罗列了部分chromediriver的版本，详细可在http://chromedriver.storage.googleapis.com/index.html查看。 :::\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_selenium_install_and_use/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T00:58:14&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="Selenium安装与使用">
 <meta name="twitter:description" content="Selenium安装与使用 Python3.6.2下载 下载地址：https://www.python.org/downloads\npython -V查看python版本:\n1 2 $ python -V Python 3.6.2 selenium安装 使用pip安装selenium:\n1 2 3 4 5 6 $ pip install selenium Collecting selenium Downloading https://files.pythonhosted.org/packages/5e/1f/6c2204b9ae14eddab615c5e2ee4956c65ed533e0a9986c23eabd801ae849/selenium-3.11.0-py2.py3-none-any.whl (943kB) 100% |████████████████████████████████| 952kB 644kB/s Installing collected packages: selenium Successfully installed selenium-3.11.0 Pycharm 下载 下载地址：https://www.jetbrains.com/pycharm/download/\n驱动下载 chromedriver驱动下载 chromedriver下载地址： http://chromedriver.storage.googleapis.com/index.html\n下载完成后，将解压的chromedriver.exe文件复制到Python的安装目录中的Scripts文件夹中，如D:\\\\Program Files (x86)\\\\python3.6.2\\\\Scripts文件夹下。\nchromedriver版本与chrome各版本如下表：\nChromeDriver版本 支持的Chrome版本 发布时间 ChromeDriver v2.38 v65-67 2018-04-17 ChromeDriver v2.37 v64-66 2018-03-16 ChromeDriver v2.36 v63-65 2018-03-02 ChromeDriver v2.35 v62-64 2018-01-10 ChromeDriver v2.34 v61-63 2017-12-10 ChromeDriver v2.33 v60-62 2017-10-03 ChromeDriver v2.32 v59-61 2017-08-30 ChromeDriver v2.31 v58-60 2017-07-21 ChromeDriver v2.30 v58-60 2017-06-07 ChromeDriver v2.29 v56-58 2017-04-04 ChromeDriver v2.28 v55-57 2017-03-09 ChromeDriver v2.27 v54-56 2016-12-23 ChromeDriver v2.26 v53-55 2016-12-09 ::: tip 说明 此表仅罗列了部分chromediriver的版本，详细可在http://chromedriver.storage.googleapis.com/index.html查看。 :::\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -857,7 +857,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 00:58 &#43;0800
+        </span>
+    </section></footer>
 
 
     

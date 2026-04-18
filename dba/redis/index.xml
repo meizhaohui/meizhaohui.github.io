@@ -6,8 +6,7 @@
         <description>Recent content in Redis on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 10 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/dba/redis/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>阿梅的博客</copyright><atom:link href="https://hellogitlab.com/dba/redis/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CentOS7源码安装Redis6.2.14</title>
         <link>https://hellogitlab.com/dba/redis/install_redis_with_source/</link>
         <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>

@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/centos/x_wildcard_regular_expression_in_bash_script/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="Bash script中的通配符与正则表达式">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="Bash script中的通配符与正则表达式">
 <meta property='og:description' content="Bash script中的通配符与正则表达式 通配符符号与其意义 符号\u3000意义 *\u3000代表任意个（包括0个）字符 ?\u3000代表一定有一个任意字符 []\u3000代表至少有一个中括号内的字符。[abc]代表一定有一个字符，是a/b/c中任一个 [-]\u3000代表编码顺序内所有字符。[0-9]代表数字，[a-z]代表小写字母，[A-Z]代表大写字母 [^]\u3000非。[^abc]代表一定有一个字符，只要是非a/b/c的其他字符就行 正则表达式 正则表达式（regular expression） RE字符\u3000意义 * 重复0个或多个前面的RE字符 . 点号,任意字符（一定有一个） ^word\u3000待查找字符（word）在行首 word$\u3000待查找字符（word）在行尾 \\\u3000转义字符，将特殊符号的特殊意义去除 [list] 从字符集list中任意选取一个。如[abc]代表a或b或c [-] 代表编码顺序内所有字符。[0-9]代表数字，[a-z]代表小写字母，[A-Z]代表大写字母 [^]\u3000非。[^abc]代表一定有一个字符，只要是非a/b/c的其他字符就行。 [^a-z] 代表非小写字母 [^A-Z] 代表非大写字母 [^0-9] 代表非数字 {n,m}\u3000连续n到m个前一个RE字符 {n}\u3000连续n个前一个RE字符 {n,}\u3000连续n个以上前一个RE字符 扩展正则表达式（extended regular expression) 扩展符号\u3000意义 ?\u3000匹配0个或一个在其之前的那个普通字符 +\u3000匹配一个或多个在其之前的那个普通字符 ( )\u3000表示一个字符集合或用在expr中 |\u3000表示“或”，匹配一组可选的字符 ">
 <meta property='og:url' content='https://hellogitlab.com/os/centos/x_wildcard_regular_expression_in_bash_script/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Os' /><meta property='article:tag' content='OS' /><meta property='article:tag' content='Centos' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Os' /><meta property='article:tag' content='OS' /><meta property='article:tag' content='Centos' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T15:28:30&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="Bash script中的通配符与正则表达式">
 <meta name="twitter:description" content="Bash script中的通配符与正则表达式 通配符符号与其意义 符号\u3000意义 *\u3000代表任意个（包括0个）字符 ?\u3000代表一定有一个任意字符 []\u3000代表至少有一个中括号内的字符。[abc]代表一定有一个字符，是a/b/c中任一个 [-]\u3000代表编码顺序内所有字符。[0-9]代表数字，[a-z]代表小写字母，[A-Z]代表大写字母 [^]\u3000非。[^abc]代表一定有一个字符，只要是非a/b/c的其他字符就行 正则表达式 正则表达式（regular expression） RE字符\u3000意义 * 重复0个或多个前面的RE字符 . 点号,任意字符（一定有一个） ^word\u3000待查找字符（word）在行首 word$\u3000待查找字符（word）在行尾 \\\u3000转义字符，将特殊符号的特殊意义去除 [list] 从字符集list中任意选取一个。如[abc]代表a或b或c [-] 代表编码顺序内所有字符。[0-9]代表数字，[a-z]代表小写字母，[A-Z]代表大写字母 [^]\u3000非。[^abc]代表一定有一个字符，只要是非a/b/c的其他字符就行。 [^a-z] 代表非小写字母 [^A-Z] 代表非大写字母 [^0-9] 代表非数字 {n,m}\u3000连续n到m个前一个RE字符 {n}\u3000连续n个前一个RE字符 {n,}\u3000连续n个以上前一个RE字符 扩展正则表达式（extended regular expression) 扩展符号\u3000意义 ?\u3000匹配0个或一个在其之前的那个普通字符 +\u3000匹配一个或多个在其之前的那个普通字符 ( )\u3000表示一个字符集合或用在expr中 |\u3000表示“或”，匹配一组可选的字符 "><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -681,7 +681,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 15:28 &#43;0800
+        </span>
+    </section></footer>
 
 
     

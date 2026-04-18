@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/shell/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="shell执行远程脚本模块">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="shell执行远程脚本模块">
 <meta property='og:description' content="shell执行远程脚本模块 shell模块在主机上面执行命令。\nshell模块获取以空格分隔的列表组成的命令。 所指定的命令会在所有选择的主机上面执行。 处理shell命令，能使用$HOME以及重定向(&gt;，&lt;)、管道(|)、分号(;)、And符号(&amp;)等。这是与command模块不一样的位置。 shell模块与command模块几乎一样，但是shell模块是通过在远程主机上面通过shell脚本(/bin/sh)执行命令的。 自由格式命令或cmd参数是必须的。 shell模块的帮助文档：https://docs.ansible.com/ansible/latest/modules/shell_module.html\nshell模块的源码：https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/shell.py\n1. 注意事项 如果要安全且可预测地执行命令，推荐使用command模块，除非明确要求使用shell模块。 如果要使用嵌入式脚本的话,请使用script模块以及template模块。 要重启电脑的话，使用reboot或win_reboot模块。 需要注意的是，如果使用shell模块执行shell脚本，需要将脚本复制到远程主机上面，而不能仅放在Ansible管理节点上。 2. shell模块参数 参数 可选值 默认值 说明 argv 注意，无此参数 与command模块相比，shell模块没有argv参数 chdir path，在执行命令前切换到指定的工作目录，类似于使用cd命令切换working directory工作目录 cmd string，需要运行的命令 creates path，文件名或glob模式，如果对应的文件存在，则忽略此步 free_form 自由形式运行，可执行任何linux命令，该参数实际不存在!!.比如，当我们想要在远程主机上执行ls命令时，我们并不需要写成free_form=ls，这样写反而是错误的，因为并没有任何参数的名字是free_form，当我们想要在远程主机中执行ls命令时，直接写成ls即可，这就是free_form参数的含义，因为command模块的作用是执行命令，所以，任何一个可以在远程主机上执行的命令都可以被称为free_form removes path，文件名或glob模式，如果对应的文件存在，则执行此步 stdin path, 将指定路径设置为标准输入 stdin_add_newline yes/no yes boolean,如果设置yes，则会在标准输入后面增加一行 strip_empty_ends 注意，无此参数 与command模块相比，shell模块没有strip_empty_ends参数 warn yes/no yes boolean,如果设置yes，则会警告，在2.14版本会移除该参数 executable 与command模块相比，shell模块增加了executable参数，通过该参数改变SHELL可执行命令的路径（默认为/bin/sh），即用不同的shell执行脚本 3. shell模块返回值 键 是否返回 描述 cmd 一直返回 list，在远程主机上面执行的命令列表 start 一直返回 string,命令开始时间 end 一直返回 string,命令结束时间 delta 一直返回 string,命令运行时间 以及一些其他的通用返回值。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/shell/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="shell执行远程脚本模块">
 <meta name="twitter:description" content="shell执行远程脚本模块 shell模块在主机上面执行命令。\nshell模块获取以空格分隔的列表组成的命令。 所指定的命令会在所有选择的主机上面执行。 处理shell命令，能使用$HOME以及重定向(&gt;，&lt;)、管道(|)、分号(;)、And符号(&amp;)等。这是与command模块不一样的位置。 shell模块与command模块几乎一样，但是shell模块是通过在远程主机上面通过shell脚本(/bin/sh)执行命令的。 自由格式命令或cmd参数是必须的。 shell模块的帮助文档：https://docs.ansible.com/ansible/latest/modules/shell_module.html\nshell模块的源码：https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/shell.py\n1. 注意事项 如果要安全且可预测地执行命令，推荐使用command模块，除非明确要求使用shell模块。 如果要使用嵌入式脚本的话,请使用script模块以及template模块。 要重启电脑的话，使用reboot或win_reboot模块。 需要注意的是，如果使用shell模块执行shell脚本，需要将脚本复制到远程主机上面，而不能仅放在Ansible管理节点上。 2. shell模块参数 参数 可选值 默认值 说明 argv 注意，无此参数 与command模块相比，shell模块没有argv参数 chdir path，在执行命令前切换到指定的工作目录，类似于使用cd命令切换working directory工作目录 cmd string，需要运行的命令 creates path，文件名或glob模式，如果对应的文件存在，则忽略此步 free_form 自由形式运行，可执行任何linux命令，该参数实际不存在!!.比如，当我们想要在远程主机上执行ls命令时，我们并不需要写成free_form=ls，这样写反而是错误的，因为并没有任何参数的名字是free_form，当我们想要在远程主机中执行ls命令时，直接写成ls即可，这就是free_form参数的含义，因为command模块的作用是执行命令，所以，任何一个可以在远程主机上执行的命令都可以被称为free_form removes path，文件名或glob模式，如果对应的文件存在，则执行此步 stdin path, 将指定路径设置为标准输入 stdin_add_newline yes/no yes boolean,如果设置yes，则会在标准输入后面增加一行 strip_empty_ends 注意，无此参数 与command模块相比，shell模块没有strip_empty_ends参数 warn yes/no yes boolean,如果设置yes，则会警告，在2.14版本会移除该参数 executable 与command模块相比，shell模块增加了executable参数，通过该参数改变SHELL可执行命令的路径（默认为/bin/sh），即用不同的shell执行脚本 3. shell模块返回值 键 是否返回 描述 cmd 一直返回 list，在远程主机上面执行的命令列表 start 一直返回 string,命令开始时间 end 一直返回 string,命令结束时间 delta 一直返回 string,命令运行时间 以及一些其他的通用返回值。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -2160,7 +2160,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     

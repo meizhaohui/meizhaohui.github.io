@@ -6,8 +6,7 @@
         <description>Recent content in GitLab on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/devops/gitlab/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>阿梅的博客</copyright><atom:link href="https://hellogitlab.com/devops/gitlab/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CenOS7安装GitLab(使用外部Nginx配置)</title>
         <link>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>

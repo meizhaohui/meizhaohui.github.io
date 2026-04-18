@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/the_latest_image/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="查看下载的docker镜像的版本信息">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="查看下载的docker镜像的版本信息">
 <meta property='og:description' content="查看下载的docker镜像的版本信息 1. 现象描述 通常我们喜欢使用docker pull 镜像名这种方式下载docker镜像，如下载redis或nginx镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 下载redis镜像 [root@node1 ~]# docker pull redis Using default tag: latest latest: Pulling from library/redis Digest: sha256:b0bdc1a83caf43f9eb74afca0fcfd6f09bea38bb87f6add4a858f06ef4617538 Status: Image is up to date for redis:latest docker.io/library/redis:latest ## 下载nginx镜像 [root@node1 ~]# docker pull nginx Using default tag: latest latest: Pulling from library/nginx Digest: sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca Status: Image is up to date for nginx:latest docker.io/library/nginx:latest 当我们不指定标签名称时，docker默认会下载最新的latest镜像，此时查看镜像信息：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/the_latest_image/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T23:49:31&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="查看下载的docker镜像的版本信息">
 <meta name="twitter:description" content="查看下载的docker镜像的版本信息 1. 现象描述 通常我们喜欢使用docker pull 镜像名这种方式下载docker镜像，如下载redis或nginx镜像：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ## 下载redis镜像 [root@node1 ~]# docker pull redis Using default tag: latest latest: Pulling from library/redis Digest: sha256:b0bdc1a83caf43f9eb74afca0fcfd6f09bea38bb87f6add4a858f06ef4617538 Status: Image is up to date for redis:latest docker.io/library/redis:latest ## 下载nginx镜像 [root@node1 ~]# docker pull nginx Using default tag: latest latest: Pulling from library/nginx Digest: sha256:67f9a4f10d147a6e04629340e6493c9703300ca23a2f7f3aa56fe615d75d31ca Status: Image is up to date for nginx:latest docker.io/library/nginx:latest 当我们不指定标签名称时，docker默认会下载最新的latest镜像，此时查看镜像信息：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1163,7 +1163,19 @@ jq命令的使用，可以参考我的总结文档<a class="link" href="../../OS
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 23:49 &#43;0800
+        </span>
+    </section></footer>
 
 
     

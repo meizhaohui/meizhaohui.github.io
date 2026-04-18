@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/frontend/vue/events/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="事件处理">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="事件处理">
 <meta property='og:description' content="事件处理 我们在 v-on事件监听指令中已经使用v-on来监听事件。\n可以用 v-on 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。如&lt;button v-on:click=&quot;counter += 1&quot;&gt;Add 1&lt;/button&gt;。 当事件逻辑比较复杂时，不应将JavaScript代码写在v-on指令中，应通过定义方法，并在v-on指令中调用方法。 调用方法时，可以给方法传递一个参数，如 &lt;button v-on:click=&quot;say('what')&quot;&gt;Say what&lt;/button&gt;。 1. 事件修饰符 Vue.js 为 v-on 提供了事件修饰符。之前提过，修饰符是由点开头的指令后缀来表示的。\n.stop .prevent .capture .self .once .passive 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 &lt;!-- 阻止单击事件继续传播 --&gt; &lt;a v-on:click.stop=&#34;doThis&#34;&gt;&lt;/a&gt; &lt;!-- 提交事件不再重载页面 --&gt; &lt;form v-on:submit.prevent=&#34;onSubmit&#34;&gt;&lt;/form&gt; &lt;!-- 修饰符可以串联 --&gt; &lt;a v-on:click.stop.prevent=&#34;doThat&#34;&gt;&lt;/a&gt; &lt;!-- 只有修饰符 --&gt; &lt;form v-on:submit.prevent&gt;&lt;/form&gt; &lt;!-- 添加事件监听器时使用事件捕获模式 --&gt; &lt;!-- 即内部元素触发的事件先在此处理，然后才交由内部元素进行处理 --&gt; &lt;div v-on:click.capture=&#34;doThis&#34;&gt;...&lt;/div&gt; &lt;!-- 只当在 event.target 是当前元素自身时触发处理函数 --&gt; &lt;!-- 即事件不是从内部元素触发的 --&gt; &lt;div v-on:click.self=&#34;doThat&#34;&gt;...&lt;/div&gt; 我们曾在 修饰符 中使用.stop修饰符阻止单击事件继续传播。\n">
 <meta property='og:url' content='https://hellogitlab.com/frontend/vue/events/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Frontend' /><meta property='article:tag' content='Frontend' /><meta property='article:tag' content='Vue' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Frontend' /><meta property='article:tag' content='Frontend' /><meta property='article:tag' content='Vue' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T15:28:30&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="事件处理">
 <meta name="twitter:description" content="事件处理 我们在 v-on事件监听指令中已经使用v-on来监听事件。\n可以用 v-on 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。如&lt;button v-on:click=&quot;counter += 1&quot;&gt;Add 1&lt;/button&gt;。 当事件逻辑比较复杂时，不应将JavaScript代码写在v-on指令中，应通过定义方法，并在v-on指令中调用方法。 调用方法时，可以给方法传递一个参数，如 &lt;button v-on:click=&quot;say('what')&quot;&gt;Say what&lt;/button&gt;。 1. 事件修饰符 Vue.js 为 v-on 提供了事件修饰符。之前提过，修饰符是由点开头的指令后缀来表示的。\n.stop .prevent .capture .self .once .passive 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 &lt;!-- 阻止单击事件继续传播 --&gt; &lt;a v-on:click.stop=&#34;doThis&#34;&gt;&lt;/a&gt; &lt;!-- 提交事件不再重载页面 --&gt; &lt;form v-on:submit.prevent=&#34;onSubmit&#34;&gt;&lt;/form&gt; &lt;!-- 修饰符可以串联 --&gt; &lt;a v-on:click.stop.prevent=&#34;doThat&#34;&gt;&lt;/a&gt; &lt;!-- 只有修饰符 --&gt; &lt;form v-on:submit.prevent&gt;&lt;/form&gt; &lt;!-- 添加事件监听器时使用事件捕获模式 --&gt; &lt;!-- 即内部元素触发的事件先在此处理，然后才交由内部元素进行处理 --&gt; &lt;div v-on:click.capture=&#34;doThis&#34;&gt;...&lt;/div&gt; &lt;!-- 只当在 event.target 是当前元素自身时触发处理函数 --&gt; &lt;!-- 即事件不是从内部元素触发的 --&gt; &lt;div v-on:click.self=&#34;doThat&#34;&gt;...&lt;/div&gt; 我们曾在 修饰符 中使用.stop修饰符阻止单击事件继续传播。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -827,7 +827,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 15:28 &#43;0800
+        </span>
+    </section></footer>
 
 
     

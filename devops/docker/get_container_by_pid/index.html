@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/get_container_by_pid/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="通过进程pid查询对应docker容器信息">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="通过进程pid查询对应docker容器信息">
 <meta property='og:description' content="通过进程pid查询对应docker容器信息 1. 一般获取方法 我们都知道Docker容器的哲学是一个Docker容器只运行一个进程。在这种情况下，我们可以很容器找到进程和容器的对应关系。\n如，我们在进程中发现有一个redis-server的程序：\n1 2 [root@docker ~]# ps -ef|grep -v grep|grep redis polkitd 17942 17923 0 22:36 ? 00:00:03 redis-server *:6379 可以知道，其进程PID是17942。\n1.1 通过docker top命令查看 当我们服务器上面运行的容器不多时，可以直接使用这种方式查看：\n1 2 3 4 5 6 7 ## 查看运行的容器 [root@docker ~]# docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 77e8f1f47d09 meizhaohui/testimage:v1 &#34;/bin/bash /root/run…&#34; 22 minutes ago Up 22 minutes wizardly_carson 80bbd285db0b sonatype/nexus3:3.59.0 &#34;/opt/sonatype/nexus…&#34; 2 weeks ago Up 2 weeks 0.0.0.0:8081-&gt;8081/tcp nexus 790a0902c364 e0ce02f88e58 &#34;docker-entrypoint.s…&#34; 4 weeks ago Up About an hour 0.0.0.0:6375-&gt;6379/tcp redis-6375 [root@docker ~]# 可以看到，也就三个容器，直接docker top分别查看三个容器运行的进程信息即可：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/get_container_by_pid/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T23:49:31&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="通过进程pid查询对应docker容器信息">
 <meta name="twitter:description" content="通过进程pid查询对应docker容器信息 1. 一般获取方法 我们都知道Docker容器的哲学是一个Docker容器只运行一个进程。在这种情况下，我们可以很容器找到进程和容器的对应关系。\n如，我们在进程中发现有一个redis-server的程序：\n1 2 [root@docker ~]# ps -ef|grep -v grep|grep redis polkitd 17942 17923 0 22:36 ? 00:00:03 redis-server *:6379 可以知道，其进程PID是17942。\n1.1 通过docker top命令查看 当我们服务器上面运行的容器不多时，可以直接使用这种方式查看：\n1 2 3 4 5 6 7 ## 查看运行的容器 [root@docker ~]# docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 77e8f1f47d09 meizhaohui/testimage:v1 &#34;/bin/bash /root/run…&#34; 22 minutes ago Up 22 minutes wizardly_carson 80bbd285db0b sonatype/nexus3:3.59.0 &#34;/opt/sonatype/nexus…&#34; 2 weeks ago Up 2 weeks 0.0.0.0:8081-&gt;8081/tcp nexus 790a0902c364 e0ce02f88e58 &#34;docker-entrypoint.s…&#34; 4 weeks ago Up About an hour 0.0.0.0:6375-&gt;6379/tcp redis-6375 [root@docker ~]# 可以看到，也就三个容器，直接docker top分别查看三个容器运行的进程信息即可：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1192,7 +1192,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 23:49 &#43;0800
+        </span>
+    </section></footer>
 
 
     

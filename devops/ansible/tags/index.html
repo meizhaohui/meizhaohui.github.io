@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/tags/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="tags标签">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="tags标签">
 <meta property='og:description' content="tags标签 1. 概述 如果你有一个超大的playbook剧本文件，有时并不想运行剧本文件中所有的任务，这个时候tags标签可以解决这个问题，通过tags标签可以运行或者忽略(execute or skip)剧本中的部分任务。 你需要给任务添加标签，然后在运行剧本时选项相应的标签。 详细可参考官方文档 Tags 2. 官方示例 你可以给任务添加一个或多个标签。 你可以在剧本中添加标签，也可以在task任务文件，或者role角色中添加标签。 以下示例是不同任务设置不同的标签：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 tasks: - name: Install the servers ansible.builtin.yum: name: - httpd - memcached state: present tags: - packages - webservers - name: Configure the service ansible.builtin.template: src: templates/src.j2 dest: /etc/foo.conf tags: - configuration 你也可以给不同的任务设置相同的标签信息。 以下示例中，有3个任务被设置成了相同的标签ntp：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/tags/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="tags标签">
 <meta name="twitter:description" content="tags标签 1. 概述 如果你有一个超大的playbook剧本文件，有时并不想运行剧本文件中所有的任务，这个时候tags标签可以解决这个问题，通过tags标签可以运行或者忽略(execute or skip)剧本中的部分任务。 你需要给任务添加标签，然后在运行剧本时选项相应的标签。 详细可参考官方文档 Tags 2. 官方示例 你可以给任务添加一个或多个标签。 你可以在剧本中添加标签，也可以在task任务文件，或者role角色中添加标签。 以下示例是不同任务设置不同的标签：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 tasks: - name: Install the servers ansible.builtin.yum: name: - httpd - memcached state: present tags: - packages - webservers - name: Configure the service ansible.builtin.template: src: templates/src.j2 dest: /etc/foo.conf tags: - configuration 你也可以给不同的任务设置相同的标签信息。 以下示例中，有3个任务被设置成了相同的标签ntp：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1462,7 +1462,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     

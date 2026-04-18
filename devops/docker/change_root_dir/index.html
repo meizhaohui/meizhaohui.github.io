@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/change_root_dir/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="修改默认数据存储目录">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="修改默认数据存储目录">
 <meta property='og:description' content="修改默认数据存储目录 默认情况下，docker数据存储目录为/var/lib/docker,可以通过docker info查看：\n1 2 ## docker info|grep &#39;Docker Root Dir&#39; Docker Root Dir: /var/lib/docker 可以通过以下方式个性数据存储目录。\n方式一，修改启动配置/usr/lib/systemd/system/docker.service。 方式二，修改配置文件/etc/docker/daemon.json。 1. 修改启动配置 查看默认的启动配置：\n1 2 ## grep &#39;ExecStart&#39; /usr/lib/systemd/system/docker.service ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock 查看dockerd帮助信息：\n1 2 ## dockerd --help|grep &#39;data-root&#39; --data-root string Root directory of persistent Docker state (default &#34;/var/lib/docker&#34;) 可以看到，只用增加--data-root参数就可以设置数据存储目录，我们在启动配置中增加--data-root=/data/docker配置，修改后配置如下：\n1 2 ## grep &#39;ExecStart&#39; /usr/lib/systemd/system/docker.service ExecStart=/usr/bin/dockerd -H fd:// --data-root=/data/docker --containerd=/run/containerd/containerd.sock 注意，此处的数据存储目录/data/docker不需要我们手动创建。\n重新加载配置并重启docker服务：\n1 2 3 4 5 6 7 8 ## 重新加载配置 ## systemctl daemon-reload ## 重启docker服务 ## systemctl restart docker ## 查看docker服务状态 ## systemctl status docker 查看目录信息：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/change_root_dir/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Docker' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T23:49:31&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="修改默认数据存储目录">
 <meta name="twitter:description" content="修改默认数据存储目录 默认情况下，docker数据存储目录为/var/lib/docker,可以通过docker info查看：\n1 2 ## docker info|grep &#39;Docker Root Dir&#39; Docker Root Dir: /var/lib/docker 可以通过以下方式个性数据存储目录。\n方式一，修改启动配置/usr/lib/systemd/system/docker.service。 方式二，修改配置文件/etc/docker/daemon.json。 1. 修改启动配置 查看默认的启动配置：\n1 2 ## grep &#39;ExecStart&#39; /usr/lib/systemd/system/docker.service ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock 查看dockerd帮助信息：\n1 2 ## dockerd --help|grep &#39;data-root&#39; --data-root string Root directory of persistent Docker state (default &#34;/var/lib/docker&#34;) 可以看到，只用增加--data-root参数就可以设置数据存储目录，我们在启动配置中增加--data-root=/data/docker配置，修改后配置如下：\n1 2 ## grep &#39;ExecStart&#39; /usr/lib/systemd/system/docker.service ExecStart=/usr/bin/dockerd -H fd:// --data-root=/data/docker --containerd=/run/containerd/containerd.sock 注意，此处的数据存储目录/data/docker不需要我们手动创建。\n重新加载配置并重启docker服务：\n1 2 3 4 5 6 7 8 ## 重新加载配置 ## systemctl daemon-reload ## 重启docker服务 ## systemctl restart docker ## 查看docker服务状态 ## systemctl status docker 查看目录信息：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -890,7 +890,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 23:49 &#43;0800
+        </span>
+    </section></footer>
 
 
     

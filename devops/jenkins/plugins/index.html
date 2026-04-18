@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/jenkins/plugins/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="Jenkins插件推荐">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="Jenkins插件推荐">
 <meta property='og:description' content="Jenkins插件推荐 1. 配置jenkins插件清华源加速 清华大学jenkins代理地址 https://mirrors.tuna.tsinghua.edu.cn/jenkins/。 清华大学jenkins插件更新地址 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json。 ⚠️ 警告 hudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\nhudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\nhudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\n1.1 修改hudson.model.UpdateCenter.xml 直接进入到jenkins安装目录/var/lib/jenkins：\n1 2 [root@jenkins ~]# cd /var/lib/jenkins/ [root@jenkins jenkins]# 备份默认配置文件：\n1 [root@jenkins jenkins]# cp -p hudson.model.UpdateCenter.xml{,.bak} 修改配置文件：\n1 [root@jenkins jenkins]# sed -i &#39;s@https://updates.jenkins.io/update-center.json@https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json@g&#39; hudson.model.UpdateCenter.xml 修改完成后，查看配置信息：\n1 2 3 4 5 6 7 8 9 [root@jenkins jenkins]# cat hudson.model.UpdateCenter.xml &lt;?xml version=&#39;1.1&#39; encoding=&#39;UTF-8&#39;?&gt; &lt;sites&gt; &lt;site&gt; &lt;id&gt;default&lt;/id&gt; &lt;url&gt;https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json&lt;/url&gt; &lt;/site&gt; &lt;/sites&gt; [root@jenkins jenkins]# 1.2 修改default.json 切换到/var/lib/jenkins/updates/目录，查看default.json：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/jenkins/plugins/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Jenkins' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Jenkins' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T21:16:50&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="Jenkins插件推荐">
 <meta name="twitter:description" content="Jenkins插件推荐 1. 配置jenkins插件清华源加速 清华大学jenkins代理地址 https://mirrors.tuna.tsinghua.edu.cn/jenkins/。 清华大学jenkins插件更新地址 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json。 ⚠️ 警告 hudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\nhudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\nhudson.model.UpdateCenter.xml和default.json都必须更换，不然不生效!\n1.1 修改hudson.model.UpdateCenter.xml 直接进入到jenkins安装目录/var/lib/jenkins：\n1 2 [root@jenkins ~]# cd /var/lib/jenkins/ [root@jenkins jenkins]# 备份默认配置文件：\n1 [root@jenkins jenkins]# cp -p hudson.model.UpdateCenter.xml{,.bak} 修改配置文件：\n1 [root@jenkins jenkins]# sed -i &#39;s@https://updates.jenkins.io/update-center.json@https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json@g&#39; hudson.model.UpdateCenter.xml 修改完成后，查看配置信息：\n1 2 3 4 5 6 7 8 9 [root@jenkins jenkins]# cat hudson.model.UpdateCenter.xml &lt;?xml version=&#39;1.1&#39; encoding=&#39;UTF-8&#39;?&gt; &lt;sites&gt; &lt;site&gt; &lt;id&gt;default&lt;/id&gt; &lt;url&gt;https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json&lt;/url&gt; &lt;/site&gt; &lt;/sites&gt; [root@jenkins jenkins]# 1.2 修改default.json 切换到/var/lib/jenkins/updates/目录，查看default.json：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -804,7 +804,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 21:16 &#43;0800
+        </span>
+    </section></footer>
 
 
     

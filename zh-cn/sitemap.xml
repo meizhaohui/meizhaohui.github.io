@@ -3,16 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hellogitlab.com/categories/blog/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/more/blog/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/blog/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,16 +22,16 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/more/blog/shortcodes-usage/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/more/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/more/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -46,27 +43,11 @@
                 href="https://hellogitlab.com/tags/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/more/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hellogitlab.com/more/blog/create_hugo_blog/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/"
-                />
+    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/backend/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -79,7 +60,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/channel/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -92,7 +73,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/devops/cicd-pipeline/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -105,7 +86,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/cicd/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -117,21 +98,8 @@
                 href="https://hellogitlab.com/categories/cicd/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/devops/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/devops/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/devops/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/categories/devops/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -144,7 +112,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/docker/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-15T20:16:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -157,7 +125,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/docker/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-15T20:16:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -170,7 +138,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/devops/docker-deploy/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -182,11 +150,8 @@
                 href="https://hellogitlab.com/devops/docker-deploy/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/backend/flask/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hellogitlab.com/tags/flask/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -199,10 +164,10 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/flask/flask-intro/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/gitlab-ci/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -214,21 +179,8 @@
                 href="https://hellogitlab.com/tags/gitlab-ci/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/backend/golang/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/golang/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/golang/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/categories/golang/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -241,7 +193,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/golang/golang-concurrency/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -254,7 +206,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/goroutine/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -266,21 +218,8 @@
                 href="https://hellogitlab.com/tags/goroutine/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/backend/java/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/java/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/java/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/categories/java/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -293,7 +232,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/java/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -306,7 +245,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/k8s/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -319,7 +258,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/kubernetes/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -331,14 +270,11 @@
                 href="https://hellogitlab.com/categories/kubernetes/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/devops/kubernates/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hellogitlab.com/devops/kubernates/kubernetes-cluster/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/page/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -351,7 +287,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/python/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -364,7 +300,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/java/spring-boot-intro/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -377,7 +313,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/spring-boot/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -390,10 +326,10 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/web%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/page/archives/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -405,27 +341,14 @@
                 href="https://hellogitlab.com/page/archives/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/backend/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%AE%B9%E5%99%A8%E5%8C%96/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/page/search/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -438,10 +361,10 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/api/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -454,7 +377,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/frontend/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -467,7 +390,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/javascript/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -480,7 +403,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/linux/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -493,7 +416,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/os/memory-management/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -506,7 +429,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/os/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -519,7 +442,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/react/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -532,7 +455,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/frontend/react-hooks/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -545,7 +468,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/rest/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -558,7 +481,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/rest-api/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -570,37 +493,11 @@
                 href="https://hellogitlab.com/backend/rest-api/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/os/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/os/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/os/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/tags/%E5%86%85%E5%AD%98/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/frontend/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/frontend/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/frontend/"
-                />
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/css/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -613,7 +510,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/frontend/css-flexbox/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -625,27 +522,14 @@
                 href="https://hellogitlab.com/frontend/css-flexbox/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/dba/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/dba/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/dba/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/tags/%E5%B8%83%E5%B1%80/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/database-index/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -658,13 +542,13 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/dba/database-index/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E6%80%A7%E8%83%BD/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/vue/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -677,7 +561,7 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue3-composition/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -690,16 +574,16 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%AD%98%E5%82%A8/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E6%9E%B6%E6%9E%84/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/microservices/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -712,10 +596,10 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/filesystem/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -728,13 +612,13 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E8%B0%83%E5%BA%A6/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E7%BA%BF%E7%A8%8B/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/thread-scheduling/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -747,227 +631,187 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/centos/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/centos/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/os/centos/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/dig/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/os/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/ci/</loc>
-    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-15T20:16:27+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/ci/</loc>
-    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/coredns/</loc>
-    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-15T20:16:27+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/coredns/</loc>
-    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/coredns/</loc>
-    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/coredns/base_use/</loc>
-    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/coredns/coredns_docs/</loc>
-    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/coredns/deploy/</loc>
-    <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/backend/</loc>
-    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/backend/python/</loc>
-    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/python/"
-                />
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/python/</loc>
-    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/miniforge/</loc>
-    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/use_loguru/</loc>
-    <lastmod>2025-10-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/etcd/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/etcd/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/etcd/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_compaction/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_id_is_different/</loc>
-    <lastmod>2025-06-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_initial-cluster-state/</loc>
-    <lastmod>2025-06-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_visualization_tool/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_configuration_file/</loc>
-    <lastmod>2025-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/backend/c/</loc>
-    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/c/</loc>
-    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/c/</loc>
-    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%87%BD%E6%95%B0%E5%BA%93/</loc>
-    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_7/</loc>
-    <lastmod>2025-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-16T23:15:18+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_certificate_expired/</loc>
-    <lastmod>2025-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/dalao/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/dalao/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_role/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/more/friendlink/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/friendlink/dalao/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_6/</loc>
-    <lastmod>2025-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-12T18:16:36+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_6_4/</loc>
-    <lastmod>2025-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-15T23:05:06+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E7%BC%96%E7%A0%81/</loc>
-    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-07T21:00:29+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_5.4/</loc>
-    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-07T21:00:29+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%AD%97%E7%AC%A6/</loc>
-    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-07T21:00:29+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/tls_etcd_cluster/</loc>
-    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_cluster/</loc>
-    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/single_etcd/</loc>
-    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/docker/</loc>
-    <lastmod>2025-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/</loc>
-    <lastmod>2025-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_docs/</loc>
-    <lastmod>2025-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/install/</loc>
-    <lastmod>2025-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/ai/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/ai/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/agent/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/deepseek/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/deepseek/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/agent/deepseek/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/agent/deepseek/deepseek_docs/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/agent/deepseek/deepseek_in_wps/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/agent/deepseek/create_local_deepseek_environments/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_5.3/</loc>
-    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-23T22:40:26+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_5.2/</loc>
-    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T23:44:54+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_5/</loc>
-    <lastmod>2024-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T23:44:54+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/cm/</loc>
-    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/cm/</loc>
-    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/git/</loc>
-    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/git/</loc>
-    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/git/</loc>
-    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/force_delete_remote_commit/</loc>
-    <lastmod>2024-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_4/</loc>
-    <lastmod>2024-08-23T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T23:44:54+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/mysql/x_00_install_mysql/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/database/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/database/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -980,891 +824,1047 @@
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/mysql/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/mysql/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/dba/mysql/</loc>
-    <lastmod>2024-07-24T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/ansible/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/ansible/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/ansible/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/role_6_redis/</loc>
-    <lastmod>2024-07-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/redis/install_redis_with_source/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/redis/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/dba/redis/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/redis/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/miniconda/</loc>
-    <lastmod>2024-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/role_5_supervisor/</loc>
-    <lastmod>2024-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/callback/</loc>
-    <lastmod>2024-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/accelerate/</loc>
-    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/role_4_include/</loc>
-    <lastmod>2024-03-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_12_user_permission/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec/</loc>
-    <lastmod>2024-03-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T23:44:54+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_11_nexus_api_3_code_optimization/</loc>
-    <lastmod>2024-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/java/maven/</loc>
-    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/ansible-vault/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/loop/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/base/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/ansible_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_wildcard_regular_expression_in_bash_script/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/blockinfile/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/gitlab/x_centos7_install_gitlab_with_external_nginx_and_https/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/centos_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/certificate_authority_for_https/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/nfs_server/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/create_git_server/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_enhance_centos_secure/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/changed_when/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/cobbler/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/cobbler/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/cobbler/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/command/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/copy/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/cron/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/c/the_c_programming_language_second_edition/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-02T23:44:54+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/debug/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/docker_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/docker-compose/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/warning-bridge-nf-call-iptables_is_disabled/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/docker_basic_use/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/postgresql_in_docker/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/redis_in_docker/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/add_port_to_container/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_echo_color_font/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/fetch/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/file/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/filter/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/find/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/firewalld/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/flask/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/flask/flask_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/frontend/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/game/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/game/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/get_url/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/git_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/git_config/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/git_commit_template/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/git_hooks/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/gitlab/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/gitlab/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/gitlab/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/gitlab/gitlab_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/gitlab/x_configure_gitlab_i18n_and_create_gitlab_ci_with_gitlab_runner/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/gogs_in_docker/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/git_chinese_filename/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/version_control_with_git/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/install_git/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/basic_use/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/reset_diff_repos/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/git_exceptions/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/git/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/golang/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/golang/base/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/golang/go-tour/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/group/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/handlers/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/hostname/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/htpasswd/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/java/basic/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/jenkins/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/jenkins/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/jenkins/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/jenkins_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/jenkins/jenkins_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/jenkins_job_info/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/jenkins_job/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/install/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/jenkins/install/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/plugins/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/jenkins/plugins/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/json_tool_jq/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/k8s/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/kubernates/kubernetes_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/kubernates/deploy/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/ldap_attr/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/ldap_entry/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/ldap_passwd/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/lineinfile/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/linux_boot/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_how_to_install_htop_in_linux/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_logging/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/lookups/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/macos/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/macos/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/macos/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/mail/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/make/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/me/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/more/me/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/me/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/monitor/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/monitor/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/mysql/mysql_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/mysql/x_01_insert_select_update_delete/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/mysql/x_02_sum_count_avg/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/mysql/x_03_greatest_least/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/ntpdate/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/ping/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_pipenv/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/pip/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/proxmox/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/proxmox/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/proxmox/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/proxmox/proxmox_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/proxmox/x2_installingproxmoxve/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/proxmox/x1_introduction/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_python_cookbook/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/python_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_python_concurrency/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/black/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_install_python/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_control_workflow/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_operational_character/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_introduction_python/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_python_interview/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/mytelnet/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_str/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/redis/install_redis/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/redis/redis_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_reviewboard_i18n/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/os/rockylinux/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/rockylinux/rocky_linux_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/rockylinux/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/rockylinux/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/role/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/rsync/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/script/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_selenium_install_and_use/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/service/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/setup/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/shell/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/softexam/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/softexam/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/ssh-keygen/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/use_ssh_git_push/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/supervisor/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/supervisor/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/supervisor/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/svn/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/svn/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/svn/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/svn/svn_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/tags/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/tempfile/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/template/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/timezone/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/tools/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/tools/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/ubuntu/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/os/ubuntu/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/ubuntu/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/ubuntu/ubuntu_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/ubuntu/ubuntu_firewall/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/ubuntu/ubuntu_init/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/unarchive/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/user/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/v-for/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_how_to_use_vim/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/virtualbox_command/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_virtualbox_enhance_hdds/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/blog/build_your_vitepress_blog/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/vue/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/frontend/vue/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/use_vue-multiselect/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/blog/build_your_vuepress_blog_1/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/blog/build_your_vuepress_blog/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/vue_basic_use/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/vue_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/wait_for_connection/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/wait_for/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/when/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/windows/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/os/windows/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/windows/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/windows/windows_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/windows/cmd/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/yum/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/zabbix/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/devops/zabbix/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/zabbix/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/zabbix/permission_denied/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/facts_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_var_name_rule/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/forms/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/prettytable/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/check_python_package_json_info/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/the_latest_image/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_collections_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_re_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_tobepythonista/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_programs_and_processes/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/create_password/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/fast_web/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_10_nexus_api_2/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_2/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_3/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_4_docker_proxy/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_5_test_docker_proxy/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_6_nginx_proxy/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-15T20:16:27+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_7_change_timezone/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_8_nexus_database/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/create_your_nexus_9_nexus_api/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_python_style_and_static_check/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/role_2/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/class_style/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/yaml/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_forbit_use_rm_to_delete_root_path/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/more/tools/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/tools/tools_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/blog/blog_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/me/about/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_function/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/kubernates/k8s_get_nodes/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/kubernates/k8s_cluster_info/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/kubernates/k8s_get_cs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/computed_watch/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/zabbix/zabbix_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/flask/flask_httpauth/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/dba/mysql/x_04_index_column_size_too_large_the_maximum_column_size_is_767_bytes/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/supervisor/supervisor/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_object_oriented_programming/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/syntax/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_glob_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_itertools_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_json_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_os_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_system_module/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_univeral_unique_identifier/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_built-in_data_structure/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_web/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_arrow/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_calendar/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_datetime/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_dateutil/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_fleming/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_pytz/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_time/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_time_and_date_module_timeit/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/softexam/soft_exam/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/more/softexam/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/game/third_order_magic_cube/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/signed-off-by/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/git/ignore_changed_files/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/clair/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/nextcloud_in_docker/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_faker_generate_fake_data/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/events/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_database/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_pprint/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/v-if_v_show/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/get_container_by_pid/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_internet/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_file_read_write/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/change_root_dir/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_use_help/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_use_help/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/devops/ansible/role_3/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/game/game_docs/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_try_except_else_finally/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_quote_escape_character/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/more/game/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_virtualbox_install_centos7/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/os/centos/x_hotkey_in_terminal/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/x_decorator/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/backend/python/auto_start_proxy/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue/components/</loc>
-    <lastmod>2024-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/agent/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/ansible/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/more/blog/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/backend/c/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/os/centos/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/coredns/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/dba/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/dba/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/dba/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/agent/deepseek/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/devops/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/devops/docker/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/etcd/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/backend/flask/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/git/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/gitlab/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/backend/golang/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/golang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/golang/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/backend/java/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/java/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/java/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/devops/jenkins/</loc>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/kubernates/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/more/me/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/dba/mysql/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/proxmox/</loc>
+    <lastmod>2026-02-14T21:16:50+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/backend/python/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/python/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/dba/redis/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/os/rockylinux/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/supervisor/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/svn/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/os/ubuntu/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/frontend/vue/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/os/windows/</loc>
+    <lastmod>2026-02-14T15:28:30+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/devops/zabbix/</loc>
+    <lastmod>2026-02-14T17:57:01+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/os/</loc>
+    <lastmod>2026-04-18T20:10:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/os/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/os/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/more/friendlink/</loc>
+    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/more/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/more/tools/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/backend/</loc>
+    <lastmod>2026-04-18T20:10:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/frontend/</loc>
+    <lastmod>2026-04-18T20:10:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/frontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/frontend/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/more/softexam/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/more/game/</loc>
+    <lastmod>2026-02-14T23:49:31+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/</loc>
+    <lastmod>2026-02-13T00:06:07+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/"
+                />
   </url>
 </urlset>

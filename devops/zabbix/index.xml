@@ -6,8 +6,7 @@
         <description>Recent content in Zabbix on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/devops/zabbix/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>阿梅的博客</copyright><atom:link href="https://hellogitlab.com/devops/zabbix/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>zabbix日志监控Permissiondenied权限异常处理</title>
         <link>https://hellogitlab.com/devops/zabbix/permission_denied/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>

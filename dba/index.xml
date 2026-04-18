@@ -6,8 +6,7 @@
         <description>Recent content in DBA on 编程技术分享</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/dba/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>阿梅的博客</copyright><atom:link href="https://hellogitlab.com/dba/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>数据库索引</title>
         <link>https://hellogitlab.com/dba/database-index/</link>
         <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>

@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="GitLabCI流水线配置文件.gitlab-ci.yml详解">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="GitLabCI流水线配置文件.gitlab-ci.yml详解">
 <meta property='og:description' content="GitLab CI流水线配置文件.gitlab-ci.yml详解 本文讲解在GitLab的汉化与CI持续集成gitlab-runner的配置的基础上，对GitLab CI流水线配置文件 .gitlab-ci.yml进行详细的介绍。\n实验环境 server服务端: 操作系统为CentOS 7.6，IP:192.168.56.14， git:2.16.5。 查看server服务端信息:\n1 2 3 4 5 6 [root@server ~]# cat /etc/centos-release CentOS Linux release 7.6.1810 (Core) [root@server ~]# ip a show|grep 192 inet 192.168.56.14/24 brd 192.168.56.255 scope global noprefixroute enp0s3 [root@server ~]# git --version git version 2.16.5 GitLab用户信息:\n1 2 3 账号 密码 root 1234567890 meizhaohui 1234567890 GitLab WEB网站地址： http://192.168.56.14\n之前我们配置的bluelog的4#流水线已经已通过了：\n![gitlab_cicd-pipeline_detail.png](/img/ gitlab_cicd-pipeline_detail.png)\n可以发现其 build 、Test 、Deploy三个阶段的任务都执行成功！\n而流水线执行的具体过程都是由.gitlab-ci.yml配置文件定义的，本文详细讲解.gitlab-ci.yml配置文件的使用。\nGitLab CI介绍 GitLab提交持续集成服务，当你在项目根目录中添加 .gitlab-ci.yml文件，并配置项目的运行器( GitLab Runner)，那么后续的每次提交都会触发CI流水线(pipeline)的执行。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/gitlab/x_gitlab_ci_.gitlab-ci.yml_detail/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Gitlab' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CI' /><meta property='article:tag' content='Gitlab' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="GitLabCI流水线配置文件.gitlab-ci.yml详解">
 <meta name="twitter:description" content="GitLab CI流水线配置文件.gitlab-ci.yml详解 本文讲解在GitLab的汉化与CI持续集成gitlab-runner的配置的基础上，对GitLab CI流水线配置文件 .gitlab-ci.yml进行详细的介绍。\n实验环境 server服务端: 操作系统为CentOS 7.6，IP:192.168.56.14， git:2.16.5。 查看server服务端信息:\n1 2 3 4 5 6 [root@server ~]# cat /etc/centos-release CentOS Linux release 7.6.1810 (Core) [root@server ~]# ip a show|grep 192 inet 192.168.56.14/24 brd 192.168.56.255 scope global noprefixroute enp0s3 [root@server ~]# git --version git version 2.16.5 GitLab用户信息:\n1 2 3 账号 密码 root 1234567890 meizhaohui 1234567890 GitLab WEB网站地址： http://192.168.56.14\n之前我们配置的bluelog的4#流水线已经已通过了：\n![gitlab_cicd-pipeline_detail.png](/img/ gitlab_cicd-pipeline_detail.png)\n可以发现其 build 、Test 、Deploy三个阶段的任务都执行成功！\n而流水线执行的具体过程都是由.gitlab-ci.yml配置文件定义的，本文详细讲解.gitlab-ci.yml配置文件的使用。\nGitLab CI介绍 GitLab提交持续集成服务，当你在项目根目录中添加 .gitlab-ci.yml文件，并配置项目的运行器( GitLab Runner)，那么后续的每次提交都会触发CI流水线(pipeline)的执行。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -6356,7 +6356,19 @@ Predefined environment variables.</p>
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     

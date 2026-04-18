@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/when/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="when条件判断">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="when条件判断">
 <meta property='og:description' content="when条件判断 1. 官方示例 when条件判断，可参考官方文档 Conditionals 以下是官方示例中的几个示例：\n1.1 判断操作系统 判断操作系统是否是Debian:\n1 2 3 4 tasks: - name: Shut down Debian flavored systems ansible.builtin.command: /sbin/shutdown -t now when: ansible_facts[&#39;os_family&#39;] == &#34;Debian&#34; 多条件判断，判断操作系统是不是CentOS6或Debian7:\n1 2 3 4 5 tasks: - name: Shut down CentOS 6 and Debian 7 systems ansible.builtin.command: /sbin/shutdown -t now when: (ansible_facts[&#39;distribution&#39;] == &#34;CentOS&#34; and ansible_facts[&#39;distribution_major_version&#39;] == &#34;6&#34;) or (ansible_facts[&#39;distribution&#39;] == &#34;Debian&#34; and ansible_facts[&#39;distribution_major_version&#39;] == &#34;7&#34;) 1.2 判断变量是否定义 判断变量是否定义：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/when/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="when条件判断">
 <meta name="twitter:description" content="when条件判断 1. 官方示例 when条件判断，可参考官方文档 Conditionals 以下是官方示例中的几个示例：\n1.1 判断操作系统 判断操作系统是否是Debian:\n1 2 3 4 tasks: - name: Shut down Debian flavored systems ansible.builtin.command: /sbin/shutdown -t now when: ansible_facts[&#39;os_family&#39;] == &#34;Debian&#34; 多条件判断，判断操作系统是不是CentOS6或Debian7:\n1 2 3 4 5 tasks: - name: Shut down CentOS 6 and Debian 7 systems ansible.builtin.command: /sbin/shutdown -t now when: (ansible_facts[&#39;distribution&#39;] == &#34;CentOS&#34; and ansible_facts[&#39;distribution_major_version&#39;] == &#34;6&#34;) or (ansible_facts[&#39;distribution&#39;] == &#34;Debian&#34; and ansible_facts[&#39;distribution_major_version&#39;] == &#34;7&#34;) 1.2 判断变量是否定义 判断变量是否定义：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1276,7 +1276,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     

@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/git/git_exceptions/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="git异常处理">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="git异常处理">
 <meta property='og:description' content="git异常处理 Peer's Certificate issuer is not recognized异常 在CentOS7操作系统中搭建了内部使用的gitlab平台，当使用git clone下载代码时会提示以下异常：\n1 fatal: unable to access &#39;https://*****/xx.git/&#39;: Peer&#39;s Certificate issuer is not recognized. 导致该问题的原因是系统证书问题，因为系统会对SSL证书进行验证，操作系统判断这个操作可能会造成不好的影响，并进行了阻止，停止了下载操作。\n因为该gitlab仓库是我们信任的，我们只需要设置跳过SSL证书验证就可以，执行以下命令：\n1 git config --global http.sslVerify false GitHub无法访问或访问缓慢解决办法 在终端执行指令sudo vi /etc/hosts打开hosts文件进行编辑 插入如下内容，保存退出即可！\n1 2 3 4 5 6 7 8 9 10 ## github 204.232.175.78 http://documentcloud.github.com 207.97.227.239 http://github.com 204.232.175.94 http://gist.github.com 107.21.116.220 http://help.github.com 207.97.227.252 http://nodeload.github.com 199.27.76.130 http://raw.github.com 107.22.3.110 http://status.github.com 204.232.175.78 http://training.github.com 207.97.227.243 http://www.github.com Please commit your changes or stash them before you merge 解决方法：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/git/git_exceptions/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="git异常处理">
 <meta name="twitter:description" content="git异常处理 Peer's Certificate issuer is not recognized异常 在CentOS7操作系统中搭建了内部使用的gitlab平台，当使用git clone下载代码时会提示以下异常：\n1 fatal: unable to access &#39;https://*****/xx.git/&#39;: Peer&#39;s Certificate issuer is not recognized. 导致该问题的原因是系统证书问题，因为系统会对SSL证书进行验证，操作系统判断这个操作可能会造成不好的影响，并进行了阻止，停止了下载操作。\n因为该gitlab仓库是我们信任的，我们只需要设置跳过SSL证书验证就可以，执行以下命令：\n1 git config --global http.sslVerify false GitHub无法访问或访问缓慢解决办法 在终端执行指令sudo vi /etc/hosts打开hosts文件进行编辑 插入如下内容，保存退出即可！\n1 2 3 4 5 6 7 8 9 10 ## github 204.232.175.78 http://documentcloud.github.com 207.97.227.239 http://github.com 204.232.175.94 http://gist.github.com 107.21.116.220 http://help.github.com 207.97.227.252 http://nodeload.github.com 199.27.76.130 http://raw.github.com 107.22.3.110 http://status.github.com 204.232.175.78 http://training.github.com 207.97.227.243 http://www.github.com Please commit your changes or stash them before you merge 解决方法：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -974,7 +974,19 @@
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     

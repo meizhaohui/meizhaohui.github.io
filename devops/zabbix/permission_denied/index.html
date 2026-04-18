@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/zabbix/permission_denied/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="zabbix日志监控Permissiondenied权限异常处理">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="zabbix日志监控Permissiondenied权限异常处理">
 <meta property='og:description' content="zabbix日志监控Permission denied权限异常处理 1. 问题描述 配置了zabbix监控日志/var/log/messages时，页面显示监控项是“Not supported”不支持的。\n登陆到zabbix-agent节点，查看节点日志信息，发现日志报以下异常：\n1 2 3 4 5 6 7 8 9 10 11 [root@zabbix-agent ~]# tail -f /srv/zabbix/logs/zabbix_agentd.log 1687:20230315:202950.434 TLS support: NO 1687:20230315:202950.434 ************************** 1687:20230315:202950.434 using configuration file: /srv/zabbix/etc/zabbix_agentd.conf 1687:20230315:202950.434 agent #0 started [main process] 1688:20230315:202950.435 agent #1 started [collector] 1691:20230315:202950.435 agent #4 started [listener #3] 1689:20230315:202950.435 agent #2 started [listener #1] 1690:20230315:202950.435 agent #3 started [listener #2] 1692:20230315:202950.436 agent #5 started [active checks #1] 1692:20230315:220454.113 active check &#34;log[/var/log/messages,&#34;ERROR&#34;,,,skip,]&#34; is not supported: Cannot open file &#34;/var/log/messages&#34;: [13] Permission denied 即可知zabbix无/var/log/messages文件的权限。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/zabbix/permission_denied/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='Monitor' /><meta property='article:tag' content='Zabbix' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='Monitor' /><meta property='article:tag' content='Zabbix' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="zabbix日志监控Permissiondenied权限异常处理">
 <meta name="twitter:description" content="zabbix日志监控Permission denied权限异常处理 1. 问题描述 配置了zabbix监控日志/var/log/messages时，页面显示监控项是“Not supported”不支持的。\n登陆到zabbix-agent节点，查看节点日志信息，发现日志报以下异常：\n1 2 3 4 5 6 7 8 9 10 11 [root@zabbix-agent ~]# tail -f /srv/zabbix/logs/zabbix_agentd.log 1687:20230315:202950.434 TLS support: NO 1687:20230315:202950.434 ************************** 1687:20230315:202950.434 using configuration file: /srv/zabbix/etc/zabbix_agentd.conf 1687:20230315:202950.434 agent #0 started [main process] 1688:20230315:202950.435 agent #1 started [collector] 1691:20230315:202950.435 agent #4 started [listener #3] 1689:20230315:202950.435 agent #2 started [listener #1] 1690:20230315:202950.435 agent #3 started [listener #2] 1692:20230315:202950.436 agent #5 started [active checks #1] 1692:20230315:220454.113 active check &#34;log[/var/log/messages,&#34;ERROR&#34;,,,skip,]&#34; is not supported: Cannot open file &#34;/var/log/messages&#34;: [13] Permission denied 即可知zabbix无/var/log/messages文件的权限。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1187,7 +1187,19 @@ Secure user for Zabbix agent</p>
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     

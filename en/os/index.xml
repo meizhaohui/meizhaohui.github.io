@@ -6,8 +6,7 @@
         <description>Recent content in Operating System on Programming Technology Sharing</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hellogitlab.com/en/os/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>阿梅的博客</copyright><atom:link href="https://hellogitlab.com/en/os/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Memory Management in Linux</title>
         <link>https://hellogitlab.com/en/os/memory-management/</link>
         <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>

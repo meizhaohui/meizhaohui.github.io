@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/file/'>
 
-<link rel="stylesheet" href="/scss/style.min.4d732617622bbb8d638b6848ca5b73fd5d2541fd8bdec42d7d771150072f6dd8.css"><meta property='og:title' content="file文件模块">
+<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="file文件模块">
 <meta property='og:description' content="file文件模块 1. 基础知识储备 我们先来学习一下一些基础知识。主要涉及stat、chattr、lsattr命令。\nstat，display file or file system status，显示文件或文件系统状态。\nchattr，change file attributes on a Linux file system，改变文件属性。\nlsattr ， list file attributes on a Linux second extended file system，查看文件属性。\n下面摘录了chattr的man手册页部分内容：\nNAME chattr - change file attributes on a Linux file system\nSYNOPSIS chattr [ -RVf ] [ -v version ] [ mode ] files&hellip;\nDESCRIPTION chattr changes the file attributes on a Linux file system.\nThe format of a symbolic mode is +-=[aAcCdDeijsStTu]. The operator '+' causes the selected attributes to be added to the existing attributes of the files; '-' causes them to be removed; and '=' causes them to be the only attributes that the files have. The letters 'aAcCdDeijsStTu' select the new attributes for the files: append only (a), no atime updates (A), compressed (c), no copy on write (C), no dump (d), synchronous directory updates (D), extent format (e), immutable (i), data journalling (j), secure deletion (s), synchronous updates (S), no tail-merging (t), top of directory hierarchy (T), and undeletable (u). The following attributes are read-only, and may be listed by lsattr(1) but not modified by chattr: compression error (E), huge file (h), indexed direc‐ tory (I), inline data (N), compression raw access (X), and compressed dirty file (Z). Not all flags are supported or utilized by all filesystems; refer to filesystem-specific man pages such as btrfs(5), ext4(5), and xfs(5) for more filesystem-specific details. 需要注意一点是，并不是所有的文件系统都支持所有标志，如可以通过man ext4和man xfs查看ext4或xfs文件格式支持的文件属性标志。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/file/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Devops' /><meta property='article:tag' content='CM' /><meta property='article:tag' content='Ansible' /><meta property='article:published_time' content='2024-02-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-14T17:57:01&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="file文件模块">
 <meta name="twitter:description" content="file文件模块 1. 基础知识储备 我们先来学习一下一些基础知识。主要涉及stat、chattr、lsattr命令。\nstat，display file or file system status，显示文件或文件系统状态。\nchattr，change file attributes on a Linux file system，改变文件属性。\nlsattr ， list file attributes on a Linux second extended file system，查看文件属性。\n下面摘录了chattr的man手册页部分内容：\nNAME chattr - change file attributes on a Linux file system\nSYNOPSIS chattr [ -RVf ] [ -v version ] [ mode ] files&hellip;\nDESCRIPTION chattr changes the file attributes on a Linux file system.\nThe format of a symbolic mode is +-=[aAcCdDeijsStTu]. The operator '+' causes the selected attributes to be added to the existing attributes of the files; '-' causes them to be removed; and '=' causes them to be the only attributes that the files have. The letters 'aAcCdDeijsStTu' select the new attributes for the files: append only (a), no atime updates (A), compressed (c), no copy on write (C), no dump (d), synchronous directory updates (D), extent format (e), immutable (i), data journalling (j), secure deletion (s), synchronous updates (S), no tail-merging (t), top of directory hierarchy (T), and undeletable (u). The following attributes are read-only, and may be listed by lsattr(1) but not modified by chattr: compression error (E), huge file (h), indexed direc‐ tory (I), inline data (N), compression raw access (X), and compressed dirty file (Z). Not all flags are supported or utilized by all filesystems; refer to filesystem-specific man pages such as btrfs(5), ext4(5), and xfs(5) for more filesystem-specific details. 需要注意一点是，并不是所有的文件系统都支持所有标志，如可以通过man ext4和man xfs查看ext4或xfs文件格式支持的文件属性标志。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -4595,7 +4595,19 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。</p
 
         <span>Licensed under the GNU General Public License v3.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Feb 14, 2026 17:57 &#43;0800
+        </span>
+    </section></footer>
 
 
     
