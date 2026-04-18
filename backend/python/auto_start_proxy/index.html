@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/auto_start_proxy/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="自动启动代理程序V2rayN">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="自动启动代理程序V2rayN">
 <meta property='og:description' content="自动启动代理程序V2rayN 1. 需求说明 我们有一个科学代理程序V2rayN，使用的规则是每天动态修改端口号，避免被墙。正常情况下，可以每天手动修改代理程序的端口号，然后重启程序。但每次手动修改并启动程序有点麻烦，因此想通过Python脚本自动启动程序。\n2. 程序说明 2.1 程序目录结构 1 2 3 4 5 6 7 8 9 10 11 12 $ find . -maxdepth 1 . ./.gitignore ./.idea ./.venv ./config.yaml ./guiNConfig.json ./logs ./main.py ./Pipfile ./Pipfile.lock ./requirements.txt main.py程序主文件。 config.yaml程序配置文件，与代理程序V2rayN相关的配置。 requirements.txt依赖包配置文件。 guiNConfig.json，代理程序V2rayN的配置文件备份文件，不要将该文件上传到git仓库，避免信息泄露。 2.2 依赖包安装说明 可以使用以下命令直接安装依赖包：\n1 pip install -r requirements.txt 2.3 主程序 主程序main.py内容如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 ##!/usr/bin/python3 ## filename: main.py ## author: meizhaohui ## date: 2023-12-11 ## desc: auto change v2rayN-Core config file. import os import shutil import json import datetime from collections import OrderedDict import subprocess ## 第三方包 ## pip install -r requirements.txt ## 日志模块 from loguru import logger import yaml ## 当前文件所在目录 BASE_DIR = os.path.dirname(os.path.abspath(__file__)) ## 日志文件夹 LOG_FILE = f&#39;{BASE_DIR}{os.sep}logs{os.sep}auto_start.log&#39; ## 设置日志文件，目录会自动创建 logger.add(LOG_FILE) ## V2rayN的配置文件 YAML_CONFIG = f&#39;{BASE_DIR}{os.sep}config.yaml&#39; logger.info(f&#39;V2rayN胡配置文件:{YAML_CONFIG}&#39;) today = datetime.datetime.today() today_str = today.strftime(&#39;%m%d&#39;) logger.info(f&#39;今天日期:{today_str}&#39;) class V2RAY: def __init__(self): &#34;&#34;&#34;构造函数&#34;&#34;&#34; with open(YAML_CONFIG, encoding=&#39;utf-8&#39;) as yaml_file: self._v2ray = yaml.safe_load(yaml_file) logger.info(f&#39;代理程序配置:{self._v2ray}&#39;) # 代理程序配置信息 self._v2ray_info = self._v2ray.get(&#39;v2rayn_info&#39;) logger.info(f&#39;代理程序配置信息:{self._v2ray_info}&#39;) self.exe_path = self._v2ray_info.get(&#39;exe_path&#39;) # 代理程序名称 self.exe_name = self._v2ray_info.get(&#39;exe_name&#39;) # 代理程序启动路径 self.exe_start_path = f&#39;{self.exe_path}{os.sep}{self.exe_name}&#39; logger.info(f&#39;代理程序启动路径:{self.exe_start_path}&#39;) # 代理程序配置文件 self.default_config = f&#34;{self.exe_path}{os.sep}{self._v2ray_info.get(&#39;config_name&#39;)}&#34; logger.info(f&#39;代理程序配置文件:{self.default_config}&#39;) # 代理程序备份配置文件 self.backup_config = f&#34;{BASE_DIR}{os.sep}{self._v2ray_info.get(&#39;config_name&#39;)}&#34; logger.info(f&#39;代理程序备份配置文件:{self.backup_config}&#39;) def change_config(self): &#34;&#34;&#34;修改配置文件&#34;&#34;&#34; logger.info(&#39;备份配置文件&#39;) shutil.copyfile(self.default_config, self.backup_config) # 读取备份的配置文件，并写入到默认(旧的)配置文件中 with open(self.backup_config, encoding=&#39;utf-8&#39;) as f_in, \\ open(self.default_config, mode=&#39;w&#39;, encoding=&#39;utf-8&#39;) as f_out: # 加载json数据时保持原来顺序 logger.info(&#39;加载json数据时保持原来顺序&#39;) json_dict = json.load(f_in, object_pairs_hook=OrderedDict) current_port = json_dict.get(&#39;vmess&#39;)[0].get(&#34;port&#34;) logger.info(f&#39;当前端口号:{current_port}&#39;) json_dict.get(&#39;vmess&#39;)[0][&#34;port&#34;] = int(f&#39;2{today_str}&#39;) new_port = json_dict.get(&#39;vmess&#39;)[0].get(&#34;port&#34;) logger.info(f&#39;新的端口号:{new_port}&#39;) logger.info(&#39;将json数据写入到配置文件中&#39;) json.dump(json_dict, f_out, indent=2, ensure_ascii=False) logger.success(&#39;配置文件修改成功&#39;) def start_proxy(self): &#34;&#34;&#34;启动代理程序&#34;&#34;&#34; subprocess.Popen(self.exe_start_path, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE) logger.success(&#39;代理程序自动启动成功！&#39;) if __name__ == &#39;__main__&#39;: v2obj = V2RAY() v2obj.change_config() v2obj.start_proxy() 该程序主要做以下事情：\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/auto_start_proxy/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

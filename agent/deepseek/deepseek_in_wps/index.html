@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/agent/deepseek/deepseek_in_wps/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="wps接入deepseek大模型">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="wps接入deepseek大模型">
 <meta property='og:description' content="wps接入deepseek大模型 我们可以在wps中接入deepseek大模型，提升办公效率。\n主要用的到工具：OfficeAI助手，官网地址 https://office-ai.cn/\n1. 安装OfficeAI助手 打开OfficeAI助手官网：\n点击立即下载：\n详细可参考其官方文档 OfficeAI助手简介 https://office-ai.cn/static/introductions/officeai/introduction.html\n如果你安装过程中有问题，可以参考官方的常见问题说明 ： https://office-ai.cn/static/introductions/officeai/questions.html\n下城完成后，双击&quot;OfficeAI.exe&quot;安装：\n点击【运行】，勾选【同意】，并点击【下一步】：\n修改默认的安装路径为【D:\\ProgramFiles\\OfficeAI】，然后点击【下一步】：\n此时开始下载相关文件，等待下载完成：\n下载完成后，自动弹出 海鹦 OfficeAI助手安装，勾选【同意】，并点击【下一步】：\n修改安装目录为【D:\\ProgramFiles\\HaiYingSoft\\OfficeAI】，然后点击【下一步】：\n安装完成后，默认会勾选【打开Word/WPS看效果】，点击【完成】：\n此时打开的文档中，右侧有一个【微信登陆】的按钮，顶部菜单栏多了一个【OfficeAI】的选项：\n如果没有出现的话，你可以参照这个打开的示例文档进行修复。\n主要是要启用HyWordAI插件。或者右侧面板有时显示有时不显示，直接参考打开的文档设置即可。\n如果不显示右侧面板，则依次点击【OfficeAI】菜单，然后点击【右侧面板】，此时显示了【右侧面板】后，就可以点击【微信登陆】：\n此时让使用微信扫描二维码：\n登陆成功后，手机端会显示【登陆成功，请关闭此页面】：\n登陆成功后，在wps右侧就会显示ai的面板了：\n2. OffIceAI的使用 2.1 OfficeAI大模型的配置 上面的右侧面板正常登陆后，就可以点击右侧像笔一样的图标，进行设置：\n如果使用之前部署的deepseek本地大模型，需要在【大模型设置】里面选择【本地】，然后模型处选择【ollama】，模型名选择你下载好的【deepseek-r1:15.b】大模型！最后点击【保存】即可。\n如何搭建本地大模型，可参考上一篇总结文档 本地部署deepseek环境\n此时，会弹出需要下载依赖组件，点击【是】下载即可。\n此时会打开下载页面：\n点击【本地服务器端】超链接下载OfficeAI_Server.exe文件，下载完成后双击OfficeAI_Server.exe运行：\n勾选【I accept the agreement】，并点击【Next】下一步：\n修改安装目录为【D:\\ProgramFiles\\HaiYingSoft\\OfficeAI_Server】，并点击【Next】下一步：\n保持默认的【Full installation】,并点击【Next】下一步：\n">
 <meta property='og:url' content='https://hellogitlab.com/agent/deepseek/deepseek_in_wps/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

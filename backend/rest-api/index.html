@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/rest-api/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="RESTful API设计">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="RESTful API设计">
 <meta property='og:description' content="REST原则 REST使用HTTP方法进行CRUD操作。\nHTTP方法 GET: 获取数据 POST: 创建新资源 PUT: 更新资源 DELETE: 删除资源 ">
 <meta property='og:url' content='https://hellogitlab.com/backend/rest-api/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -73,6 +73,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>
@@ -747,7 +777,7 @@
             
                 
 <article class="">
-    <a href="/backend/database-index/">
+    <a href="/dba/database-index/">
         
         
 
@@ -760,7 +790,7 @@
             
                 
 <article class="">
-    <a href="/dba/database-index/">
+    <a href="/backend/database-index/">
         
         
 

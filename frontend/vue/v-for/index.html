@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/frontend/vue/v-for/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="v-for循环列表渲染">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="v-for循环列表渲染">
 <meta property='og:description' content="v-for循环列表渲染 我们可以使用v-for指令来基于一个数组或对象来循环渲染一个列表。\n使用数组来循环： v-for 指令需要使用 item in items 形式的特殊语法，其中 items 是源数据数组，而 item 则是被迭代的数组元素的别名。 使用列表循环时，v-for 还支持一个可选的第二个参数，即当前项的索引。如v-for=&quot;(item, index) in items&quot;。 使用对象来循环： 可以用 v-for 来遍历一个对象的 property属性。如v-for=&quot;value in object&quot;。 可以提供第二个的参数为 property 属性名称 (也就是键名)，如v-for=&quot;(value, name) in object&quot;。 还可以用第三个参数作为索引，如v-for=&quot;(value, name, index) in object&quot;。 我们来测试一下官方的示例。\n1. v-for对数组进行循环处理 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 &lt;!DOCTYPE html&gt; &lt;!-- v-for.html --&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;v-for循环渲染&lt;/title&gt; &lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&#34;&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;div id=&#34;app&#34;&gt; &lt;li v-for=&#34;item in items&#34; v-bind:key=&#34;item.message&#34;&gt; {{ item.message }} &lt;/li&gt; &lt;button v-on:click=&#34;add&#34;&gt;Add&lt;/button&gt; &lt;/div&gt; &lt;!-- script脚本包裹了一段js代码 --&gt; &lt;script&gt; var app = new Vue({ // 此处的el属性必须保留，否则组件无法正常使用 el: &#39;#app&#39;, data: { items: [{ message: &#39;Foo&#39; }, { message: &#39;Bar&#39; } ] }, methods: { add: function() { this.items.push({message: &#34;new message&#34;}) }, } }) &lt;/script&gt; &lt;/body&gt; &lt;/html&gt; 我们运行代码，并在浏览器中打开页面，看到如下页面;\n">
 <meta property='og:url' content='https://hellogitlab.com/frontend/vue/v-for/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

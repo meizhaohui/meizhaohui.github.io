@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/java/spring-boot-intro/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="Spring Boot快速入门">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="Spring Boot快速入门">
 <meta property='og:description' content="Spring Boot简介 Spring Boot简化了Spring应用的开发，提供了开箱即用的配置。\n创建REST API 1 2 3 4 5 6 7 8 9 @RestController @RequestMapping(&#34;/api&#34;) public class HelloController { @GetMapping(&#34;/hello&#34;) public String hello() { return &#34;Hello, Spring Boot!&#34;; } } 自动配置 Spring Boot会根据依赖自动配置应用。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/java/spring-boot-intro/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -73,6 +73,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

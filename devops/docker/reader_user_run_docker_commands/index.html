@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="只读用户reader执行部分docker命令">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="只读用户reader执行部分docker命令">
 <meta property='og:description' content="只读用户reader执行部分docker命令 1. 概述 当一个普通用户（我们假设是只读用户reader）执行docker ps时，会报以下异常：\n1 2 3 [reader@nexus ~]$ docker ps Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json: dial unix /var/run/docker.sock: connect: permission denied [reader@nexus ~]$ docker进程使用Unix Socket而不是TCP端口。而默认情况下，Unix socket属于root用户，需要root权限才能访问。可通过以下命令可以确认：\n1 2 3 4 5 6 7 8 9 10 11 12 [root@nexus ~]# ls -lah /var/run/docker.sock srw-rw---- 1 root docker 0 Jan 29 2024 /var/run/docker.sock [root@nexus ~]# stat /var/run/docker.sock File: ‘/var/run/docker.sock’ Size: 0 Blocks: 0 IO Block: 4096 socket Device: 14h/20d Inode: 279557849 Links: 1 Access: (0660/srw-rw----) Uid: ( 0/ root) Gid: ( 991/ docker) Access: 2025-02-23 22:29:56.307183105 +0800 Modify: 2024-01-29 20:42:31.572778347 +0800 Change: 2024-01-29 20:42:31.594778249 +0800 Birth: - [root@nexus ~]# 可以看到，root用户和docker组可以对其进行操作。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/reader_user_run_docker_commands/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

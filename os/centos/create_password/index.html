@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/centos/create_password/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="创建随机密码">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="创建随机密码">
 <meta property='og:description' content="创建随机密码 以下命令都是创建16个字符的密码。\n1. 使用SHA算法加密日期 1 2 3 4 $ date +%s |sha256sum |base64 |head -c 16;echo ODliYjY3Y2ZmNTVj $ date +%s |sha256sum |base64 |head -c 16;echo N2Y0MmZlZDZkMjRk 2. 使用md5sum命令 1 2 3 4 $ date +%N |md5sum |head -c 16;echo 1c31a47b93857481 $ date +%N |md5sum |head -c 16;echo 5039a615151fa1a6 3. 使用tr命令 tr命令关键参数：\n-c或--complerment：取代所有不属于第一字符集的字符； -d或--delete：删除所有属于第一字符集的字符。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 ## 生成数字密码 $ tr -dc 0-9 &lt; /dev/urandom|head -c ${1:-16};echo 5658523653422550 $ tr -dc 0-9 &lt; /dev/urandom|head -c ${1:-16};echo 7046679611033024 ## 生成小写密码 $ tr -dc a-z &lt; /dev/urandom|head -c ${1:-16};echo dsqowqtniwqnbwag $ tr -dc a-z &lt; /dev/urandom|head -c ${1:-16};echo otzflcchronltvjf ## 生成大写密码 $ tr -dc A-Z &lt; /dev/urandom|head -c ${1:-16};echo BROXRNFUUKNSBDVP $ tr -dc A-Z &lt; /dev/urandom|head -c ${1:-16};echo UHOPQGVJIVQKYQVV ## 生成包含大小写和数字的密码 $ tr -dc A-Za-z1-9 &lt; /dev/urandom|head -c ${1:-16};echo BRlAlHrl7klJNXJG $ tr -dc A-Za-z1-9 &lt; /dev/urandom|head -c ${1:-16};echo omHYH5Sbj2JIuMSm 4. 使用uuidgen命令 1 2 3 4 $ uuidgen |head -c 16;echo b6e019be-95a0-44 $ uuidgen |head -c 16;echo 5a740b56-dfad-41 5. 使用openssl命令 1 2 3 4 $ openssl rand -base64 16|head -c 16;echo kfzFd/lQR4kTwLyg $ openssl rand -base64 16|head -c 16;echo CQtfAYyCDTms1E0D 6. 使用strings命令 1 2 3 4 5 ## 转换为人类可读的密码 $ strings /dev/urandom | tr -cd &#39;a-zA-Z0-9&#39; |head -c 16;echo CiSZwYq6Gess0QXu $ strings /dev/urandom | tr -cd &#39;a-zA-Z0-9&#39; |head -c 16;echo SdYr1I7DiyaU4e3W 7. 使用dd命令 1 2 3 4 $ dd if=/dev/urandom bs=1 count=16 2&gt;/dev/null|base64 -w 0|head -c 16;echo VC5QOTuM+Kbr4LIx $ dd if=/dev/urandom bs=1 count=16 2&gt;/dev/null|base64 -w 0|head -c 16;echo eXBTvjTU4WD/saoT 8. 使用第三方工具pwgen生成密码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 $ pwgen --help Usage: pwgen [ OPTIONS ] [ pw_length ] [ num_pw ] Options supported by pwgen: -c or --capitalize Include at least one capital letter in the password -A or --no-capitalize Don&#39;t include capital letters in the password -n or --numerals Include at least one number in the password -0 or --no-numerals Don&#39;t include numbers in the password -y or --symbols Include at least one special symbol in the password -r &lt;chars&gt; or --remove-chars=&lt;chars&gt; Remove characters from the set of characters to generate passwords -s or --secure Generate completely random passwords -B or --ambiguous Don&#39;t include ambiguous characters in the password -h or --help Print a help message -H or --sha1=path/to/file[#seed] Use sha1 hash of given file as a (not so) random generator -C Print the generated passwords in columns -1 Don&#39;t print the generated passwords in columns -v or --no-vowels Do not use any vowels so as to avoid accidental nasty words $ pwgen lahl5Ahk ahdong4G eeLooPo4 yi4oGhie queLaiX4 ak0Aete8 Je8nooMo Faifoo5o eezo1Oog lo0ahR0e Geet0uto phe2Xak7 eiHuroo1 Cah1eini naiDi7Mi gieS9uQu gaeVie2o ub6Auch4 ah9Oocek Lohph7oo We5eicie cohf0eeF Xai9beew ahf7miGi Koh3see8 Ohji8sae Lung0ae0 Ha3pae4I Phes1sei Ailu4Kow keliJ2ag CohYiey7 ig0aWooj mu4ooKee AeZ8Een4 Aish8Thu ieVai1ei bou6Ahzo eiR4eido VeiCh4sh puMie5ru Wohfain4 fieG5fai Di8Ohqu6 yai4iK5o hit4siGh siuw7aeY pafaiJu1 oquoY0he Enev2ach Iuhooza0 ooshee3B oQu5xaew quah1Shi Eesa9cae iaHie8ee Eiv2oNgi uoLur7No Dier8gei vu2Peenu Peen6iey ohM4zeil iDo3dahc Peichoh3 meim6oBu phiebo2E te9eiTho us3Chu8x ut7Tie1j aGi8Ohb9 chee6Ohf aefoh3Oe ohxae4Su en5Outh0 omooT3fo eeWie4Ju iFait0Ax ohWohvi0 Ing5Seiv gieJ2sha Eish4ahV Shoocoh6 oKei0qui Keidan9r ki1niLee Aed7nae6 eih7Ahp6 uotaeX2a Chaez1ee AiD9chie joogh8Oh rieShiu3 aech2Gah ohB3foow Vo4og8th fee6Dae1 Ob0Liedo Vo7pahQu ESh3aeza ooVie3he pouM7zoh jou4Aibi SaiMei2v Shohg8vu Xaowoe0o johC5iu4 ooCh5aid ooquei3A el2Ohdoh OoL9Aiz4 Lut4oi3m udahG7oh eeh1Keil ies3aKah Bee4taif ooL6auL5 OhTh1dee Na1ahle7 Voh6Aero Aipheeg7 iv0Pe0oY xah8Xoav sabeth0A bah6Eiw1 Lee6quu5 eiNg1iec Oozahl3V iDa7aphi Gayai5th eifeeSh4 Noe7sooh Li3EiKie EBai7OhL xu7Ood8z Iex9pe1u cuPevij7 choo8gaJ Kush6tho cieMaem0 eeNae3we Oojoh9oo Yoh2upoh fie4ohNg Gohmae2i meNahn5B aeth0Eik veinga9Y oohah7Oh uelaeF7x caeRePh4 Xook5ohm aeMah7ch tae5uM0a iSieke2y kah4Lo4G Ohy0shah fahp8eeL thahPoo3 Eiko8boo oofiWoo5 $ ## 产生16位的随机密码 $ pwgen -cns 16 1 aBath6gvdYSUaov0 $ pwgen -cns 16 1 Xn58hti2XX68UYgH $ pwgen -cns 16 1 QYUQCyy2CJd4fPfE 9. 快速重置只读用户密码 示例:\n">
 <meta property='og:url' content='https://hellogitlab.com/os/centos/create_password/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/tempfile/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="tempfile模块">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="tempfile模块">
 <meta property='og:description' content="tempfile模块 1. 概要 tempfile模块创建临时文件和目录。 mktemp命令在不同的系统上采用不同的参数，这个模块有助于避免与此相关的麻烦。 模块创建的文件/目录只能由创建者访问。 如果您需要让它们可供其他人访问，您需要使用ansible.builtin.file 模块。 官方文档：https://docs.ansible.com/ansible/latest/collections/ansible/builtin/tempfile_module.html 2. 参数 参数 可选值 默认值 说明 path path，临时文件或目录创建的位置路径。如果不指定则会使用系统默认的临时目录路径 prefix &ldquo;ansible.&rdquo; string，临时文件或目录的前缀 state &ldquo;file&rdquo;、&ldquo;directory&rdquo; &ldquo;file&rdquo; string，创建临时文件还是创建临时目录，默认创建临时文件 suffix &quot;&quot; string，临时文件或目录的后缀 3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 - name: Create temporary build directory ansible.builtin.tempfile: state: directory suffix: build - name: Create temporary file ansible.builtin.tempfile: state: file suffix: temp register: tempfile_1 - name: Use the registered var and the file module to remove the temporary file ansible.builtin.file: path: &#34;{{ tempfile_1.path }}&#34; state: absent when: tempfile_1.path is defined 4. 剧本的使用 创建剧本文件tempfile.yml:\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/tempfile/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/c/newstylec_6_4/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="换个姿势学C语言第6章-6.4 在Visual Studio 2022中创建静态库">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="换个姿势学C语言第6章-6.4 在Visual Studio 2022中创建静态库">
 <meta property='og:description' content="换个姿势学C语言 第6章 创建自己的函数库&ndash;6.4 在Visual Studio 2022中创建静态库 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结6.1-6.3参考换个姿势学C语言 第6章 第六章总结6.4参考换个姿势学C语言 第6章6.4 6. 创建自己的函数库 渐渐地，读者已经发现在程序设计中实现某种功能的代码经常被重复使用。不建议在写程序时经常复制和粘贴那些代码，这会使程序变得臃肿和复杂，可以将这些功能设计成独立的函数，在需要使用时可以随时调用它们。\n除此之外，还可以建立自己的函数库，将函数代码编译成库文件代他人或自己使用。\n本章涉及：\n函数库的类型 自定义处理字符串的函数 自定义处理键盘输入的函数 在Visual Studio 2020中创建静态库 本章将实现一些字符串的函数：\n计算字符串长度&mdash; strLength; 在字符串是查找特定字符的位置&mdash; indexOfChar; 转换字符串中大写字母为小写字母&mdash;toLowerCase; 转换字符串大小写字母为大写字母&mdash;toUpperCase; 复制字符串&mdash;strCopy。 还要实现几个用于提高键盘输入数据效率的函数：\n输入整数型&mdash;inputInteger; 输入字符&mdash;inputChar; 输入字符串&mdash;inputStr。 这些函数可以用于一下的外汇牌价看板的开发。\n6.1 什么是函数库 函数库是以重复利用程序为目的的且经过编译的函数的二进制代码 。 函数库分为动态链接库和静态链接库两种。在生成可执行文件时，这两种库文件的处理方式是不同的。 6.1.1 静态链接库 静态链接库是最简单的处理方式。如果在程序中引用一个静态函数库，编译时程序会先被编译成一个目标文件（二进制代码），然后链接器会将这个目标文件和静态函数库中的二进制代码一起合并成一个可执行文件，这个可执行文件就可以脱离函数库而独立运行。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_6_4/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

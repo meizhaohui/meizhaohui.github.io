@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://hellogitlab.com/categories/macos/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="MacOS">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="MacOS">
 <meta property='og:description' content="阿梅的IT生活">
 <meta property='og:url' content='https://hellogitlab.com/categories/macos/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-04-18T21:02:22&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-04-18T23:29:15&#43;08:00 '/>
 <meta name="twitter:title" content="MacOS">
 <meta name="twitter:description" content="阿梅的IT生活"><link rel="alternate" type="application/rss&#43;xml" href="https://hellogitlab.com/categories/macos/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -73,6 +73,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

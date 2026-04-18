@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_web/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="剖析Web">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="剖析Web">
 <meta property='og:description' content="剖析Web HTTP超文本传输协议，规则了网络客户端和服务端之间如何交换请求和响应。 HTML超文本标记语言，结果的展示格式。 URL统一资源定位符，唯一表示服务器和服务器上资源的方法。 Web客户端 使用telnet进行测试 使用windows操作系统时，可以在&quot;打开或关闭Windows功能&quot;中开启“Telnet客户端”，如下图所示：\nPython的标准Web库 http库会处理所有客户端-服务器HTTP请求的具体细节：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 &gt;&gt;&gt; import http &gt;&gt;&gt; http. &gt;&gt;&gt; http.HTTPStatus( http.IntEnum( http.client http.cookiejar http.cookies &gt;&gt;&gt; http.HTTPStatus.OK &lt;HTTPStatus.OK: 200&gt; &gt;&gt;&gt; import http.server &gt;&gt;&gt; http.server. http.server.BaseHTTPRequestHandler( http.server.email http.server.posixpath http.server.CGIHTTPRequestHandler( http.server.executable( http.server.select http.server.DEFAULT_ERROR_CONTENT_TYPE http.server.html http.server.shutil http.server.DEFAULT_ERROR_MESSAGE http.server.http http.server.socket http.server.HTTPServer( http.server.io http.server.socketserver http.server.HTTPStatus( http.server.mimetypes http.server.sys http.server.SimpleHTTPRequestHandler( http.server.nobody http.server.test( http.server.argparse http.server.nobody_uid( http.server.time http.server.copy http.server.os http.server.urllib http.client是一个底层的HTTP协议客户端，高层库使用urllib.request。\nhttp.server提示Web服务器程序。\nWarning[http.server](https://docs.python.org/3/library/http.server.html#module-http.server) is not recommended for production. It only implements basic security checks.官网上面不建议使用http.server用作生产服务器，因为它仅仅实现了基本的安全检查。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_web/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

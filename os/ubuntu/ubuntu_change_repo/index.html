@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="更改ubuntu国内镜像源">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="更改ubuntu国内镜像源">
 <meta property='og:description' content="更改ubuntu国内镜像源 我们使用docker运行一个ubuntu容器。\n1 2 3 4 5 6 7 8 9 10 ## 启动容器 ## docker run --privileged --name ubuntu -it -d ubuntu /bin/bash 4144e8c22fff58da621d0f39ebef81e890472839e3a868248b53aad0d461ba25 ## docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 4144e8c22fff ubuntu &#34;/bin/bash&#34; 2 seconds ago Up 1 second ubuntu ## 进入到容器 ## docker exec -it 4144e8c22fff /bin/bash root@4144e8c22fff:/# 我们使用阿里云的镜像站，可以参考https://developer.aliyun.com/mirror/ubuntu?spm=a2c6h.13651102.0.0.3e221b11TcPF5H\n查看ubuntu版本信息 1 2 root@4144e8c22fff:/# cat /etc/issue Ubuntu 20.04 LTS \\n \\l 即当前版本是Ubuntu 20.04。\n">
 <meta property='og:url' content='https://hellogitlab.com/os/ubuntu/ubuntu_change_repo/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

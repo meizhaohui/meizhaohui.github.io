@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/proxmox/x1_introduction/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="ProxmoxVE介绍">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="ProxmoxVE介绍">
 <meta property='og:description' content="Proxmox VE介绍 Proxmox VE是基于Debian Linux，开源的运行虚拟机和窗口的平台。Proxmox VE中可以实现两种虚拟化技术，Kernel-based Virtual Machine (KVM技术)和container-based virtualization (LXC技术)。\n一个主要的设计目标是使管理尽可能简单。 您可以在单个节点上使用Proxmox VE，也可以组装多个节点的集群。 所有管理任务都可以使用我们基于Web的GUI管理界面完成，即使是初学者也可以在几分钟内设置和安装Proxmox VE。\nProxmox的架构图如下图所示\n管理中心 使用 Proxmox VE 一般从单节点开始。Proxmox VE可以将大量的节点组成集群。Proxmox VE默认安装时就提供有集群功能。\n多主设置 基于WEB的GUI图形管理界面可以使你全面了解全部的KVM虚拟机/容器以及整个集群。你可以在GUI界面轻松的管理你的VM虚拟机/容器/存储或集群，不需要另外安装复杂的管理服务器。\nProxmox集群文件系统（pmxcfs） Proxmox VE使用独特的Proxmox Cluster文件系统（pmxcfs），pmxcfs是一个用于存储配置文件的数据库驱动文件系统。使您可以存储数千个虚拟机的配置。通过使用corosync，可以在所有群集节点上实时复制这些文件。文件系统将所有数据存储在磁盘上的持久数据库中，但是数据的副本驻留在RAM中，RAM的最大存储大小为30MB，这对于存储数千个VM虚拟机的配置来说已经足够了。\nProxmox VE是唯一使用此独特群集文件系统的虚拟化平台。\n基于Web的管理界面 Proxmox VE易于使用。在基于Web的管理界面可以完成管理任务，无需安装单独的管理工具或任何具有大型数据库的其他管理节点。多主工具允许您从群集的任何节点管理整个群集。基于Web框架的中央管理-基于JavaScript框架ExtJS-使您能够在GUI界面查看每个节点的概述历史记录，系统日志，备份或还原作业，实时迁移或HA触发等功能。\nExtJS介绍：无论是界面之美，还是功能之强，ext的表格控件都高居榜首。 单选行，多选行，高亮显示选中的行，拖拽改变列宽度，按列排序，这些基本功能ExtJS轻量级实现。\n命令行 对于习惯于熟悉Unix shell或Windows Powershell的高级用户，Proxmox VE提供命令行来管理虚拟环境的所有组件，命令行界面具有智能选项卡功能以及完善的UNIX手册页文档。\nREST API Proxmox VE使用RESTful API。我们选择JSON作为主要数据格式，并使用JSON Schema正式定义整个API。这样可以快速轻松地集成第三方管理工具，如自定义托管环境、基于角色的管理等。\n基于角色的管理 您可以使用基于角色的用户和权限管理为所有对象（如VM，存储，节点等）定义粒度访问。这允许您定义权限并帮助您控制对对象的访问。此概念也称为访问控制列表：每个权限指定特定路径上的主题（用户或组）和角色（权限集）。\n身份验证 Proxmox VE支持多种身份验证源，如Microsoft Active Directory，LDAP，Linux PAM标准身份验证或内置的Proxmox VE身份验证服务。\n灵活的存储 Proxmox VE的存储模型非常灵活。虚拟机映像可以存储在单个或多个本地存储上，也可以存储在NFS或SAN上面，你可以根据你的需要任意定义你的存储。你可以使用Debian Linux可用的所有的存储技术。\n将VM存储在共享存储上的一个主要好处是能够在没有任何停机的情况下实时迁移正在运行的计算机，因为群集中的所有节点都可以直接访问VM磁盘映像。\n我们目前支持以下网络存储类型：\nLVM Group（使用iSCSI目标的网络支持） iSCSI目标 NFS共享 CIFS分享 Ceph RBD 直接使用iSCSI LUN GlusterFS 支持的本地存储包括：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/proxmox/x1_introduction/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

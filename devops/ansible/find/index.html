@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/find/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="find查找模块">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="find查找模块">
 <meta property='og:description' content="find查找模块 1. 概要 find查找模块会根据特定条件返回文件列表。 官方文档：https://docs.ansible.com/ansible/latest/collections/ansible/builtin/find_module.html#ansible-builtin-find-module-return-a-list-of-files-based-on-specific-criteria 2. 参数 参数 说明 age string。选择年龄等于或大于指定时间的文件。使用负年龄则查找等于或小于指定时间的文件。\n可使用seconds, minutes, hours, days, or weeks等单词，也可用首字母简写，如1w age_stamp string,选择哪个时间作为比较属性，可选值为atime、ctime和mtime(默认) contains string,在文件内容中需要包含匹配的正则表达式或模式，只有当file_type = file才可用 depth integer，查找的最大深度，默认无限制。当recurse = no时，深度为1 excludes list/elements=string,需要排除的模式 file_type string，文件类型，可选值为any、directory、link、file(默认) follow boolean,软链接跟随，可选值no/yes，默认no get_checksum boolean,SHA1校验和，可选值no/yes，默认no hidden boolean,查找隐藏文件，默认不查找，可选值no/yes，默认no paths list / elements=string / required，查找路径，必须要绝对路径 patterns list / elements=string,正则模式 `` boolean,将文件全部读入内存，可选值no/yes，默认no，设置为yes时对性能和内存有影响 recurse boolean,递归查找文件，可选值no/yes，默认no size string，文件大小，可单位 bytes but b, k, m, g, and t can be appended to specify bytes, kilobytes, megabytes, gigabytes, and terabytes use_regex boolean,是否用python正则，默认不用，即使用shell通配符，可选值no/yes，默认no 3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 - name: Recursively find /tmp files older than 2 days ansible.builtin.find: paths: /tmp age: 2d recurse: yes - name: Recursively find /tmp files older than 4 weeks and equal or greater than 1 megabyte ansible.builtin.find: paths: /tmp age: 4w size: 1m recurse: yes - name: Recursively find /var/tmp files with last access time greater than 3600 seconds ansible.builtin.find: paths: /var/tmp age: 3600 age_stamp: atime recurse: yes - name: Find /var/log files equal or greater than 10 megabytes ending with .old or .log.gz ansible.builtin.find: paths: /var/log patterns: &#39;*.old,*.log.gz&#39; size: 10m ## Note that YAML double quotes require escaping backslashes but yaml single quotes do not. - name: Find /var/log files equal or greater than 10 megabytes ending with .old or .log.gz via regex ansible.builtin.find: paths: /var/log patterns: &#34;^.*?\\\\.(?:old|log\\\\.gz)$&#34; size: 10m use_regex: yes - name: Find /var/log all directories, exclude nginx and mysql ansible.builtin.find: paths: /var/log recurse: no file_type: directory excludes: &#39;nginx,mysql&#39; ## When using patterns that contain a comma, make sure they are formatted as lists to avoid splitting the pattern - name: Use a single pattern that contains a comma formatted as a list ansible.builtin.find: paths: /var/log file_type: file use_regex: yes patterns: [&#39;^_[0-9]{2,4}_.*.log$&#39;] - name: Use multiple patterns that contain a comma formatted as a YAML list ansible.builtin.find: paths: /var/log file_type: file use_regex: yes patterns: - &#39;^_[0-9]{2,4}_.*.log$&#39; - &#39;^[a-z]{1,5}_.*log$&#39; 4. 使用剧本 4.1 查找并删除远程日志文件 我们先在节点上面找到修改时间超过365天的文件：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/find/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

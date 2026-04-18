@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_var_name_rule/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="变量标识符的命名规则">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="变量标识符的命名规则">
 <meta property='og:description' content="变量标识符的命名规则 变量、名字和对象 Python里所有数据——布尔值、整数、浮点数、字符串，甚至大型数据结构、函数以及程序——都是以对象(Object)的形式存在的。这使得Python语言具有很强的统一性。 对象的类型决定了可以对它进行的操作。 对象的类型也决定了它装着的数据的是允许被修改的变量(可变的)还是不可被修改的常量(不可变的)。 Python是强类型的(Strongly typed)，你永远无法修改一个已有对象的类型，即使它包含的值是可变的。 如果你想知道一个对象的类型，可以使用语句:type(thing)。 类(class)是对象的定义，在Python中，&ldquo;类&quot;和&quot;类型&quot;一般不加区分。 标识符命名规则 标识符的第一个字符必须是字母（a-Z）或者下划线_ 标识符的其他部分可以是字母（a-Z）或者下划线_或者数字（0-9）组成 标识符大小写敏感 示例:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 &gt;&gt;&gt; /a=&#39;1&#39; # 无效 File &#34;&lt;stdin&gt;&#34;, line 1 /a=&#39;1&#39; ^ SyntaxError: invalid syntax &gt;&gt;&gt; ?a=&#39;1&#39; # 无效 File &#34;&lt;stdin&gt;&#34;, line 1 ?a=&#39;1&#39; ^ SyntaxError: invalid syntax &gt;&gt;&gt; 1a=2 # 无效 File &#34;&lt;stdin&gt;&#34;, line 1 1a=2 ^ SyntaxError: invalid syntax &gt;&gt;&gt; _a=&#39;1&#39; # 有效 &gt;&gt;&gt; _a &#39;1&#39; &gt;&gt;&gt; a1=&#39;a1&#39; # 有效 &gt;&gt;&gt; a1 &#39;a1&#39; &gt;&gt;&gt; a_1=&#34;a_1&#34; # 有效 &gt;&gt;&gt; a_1 &#39;a_1&#39; &gt;&gt;&gt; a_a_1=&#34;a_a_1&#34; # 有效 &gt;&gt;&gt; a_a_1 &#39;a_a_1&#39; 基数 在Python中，整数默认使用十进制(以10为底)，除非你在数字前添加前缀，显式地指定使用其他基数(base)。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_var_name_rule/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

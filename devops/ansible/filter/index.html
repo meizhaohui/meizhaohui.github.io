@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/filter/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="filter过滤器">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="filter过滤器">
 <meta property='og:description' content="filter过滤器 1. 过滤器概述 Ansible有非常多的过滤器，详细可参考：Filter Plugins Ansible使用Jinja2标准过滤器，并增加了一些Ansible特有的过滤器，可参考Filter plugins，你也可以自定义过滤器，请参考create custom Ansible filters as plugins。 Jinja2内置过滤器也有很多，详细可参考List of Builtin Filters 以下列出Ansible官方文档列出的过滤器：\nb64decode filter – Decode a base64 string b64encode filter – Encode a string as base64 basename filter – get a path’s base name bool filter – cast into a boolean checksum filter – checksum of input data combinations filter – combinations from the elements of a list combine filter – combine two dictionaries comment filter – comment out a string commonpath filter – gets the common path dict2items filter – Convert a dictionary into an itemized list of dictionaries difference filter – the difference of one list from another dirname filter – get a path’s directory name expanduser filter – Returns a path with ~ translation. expandvars filter – expand environment variables extract filter – extract a value based on an index or key fileglob filter – explode a path glob to matching files flatten filter – flatten lists within a list from_json filter – Convert JSON string into variable structure from_yaml filter – Convert YAML string into variable structure from_yaml_all filter – Convert a series of YAML documents into a variable structure hash filter – hash of input data human_readable filter – Make bytes/bits human readable human_to_bytes filter – Get bytes from string intersect filter – intersection of lists items2dict filter – Consolidate a list of itemized dictionaries into a dictionary log filter – log of (math operation) mandatory filter – make a variable’s existance mandatory md5 filter – MD5 hash of input data normpath filter – Normalize a pathname password_hash filter – convert input password into password_hash path_join filter – Join one or more path components permutations filter – permutations from the elements of a list pow filter – power of (math operation) product filter – cartesian product of lists quote filter – shell quoting random filter – random number or list item realpath filter – Turn path into real path regex_escape filter – escape regex chars regex_findall filter – extract all regex matches from string regex_replace filter – replace a string via regex regex_search filter – extract regex match from string rekey_on_member filter – Rekey a list of dicts into a dict using a member relpath filter – Make a path relative root filter – root of (math operation) sha1 filter – SHA-1 hash of input data shuffle filter – randomize a list split filter – split a string into a list splitext filter – split a path into root and file extension strftime filter – date formating subelements filter – returns a product of a list and its elements symmetric_difference filter – different items from two lists ternary filter – Ternary operation filter to_datetime filter – Get datetime from string to_json filter – Convert variable to JSON string to_nice_json filter – Convert variable to ‘nicely formatted’ JSON string to_nice_yaml filter – Convert variable to YAML string to_uuid filter – namespaced UUID generator to_yaml filter – Convert variable to YAML string type_debug filter – show input data type union filter – union of lists unique filter – set of unique items of a list unvault filter – Open an Ansible Vault urldecode filter – Decode percent-encoded sequences urlsplit filter – get components from URL vault filter – vault your secrets win_basename filter – Get a Windows path’s base name win_dirname filter – Get a Windows path’s directory win_splitdrive filter – Split a Windows path by the drive letter zip filter – combine list elements zip_longest filter – combine list elements, with filler 可以看到过滤器非常多。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/filter/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

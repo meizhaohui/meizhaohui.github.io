@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/firewalld/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="firewalld模块">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="firewalld模块">
 <meta property='og:description' content="firewalld模块 1. 概要 本模块可以用于添加或删除服务或端口的防火墙规则。 本模块是ansible.posix collection的一部分。 可以使用 ansible-galaxy collection install ansible.posix安装该模块。 依赖包：firewalld &gt;= 0.2.11和 python-firewall &gt;= 0.2.11。 官方文档： https://docs.ansible.com/ansible/latest/collections/ansible/posix/firewalld_module.html 2. 参数 参数 描述 icmp_block string 您要添加/删除firewalld区域的ICMP块 icmp_block_inversion string 在防火墙中启用/禁用ICMP块的反转 immediate boolean 是否立即生效，默认no interface string 添加/删除 出入防火墙的接口 masquerade string 在防火墙中想启用/禁止的masquerade设置. offline boolean 当firewalld离线时是否运行本模块，默认no permanent boolean 保存策略，在下次启动时自动加载,永久生效 port string 指定放行的端口/协议 port_forward list/elements=dictionary 使用firewalld转发的端口或协议. &raquo;&gt; port string/required 防火墙原始端口 &raquo;&gt; proto string/required 转发协议，udp或 tcp &raquo;&gt; toaddr string 转发到哪个地址 &raquo;&gt; toport string/required 目标端口 rich_rule tring 添加或删除富规则到防火墙. SeeSyntax for firewalld rich language rules. service string 添加/删除防火墙中的服务，服务名必须在firewall-cmd –get-services列表中. source string 需要添加或删除的 源或网络. state string/required Enable开启或 disable关闭， 对于端口: 应该是端口被接受accept (enabled) 或者被拒绝 reject (disabled) 连接. present和absent只能使用于zone区域操作. 可选值： absent disabled enabled present target string 防火墙区域目标, 如果state = absent，那么此处设置将会设置为default,可选值： default ACCEPT DROP %%REJECT%% timeout integer 当未设置永久生效时，规则生效秒数 zone string 需要处理的zone区域，可选值：block, dmz, drop, external, home, internal, public, trusted, work 3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 - name: permit traffic in default zone for https service ansible.posix.firewalld: service: https permanent: yes state: enabled - name: do not permit traffic in default zone on port 8081/tcp ansible.posix.firewalld: port: 8081/tcp permanent: yes state: disabled - ansible.posix.firewalld: port: 161-162/udp permanent: yes state: enabled - ansible.posix.firewalld: zone: dmz service: http permanent: yes state: enabled - ansible.posix.firewalld: rich_rule: rule service name=&#34;ftp&#34; audit limit value=&#34;1/m&#34; accept permanent: yes state: enabled - ansible.posix.firewalld: source: 192.0.2.0/24 zone: internal state: enabled - ansible.posix.firewalld: zone: trusted interface: eth2 permanent: yes state: enabled - ansible.posix.firewalld: masquerade: yes state: enabled permanent: yes zone: dmz - ansible.posix.firewalld: zone: custom state: present permanent: yes - ansible.posix.firewalld: zone: drop state: enabled permanent: yes icmp_block_inversion: yes - ansible.posix.firewalld: zone: drop state: enabled permanent: yes icmp_block: echo-request - ansible.posix.firewalld: zone: internal state: present permanent: yes target: ACCEPT - name: Redirect port 443 to 8443 with Rich Rule ansible.posix.firewalld: rich_rule: rule family=ipv4 forward-port port=443 protocol=tcp to-port=8443 zone: public permanent: yes immediate: yes state: enabled 此模块不详细展开。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/firewalld/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

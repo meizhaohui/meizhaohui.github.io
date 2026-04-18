@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/get_url/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="get_url下载文件到远程节点模块">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="get_url下载文件到远程节点模块">
 <meta property='og:description' content="get_url下载文件到远程节点模块 1. 概要 本模块是内置模块。 从 HTTP, HTTPS, or FTP等服务上面下载文件到远程主机，远程主机必须要能够直接访问对应的远程资源。 如果远程主机设置了&lt;protocol&gt;_proxy环境变量，默认将请求发送到这些代理。你可以通过设置环境变量，或者使用use_proxy选项改变这种行为。 HTTP重定向可以将HTTP定向到HTTPS,你应明确你的代理环境和协议配置正确。 从Ansible 2.4开始，运行时使用--check选项时，Ansible将向对应的URL发送一个HEAD请求，但并不下载整个文件，并且不会校验哈希值，并且会报告不正确的状态信息。 官方文档 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/get_url_module.html 2. 参数 参数 描述 attributes string 下载后的文件的文件属性，属性顺序应同lsattr展示的一样，默认使用=操作，如果要使用+或-操作则需要在字符串中说明 backup boolean 是否备份文件，默认no checksum string 校验文件，文件下载完成后校验其摘要的校验码是否与给定的相同 client_cert path PEM格式的证书文件路径 client_key path PEM格式的私有key文件路径 dest path/required 下载的文件存放的绝对路径,如果是文件夹，文件夹必须存在 force boolean 每次都下载并代理文件。通常只有要文件才设置为yes，默认no，即不强制下载 force_basic_auth boolean 强制发送认证头，默认no不发送 group string 下载文件的组属性，类似于chown操作 headers dictionary 添加自定义header头部到请求中 http_agent string 标识以识别AS，通常出现在Web服务器日志中。默认值ansible-httpget mode raw 文件系统的权限模式 owner string 文件的拥有者 se* selevel、serole、setype、seuser配置略，请参考官方文档 timeout integer URL请求的超时秒数，默认10秒 tmp_dest path 临时文件的绝对路径 unredirected_headers 不进行重定向的请求头名称的列表 unsafe_writes boolean 不安全写，默认no url string/required 请求的URL，`HTTP, HTTPS, or FTP URL in the form (http url_password string 认证时使用的用户密码 url_username string 认证时使用的用户名 use_proxy boolean 使用代理，默认yes validate_certs boolean 是否验证SSL证书，默认yes，自签名证书时可以设置为no不验证 3. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 - name: Download foo.conf ansible.builtin.get_url: url: http://example.com/path/file.conf dest: /etc/foo.conf mode: &#39;0440&#39; - name: Download file and force basic auth ansible.builtin.get_url: url: http://example.com/path/file.conf dest: /etc/foo.conf force_basic_auth: yes - name: Download file with custom HTTP headers ansible.builtin.get_url: url: http://example.com/path/file.conf dest: /etc/foo.conf headers: key1: one key2: two - name: Download file with check (sha256) ansible.builtin.get_url: url: http://example.com/path/file.conf dest: /etc/foo.conf checksum: sha256:b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c - name: Download file with check (md5) ansible.builtin.get_url: url: http://example.com/path/file.conf dest: /etc/foo.conf checksum: md5:66dffb5228a211e61d6d7ef4a86f5758 - name: Download file with checksum url (sha256) ansible.builtin.get_url: url: http://example.com/path/file.conf dest: /etc/foo.conf checksum: sha256:http://example.com/path/sha256sum.txt - name: Download file from a file path ansible.builtin.get_url: url: file:///tmp/afile.txt dest: /tmp/afilecopy.txt - name: &lt; Fetch file that requires authentication. username/password only available since 2.8, in older versions you need to use url_username/url_password ansible.builtin.get_url: url: http://example.com/path/file.conf dest: /etc/foo.conf username: bar password: &#39;{{ mysecret }}&#39; 4. 剧本的使用 我们参考官方示例，做以下任务：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/get_url/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

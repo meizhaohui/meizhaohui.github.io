@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/frontend/vue/events/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="事件处理">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="事件处理">
 <meta property='og:description' content="事件处理 我们在 v-on事件监听指令中已经使用v-on来监听事件。\n可以用 v-on 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。如&lt;button v-on:click=&quot;counter += 1&quot;&gt;Add 1&lt;/button&gt;。 当事件逻辑比较复杂时，不应将JavaScript代码写在v-on指令中，应通过定义方法，并在v-on指令中调用方法。 调用方法时，可以给方法传递一个参数，如 &lt;button v-on:click=&quot;say('what')&quot;&gt;Say what&lt;/button&gt;。 1. 事件修饰符 Vue.js 为 v-on 提供了事件修饰符。之前提过，修饰符是由点开头的指令后缀来表示的。\n.stop .prevent .capture .self .once .passive 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 &lt;!-- 阻止单击事件继续传播 --&gt; &lt;a v-on:click.stop=&#34;doThis&#34;&gt;&lt;/a&gt; &lt;!-- 提交事件不再重载页面 --&gt; &lt;form v-on:submit.prevent=&#34;onSubmit&#34;&gt;&lt;/form&gt; &lt;!-- 修饰符可以串联 --&gt; &lt;a v-on:click.stop.prevent=&#34;doThat&#34;&gt;&lt;/a&gt; &lt;!-- 只有修饰符 --&gt; &lt;form v-on:submit.prevent&gt;&lt;/form&gt; &lt;!-- 添加事件监听器时使用事件捕获模式 --&gt; &lt;!-- 即内部元素触发的事件先在此处理，然后才交由内部元素进行处理 --&gt; &lt;div v-on:click.capture=&#34;doThis&#34;&gt;...&lt;/div&gt; &lt;!-- 只当在 event.target 是当前元素自身时触发处理函数 --&gt; &lt;!-- 即事件不是从内部元素触发的 --&gt; &lt;div v-on:click.self=&#34;doThat&#34;&gt;...&lt;/div&gt; 我们曾在 修饰符 中使用.stop修饰符阻止单击事件继续传播。\n">
 <meta property='og:url' content='https://hellogitlab.com/frontend/vue/events/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/more/blog/create_hugo_blog/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="使用Hugo创建自己的博客">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="使用Hugo创建自己的博客">
 <meta property='og:description' content="使用Hugo创建自己的博客 可参考B站视频 【雷】Hugo + Github免费搭建博客，并实现自动化部署\n1. 安装hugo hugo github官方仓库： https://github.com/gohugoio/hugo 依次打开 hugo github官方仓库 ，并点击【Tags】，跳转到标签页：\n选择比较新的标签，然后点击右侧的【Downloads】跳转到下载页面：\n我选择的是v0.155.1 这个版本。\n下载 hugo_extended_withdeploy_0.155.1_windows-amd64.zip 后，将压缩包解压后，将解压后的hugo.exe、LICENSE和README.md复制到文件夹 D:\\ProgramFiles\\hugo\\hugo_0.155.1_windows-amd64 目录下。\n并将D:\\Downloads\\hugo_extended_withdeploy_0.155.1_windows-amd64路径加入到PATH环境变量中，我使用mobaxterm终端，将以下PATH配置加入到~/.bashrc配置文件中。\n1 export PATH=/drives/d/ProgramFiles/hugo/hugo_0.155.1_windows-amd64:$PATH 然后重新打开一个终端，就可以使用hugo命令了：\n1 2 3 # 查看hugo版本信息 $ hugo version hugo v0.155.1-f23576f2fb8d1b45d981a5e87e75b4cefa381592+extended+withdeploy windows/amd64 BuildDate=2026-01-30T10:10:48Z VendorInfo=gohugoio 查看hugo命令的帮助信息：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 $ hugo --help hugo is the main command, used to build your Hugo site. Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at https://gohugo.io/. Usage: hugo [flags] hugo [command] Available Commands: build Build your site completion Generate the autocompletion script for the specified shell config Display site configuration convert Convert front matter to another format deploy Deploy your site to a cloud provider env Display version and environment info gen Generate documentation and syntax highlighting styles help Help about any command import Import a site from another system list List content mod Manage modules new Create new content server Start the embedded web server version Display version Flags: -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/ -D, --buildDrafts include content marked as draft -E, --buildExpired include expired content -F, --buildFuture include content with publishdate in the future --cacheDir string filesystem path to cache directory --cleanDestinationDir remove files from destination not found in static directories --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00 --config string config file (default is hugo.yaml|json|toml) --configDir string config dir (default &#34;config&#34;) -c, --contentDir string filesystem path to content directory -d, --destination string filesystem path to write files to --disableKinds strings disable different kind of pages (home, RSS etc.) --enableGitInfo add Git revision, date, author, and CODEOWNERS info to the pages -e, --environment string build environment --forceSyncStatic copy all files when static is changed. --gc enable to run some cleanup tasks (remove unused cache files) after the build -h, --help help for hugo --ignoreCache ignores the cache directory --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern -l, --layoutDir string filesystem path to layout directory --logLevel string log level (debug|info|warn|error) --minify minify any supported output format (HTML, XML etc.) --noBuildLock don&#39;t create .hugo_build.lock file --noChmod don&#39;t sync permission mode of files --noTimes don&#39;t sync modification time of files --panicOnWarning panic on first WARNING log --poll string set this to a poll interval, e.g --poll 700ms, to use a poll based approach to watch for file system changes --printI18nWarnings print missing translations --printMemoryUsage print memory usage to screen at intervals --printPathWarnings print warnings on duplicate target paths etc. --printUnusedTemplates print warnings on unused templates. --quiet build in quiet mode --renderSegments strings named segments to render (configured in the segments config) -M, --renderToMemory render to memory (mostly useful when running the server) -s, --source string filesystem path to read files relative from --templateMetrics display metrics about template executions --templateMetricsHints calculate some improvement hints when combined with --templateMetrics -t, --theme strings themes to use (located in /themes/THEMENAME/) --themesDir string filesystem path to themes directory --trace file write trace to file (not useful in general) -w, --watch watch filesystem for changes and recreate as needed Use &#34;hugo [command] --help&#34; for more information about a command. $ 创建博客项目，官方给的示例命令：\n">
 <meta property='og:url' content='https://hellogitlab.com/more/blog/create_hugo_blog/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

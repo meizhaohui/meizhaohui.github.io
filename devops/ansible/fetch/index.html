@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/fetch/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="fetch从远程主机复制文件模块">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="fetch从远程主机复制文件模块">
 <meta property='og:description' content="fetch从远程主机复制文件模块 概要 copy复制模块将文件从本地或远程计算机复制到远程计算机上的某个位置。但fetch模块刚好相反，是从远程复制文件到ansible主机。 使用fetch访存模块可以将文件从远程位置复制到本地文件夹。 如果文件在目标位置已经存在，并且与源文件不同的话，则会被覆盖。 官方文档：https://docs.ansible.com/ansible/latest/collections/ansible/builtin/fetch_module.html 参数 参数 可选值 默认值 说明 dest required string，必须字段，从远程复制的文件将保存在该目录下。 fail_on_missing yes/no yes boolean，远程源文件缺失或不能读取时，将任务设置为失败状态。 flat yes/no no string，改变默认的目标存放行为，如果仅操作一个远程主机，有点类似于copy模块；当操作多个主机时，如果文件相同的话，则每个主机都会覆盖这个文件。当dest以/结尾时，flat=yes时会直接将文件复制到dest所在目录 src required string,远程文件，注意不是目录，递归复暂不支持 validate_checksum yes/no yes boolean，是否校验文件的sum值，默认校验 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 - name: Store file into /tmp/fetched/host.example.com/tmp/somefile ansible.builtin.fetch: src: /tmp/somefile dest: /tmp/fetched - name: Specifying a path directly ansible.builtin.fetch: src: /tmp/somefile dest: /tmp/prefix-{{ inventory_hostname }} flat: yes - name: Specifying a destination path ansible.builtin.fetch: src: /tmp/uniquefile dest: /tmp/special/ flat: yes - name: Storing in a path relative to the playbook ansible.builtin.fetch: src: /tmp/uniquefile dest: special/prefix-{{ inventory_hostname }} flat: yes 测试 我们直接对官方示例进行改造。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/fetch/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>

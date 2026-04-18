@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/backend/python/x_json_module/'>
 
-<link rel="stylesheet" href="/scss/style.min.fbd758dd44eb713b9dd6217c2bc348be2c4b0adfb12f0f3459f737cfc6b9911c.css"><meta property='og:title' content="模块-json模块">
+<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="模块-json模块">
 <meta property='og:description' content="模块-json模块 json模块基本介绍 存储数据结构到一个文件中称为 序列化(Serialize) ， 从文件中解析数据并存储到数据结构中称为 反序列化(Deserialize) 。 JSON (JavaScript Object Notation) is a lightweight data interchange format是一种轻量级的数据交换格式。 json.dumps 将Python数据类型转换成JSON字符串。 标准JSON没有定义日期或者时间类型，需要自定义处理方式。如果不想定义类，直接在我们获取的date或者datetime对象后面用上strftime方法进行格式化也可以。或者定义一个新类，对JSONEncoder类进行扩展。 语法格式:\n1 json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, **kw) json.dump 把Python数据类型转换成JSON字符串并存储在文件中(序列化)。 语法格式:\n1 json.dump(obj, fp, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, **kw) json.loads 把JSON字符串转换成Python数据类型。 语法格式:\n1 json.loads(s, *, encoding=None, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw) json.load 将文件中的JSON字符串转换成Python数据类型(反序列化)。 语法格式:\n1 json.load(fp, *, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw) 引用json模块及帮助信息:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 In [1]: import json In [2]: json? Type: module String form: &lt;module &#39;json&#39; from &#39;d:\\\\programfiles\\\\python362\\\\lib\\\\json\\\\__init__.py&#39;&gt; File: d:\\programfiles\\python362\\lib\\json\\__init__.py Docstring: JSON (JavaScript Object Notation) &lt;http://json.org&gt; is a subset of JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data interchange format. :mod:`json` exposes an API familiar to users of the standard library :mod:`marshal` and :mod:`pickle` modules. It is derived from a version of the externally maintained simplejson library. Encoding basic Python object hierarchies: &gt;&gt;&gt; import json &gt;&gt;&gt; json.dumps([&#39;foo&#39;, {&#39;bar&#39;: (&#39;baz&#39;, None, 1.0, 2)}]) # 将列表转成JSON字符串 &#39;[&#34;foo&#34;, {&#34;bar&#34;: [&#34;baz&#34;, null, 1.0, 2]}]&#39; &gt;&gt;&gt; print(json.dumps(&#34;\\&#34;foo\\bar&#34;)) &#34;\\&#34;foo\\bar&#34; &gt;&gt;&gt; print(json.dumps(&#39;\\u1234&#39;)) &#34;\\u1234&#34; &gt;&gt;&gt; print(json.dumps(&#39;\\\\&#39;)) &#34;\\\\&#34; &gt;&gt;&gt; print(json.dumps({&#34;c&#34;: 0, &#34;b&#34;: 0, &#34;a&#34;: 0}, sort_keys=True)) {&#34;a&#34;: 0, &#34;b&#34;: 0, &#34;c&#34;: 0} &gt;&gt;&gt; from io import StringIO &gt;&gt;&gt; io = StringIO() # 创建一个IO StringIO缓存对象 &gt;&gt;&gt; json.dump([&#39;streaming API&#39;], io) # 将字符串列表写入到IO对象中 &gt;&gt;&gt; io.getvalue() # 获取对象中的所有数据 &#39;[&#34;streaming API&#34;]&#39; Compact encoding:: &gt;&gt;&gt; import json &gt;&gt;&gt; from collections import OrderedDict &gt;&gt;&gt; mydict = OrderedDict([(&#39;4&#39;, 5), (&#39;6&#39;, 7)]) &gt;&gt;&gt; json.dumps([1,2,3,mydict], separators=(&#39;,&#39;, &#39;:&#39;)) # seperators分隔符是(item_separator, key_separator)的元组，默认(&#39;, &#39;, &#39;: &#39;) &#39;[1,2,3,{&#34;4&#34;:5,&#34;6&#34;:7}]&#39; Pretty printing:: &gt;&gt;&gt; import json &gt;&gt;&gt; print(json.dumps({&#39;4&#39;: 5, &#39;6&#39;: 7}, sort_keys=True, indent=4)) # 使用sort_keys表示对键进行排序，indent表示缩进4个空格 { &#34;4&#34;: 5, &#34;6&#34;: 7 } Decoding JSON: &gt;&gt;&gt; import json &gt;&gt;&gt; obj = [&#39;foo&#39;, {&#39;bar&#39;: [&#39;baz&#39;, None, 1.0, 2]}] &gt;&gt;&gt; json.loads(&#39;[&#34;foo&#34;, {&#34;bar&#34;:[&#34;baz&#34;, null, 1.0, 2]}]&#39;) == obj # 将JSON字符串转换成列表对象 True &gt;&gt;&gt; json.loads(&#39;&#34;\\\\&#34;foo\\\\bar&#34;&#39;) == &#39;&#34;foo\\x08ar&#39; True &gt;&gt;&gt; from io import StringIO &gt;&gt;&gt; io = StringIO(&#39;[&#34;streaming API&#34;]&#39;) &gt;&gt;&gt; json.load(io)[0] == &#39;streaming API&#39; True Specializing JSON object decoding: &gt;&gt;&gt; import json &gt;&gt;&gt; def as_complex(dct): ... if &#39;__complex__&#39; in dct: ... return complex(dct[&#39;real&#39;], dct[&#39;imag&#39;]) # 创建一个复数 ... return dct ... &gt;&gt;&gt; json.loads(&#39;{&#34;__complex__&#34;: true, &#34;real&#34;: 1, &#34;imag&#34;: 2}&#39;, ... object_hook=as_complex) # 指定自定义解码的函数 (12j) &gt;&gt;&gt; from decimal import Decimal &gt;&gt;&gt; json.loads(&#39;1.1&#39;, parse_float=Decimal) == Decimal(&#39;1.1&#39;) True Specializing JSON object encoding: &gt;&gt;&gt; import json &gt;&gt;&gt; def encode_complex(obj): ... if isinstance(obj, complex): ... return [obj.real, obj.imag] ... raise TypeError(repr(o) &#34; is not JSON serializable&#34;) ... &gt;&gt;&gt; json.dumps(2 1j, default=encode_complex) &#39;[2.0, 1.0]&#39; &gt;&gt;&gt; json.JSONEncoder(default=encode_complex).encode(2 1j) &#39;[2.0, 1.0]&#39; Using json.tool from the shell to validate and pretty-print: $ echo &#39;{&#34;json&#34;:&#34;obj&#34;}&#39; | python -m json.tool { &#34;json&#34;: &#34;obj&#34; } $ echo &#39;{ 1.2:3.4}&#39; | python -m json.tool Expecting property name enclosed in double quotes: line 1 column 3 (char 2) JSON字符串转Python数据类型对应关系表:\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/python/x_json_module/'>
 <meta property='og:site_name' content='编程技术分享'>
@@ -74,6 +74,36 @@
         document.addEventListener('DOMContentLoaded', initLightbox);
     } else {
         initLightbox();
+    }
+})();
+</script>
+
+
+<script>
+(function () {
+    function initCodeLangLabels() {
+        var highlights = document.querySelectorAll('.article-content .highlight');
+        highlights.forEach(function(highlight) {
+            
+            if (highlight.querySelector('.code-lang-label')) return;
+            
+            var codeBlock = highlight.querySelector('code[data-lang]');
+            if (!codeBlock) return;
+            
+            var lang = codeBlock.getAttribute('data-lang');
+            if (!lang || lang === 'text' || lang === 'plaintext') return;
+            
+            var label = document.createElement('span');
+            label.className = 'code-lang-label';
+            label.textContent = lang;
+            highlight.appendChild(label);
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCodeLangLabels);
+    } else {
+        initCodeLangLabels();
     }
 })();
 </script>
