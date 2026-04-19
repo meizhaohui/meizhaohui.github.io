@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='函数库' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-19T11:39:09&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='函数库' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-19T23:11:05&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7章">
 <meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -487,6 +487,7 @@
                 <li><a href="#711--定义结构体">7.1.1  定义结构体</a></li>
                 <li><a href="#712-声明结构体变量">7.1.2 声明结构体变量</a></li>
                 <li><a href="#713-访问结构体变量的成员">7.1.3 访问结构体变量的成员</a></li>
+                <li><a href="#714-结构体变量的内存占用和内存对齐">7.1.4 结构体变量的内存占用和内存对齐</a></li>
               </ul>
             </li>
           </ul>
@@ -539,7 +540,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -638,7 +639,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 4 分钟
+                    阅读时长: 10 分钟
                 </time>
             </div>
         
@@ -1183,6 +1184,1359 @@
 </h5><p>一个结构体变量声明后，就可以使用它并访问它的成员。访问的方法是在结构体变量后面加点“.”再加成员变量名，然后把它当作普通变量和数组进行赋值、取值、取地址等操作。</p>
 <p>在Visual Studio中，在一个结构体变量后输入点“.”，会看到Visual Studio根据结构体的定义给出了输入提示，并根据用户的输入自动完成代码。</p>
 <p>可以看到提示非常智能，不仅列出了结构体的成员，还对其数据类型、用途分别进行了说明。</p>
+<p>在程序中使用结构体：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_01_STRUCT.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/Mars
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;str.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;input.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/Mars.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;Mars.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">EXCHANGE_RATE</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">CurrencyCode</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>        <span class="c1">// 货币代码
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">CurrencyName</span><span class="p">[</span><span class="mi">33</span><span class="p">];</span>       <span class="c1">// 货币名称(中文)
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">PublishTime</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>        <span class="c1">// 发布时间
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">BuyingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>       <span class="c1">// 现汇买入价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">CashBuyingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>   <span class="c1">// 现钞买入价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">SellingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>      <span class="c1">// 现汇卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">CashSellingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 现钞卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">MiddleRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>       <span class="c1">// 中行折算价
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">EXCHANGE_RATE</span> <span class="n">USDRates</span><span class="p">;</span>  <span class="c1">// 声明结构体变量
+</span></span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span> <span class="o">=</span> <span class="mf">657.86</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span> <span class="o">=</span> <span class="mf">652.51</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span> <span class="o">=</span> <span class="mf">660.65</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span> <span class="o">=</span> <span class="mf">660.65</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span> <span class="o">=</span> <span class="mf">658.09</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// strCopy是将源字符串复制到目标字符串中
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">,</span> <span class="s">&#34;USD&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">,</span> <span class="s">&#34;美元&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">,</span> <span class="s">&#34;2020-11-21 10:30:00&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币代码: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币名称: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;发布时间: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇买入价: %f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞买入价: %f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇卖出价: %f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞卖出价: %f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;中行折算价: %f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时运行代码，输出如下：</p>
+<p><img src="/img/Snipaste_2026-04-19_20-09-57.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-19_20-09-57.png"
+	
+	
+></p>
+<ul>
+<li><code>%f</code> 输出浮点数，默认输出6位小数，因此输出时尽量要控制小数点位数输出。</li>
+<li><code>%f</code> 默认 = 6 位小数 ，<code>%.2f</code> = 2 位小数（最常用，价格、汇率都用这个） 。这个位置的小数点<code>.</code>就是表示小数点，意思是需要控制小数点后面保留几位小数。</li>
+</ul>
+<p>因此，优化一下代码，控制价格输出2位小数。</p>
+<p><img src="/img/Snipaste_2026-04-19_20-17-40.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-19_20-17-40.png"
+	
+	
+></p>
+<h5 id="714-结构体变量的内存占用和内存对齐">7.1.4 结构体变量的内存占用和内存对齐
+</h5><p>和普通变量一样，结构体变量也需要在内存中占用空间，<strong>理论上结构体变量占用内存空间是各成员占用空间的总和。</strong> 声明结构体变量时会按照结构体成员定义的次序为它们分配内存空间。</p>
+<p>例如，上一个程序每个成员变量理论占用的内存空间大小和合计占用的空间大小统计如下：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>序号</th>
+          <th>结构体成员</th>
+          <th>理论占用字节数</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><code>char CurrencyCode[4];</code></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><code>char CurrencyName[33];</code></td>
+          <td>33</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><code>char PublishTime[20];</code></td>
+          <td>20</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><code>double BuyingRate = 0;</code></td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td><code>double CashBuyingRate = 0;</code></td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td><code>double SellingRate = 0;</code></td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td><code>double CashSellingRate = 0;</code></td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td><code>double MiddleRate = 0;</code></td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>合计</td>
+          <td>97</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>可以使用<code>sizeof</code>运算符计算结构体变量占用的空间大小。</li>
+</ul>
+<p><img src="/img/Snipaste_2026-04-19_20-32-08.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-19_20-32-08.png"
+	
+	
+></p>
+<p>可以看到，使用<code>sizeof(struct EXCHANGE_RATE)</code>可以计算如果我定义一个结构体<code>EXCHANGE_RATE</code>变量需要占用多少字节。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_01_STRUCT.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/Mars
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;str.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;input.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/Mars.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;Mars.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">EXCHANGE_RATE</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">CurrencyCode</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>        <span class="c1">// 货币代码
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">CurrencyName</span><span class="p">[</span><span class="mi">33</span><span class="p">];</span>       <span class="c1">// 货币名称(中文)
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">PublishTime</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>        <span class="c1">// 发布时间
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">BuyingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>       <span class="c1">// 现汇买入价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">CashBuyingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>   <span class="c1">// 现钞买入价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">SellingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>      <span class="c1">// 现汇卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">CashSellingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 现钞卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">MiddleRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>       <span class="c1">// 中行折算价
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">EXCHANGE_RATE</span> <span class="n">USDRates</span><span class="p">;</span>  <span class="c1">// 声明结构体变量
+</span></span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span> <span class="o">=</span> <span class="mf">657.86</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span> <span class="o">=</span> <span class="mf">652.51</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span> <span class="o">=</span> <span class="mf">660.65</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span> <span class="o">=</span> <span class="mf">660.65</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span> <span class="o">=</span> <span class="mf">658.09</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// strCopy是将源字符串复制到目标字符串中
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">,</span> <span class="s">&#34;USD&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">,</span> <span class="s">&#34;美元&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">,</span> <span class="s">&#34;2020-11-21 10:30:00&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币代码: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币名称: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;发布时间: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇买入价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞买入价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇卖出价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞卖出价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;中行折算价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">EXCHANGE_RATE</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;结构体EXCHANGE_RATE占用字节数: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时通过<code>sizeof(struct EXCHANGE_RATE);</code>获取到的值是104字节，而之前通过理论计算各成员内存占用总计是97字节，这就相差 104-97=7字节，为什么会多7字节！！！</p>
+<p>要知道多占的7字节去哪里了，可以先显示每一个结构体成员实际的地址，再次修改以上代码。</p>
+<p>增加变量和成员的地址显示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_01_STRUCT.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/Mars
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;str.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;input.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/Mars.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;Mars.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">EXCHANGE_RATE</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">CurrencyCode</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>        <span class="c1">// 货币代码
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">CurrencyName</span><span class="p">[</span><span class="mi">33</span><span class="p">];</span>       <span class="c1">// 货币名称(中文)
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">PublishTime</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>        <span class="c1">// 发布时间
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">BuyingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>       <span class="c1">// 现汇买入价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">CashBuyingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>   <span class="c1">// 现钞买入价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">SellingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>      <span class="c1">// 现汇卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">CashSellingRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 现钞卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">MiddleRate</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>       <span class="c1">// 中行折算价
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">EXCHANGE_RATE</span> <span class="n">USDRates</span><span class="p">;</span>  <span class="c1">// 声明结构体变量
+</span></span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span> <span class="o">=</span> <span class="mf">657.86</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span> <span class="o">=</span> <span class="mf">652.51</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span> <span class="o">=</span> <span class="mf">660.65</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span> <span class="o">=</span> <span class="mf">660.65</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span> <span class="o">=</span> <span class="mf">658.09</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// strCopy是将源字符串复制到目标字符串中
+</span></span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">,</span> <span class="s">&#34;USD&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">,</span> <span class="s">&#34;美元&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">,</span> <span class="s">&#34;2020-11-21 10:30:00&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币代码: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币名称: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;发布时间: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇买入价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞买入价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇卖出价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞卖出价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;中行折算价: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">size</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">EXCHANGE_RATE</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;结构体EXCHANGE_RATE占用字节数: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">size_v</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">USDRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;结构体变量USDRates 占用字节数: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">size_v</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体变量的首地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.CurrencyCode地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.CurrencyName地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.PublishTime地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.BuyingRate地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.CashBuyingRate地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.SellingRate地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.CashSellingRate地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;USDRates结构体成员USDRates.MiddleRate地址: %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行代码，输出如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">货币代码: USD
+</span></span><span class="line"><span class="cl">货币名称: 美元
+</span></span><span class="line"><span class="cl">发布时间: 2020-11-21 10:30:00
+</span></span><span class="line"><span class="cl">现汇买入价: 657.86
+</span></span><span class="line"><span class="cl">现钞买入价: 652.51
+</span></span><span class="line"><span class="cl">现汇卖出价: 660.65
+</span></span><span class="line"><span class="cl">现钞卖出价: 660.65
+</span></span><span class="line"><span class="cl">中行折算价: 658.09
+</span></span><span class="line"><span class="cl">结构体EXCHANGE_RATE占用字节数: 104
+</span></span><span class="line"><span class="cl">结构体变量USDRates 占用字节数: 104
+</span></span><span class="line"><span class="cl">USDRates结构体变量的首地址: 010FF9D8
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.CurrencyCode地址: 010FF9D8
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.CurrencyName地址: 010FF9DC
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.PublishTime地址: 010FF9FD
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.BuyingRate地址: 010FFA18
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.CashBuyingRate地址: 010FFA20
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.SellingRate地址: 010FFA28
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.CashSellingRate地址: 010FFA30
+</span></span><span class="line"><span class="cl">USDRates结构体成员USDRates.MiddleRate地址: 010FFA38
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/img/Snipaste_2026-04-19_21-52-43.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-19_21-52-43.png"
+	
+	
+></p>
+<p>计算结构体元素与下一个元素之间的间隔如下：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>序号</th>
+          <th>结构体成员</th>
+          <th>理论占用字节数</th>
+          <th>内存地址</th>
+          <th>与下一个元素之间的间隔</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><code>char CurrencyCode[4];</code></td>
+          <td>4</td>
+          <td>010FF9D8</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><code>char CurrencyName[33];</code></td>
+          <td>33</td>
+          <td>010FF9DC</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><code>char PublishTime[20];</code></td>
+          <td>20</td>
+          <td>010FF9FD</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><code>double BuyingRate = 0;</code></td>
+          <td>8</td>
+          <td>010FFA18</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td><code>double CashBuyingRate = 0;</code></td>
+          <td>8</td>
+          <td>010FFA20</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td><code>double SellingRate = 0;</code></td>
+          <td>8</td>
+          <td>010FFA28</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td><code>double CashSellingRate = 0;</code></td>
+          <td>8</td>
+          <td>010FFA30</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td><code>double MiddleRate = 0;</code></td>
+          <td>8</td>
+          <td>010FFA38</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>合计</td>
+          <td>97</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>可以使用<code>sizeof</code>运算符计算结构体变量占用的空间大小。</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>序号</th>
+          <th>10进制</th>
+          <th>16进制</th>
+          <th>结构体成员</th>
+          <th>除以8的余数</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>17824216</td>
+          <td>010FF9D8</td>
+          <td>char CurrencyCode[4];</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>17824217</td>
+          <td>010FF9D9</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>17824218</td>
+          <td>010FF9DA</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>17824219</td>
+          <td>010FF9DB</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>17824220</td>
+          <td>010FF9DC</td>
+          <td>char CurrencyName[33];</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>17824221</td>
+          <td>010FF9DD</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>17824222</td>
+          <td>010FF9DE</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>17824223</td>
+          <td>010FF9DF</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>17824224</td>
+          <td>010FF9E0</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>17824225</td>
+          <td>010FF9E1</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>17824226</td>
+          <td>010FF9E2</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td>17824227</td>
+          <td>010FF9E3</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td>17824228</td>
+          <td>010FF9E4</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>14</td>
+          <td>17824229</td>
+          <td>010FF9E5</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>15</td>
+          <td>17824230</td>
+          <td>010FF9E6</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>16</td>
+          <td>17824231</td>
+          <td>010FF9E7</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>17</td>
+          <td>17824232</td>
+          <td>010FF9E8</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>18</td>
+          <td>17824233</td>
+          <td>010FF9E9</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>19</td>
+          <td>17824234</td>
+          <td>010FF9EA</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>20</td>
+          <td>17824235</td>
+          <td>010FF9EB</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>21</td>
+          <td>17824236</td>
+          <td>010FF9EC</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>22</td>
+          <td>17824237</td>
+          <td>010FF9ED</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>23</td>
+          <td>17824238</td>
+          <td>010FF9EE</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>24</td>
+          <td>17824239</td>
+          <td>010FF9EF</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>25</td>
+          <td>17824240</td>
+          <td>010FF9F0</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>26</td>
+          <td>17824241</td>
+          <td>010FF9F1</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>27</td>
+          <td>17824242</td>
+          <td>010FF9F2</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>28</td>
+          <td>17824243</td>
+          <td>010FF9F3</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>29</td>
+          <td>17824244</td>
+          <td>010FF9F4</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>30</td>
+          <td>17824245</td>
+          <td>010FF9F5</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>31</td>
+          <td>17824246</td>
+          <td>010FF9F6</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>32</td>
+          <td>17824247</td>
+          <td>010FF9F7</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>33</td>
+          <td>17824248</td>
+          <td>010FF9F8</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>34</td>
+          <td>17824249</td>
+          <td>010FF9F9</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>35</td>
+          <td>17824250</td>
+          <td>010FF9FA</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>36</td>
+          <td>17824251</td>
+          <td>010FF9FB</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>37</td>
+          <td>17824252</td>
+          <td>010FF9FC</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>38</td>
+          <td>17824253</td>
+          <td>010FF9FD</td>
+          <td>char PublishTime[20];</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>39</td>
+          <td>17824254</td>
+          <td>010FF9FE</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>40</td>
+          <td>17824255</td>
+          <td>010FF9FF</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>41</td>
+          <td>17824256</td>
+          <td>010FFA00</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>42</td>
+          <td>17824257</td>
+          <td>010FFA01</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>43</td>
+          <td>17824258</td>
+          <td>010FFA02</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>44</td>
+          <td>17824259</td>
+          <td>010FFA03</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>45</td>
+          <td>17824260</td>
+          <td>010FFA04</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>46</td>
+          <td>17824261</td>
+          <td>010FFA05</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>47</td>
+          <td>17824262</td>
+          <td>010FFA06</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>48</td>
+          <td>17824263</td>
+          <td>010FFA07</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>49</td>
+          <td>17824264</td>
+          <td>010FFA08</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>50</td>
+          <td>17824265</td>
+          <td>010FFA09</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>51</td>
+          <td>17824266</td>
+          <td>010FFA0A</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>52</td>
+          <td>17824267</td>
+          <td>010FFA0B</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>53</td>
+          <td>17824268</td>
+          <td>010FFA0C</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>54</td>
+          <td>17824269</td>
+          <td>010FFA0D</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>55</td>
+          <td>17824270</td>
+          <td>010FFA0E</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>56</td>
+          <td>17824271</td>
+          <td>010FFA0F</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>57</td>
+          <td>17824272</td>
+          <td><strong>010FFA10</strong></td>
+          <td>P<strong>ublishTime 在这个位置结束</strong></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>58</td>
+          <td>17824273</td>
+          <td>010FFA11</td>
+          <td>不能被8整除，直接被编译器填充</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>59</td>
+          <td>17824274</td>
+          <td>010FFA12</td>
+          <td>不能被8整除，直接被编译器填充</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>60</td>
+          <td>17824275</td>
+          <td>010FFA13</td>
+          <td>不能被8整除，直接被编译器填充</td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>61</td>
+          <td>17824276</td>
+          <td>010FFA14</td>
+          <td>不能被8整除，直接被编译器填充</td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>62</td>
+          <td>17824277</td>
+          <td>010FFA15</td>
+          <td>不能被8整除，直接被编译器填充</td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>63</td>
+          <td>17824278</td>
+          <td>010FFA16</td>
+          <td>不能被8整除，直接被编译器填充</td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>64</td>
+          <td>17824279</td>
+          <td>010FFA17</td>
+          <td>不能被8整除，直接被编译器填充</td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>65</td>
+          <td>17824280</td>
+          <td><strong>010FFA18</strong></td>
+          <td>double BuyingRate = 0;</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>66</td>
+          <td>17824281</td>
+          <td>010FFA19</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>67</td>
+          <td>17824282</td>
+          <td>010FFA1A</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>68</td>
+          <td>17824283</td>
+          <td>010FFA1B</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>69</td>
+          <td>17824284</td>
+          <td>010FFA1C</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>70</td>
+          <td>17824285</td>
+          <td>010FFA1D</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>71</td>
+          <td>17824286</td>
+          <td>010FFA1E</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>72</td>
+          <td>17824287</td>
+          <td>010FFA1F</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>73</td>
+          <td>17824288</td>
+          <td>010FFA20</td>
+          <td>double CashBuyingRate = 0;</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>74</td>
+          <td>17824289</td>
+          <td>010FFA21</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>75</td>
+          <td>17824290</td>
+          <td>010FFA22</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>76</td>
+          <td>17824291</td>
+          <td>010FFA23</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>77</td>
+          <td>17824292</td>
+          <td>010FFA24</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>78</td>
+          <td>17824293</td>
+          <td>010FFA25</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>79</td>
+          <td>17824294</td>
+          <td>010FFA26</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>80</td>
+          <td>17824295</td>
+          <td>010FFA27</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>81</td>
+          <td>17824296</td>
+          <td>010FFA28</td>
+          <td>double SellingRate = 0;</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>82</td>
+          <td>17824297</td>
+          <td>010FFA29</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>83</td>
+          <td>17824298</td>
+          <td>010FFA2A</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>84</td>
+          <td>17824299</td>
+          <td>010FFA2B</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>85</td>
+          <td>17824300</td>
+          <td>010FFA2C</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>86</td>
+          <td>17824301</td>
+          <td>010FFA2D</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>87</td>
+          <td>17824302</td>
+          <td>010FFA2E</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>88</td>
+          <td>17824303</td>
+          <td>010FFA2F</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>89</td>
+          <td>17824304</td>
+          <td>010FFA30</td>
+          <td>double CashSellingRate = 0;</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>90</td>
+          <td>17824305</td>
+          <td>010FFA31</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>91</td>
+          <td>17824306</td>
+          <td>010FFA32</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>92</td>
+          <td>17824307</td>
+          <td>010FFA33</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>93</td>
+          <td>17824308</td>
+          <td>010FFA34</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>94</td>
+          <td>17824309</td>
+          <td>010FFA35</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>95</td>
+          <td>17824310</td>
+          <td>010FFA36</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>96</td>
+          <td>17824311</td>
+          <td>010FFA37</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>97</td>
+          <td>17824312</td>
+          <td>010FFA38</td>
+          <td>double MiddleRate = 0;</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>98</td>
+          <td>17824313</td>
+          <td>010FFA39</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>99</td>
+          <td>17824314</td>
+          <td>010FFA3A</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>100</td>
+          <td>17824315</td>
+          <td>010FFA3B</td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td>101</td>
+          <td>17824316</td>
+          <td>010FFA3C</td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td>102</td>
+          <td>17824317</td>
+          <td>010FFA3D</td>
+          <td></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>103</td>
+          <td>17824318</td>
+          <td>010FFA3E</td>
+          <td></td>
+          <td>6</td>
+      </tr>
+      <tr>
+          <td>104</td>
+          <td>17824319</td>
+          <td>010FFA3F</td>
+          <td></td>
+          <td>7</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>通过以上表格计算可以看到，结构体成员<code>PublishTime</code>起始于38行的<code>010FF9FD</code>，由于它要占用20个字节，它最后一个字节是57行的<code>010FFA10</code>, 下一个内存地址是<code>010FFA11</code>,由于下一个成员是<code>double</code>类型的，因此，需要判断这个地址能不能被8整除，<code>010FFA11</code>不能被8整除，直接被编译器填充，必须找到下一个能被8整除的内存地址，也就是65行的<strong>010FFA18</strong>，刚好从58行到64行一共填充了7个字节，这就是多出来的那7字节！！</p>
+<p>这7个字节是浪费的，编译器为了确保<code>double</code>型成员<code>BuyingRate</code>的【内存对齐】以提高内存访问效率，内存对齐的原则是：</p>
+<ul>
+<li>各成员变量的起始地址相对于结构体的起始地址的偏移量（间隔）必须为该变量的类型所占用的字节数的整数倍。</li>
+<li>各成员变量在存放时根据在结构中出现的顺序依次申请空间，同时按照上面的对齐方式调整位置，如果某个成员的地址不符合上述原则，则在中间插入实际不使用的字节。</li>
+<li>结构体变量的大小必须为结构体中占用最大空间的类型大小的位数，如果不足，则在最后加入不用的字节。</li>
+<li>在32位系统 中，所有内存块的首地址都必须是4的位数。</li>
+</ul>
 
 </section>
 
@@ -1222,7 +2576,7 @@
 
 
         <span>
-            最后更新于 Apr 19, 2026 11:39 &#43;0800
+            最后更新于 Apr 19, 2026 23:11 &#43;0800
         </span>
     </section></footer>
 
