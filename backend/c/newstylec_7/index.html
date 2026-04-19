@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='函数库' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-18T23:29:15&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='函数库' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-19T11:39:09&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7章">
 <meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -485,6 +485,8 @@
             <li><a href="#71-使用结构体存储不同类型的多项数据">7.1 使用结构体存储不同类型的多项数据</a>
               <ul>
                 <li><a href="#711--定义结构体">7.1.1  定义结构体</a></li>
+                <li><a href="#712-声明结构体变量">7.1.2 声明结构体变量</a></li>
+                <li><a href="#713-访问结构体变量的成员">7.1.3 访问结构体变量的成员</a></li>
               </ul>
             </li>
           </ul>
@@ -537,7 +539,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -1154,6 +1156,33 @@
     </div>
 </div>
 
+<h5 id="712-声明结构体变量">7.1.2 声明结构体变量
+</h5><p>在结构体定义好后，在程序中就可以基于结构体声明结构体变量了，方法如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="k">struct</span> <span class="err">结构体名称</span> <span class="err">结构体变量名</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>例如，要基于之前定义的结构体<code>EXCHANGE_RATE</code>来定义结构体变量的代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">EXCHANGE_RATE</span> <span class="n">USDRate</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>EXCHANGE_RATE</code>是结构体名称，<code>USDRate</code>是结构体变量名。</p>
+<ul>
+<li>基于一个结构体可以定义一个或多个结构体变量，也可以定义结构体数组。</li>
+</ul>
+<h5 id="713-访问结构体变量的成员">7.1.3 访问结构体变量的成员
+</h5><p>一个结构体变量声明后，就可以使用它并访问它的成员。访问的方法是在结构体变量后面加点“.”再加成员变量名，然后把它当作普通变量和数组进行赋值、取值、取地址等操作。</p>
+<p>在Visual Studio中，在一个结构体变量后输入点“.”，会看到Visual Studio根据结构体的定义给出了输入提示，并根据用户的输入自动完成代码。</p>
+<p>可以看到提示非常智能，不仅列出了结构体的成员，还对其数据类型、用途分别进行了说明。</p>
 
 </section>
 
@@ -1193,7 +1222,7 @@
 
 
         <span>
-            最后更新于 Apr 18, 2026 23:29 &#43;0800
+            最后更新于 Apr 19, 2026 11:39 &#43;0800
         </span>
     </section></footer>
 
