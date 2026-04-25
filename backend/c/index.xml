@@ -2228,7 +2228,7 @@
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;也就是：&lt;strong&gt;定义结构体，同类的放在一起，占字节大成员的先定义，占字节小的成员后定义&lt;/strong&gt;，这样可以尽可能的优化内存占用，提升效率。&lt;/p&gt;
+&lt;p&gt;也就是：&lt;strong&gt;定义结构体，同类的放在一起，占字节大的成员先定义，占字节小的成员后定义&lt;/strong&gt;，这样可以尽可能的优化内存占用，提升效率。&lt;/p&gt;
 </description>
         </item>
         <item>
