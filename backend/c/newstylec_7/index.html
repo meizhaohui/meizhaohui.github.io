@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='函数库' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-26T22:30:56&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='函数库' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-27T22:52:41&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7章">
 <meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.0 结构体 在学习课本内容前，我们先自己倒腾一下结构体的使用。\n之前已经学习过 C 语言的许多基本数据类型，如整型int、浮点float、字符型 char 等，还学习了数组这种构造类型。数组中，所有的数据都是同一类型，调用起来非常方便。\n除此以外，有时我们需要定义一些复杂的数据类型，它可能包括多个不同属性，每个属性需要用不同的类型来表示。该怎么实现呢？\nC语言中，可以把一些有内在联系的不同变量组织起来，封装成一个整体，即定义成一个结构体（structure），以此来表示一种新的数据类型。之后，就可以像处理基本数据类型那样，对结构体类型进行各种操作。\n结构体是一种构造类型，它由若干成员组成。其成员可以是一个基本数据类型，也可以是另一个构造类型。声明一个结构体的过程，就是创建一种新的类型名的过程。\n1 2 3 4 5 6 struct 结构体名称 { 类型 成员名称1; 类型 成员名称2; ... }; 关键字 struct 表示声明的是一个结构体，“结构体名称”表示要创建的新类型名，大括号中是“成员列表”，一行一个定员，需要包括构成该结构体的所有成员。注意，声明结构体时大括号后的分号“;”不能遗漏。 现在以Book书构建结构体，如书名，作者，出版社，出版时间，价格等属性，并创建几个函数。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -489,6 +489,7 @@
                 <li><a href="#713-访问结构体变量的成员">7.1.3 访问结构体变量的成员</a></li>
                 <li><a href="#714-结构体变量的内存占用和内存对齐">7.1.4 结构体变量的内存占用和内存对齐</a></li>
                 <li><a href="#715-使用typedef为结构体创建别名">7.1.5 使用typedef为结构体创建别名</a></li>
+                <li><a href="#716-获取货币牌价并填充至结构体">7.1.6 获取货币牌价并填充至结构体</a></li>
               </ul>
             </li>
           </ul>
@@ -3400,7 +3401,134 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h5 id="716-获取货币牌价并填充至结构体">7.1.6 获取货币牌价并填充至结构体
+</h5><p>现在，我们已经定义了<code>EXCHANGE_RATE</code>这个结构体用于存储某种货币的全部牌价数据，也学习了访问结构体成员变量的方法，还知道了结构体变量声明后结构体的各个成员会按照声明的次序占用一块连续的内存。</p>
+<p>准备好了存储美元牌价的结构体变量<code>USDRates</code>后，怎么获得美元牌价数据并填入其中呢？</p>
+<p>外汇牌价接口库提供了针对结构体的函数<code>GetRateRecordByCode</code>,在该函数中只要将货币代码和结构体变量的地址作为参数传入，就可以获取这种货币的全部牌价数据并自动填充到结构体变量。其原型为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">GetRateRecordByCode</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">code</span><span class="p">,</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">results</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><p>我们来自己实现一下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_06_GET_RATE_RECORD_BY_CODE.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/Mars
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;str.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;input.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加  D:/BC101/Libraries/BOCRates/BOCRates.h
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入作者提供的静态库的头文件
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;BOCRates.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/Mars.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 链接器--附加库目录，加上 D:/BC101/Libraries/Mars 和 D:/BC101/Libraries/BOCRates目录
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;Mars.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;BOCRates.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义外汇牌价结构体变量
+</span></span></span><span class="line"><span class="cl">    <span class="n">EXCHANGE_RATE</span> <span class="n">USDRates</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货币代码
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">code</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">strCopy</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="s">&#34;USD&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="nf">GetRateRecordByCode</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">USDRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;接口返回值: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">result</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币代码：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;货币名称：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;发布时间：%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇买入价：%.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞买入价：%.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现汇卖出价：%.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;现钞卖出价：%.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;中行折算价：%.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">USDRates</span><span class="p">.</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;网络或服务器异常</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序输出结果：</p>
+<p><img src="/img/Snipaste_2026-04-27_22-43-27.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-27_22-43-27.png"
+	
+	
+></p>
+<p>可以看到，与中国银行外汇牌价官网数据一致！</p>
+
 </section>
 
 
@@ -3439,7 +3567,7 @@
 
 
         <span>
-            最后更新于 2026年04月26日 22:30
+            最后更新于 2026年04月27日 22:52
         </span>
     </section></footer>
 
