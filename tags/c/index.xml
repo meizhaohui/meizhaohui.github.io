@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 27 Apr 2026 22:52:41 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 Apr 2026 23:11:02 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第7章</title>
         <link>https://hellogitlab.com/backend/c/newstylec_7/</link>
         <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
@@ -2885,6 +2885,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，与中国银行外汇牌价官网数据一致！&lt;/p&gt;
+&lt;p&gt;现在已经正常获取到美元的外汇牌价，后面就要考虑将这些数据存储到文件中！！&lt;/p&gt;
 </description>
         </item>
         <item>
