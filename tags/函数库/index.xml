@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 27 Apr 2026 23:11:02 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E5%87%BD%E6%95%B0%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Apr 2026 23:35:10 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E5%87%BD%E6%95%B0%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第7章</title>
         <link>https://hellogitlab.com/backend/c/newstylec_7/</link>
         <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
@@ -2196,7 +2196,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;可以看到，就先结构体的先后顺序进行一下调整，结构体变量占用的字节数就从16字节变成了12字节！！！少了4字节！&lt;/p&gt;
+&lt;p&gt;可以看到，就只对结构体的先后顺序进行一下调整，结构体变量占用的字节数就从16字节变成了12字节！！！少了4字节！&lt;/p&gt;
 &lt;div class=&#34;custom-block info&#34;&gt;
     &lt;div class=&#34;custom-block-heading&#34;&gt;ℹ️ 信息&lt;/div&gt;
     &lt;div class=&#34;custom-block-body&#34;&gt;
@@ -2390,7 +2390,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，在代码几个函数中用到了结构体，都需要&lt;code&gt;struct Book* book&lt;/code&gt;这样写，以及在&lt;code&gt;main&lt;/code&gt;函数里面定义一个结构体变量也要用&lt;code&gt;struct Book book1;&lt;/code&gt;，每次使用时都要带上&lt;code&gt;struct&lt;/code&gt;，不能像使用内置的&lt;code&gt;int&lt;/code&gt;、&lt;code&gt;float&lt;/code&gt;类型一样直接用，就显得有点麻烦！&lt;/p&gt;
 &lt;p&gt;这个时候就可以使用&lt;code&gt;typedef&lt;/code&gt;关键字来为结构体定义一个别名。&lt;/p&gt;
-&lt;p&gt;使用别名后，代码后的代码：&lt;/p&gt;
+&lt;p&gt;使用别名后，修改后的代码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2886,6 +2886,20 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到，与中国银行外汇牌价官网数据一致！&lt;/p&gt;
 &lt;p&gt;现在已经正常获取到美元的外汇牌价，后面就要考虑将这些数据存储到文件中！！&lt;/p&gt;
+&lt;p&gt;在4.2.3节知道： 日元的货币代码是&lt;code&gt;JPY&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;此时，如果我们考虑将29行的&lt;code&gt;USD&lt;/code&gt;货币代码换成别的，如日元的货币代码&lt;code&gt;JPY&lt;/code&gt;。然后再运行代码：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-04-28_21-25-45.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-04-28_21-25-45.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;此时就可以获取到日元的外汇牌价。&lt;/p&gt;
+&lt;p&gt;哪到底各外汇的货币代码是什么？怎么获取呢。&lt;/p&gt;
 </description>
         </item>
         <item>
