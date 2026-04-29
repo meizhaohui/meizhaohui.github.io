@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.2 文件访问的基础知识 磁盘上的数据是以文件的形式来存储的，程序员对文件的操作主要包括读和写。\n写文件的本质，就是将内存中的一块数据复制到磁盘上来实现长期保存；而读文件的本质就是将磁盘上的一块数据复制到内存中。 读写文件的步骤如下：\n第1步：创建（或打开）文件。 第2步：向文件中写数据或从文件中读数据。 第3步：关闭文件。 C语言标准库提供了访问文件的函数，较常用的如下：\nfopen函数&ndash;用于创建或打开文件； fread函数&ndash;用于从文件中读数据； fwrite函数&ndash;用于写数据到文件； fclose函数&ndash;用于关闭文件。 7.2.1 使用fopen函数创建或打开文件 将数据保存到磁盘文件时首先要创建文件。如果一个文件已经创建，只需要打开它（有时候是直接覆盖它，这由具体情况来决定）。在C语言中创建和打开文件都使用fopen函数，fopen函数的原型如下：\n1 FILE* fopen( const char* filename, const char* mode ); 第一个参数是filename，它是一个指定文件名的字符串； 第二个参数是mode，也是一个字符串，它的作用是决定打开这个文件的方式。 第二个参数，表示打开文件的模式，有以下几种：\n模式 C 语言 fopen Python open() 意思 只读 &quot;r&quot; &quot;r&quot; 打开读（文件必须存在） 只写 &quot;w&quot; &quot;w&quot; 清空创建写（文件不存在就创建） 追加 &quot;a&quot; &quot;a&quot; 末尾追加写 读写 &quot;r+&quot; &quot;r+&quot; 可读可写 读写创建 &quot;w+&quot; &quot;w+&quot; 创建读写,文件存在则会清空 追加读写 “a+” &ldquo;a+&rdquo; 写到末尾 + 可以读 当指定的路径不存在，试图打开 的文件不存在或文件被其他程序占用、对指定路径的访问权限不够、磁盘空间已满都可能会引起fopen函数打开或创建文件失败！ fopen函数在操作失败时会返回NULL，以便程序员知晓这些错误并采取处理措施。 如果fopen函数打开文件成功，则会返回一组关于这个文件的数据，这些数据被存储在一个结构体中，这个结构体是标准库中已经定义好的，别名为FILE。 我们不用关心这个结构体各项成员的含义，因为在不同的库中实现这个结构体的定义不同。 1 FILE* fp = fopen(&#34;data.json&#34;, &#34;r&#34;); 这行代码中的fp是一个指向这种结构体的指针。fopen函数内部在打开文件成功后就会创建这个结构体，将文件的相关数据存入其中并返回这个结构体的指针。后面的程序要访问该文件就需要通过指针fp获取结构体存储的数据。习惯上，我们把这个结构体指针称为文件句柄。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7_2/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-28T23:35:10&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-04-29T23:40:46&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7.2节 文件访问的基础知识">
 <meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.2 文件访问的基础知识 磁盘上的数据是以文件的形式来存储的，程序员对文件的操作主要包括读和写。\n写文件的本质，就是将内存中的一块数据复制到磁盘上来实现长期保存；而读文件的本质就是将磁盘上的一块数据复制到内存中。 读写文件的步骤如下：\n第1步：创建（或打开）文件。 第2步：向文件中写数据或从文件中读数据。 第3步：关闭文件。 C语言标准库提供了访问文件的函数，较常用的如下：\nfopen函数&ndash;用于创建或打开文件； fread函数&ndash;用于从文件中读数据； fwrite函数&ndash;用于写数据到文件； fclose函数&ndash;用于关闭文件。 7.2.1 使用fopen函数创建或打开文件 将数据保存到磁盘文件时首先要创建文件。如果一个文件已经创建，只需要打开它（有时候是直接覆盖它，这由具体情况来决定）。在C语言中创建和打开文件都使用fopen函数，fopen函数的原型如下：\n1 FILE* fopen( const char* filename, const char* mode ); 第一个参数是filename，它是一个指定文件名的字符串； 第二个参数是mode，也是一个字符串，它的作用是决定打开这个文件的方式。 第二个参数，表示打开文件的模式，有以下几种：\n模式 C 语言 fopen Python open() 意思 只读 &quot;r&quot; &quot;r&quot; 打开读（文件必须存在） 只写 &quot;w&quot; &quot;w&quot; 清空创建写（文件不存在就创建） 追加 &quot;a&quot; &quot;a&quot; 末尾追加写 读写 &quot;r+&quot; &quot;r+&quot; 可读可写 读写创建 &quot;w+&quot; &quot;w+&quot; 创建读写,文件存在则会清空 追加读写 “a+” &ldquo;a+&rdquo; 写到末尾 + 可以读 当指定的路径不存在，试图打开 的文件不存在或文件被其他程序占用、对指定路径的访问权限不够、磁盘空间已满都可能会引起fopen函数打开或创建文件失败！ fopen函数在操作失败时会返回NULL，以便程序员知晓这些错误并采取处理措施。 如果fopen函数打开文件成功，则会返回一组关于这个文件的数据，这些数据被存储在一个结构体中，这个结构体是标准库中已经定义好的，别名为FILE。 我们不用关心这个结构体各项成员的含义，因为在不同的库中实现这个结构体的定义不同。 1 FILE* fp = fopen(&#34;data.json&#34;, &#34;r&#34;); 这行代码中的fp是一个指向这种结构体的指针。fopen函数内部在打开文件成功后就会创建这个结构体，将文件的相关数据存入其中并返回这个结构体的指针。后面的程序要访问该文件就需要通过指针fp获取结构体存储的数据。习惯上，我们把这个结构体指针称为文件句柄。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -536,7 +536,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -635,7 +635,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -892,6 +892,373 @@
 	
 	
 ></p>
+<h6 id="7211-模拟无权限打开文件">7.2.1.1 模拟无权限打开文件
+</h6><p>给文件设置「只读 + 拒绝读取权限」：</p>
+<ul>
+<li>右键<code>data.json</code> → <strong>属性</strong></li>
+<li>切到 <strong>安全</strong> 选项卡 → 点 <strong>编辑</strong></li>
+<li>选中当前登录的<strong>用户 / 管理员组</strong></li>
+<li>在【 拒绝】   那一列，勾选： <strong>读取 &amp; 执行</strong> 和- <strong>读取</strong></li>
+<li>确定保存</li>
+</ul>
+<p><img src="/img/Snipaste_2026-04-29_20-08-57.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_20-08-57.png"
+	
+	
+></p>
+<p>先上代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// windows.h提供 Sleep 函数
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;windows.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// errno.h 提供错误码,如 EACCES          13
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;errno.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// string.h 提供 strerror 函数，获取错误码对应的异常说明
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 1. 打开文件
+</span></span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="s">&#34;data.json&#34;</span><span class="p">,</span> <span class="s">&#34;r&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件句柄地址:%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">fp</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件失败！错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件成功！此时你不能删除文件</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 在Windows环境下，最常用的延时函数是Sleep函数。
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// Sleep函数定义在windows.h头文件中，它的参数是延时的毫秒数
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 程序暂停期间，文件句柄一直被程序占用，你不能删除文件
+</span></span></span><span class="line"><span class="cl">    <span class="nf">Sleep</span><span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2. 关闭文件
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序，输出如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">文件句柄地址:00000000
+</span></span><span class="line"><span class="cl">打开文件失败！错误编号:13, 原因: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/img/Snipaste_2026-04-29_21-53-25.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_21-53-25.png"
+	
+	
+></p>
+<p>说明因为权限异常，读取不到文件！</p>
+<p>修改文件属性，将刚才选择的拒绝勾选去掉，然后再执行程序，就可以正常读文件：</p>
+<p><img src="/img/Snipaste_2026-04-29_21-56-19.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_21-56-19.png"
+	
+	
+></p>
+<h6 id="7212模拟文件不存在打开文件">7.2.1.2模拟文件不存在打开文件
+</h6><p>直接将<code>data.json</code>文件重命名为<code>data1.json</code>，然后再运行程序，此时输出为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">文件句柄地址:00000000
+</span></span><span class="line"><span class="cl">打开文件失败！错误编号:2, 原因: No such file or directory
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/img/Snipaste_2026-04-29_21-59-30.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_21-59-30.png"
+	
+	
+></p>
+<p>将<code>data1.json</code>命名重新改回为<code>data.json</code>。</p>
+<h6 id="7213--文件打开模式异常的处理">7.2.1.3  文件打开模式异常的处理
+</h6><p><a class="link" href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/fopen-wfopen?view=msvc-170"  target="_blank" rel="noopener"
+    >https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/fopen-wfopen?view=msvc-170</a> 这里面定义了<code>fopen</code>的打开模式：</p>
+<p><img src="/img/Snipaste_2026-04-29_22-40-00.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_22-40-00.png"
+	
+	
+></p>
+<p>如果我们使用一个非法的模式，如将模式<code>&quot;r&quot;</code>换成<code>&quot;invalid&quot;</code>，尝试运行程序：</p>
+<p><img src="/img/Snipaste_2026-04-29_22-43-38.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_22-43-38.png"
+	
+	
+></p>
+<p>程序直接崩溃了，提示<code>Expression:(“Invalid file open mode”,0)</code> 无效的文件打开模式！</p>
+<p>因此，在打开文件前，应对文件打开模式进行校验！</p>
+<p>下面是优化后的代码，对文件打开模式提前进行校验：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// windows.h提供 Sleep 函数
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;windows.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// errno.h 提供错误码,如 EACCES          13
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;errno.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// string.h 提供 strerror 函数，获取错误码对应的异常说明
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// stdbool.h 提供布尔逻辑true和false
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdbool.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 函数声明
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span> <span class="o">=</span> <span class="s">&#34;invalid&#34;</span><span class="p">;</span>  <span class="c1">// 随便写文件打开模式
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 1. 检查模式对不对
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="n">mode</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;错误：文件打开模式( %s )不合法！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件打开模式( %s )合法！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2. 打开文件
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 直接用/替换\\作为路径分隔符
+</span></span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="s">&#34;D:/BC101/Examples/L07/L07_07_FILE_READ_AND_WRITE/data.json&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件句柄地址:%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 3. 检查文件是否打开成功
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">fp</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件失败！错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 4. 打开成功，进行等待
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件成功！此时你不能删除文件</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 在Windows环境下，最常用的延时函数是Sleep函数。
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// Sleep函数定义在windows.h头文件中，它的参数是延时的毫秒数
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 程序暂停期间，文件句柄一直被程序占用，你不能删除文件
+</span></span></span><span class="line"><span class="cl">    <span class="nf">Sleep</span><span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 5. 关闭文件，释放文件句柄
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 检查文件打开模式是否合法
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 合法模式列表
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">valid_modes</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 文本模式
+</span></span></span><span class="line"><span class="cl">        <span class="s">&#34;r&#34;</span><span class="p">,</span>  <span class="s">&#34;r+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;w&#34;</span><span class="p">,</span>  <span class="s">&#34;w+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;a&#34;</span><span class="p">,</span>  <span class="s">&#34;a+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 二进制 b 模式
+</span></span></span><span class="line"><span class="cl">        <span class="s">&#34;rb&#34;</span><span class="p">,</span>  <span class="s">&#34;rb+&#34;</span><span class="p">,</span> <span class="s">&#34;r+b&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;wb&#34;</span><span class="p">,</span>  <span class="s">&#34;wb+&#34;</span><span class="p">,</span> <span class="s">&#34;w+b&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;ab&#34;</span><span class="p">,</span>  <span class="s">&#34;ab+&#34;</span><span class="p">,</span> <span class="s">&#34;a+b&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 计算一共有多少个合法模式
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">valid_modes</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">valid_modes</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;合法字符个数:%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 逐个比对
+</span></span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// strcmp 也是 string.h 中的，表示对两个字符串进行比较，相等就等于0
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nf">strcmp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">valid_modes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>  <span class="c1">// 找到合法模式 → 返回真
+</span></span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>  <span class="c1">// 没找到 → 非法
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序，可以看到，对非法模式进行了拦截：</p>
+<p><img src="/img/Snipaste_2026-04-29_23-19-20.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_23-19-20.png"
+	
+	
+></p>
+<p>此时，如果将<code>invalid</code>改成<code>r</code>，然后再启动程序，可以看到能正常运行：</p>
+<p><img src="/img/Snipaste_2026-04-29_23-23-33.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-04-29_23-23-33.png"
+	
+	
+></p>
 
 </section>
 
@@ -931,7 +1298,7 @@
 
 
         <span>
-            最后更新于 2026年04月28日 23:35
+            最后更新于 2026年04月29日 23:40
         </span>
     </section></footer>
 
