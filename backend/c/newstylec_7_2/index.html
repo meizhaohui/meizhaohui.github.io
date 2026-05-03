@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.2 文件访问的基础知识 磁盘上的数据是以文件的形式来存储的，程序员对文件的操作主要包括读和写。\n写文件的本质，就是将内存中的一块数据复制到磁盘上来实现长期保存；而读文件的本质就是将磁盘上的一块数据复制到内存中。 读写文件的步骤如下：\n第1步：创建（或打开）文件。 第2步：向文件中写数据或从文件中读数据。 第3步：关闭文件。 C语言标准库提供了访问文件的函数，较常用的如下：\nfopen函数&ndash;用于创建或打开文件； fread函数&ndash;用于从文件中读数据； fwrite函数&ndash;用于写数据到文件； fclose函数&ndash;用于关闭文件。 7.2.1 使用fopen函数创建或打开文件 将数据保存到磁盘文件时首先要创建文件。如果一个文件已经创建，只需要打开它（有时候是直接覆盖它，这由具体情况来决定）。在C语言中创建和打开文件都使用fopen函数，fopen函数的原型如下：\n1 FILE* fopen( const char* filename, const char* mode ); 第一个参数是filename，它是一个指定文件名的字符串； 第二个参数是mode，也是一个字符串，它的作用是决定打开这个文件的方式。 第二个参数，表示打开文件的模式，有以下几种：\n模式 C 语言 fopen Python open() 意思 只读 &quot;r&quot; &quot;r&quot; 打开读（文件必须存在） 只写 &quot;w&quot; &quot;w&quot; 清空创建写（文件不存在就创建） 追加 &quot;a&quot; &quot;a&quot; 末尾追加写 读写 &quot;r+&quot; &quot;r+&quot; 可读可写 读写创建 &quot;w+&quot; &quot;w+&quot; 创建读写,文件存在则会清空 追加读写 “a+” &ldquo;a+&rdquo; 写到末尾 + 可以读 当指定的路径不存在，试图打开 的文件不存在或文件被其他程序占用、对指定路径的访问权限不够、磁盘空间已满都可能会引起fopen函数打开或创建文件失败！ fopen函数在操作失败时会返回NULL，以便程序员知晓这些错误并采取处理措施。 如果fopen函数打开文件成功，则会返回一组关于这个文件的数据，这些数据被存储在一个结构体中，这个结构体是标准库中已经定义好的，别名为FILE。 我们不用关心这个结构体各项成员的含义，因为在不同的库中实现这个结构体的定义不同。 1 FILE* fp = fopen(&#34;data.json&#34;, &#34;r&#34;); 这行代码中的fp是一个指向这种结构体的指针。fopen函数内部在打开文件成功后就会创建这个结构体，将文件的相关数据存入其中并返回这个结构体的指针。后面的程序要访问该文件就需要通过指针fp获取结构体存储的数据。习惯上，我们把这个结构体指针称为文件句柄。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7_2/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-03T22:26:41&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-04-15T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-04T00:10:47&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7.2节 文件访问的基础知识">
 <meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.2 文件访问的基础知识 磁盘上的数据是以文件的形式来存储的，程序员对文件的操作主要包括读和写。\n写文件的本质，就是将内存中的一块数据复制到磁盘上来实现长期保存；而读文件的本质就是将磁盘上的一块数据复制到内存中。 读写文件的步骤如下：\n第1步：创建（或打开）文件。 第2步：向文件中写数据或从文件中读数据。 第3步：关闭文件。 C语言标准库提供了访问文件的函数，较常用的如下：\nfopen函数&ndash;用于创建或打开文件； fread函数&ndash;用于从文件中读数据； fwrite函数&ndash;用于写数据到文件； fclose函数&ndash;用于关闭文件。 7.2.1 使用fopen函数创建或打开文件 将数据保存到磁盘文件时首先要创建文件。如果一个文件已经创建，只需要打开它（有时候是直接覆盖它，这由具体情况来决定）。在C语言中创建和打开文件都使用fopen函数，fopen函数的原型如下：\n1 FILE* fopen( const char* filename, const char* mode ); 第一个参数是filename，它是一个指定文件名的字符串； 第二个参数是mode，也是一个字符串，它的作用是决定打开这个文件的方式。 第二个参数，表示打开文件的模式，有以下几种：\n模式 C 语言 fopen Python open() 意思 只读 &quot;r&quot; &quot;r&quot; 打开读（文件必须存在） 只写 &quot;w&quot; &quot;w&quot; 清空创建写（文件不存在就创建） 追加 &quot;a&quot; &quot;a&quot; 末尾追加写 读写 &quot;r+&quot; &quot;r+&quot; 可读可写 读写创建 &quot;w+&quot; &quot;w+&quot; 创建读写,文件存在则会清空 追加读写 “a+” &ldquo;a+&rdquo; 写到末尾 + 可以读 当指定的路径不存在，试图打开 的文件不存在或文件被其他程序占用、对指定路径的访问权限不够、磁盘空间已满都可能会引起fopen函数打开或创建文件失败！ fopen函数在操作失败时会返回NULL，以便程序员知晓这些错误并采取处理措施。 如果fopen函数打开文件成功，则会返回一组关于这个文件的数据，这些数据被存储在一个结构体中，这个结构体是标准库中已经定义好的，别名为FILE。 我们不用关心这个结构体各项成员的含义，因为在不同的库中实现这个结构体的定义不同。 1 FILE* fp = fopen(&#34;data.json&#34;, &#34;r&#34;); 这行代码中的fp是一个指向这种结构体的指针。fopen函数内部在打开文件成功后就会创建这个结构体，将文件的相关数据存入其中并返回这个结构体的指针。后面的程序要访问该文件就需要通过指针fp获取结构体存储的数据。习惯上，我们把这个结构体指针称为文件句柄。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -486,6 +486,7 @@
                 <li><a href="#721-使用fopen函数创建或打开文件">7.2.1 使用<code>fopen</code>函数创建或打开文件</a></li>
                 <li><a href="#724-使用fread读取文件内容">7.2.4 使用<code>fread</code>读取文件内容</a></li>
                 <li><a href="#722-使用fwrite函数写入数据到文件">7.2.2 使用fwrite函数写入数据到文件</a></li>
+                <li><a href="#723--文件缓冲区">7.2.3  文件缓冲区</a></li>
               </ul>
             </li>
           </ul>
@@ -517,7 +518,7 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/backend/" class="font_size_80">
+            <a href="/categories/backend/" class="font_size_81">
                 Backend
             </a>
         
@@ -2213,7 +2214,18 @@
 </span></span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>代码中关键信息说明：</p>
+</div><p>查看写入的文件内容：</p>
+<p><img src="/img/Snipaste_2026-05-03_22-33-35.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-03_22-33-35.png"
+	
+	
+></p>
+<p>代码中关键信息说明：</p>
 <ul>
 <li><code>int expect_len = strlen(buf); </code>获取真实要写入到文件的长度。</li>
 <li><code>count = fwrite(buf, sizeof(char), expect_len, fp);</code>写字符串写入到<code>fp</code>文件句柄对应的文件中，返回写入的个数<code>count</code>。</li>
@@ -2226,6 +2238,14 @@
 <li>程序被杀死</li>
 <li>系统崩溃</li>
 </ul>
+<h5 id="723--文件缓冲区">7.2.3  文件缓冲区
+</h5><p>内存是速度很快的电子器件，CPU可以直接访问 内存中的数据，但诸如硬盘这些外部存储器的速度远远不如内存。</p>
+<p>因此当我们要往磁盘文件中多次写入数据时，每一次写入操作后需要等待较长时间才能将数据写入磁盘，在这段时间里无法进行下一次写入。这样一来程序的速度就被降低了！读取数据也一样，每次读取数据都要等到硬盘上的磁头运动完毕才能读取完成。</p>
+<p>为了减少这种等待以提高访问外存的速度，操作系统使用了“文件缓冲区”技术，即通过在RAM中占用一块空间以换得文件读写性能的提升。</p>
+<p>文件缓冲区是操作系统为每一个打开的文件开辟的一块内存区域。</p>
+<p>在打开一个文件后，磁盘文件的部分或全部会被读入缓冲区，读取文件内容时优先从缓冲区中读取，只有文件缓冲区中不存在要读取的内容时才从磁盘上读入。缓冲区命中率越高，读取文件的速度就越快。</p>
+<p>同样的，程序在写文件时，也是优先写到缓冲区中（并不一定及时写入硬盘），由于RAM的读写速度远远高于对磁盘的读写速度，使用文件缓冲区会大大提高磁盘文件的读写的效率。</p>
+<p>文件缓冲区由操作系统管理，程序员一般不用对其进行干预。但需要注意的是，在一个文件读写文件后，应该使用<code>fclose</code>函数关闭文件缓冲区。关闭缓冲区使操作系统将最新的缓冲区数据写入磁盘。防止因意外事故造成数据丢失。</p>
 
 </section>
 
@@ -2265,7 +2285,7 @@
 
 
         <span>
-            最后更新于 2026年05月03日 22:26
+            最后更新于 2026年05月04日 00:10
         </span>
     </section></footer>
 
@@ -2313,6 +2333,25 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/backend/c/newstylec_7_3/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/default.jpg" loading="lazy" data-key="" data-hash="/img/default.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">换个姿势学C语言第7.3节 将结构体存入磁盘文件</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
@@ -2385,25 +2424,6 @@
 
         <div class="article-details">
             <h2 class="article-title">换个姿势学C语言第5章5.4</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/backend/c/newstylec_5.3/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/img/default.jpg" loading="lazy" data-key="" data-hash="/img/default.jpg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">换个姿势学C语言第5章5.3</h2>
         </div>
     </a>
 </article>
