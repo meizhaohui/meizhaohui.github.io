@@ -7,7 +7,267 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 04 May 2026 23:29:04 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 May 2026 22:47:23 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>换个姿势学C语言第7.4节 获取和保存全部外币牌价数据</title>
+        <link>https://hellogitlab.com/backend/c/newstylec_7_4/</link>
+        <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hellogitlab.com/backend/c/newstylec_7_4/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第7.4节 获取和保存全部外币牌价数据" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第7章-获取全部外币牌价数据并保存为文件&#34;&gt;换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件
+&lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
+&lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这是一本非常不错的书！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一、二、三章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec/&#34; &gt;换个姿势学C语言 第1-3章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第四章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_4/&#34; &gt;换个姿势学C语言 第4章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.1节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5/&#34; &gt;换个姿势学C语言 第5章 5.1节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.2/&#34; &gt;换个姿势学C语言 第5章 5.2节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.3/&#34; &gt;换个姿势学C语言 第5章 5.3节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.4/&#34; &gt;换个姿势学C语言 第5章 5.4节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第六章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_6/&#34; &gt;换个姿势学C语言 第6章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.1节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7/&#34; &gt;换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_2/&#34; &gt;换个姿势学C语言 第7.2章 文件访问的基础知识&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_3/&#34; &gt;换个姿势学C语言 第7.3章 将结构体存入磁盘文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_4/&#34; &gt;换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;7-获取全部外币牌价数据并保存为文件&#34;&gt;7. 获取全部外币牌价数据并保存为文件
+&lt;/h3&gt;&lt;p&gt;变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。&lt;/p&gt;
+&lt;p&gt;在一些较底层的语言里，&lt;strong&gt;程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。&lt;/p&gt;
+&lt;p&gt;本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。&lt;/p&gt;
+&lt;p&gt;结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。&lt;/p&gt;
+&lt;h4 id=&#34;74-获取和保存全部外币牌价数据&#34;&gt;7.4 获取和保存全部外币牌价数据
+&lt;/h4&gt;&lt;p&gt;现在我们已经可以一次获取某一种外币的牌价数据，并将其显示或保存起来，也可以从文件中读取已保存的牌价数据。但是，在外汇牌价看板中需要显示多种（书上说的是26种）外汇牌价，它们的名称和代码是什么？&lt;/p&gt;
+&lt;p&gt;以下是根据中国银行官网外汇牌价页面整理的常见货币名称及其对应的国际标准货币代码（ISO 4217） 。&lt;/p&gt;
+&lt;p&gt;人民币的货币代码是&lt;code&gt;CNY&lt;/code&gt;。详细可参考 中国银行外汇牌价 &lt;a class=&#34;link&#34; href=&#34;https://www.boc.cn/sourcedb/whpj/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.boc.cn/sourcedb/whpj/&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;序号&lt;/th&gt;
+          &lt;th&gt;货币名称&lt;/th&gt;
+          &lt;th&gt;货币代码&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;美元&lt;/td&gt;
+          &lt;td&gt;USD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;港币&lt;/td&gt;
+          &lt;td&gt;HKD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;澳大利亚元&lt;/td&gt;
+          &lt;td&gt;AUD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;欧元&lt;/td&gt;
+          &lt;td&gt;EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;日元&lt;/td&gt;
+          &lt;td&gt;JPY&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;英镑&lt;/td&gt;
+          &lt;td&gt;GBP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;加拿大元&lt;/td&gt;
+          &lt;td&gt;CAD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;新加坡元&lt;/td&gt;
+          &lt;td&gt;SGD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;新西兰元&lt;/td&gt;
+          &lt;td&gt;NZD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;10&lt;/td&gt;
+          &lt;td&gt;泰国铢&lt;/td&gt;
+          &lt;td&gt;THB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;11&lt;/td&gt;
+          &lt;td&gt;韩国元&lt;/td&gt;
+          &lt;td&gt;KRW&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;12&lt;/td&gt;
+          &lt;td&gt;澳门元&lt;/td&gt;
+          &lt;td&gt;MOP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;13&lt;/td&gt;
+          &lt;td&gt;瑞士法郎&lt;/td&gt;
+          &lt;td&gt;CHF&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;14&lt;/td&gt;
+          &lt;td&gt;瑞典克朗&lt;/td&gt;
+          &lt;td&gt;SEK&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;15&lt;/td&gt;
+          &lt;td&gt;卢布&lt;/td&gt;
+          &lt;td&gt;RUB（俄罗斯卢布）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;16&lt;/td&gt;
+          &lt;td&gt;丹麦克朗&lt;/td&gt;
+          &lt;td&gt;DKK&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;17&lt;/td&gt;
+          &lt;td&gt;印尼卢比&lt;/td&gt;
+          &lt;td&gt;IDR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;18&lt;/td&gt;
+          &lt;td&gt;挪威克朗&lt;/td&gt;
+          &lt;td&gt;NOK&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;19&lt;/td&gt;
+          &lt;td&gt;阿联酋迪拉姆&lt;/td&gt;
+          &lt;td&gt;AED&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;20&lt;/td&gt;
+          &lt;td&gt;新台币&lt;/td&gt;
+          &lt;td&gt;TWD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;21&lt;/td&gt;
+          &lt;td&gt;菲律宾比索&lt;/td&gt;
+          &lt;td&gt;PHP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;22&lt;/td&gt;
+          &lt;td&gt;南非兰特&lt;/td&gt;
+          &lt;td&gt;ZAR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;23&lt;/td&gt;
+          &lt;td&gt;沙特里亚尔&lt;/td&gt;
+          &lt;td&gt;SAR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;24&lt;/td&gt;
+          &lt;td&gt;巴西雷亚尔&lt;/td&gt;
+          &lt;td&gt;BRL&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;25&lt;/td&gt;
+          &lt;td&gt;土耳其里拉&lt;/td&gt;
+          &lt;td&gt;TRY&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;26&lt;/td&gt;
+          &lt;td&gt;印度卢比&lt;/td&gt;
+          &lt;td&gt;INR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;27&lt;/td&gt;
+          &lt;td&gt;越南盾&lt;/td&gt;
+          &lt;td&gt;VND&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;28&lt;/td&gt;
+          &lt;td&gt;蒙古图格里克&lt;/td&gt;
+          &lt;td&gt;MNT&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;29&lt;/td&gt;
+          &lt;td&gt;林吉特&lt;/td&gt;
+          &lt;td&gt;MYR（马来西亚林吉特）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;30&lt;/td&gt;
+          &lt;td&gt;尼泊尔卢比&lt;/td&gt;
+          &lt;td&gt;NPR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;31&lt;/td&gt;
+          &lt;td&gt;捷克克朗&lt;/td&gt;
+          &lt;td&gt;CZK&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;32&lt;/td&gt;
+          &lt;td&gt;卡塔尔里亚尔&lt;/td&gt;
+          &lt;td&gt;QAR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;33&lt;/td&gt;
+          &lt;td&gt;以色列谢克尔&lt;/td&gt;
+          &lt;td&gt;ILS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;34&lt;/td&gt;
+          &lt;td&gt;墨西哥比索&lt;/td&gt;
+          &lt;td&gt;MXN&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;35&lt;/td&gt;
+          &lt;td&gt;匈牙利福林&lt;/td&gt;
+          &lt;td&gt;HUF&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;36&lt;/td&gt;
+          &lt;td&gt;科威特第纳尔&lt;/td&gt;
+          &lt;td&gt;KWD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;37&lt;/td&gt;
+          &lt;td&gt;巴基斯坦卢比&lt;/td&gt;
+          &lt;td&gt;PKR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;38&lt;/td&gt;
+          &lt;td&gt;柬埔寨瑞尔&lt;/td&gt;
+          &lt;td&gt;KHR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;39&lt;/td&gt;
+          &lt;td&gt;文莱元&lt;/td&gt;
+          &lt;td&gt;BND&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;40&lt;/td&gt;
+          &lt;td&gt;塞尔维亚第纳尔&lt;/td&gt;
+          &lt;td&gt;RSD&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;也就是说当前有40种外币！&lt;/p&gt;
+&lt;p&gt;牌价接口库提供了一次性取得全部外币牌价的函数，但我们现在不打算使用它。&lt;/p&gt;
+&lt;p&gt;如果只允许使用现有的知识和信息，并且只允许使用&lt;code&gt;GetRateRecordByCode&lt;/code&gt;函数，如何实现获得全部外币牌价的功能呢？&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>换个姿势学C语言第7.3节 将结构体存入磁盘文件</title>
         <link>https://hellogitlab.com/backend/c/newstylec_7_3/</link>
         <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
@@ -48,6 +308,16 @@
 &lt;h4 id=&#34;73-将结构体存入磁盘文件&#34;&gt;7.3 将结构体存入磁盘文件
 &lt;/h4&gt;&lt;p&gt;掌握了文件读写的基本方法，现在就可以将读到的外汇牌价数据存入到磁盘文件中了。&lt;/p&gt;
 &lt;p&gt;有了7.1和7.2小节的基础，在获取到美元牌价后，就可以将美元外汇牌价信息写入到文件。&lt;/p&gt;
+&lt;div class=&#34;custom-block warning&#34;&gt;
+    &lt;div class=&#34;custom-block-heading&#34;&gt;⚠️ 警告&lt;/div&gt;
+    &lt;div class=&#34;custom-block-body&#34;&gt;
+        &lt;p&gt;注意，将结构体写入到文件时，文件打开模式&lt;code&gt;mode&lt;/code&gt;不能是&lt;code&gt;w&lt;/code&gt;，而是要用&lt;code&gt;wb&lt;/code&gt;以二进制方式写入文件。&lt;/p&gt;
+&lt;p&gt;如果以&lt;code&gt;w&lt;/code&gt;文本方式打开文件，&lt;code&gt;fwrite&lt;/code&gt;函数每遇到一个&lt;code&gt;0x0A&lt;/code&gt;时，就会在它的前面自动加入&lt;code&gt;0x0D&lt;/code&gt;，其他内容不做添加操作。&lt;/p&gt;
+&lt;p&gt;外汇牌价结构体数据也应以二进制方式保存到文件！&lt;/p&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;以下是整合后的代码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
