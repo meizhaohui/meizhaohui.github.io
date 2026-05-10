@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.4 获取和保存全部外币牌价数据 现在我们已经可以一次获取某一种外币的牌价数据，并将其显示或保存起来，也可以从文件中读取已保存的牌价数据。但是，在外汇牌价看板中需要显示多种（书上说的是26种）外汇牌价，它们的名称和代码是什么？\n以下是根据中国银行官网外汇牌价页面整理的常见货币名称及其对应的国际标准货币代码（ISO 4217） 。\n人民币的货币代码是CNY。详细可参考 中国银行外汇牌价 https://www.boc.cn/sourcedb/whpj/\n序号 货币名称 货币代码 1 美元 USD 2 港币 HKD 3 澳大利亚元 AUD 4 欧元 EUR 5 日元 JPY 6 英镑 GBP 7 加拿大元 CAD 8 新加坡元 SGD 9 新西兰元 NZD 10 泰国铢 THB 11 韩国元 KRW 12 澳门元 MOP 13 瑞士法郎 CHF 14 瑞典克朗 SEK 15 卢布 RUB（俄罗斯卢布） 16 丹麦克朗 DKK 17 印尼卢比 IDR 18 挪威克朗 NOK 19 阿联酋迪拉姆 AED 20 新台币 TWD 21 菲律宾比索 PHP 22 南非兰特 ZAR 23 沙特里亚尔 SAR 24 巴西雷亚尔 BRL 25 土耳其里拉 TRY 26 印度卢比 INR 27 越南盾 VND 28 蒙古图格里克 MNT 29 林吉特 MYR（马来西亚林吉特） 30 尼泊尔卢比 NPR 31 捷克克朗 CZK 32 卡塔尔里亚尔 QAR 33 以色列谢克尔 ILS 34 墨西哥比索 MXN 35 匈牙利福林 HUF 36 科威特第纳尔 KWD 37 巴基斯坦卢比 PKR 38 柬埔寨瑞尔 KHR 39 文莱元 BND 40 塞尔维亚第纳尔 RSD 也就是说当前有40种外币！\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7_4/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-05-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-10T13:25:10&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-05-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-10T21:21:11&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7.4节 获取和保存全部外币牌价数据">
 <meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.4 获取和保存全部外币牌价数据 现在我们已经可以一次获取某一种外币的牌价数据，并将其显示或保存起来，也可以从文件中读取已保存的牌价数据。但是，在外汇牌价看板中需要显示多种（书上说的是26种）外汇牌价，它们的名称和代码是什么？\n以下是根据中国银行官网外汇牌价页面整理的常见货币名称及其对应的国际标准货币代码（ISO 4217） 。\n人民币的货币代码是CNY。详细可参考 中国银行外汇牌价 https://www.boc.cn/sourcedb/whpj/\n序号 货币名称 货币代码 1 美元 USD 2 港币 HKD 3 澳大利亚元 AUD 4 欧元 EUR 5 日元 JPY 6 英镑 GBP 7 加拿大元 CAD 8 新加坡元 SGD 9 新西兰元 NZD 10 泰国铢 THB 11 韩国元 KRW 12 澳门元 MOP 13 瑞士法郎 CHF 14 瑞典克朗 SEK 15 卢布 RUB（俄罗斯卢布） 16 丹麦克朗 DKK 17 印尼卢比 IDR 18 挪威克朗 NOK 19 阿联酋迪拉姆 AED 20 新台币 TWD 21 菲律宾比索 PHP 22 南非兰特 ZAR 23 沙特里亚尔 SAR 24 巴西雷亚尔 BRL 25 土耳其里拉 TRY 26 印度卢比 INR 27 越南盾 VND 28 蒙古图格里克 MNT 29 林吉特 MYR（马来西亚林吉特） 30 尼泊尔卢比 NPR 31 捷克克朗 CZK 32 卡塔尔里亚尔 QAR 33 以色列谢克尔 ILS 34 墨西哥比索 MXN 35 匈牙利福林 HUF 36 科威特第纳尔 KWD 37 巴基斯坦卢比 PKR 38 柬埔寨瑞尔 KHR 39 文莱元 BND 40 塞尔维亚第纳尔 RSD 也就是说当前有40种外币！\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -488,6 +488,7 @@
                 <li><a href="#743-将显示外币牌价的代码封闭成函数">7.4.3 将显示外币牌价的代码封闭成函数</a></li>
                 <li><a href="#744-获取全部外币牌价">7.4.4 获取全部外币牌价</a></li>
                 <li><a href="#745--一次获取全部牌价">7.4.5  一次获取全部牌价</a></li>
+                <li><a href="#746-保存和打开数据文件">7.4.6 保存和打开数据文件</a></li>
               </ul>
             </li>
           </ul>
@@ -540,7 +541,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_33">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -639,7 +640,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 10 分钟
+                    阅读时长: 13 分钟
                 </time>
             </div>
         
@@ -2391,9 +2392,376 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRates</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="nf">GetAllRates</span><span class="p">(</span><span class="n">allRates</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第2行代码㧈指针变量<code>allRates</code>传递给函数<code>GetAllRates</code>，让它在内部分配空间并让<code>allRates</code>指向这块空间就可以了！但是此处又有坑，无论<code>GetAllRates</code>函数内部写什么样的代码，都不可能改变程序中指针变量<code>allRates</code>的值，这是因为传递到函数<code>GetAllRates</code>函数中的内容实际上是指针变量<code>allRates</code>的值，这个值目前是<code>NULL</code>。</p>
+<p>要想让<code>GetAllRates</code>函数内部可以改变指针变量<code>allRates</code>的值，只能把指针变量<code>allRates</code>的地址传递给它，调用函数时要加上取址运算符：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRates</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="nf">GetAllRates</span><span class="p">(</span><span class="o">&amp;</span><span class="n">allRates</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时传递给函数的是指针变量<code>allRates</code>的地址，函数内部就可以改变<code>allRates</code>的值了！</p>
+<p>这时<code>GetAllRates</code>函数的原型就变成 了这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">GetAllRates</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="o">**</span> <span class="n">result</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此处的<code>ExchangeRate**</code>表示这个参数是一个指针变量的地址，使用了连续的两个<code>*</code>，至此我们就相当于和实现牌价接口库的程序员协商了一个接口，函数具体怎么实现就可以交给他了！</p>
+<p>需要特别注意的是，<code>GetAllRates</code>函数内部也是用<code>malloc</code>函数分配所需要内存的，分配并填充数据后，我们程序中的指针变量<code>allRates</code>会指向这块空间，因此<code>GetAllRates</code>函数执行完毕不能释放这块空间（空间被释放数据就会被破坏），释放的工作要交给我们的程序来完成。</p>
+<p>虽然这违背了**“谁分配，谁释放”的原则**，但这是为了提高程序的效率所做出的妥协，也实在没有更好的办法。我们只要在接口文档里面强调，“<strong>调用GetAllRates函数所获得的内存区块，由调用者负责释放</strong>”就可以了！</p>
+<p><code>GetAllRates</code>函数的使用说明：</p>
+<p><img src="/img/Snipaste_2026-05-10_15-23-28.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-10_15-23-28.png"
+	
+	
+></p>
+<p>然后编写代码，获取全部外币信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">//</span> <span class="n">L07_13_GET_AND_DISPLAY_ALL_RATES</span><span class="o">.</span><span class="n">cpp</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">忽略</span><span class="n">scanf不安全告警</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#define _CRT_SECURE_NO_WARNINGS</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">屏蔽</span><span class="n">scanf返回值被忽略警告</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#pragma warning(disable: 6031)</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#include &lt;stdio.h&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#include &lt;stdlib.h&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">附加包含目录已经添加</span>  <span class="n">D</span><span class="p">:</span><span class="o">/</span><span class="n">BC101</span><span class="o">/</span><span class="n">Libraries</span><span class="o">/</span><span class="n">BOCRates</span><span class="o">/</span><span class="n">BOCRates</span><span class="o">.</span><span class="n">h</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">此处引入作者提供的静态库的头文件</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#include &#34;BOCRates.h&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="c1">#pragma comment：VS 编译器专用指令，给编译器发命令</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span>      <span class="n">lib</span><span class="err">：表示我要链接一个静态库</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span>      <span class="err">路径：库文件在哪里</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">链接器</span><span class="o">--</span><span class="err">附加库目录，加上</span> <span class="n">D</span><span class="p">:</span><span class="o">/</span><span class="n">BC101</span><span class="o">/</span><span class="n">Libraries</span><span class="o">/</span><span class="n">Mars</span> <span class="err">和</span> <span class="n">D</span><span class="p">:</span><span class="o">/</span><span class="n">BC101</span><span class="o">/</span><span class="n">Libraries</span><span class="o">/</span><span class="n">BOCRates目录</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#pragma comment(lib, &#34;BOCRates.lib&#34;)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">打印外汇牌价结构体信息</span>
+</span></span><span class="line"><span class="cl"><span class="n">void</span> <span class="n">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="ne">int</span> <span class="n">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">定义外汇牌价结构体指针变量</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRates</span> <span class="o">=</span> <span class="n">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="ne">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">GetAllRates</span><span class="p">(</span><span class="o">&amp;</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;成功获得 </span><span class="si">%d</span><span class="s2"> 种外币牌价</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;牌价数据被存储在地址 %p 开始的内存区域中dd</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="ne">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="o">//</span> <span class="n">allRates</span> <span class="err">是数组首地址</span><span class="p">,</span><span class="n">allRates</span> <span class="o">+</span> <span class="n">i</span> <span class="o">=</span> <span class="err">第</span> <span class="n">i</span> <span class="err">个元素的地址</span><span class="p">,</span><span class="err">等价于</span> <span class="o">&amp;</span><span class="n">allRates</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">displayRate</span><span class="p">(</span><span class="n">allRates</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="err">释放内存块</span> <span class="err">，</span> <span class="n">free函数在stdlib</span><span class="o">.</span><span class="n">h中定义</span>
+</span></span><span class="line"><span class="cl">        <span class="n">free</span><span class="p">(</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;网络异常或服务器返回不正常的结果</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="err">打印外汇牌价结构体信息</span>
+</span></span><span class="line"><span class="cl"><span class="n">void</span> <span class="n">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">货币代码</span>   <span class="err">（固定</span><span class="mi">6</span><span class="err">字符，左对齐）</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%-6s</span><span class="se">\t</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">货币名称</span>  <span class="err">（固定</span><span class="mi">16</span><span class="err">字符，左对齐）</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%-16s</span><span class="se">\t</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">发布时间</span>   <span class="err">（固定</span><span class="mi">20</span><span class="err">字符，左对齐）</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%-20s</span><span class="se">\t</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">现汇买入价</span>   <span class="err">（</span><span class="mi">8</span><span class="err">字符，</span><span class="mi">2</span><span class="err">位小数）</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%8.2f</span><span class="se">\t</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">现钞买入价</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%8.2f</span><span class="se">\t</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">现汇卖出价</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%8.2f</span><span class="se">\t</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">现钞卖出价</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%8.2f</span><span class="se">\t</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="err">中行折算价</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%8.2f</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后运行程序，输出结果如下：</p>
+<p><img src="/img/Snipaste_2026-05-10_15-37-53.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-10_15-37-53.png"
+	
+	
+></p>
+<p>可以看到，输出了26种外汇牌价数据，比我测试的40种少，有可能是接口做了限制！</p>
+<p><strong>定义显示全部牌价数据的函数dispalyAllRates</strong></p>
+<p>目前我们显示全部牌价数据的代码直接写在<code>main</code>函数中，后期有可能多处需要使用，因此可以模块化为一个函数。</p>
+<p>优化后的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_13_GET_AND_DISPLAY_ALL_RATES.cpp
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加  D:/BC101/Libraries/BOCRates/BOCRates.h
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入作者提供的静态库的头文件
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;BOCRates.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 链接器--附加库目录，加上 D:/BC101/Libraries/Mars 和 D:/BC101/Libraries/BOCRates目录
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;BOCRates.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印外汇牌价结构体信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印所有外汇牌价信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayAllRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRecords</span><span class="p">,</span> <span class="kt">int</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义外汇牌价结构体指针变量
+</span></span></span><span class="line"><span class="cl">    <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRates</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="nf">GetAllRates</span><span class="p">(</span><span class="o">&amp;</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;成功获得 %d 种外币牌价</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;牌价数据被存储在地址 %p 开始的内存区域中dd</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">displayAllRate</span><span class="p">(</span><span class="n">allRates</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 释放内存块 ， free函数在stdlib.h中定义
+</span></span></span><span class="line"><span class="cl">        <span class="nf">free</span><span class="p">(</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;网络异常或服务器返回不正常的结果</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印外汇牌价结构体信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货币代码   （固定6字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-6s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货币名称  （固定16字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-16s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 发布时间   （固定20字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-20s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现汇买入价   （8字符，2位小数）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现钞买入价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现汇卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现钞卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 中行折算价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印所有外汇牌价信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayAllRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRecords</span><span class="p">,</span> <span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// allRecords 是数组首地址,allRecords + i = 第 i 个元素的地址,等价于 &amp;allRecords[i]
+</span></span></span><span class="line"><span class="cl">        <span class="nf">displayRate</span><span class="p">(</span><span class="n">allRecords</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="746-保存和打开数据文件">7.4.6 保存和打开数据文件
+</h5><p>获取全部外汇牌价数据后，就需要将其保存到文件中，以便在网络临时断开时显示数据。</p>
+<h6 id="7461--保存全部牌价数据">7.4.6.1  保存全部牌价数据
+</h6><p><code>GetAllRates</code>函数已经获取了全部牌价数据并存入内存中，将其保存到磁盘文件的程序就比较容易写了。考虑到保存牌价数据到文件也是经常要进行的工作，因此也应将其设计成为一个单独的函数——<code>saveAllRates</code>。</p>
+<p>我们在7.3节 <a class="link" href="../newstylec_7_3" >将结构体存入磁盘文件</a> L07_10_READ_RATES_FROM_FILE.cpp文件中已经定义过<code>save_data_to_file</code>和<code>load_data_from_file</code>函数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// 通用二进制写入：任意数据原样存文件
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">save_data_to_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制读取：从文件读取任意数据到内存
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">);</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -2435,7 +2803,7 @@
 
 
         <span>
-            最后更新于 2026年05月10日 13:25
+            最后更新于 2026年05月10日 21:21
         </span>
     </section></footer>
 
