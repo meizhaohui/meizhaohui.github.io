@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.4 获取和保存全部外币牌价数据 现在我们已经可以一次获取某一种外币的牌价数据，并将其显示或保存起来，也可以从文件中读取已保存的牌价数据。但是，在外汇牌价看板中需要显示多种（书上说的是26种）外汇牌价，它们的名称和代码是什么？\n以下是根据中国银行官网外汇牌价页面整理的常见货币名称及其对应的国际标准货币代码（ISO 4217） 。\n人民币的货币代码是CNY。详细可参考 中国银行外汇牌价 https://www.boc.cn/sourcedb/whpj/\n序号 货币名称 货币代码 1 美元 USD 2 港币 HKD 3 澳大利亚元 AUD 4 欧元 EUR 5 日元 JPY 6 英镑 GBP 7 加拿大元 CAD 8 新加坡元 SGD 9 新西兰元 NZD 10 泰国铢 THB 11 韩国元 KRW 12 澳门元 MOP 13 瑞士法郎 CHF 14 瑞典克朗 SEK 15 卢布 RUB（俄罗斯卢布） 16 丹麦克朗 DKK 17 印尼卢比 IDR 18 挪威克朗 NOK 19 阿联酋迪拉姆 AED 20 新台币 TWD 21 菲律宾比索 PHP 22 南非兰特 ZAR 23 沙特里亚尔 SAR 24 巴西雷亚尔 BRL 25 土耳其里拉 TRY 26 印度卢比 INR 27 越南盾 VND 28 蒙古图格里克 MNT 29 林吉特 MYR（马来西亚林吉特） 30 尼泊尔卢比 NPR 31 捷克克朗 CZK 32 卡塔尔里亚尔 QAR 33 以色列谢克尔 ILS 34 墨西哥比索 MXN 35 匈牙利福林 HUF 36 科威特第纳尔 KWD 37 巴基斯坦卢比 PKR 38 柬埔寨瑞尔 KHR 39 文莱元 BND 40 塞尔维亚第纳尔 RSD 也就是说当前有40种外币！\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_7_4/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-05-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-10T21:21:11&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='File' /><meta property='article:published_time' content='2025-05-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-11T23:28:12&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第7.4节 获取和保存全部外币牌价数据">
 <meta name="twitter:description" content="换个姿势学C语言 第7章 获取全部外币牌价数据并保存为文件 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 7. 获取全部外币牌价数据并保存为文件 变量、数组都是存储在内存RAM中的，这些数据所占用的内存在程序结束以后会被操作系统回收，其中的数据也就丢失了。因此我们需要将数据保存到外部存储器上（通常是硬盘），以便下次使用。\n在一些较底层的语言里，程序员可以直接访问硬盘的某个扇区并进行数据读写，但这种方式一般不被推荐，因为这种方式除了效率比较低外还具有较大的危险，不恰当的磁盘访问可能会引起严重的故障（例如操作系统崩溃或者数据丢失）。\n因此通常是以“文件”来组织磁盘上的数据。文件系统由操作系统管理，程序员通过操作系统间接地访问磁盘上的数据，不恰当的文件访问会被操作系统阻止（例如文件被其他程序占用或程序没有访问这个文件的权限），这样一来就安全得多，同时操作系统也会采取一些机制来提高文件访问的效率。\n本章将会将取得的外汇牌价数据保存到磁盘文件中，但是在学习磁盘文件访问之前先学习结构体的使用方法。\n结构体可以将多种不同类型的数据“组合”到一起，然后再将其存储到磁盘文件中。\n7.4 获取和保存全部外币牌价数据 现在我们已经可以一次获取某一种外币的牌价数据，并将其显示或保存起来，也可以从文件中读取已保存的牌价数据。但是，在外汇牌价看板中需要显示多种（书上说的是26种）外汇牌价，它们的名称和代码是什么？\n以下是根据中国银行官网外汇牌价页面整理的常见货币名称及其对应的国际标准货币代码（ISO 4217） 。\n人民币的货币代码是CNY。详细可参考 中国银行外汇牌价 https://www.boc.cn/sourcedb/whpj/\n序号 货币名称 货币代码 1 美元 USD 2 港币 HKD 3 澳大利亚元 AUD 4 欧元 EUR 5 日元 JPY 6 英镑 GBP 7 加拿大元 CAD 8 新加坡元 SGD 9 新西兰元 NZD 10 泰国铢 THB 11 韩国元 KRW 12 澳门元 MOP 13 瑞士法郎 CHF 14 瑞典克朗 SEK 15 卢布 RUB（俄罗斯卢布） 16 丹麦克朗 DKK 17 印尼卢比 IDR 18 挪威克朗 NOK 19 阿联酋迪拉姆 AED 20 新台币 TWD 21 菲律宾比索 PHP 22 南非兰特 ZAR 23 沙特里亚尔 SAR 24 巴西雷亚尔 BRL 25 土耳其里拉 TRY 26 印度卢比 INR 27 越南盾 VND 28 蒙古图格里克 MNT 29 林吉特 MYR（马来西亚林吉特） 30 尼泊尔卢比 NPR 31 捷克克朗 CZK 32 卡塔尔里亚尔 QAR 33 以色列谢克尔 ILS 34 墨西哥比索 MXN 35 匈牙利福林 HUF 36 科威特第纳尔 KWD 37 巴基斯坦卢比 PKR 38 柬埔寨瑞尔 KHR 39 文莱元 BND 40 塞尔维亚第纳尔 RSD 也就是说当前有40种外币！\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -640,7 +640,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 13 分钟
+                    阅读时长: 21 分钟
                 </time>
             </div>
         
@@ -2764,7 +2764,1091 @@
 </span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">);</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>下面是一种获取全部牌价数据，并使用<code>save_data_to_file</code>将牌价数据保存到文件，然后使用<code>load_data_from_file</code>从二进制文件中读取牌价数据信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_14_GET_AND_SAVE_ALL_RATES.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// windows.h提供 Sleep 函数
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;windows.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// errno.h 提供错误码,如 EACCES          13
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;errno.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// string.h 提供 strerror 函数，获取错误码对应的异常说明
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// stdbool.h 提供布尔逻辑true和false
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdbool.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/Mars
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;str.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加  D:/BC101/Libraries/BOCRates/BOCRates.h
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入作者提供的静态库的头文件
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;BOCRates.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/Mars.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 链接器--附加库目录，加上 D:/BC101/Libraries/Mars 和 D:/BC101/Libraries/BOCRates目录
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;Mars.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;BOCRates.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 函数声明, 判断文件模式是否有效
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 公共工具函数：打开文件（只给内部用，外面不用）
+</span></span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">FILE</span><span class="o">*</span> <span class="nf">open_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制写入：任意数据原样存文件
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">save_data_to_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制读取：从文件读取任意数据到内存
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印外汇牌价结构体信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印所有外汇牌价信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayAllRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRecords</span><span class="p">,</span> <span class="kt">int</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义外汇牌价结构体指针变量
+</span></span></span><span class="line"><span class="cl">    <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRates</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="nf">GetAllRates</span><span class="p">(</span><span class="o">&amp;</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;成功获得 %d 种外币牌价</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;牌价数据被存储在地址 %p 开始的内存区域中dd</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">displayAllRate</span><span class="p">(</span><span class="n">allRates</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">allRates</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">save_data_to_file</span><span class="p">(</span><span class="s">&#34;D:/BC101/Examples/L07/L07_14_GET_AND_SAVE_ALL_RATES/AllRates.dat&#34;</span><span class="p">,</span> <span class="n">allRates</span><span class="p">,</span> <span class="n">count</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 释放内存块 ， free函数在stdlib.h中定义
+</span></span></span><span class="line"><span class="cl">        <span class="nf">free</span><span class="p">(</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;网络异常或服务器返回不正常的结果</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">readRates</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 动态分配内存地址
+</span></span></span><span class="line"><span class="cl">    <span class="n">readRates</span> <span class="o">=</span> <span class="p">(</span><span class="n">ExchangeRate</span><span class="o">*</span><span class="p">)</span><span class="nf">malloc</span><span class="p">(</span><span class="n">count</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 下面的代码尝试从刚才写入的文件读取数据
+</span></span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">read_flag</span> <span class="o">=</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="s">&#34;D:/BC101/Examples/L07/L07_14_GET_AND_SAVE_ALL_RATES/AllRates.dat&#34;</span><span class="p">,</span> <span class="n">readRates</span><span class="p">,</span> <span class="n">count</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">read_flag</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取文件成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">displayAllRate</span><span class="p">(</span><span class="n">readRates</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">free</span><span class="p">(</span><span class="n">readRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 检查文件打开模式是否合法
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 合法模式列表
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">valid_modes</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 文本模式
+</span></span></span><span class="line"><span class="cl">        <span class="s">&#34;r&#34;</span><span class="p">,</span>  <span class="s">&#34;r+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;w&#34;</span><span class="p">,</span>  <span class="s">&#34;w+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;a&#34;</span><span class="p">,</span>  <span class="s">&#34;a+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 二进制 b 模式
+</span></span></span><span class="line"><span class="cl">        <span class="s">&#34;rb&#34;</span><span class="p">,</span>  <span class="s">&#34;rb+&#34;</span><span class="p">,</span> <span class="s">&#34;r+b&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;wb&#34;</span><span class="p">,</span>  <span class="s">&#34;wb+&#34;</span><span class="p">,</span> <span class="s">&#34;w+b&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;ab&#34;</span><span class="p">,</span>  <span class="s">&#34;ab+&#34;</span><span class="p">,</span> <span class="s">&#34;a+b&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 计算一共有多少个合法模式
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">valid_modes</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">valid_modes</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 逐个比对
+</span></span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// strcmp 也是 string.h 中的，表示对两个字符串进行比较，相等就等于0
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nf">strcmp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">valid_modes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>  <span class="c1">// 找到合法模式 → 返回真
+</span></span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>  <span class="c1">// 没找到 → 非法
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 公共工具函数：打开文件（仅内部使用，外部不可调用）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 功能：校验文件打开模式，并按指定模式打开文件
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数：
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   filename  要打开的文件路径
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   mode      文件打开模式（如 rb, wb）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回：成功返回有效的文件指针(FILE*)，失败返回 NULL
+</span></span></span><span class="line"><span class="cl"><span class="c1">// static关键字表示函数是私有的，只能内部用，本文件私有函数（private）
+</span></span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">FILE</span><span class="o">*</span> <span class="nf">open_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 1. 检查模式对不对
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="n">mode</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;错误：文件打开模式( %s )不合法！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件打开模式( %s )合法！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2. 打开文件
+</span></span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件句柄地址:%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 3. 检查文件是否打开成功
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">fp</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件失败！错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 4. 打开成功，进行等待
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件成功！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 返回文件句柄
+</span></span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制写入：任意数据原样存文件
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 功能：把 任意一块内存数据 写入文件
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数：
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   filename  文件名
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   data      任意数据指针（void* 万能）
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   size      数据大小（sizeof(结构体)）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回：true 成功 / false 失败
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">save_data_to_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span> <span class="o">=</span> <span class="s">&#34;wb&#34;</span><span class="p">;</span>  <span class="c1">// 二进制写入模式
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">open_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fp</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">count</span> <span class="o">=</span> <span class="nf">fwrite</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件写入异常,写入个数:%d，期望个数：%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件写入成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 5. 关闭文件，释放文件句柄
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制读取：从文件读取任意数据到内存
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数：
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   filename  文件名
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   data      接收数据的内存地址
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   size      要读取的字节大小（必须和写入时一样）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回：true 成功 / false 失败
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span> <span class="o">=</span> <span class="s">&#34;rb&#34;</span><span class="p">;</span>  <span class="c1">// 二进制只读模式
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">open_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fp</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 读取数据
+</span></span></span><span class="line"><span class="cl">    <span class="n">count</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件读取异常,读取个数:%d，期望个数：%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件读取成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 5. 关闭文件，释放文件句柄
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印外汇牌价结构体信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货币代码   （固定6字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-6s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货币名称  （固定16字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-16s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 发布时间   （固定20字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-20s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现汇买入价   （8字符，2位小数）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现钞买入价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现汇卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现钞卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 中行折算价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印所有外汇牌价信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayAllRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRecords</span><span class="p">,</span> <span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// allRecords 是数组首地址,allRecords + i = 第 i 个元素的地址,等价于 &amp;allRecords[i]
+</span></span></span><span class="line"><span class="cl">        <span class="nf">displayRate</span><span class="p">(</span><span class="n">allRecords</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><p>运行程序，输出有点长，以下只截取了部分输出：</p>
+<p><img src="/img/Snipaste_2026-05-11_22-14-43.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-11_22-14-43.png"
+	
+	
+></p>
+<p>为了不重复使用<code>fopen</code>，此处不使用书中的<code>filelength(fileno(fp))</code>来获取文件长度，而是用<code>get_file_size</code>获取文件长度，然后定义宏<code>DATA_FILE</code>指定文件路径，避免路径重复输入，优化后的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span><span class="lnt">259
+</span><span class="lnt">260
+</span><span class="lnt">261
+</span><span class="lnt">262
+</span><span class="lnt">263
+</span><span class="lnt">264
+</span><span class="lnt">265
+</span><span class="lnt">266
+</span><span class="lnt">267
+</span><span class="lnt">268
+</span><span class="lnt">269
+</span><span class="lnt">270
+</span><span class="lnt">271
+</span><span class="lnt">272
+</span><span class="lnt">273
+</span><span class="lnt">274
+</span><span class="lnt">275
+</span><span class="lnt">276
+</span><span class="lnt">277
+</span><span class="lnt">278
+</span><span class="lnt">279
+</span><span class="lnt">280
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// L07_14_GET_AND_SAVE_ALL_RATES.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;sys/stat.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// windows.h提供 Sleep 函数
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;windows.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// errno.h 提供错误码,如 EACCES          13
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;errno.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// string.h 提供 strerror 函数，获取错误码对应的异常说明
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// stdbool.h 提供布尔逻辑true和false
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdbool.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/Mars
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;str.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加  D:/BC101/Libraries/BOCRates/BOCRates.h
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入作者提供的静态库的头文件
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;BOCRates.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/Mars.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 链接器--附加库目录，加上 D:/BC101/Libraries/Mars 和 D:/BC101/Libraries/BOCRates目录
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;Mars.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;BOCRates.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 定义文件路径的宏，不是变量，不需要内存，不需要strcpy
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define DATA_FILE  &#34;D:/BC101/Examples/L07/L07_14_GET_AND_SAVE_ALL_RATES/AllRates.dat&#34;
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 函数声明, 判断文件模式是否有效
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 公共工具函数：打开文件（只给内部用，外面不用）
+</span></span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">FILE</span><span class="o">*</span> <span class="nf">open_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制写入：任意数据原样存文件
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">save_data_to_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制读取：从文件读取任意数据到内存
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印外汇牌价结构体信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印所有外汇牌价信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayAllRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRecords</span><span class="p">,</span> <span class="kt">int</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 函数：不打开文件，直接获取文件大小（字节数）
+</span></span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="nf">get_file_size</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 定义外汇牌价结构体指针变量
+</span></span></span><span class="line"><span class="cl">    <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRates</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="nf">GetAllRates</span><span class="p">(</span><span class="o">&amp;</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;成功获得 %d 种外币牌价</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;牌价数据被存储在地址 %p 开始的内存区域中dd</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">displayAllRate</span><span class="p">(</span><span class="n">allRates</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">save_data_to_file</span><span class="p">(</span><span class="n">DATA_FILE</span><span class="p">,</span> <span class="n">allRates</span><span class="p">,</span> <span class="n">count</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 释放内存块 ， free函数在stdlib.h中定义
+</span></span></span><span class="line"><span class="cl">        <span class="nf">free</span><span class="p">(</span><span class="n">allRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;网络异常或服务器返回不正常的结果</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 读取二进制文件内容
+</span></span></span><span class="line"><span class="cl">    <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">readRates</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// stat 直接向操作系统询问文件信息，不用读内容
+</span></span></span><span class="line"><span class="cl">    <span class="kt">long</span> <span class="n">filesize</span> <span class="o">=</span> <span class="nf">get_file_size</span><span class="p">(</span><span class="n">DATA_FILE</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">filesize</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件不存在或为空</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 自动计算条数，不用提前知道 count
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">readCount</span> <span class="o">=</span> <span class="n">filesize</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;通过stat方式获取的文件长度filesize:%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">filesize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;通过之前获取得结构体总数count*结构体长度获取的文件长度:%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 动态分配内存地址
+</span></span></span><span class="line"><span class="cl">    <span class="n">readRates</span> <span class="o">=</span> <span class="p">(</span><span class="n">ExchangeRate</span><span class="o">*</span><span class="p">)</span><span class="nf">malloc</span><span class="p">(</span><span class="n">readCount</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ExchangeRate</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">readRates</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;内存分配失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 下面的代码尝试从刚才写入的文件读取数据
+</span></span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">read_flag</span> <span class="o">=</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="n">DATA_FILE</span><span class="p">,</span> <span class="n">readRates</span><span class="p">,</span> <span class="n">filesize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">read_flag</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">==== 从文件读取成功，共 %d 条 ====</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">readCount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">displayAllRate</span><span class="p">(</span><span class="n">readRates</span><span class="p">,</span> <span class="n">readCount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">free</span><span class="p">(</span><span class="n">readRates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 检查文件打开模式是否合法
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 合法模式列表
+</span></span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">valid_modes</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 文本模式
+</span></span></span><span class="line"><span class="cl">        <span class="s">&#34;r&#34;</span><span class="p">,</span>  <span class="s">&#34;r+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;w&#34;</span><span class="p">,</span>  <span class="s">&#34;w+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;a&#34;</span><span class="p">,</span>  <span class="s">&#34;a+&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 二进制 b 模式
+</span></span></span><span class="line"><span class="cl">        <span class="s">&#34;rb&#34;</span><span class="p">,</span>  <span class="s">&#34;rb+&#34;</span><span class="p">,</span> <span class="s">&#34;r+b&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;wb&#34;</span><span class="p">,</span>  <span class="s">&#34;wb+&#34;</span><span class="p">,</span> <span class="s">&#34;w+b&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;ab&#34;</span><span class="p">,</span>  <span class="s">&#34;ab+&#34;</span><span class="p">,</span> <span class="s">&#34;a+b&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 计算一共有多少个合法模式
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">valid_modes</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">valid_modes</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 逐个比对
+</span></span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// strcmp 也是 string.h 中的，表示对两个字符串进行比较，相等就等于0
+</span></span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nf">strcmp</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">valid_modes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>  <span class="c1">// 找到合法模式 → 返回真
+</span></span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>  <span class="c1">// 没找到 → 非法
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 公共工具函数：打开文件（仅内部使用，外部不可调用）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 功能：校验文件打开模式，并按指定模式打开文件
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数：
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   filename  要打开的文件路径
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   mode      文件打开模式（如 rb, wb）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回：成功返回有效的文件指针(FILE*)，失败返回 NULL
+</span></span></span><span class="line"><span class="cl"><span class="c1">// static关键字表示函数是私有的，只能内部用，本文件私有函数（private）
+</span></span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">FILE</span><span class="o">*</span> <span class="nf">open_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 1. 检查模式对不对
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nf">is_valid_fopen_mode</span><span class="p">(</span><span class="n">mode</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;错误：文件打开模式( %s )不合法！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件打开模式( %s )合法！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2. 打开文件
+</span></span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;文件句柄地址:%p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 3. 检查文件是否打开成功
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">fp</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件失败！错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 4. 打开成功，进行等待
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开文件成功！</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 返回文件句柄
+</span></span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">fp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制写入：任意数据原样存文件
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 功能：把 任意一块内存数据 写入文件
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数：
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   filename  文件名
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   data      任意数据指针（void* 万能）
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   size      数据大小（sizeof(结构体)）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回：true 成功 / false 失败
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">save_data_to_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span> <span class="o">=</span> <span class="s">&#34;wb&#34;</span><span class="p">;</span>  <span class="c1">// 二进制写入模式
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">open_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fp</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">count</span> <span class="o">=</span> <span class="nf">fwrite</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件写入异常,写入个数:%d，期望个数：%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件写入成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 5. 关闭文件，释放文件句柄
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 通用二进制读取：从文件读取任意数据到内存
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数：
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   filename  文件名
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   data      接收数据的内存地址
+</span></span></span><span class="line"><span class="cl"><span class="c1">//   size      要读取的字节大小（必须和写入时一样）
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回：true 成功 / false 失败
+</span></span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">load_data_from_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span> <span class="o">=</span> <span class="s">&#34;rb&#34;</span><span class="p">;</span>  <span class="c1">// 二进制只读模式
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">FILE</span><span class="o">*</span> <span class="n">fp</span> <span class="o">=</span> <span class="nf">open_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">fp</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 读取数据
+</span></span></span><span class="line"><span class="cl">    <span class="n">count</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件读取异常,读取个数:%d，期望个数：%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;错误编号:%d, 原因: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">errno</span><span class="p">,</span> <span class="nf">strerror</span><span class="p">(</span><span class="n">errno</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">文件读取成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 5. 关闭文件，释放文件句柄
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印外汇牌价结构体信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">rate</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货币代码   （固定6字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-6s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyCode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货币名称  （固定16字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-16s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CurrencyName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 发布时间   （固定20字符，左对齐）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-20s</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">PublishTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现汇买入价   （8字符，2位小数）
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">BuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现钞买入价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashBuyingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现汇卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">SellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 现钞卖出价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\t</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">CashSellingRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 中行折算价
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%8.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">rate</span><span class="o">-&gt;</span><span class="n">MiddleRate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 打印所有外汇牌价信息
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">displayAllRate</span><span class="p">(</span><span class="k">const</span> <span class="n">ExchangeRate</span><span class="o">*</span> <span class="n">allRecords</span><span class="p">,</span> <span class="kt">int</span> <span class="n">count</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// allRecords 是数组首地址,allRecords + i = 第 i 个元素的地址,等价于 &amp;allRecords[i]
+</span></span></span><span class="line"><span class="cl">        <span class="nf">displayRate</span><span class="p">(</span><span class="n">allRecords</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 函数：不打开文件，直接获取文件大小（字节数）
+</span></span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="nf">get_file_size</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">stat</span> <span class="n">f_stat</span><span class="p">;</span>  <span class="c1">// 系统结构体，存文件信息
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 关键：这里 没有 fopen！
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nf">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">f_stat</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">f_stat</span><span class="p">.</span><span class="n">st_size</span><span class="p">;</span>  <span class="c1">// 直接返回文件总字节数
+</span></span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出如下：</p>
+<p><img src="/img/Snipaste_2026-05-11_23-21-45.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-11_23-21-45.png"
+	
+	
+></p>
+<p>可以看到结构体正常写入文件，并且正常读取出来，显示在控制台了！</p>
+<p>到此，我们已经通过作者的接口成功获取了所有的外汇牌价数据，并存储到文件当中，下一章开始就是要处理如何展示的问题了！</p>
+
 </section>
 
 
@@ -2803,7 +3887,7 @@
 
 
         <span>
-            最后更新于 2026年05月10日 21:21
+            最后更新于 2026年05月11日 23:28
         </span>
     </section></footer>
 
