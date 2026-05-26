@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 26 May 2026 22:45:23 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 26 May 2026 23:05:16 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8/</link>
         <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
@@ -53,7 +53,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。&lt;/p&gt;
-&lt;h4 id=&#34;8-1-图像在计算机中的表示&#34;&gt;8. 1 图像在计算机中的表示
+&lt;h4 id=&#34;81-图像在计算机中的表示&#34;&gt;8.1 图像在计算机中的表示
 &lt;/h4&gt;&lt;p&gt;早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -84,6 +84,11 @@
 &lt;li&gt;图形：用点、直线或者多边形等几何图元素表示的图片，一般来自人工绘制。&lt;/li&gt;
 &lt;li&gt;图像：由扫描仪、数码相机、摄像机等输入设备捕捉实际画面产生的数字图像。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h5 id=&#34;811-来自人工绘制的矢量图形&#34;&gt;8.1.1 来自人工绘制的矢量图形
+&lt;/h5&gt;&lt;p&gt;图形来自人工绘制，例如平面设计师使用CorelDRAW进行广告设计，工程师使用AutoCAD设计机械部件。绘制的工具一般是鼠标，有时也可以使用绘图板。这种图形一般由各种点、线和多边线组成，它们被称为矢量图形。&lt;/p&gt;
+&lt;p&gt;这种图形可以拆解成很多个点、线和多边形，每一个缅怀部分都可以用基于数学方程的几何图元表示，绘图时只要描述各种形状和填充颜色即可，用这种方式描述图形的好处是文件体积比较小，而且使用专门的软件放大显示并不会影响清晰度（不会出现锯齿或马赛克）。&lt;/p&gt;
+&lt;h5 id=&#34;812-来自数据相机或扫描仪的位图&#34;&gt;8.1.2 来自数据相机或扫描仪的位图
+&lt;/h5&gt;&lt;p&gt;矢量图形并不适合描述来自真实世界的景象，因这它无法精确还原每一处细节。&lt;/p&gt;
 </description>
         </item>
         <item>
