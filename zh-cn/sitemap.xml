@@ -9,7 +9,7 @@
     <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/</loc>
-    <lastmod>2026-05-11T23:28:12+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -25,13 +25,13 @@
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/more/</loc>
-    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/more/</loc>
-    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/</loc>
-    <lastmod>2026-05-11T23:28:12+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,7 +47,7 @@
     <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/backend/</loc>
-    <lastmod>2026-05-11T23:28:12+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -664,7 +664,7 @@
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/backend/</loc>
-    <lastmod>2026-05-11T23:28:12+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/python/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
@@ -674,6 +674,18 @@
   </url><url>
     <loc>https://hellogitlab.com/backend/python/use_loguru/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/categories/c/</loc>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/c/</loc>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/backend/c/newstylec_8/</loc>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/etcd/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
@@ -692,12 +704,6 @@
   </url><url>
     <loc>https://hellogitlab.com/devops/etcd/etcd_visualization_tool/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/categories/c/</loc>
-    <lastmod>2026-05-11T23:28:12+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/c/</loc>
-    <lastmod>2026-05-11T23:28:12+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/file/</loc>
     <lastmod>2026-05-11T23:28:12+08:00</lastmod>
@@ -1328,10 +1334,10 @@
     <lastmod>2026-02-14T17:57:01+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/tools/</loc>
-    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/tags/tools/</loc>
-    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/ubuntu/</loc>
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
@@ -1505,7 +1511,7 @@
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/tools/tools_docs/</loc>
-    <lastmod>2026-02-15T01:19:08+08:00</lastmod>
+    <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/blog/blog_docs/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>

@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 15 Feb 2026 01:19:08 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/tools/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 26 May 2026 22:45:23 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/tools/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>工具列表</title>
         <link>https://hellogitlab.com/more/tools/tools_docs/</link>
         <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
@@ -578,6 +578,32 @@
 	
 	
 &gt;&lt;/p&gt;
+&lt;h2 id=&#34;39-ascii文本艺术图像在线生成器&#34;&gt;39. ASCII文本艺术图像在线生成器
+&lt;/h2&gt;&lt;p&gt;ASCII文本艺术图像在线生成器 &lt;a class=&#34;link&#34; href=&#34;https://www.perfcode.com/tools/generator/ascii-art&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.perfcode.com/tools/generator/ascii-art&lt;/a&gt; 生成你需要的字形画！&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      .o.        .oooooo..o   .oooooo.   ooooo ooooo 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     .888.      d8P&amp;#39;    `Y8  d8P&amp;#39;  `Y8b  `888&amp;#39; `888&amp;#39; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    .8&amp;#34;888.     Y88bo.      888           888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   .8&amp;#39; `888.     `&amp;#34;Y8888o.  888           888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  .88ooo8888.        `&amp;#34;Y88b 888           888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; .8&amp;#39;     `888.  oo     .d8P `88b    ooo   888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;o88o     o8888o 8&amp;#34;&amp;#34;88888P&amp;#39;   `Y8bood8P&amp;#39;  o888o o888o   
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;这个工具是一款强大的ASCII字符画生成工具，可以将ASCII文本转换为艺术图像；除此之外，它还支持将生成的ASCII字符图像以多种编程语言的代码形式或注释形式输出。无论您是想在代码中添加个性化的注释，还是创建具有艺术感的标识，这个工具都能帮助您轻松实现。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

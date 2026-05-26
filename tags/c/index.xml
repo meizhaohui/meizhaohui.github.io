@@ -7,7 +7,86 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 11 May 2026 23:28:12 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 26 May 2026 22:45:23 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>换个姿势学C语言第8章</title>
+        <link>https://hellogitlab.com/backend/c/newstylec_8/</link>
+        <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://hellogitlab.com/backend/c/newstylec_8/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第8章" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第8章-图形编程基础&#34;&gt;换个姿势学C语言 第8章 图形编程基础
+&lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
+&lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这是一本非常不错的书！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一、二、三章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec/&#34; &gt;换个姿势学C语言 第1-3章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第四章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_4/&#34; &gt;换个姿势学C语言 第4章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.1节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5/&#34; &gt;换个姿势学C语言 第5章 5.1节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.2/&#34; &gt;换个姿势学C语言 第5章 5.2节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.3/&#34; &gt;换个姿势学C语言 第5章 5.3节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.4/&#34; &gt;换个姿势学C语言 第5章 5.4节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第六章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_6/&#34; &gt;换个姿势学C语言 第6章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.1节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7/&#34; &gt;换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_2/&#34; &gt;换个姿势学C语言 第7.2章 文件访问的基础知识&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_3/&#34; &gt;换个姿势学C语言 第7.3章 将结构体存入磁盘文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_4/&#34; &gt;换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;8-图形编程基础&#34;&gt;8. 图形编程基础
+&lt;/h3&gt;&lt;p&gt;上一章节我们已经通过&lt;code&gt;GetAllRates&lt;/code&gt;接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_00-12-26.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-03-10_00-12-26.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。&lt;/p&gt;
+&lt;h4 id=&#34;8-1-图像在计算机中的表示&#34;&gt;8. 1 图像在计算机中的表示
+&lt;/h4&gt;&lt;p&gt;早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      .o.        .oooooo..o   .oooooo.   ooooo ooooo 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     .888.      d8P&amp;#39;    `Y8  d8P&amp;#39;  `Y8b  `888&amp;#39; `888&amp;#39; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    .8&amp;#34;888.     Y88bo.      888           888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   .8&amp;#39; `888.     `&amp;#34;Y8888o.  888           888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  .88ooo8888.        `&amp;#34;Y88b 888           888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; .8&amp;#39;     `888.  oo     .d8P `88b    ooo   888   888  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;o88o     o8888o 8&amp;#34;&amp;#34;88888P&amp;#39;   `Y8bood8P&amp;#39;  o888o o888o   
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;你可以在 ASCII文本艺术图像在线生成器 &lt;a class=&#34;link&#34; href=&#34;https://www.perfcode.com/tools/generator/ascii-art&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.perfcode.com/tools/generator/ascii-art&lt;/a&gt; 生成你需要的字形画！&lt;/p&gt;
+&lt;p&gt;随着计算机技术的发展，图形显示卡、图形显示器的普及使得显示图像成为可能。&lt;/p&gt;
+&lt;p&gt;在开始编写显示图像的程序之前，我们先来了解各种图片是如何输入计算机中的。&lt;/p&gt;
+&lt;p&gt;我们将计算机中的图分为两类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;图形：用点、直线或者多边形等几何图元素表示的图片，一般来自人工绘制。&lt;/li&gt;
+&lt;li&gt;图像：由扫描仪、数码相机、摄像机等输入设备捕捉实际画面产生的数字图像。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>换个姿势学C语言第7.4节 获取和保存全部外币牌价数据</title>
         <link>https://hellogitlab.com/backend/c/newstylec_7_4/</link>
         <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
