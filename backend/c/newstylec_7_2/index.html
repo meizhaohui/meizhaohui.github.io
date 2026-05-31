@@ -717,52 +717,52 @@
 </ul>
 <p>第二个参数，表示打开文件的模式，有以下几种：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>模式</th>
-          <th>C 语言 <code>fopen</code></th>
-          <th>Python <code>open()</code></th>
-          <th>意思</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>只读</strong></td>
-          <td><code>&quot;r&quot;</code></td>
-          <td><code>&quot;r&quot;</code></td>
-          <td><strong>打开读（文件必须存在）</strong></td>
-      </tr>
-      <tr>
-          <td><strong>只写</strong></td>
-          <td><code>&quot;w&quot;</code></td>
-          <td><code>&quot;w&quot;</code></td>
-          <td><strong>清空创建写（文件不存在就创建）</strong></td>
-      </tr>
-      <tr>
-          <td><strong>追加</strong></td>
-          <td><code>&quot;a&quot;</code></td>
-          <td><code>&quot;a&quot;</code></td>
-          <td><strong>末尾追加写</strong></td>
-      </tr>
-      <tr>
-          <td><strong>读写</strong></td>
-          <td><code>&quot;r+&quot;</code></td>
-          <td><code>&quot;r+&quot;</code></td>
-          <td><strong>可读可写</strong></td>
-      </tr>
-      <tr>
-          <td><strong>读写创建</strong></td>
-          <td><code>&quot;w+&quot;</code></td>
-          <td><code>&quot;w+&quot;</code></td>
-          <td><strong>创建读写</strong>,文件存在则会清空</td>
-      </tr>
-      <tr>
-          <td>追加读写</td>
-          <td>“a+”</td>
-          <td>&ldquo;a+&rdquo;</td>
-          <td>写到末尾 + 可以读</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>模式</th>
+					<th>C 语言 <code>fopen</code></th>
+					<th>Python <code>open()</code></th>
+					<th>意思</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>只读</strong></td>
+					<td><code>&quot;r&quot;</code></td>
+					<td><code>&quot;r&quot;</code></td>
+					<td><strong>打开读（文件必须存在）</strong></td>
+			</tr>
+			<tr>
+					<td><strong>只写</strong></td>
+					<td><code>&quot;w&quot;</code></td>
+					<td><code>&quot;w&quot;</code></td>
+					<td><strong>清空创建写（文件不存在就创建）</strong></td>
+			</tr>
+			<tr>
+					<td><strong>追加</strong></td>
+					<td><code>&quot;a&quot;</code></td>
+					<td><code>&quot;a&quot;</code></td>
+					<td><strong>末尾追加写</strong></td>
+			</tr>
+			<tr>
+					<td><strong>读写</strong></td>
+					<td><code>&quot;r+&quot;</code></td>
+					<td><code>&quot;r+&quot;</code></td>
+					<td><strong>可读可写</strong></td>
+			</tr>
+			<tr>
+					<td><strong>读写创建</strong></td>
+					<td><code>&quot;w+&quot;</code></td>
+					<td><code>&quot;w+&quot;</code></td>
+					<td><strong>创建读写</strong>,文件存在则会清空</td>
+			</tr>
+			<tr>
+					<td>追加读写</td>
+					<td>“a+”</td>
+					<td>&ldquo;a+&rdquo;</td>
+					<td>写到末尾 + 可以读</td>
+			</tr>
+	</tbody>
 </table></div>
 <ul>
 <li><strong>当指定的路径不存在，试图打开 的文件不存在或文件被其他程序占用、对指定路径的访问权限不够、磁盘空间已满都可能会引起<code>fopen</code>函数打开或创建文件失败！</strong></li>

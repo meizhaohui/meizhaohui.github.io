@@ -657,52 +657,52 @@
 </ul>
 <h3 id="2-模块参数">2. 模块参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>可选值</th>
-          <th>默认值</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>gid</code></td>
-          <td></td>
-          <td></td>
-          <td><code>integer</code>，可选，用户组的GID</td>
-      </tr>
-      <tr>
-          <td><code>local</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>,强制使用本地命令替代项。当您要操作本地组时，这在使用集中式身份验证的环境中很有用(如使用<code>lgroupadd</code>而不是<code>groupadd</code>) ,使用本地命令时，必须确保<code>lgroupadd</code>命令存在于目标主机上，否则将抛出致命错误。</td>
-      </tr>
-      <tr>
-          <td><code>name</code> （<strong>required</strong>）</td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，需要管理的组名。</td>
-      </tr>
-      <tr>
-          <td><code>non_unique</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，允许设置用户组GID不唯一。和<code>gid</code>参数一起作用。不是指一个用户组可以用多个ID，而是一个GID可以用于多个用户组，即可以多个用户组对应一个GID。</td>
-      </tr>
-      <tr>
-          <td><code>state</code></td>
-          <td>present/absent</td>
-          <td>present</td>
-          <td>用户组是否应存在，如果状态与声明的状态不同，则采取措施。</td>
-      </tr>
-      <tr>
-          <td><code>system</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>用户组是否为系统用户组。</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>gid</code></td>
+					<td></td>
+					<td></td>
+					<td><code>integer</code>，可选，用户组的GID</td>
+			</tr>
+			<tr>
+					<td><code>local</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>,强制使用本地命令替代项。当您要操作本地组时，这在使用集中式身份验证的环境中很有用(如使用<code>lgroupadd</code>而不是<code>groupadd</code>) ,使用本地命令时，必须确保<code>lgroupadd</code>命令存在于目标主机上，否则将抛出致命错误。</td>
+			</tr>
+			<tr>
+					<td><code>name</code> （<strong>required</strong>）</td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，需要管理的组名。</td>
+			</tr>
+			<tr>
+					<td><code>non_unique</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，允许设置用户组GID不唯一。和<code>gid</code>参数一起作用。不是指一个用户组可以用多个ID，而是一个GID可以用于多个用户组，即可以多个用户组对应一个GID。</td>
+			</tr>
+			<tr>
+					<td><code>state</code></td>
+					<td>present/absent</td>
+					<td>present</td>
+					<td>用户组是否应存在，如果状态与声明的状态不同，则采取措施。</td>
+			</tr>
+			<tr>
+					<td><code>system</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>用户组是否为系统用户组。</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-临时命令的使用">3. 临时命令的使用
 </h3><p>在user模块中我们已经使用过group模块的临时命令创建过几个组，当时使用的命令是：</p>

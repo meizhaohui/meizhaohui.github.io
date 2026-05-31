@@ -679,172 +679,172 @@
 </ul>
 <h3 id="2-参数">2. 参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>可选值</th>
-          <th>默认值</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>allow_downgrade</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>指定是否允许在已经安装有更高版本的情况下指定的软件包和版本降级处理。 <strong>请注意，设置<code>allow_downgrade=True</code>可使此模块以非幂等方式运行。 该任务最终可能会导致一组软件包与要安装的指定软件包的完整列表不匹配（因为降级的软件包与其他软件包之间的依赖关系可能导致对先前事务中的软件包进行更改）。</strong> 因此该操作很危险！！！</td>
-      </tr>
-      <tr>
-          <td><strong>autoremove</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>是否自动删除所有“叶”软件包，这些软件包最初是作为用户安装的软件包的依赖项安装的，但不再是任何此类软件包所必需的。注意，该参数应该单独使用，或者与<code>state=absent</code>一起作用。此功能要求<code>yum&gt;=3.4.3(RHEL/CentOS 7+)</code></td>
-      </tr>
-      <tr>
-          <td><strong>bugfix</strong>                                                       -</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>如果本参数设置为<code>yes</code>，并且<code>state=latest</code>，那么仅安装标准为<code>bugfix</code>相关的更新</td>
-      </tr>
-      <tr>
-          <td><strong>conf_file</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>用于事务的远程<code>yum</code>配置文件。</td>
-      </tr>
-      <tr>
-          <td><strong>disable_excludes</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>禁用YUM配置文件中定义的排除项。 如果设置为<code>all</code>，则禁用所有排除。 如果设置为<code>main</code>，则禁用yum.conf中<code>[main]</code>中定义的排除项。 如果设置为<code> repoid</code>，则禁用为给定的 repo ID定义的排除项。</td>
-      </tr>
-      <tr>
-          <td><strong>disable_gpg_check</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>是否禁用正在安装的软件包签名的GPG检查。 仅当状态<code>state</code>为<code>present</code>或<code>latest</code>时才有效。</td>
-      </tr>
-      <tr>
-          <td><strong>disable_plugin</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>要为安装/更新操作禁用的插件名称。 <strong>禁用的插件在事务处理之后将不存在。</strong></td>
-      </tr>
-      <tr>
-          <td><strong>disablerepo</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>禁用指定存储库，<strong>这些存储库的设置只对当前事务有影响，并不会像yum-config-manager一样禁用仓库</strong>。如果有多个存储库，使用英文逗号分隔，从Ansible 2.7开始，可以使用列表代替。</td>
-      </tr>
-      <tr>
-          <td><strong>download_dir</strong>                                                       string</td>
-          <td></td>
-          <td></td>
-          <td>指定用于存储软件包的备用目录。仅当指定了<code>download_only</code>时才有效。</td>
-      </tr>
-      <tr>
-          <td><strong>download_only</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>仅下载包，但不安装。</td>
-      </tr>
-      <tr>
-          <td><strong>enable_plugin</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>需要启用进行安装/更新操作的插件名称。 启用的插件在事务之后不存在。</td>
-      </tr>
-      <tr>
-          <td><strong>enablerepo</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>需要启用有存储库，<strong>这些存储库的设置只对当前事务有影响，并不会像yum-config-manager一样启用仓库</strong>。如果有多个存储库，使用英文逗号分隔，从Ansible 2.7开始，可以使用列表代替。</td>
-      </tr>
-      <tr>
-          <td><strong>exclude</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>需要排除的包名称，仅当状态<code>state</code>为<code>present</code>或<code>latest</code>时才有效。</td>
-      </tr>
-      <tr>
-          <td><strong>install_weak_deps</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td>安装通过弱依赖关系链接的所有软件包。 注意：此功能需要<code>yum &gt;= 4（RHEL/CentOS 8+）</code></td>
-      </tr>
-      <tr>
-          <td><strong>installroot</strong>                                                       -</td>
-          <td></td>
-          <td><strong>Default:</strong> &ldquo;/&rdquo;</td>
-          <td>指定一个备用<code>installroot</code>，相对于该根节点，将安装所有软件包。</td>
-      </tr>
-      <tr>
-          <td><strong>list</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>要运行等效于<code>yum list --show-duplicates &lt;package&gt;</code>的软件包名称。 除了列出软件包外，还可以列出以下内容： <code>installed</code>已安装、<code>updates</code>更新、<code>available</code>可用、以及 <code>repos</code>存储库。 此参数与<code>name</code>互斥。</td>
-      </tr>
-      <tr>
-          <td><strong>lock_timeout</strong>                                                       integer</td>
-          <td></td>
-          <td><strong>Default:</strong> 30</td>
-          <td>等待释放yum锁定文件的时间。</td>
-      </tr>
-      <tr>
-          <td><strong>name</strong>                                                       list                      / elements=string</td>
-          <td></td>
-          <td></td>
-          <td>带有版本的软件包名称或软件包说明符，例如<code>name-1.0</code>。 如果指定了以前的版本，则该任务还需要打开<code>allow_downgrade</code>。 有关降级软件包的注意事项，请参见<code>allow_downgrade</code>文档。 当使用<code>state=latest</code>时，它可以是<code>*</code>，这意味着运行<code>yum -y update</code>。 您还可以将url或本地路径传递给rpm文件(使用<code>state=present</code>)。要对多个软件包进行操作，可以接受英文逗号分隔的软件包字符串或软件包列表(从Ansible 2.0版开始)。 别名：<code>pkg</code>。</td>
-      </tr>
-      <tr>
-          <td><strong>releasever</strong>                                                       -</td>
-          <td></td>
-          <td></td>
-          <td>指定安装所有软件包的替代版本。</td>
-      </tr>
-      <tr>
-          <td><strong>security</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>如果设置为<code>yes</code>并且<code>state=latest</code>，则仅安装标记为安全相关的更新。</td>
-      </tr>
-      <tr>
-          <td><strong>skip_broken</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>跳过依赖项已损坏的软件包，并抛出问题异常。</td>
-      </tr>
-      <tr>
-          <td><strong>state</strong>                                                       -</td>
-          <td><strong>可选值:</strong>                                                                                                                                                               absent                                                                                                                                                                                               installed                                                                                                                                                                                               latest                                                                                                                                                                                               present                                                                                                                                                                                               removed</td>
-          <td></td>
-          <td>是否要安装(<code>present</code> or <code>installed</code>, <code>latest</code>)或移除(<code>absent</code> or <code>removed</code>)包装。 <code>present</code>和<code>installed</code>将仅确保已安装所需的软件包。 如果不是最新的可用版本，<code>latest</code>将更新指定的软件包。 <code>absent</code>和<code>removed</code>将删除指定的软件包。 默认值为<code>None</code>，但实际上默认动作为<code>present</code>，除非为此模块启用了<code>autoremove</code>自动删除选项，此时<code>state=absent</code>不存在。</td>
-      </tr>
-      <tr>
-          <td><strong>update_cache</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>强制yum检查缓存是否过期，并在需要时重新下载。仅当状态<code>state</code>为<code>present</code>或<code>latest</code>时才有效。别名<code>expire-cache</code>。</td>
-      </tr>
-      <tr>
-          <td><strong>update_only</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>使用<code>latest</code>最新版本时，仅更新安装的软件包。 不要安装软件包。 仅在状态为<code>state=latest</code>最新时才有效。</td>
-      </tr>
-      <tr>
-          <td><strong>use_backend</strong>                                                       -</td>
-          <td><strong>可选值:</strong>                                                                                                                                                               <strong>auto</strong> ←                                                                                                                                                                                               yum                                                                                                                                                                                               yum4                                                                                                                                                                                               dnf</td>
-          <td><code>auto</code>自动</td>
-          <td>这个模块支持<code>yum</code>，上游yum开发人员将其称为<code>yum3</code>/<code>YUM3</code>/<code>yum-preprecated</code>。从Ansible2.7+开始，此模块还支持<code>YUM4</code>，这是新的<code>yum</code>，并且具有<code>dnf</code>后端。默认情况下，此模块将基于“ansible_pkg_mgr”事实选择后端。</td>
-      </tr>
-      <tr>
-          <td><strong>validate_certs</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td>仅当使用https网址作为rpm的源时才适用。 例如用于本地安装。 如果设置为<code>no</code>，则不会验证SSL证书。 当使用自签名证书的个人站点时，可以设置为<code>no</code>,这样可以避免验证源站点。 在Ansible 2.1之前的版本中，代码就像设置为<code>yes</code>一样工作。</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>allow_downgrade</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>指定是否允许在已经安装有更高版本的情况下指定的软件包和版本降级处理。 <strong>请注意，设置<code>allow_downgrade=True</code>可使此模块以非幂等方式运行。 该任务最终可能会导致一组软件包与要安装的指定软件包的完整列表不匹配（因为降级的软件包与其他软件包之间的依赖关系可能导致对先前事务中的软件包进行更改）。</strong> 因此该操作很危险！！！</td>
+			</tr>
+			<tr>
+					<td><strong>autoremove</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>是否自动删除所有“叶”软件包，这些软件包最初是作为用户安装的软件包的依赖项安装的，但不再是任何此类软件包所必需的。注意，该参数应该单独使用，或者与<code>state=absent</code>一起作用。此功能要求<code>yum&gt;=3.4.3(RHEL/CentOS 7+)</code></td>
+			</tr>
+			<tr>
+					<td><strong>bugfix</strong>                                                       -</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>如果本参数设置为<code>yes</code>，并且<code>state=latest</code>，那么仅安装标准为<code>bugfix</code>相关的更新</td>
+			</tr>
+			<tr>
+					<td><strong>conf_file</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>用于事务的远程<code>yum</code>配置文件。</td>
+			</tr>
+			<tr>
+					<td><strong>disable_excludes</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>禁用YUM配置文件中定义的排除项。 如果设置为<code>all</code>，则禁用所有排除。 如果设置为<code>main</code>，则禁用yum.conf中<code>[main]</code>中定义的排除项。 如果设置为<code> repoid</code>，则禁用为给定的 repo ID定义的排除项。</td>
+			</tr>
+			<tr>
+					<td><strong>disable_gpg_check</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>是否禁用正在安装的软件包签名的GPG检查。 仅当状态<code>state</code>为<code>present</code>或<code>latest</code>时才有效。</td>
+			</tr>
+			<tr>
+					<td><strong>disable_plugin</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>要为安装/更新操作禁用的插件名称。 <strong>禁用的插件在事务处理之后将不存在。</strong></td>
+			</tr>
+			<tr>
+					<td><strong>disablerepo</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>禁用指定存储库，<strong>这些存储库的设置只对当前事务有影响，并不会像yum-config-manager一样禁用仓库</strong>。如果有多个存储库，使用英文逗号分隔，从Ansible 2.7开始，可以使用列表代替。</td>
+			</tr>
+			<tr>
+					<td><strong>download_dir</strong>                                                       string</td>
+					<td></td>
+					<td></td>
+					<td>指定用于存储软件包的备用目录。仅当指定了<code>download_only</code>时才有效。</td>
+			</tr>
+			<tr>
+					<td><strong>download_only</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>仅下载包，但不安装。</td>
+			</tr>
+			<tr>
+					<td><strong>enable_plugin</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>需要启用进行安装/更新操作的插件名称。 启用的插件在事务之后不存在。</td>
+			</tr>
+			<tr>
+					<td><strong>enablerepo</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>需要启用有存储库，<strong>这些存储库的设置只对当前事务有影响，并不会像yum-config-manager一样启用仓库</strong>。如果有多个存储库，使用英文逗号分隔，从Ansible 2.7开始，可以使用列表代替。</td>
+			</tr>
+			<tr>
+					<td><strong>exclude</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>需要排除的包名称，仅当状态<code>state</code>为<code>present</code>或<code>latest</code>时才有效。</td>
+			</tr>
+			<tr>
+					<td><strong>install_weak_deps</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td>安装通过弱依赖关系链接的所有软件包。 注意：此功能需要<code>yum &gt;= 4（RHEL/CentOS 8+）</code></td>
+			</tr>
+			<tr>
+					<td><strong>installroot</strong>                                                       -</td>
+					<td></td>
+					<td><strong>Default:</strong> &ldquo;/&rdquo;</td>
+					<td>指定一个备用<code>installroot</code>，相对于该根节点，将安装所有软件包。</td>
+			</tr>
+			<tr>
+					<td><strong>list</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>要运行等效于<code>yum list --show-duplicates &lt;package&gt;</code>的软件包名称。 除了列出软件包外，还可以列出以下内容： <code>installed</code>已安装、<code>updates</code>更新、<code>available</code>可用、以及 <code>repos</code>存储库。 此参数与<code>name</code>互斥。</td>
+			</tr>
+			<tr>
+					<td><strong>lock_timeout</strong>                                                       integer</td>
+					<td></td>
+					<td><strong>Default:</strong> 30</td>
+					<td>等待释放yum锁定文件的时间。</td>
+			</tr>
+			<tr>
+					<td><strong>name</strong>                                                       list                      / elements=string</td>
+					<td></td>
+					<td></td>
+					<td>带有版本的软件包名称或软件包说明符，例如<code>name-1.0</code>。 如果指定了以前的版本，则该任务还需要打开<code>allow_downgrade</code>。 有关降级软件包的注意事项，请参见<code>allow_downgrade</code>文档。 当使用<code>state=latest</code>时，它可以是<code>*</code>，这意味着运行<code>yum -y update</code>。 您还可以将url或本地路径传递给rpm文件(使用<code>state=present</code>)。要对多个软件包进行操作，可以接受英文逗号分隔的软件包字符串或软件包列表(从Ansible 2.0版开始)。 别名：<code>pkg</code>。</td>
+			</tr>
+			<tr>
+					<td><strong>releasever</strong>                                                       -</td>
+					<td></td>
+					<td></td>
+					<td>指定安装所有软件包的替代版本。</td>
+			</tr>
+			<tr>
+					<td><strong>security</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>如果设置为<code>yes</code>并且<code>state=latest</code>，则仅安装标记为安全相关的更新。</td>
+			</tr>
+			<tr>
+					<td><strong>skip_broken</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>跳过依赖项已损坏的软件包，并抛出问题异常。</td>
+			</tr>
+			<tr>
+					<td><strong>state</strong>                                                       -</td>
+					<td><strong>可选值:</strong>                                                                                                                                                               absent                                                                                                                                                                                               installed                                                                                                                                                                                               latest                                                                                                                                                                                               present                                                                                                                                                                                               removed</td>
+					<td></td>
+					<td>是否要安装(<code>present</code> or <code>installed</code>, <code>latest</code>)或移除(<code>absent</code> or <code>removed</code>)包装。 <code>present</code>和<code>installed</code>将仅确保已安装所需的软件包。 如果不是最新的可用版本，<code>latest</code>将更新指定的软件包。 <code>absent</code>和<code>removed</code>将删除指定的软件包。 默认值为<code>None</code>，但实际上默认动作为<code>present</code>，除非为此模块启用了<code>autoremove</code>自动删除选项，此时<code>state=absent</code>不存在。</td>
+			</tr>
+			<tr>
+					<td><strong>update_cache</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>强制yum检查缓存是否过期，并在需要时重新下载。仅当状态<code>state</code>为<code>present</code>或<code>latest</code>时才有效。别名<code>expire-cache</code>。</td>
+			</tr>
+			<tr>
+					<td><strong>update_only</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>使用<code>latest</code>最新版本时，仅更新安装的软件包。 不要安装软件包。 仅在状态为<code>state=latest</code>最新时才有效。</td>
+			</tr>
+			<tr>
+					<td><strong>use_backend</strong>                                                       -</td>
+					<td><strong>可选值:</strong>                                                                                                                                                               <strong>auto</strong> ←                                                                                                                                                                                               yum                                                                                                                                                                                               yum4                                                                                                                                                                                               dnf</td>
+					<td><code>auto</code>自动</td>
+					<td>这个模块支持<code>yum</code>，上游yum开发人员将其称为<code>yum3</code>/<code>YUM3</code>/<code>yum-preprecated</code>。从Ansible2.7+开始，此模块还支持<code>YUM4</code>，这是新的<code>yum</code>，并且具有<code>dnf</code>后端。默认情况下，此模块将基于“ansible_pkg_mgr”事实选择后端。</td>
+			</tr>
+			<tr>
+					<td><strong>validate_certs</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td>仅当使用https网址作为rpm的源时才适用。 例如用于本地安装。 如果设置为<code>no</code>，则不会验证SSL证书。 当使用自签名证书的个人站点时，可以设置为<code>no</code>,这样可以避免验证源站点。 在Ansible 2.1之前的版本中，代码就像设置为<code>yes</code>一样工作。</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-注意事项">3. 注意事项
 </h3><ul>
@@ -856,25 +856,25 @@
 </ul>
 <h3 id="4-返回值">4. 返回值
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>键</th>
-          <th>何时返回</th>
-          <th>描述信息</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>results</strong>                                    list</td>
-          <td>一直</td>
-          <td>相关包信息组成的列表,如<code>&quot;results&quot;: [&quot;httpd-2.4.6-93.el7.centos.x86_64 providing httpd is already installed&quot;]</code></td>
-      </tr>
-      <tr>
-          <td><strong>changes</strong>                                 dict</td>
-          <td>有变更时</td>
-          <td>安装或卸载的包的信息，如<code>&quot;changes&quot;: {&quot;removed&quot;: [&quot;MariaDB-client&quot;, &quot;MariaDB-server&quot;]}</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>键</th>
+					<th>何时返回</th>
+					<th>描述信息</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>results</strong>                                    list</td>
+					<td>一直</td>
+					<td>相关包信息组成的列表,如<code>&quot;results&quot;: [&quot;httpd-2.4.6-93.el7.centos.x86_64 providing httpd is already installed&quot;]</code></td>
+			</tr>
+			<tr>
+					<td><strong>changes</strong>                                 dict</td>
+					<td>有变更时</td>
+					<td>安装或卸载的包的信息，如<code>&quot;changes&quot;: {&quot;removed&quot;: [&quot;MariaDB-client&quot;, &quot;MariaDB-server&quot;]}</code></td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="5-官方示例">5. 官方示例
 </h3><div class="highlight"><div class="chroma">

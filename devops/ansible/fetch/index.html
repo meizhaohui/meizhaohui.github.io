@@ -656,46 +656,46 @@
 </ul>
 <h3 id="参数">参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>可选值</th>
-          <th>默认值</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>dest</code>      <strong>required</strong></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，必须字段，从远程复制的文件将保存在该目录下。</td>
-      </tr>
-      <tr>
-          <td><code>fail_on_missing</code></td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td><code>boolean</code>，远程源文件缺失或不能读取时，将任务设置为失败状态。</td>
-      </tr>
-      <tr>
-          <td><code>flat</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>string</code>，改变默认的目标存放行为，如果仅操作一个远程主机，有点类似于copy模块；当操作多个主机时，如果文件相同的话，则每个主机都会覆盖这个文件。当<code>dest</code>以<code>/</code>结尾时，<code>flat=yes</code>时会直接将文件复制到<code>dest</code>所在目录</td>
-      </tr>
-      <tr>
-          <td><code>src</code>      <strong>required</strong></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>,远程文件，注意不是目录，递归复暂不支持</td>
-      </tr>
-      <tr>
-          <td><code>validate_checksum</code></td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td><code>boolean</code>，是否校验文件的sum值，默认校验</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>dest</code>      <strong>required</strong></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，必须字段，从远程复制的文件将保存在该目录下。</td>
+			</tr>
+			<tr>
+					<td><code>fail_on_missing</code></td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td><code>boolean</code>，远程源文件缺失或不能读取时，将任务设置为失败状态。</td>
+			</tr>
+			<tr>
+					<td><code>flat</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>string</code>，改变默认的目标存放行为，如果仅操作一个远程主机，有点类似于copy模块；当操作多个主机时，如果文件相同的话，则每个主机都会覆盖这个文件。当<code>dest</code>以<code>/</code>结尾时，<code>flat=yes</code>时会直接将文件复制到<code>dest</code>所在目录</td>
+			</tr>
+			<tr>
+					<td><code>src</code>      <strong>required</strong></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>,远程文件，注意不是目录，递归复暂不支持</td>
+			</tr>
+			<tr>
+					<td><code>validate_checksum</code></td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td><code>boolean</code>，是否校验文件的sum值，默认校验</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="官方示例">官方示例
 </h3><div class="highlight"><div class="chroma">
@@ -972,34 +972,34 @@
 </div>
 </div><h3 id="返回值">返回值
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>键</th>
-          <th>描述信息</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>changed</strong>                                             boolean</td>
-          <td>是否发生变更</td>
-      </tr>
-      <tr>
-          <td><strong>checksum</strong>                                       string</td>
-          <td>复制后文件的SHA1校验和,如<code>46107a2c962af694d961e342fa17f4db2f2662fc</code></td>
-      </tr>
-      <tr>
-          <td><strong>dest</strong>                                                          string</td>
-          <td>目标文件在ansible主机上的绝对路径</td>
-      </tr>
-      <tr>
-          <td><strong>md5sum</strong>                                                  string</td>
-          <td>目标文件的md5值</td>
-      </tr>
-      <tr>
-          <td><strong>remote_checksum</strong>                               string</td>
-          <td>远程文件的SHA1校验和</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>键</th>
+					<th>描述信息</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>changed</strong>                                             boolean</td>
+					<td>是否发生变更</td>
+			</tr>
+			<tr>
+					<td><strong>checksum</strong>                                       string</td>
+					<td>复制后文件的SHA1校验和,如<code>46107a2c962af694d961e342fa17f4db2f2662fc</code></td>
+			</tr>
+			<tr>
+					<td><strong>dest</strong>                                                          string</td>
+					<td>目标文件在ansible主机上的绝对路径</td>
+			</tr>
+			<tr>
+					<td><strong>md5sum</strong>                                                  string</td>
+					<td>目标文件的md5值</td>
+			</tr>
+			<tr>
+					<td><strong>remote_checksum</strong>                               string</td>
+					<td>远程文件的SHA1校验和</td>
+			</tr>
+	</tbody>
 </table></div>
 
 </section>

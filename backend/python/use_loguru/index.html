@@ -811,57 +811,57 @@ ERROR (40): 错误类型，用于记录影响特定操作的错误条件。<br>
 CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错误条件。</p>
 </blockquote>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>Level name</th>
-          <th>Severity value</th>
-          <th>Logger method</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>TRACE</code></td>
-          <td>5</td>
-          <td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.trace"  target="_blank" rel="noopener"
+	<thead>
+			<tr>
+					<th>Level name</th>
+					<th>Severity value</th>
+					<th>Logger method</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>TRACE</code></td>
+					<td>5</td>
+					<td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.trace"  target="_blank" rel="noopener"
     ><code>logger.trace()</code></a></td>
-      </tr>
-      <tr>
-          <td><code>DEBUG</code></td>
-          <td>10</td>
-          <td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.debug"  target="_blank" rel="noopener"
+			</tr>
+			<tr>
+					<td><code>DEBUG</code></td>
+					<td>10</td>
+					<td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.debug"  target="_blank" rel="noopener"
     ><code>logger.debug()</code></a></td>
-      </tr>
-      <tr>
-          <td><code>INFO</code></td>
-          <td>20</td>
-          <td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.info"  target="_blank" rel="noopener"
+			</tr>
+			<tr>
+					<td><code>INFO</code></td>
+					<td>20</td>
+					<td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.info"  target="_blank" rel="noopener"
     ><code>logger.info()</code></a></td>
-      </tr>
-      <tr>
-          <td><code>SUCCESS</code></td>
-          <td>25</td>
-          <td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.success"  target="_blank" rel="noopener"
+			</tr>
+			<tr>
+					<td><code>SUCCESS</code></td>
+					<td>25</td>
+					<td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.success"  target="_blank" rel="noopener"
     ><code>logger.success()</code></a></td>
-      </tr>
-      <tr>
-          <td><code>WARNING</code></td>
-          <td>30</td>
-          <td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.warning"  target="_blank" rel="noopener"
+			</tr>
+			<tr>
+					<td><code>WARNING</code></td>
+					<td>30</td>
+					<td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.warning"  target="_blank" rel="noopener"
     ><code>logger.warning()</code></a></td>
-      </tr>
-      <tr>
-          <td><code>ERROR</code></td>
-          <td>40</td>
-          <td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.error"  target="_blank" rel="noopener"
+			</tr>
+			<tr>
+					<td><code>ERROR</code></td>
+					<td>40</td>
+					<td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.error"  target="_blank" rel="noopener"
     ><code>logger.error()</code></a></td>
-      </tr>
-      <tr>
-          <td><code>CRITICAL</code></td>
-          <td>50</td>
-          <td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.critical"  target="_blank" rel="noopener"
+			</tr>
+			<tr>
+					<td><code>CRITICAL</code></td>
+					<td>50</td>
+					<td><a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.critical"  target="_blank" rel="noopener"
     ><code>logger.critical()</code></a></td>
-      </tr>
-  </tbody>
+			</tr>
+	</tbody>
 </table></div>
 <p>尝试输出不同级别的日志，在Python控制台运行以下代码：</p>
 <div class="highlight"><div class="chroma">
@@ -1245,265 +1245,265 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 <h5 id="171--使用关键字指令">1.7.1  使用关键字指令
 </h5><p>loguru支持以下指令：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>Key</th>
-          <th>Description</th>
-          <th>Attributes</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>elapsed</td>
-          <td>The time elapsed since the start of the program</td>
-          <td>See <a class="link" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta"  target="_blank" rel="noopener"
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Description</th>
+					<th>Attributes</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>elapsed</td>
+					<td>The time elapsed since the start of the program</td>
+					<td>See <a class="link" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta"  target="_blank" rel="noopener"
     ><code>datetime.timedelta</code></a></td>
-      </tr>
-      <tr>
-          <td>exception</td>
-          <td>The formatted exception if any, <code>None</code> otherwise</td>
-          <td><code>type</code>, <code>value</code>, <code>traceback</code></td>
-      </tr>
-      <tr>
-          <td>extra</td>
-          <td>The dict of attributes bound by the user (see <a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.bind"  target="_blank" rel="noopener"
+			</tr>
+			<tr>
+					<td>exception</td>
+					<td>The formatted exception if any, <code>None</code> otherwise</td>
+					<td><code>type</code>, <code>value</code>, <code>traceback</code></td>
+			</tr>
+			<tr>
+					<td>extra</td>
+					<td>The dict of attributes bound by the user (see <a class="link" href="https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.bind"  target="_blank" rel="noopener"
     ><code>bind()</code></a>)</td>
-          <td>None</td>
-      </tr>
-      <tr>
-          <td>file</td>
-          <td>The file where the logging call was made</td>
-          <td><code>name</code> (default), <code>path</code></td>
-      </tr>
-      <tr>
-          <td>function</td>
-          <td>The function from which the logging call was made</td>
-          <td>None</td>
-      </tr>
-      <tr>
-          <td>level</td>
-          <td>The severity used to log the message</td>
-          <td><code>name</code> (default), <code>no</code>, <code>icon</code></td>
-      </tr>
-      <tr>
-          <td>line</td>
-          <td>The line number in the source code</td>
-          <td>None</td>
-      </tr>
-      <tr>
-          <td>message</td>
-          <td>The logged message (not yet formatted)</td>
-          <td>None</td>
-      </tr>
-      <tr>
-          <td>module</td>
-          <td>The module where the logging call was made</td>
-          <td>None</td>
-      </tr>
-      <tr>
-          <td>name</td>
-          <td>The <code>__name__</code> where the logging call was made</td>
-          <td>None</td>
-      </tr>
-      <tr>
-          <td>process</td>
-          <td>The process in which the logging call was made</td>
-          <td><code>name</code>, <code>id</code> (default)</td>
-      </tr>
-      <tr>
-          <td>thread</td>
-          <td>The thread in which the logging call was made</td>
-          <td><code>name</code>, <code>id</code> (default)</td>
-      </tr>
-      <tr>
-          <td>time</td>
-          <td>The aware local time when the logging call was made</td>
-          <td>See <a class="link" href="https://docs.python.org/3/library/datetime.html#datetime.datetime"  target="_blank" rel="noopener"
+					<td>None</td>
+			</tr>
+			<tr>
+					<td>file</td>
+					<td>The file where the logging call was made</td>
+					<td><code>name</code> (default), <code>path</code></td>
+			</tr>
+			<tr>
+					<td>function</td>
+					<td>The function from which the logging call was made</td>
+					<td>None</td>
+			</tr>
+			<tr>
+					<td>level</td>
+					<td>The severity used to log the message</td>
+					<td><code>name</code> (default), <code>no</code>, <code>icon</code></td>
+			</tr>
+			<tr>
+					<td>line</td>
+					<td>The line number in the source code</td>
+					<td>None</td>
+			</tr>
+			<tr>
+					<td>message</td>
+					<td>The logged message (not yet formatted)</td>
+					<td>None</td>
+			</tr>
+			<tr>
+					<td>module</td>
+					<td>The module where the logging call was made</td>
+					<td>None</td>
+			</tr>
+			<tr>
+					<td>name</td>
+					<td>The <code>__name__</code> where the logging call was made</td>
+					<td>None</td>
+			</tr>
+			<tr>
+					<td>process</td>
+					<td>The process in which the logging call was made</td>
+					<td><code>name</code>, <code>id</code> (default)</td>
+			</tr>
+			<tr>
+					<td>thread</td>
+					<td>The thread in which the logging call was made</td>
+					<td><code>name</code>, <code>id</code> (default)</td>
+			</tr>
+			<tr>
+					<td>time</td>
+					<td>The aware local time when the logging call was made</td>
+					<td>See <a class="link" href="https://docs.python.org/3/library/datetime.html#datetime.datetime"  target="_blank" rel="noopener"
     ><code>datetime.datetime</code></a></td>
-      </tr>
-  </tbody>
+			</tr>
+	</tbody>
 </table></div>
 <p>格式化时间戳可以使用以下关键字：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>Token</th>
-          <th>Output</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Year</td>
-          <td>YYYY</td>
-          <td>2000, 2001, 2002 … 2012, 2013</td>
-      </tr>
-      <tr>
-          <td>YY</td>
-          <td>00, 01, 02 … 12, 13</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Quarter</td>
-          <td>Q</td>
-          <td>1 2 3 4</td>
-      </tr>
-      <tr>
-          <td>Month</td>
-          <td>MMMM</td>
-          <td>January, February, March …</td>
-      </tr>
-      <tr>
-          <td>MMM</td>
-          <td>Jan, Feb, Mar …</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>MM</td>
-          <td>01, 02, 03 … 11, 12</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>M</td>
-          <td>1, 2, 3 … 11, 12</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Day of Year</td>
-          <td>DDDD</td>
-          <td>001, 002, 003 … 364, 365</td>
-      </tr>
-      <tr>
-          <td>DDD</td>
-          <td>1, 2, 3 … 364, 365</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Day of Month</td>
-          <td>DD</td>
-          <td>01, 02, 03 … 30, 31</td>
-      </tr>
-      <tr>
-          <td>D</td>
-          <td>1, 2, 3 … 30, 31</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Day of Week</td>
-          <td>dddd</td>
-          <td>Monday, Tuesday, Wednesday …</td>
-      </tr>
-      <tr>
-          <td>ddd</td>
-          <td>Mon, Tue, Wed …</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>d</td>
-          <td>0, 1, 2 … 6</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Days of ISO Week</td>
-          <td>E</td>
-          <td>1, 2, 3 … 7</td>
-      </tr>
-      <tr>
-          <td>Hour</td>
-          <td>HH</td>
-          <td>00, 01, 02 … 23, 24</td>
-      </tr>
-      <tr>
-          <td>H</td>
-          <td>0, 1, 2 … 23, 24</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>hh</td>
-          <td>01, 02, 03 … 11, 12</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>h</td>
-          <td>1, 2, 3 … 11, 12</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Minute</td>
-          <td>mm</td>
-          <td>00, 01, 02 … 58, 59</td>
-      </tr>
-      <tr>
-          <td>m</td>
-          <td>0, 1, 2 … 58, 59</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Second</td>
-          <td>ss</td>
-          <td>00, 01, 02 … 58, 59</td>
-      </tr>
-      <tr>
-          <td>s</td>
-          <td>0, 1, 2 … 58, 59</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Fractional Second</td>
-          <td>S</td>
-          <td>0 1 … 8 9</td>
-      </tr>
-      <tr>
-          <td>SS</td>
-          <td>00, 01, 02 … 98, 99</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>SSS</td>
-          <td>000 001 … 998 999</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>SSSS…</td>
-          <td>000[0..] 001[0..] … 998[0..] 999[0..]</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>SSSSSS</td>
-          <td>000000 000001 … 999998 999999</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>AM / PM</td>
-          <td>A</td>
-          <td>AM, PM</td>
-      </tr>
-      <tr>
-          <td>Timezone</td>
-          <td>Z</td>
-          <td>-07:00, -06:00 … +06:00, +07:00</td>
-      </tr>
-      <tr>
-          <td>ZZ</td>
-          <td>-0700, -0600 … +0600, +0700</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>zz</td>
-          <td>EST CST … MST PST</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>Seconds timestamp</td>
-          <td>X</td>
-          <td>1381685817, 1234567890.123</td>
-      </tr>
-      <tr>
-          <td>Microseconds timestamp</td>
-          <td>x</td>
-          <td>1234567890123</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>Token</th>
+					<th>Output</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Year</td>
+					<td>YYYY</td>
+					<td>2000, 2001, 2002 … 2012, 2013</td>
+			</tr>
+			<tr>
+					<td>YY</td>
+					<td>00, 01, 02 … 12, 13</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Quarter</td>
+					<td>Q</td>
+					<td>1 2 3 4</td>
+			</tr>
+			<tr>
+					<td>Month</td>
+					<td>MMMM</td>
+					<td>January, February, March …</td>
+			</tr>
+			<tr>
+					<td>MMM</td>
+					<td>Jan, Feb, Mar …</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>MM</td>
+					<td>01, 02, 03 … 11, 12</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>M</td>
+					<td>1, 2, 3 … 11, 12</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Day of Year</td>
+					<td>DDDD</td>
+					<td>001, 002, 003 … 364, 365</td>
+			</tr>
+			<tr>
+					<td>DDD</td>
+					<td>1, 2, 3 … 364, 365</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Day of Month</td>
+					<td>DD</td>
+					<td>01, 02, 03 … 30, 31</td>
+			</tr>
+			<tr>
+					<td>D</td>
+					<td>1, 2, 3 … 30, 31</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Day of Week</td>
+					<td>dddd</td>
+					<td>Monday, Tuesday, Wednesday …</td>
+			</tr>
+			<tr>
+					<td>ddd</td>
+					<td>Mon, Tue, Wed …</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>d</td>
+					<td>0, 1, 2 … 6</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Days of ISO Week</td>
+					<td>E</td>
+					<td>1, 2, 3 … 7</td>
+			</tr>
+			<tr>
+					<td>Hour</td>
+					<td>HH</td>
+					<td>00, 01, 02 … 23, 24</td>
+			</tr>
+			<tr>
+					<td>H</td>
+					<td>0, 1, 2 … 23, 24</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>hh</td>
+					<td>01, 02, 03 … 11, 12</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>h</td>
+					<td>1, 2, 3 … 11, 12</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Minute</td>
+					<td>mm</td>
+					<td>00, 01, 02 … 58, 59</td>
+			</tr>
+			<tr>
+					<td>m</td>
+					<td>0, 1, 2 … 58, 59</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Second</td>
+					<td>ss</td>
+					<td>00, 01, 02 … 58, 59</td>
+			</tr>
+			<tr>
+					<td>s</td>
+					<td>0, 1, 2 … 58, 59</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Fractional Second</td>
+					<td>S</td>
+					<td>0 1 … 8 9</td>
+			</tr>
+			<tr>
+					<td>SS</td>
+					<td>00, 01, 02 … 98, 99</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>SSS</td>
+					<td>000 001 … 998 999</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>SSSS…</td>
+					<td>000[0..] 001[0..] … 998[0..] 999[0..]</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>SSSSSS</td>
+					<td>000000 000001 … 999998 999999</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>AM / PM</td>
+					<td>A</td>
+					<td>AM, PM</td>
+			</tr>
+			<tr>
+					<td>Timezone</td>
+					<td>Z</td>
+					<td>-07:00, -06:00 … +06:00, +07:00</td>
+			</tr>
+			<tr>
+					<td>ZZ</td>
+					<td>-0700, -0600 … +0600, +0700</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>zz</td>
+					<td>EST CST … MST PST</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>Seconds timestamp</td>
+					<td>X</td>
+					<td>1381685817, 1234567890.123</td>
+			</tr>
+			<tr>
+					<td>Microseconds timestamp</td>
+					<td>x</td>
+					<td>1234567890123</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>如果你觉得默认的日志格式内容太少，可以自定义日志格式。</p>
 <p>如修改<code>app.py</code>为如下内容：</p>
@@ -1617,117 +1617,117 @@ CRITICAL (50): 严重类型，用于记录阻止核心功能正常工作的错�
 </ul>
 <p><strong>以下是可用的标签（请注意，兼容性可能因终端而异）：</strong></p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>颜色(缩写)</th>
-          <th>Color (abbr)</th>
-          <th>样式(缩写)</th>
-          <th>Styles (abbr)</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>黑色</td>
-          <td>Black (k)</td>
-          <td>加粗</td>
-          <td>Bold (b)</td>
-      </tr>
-      <tr>
-          <td>蓝色</td>
-          <td>Blue (e)</td>
-          <td>暗淡</td>
-          <td>Dim (d)</td>
-      </tr>
-      <tr>
-          <td>青色</td>
-          <td>Cyan (c)</td>
-          <td>正常</td>
-          <td>Normal (n)</td>
-      </tr>
-      <tr>
-          <td>绿色</td>
-          <td>Green (g)</td>
-          <td>斜体</td>
-          <td>Italic (i)</td>
-      </tr>
-      <tr>
-          <td>品红</td>
-          <td>Magenta (m)</td>
-          <td>下划线</td>
-          <td>Underline (u)</td>
-      </tr>
-      <tr>
-          <td>红色</td>
-          <td>Red (r)</td>
-          <td>删除线</td>
-          <td>Strike (s)</td>
-      </tr>
-      <tr>
-          <td>白色</td>
-          <td>White (w)</td>
-          <td>反转</td>
-          <td>Reverse (v)</td>
-      </tr>
-      <tr>
-          <td>黄色</td>
-          <td>Yellow (y)</td>
-          <td>闪烁</td>
-          <td>Blink (l)</td>
-      </tr>
-      <tr>
-          <td></td>
-          <td></td>
-          <td>隐藏</td>
-          <td>Hide (h)</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>颜色(缩写)</th>
+					<th>Color (abbr)</th>
+					<th>样式(缩写)</th>
+					<th>Styles (abbr)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>黑色</td>
+					<td>Black (k)</td>
+					<td>加粗</td>
+					<td>Bold (b)</td>
+			</tr>
+			<tr>
+					<td>蓝色</td>
+					<td>Blue (e)</td>
+					<td>暗淡</td>
+					<td>Dim (d)</td>
+			</tr>
+			<tr>
+					<td>青色</td>
+					<td>Cyan (c)</td>
+					<td>正常</td>
+					<td>Normal (n)</td>
+			</tr>
+			<tr>
+					<td>绿色</td>
+					<td>Green (g)</td>
+					<td>斜体</td>
+					<td>Italic (i)</td>
+			</tr>
+			<tr>
+					<td>品红</td>
+					<td>Magenta (m)</td>
+					<td>下划线</td>
+					<td>Underline (u)</td>
+			</tr>
+			<tr>
+					<td>红色</td>
+					<td>Red (r)</td>
+					<td>删除线</td>
+					<td>Strike (s)</td>
+			</tr>
+			<tr>
+					<td>白色</td>
+					<td>White (w)</td>
+					<td>反转</td>
+					<td>Reverse (v)</td>
+			</tr>
+			<tr>
+					<td>黄色</td>
+					<td>Yellow (y)</td>
+					<td>闪烁</td>
+					<td>Blink (l)</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td></td>
+					<td>隐藏</td>
+					<td>Hide (h)</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>使用示例：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>Examples 示例</th>
-          <th>Examples 示例</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Description</td>
-          <td>Foreground 前景色 小写</td>
-          <td>Background 背景色 大写</td>
-      </tr>
-      <tr>
-          <td>Basic colors</td>
-          <td><code>&lt;red&gt;</code>, <code>&lt;r&gt;</code></td>
-          <td><code>&lt;GREEN&gt;</code>, <code>&lt;G&gt;</code></td>
-      </tr>
-      <tr>
-          <td>Light colors</td>
-          <td><code>&lt;light-blue&gt;</code>, <code>&lt;lb&gt;</code></td>
-          <td><code>&lt;LIGHT-CYAN&gt;</code>, <code>&lt;LC&gt;</code></td>
-      </tr>
-      <tr>
-          <td>8-bit colors</td>
-          <td><code>&lt;fg 86&gt;</code>, <code>&lt;fg 255&gt;</code></td>
-          <td><code>&lt;bg 42&gt;</code>, <code>&lt;bg 9&gt;</code></td>
-      </tr>
-      <tr>
-          <td>Hex colors</td>
-          <td><code>&lt;fg #00005f&gt;</code>, <code>&lt;fg #EE1&gt;</code></td>
-          <td><code>&lt;bg #AF5FD7&gt;</code>, <code>&lt;bg #fff&gt;</code></td>
-      </tr>
-      <tr>
-          <td>RGB colors</td>
-          <td><code>&lt;fg 0,95,0&gt;</code></td>
-          <td><code>&lt;bg 72,119,65&gt;</code></td>
-      </tr>
-      <tr>
-          <td>Stylizing</td>
-          <td><code>&lt;bold&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;underline&gt;</code>, <code>&lt;u&gt;</code></td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>Examples 示例</th>
+					<th>Examples 示例</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Description</td>
+					<td>Foreground 前景色 小写</td>
+					<td>Background 背景色 大写</td>
+			</tr>
+			<tr>
+					<td>Basic colors</td>
+					<td><code>&lt;red&gt;</code>, <code>&lt;r&gt;</code></td>
+					<td><code>&lt;GREEN&gt;</code>, <code>&lt;G&gt;</code></td>
+			</tr>
+			<tr>
+					<td>Light colors</td>
+					<td><code>&lt;light-blue&gt;</code>, <code>&lt;lb&gt;</code></td>
+					<td><code>&lt;LIGHT-CYAN&gt;</code>, <code>&lt;LC&gt;</code></td>
+			</tr>
+			<tr>
+					<td>8-bit colors</td>
+					<td><code>&lt;fg 86&gt;</code>, <code>&lt;fg 255&gt;</code></td>
+					<td><code>&lt;bg 42&gt;</code>, <code>&lt;bg 9&gt;</code></td>
+			</tr>
+			<tr>
+					<td>Hex colors</td>
+					<td><code>&lt;fg #00005f&gt;</code>, <code>&lt;fg #EE1&gt;</code></td>
+					<td><code>&lt;bg #AF5FD7&gt;</code>, <code>&lt;bg #fff&gt;</code></td>
+			</tr>
+			<tr>
+					<td>RGB colors</td>
+					<td><code>&lt;fg 0,95,0&gt;</code></td>
+					<td><code>&lt;bg 72,119,65&gt;</code></td>
+			</tr>
+			<tr>
+					<td>Stylizing</td>
+					<td><code>&lt;bold&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;underline&gt;</code>, <code>&lt;u&gt;</code></td>
+					<td></td>
+			</tr>
+	</tbody>
 </table></div>
 <p>官方文档中给的示例：</p>
 <div class="highlight"><div class="chroma">

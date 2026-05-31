@@ -703,55 +703,55 @@
 <h4 id="11-virtualbox虚拟机信息记录">1.1 VirtualBox虚拟机信息记录
 </h4><p>学习etcd时，使用以下几个虚拟机:</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>序号</th>
-          <th>虚拟机</th>
-          <th>主机名</th>
-          <th>IP</th>
-          <th>CPU</th>
-          <th>内存</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>ansible-master</td>
-          <td>ansible</td>
-          <td>192.168.56.120</td>
-          <td>2核</td>
-          <td>4G</td>
-          <td>Ansible控制节点</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td>ansible-node1</td>
-          <td>etcd-node1</td>
-          <td>192.168.56.121</td>
-          <td>2核</td>
-          <td>2G</td>
-          <td>Ansible工作节点1</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>ansible-node2</td>
-          <td>etcd-node2</td>
-          <td>192.168.56.122</td>
-          <td>2核</td>
-          <td>2G</td>
-          <td>Ansible工作节点2</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td>ansible-node3</td>
-          <td>etcd-node3</td>
-          <td>192.168.56.123</td>
-          <td>2核</td>
-          <td>2G</td>
-          <td>Ansible工作节点3</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>序号</th>
+					<th>虚拟机</th>
+					<th>主机名</th>
+					<th>IP</th>
+					<th>CPU</th>
+					<th>内存</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>ansible-master</td>
+					<td>ansible</td>
+					<td>192.168.56.120</td>
+					<td>2核</td>
+					<td>4G</td>
+					<td>Ansible控制节点</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>ansible-node1</td>
+					<td>etcd-node1</td>
+					<td>192.168.56.121</td>
+					<td>2核</td>
+					<td>2G</td>
+					<td>Ansible工作节点1</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>ansible-node2</td>
+					<td>etcd-node2</td>
+					<td>192.168.56.122</td>
+					<td>2核</td>
+					<td>2G</td>
+					<td>Ansible工作节点2</td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td>ansible-node3</td>
+					<td>etcd-node3</td>
+					<td>192.168.56.123</td>
+					<td>2核</td>
+					<td>2G</td>
+					<td>Ansible工作节点3</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>后面会编写使用ansible部署etcd集群的剧本。</p>
 <p>操作系统说明：</p>
@@ -790,42 +790,42 @@
 </ul>
 <p>由于是在三个服务器上部署etcd集群，我们可以直接使用默认端口，我们先规划一下：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>序号</th>
-          <th>节点名称</th>
-          <th>节点运行目录</th>
-          <th>IP</th>
-          <th>通讯端口</th>
-          <th>客户端端口</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>node1</td>
-          <td>/srv/etcd/node</td>
-          <td>192.168.56.121</td>
-          <td>2380</td>
-          <td>2379</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td>node2</td>
-          <td>/srv/etcd/node</td>
-          <td>192.168.56.121</td>
-          <td>2380</td>
-          <td>2379</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>node2</td>
-          <td>/srv/etcd/node</td>
-          <td>192.168.56.121</td>
-          <td>2380</td>
-          <td>2379</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>序号</th>
+					<th>节点名称</th>
+					<th>节点运行目录</th>
+					<th>IP</th>
+					<th>通讯端口</th>
+					<th>客户端端口</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>node1</td>
+					<td>/srv/etcd/node</td>
+					<td>192.168.56.121</td>
+					<td>2380</td>
+					<td>2379</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>node2</td>
+					<td>/srv/etcd/node</td>
+					<td>192.168.56.121</td>
+					<td>2380</td>
+					<td>2379</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>node2</td>
+					<td>/srv/etcd/node</td>
+					<td>192.168.56.121</td>
+					<td>2380</td>
+					<td>2379</td>
+			</tr>
+	</tbody>
 </table></div>
 <h4 id="21-生成ca证书">2.1 生成CA证书
 </h4><p>CA(Certificate Authority，证书授权)是由认证机构服务者签发，是数字签名的技术基础保障，也是网上实体身份的证明，能够证明某一实体的身份及其公钥的合法性，证明该实体与公钥二者之间的匹配关系。</p>
@@ -1791,82 +1791,82 @@
 </div>
 </div><p>此处增加<code>etcd</code>启动命令时各参数的说明：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>作用</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>--date-dir</code></td>
-          <td>数据存储目录的路径</td>
-      </tr>
-      <tr>
-          <td><code>--name</code></td>
-          <td>节点名称，需唯一</td>
-      </tr>
-      <tr>
-          <td><code>--initial-advertise-peer-urls</code></td>
-          <td>向集群中其他成员宣传的该节点的对等节点URL列表</td>
-      </tr>
-      <tr>
-          <td><code>--listen-peer-urls</code></td>
-          <td>节点间通信监听的 URL 列表，用于集群节点间数据同步</td>
-      </tr>
-      <tr>
-          <td><code>--advertise-client-urls</code></td>
-          <td>向客户端宣告的访问地址，客户端实际使用的 URL</td>
-      </tr>
-      <tr>
-          <td><code>--listen-client-urls</code></td>
-          <td>客户端通信监听的 URL 列表，用于接收客户端请求</td>
-      </tr>
-      <tr>
-          <td><code>--initial-cluster</code></td>
-          <td>集群所有节点的名称和 URL 列表，格式为 name1=url1,name2=url2,&hellip;</td>
-      </tr>
-      <tr>
-          <td><code>--initial-cluster-state</code></td>
-          <td>集群初始状态，new 表示新建集群，existing 表示加入已有集群</td>
-      </tr>
-      <tr>
-          <td><code>--initial-cluster-token</code></td>
-          <td>集群唯一标识符，用于区分不同集群,默认值可能冲突，建议自定义（如 etcd-cluster）</td>
-      </tr>
-      <tr>
-          <td><code>--client-cert-auth</code></td>
-          <td>启用客户端证书认证，要求客户端提供有效证书,需配合 <code>--trusted-ca-file</code> 使用</td>
-      </tr>
-      <tr>
-          <td><code>--trusted-ca-file</code></td>
-          <td>客户端证书的信任 CA，用于验证客户端证书的合法性</td>
-      </tr>
-      <tr>
-          <td><code>--cert-file</code></td>
-          <td>节点服务端证书路径，用于向客户端证明自身身份</td>
-      </tr>
-      <tr>
-          <td><code>--key-file</code></td>
-          <td>节点服务端私钥,与 <code>--cert-file</code> 对应,需严格保护权限 (chmod 600)</td>
-      </tr>
-      <tr>
-          <td><code>--peer-client-cert-auth</code></td>
-          <td>启用节点间通信的证书认证，要求其他节点提供有效证书,需配合 <code>--peer-trusted-ca-file</code> 使用</td>
-      </tr>
-      <tr>
-          <td><code>--peer-trusted-ca-file</code></td>
-          <td>节点间通信的信任 CA，用于验证其他节点证书的合法性,通常与客户端 CA 一致（如 /etc/etcd/ssl/ca.crt）</td>
-      </tr>
-      <tr>
-          <td><code>--peer-cert-file</code></td>
-          <td>节点间通信的证书</td>
-      </tr>
-      <tr>
-          <td><code>--peer-key-file</code></td>
-          <td>节点间通信的私钥</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>作用</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>--date-dir</code></td>
+					<td>数据存储目录的路径</td>
+			</tr>
+			<tr>
+					<td><code>--name</code></td>
+					<td>节点名称，需唯一</td>
+			</tr>
+			<tr>
+					<td><code>--initial-advertise-peer-urls</code></td>
+					<td>向集群中其他成员宣传的该节点的对等节点URL列表</td>
+			</tr>
+			<tr>
+					<td><code>--listen-peer-urls</code></td>
+					<td>节点间通信监听的 URL 列表，用于集群节点间数据同步</td>
+			</tr>
+			<tr>
+					<td><code>--advertise-client-urls</code></td>
+					<td>向客户端宣告的访问地址，客户端实际使用的 URL</td>
+			</tr>
+			<tr>
+					<td><code>--listen-client-urls</code></td>
+					<td>客户端通信监听的 URL 列表，用于接收客户端请求</td>
+			</tr>
+			<tr>
+					<td><code>--initial-cluster</code></td>
+					<td>集群所有节点的名称和 URL 列表，格式为 name1=url1,name2=url2,&hellip;</td>
+			</tr>
+			<tr>
+					<td><code>--initial-cluster-state</code></td>
+					<td>集群初始状态，new 表示新建集群，existing 表示加入已有集群</td>
+			</tr>
+			<tr>
+					<td><code>--initial-cluster-token</code></td>
+					<td>集群唯一标识符，用于区分不同集群,默认值可能冲突，建议自定义（如 etcd-cluster）</td>
+			</tr>
+			<tr>
+					<td><code>--client-cert-auth</code></td>
+					<td>启用客户端证书认证，要求客户端提供有效证书,需配合 <code>--trusted-ca-file</code> 使用</td>
+			</tr>
+			<tr>
+					<td><code>--trusted-ca-file</code></td>
+					<td>客户端证书的信任 CA，用于验证客户端证书的合法性</td>
+			</tr>
+			<tr>
+					<td><code>--cert-file</code></td>
+					<td>节点服务端证书路径，用于向客户端证明自身身份</td>
+			</tr>
+			<tr>
+					<td><code>--key-file</code></td>
+					<td>节点服务端私钥,与 <code>--cert-file</code> 对应,需严格保护权限 (chmod 600)</td>
+			</tr>
+			<tr>
+					<td><code>--peer-client-cert-auth</code></td>
+					<td>启用节点间通信的证书认证，要求其他节点提供有效证书,需配合 <code>--peer-trusted-ca-file</code> 使用</td>
+			</tr>
+			<tr>
+					<td><code>--peer-trusted-ca-file</code></td>
+					<td>节点间通信的信任 CA，用于验证其他节点证书的合法性,通常与客户端 CA 一致（如 /etc/etcd/ssl/ca.crt）</td>
+			</tr>
+			<tr>
+					<td><code>--peer-cert-file</code></td>
+					<td>节点间通信的证书</td>
+			</tr>
+			<tr>
+					<td><code>--peer-key-file</code></td>
+					<td>节点间通信的私钥</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>查看第2个启动脚本：</p>
 <div class="highlight"><div class="chroma">

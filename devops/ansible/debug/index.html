@@ -665,34 +665,34 @@
 </ul>
 <h3 id="2-模块参数">2. 模块参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>可选值</th>
-          <th>默认值</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>msg</code></td>
-          <td></td>
-          <td>&ldquo;Hello world!&rdquo;</td>
-          <td><code>string</code>，打印的自定义消息。 如果省略，则输出默认消息。</td>
-      </tr>
-      <tr>
-          <td><code>var</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，要调试的变量名。与msg选项互斥。请注意，此选项已在Jinja2上下文中运行，并且具有隐式<code>{{}}</code>包装，因此，除非您要查找双重插值，否则不应使用Jinja2定界符。</td>
-      </tr>
-      <tr>
-          <td><code>verbosity</code></td>
-          <td></td>
-          <td>0</td>
-          <td><code>integer</code>，控制调试运行的数字，如果设置为3，则仅在<code>-vvv</code>或更高版本时运行调试。</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>msg</code></td>
+					<td></td>
+					<td>&ldquo;Hello world!&rdquo;</td>
+					<td><code>string</code>，打印的自定义消息。 如果省略，则输出默认消息。</td>
+			</tr>
+			<tr>
+					<td><code>var</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，要调试的变量名。与msg选项互斥。请注意，此选项已在Jinja2上下文中运行，并且具有隐式<code>{{}}</code>包装，因此，除非您要查找双重插值，否则不应使用Jinja2定界符。</td>
+			</tr>
+			<tr>
+					<td><code>verbosity</code></td>
+					<td></td>
+					<td>0</td>
+					<td><code>integer</code>，控制调试运行的数字，如果设置为3，则仅在<code>-vvv</code>或更高版本时运行调试。</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-运行剧本">3. 运行剧本
 </h3><p>我们参照官方示例，编写剧本并运行剧本。</p>
@@ -5186,26 +5186,26 @@
 <p>如果省略<code>rounds</code>轮转次数信息，我们可以看到在密码字符串中，密文由3部分组成,以”$”分隔,第一部分为ID,第二部分为盐值,第三部分为加密密文。</p>
 <p>ID与加密算法间的对应关系：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>ID值</th>
-          <th style="text-align: left">加密算法</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td style="text-align: left">MD5</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td style="text-align: left">SHA-256</td>
-      </tr>
-      <tr>
-          <td>6</td>
-          <td style="text-align: left">SHA-512</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>ID值</th>
+					<th style="text-align: left">加密算法</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td style="text-align: left">MD5</td>
+			</tr>
+			<tr>
+					<td>5</td>
+					<td style="text-align: left">SHA-256</td>
+			</tr>
+			<tr>
+					<td>6</td>
+					<td style="text-align: left">SHA-512</td>
+			</tr>
+	</tbody>
 </table></div>
 <h4 id="83-使用ansible加密密码并创建用户">8.3 使用Ansible加密密码并创建用户
 </h4><p>有了以上基础后，我们来使用Ansible加密密码并创建用户。</p>

@@ -678,190 +678,190 @@
 </ul>
 <h3 id="2-参数">2. 参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>可选值</th>
-          <th>默认值</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>attributes</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，复制后的文件或文件夹的属性，默认是<code>=</code>，如果需要进行<code>+</code>、<code>-</code>操作，则需要包含在字符串中。别名<code>attr</code>。可以参考<code>chattr</code>。</td>
-      </tr>
-      <tr>
-          <td><code>backup</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，创建一个带时间戳的备份文件，以防不小心破坏文件的情况下找到原始文件。</td>
-      </tr>
-      <tr>
-          <td><code>checksum</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，传输文件的SHA1校验和。用于验证文件副本是否成功。如果未提供，则Ansible将使用src文件的本地计算校验和。</td>
-      </tr>
-      <tr>
-          <td><code>content</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>,当代替<code>src</code>使用时，将文件的内容直接设置为指定的值。仅在<code>dest</code>是文件时有效。 如果文件不存在，则创建它。对于高级格式化，或者如果内容包含变量，请使用<code>template</code>模板模块。<code>content</code>与<code>src</code>必须提供一个！</td>
-      </tr>
-      <tr>
-          <td><code>decrypt</code></td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td><code>boolean</code>，此选项使用Vault控制源文件的自动解密。</td>
-      </tr>
-      <tr>
-          <td><code>dest</code>      <strong>required</strong></td>
-          <td></td>
-          <td></td>
-          <td><code>path</code>，文件应复制到的远程绝对路径。如果<code>src</code>是目录，则<code>dest</code>必须也是目录；如果<code>dest</code>是不存在的路径，并且<code>dest</code>以“ /”结尾或<code>src</code>是目录，则创建<code>dest</code>目录；如果<code>dest</code>是相对路径，则路径开始值由远程主机决定；如果<code>src</code>和<code>dest</code>是文件，则不会创建<code>dest</code>的父目录，如果父目录不存在，则该任务将失败。</td>
-      </tr>
-      <tr>
-          <td><code>directory_mode</code></td>
-          <td></td>
-          <td></td>
-          <td><code>raw</code>，如<code>directory_mode='0770'</code>,当进行递归复制时，新创建的文件夹使用的文件夹模式，该参数对已经存在的文件夹没有影响，<strong>但对子目录有影响</strong>。如果目标目录不存在，则会新建目录，并且对目标目录及其子目录都会应用该文件夹权限模式；如果目标目录存在，则不会影响目标目录本身，只会影响目标目录的子目录！</td>
-      </tr>
-      <tr>
-          <td><code>follow</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>是否跟踪目标系统上面的链接文件。</td>
-      </tr>
-      <tr>
-          <td><code>force</code></td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td>是否强制覆盖已经存在的文件。当设置为<code>yes</code>时当远程文件内容与源文件内容不同时就会被替换掉；当设置为<code>no</code>时，只会传输远程主机上不存在的文件。</td>
-      </tr>
-      <tr>
-          <td><code>group</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>,用户组的名称。</td>
-      </tr>
-      <tr>
-          <td><code>local_follow</code></td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td>是否跟踪源系统上面的链接文件。</td>
-      </tr>
-      <tr>
-          <td><code>mode</code></td>
-          <td></td>
-          <td></td>
-          <td><code>path</code>,目标文件或目录的权限。对于那些习惯于<code>/usr/bin/chmod</code>的用户，请记住模式实际上是八进制数。您必须添加一个前导零，以便Ansible的YAML解析器知道它是一个八进制数(例如<code>0644</code>或<code>01777</code>)或用引号(例如<code>'644'</code>或<code>'1777'</code>)来使Ansible接收字符串并可以从字符串进行自己的转换成数字。不遵循这些规则的话，Ansible将会这这些数字当做十进制数，这将引起异常。从Ansible1.8开始，可以将模式指定为符号模式（例如，<code>u+rwx</code>或<code>u=rw,g=r,o=r</code>)。从Ansible2.3开始，该模式也可能是<code>preserve</code>,表示保留源文件相同的权限。(The permissions are r for read, w for write and x for execute.)</td>
-      </tr>
-      <tr>
-          <td><code>owner</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，文件拥有者名称。</td>
-      </tr>
-      <tr>
-          <td><code>remote_src</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，如果设置为<code>yes</code>，则会在远程主机上寻找<code>src</code>源文件；如果设置为<code>no</code>，则会在Ansible master主机上面寻找<code>src</code>源文件。</td>
-      </tr>
-      <tr>
-          <td><code>src</code></td>
-          <td></td>
-          <td></td>
-          <td><code>path</code>,本地待复制的文件。可以是相对或绝对路径。如果路径是目录，则会递归复制。如果路径以“ /”结尾，则仅将该目录的内部内容复制到目标位置。 否则，如果它不以“ /”结尾，则将复制路径本身及目录下所有的内容。 此行为类似于<code>rsync</code>命令行工具。<code>content</code>与<code>src</code>必须提供一个！</td>
-      </tr>
-      <tr>
-          <td><code>unsafe_writes</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>,影响何时使用原子操作来防止数据损坏或对目标文件的读取不一致。 默认情况下，此模块使用原子操作来防止数据损坏或对目标文件的读取不一致，但是有时会以防止这种情况的方式配置或破坏系统。一个示例是docker挂载的文件，该文件无法从容器内部进行原子更新，只能以不安全的方式写入。 当原子操作失败时，此选项允许Ansible退回到不安全的文件更新方法（但是，它不会强制Ansible执行不安全的写操作）。 重要！不安全的写入会受到竞争条件的影响，并可能导致数据损坏。</td>
-      </tr>
-      <tr>
-          <td><code>validate</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，验证命令在复制之前运行，保证命令安全传递。</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>attributes</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，复制后的文件或文件夹的属性，默认是<code>=</code>，如果需要进行<code>+</code>、<code>-</code>操作，则需要包含在字符串中。别名<code>attr</code>。可以参考<code>chattr</code>。</td>
+			</tr>
+			<tr>
+					<td><code>backup</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，创建一个带时间戳的备份文件，以防不小心破坏文件的情况下找到原始文件。</td>
+			</tr>
+			<tr>
+					<td><code>checksum</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，传输文件的SHA1校验和。用于验证文件副本是否成功。如果未提供，则Ansible将使用src文件的本地计算校验和。</td>
+			</tr>
+			<tr>
+					<td><code>content</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>,当代替<code>src</code>使用时，将文件的内容直接设置为指定的值。仅在<code>dest</code>是文件时有效。 如果文件不存在，则创建它。对于高级格式化，或者如果内容包含变量，请使用<code>template</code>模板模块。<code>content</code>与<code>src</code>必须提供一个！</td>
+			</tr>
+			<tr>
+					<td><code>decrypt</code></td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td><code>boolean</code>，此选项使用Vault控制源文件的自动解密。</td>
+			</tr>
+			<tr>
+					<td><code>dest</code>      <strong>required</strong></td>
+					<td></td>
+					<td></td>
+					<td><code>path</code>，文件应复制到的远程绝对路径。如果<code>src</code>是目录，则<code>dest</code>必须也是目录；如果<code>dest</code>是不存在的路径，并且<code>dest</code>以“ /”结尾或<code>src</code>是目录，则创建<code>dest</code>目录；如果<code>dest</code>是相对路径，则路径开始值由远程主机决定；如果<code>src</code>和<code>dest</code>是文件，则不会创建<code>dest</code>的父目录，如果父目录不存在，则该任务将失败。</td>
+			</tr>
+			<tr>
+					<td><code>directory_mode</code></td>
+					<td></td>
+					<td></td>
+					<td><code>raw</code>，如<code>directory_mode='0770'</code>,当进行递归复制时，新创建的文件夹使用的文件夹模式，该参数对已经存在的文件夹没有影响，<strong>但对子目录有影响</strong>。如果目标目录不存在，则会新建目录，并且对目标目录及其子目录都会应用该文件夹权限模式；如果目标目录存在，则不会影响目标目录本身，只会影响目标目录的子目录！</td>
+			</tr>
+			<tr>
+					<td><code>follow</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>是否跟踪目标系统上面的链接文件。</td>
+			</tr>
+			<tr>
+					<td><code>force</code></td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td>是否强制覆盖已经存在的文件。当设置为<code>yes</code>时当远程文件内容与源文件内容不同时就会被替换掉；当设置为<code>no</code>时，只会传输远程主机上不存在的文件。</td>
+			</tr>
+			<tr>
+					<td><code>group</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>,用户组的名称。</td>
+			</tr>
+			<tr>
+					<td><code>local_follow</code></td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td>是否跟踪源系统上面的链接文件。</td>
+			</tr>
+			<tr>
+					<td><code>mode</code></td>
+					<td></td>
+					<td></td>
+					<td><code>path</code>,目标文件或目录的权限。对于那些习惯于<code>/usr/bin/chmod</code>的用户，请记住模式实际上是八进制数。您必须添加一个前导零，以便Ansible的YAML解析器知道它是一个八进制数(例如<code>0644</code>或<code>01777</code>)或用引号(例如<code>'644'</code>或<code>'1777'</code>)来使Ansible接收字符串并可以从字符串进行自己的转换成数字。不遵循这些规则的话，Ansible将会这这些数字当做十进制数，这将引起异常。从Ansible1.8开始，可以将模式指定为符号模式（例如，<code>u+rwx</code>或<code>u=rw,g=r,o=r</code>)。从Ansible2.3开始，该模式也可能是<code>preserve</code>,表示保留源文件相同的权限。(The permissions are r for read, w for write and x for execute.)</td>
+			</tr>
+			<tr>
+					<td><code>owner</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，文件拥有者名称。</td>
+			</tr>
+			<tr>
+					<td><code>remote_src</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，如果设置为<code>yes</code>，则会在远程主机上寻找<code>src</code>源文件；如果设置为<code>no</code>，则会在Ansible master主机上面寻找<code>src</code>源文件。</td>
+			</tr>
+			<tr>
+					<td><code>src</code></td>
+					<td></td>
+					<td></td>
+					<td><code>path</code>,本地待复制的文件。可以是相对或绝对路径。如果路径是目录，则会递归复制。如果路径以“ /”结尾，则仅将该目录的内部内容复制到目标位置。 否则，如果它不以“ /”结尾，则将复制路径本身及目录下所有的内容。 此行为类似于<code>rsync</code>命令行工具。<code>content</code>与<code>src</code>必须提供一个！</td>
+			</tr>
+			<tr>
+					<td><code>unsafe_writes</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>,影响何时使用原子操作来防止数据损坏或对目标文件的读取不一致。 默认情况下，此模块使用原子操作来防止数据损坏或对目标文件的读取不一致，但是有时会以防止这种情况的方式配置或破坏系统。一个示例是docker挂载的文件，该文件无法从容器内部进行原子更新，只能以不安全的方式写入。 当原子操作失败时，此选项允许Ansible退回到不安全的文件更新方法（但是，它不会强制Ansible执行不安全的写操作）。 重要！不安全的写入会受到竞争条件的影响，并可能导致数据损坏。</td>
+			</tr>
+			<tr>
+					<td><code>validate</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，验证命令在复制之前运行，保证命令安全传递。</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-返回值">3. 返回值
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>键</th>
-          <th>何时返回</th>
-          <th>描述信息</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>backup_file</strong>                                    string</td>
-          <td><code>backup=yes</code>时</td>
-          <td>备份文件的路径，如<code>/path/to/file.txt.2015-02-12@22:09~ </code></td>
-      </tr>
-      <tr>
-          <td><strong>checksum</strong>                                       string</td>
-          <td>success</td>
-          <td>复制后文件的SHA1校验和,如<code>6e642bb8dd5c2e027bf21dd923337cbb4214f827</code></td>
-      </tr>
-      <tr>
-          <td><strong>dest</strong>                                                  string</td>
-          <td>success</td>
-          <td>目标路径 <code>/path/to/file.txt </code></td>
-      </tr>
-      <tr>
-          <td><strong>gid</strong>                                                    integer</td>
-          <td>success</td>
-          <td>GID,如<code>100</code></td>
-      </tr>
-      <tr>
-          <td><strong>group</strong>                                               string</td>
-          <td>success</td>
-          <td>文件的组名,如<code>httpd                                 </code></td>
-      </tr>
-      <tr>
-          <td><strong>md5sum</strong>                                          string</td>
-          <td>when supported</td>
-          <td>复制后文件的MD5校验和,如<code>2a5aeecc61dc98c4d780b14b330e3282</code></td>
-      </tr>
-      <tr>
-          <td><strong>mode</strong>                                               string</td>
-          <td>success</td>
-          <td>目标权限，如<code>420</code></td>
-      </tr>
-      <tr>
-          <td><strong>owner</strong>                                              string</td>
-          <td>success</td>
-          <td>文件的owner,如<code>httpd</code></td>
-      </tr>
-      <tr>
-          <td><strong>size</strong>                                                  integer</td>
-          <td>success</td>
-          <td>文件的大小,如<code>1220</code></td>
-      </tr>
-      <tr>
-          <td><strong>src</strong>                                                     string</td>
-          <td>changed</td>
-          <td>用于在目标计算机上进行复制的源文件，如<code>/home/httpd/.ansible/tmp/ansible-tmp-1423796390.97-147729857856000/source</code></td>
-      </tr>
-      <tr>
-          <td><strong>state</strong>                                                 string</td>
-          <td>success</td>
-          <td>执行后目标的状态，如<code>file</code></td>
-      </tr>
-      <tr>
-          <td><strong>uid</strong>                                                     integer</td>
-          <td>success</td>
-          <td>文件的owner ID,如<code>100</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>键</th>
+					<th>何时返回</th>
+					<th>描述信息</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>backup_file</strong>                                    string</td>
+					<td><code>backup=yes</code>时</td>
+					<td>备份文件的路径，如<code>/path/to/file.txt.2015-02-12@22:09~ </code></td>
+			</tr>
+			<tr>
+					<td><strong>checksum</strong>                                       string</td>
+					<td>success</td>
+					<td>复制后文件的SHA1校验和,如<code>6e642bb8dd5c2e027bf21dd923337cbb4214f827</code></td>
+			</tr>
+			<tr>
+					<td><strong>dest</strong>                                                  string</td>
+					<td>success</td>
+					<td>目标路径 <code>/path/to/file.txt </code></td>
+			</tr>
+			<tr>
+					<td><strong>gid</strong>                                                    integer</td>
+					<td>success</td>
+					<td>GID,如<code>100</code></td>
+			</tr>
+			<tr>
+					<td><strong>group</strong>                                               string</td>
+					<td>success</td>
+					<td>文件的组名,如<code>httpd                                 </code></td>
+			</tr>
+			<tr>
+					<td><strong>md5sum</strong>                                          string</td>
+					<td>when supported</td>
+					<td>复制后文件的MD5校验和,如<code>2a5aeecc61dc98c4d780b14b330e3282</code></td>
+			</tr>
+			<tr>
+					<td><strong>mode</strong>                                               string</td>
+					<td>success</td>
+					<td>目标权限，如<code>420</code></td>
+			</tr>
+			<tr>
+					<td><strong>owner</strong>                                              string</td>
+					<td>success</td>
+					<td>文件的owner,如<code>httpd</code></td>
+			</tr>
+			<tr>
+					<td><strong>size</strong>                                                  integer</td>
+					<td>success</td>
+					<td>文件的大小,如<code>1220</code></td>
+			</tr>
+			<tr>
+					<td><strong>src</strong>                                                     string</td>
+					<td>changed</td>
+					<td>用于在目标计算机上进行复制的源文件，如<code>/home/httpd/.ansible/tmp/ansible-tmp-1423796390.97-147729857856000/source</code></td>
+			</tr>
+			<tr>
+					<td><strong>state</strong>                                                 string</td>
+					<td>success</td>
+					<td>执行后目标的状态，如<code>file</code></td>
+			</tr>
+			<tr>
+					<td><strong>uid</strong>                                                     integer</td>
+					<td>success</td>
+					<td>文件的owner ID,如<code>100</code></td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="4-临时命令的使用">4. 临时命令的使用
 </h3><p>复制家目录下面的文件：</p>

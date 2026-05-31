@@ -663,31 +663,31 @@
     <h2 id="rsyncinotify实现数据实时同步">rsync+inotify实现数据实时同步
 </h2><h3 id="1-实验环境说明">1. 实验环境说明
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>序列</th>
-          <th>服务器</th>
-          <th style="text-align: left">操作系统</th>
-          <th>IP</th>
-          <th style="text-align: left">主机名</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>源端服务器(需要备份数据的机器)</td>
-          <td style="text-align: left">CentOS Linux release 7.7.1908</td>
-          <td>192.168.56.11</td>
-          <td style="text-align: left">src-host</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td>目标端服务器(备份数据存放的机器)</td>
-          <td style="text-align: left">CentOS Linux release 7.7.1908</td>
-          <td>192.168.56.12</td>
-          <td style="text-align: left">dest-host</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>序列</th>
+					<th>服务器</th>
+					<th style="text-align: left">操作系统</th>
+					<th>IP</th>
+					<th style="text-align: left">主机名</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>源端服务器(需要备份数据的机器)</td>
+					<td style="text-align: left">CentOS Linux release 7.7.1908</td>
+					<td>192.168.56.11</td>
+					<td style="text-align: left">src-host</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>目标端服务器(备份数据存放的机器)</td>
+					<td style="text-align: left">CentOS Linux release 7.7.1908</td>
+					<td>192.168.56.12</td>
+					<td style="text-align: left">dest-host</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>在源端配置<code>/etc/hosts</code>增加域名解析：</p>
 <div class="highlight"><div class="chroma">

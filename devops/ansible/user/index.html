@@ -676,291 +676,291 @@
 </ul>
 <h3 id="2-模块参数">2. 模块参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>可选值</th>
-          <th>默认值</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>append</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，是否追加组，如果设置为<code>yes</code>，则将用户添加到<code>groups</code>指定的用户组中。如果设置为<code>no</code>，则只会将用户添加到<code>groups</code>指定的用户组中，而从其他组中删除！与<code>local</code>参数互斥！</td>
-      </tr>
-      <tr>
-          <td><code>comment</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，（可选）设置用户帐户的描述信息。也称为<code>GECOS</code>即用户的详细信息，如姓名、年龄、电话等。</td>
-      </tr>
-      <tr>
-          <td><code>create_home</code></td>
-          <td>yes/no</td>
-          <td>yes</td>
-          <td><code>boolean</code>，除非设置为<code>no</code>，否则在创建帐户或主目录不存在时将为用户创建主目录。别名<code>createhome</code></td>
-      </tr>
-      <tr>
-          <td><code>expires</code></td>
-          <td></td>
-          <td></td>
-          <td><code>float</code>，过期时间</td>
-      </tr>
-      <tr>
-          <td><code>force</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，当<code>state=absent</code>时，可以强制删除用户和用户相关的目录，就算用户正在登陆也可以删除。当<code>generate_ssh_key=yes</code>时，将会强制更新、覆盖已经存在的密钥文件。</td>
-      </tr>
-      <tr>
-          <td><code>generate_ssh_key</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，产生SSH key文件，如果没有指定<code>force=yes</code>，则不会覆盖已经存在的密钥文件。</td>
-      </tr>
-      <tr>
-          <td><code>group</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>（可选）设置用户的主组名。</td>
-      </tr>
-      <tr>
-          <td><code>groups</code></td>
-          <td></td>
-          <td></td>
-          <td><code>list</code>，用户需要加入的组的名称组成的列表。当设置<code>groups=''</code>时，将会将用户从用户主组外的所有其他组中删除。与<code>local</code>参数互斥！</td>
-      </tr>
-      <tr>
-          <td><code>home</code></td>
-          <td></td>
-          <td></td>
-          <td><code>path</code>，可选，设置用户家目录。</td>
-      </tr>
-      <tr>
-          <td><code>local</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>,强制使用本地命令替代项。当您要操作本地用户时，这在使用集中式身份验证的环境中很有用(如使用<code>luseradd</code>而不是<code>useradd</code>) 在调用命令之前会检查<code>/etc/passwd</code>是否存在现有帐户。如果本地帐户数据库位于<code>/etc/passwd</code>以外的其他位置，则当前设置将无法正常工作。 使用本地命令时，必须确保<code>luseradd</code>命令以及<code>/etc/passwd</code>必须存在于目标主机上，否则将抛出致命错误。 与<code>groups</code>和<code>append</code>参数互斥。</td>
-      </tr>
-      <tr>
-          <td><code>move_home</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，当设置为<code>yes</code>时，并且配置了<code>home</code>参数，当旧的主目录存在时，将会将旧的主目录移到新的家目录的位置。</td>
-      </tr>
-      <tr>
-          <td><code>name</code> （<strong>required</strong>）</td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，需要增加，修改或删除的用户名，别名<code>user</code>。</td>
-      </tr>
-      <tr>
-          <td><code>non_unique</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，允许设置用户ID不唯一。和<code>uid</code>参数一起作用。不是指一个用户可以用多个ID，而是一个ID可以用于多个用户，即可以多个用户名对应一个UID。</td>
-      </tr>
-      <tr>
-          <td><code>password</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，可选，设置用户的密码，如果设置密码，该值需要加密。如果需要创建禁用的账号,请将该值设置为<code>!</code>或者<code>*</code>。有关如何加密密码，请参考https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#how-do-i-generate-encrypted-passwords-for-the-user-module</td>
-      </tr>
-      <tr>
-          <td><code>password_lock</code></td>
-          <td>yes/no</td>
-          <td></td>
-          <td><code>boolean</code>，锁定密码(usermod -L，pw lock，usermod -C)。但在不同平台上的实现方式不同，此选项并不总是意味着用户无法通过其他方法登录。此选项不会禁用用户，只会锁定密码。不要在同一任务中更改密码。目前在Linux，FreeBSD，DragonFlyBSD，NetBSD，OpenBSD上受支持。</td>
-      </tr>
-      <tr>
-          <td><code>remove</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td><code>boolean</code>，移除用户并删除用户关联的目录，仅当<code>state=absent</code>时有效。与<code>userdel --remove</code>等效，详细可以查看手册页。</td>
-      </tr>
-      <tr>
-          <td><code>seuser</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，可选，当SELINUX开启时设置seuser的类型。</td>
-      </tr>
-      <tr>
-          <td><code>shell</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，可选，用户默认的shell。</td>
-      </tr>
-      <tr>
-          <td><code>skeleton</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，可选，设置主框架目录。只有当<code>create_home</code>参数设置时才有效！</td>
-      </tr>
-      <tr>
-          <td><code>ssh_key_bits</code></td>
-          <td></td>
-          <td>由ssh-keygen的默认值决定，CentOS上面是2048</td>
-          <td><code>integer</code>，可选，在SSH密钥中指定要创建的位数。</td>
-      </tr>
-      <tr>
-          <td><code>ssh_key_comment</code></td>
-          <td></td>
-          <td>“ansible-generated on $HOSTNAME”</td>
-          <td><code>string</code>，可选，生成SSH密钥文件时的备注信息。等同于<code>ssh-keygen -C Comment</code></td>
-      </tr>
-      <tr>
-          <td><code>ssh_key_file</code></td>
-          <td></td>
-          <td>.ssh/id_rsa</td>
-          <td><code>path</code>，可选，指定SSH密钥文件名。如果这是相对文件名，则它将相对于用户的主目录。此参数默认为.ssh / id_rsa。</td>
-      </tr>
-      <tr>
-          <td><code>ssh_key_passphrase</code></td>
-          <td></td>
-          <td></td>
-          <td><code>string</code>，设置SSH密钥的口令。如果未提供口令，则SSH密钥将默认为无口令。</td>
-      </tr>
-      <tr>
-          <td><code>ssh_key_type</code></td>
-          <td></td>
-          <td>&ldquo;rsa&rdquo;</td>
-          <td><code>string</code>，可选，SSH密钥类型。如<code>rsa1, rsa, dsa, ecdsa and ed25519</code>等，可用的SSH密钥类型将取决于目标主机上的实现。</td>
-      </tr>
-      <tr>
-          <td><code>state</code></td>
-          <td>present/absent</td>
-          <td>present</td>
-          <td>帐户是否应存在，如果状态与声明的状态不同，则采取措施。</td>
-      </tr>
-      <tr>
-          <td><code>system</code></td>
-          <td>yes/no</td>
-          <td>no</td>
-          <td>当<code>state=present</code>时，本参数设置为<code>yes</code>时则将用户转换成系统用户。该参数不能更新已经存在的用户信息！</td>
-      </tr>
-      <tr>
-          <td><code>uid</code></td>
-          <td></td>
-          <td></td>
-          <td><code>integer</code>，可选，用户的UID</td>
-      </tr>
-      <tr>
-          <td><code>update_password</code></td>
-          <td>always/on_create</td>
-          <td>always</td>
-          <td><code>always</code>如果密码不同将会更新密码。<code>on_create</code>将仅为新创建的用户设置密码。</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>append</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，是否追加组，如果设置为<code>yes</code>，则将用户添加到<code>groups</code>指定的用户组中。如果设置为<code>no</code>，则只会将用户添加到<code>groups</code>指定的用户组中，而从其他组中删除！与<code>local</code>参数互斥！</td>
+			</tr>
+			<tr>
+					<td><code>comment</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，（可选）设置用户帐户的描述信息。也称为<code>GECOS</code>即用户的详细信息，如姓名、年龄、电话等。</td>
+			</tr>
+			<tr>
+					<td><code>create_home</code></td>
+					<td>yes/no</td>
+					<td>yes</td>
+					<td><code>boolean</code>，除非设置为<code>no</code>，否则在创建帐户或主目录不存在时将为用户创建主目录。别名<code>createhome</code></td>
+			</tr>
+			<tr>
+					<td><code>expires</code></td>
+					<td></td>
+					<td></td>
+					<td><code>float</code>，过期时间</td>
+			</tr>
+			<tr>
+					<td><code>force</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，当<code>state=absent</code>时，可以强制删除用户和用户相关的目录，就算用户正在登陆也可以删除。当<code>generate_ssh_key=yes</code>时，将会强制更新、覆盖已经存在的密钥文件。</td>
+			</tr>
+			<tr>
+					<td><code>generate_ssh_key</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，产生SSH key文件，如果没有指定<code>force=yes</code>，则不会覆盖已经存在的密钥文件。</td>
+			</tr>
+			<tr>
+					<td><code>group</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>（可选）设置用户的主组名。</td>
+			</tr>
+			<tr>
+					<td><code>groups</code></td>
+					<td></td>
+					<td></td>
+					<td><code>list</code>，用户需要加入的组的名称组成的列表。当设置<code>groups=''</code>时，将会将用户从用户主组外的所有其他组中删除。与<code>local</code>参数互斥！</td>
+			</tr>
+			<tr>
+					<td><code>home</code></td>
+					<td></td>
+					<td></td>
+					<td><code>path</code>，可选，设置用户家目录。</td>
+			</tr>
+			<tr>
+					<td><code>local</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>,强制使用本地命令替代项。当您要操作本地用户时，这在使用集中式身份验证的环境中很有用(如使用<code>luseradd</code>而不是<code>useradd</code>) 在调用命令之前会检查<code>/etc/passwd</code>是否存在现有帐户。如果本地帐户数据库位于<code>/etc/passwd</code>以外的其他位置，则当前设置将无法正常工作。 使用本地命令时，必须确保<code>luseradd</code>命令以及<code>/etc/passwd</code>必须存在于目标主机上，否则将抛出致命错误。 与<code>groups</code>和<code>append</code>参数互斥。</td>
+			</tr>
+			<tr>
+					<td><code>move_home</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，当设置为<code>yes</code>时，并且配置了<code>home</code>参数，当旧的主目录存在时，将会将旧的主目录移到新的家目录的位置。</td>
+			</tr>
+			<tr>
+					<td><code>name</code> （<strong>required</strong>）</td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，需要增加，修改或删除的用户名，别名<code>user</code>。</td>
+			</tr>
+			<tr>
+					<td><code>non_unique</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，允许设置用户ID不唯一。和<code>uid</code>参数一起作用。不是指一个用户可以用多个ID，而是一个ID可以用于多个用户，即可以多个用户名对应一个UID。</td>
+			</tr>
+			<tr>
+					<td><code>password</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，可选，设置用户的密码，如果设置密码，该值需要加密。如果需要创建禁用的账号,请将该值设置为<code>!</code>或者<code>*</code>。有关如何加密密码，请参考https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#how-do-i-generate-encrypted-passwords-for-the-user-module</td>
+			</tr>
+			<tr>
+					<td><code>password_lock</code></td>
+					<td>yes/no</td>
+					<td></td>
+					<td><code>boolean</code>，锁定密码(usermod -L，pw lock，usermod -C)。但在不同平台上的实现方式不同，此选项并不总是意味着用户无法通过其他方法登录。此选项不会禁用用户，只会锁定密码。不要在同一任务中更改密码。目前在Linux，FreeBSD，DragonFlyBSD，NetBSD，OpenBSD上受支持。</td>
+			</tr>
+			<tr>
+					<td><code>remove</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td><code>boolean</code>，移除用户并删除用户关联的目录，仅当<code>state=absent</code>时有效。与<code>userdel --remove</code>等效，详细可以查看手册页。</td>
+			</tr>
+			<tr>
+					<td><code>seuser</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，可选，当SELINUX开启时设置seuser的类型。</td>
+			</tr>
+			<tr>
+					<td><code>shell</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，可选，用户默认的shell。</td>
+			</tr>
+			<tr>
+					<td><code>skeleton</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，可选，设置主框架目录。只有当<code>create_home</code>参数设置时才有效！</td>
+			</tr>
+			<tr>
+					<td><code>ssh_key_bits</code></td>
+					<td></td>
+					<td>由ssh-keygen的默认值决定，CentOS上面是2048</td>
+					<td><code>integer</code>，可选，在SSH密钥中指定要创建的位数。</td>
+			</tr>
+			<tr>
+					<td><code>ssh_key_comment</code></td>
+					<td></td>
+					<td>“ansible-generated on $HOSTNAME”</td>
+					<td><code>string</code>，可选，生成SSH密钥文件时的备注信息。等同于<code>ssh-keygen -C Comment</code></td>
+			</tr>
+			<tr>
+					<td><code>ssh_key_file</code></td>
+					<td></td>
+					<td>.ssh/id_rsa</td>
+					<td><code>path</code>，可选，指定SSH密钥文件名。如果这是相对文件名，则它将相对于用户的主目录。此参数默认为.ssh / id_rsa。</td>
+			</tr>
+			<tr>
+					<td><code>ssh_key_passphrase</code></td>
+					<td></td>
+					<td></td>
+					<td><code>string</code>，设置SSH密钥的口令。如果未提供口令，则SSH密钥将默认为无口令。</td>
+			</tr>
+			<tr>
+					<td><code>ssh_key_type</code></td>
+					<td></td>
+					<td>&ldquo;rsa&rdquo;</td>
+					<td><code>string</code>，可选，SSH密钥类型。如<code>rsa1, rsa, dsa, ecdsa and ed25519</code>等，可用的SSH密钥类型将取决于目标主机上的实现。</td>
+			</tr>
+			<tr>
+					<td><code>state</code></td>
+					<td>present/absent</td>
+					<td>present</td>
+					<td>帐户是否应存在，如果状态与声明的状态不同，则采取措施。</td>
+			</tr>
+			<tr>
+					<td><code>system</code></td>
+					<td>yes/no</td>
+					<td>no</td>
+					<td>当<code>state=present</code>时，本参数设置为<code>yes</code>时则将用户转换成系统用户。该参数不能更新已经存在的用户信息！</td>
+			</tr>
+			<tr>
+					<td><code>uid</code></td>
+					<td></td>
+					<td></td>
+					<td><code>integer</code>，可选，用户的UID</td>
+			</tr>
+			<tr>
+					<td><code>update_password</code></td>
+					<td>always/on_create</td>
+					<td>always</td>
+					<td><code>always</code>如果密码不同将会更新密码。<code>on_create</code>将仅为新创建的用户设置密码。</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-模块返回值">3. 模块返回值
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>键</th>
-          <th>何时返回</th>
-          <th>描述说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>append</strong>                                                     boolean</td>
-          <td>当<code>state=present</code>并且用户存在时</td>
-          <td>是否添加用户到用户组中</td>
-      </tr>
-      <tr>
-          <td><strong>comment</strong>                                                     string</td>
-          <td>当用户存在时</td>
-          <td>用户的详细信息，通常是用户的名字</td>
-      </tr>
-      <tr>
-          <td><strong>create_home</strong>                                                     boolean</td>
-          <td>当用户不存在时，且不是check检查模式时</td>
-          <td>是否创建用户家目录</td>
-      </tr>
-      <tr>
-          <td><strong>force</strong>                                                     boolean</td>
-          <td>当<code>state=absent</code>并且用户存在时</td>
-          <td>是否强制删除用户帐户</td>
-      </tr>
-      <tr>
-          <td><strong>group</strong>                                                     integer</td>
-          <td>当用户存在时</td>
-          <td>用户的主组的ID，如<code>1001</code></td>
-      </tr>
-      <tr>
-          <td><strong>groups</strong>                                                     string</td>
-          <td>当<code>state=present</code>并且<code>groups</code>不为空时</td>
-          <td>用户的组列表，如<code>chrony,apache</code></td>
-      </tr>
-      <tr>
-          <td><strong>home</strong>                                                         string</td>
-          <td>当<code>state=present</code>时</td>
-          <td>用户家目录路径 ，如<code>/home/asmith</code></td>
-      </tr>
-      <tr>
-          <td><strong>move_home</strong>                                                     boolean</td>
-          <td>当<code>state=present</code>并且用户存在时</td>
-          <td>是否移动已经存在的家目录</td>
-      </tr>
-      <tr>
-          <td><strong>name</strong>                                                        string</td>
-          <td>一直返回</td>
-          <td>用户账号名称 ，如<code>asmith</code></td>
-      </tr>
-      <tr>
-          <td><strong>password</strong>                                                     string</td>
-          <td>当<code>state=present</code>并且<code>password</code>参数不为空时</td>
-          <td>密码的掩码字符串，如<code>NOT_LOGGING_PASSWORD</code></td>
-      </tr>
-      <tr>
-          <td><strong>remove</strong>                                                     boolean</td>
-          <td>当<code>state=absent</code>并且用户存在时</td>
-          <td>是否删除用户</td>
-      </tr>
-      <tr>
-          <td><strong>shell</strong>                                                          string</td>
-          <td>当<code>state=present</code>时</td>
-          <td>用户登陆shell，如<code>/bin/bash</code></td>
-      </tr>
-      <tr>
-          <td><strong>ssh_fingerprint</strong>                                                     string</td>
-          <td>当<code>generate_ssh_key</code> 参数是 <code>True</code>时</td>
-          <td>生成的SSH密钥的指纹，如字符串1，详见脚注</td>
-      </tr>
-      <tr>
-          <td><strong>ssh_key_file</strong>                                                     string</td>
-          <td>当<code>generate_ssh_key</code> 参数是 <code>True</code>时</td>
-          <td>SSH密钥文件的路径，如<code>/home/asmith/.ssh/id_rsa</code></td>
-      </tr>
-      <tr>
-          <td><strong>ssh_public_key</strong>                                                     string</td>
-          <td>当<code>generate_ssh_key</code> 参数是 <code>True</code>时</td>
-          <td>SSH公钥字符串，如字符串2，详见脚注</td>
-      </tr>
-      <tr>
-          <td><strong>stderr</strong>                                                        string</td>
-          <td>当命令返回标准异常时</td>
-          <td>命令的标准异常，如<code>Group wheels does not exist</code></td>
-      </tr>
-      <tr>
-          <td><strong>stdout</strong>                                                       string</td>
-          <td>当命令返回标准输出时</td>
-          <td>命令的标准输出</td>
-      </tr>
-      <tr>
-          <td><strong>system</strong>                                                     boolean</td>
-          <td>当指定<code>system</code>参数并且用户账号不存在时</td>
-          <td>是否用户账号是系统账号</td>
-      </tr>
-      <tr>
-          <td><strong>uid</strong>                                                          integer</td>
-          <td>当指定<code>uid</code>参数时</td>
-          <td>用户账号的UID，如<code>1044</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>键</th>
+					<th>何时返回</th>
+					<th>描述说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>append</strong>                                                     boolean</td>
+					<td>当<code>state=present</code>并且用户存在时</td>
+					<td>是否添加用户到用户组中</td>
+			</tr>
+			<tr>
+					<td><strong>comment</strong>                                                     string</td>
+					<td>当用户存在时</td>
+					<td>用户的详细信息，通常是用户的名字</td>
+			</tr>
+			<tr>
+					<td><strong>create_home</strong>                                                     boolean</td>
+					<td>当用户不存在时，且不是check检查模式时</td>
+					<td>是否创建用户家目录</td>
+			</tr>
+			<tr>
+					<td><strong>force</strong>                                                     boolean</td>
+					<td>当<code>state=absent</code>并且用户存在时</td>
+					<td>是否强制删除用户帐户</td>
+			</tr>
+			<tr>
+					<td><strong>group</strong>                                                     integer</td>
+					<td>当用户存在时</td>
+					<td>用户的主组的ID，如<code>1001</code></td>
+			</tr>
+			<tr>
+					<td><strong>groups</strong>                                                     string</td>
+					<td>当<code>state=present</code>并且<code>groups</code>不为空时</td>
+					<td>用户的组列表，如<code>chrony,apache</code></td>
+			</tr>
+			<tr>
+					<td><strong>home</strong>                                                         string</td>
+					<td>当<code>state=present</code>时</td>
+					<td>用户家目录路径 ，如<code>/home/asmith</code></td>
+			</tr>
+			<tr>
+					<td><strong>move_home</strong>                                                     boolean</td>
+					<td>当<code>state=present</code>并且用户存在时</td>
+					<td>是否移动已经存在的家目录</td>
+			</tr>
+			<tr>
+					<td><strong>name</strong>                                                        string</td>
+					<td>一直返回</td>
+					<td>用户账号名称 ，如<code>asmith</code></td>
+			</tr>
+			<tr>
+					<td><strong>password</strong>                                                     string</td>
+					<td>当<code>state=present</code>并且<code>password</code>参数不为空时</td>
+					<td>密码的掩码字符串，如<code>NOT_LOGGING_PASSWORD</code></td>
+			</tr>
+			<tr>
+					<td><strong>remove</strong>                                                     boolean</td>
+					<td>当<code>state=absent</code>并且用户存在时</td>
+					<td>是否删除用户</td>
+			</tr>
+			<tr>
+					<td><strong>shell</strong>                                                          string</td>
+					<td>当<code>state=present</code>时</td>
+					<td>用户登陆shell，如<code>/bin/bash</code></td>
+			</tr>
+			<tr>
+					<td><strong>ssh_fingerprint</strong>                                                     string</td>
+					<td>当<code>generate_ssh_key</code> 参数是 <code>True</code>时</td>
+					<td>生成的SSH密钥的指纹，如字符串1，详见脚注</td>
+			</tr>
+			<tr>
+					<td><strong>ssh_key_file</strong>                                                     string</td>
+					<td>当<code>generate_ssh_key</code> 参数是 <code>True</code>时</td>
+					<td>SSH密钥文件的路径，如<code>/home/asmith/.ssh/id_rsa</code></td>
+			</tr>
+			<tr>
+					<td><strong>ssh_public_key</strong>                                                     string</td>
+					<td>当<code>generate_ssh_key</code> 参数是 <code>True</code>时</td>
+					<td>SSH公钥字符串，如字符串2，详见脚注</td>
+			</tr>
+			<tr>
+					<td><strong>stderr</strong>                                                        string</td>
+					<td>当命令返回标准异常时</td>
+					<td>命令的标准异常，如<code>Group wheels does not exist</code></td>
+			</tr>
+			<tr>
+					<td><strong>stdout</strong>                                                       string</td>
+					<td>当命令返回标准输出时</td>
+					<td>命令的标准输出</td>
+			</tr>
+			<tr>
+					<td><strong>system</strong>                                                     boolean</td>
+					<td>当指定<code>system</code>参数并且用户账号不存在时</td>
+					<td>是否用户账号是系统账号</td>
+			</tr>
+			<tr>
+					<td><strong>uid</strong>                                                          integer</td>
+					<td>当指定<code>uid</code>参数时</td>
+					<td>用户账号的UID，如<code>1044</code></td>
+			</tr>
+	</tbody>
 </table></div>
 <p>脚注说明：</p>
 <ul>

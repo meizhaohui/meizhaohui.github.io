@@ -690,30 +690,30 @@
 </ul>
 <h3 id="2-参数">2. 参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>Parameter参数</th>
-          <th>Comments 说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>fact_path</strong> path</td>
-          <td>远程主机事实文件 (<code>*.fact</code>)存放的路径.可以是可执行文件，也可以是<code>json</code>或<code>ini</code>格式的可读文件。 默认值: “/etc/ansible/facts.d”</td>
-      </tr>
-      <tr>
-          <td><strong>filter</strong> list / elements=string</td>
-          <td>需要过滤的<code>fact</code>事实列表. 默认值: []</td>
-      </tr>
-      <tr>
-          <td><strong>gather_subset</strong> list / elements=string</td>
-          <td>事实子集. 可取值: <code>all</code>, <code>all_ipv4_addresses</code>, <code>all_ipv6_addresses</code>, <code>apparmor</code>, <code>architecture</code>, <code>caps</code>, <code>chroot</code>,<code>cmdline</code>, <code>date_time</code>, <code>default_ipv4</code>, <code>default_ipv6</code>, <code>devices</code>, <code>distribution</code>, <code>distribution_major_version</code>, <code>distribution_release</code>, <code>distribution_version</code>, <code>dns</code>, <code>effective_group_ids</code>, <code>effective_user_id</code>, <code>env</code>, <code>facter</code>, <code>fips</code>, <code>hardware</code>, <code>interfaces</code>, <code>is_chroot</code>, <code>iscsi</code>, <code>kernel</code>, <code>local</code>, <code>lsb</code>, <code>machine</code>, <code>machine_id</code>, <code>mounts</code>, <code>network</code>, <code>ohai</code>, <code>os_family</code>, <code>pkg_mgr</code>, <code>platform</code>, <code>processor</code>, <code>processor_cores</code>, <code>processor_count</code>, <code>python</code>, <code>python_version</code>, <code>real_user_id</code>, <code>selinux</code>, <code>service_mgr</code>, <code>ssh_host_key_dsa_public</code>, <code>ssh_host_key_ecdsa_public</code>, <code>ssh_host_key_ed25519_public</code>, <code>ssh_host_key_rsa_public</code>, <code>ssh_host_pub_keys</code>, <code>ssh_pub_keys</code>, <code>system</code>, <code>system_capabilities</code>, <code>system_capabilities_enforced</code>, <code>user</code>, <code>user_dir</code>, <code>user_gecos</code>, <code>user_gid</code>, <code>user_id</code>, <code>user_shell</code>, <code>user_uid</code>, <code>virtual</code>, <code>virtualization_role</code>, <code>virtualization_type</code>. 可用多个值组成列表形成一个大的子集.也可以使用<code>!</code>表示取反，不包括对应的事实， 如: <code>!hardware,!network,!virtual,!ohai,!facter</code>.  <code>!all</code> 则表示只取最小的事实子集. 如果连最小的事实子集也不像要，则指定成 <code>!all,!min</code>. 为了收集指定事实，则可以使用 <code>!all,!min</code>, 并指定这些特定事实子集. 如果你不想展示某些事实，请使用<code>filter</code>参数。 默认值: “all”</td>
-      </tr>
-      <tr>
-          <td><strong>gather_timeout</strong> integer</td>
-          <td>超时时间(秒). 默认值: 10</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Parameter参数</th>
+					<th>Comments 说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>fact_path</strong> path</td>
+					<td>远程主机事实文件 (<code>*.fact</code>)存放的路径.可以是可执行文件，也可以是<code>json</code>或<code>ini</code>格式的可读文件。 默认值: “/etc/ansible/facts.d”</td>
+			</tr>
+			<tr>
+					<td><strong>filter</strong> list / elements=string</td>
+					<td>需要过滤的<code>fact</code>事实列表. 默认值: []</td>
+			</tr>
+			<tr>
+					<td><strong>gather_subset</strong> list / elements=string</td>
+					<td>事实子集. 可取值: <code>all</code>, <code>all_ipv4_addresses</code>, <code>all_ipv6_addresses</code>, <code>apparmor</code>, <code>architecture</code>, <code>caps</code>, <code>chroot</code>,<code>cmdline</code>, <code>date_time</code>, <code>default_ipv4</code>, <code>default_ipv6</code>, <code>devices</code>, <code>distribution</code>, <code>distribution_major_version</code>, <code>distribution_release</code>, <code>distribution_version</code>, <code>dns</code>, <code>effective_group_ids</code>, <code>effective_user_id</code>, <code>env</code>, <code>facter</code>, <code>fips</code>, <code>hardware</code>, <code>interfaces</code>, <code>is_chroot</code>, <code>iscsi</code>, <code>kernel</code>, <code>local</code>, <code>lsb</code>, <code>machine</code>, <code>machine_id</code>, <code>mounts</code>, <code>network</code>, <code>ohai</code>, <code>os_family</code>, <code>pkg_mgr</code>, <code>platform</code>, <code>processor</code>, <code>processor_cores</code>, <code>processor_count</code>, <code>python</code>, <code>python_version</code>, <code>real_user_id</code>, <code>selinux</code>, <code>service_mgr</code>, <code>ssh_host_key_dsa_public</code>, <code>ssh_host_key_ecdsa_public</code>, <code>ssh_host_key_ed25519_public</code>, <code>ssh_host_key_rsa_public</code>, <code>ssh_host_pub_keys</code>, <code>ssh_pub_keys</code>, <code>system</code>, <code>system_capabilities</code>, <code>system_capabilities_enforced</code>, <code>user</code>, <code>user_dir</code>, <code>user_gecos</code>, <code>user_gid</code>, <code>user_id</code>, <code>user_shell</code>, <code>user_uid</code>, <code>virtual</code>, <code>virtualization_role</code>, <code>virtualization_type</code>. 可用多个值组成列表形成一个大的子集.也可以使用<code>!</code>表示取反，不包括对应的事实， 如: <code>!hardware,!network,!virtual,!ohai,!facter</code>.  <code>!all</code> 则表示只取最小的事实子集. 如果连最小的事实子集也不像要，则指定成 <code>!all,!min</code>. 为了收集指定事实，则可以使用 <code>!all,!min</code>, 并指定这些特定事实子集. 如果你不想展示某些事实，请使用<code>filter</code>参数。 默认值: “all”</td>
+			</tr>
+			<tr>
+					<td><strong>gather_timeout</strong> integer</td>
+					<td>超时时间(秒). 默认值: 10</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-注意事项">3. 注意事项
 </h3><ul>

@@ -701,62 +701,62 @@
 </div><p>可以看到，除了管理端口8081监听了，8001、8002和8003端口也监听了。</p>
 <p>在第5篇中已经测试了三类仓库支持的docker pull和push操作情况：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>仓库类型</th>
-          <th style="text-align: left">仓库名称</th>
-          <th>HTTP端口号</th>
-          <th>HTTPS端口号</th>
-          <th style="text-align: left">支持docker操作</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>proxy代理仓库</td>
-          <td style="text-align: left">docker-proxy</td>
-          <td>8001</td>
-          <td>不设置</td>
-          <td style="text-align: left">pull</td>
-      </tr>
-      <tr>
-          <td>hosted本地仓库</td>
-          <td style="text-align: left">docker-hosted</td>
-          <td>8002</td>
-          <td>不设置</td>
-          <td style="text-align: left">pull、push</td>
-      </tr>
-      <tr>
-          <td>group聚合仓库</td>
-          <td style="text-align: left">docker-group</td>
-          <td>8003</td>
-          <td>不设置</td>
-          <td style="text-align: left">pull</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>仓库类型</th>
+					<th style="text-align: left">仓库名称</th>
+					<th>HTTP端口号</th>
+					<th>HTTPS端口号</th>
+					<th style="text-align: left">支持docker操作</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>proxy代理仓库</td>
+					<td style="text-align: left">docker-proxy</td>
+					<td>8001</td>
+					<td>不设置</td>
+					<td style="text-align: left">pull</td>
+			</tr>
+			<tr>
+					<td>hosted本地仓库</td>
+					<td style="text-align: left">docker-hosted</td>
+					<td>8002</td>
+					<td>不设置</td>
+					<td style="text-align: left">pull、push</td>
+			</tr>
+			<tr>
+					<td>group聚合仓库</td>
+					<td style="text-align: left">docker-group</td>
+					<td>8003</td>
+					<td>不设置</td>
+					<td style="text-align: left">pull</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>在第6篇中，我们使用Nginx代理Nexus，并配置SSL证书，通过<a class="link" href="https://nexus.hellogitlab.com/"  target="_blank" rel="noopener"
     >https://nexus.hellogitlab.com/</a>能够正常访问到Nexus web管理控制台，通过配置docker加速源 <a class="link" href="https://docker-registry.hellogitlab.com/"  target="_blank" rel="noopener"
     >https://docker-registry.hellogitlab.com/</a> 能够正常拉取docker官方镜像和docker-hosted本地仓库中的镜像，并且能够正常push推送镜像到Nexus的docker-hosted本地仓库中：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>域名</th>
-          <th>端口</th>
-          <th>代理地址</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>nexus.hellogitlab.com</td>
-          <td>80、443</td>
-          <td>nexushub.com:8080</td>
-      </tr>
-      <tr>
-          <td>docker-registry.hellogitlab.com</td>
-          <td>80、443</td>
-          <td>nexushub.com:8002、nexushub.com:8003</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>域名</th>
+					<th>端口</th>
+					<th>代理地址</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>nexus.hellogitlab.com</td>
+					<td>80、443</td>
+					<td>nexushub.com:8080</td>
+			</tr>
+			<tr>
+					<td>docker-registry.hellogitlab.com</td>
+					<td>80、443</td>
+					<td>nexushub.com:8002、nexushub.com:8003</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="2-现象说明">2. 现象说明
 </h3><h4 id="21-nexus-web页面显示">2.1 Nexus web页面显示

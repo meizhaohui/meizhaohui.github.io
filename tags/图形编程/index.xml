@@ -7,10 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 26 May 2026 23:05:16 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 31 May 2026 20:35:45 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8/</link>
-        <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
         
         <guid>https://hellogitlab.com/backend/c/newstylec_8/</guid>
         <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第8章" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第8章-图形编程基础&#34;&gt;换个姿势学C语言 第8章 图形编程基础
@@ -88,7 +88,30 @@
 &lt;/h5&gt;&lt;p&gt;图形来自人工绘制，例如平面设计师使用CorelDRAW进行广告设计，工程师使用AutoCAD设计机械部件。绘制的工具一般是鼠标，有时也可以使用绘图板。这种图形一般由各种点、线和多边线组成，它们被称为矢量图形。&lt;/p&gt;
 &lt;p&gt;这种图形可以拆解成很多个点、线和多边形，每一个缅怀部分都可以用基于数学方程的几何图元表示，绘图时只要描述各种形状和填充颜色即可，用这种方式描述图形的好处是文件体积比较小，而且使用专门的软件放大显示并不会影响清晰度（不会出现锯齿或马赛克）。&lt;/p&gt;
 &lt;h5 id=&#34;812-来自数据相机或扫描仪的位图&#34;&gt;8.1.2 来自数据相机或扫描仪的位图
-&lt;/h5&gt;&lt;p&gt;矢量图形并不适合描述来自真实世界的景象，因这它无法精确还原每一处细节。&lt;/p&gt;
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;矢量图形并不适合描述来自真实世界的景象，因此它无法精确还原每一处细节。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;来自现实世界的照片通常使用数码相机拍摄，或者使用胶片相机拍摄后再用扫描仪等设备输入计算机。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;图像传感器是一种矩形集成电路，在图像传感器上按矩形排列着大量感光元件，将画面分隔成若干个栅格，一个栅格被称为一个像素。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用三种基本颜料红（Red）、绿（Green）和蓝（Blue）以不同比例组合到一起调配出各种颜色。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;显示器在显示图片时采用同样的原理：将红绿蓝三原色的色光以不同的比例叠加，就可以产生各种颜色的光，在控制这些颜色比例时，每种颜色的最小值是0，最大值是255，因此理论上这三种基本颜色可以组合成256^3种颜色(16 772 216种)，几乎包括了人类视力所能感知的所有颜色。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;82-计算机是如何显示图形的&#34;&gt;8.2 计算机是如何显示图形的
+&lt;/h4&gt;&lt;p&gt;数据相片是按照一定的次序使用RGB色彩模型逐个描述每一个像素的颜色。计算机显示器要解决的问题是它要显示的内容是动态的、变化的。目前我们用到图形显示器可以分为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大型发光二级管显示屏。单色显示屏由单色发光二级管组成，由驱动电路决定每一个二极管的亮或灭。单色显示屏的颜色由发光二级管的颜色决定，人们当然不可能满足于单色显示，怎样才能实现发出各种颜色的光呢？最简单的方式是将三个不同的颜色的发光二极管放到一起并控制它们以不同的亮度发光，它们就可以组合成多种颜色。将三个独立的发光二极管放到一起难免会增加显示屏的体积。&lt;/li&gt;
+&lt;li&gt;OLED显示屏；&lt;/li&gt;
+&lt;li&gt;LCD显示屏。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

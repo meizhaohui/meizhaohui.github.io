@@ -657,74 +657,74 @@
 </ul>
 <h3 id="2-参数">2. 参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>age</code></td>
-          <td>string。选择年龄等于或大于指定时间的文件。使用负年龄则查找等于或小于指定时间的文件。<br />可使用seconds, minutes, hours, days, or weeks等单词，也可用首字母简写，如<code>1w</code></td>
-      </tr>
-      <tr>
-          <td><code>age_stamp</code></td>
-          <td>string,选择哪个时间作为比较属性，可选值为<code>atime</code>、<code>ctime</code>和<code>mtime</code>(默认)</td>
-      </tr>
-      <tr>
-          <td><code>contains</code></td>
-          <td>string,在文件内容中需要包含匹配的正则表达式或模式，只有当<code>file_type = file</code>才可用</td>
-      </tr>
-      <tr>
-          <td><code>depth</code></td>
-          <td>integer，查找的最大深度，默认无限制。当<code>recurse = no</code>时，深度为1</td>
-      </tr>
-      <tr>
-          <td><code>excludes</code></td>
-          <td>list/elements=string,需要排除的模式</td>
-      </tr>
-      <tr>
-          <td><code>file_type</code></td>
-          <td>string，文件类型，可选值为<code>any</code>、<code>directory</code>、<code>link</code>、<code>file</code>(默认)</td>
-      </tr>
-      <tr>
-          <td><code>follow</code></td>
-          <td>boolean,软链接跟随，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
-      </tr>
-      <tr>
-          <td><code>get_checksum</code></td>
-          <td>boolean,SHA1校验和，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
-      </tr>
-      <tr>
-          <td><code>hidden</code></td>
-          <td>boolean,查找隐藏文件，默认不查找，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
-      </tr>
-      <tr>
-          <td><code>paths</code></td>
-          <td>list / elements=string / required，查找路径，必须要绝对路径</td>
-      </tr>
-      <tr>
-          <td><code>patterns</code></td>
-          <td>list / elements=string,正则模式</td>
-      </tr>
-      <tr>
-          <td>``</td>
-          <td>boolean,将文件全部读入内存，可选值<code>no</code>/<code>yes</code>，默认<code>no</code>，设置为<code>yes</code>时对性能和内存有影响</td>
-      </tr>
-      <tr>
-          <td><code>recurse</code></td>
-          <td>boolean,递归查找文件，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
-      </tr>
-      <tr>
-          <td><code>size</code></td>
-          <td>string，文件大小，可单位 bytes but b, k, m, g, and t can be appended to specify bytes, kilobytes, megabytes, gigabytes, and terabytes</td>
-      </tr>
-      <tr>
-          <td><code>use_regex</code></td>
-          <td>boolean,是否用python正则，默认不用，即使用shell通配符，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>age</code></td>
+					<td>string。选择年龄等于或大于指定时间的文件。使用负年龄则查找等于或小于指定时间的文件。<br />可使用seconds, minutes, hours, days, or weeks等单词，也可用首字母简写，如<code>1w</code></td>
+			</tr>
+			<tr>
+					<td><code>age_stamp</code></td>
+					<td>string,选择哪个时间作为比较属性，可选值为<code>atime</code>、<code>ctime</code>和<code>mtime</code>(默认)</td>
+			</tr>
+			<tr>
+					<td><code>contains</code></td>
+					<td>string,在文件内容中需要包含匹配的正则表达式或模式，只有当<code>file_type = file</code>才可用</td>
+			</tr>
+			<tr>
+					<td><code>depth</code></td>
+					<td>integer，查找的最大深度，默认无限制。当<code>recurse = no</code>时，深度为1</td>
+			</tr>
+			<tr>
+					<td><code>excludes</code></td>
+					<td>list/elements=string,需要排除的模式</td>
+			</tr>
+			<tr>
+					<td><code>file_type</code></td>
+					<td>string，文件类型，可选值为<code>any</code>、<code>directory</code>、<code>link</code>、<code>file</code>(默认)</td>
+			</tr>
+			<tr>
+					<td><code>follow</code></td>
+					<td>boolean,软链接跟随，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
+			</tr>
+			<tr>
+					<td><code>get_checksum</code></td>
+					<td>boolean,SHA1校验和，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
+			</tr>
+			<tr>
+					<td><code>hidden</code></td>
+					<td>boolean,查找隐藏文件，默认不查找，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
+			</tr>
+			<tr>
+					<td><code>paths</code></td>
+					<td>list / elements=string / required，查找路径，必须要绝对路径</td>
+			</tr>
+			<tr>
+					<td><code>patterns</code></td>
+					<td>list / elements=string,正则模式</td>
+			</tr>
+			<tr>
+					<td>``</td>
+					<td>boolean,将文件全部读入内存，可选值<code>no</code>/<code>yes</code>，默认<code>no</code>，设置为<code>yes</code>时对性能和内存有影响</td>
+			</tr>
+			<tr>
+					<td><code>recurse</code></td>
+					<td>boolean,递归查找文件，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
+			</tr>
+			<tr>
+					<td><code>size</code></td>
+					<td>string，文件大小，可单位 bytes but b, k, m, g, and t can be appended to specify bytes, kilobytes, megabytes, gigabytes, and terabytes</td>
+			</tr>
+			<tr>
+					<td><code>use_regex</code></td>
+					<td>boolean,是否用python正则，默认不用，即使用shell通配符，可选值<code>no</code>/<code>yes</code>，默认<code>no</code></td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-官方示例">3. 官方示例
 </h3><div class="highlight"><div class="chroma">

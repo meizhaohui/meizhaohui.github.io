@@ -877,87 +877,87 @@
 <p>dig基本语法：<code>dig [@server] [domain] [query-type] [query-class] [query-options]</code></p>
 <p>参数说明:</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">参数</th>
-          <th style="text-align: left">说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>@server</code></td>
-          <td style="text-align: left">指定要查询的 DNS 服务器（如 <code>@8.8.8.8</code>）</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>domain</code></td>
-          <td style="text-align: left">要查询的域名（如 <code>example.com</code>）</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>query-type</code></td>
-          <td style="text-align: left">查询的记录类型（如 <code>A</code>, <code>MX</code>, <code>NS</code> 等）</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>query-class</code></td>
-          <td style="text-align: left">查询的类别（通常为 <code>IN</code> 表示 Internet最常用，互联网地址（IPv4/IPv6）、域名解析等核心场景，99% 的 DNS 查询都用这个）</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>query-options</code></td>
-          <td style="text-align: left">额外的查询选项</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th style="text-align: left">参数</th>
+					<th style="text-align: left">说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><code>@server</code></td>
+					<td style="text-align: left">指定要查询的 DNS 服务器（如 <code>@8.8.8.8</code>）</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>domain</code></td>
+					<td style="text-align: left">要查询的域名（如 <code>example.com</code>）</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>query-type</code></td>
+					<td style="text-align: left">查询的记录类型（如 <code>A</code>, <code>MX</code>, <code>NS</code> 等）</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>query-class</code></td>
+					<td style="text-align: left">查询的类别（通常为 <code>IN</code> 表示 Internet最常用，互联网地址（IPv4/IPv6）、域名解析等核心场景，99% 的 DNS 查询都用这个）</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>query-options</code></td>
+					<td style="text-align: left">额外的查询选项</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>常用查询类型:
 dig 支持查询多种 DNS 记录类型，以下是常见的记录类型：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">记录类型</th>
-          <th style="text-align: left">说明</th>
-          <th style="text-align: left">示例</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">A</td>
-          <td style="text-align: left">IPv4 地址记录</td>
-          <td style="text-align: left"><code>dig example.com A</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">AAAA</td>
-          <td style="text-align: left">IPv6 地址记录</td>
-          <td style="text-align: left"><code>dig example.com AAAA</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">MX</td>
-          <td style="text-align: left">邮件交换记录</td>
-          <td style="text-align: left"><code>dig example.com MX</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">NS</td>
-          <td style="text-align: left">域名服务器记录</td>
-          <td style="text-align: left"><code>dig example.com NS</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">CNAME</td>
-          <td style="text-align: left">规范名称记录</td>
-          <td style="text-align: left"><code>dig www.example.com CNAME</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">TXT</td>
-          <td style="text-align: left">文本记录</td>
-          <td style="text-align: left"><code>dig example.com TXT</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">SOA</td>
-          <td style="text-align: left">授权起始记录</td>
-          <td style="text-align: left"><code>dig example.com SOA</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">ANY</td>
-          <td style="text-align: left">所有记录</td>
-          <td style="text-align: left"><code>dig example.com ANY</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th style="text-align: left">记录类型</th>
+					<th style="text-align: left">说明</th>
+					<th style="text-align: left">示例</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">A</td>
+					<td style="text-align: left">IPv4 地址记录</td>
+					<td style="text-align: left"><code>dig example.com A</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">AAAA</td>
+					<td style="text-align: left">IPv6 地址记录</td>
+					<td style="text-align: left"><code>dig example.com AAAA</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">MX</td>
+					<td style="text-align: left">邮件交换记录</td>
+					<td style="text-align: left"><code>dig example.com MX</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">NS</td>
+					<td style="text-align: left">域名服务器记录</td>
+					<td style="text-align: left"><code>dig example.com NS</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">CNAME</td>
+					<td style="text-align: left">规范名称记录</td>
+					<td style="text-align: left"><code>dig www.example.com CNAME</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">TXT</td>
+					<td style="text-align: left">文本记录</td>
+					<td style="text-align: left"><code>dig example.com TXT</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">SOA</td>
+					<td style="text-align: left">授权起始记录</td>
+					<td style="text-align: left"><code>dig example.com SOA</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left">ANY</td>
+					<td style="text-align: left">所有记录</td>
+					<td style="text-align: left"><code>dig example.com ANY</code></td>
+			</tr>
+	</tbody>
 </table></div>
 </blockquote>
 <h4 id="22--dig与nslookup对比">2.2  dig与nslookup对比

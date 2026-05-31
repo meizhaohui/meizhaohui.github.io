@@ -1,25 +1,67 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hellogitlab.com/categories/blog/</loc>
-    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/blog/</loc>
-    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/categories/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
+    <loc>https://hellogitlab.com/categories/backend/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/backend/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://hellogitlab.com/en/categories/"
+                href="https://hellogitlab.com/en/categories/backend/"
                 />
+  </url><url>
+    <loc>https://hellogitlab.com/tags/backend/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/categories/c/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/c/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/categories/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
                 href="https://hellogitlab.com/categories/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/tags/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/backend/c/newstylec_8/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2026-05-31T20:35:45+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/categories/blog/</loc>
+    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/blog/</loc>
+    <lastmod>2026-02-20T23:56:51+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/more/blog/shortcodes-usage/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
@@ -30,137 +72,111 @@
     <loc>https://hellogitlab.com/tags/more/</loc>
     <lastmod>2026-05-26T22:45:23+08:00</lastmod>
   </url><url>
-    <loc>https://hellogitlab.com/tags/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/more/blog/create_hugo_blog/</loc>
     <lastmod>2026-02-20T23:56:51+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/categories/backend/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/backend/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/backend/"
-                />
   </url><url>
     <loc>https://hellogitlab.com/tags/channel/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/channel/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/channel/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/channel/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/channel/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/devops/cicd-pipeline/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/devops/cicd-pipeline/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/devops/cicd-pipeline/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/devops/cicd-pipeline/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/devops/cicd-pipeline/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/cicd/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/cicd/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/cicd/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/cicd/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/cicd/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/devops/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/devops/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/devops/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/devops/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/devops/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/docker/</loc>
     <lastmod>2026-03-15T20:16:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/docker/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/docker/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/docker/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/docker/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/docker/</loc>
     <lastmod>2026-03-15T20:16:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/docker/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/docker/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/docker/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/docker/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/devops/docker-deploy/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/devops/docker-deploy/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/devops/docker-deploy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/devops/docker-deploy/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/devops/docker-deploy/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/flask/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/flask/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/flask/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/flask/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/flask/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/flask/flask-intro/</loc>
@@ -170,104 +186,104 @@
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/gitlab-ci/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/gitlab-ci/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/gitlab-ci/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/gitlab-ci/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/golang/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/golang/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/golang/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/golang/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/golang/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/golang/golang-concurrency/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/golang/golang-concurrency/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/golang/golang-concurrency/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/golang/golang-concurrency/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/golang/golang-concurrency/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/goroutine/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/goroutine/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/goroutine/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/goroutine/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/goroutine/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/java/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/java/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/java/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/java/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/java/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/java/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/java/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/java/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/java/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/java/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/k8s/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/k8s/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/k8s/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/k8s/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/k8s/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/kubernetes/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/kubernetes/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/kubernetes/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/kubernetes/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/kubernetes/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/devops/kubernates/kubernetes-cluster/</loc>
@@ -277,52 +293,52 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/page/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/page/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/page/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/page/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/python/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/python/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/python/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/python/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/python/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/java/spring-boot-intro/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/java/spring-boot-intro/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/java/spring-boot-intro/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/java/spring-boot-intro/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/java/spring-boot-intro/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/spring-boot/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/spring-boot/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/spring-boot/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/spring-boot/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/spring-boot/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/web%E6%A1%86%E6%9E%B6/</loc>
@@ -332,13 +348,13 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/page/archives/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/page/archives/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/page/archives/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/page/archives/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</loc>
@@ -351,13 +367,13 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/page/search/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/page/search/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/page/search/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/page/search/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
@@ -367,130 +383,130 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/api/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/api/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/api/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/api/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/frontend/</loc>
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/frontend/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/frontend/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/frontend/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/frontend/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/javascript/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/javascript/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/javascript/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/javascript/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/javascript/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/linux/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/linux/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/linux/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/linux/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/linux/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/os/memory-management/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/os/memory-management/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/os/memory-management/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/os/memory-management/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/os/memory-management/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/os/</loc>
     <lastmod>2026-03-02T22:02:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/os/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/os/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/os/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/os/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/react/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/react/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/react/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/react/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/react/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/frontend/react-hooks/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/frontend/react-hooks/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/frontend/react-hooks/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/frontend/react-hooks/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/frontend/react-hooks/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/rest/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/rest/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/rest/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/rest/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/rest/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/rest-api/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/rest-api/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/rest-api/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/rest-api/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/rest-api/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%86%85%E5%AD%98/</loc>
@@ -500,26 +516,26 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/css/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/css/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/css/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/css/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/frontend/css-flexbox/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/frontend/css-flexbox/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/frontend/css-flexbox/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/frontend/css-flexbox/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/frontend/css-flexbox/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%B8%83%E5%B1%80/</loc>
@@ -532,13 +548,13 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/database-index/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/database-index/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/database-index/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/database-index/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/dba/database-index/</loc>
@@ -551,26 +567,26 @@
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/vue/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/vue/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/vue/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/vue/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/frontend/vue3-composition/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/frontend/vue3-composition/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/frontend/vue3-composition/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/frontend/vue3-composition/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/frontend/vue3-composition/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E5%AD%98%E5%82%A8/</loc>
@@ -586,13 +602,13 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/microservices/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/microservices/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/microservices/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/microservices/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</loc>
@@ -602,13 +618,13 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/os/filesystem/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/os/filesystem/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/os/filesystem/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/os/filesystem/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/tags/%E8%B0%83%E5%BA%A6/</loc>
@@ -621,13 +637,13 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/os/thread-scheduling/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/os/thread-scheduling/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/os/thread-scheduling/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/os/thread-scheduling/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/centos/</loc>
@@ -663,9 +679,6 @@
     <loc>https://hellogitlab.com/devops/coredns/deploy/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
   </url><url>
-    <loc>https://hellogitlab.com/tags/backend/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
-  </url><url>
     <loc>https://hellogitlab.com/tags/python/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
   </url><url>
@@ -674,18 +687,6 @@
   </url><url>
     <loc>https://hellogitlab.com/backend/python/use_loguru/</loc>
     <lastmod>2026-02-14T00:58:14+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/categories/c/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/c/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/backend/c/newstylec_8/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2026-05-26T23:05:16+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/etcd/</loc>
     <lastmod>2026-02-14T23:49:31+08:00</lastmod>
@@ -832,13 +833,13 @@
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/database/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/database/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/database/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/database/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/categories/mysql/</loc>
@@ -1700,13 +1701,13 @@
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/dba/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/dba/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/dba/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/dba/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/agent/deepseek/</loc>
@@ -1716,13 +1717,13 @@
     <lastmod>2026-02-14T17:57:01+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/devops/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/devops/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/devops/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/devops/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/devops/docker/</loc>
@@ -1744,26 +1745,26 @@
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/golang/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/golang/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/golang/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/golang/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/backend/java/</loc>
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/java/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/java/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/java/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/java/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/devops/jenkins/</loc>
@@ -1785,13 +1786,13 @@
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/python/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/python/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/python/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/python/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/dba/redis/</loc>
@@ -1822,13 +1823,13 @@
     <lastmod>2026-04-18T20:10:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/os/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/os/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/os/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/os/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/more/friendlink/</loc>
@@ -1844,26 +1845,26 @@
     <lastmod>2026-04-18T20:10:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/backend/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/backend/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/backend/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/backend/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/frontend/</loc>
     <lastmod>2026-04-18T20:10:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/frontend/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/frontend/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/frontend/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/frontend/"
                 />
   </url><url>
     <loc>https://hellogitlab.com/more/softexam/</loc>
@@ -1876,13 +1877,13 @@
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/"
+                hreflang="en"
+                href="https://hellogitlab.com/en/"
                 />
   </url>
 </urlset>

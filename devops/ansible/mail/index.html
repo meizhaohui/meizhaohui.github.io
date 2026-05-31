@@ -661,78 +661,78 @@
 </ul>
 <h3 id="2-参数">2. 参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>描述</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>attach    list</td>
-          <td>邮件附件，默认<code>[]</code></td>
-      </tr>
-      <tr>
-          <td>bcc   list</td>
-          <td>暗抄送，默认<code>[]</code></td>
-      </tr>
-      <tr>
-          <td>body   string</td>
-          <td>邮件主体，默认<code>$subject</code></td>
-      </tr>
-      <tr>
-          <td>cc   list</td>
-          <td>抄送，默认<code>[]</code></td>
-      </tr>
-      <tr>
-          <td>charset   string</td>
-          <td>邮件编码，默认<code>utf-8</code></td>
-      </tr>
-      <tr>
-          <td>from   string</td>
-          <td>邮件发送人，默认<code>root</code></td>
-      </tr>
-      <tr>
-          <td>headers   list</td>
-          <td>追加的头部信息</td>
-      </tr>
-      <tr>
-          <td>host   string</td>
-          <td>邮件服务器，默认<code>localhost</code></td>
-      </tr>
-      <tr>
-          <td>password   string</td>
-          <td>SMTP邮件服务器密码</td>
-      </tr>
-      <tr>
-          <td>port   integer</td>
-          <td>邮件服务器端口号，默认<code>25</code> ，有效端口号范围<code>[1, 65534]</code></td>
-      </tr>
-      <tr>
-          <td>secure   string</td>
-          <td>安全协议，可选值：<code>always</code>加密连接；<code>never</code>不使用SSL/TLS协议；<code>starttls</code>尝试SSL/TLS协议连接，如果不能这样则会失败；<code>try</code>尝试使用SSL/TLS协议连接，如果不能这样但不失败</td>
-      </tr>
-      <tr>
-          <td>subject   string</td>
-          <td>邮件主题，必须字段</td>
-      </tr>
-      <tr>
-          <td>subtype   string</td>
-          <td>类型，使用<code>html</code>还是默认的<code>plain</code>普通文本</td>
-      </tr>
-      <tr>
-          <td>timeout   integer</td>
-          <td>超时时间，默认<code>20</code>秒</td>
-      </tr>
-      <tr>
-          <td>to  list</td>
-          <td>收件人，默认<code>root</code></td>
-      </tr>
-      <tr>
-          <td>username   string</td>
-          <td>SMTP邮件服务器用户名</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>描述</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>attach    list</td>
+					<td>邮件附件，默认<code>[]</code></td>
+			</tr>
+			<tr>
+					<td>bcc   list</td>
+					<td>暗抄送，默认<code>[]</code></td>
+			</tr>
+			<tr>
+					<td>body   string</td>
+					<td>邮件主体，默认<code>$subject</code></td>
+			</tr>
+			<tr>
+					<td>cc   list</td>
+					<td>抄送，默认<code>[]</code></td>
+			</tr>
+			<tr>
+					<td>charset   string</td>
+					<td>邮件编码，默认<code>utf-8</code></td>
+			</tr>
+			<tr>
+					<td>from   string</td>
+					<td>邮件发送人，默认<code>root</code></td>
+			</tr>
+			<tr>
+					<td>headers   list</td>
+					<td>追加的头部信息</td>
+			</tr>
+			<tr>
+					<td>host   string</td>
+					<td>邮件服务器，默认<code>localhost</code></td>
+			</tr>
+			<tr>
+					<td>password   string</td>
+					<td>SMTP邮件服务器密码</td>
+			</tr>
+			<tr>
+					<td>port   integer</td>
+					<td>邮件服务器端口号，默认<code>25</code> ，有效端口号范围<code>[1, 65534]</code></td>
+			</tr>
+			<tr>
+					<td>secure   string</td>
+					<td>安全协议，可选值：<code>always</code>加密连接；<code>never</code>不使用SSL/TLS协议；<code>starttls</code>尝试SSL/TLS协议连接，如果不能这样则会失败；<code>try</code>尝试使用SSL/TLS协议连接，如果不能这样但不失败</td>
+			</tr>
+			<tr>
+					<td>subject   string</td>
+					<td>邮件主题，必须字段</td>
+			</tr>
+			<tr>
+					<td>subtype   string</td>
+					<td>类型，使用<code>html</code>还是默认的<code>plain</code>普通文本</td>
+			</tr>
+			<tr>
+					<td>timeout   integer</td>
+					<td>超时时间，默认<code>20</code>秒</td>
+			</tr>
+			<tr>
+					<td>to  list</td>
+					<td>收件人，默认<code>root</code></td>
+			</tr>
+			<tr>
+					<td>username   string</td>
+					<td>SMTP邮件服务器用户名</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-官方示例">3. 官方示例
 </h3><div class="highlight"><div class="chroma">
@@ -1003,22 +1003,22 @@
 </h4><p>我们使用阿里云企业邮箱发送邮件。对应的SMTP信息可参考：<a class="link" href="https://help.aliyun.com/document_detail/36576.html"  target="_blank" rel="noopener"
     >阿里邮箱IMAP、POP、SMTP地址和端口信息</a></p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>协议</th>
-          <th>服务器地址</th>
-          <th>服务器端口号(常规)</th>
-          <th style="text-align: left">服务器端口号(加密)</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>SMTP</td>
-          <td>smtp.qiye.aliyun.com</td>
-          <td>25</td>
-          <td style="text-align: left">465</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>协议</th>
+					<th>服务器地址</th>
+					<th>服务器端口号(常规)</th>
+					<th style="text-align: left">服务器端口号(加密)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>SMTP</td>
+					<td>smtp.qiye.aliyun.com</td>
+					<td>25</td>
+					<td style="text-align: left">465</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>推荐您使用加密端口连接，更加安全，使用时请注意加密端口是否已在您的本地电脑和网络中开放。</p>
 <p>编写剧本文件：</p>

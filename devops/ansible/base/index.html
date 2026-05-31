@@ -1349,30 +1349,30 @@
 </h3><p>为了便于后面在命令行工作时能够有效的区分是Ansible管理节点（master)还是受控节点(node1,node2,node3)之类的，我们将4台服务器的hostname修改一下。</p>
 <p>IP和主机名对应关系如下：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>IP地址</th>
-          <th>hostname</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>192.168.56.110</td>
-          <td>master.ansible.com</td>
-      </tr>
-      <tr>
-          <td>192.168.56.111</td>
-          <td>node1.ansible.com</td>
-      </tr>
-      <tr>
-          <td>192.168.56.112</td>
-          <td>node2.ansible.com</td>
-      </tr>
-      <tr>
-          <td>192.168.56.113</td>
-          <td>node3.ansible.com</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>IP地址</th>
+					<th>hostname</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>192.168.56.110</td>
+					<td>master.ansible.com</td>
+			</tr>
+			<tr>
+					<td>192.168.56.111</td>
+					<td>node1.ansible.com</td>
+			</tr>
+			<tr>
+					<td>192.168.56.112</td>
+					<td>node2.ansible.com</td>
+			</tr>
+			<tr>
+					<td>192.168.56.113</td>
+					<td>node3.ansible.com</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>以Ansible主机修改为例，展示修改过程：</p>
 <div class="highlight"><div class="chroma">
@@ -4857,50 +4857,50 @@
 <h4 id="152-常见模式">15.2 常见模式
 </h4><p>下表列出了常见模式与其对应的目标主机和组的信息：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>描述</th>
-          <th>模式</th>
-          <th>目标主机或组</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>所有主机</td>
-          <td>all (or *)</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>一个主机</td>
-          <td>host1</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>多个主机</td>
-          <td>host1:host2 (or host1,host2)</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>一个主机组</td>
-          <td>webservers</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>多个主机组</td>
-          <td>webservers:dbservers</td>
-          <td>webservers组和dbservers组中的所有主机</td>
-      </tr>
-      <tr>
-          <td>排除组</td>
-          <td>webservers:!atlanta</td>
-          <td>在webservers组中但不在atlanta组中的所有主机</td>
-      </tr>
-      <tr>
-          <td>组交集</td>
-          <td>webservers:&amp;staging</td>
-          <td>同时在webservers组和staging组的主机</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>描述</th>
+					<th>模式</th>
+					<th>目标主机或组</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>所有主机</td>
+					<td>all (or *)</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>一个主机</td>
+					<td>host1</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>多个主机</td>
+					<td>host1:host2 (or host1,host2)</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>一个主机组</td>
+					<td>webservers</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>多个主机组</td>
+					<td>webservers:dbservers</td>
+					<td>webservers组和dbservers组中的所有主机</td>
+			</tr>
+			<tr>
+					<td>排除组</td>
+					<td>webservers:!atlanta</td>
+					<td>在webservers组中但不在atlanta组中的所有主机</td>
+			</tr>
+			<tr>
+					<td>组交集</td>
+					<td>webservers:&amp;staging</td>
+					<td>同时在webservers组和staging组的主机</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>你可以使用英文逗号(<code>,</code>)或冒号(<code>:</code>)分隔主机系列，处理范围和IPv6地址时，首选逗号。</p>
 <p>一旦你知道基本的模式，你可以组合更加复杂的模式。</p>

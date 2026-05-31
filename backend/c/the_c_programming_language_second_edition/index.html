@@ -3260,75 +3260,75 @@
 </ul>
 <p>下表是ANSI C语言中的全部转义字符序列：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>转义字符</th>
-          <th style="text-align: left">ASCII码值(十进制)</th>
-          <th style="text-align: center">意义</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>\a</td>
-          <td style="text-align: left">007</td>
-          <td style="text-align: center">响铃符(BEL)</td>
-      </tr>
-      <tr>
-          <td>\b</td>
-          <td style="text-align: left">008</td>
-          <td style="text-align: center">退格符(BS)，将当前位置移到前一列</td>
-      </tr>
-      <tr>
-          <td>\f</td>
-          <td style="text-align: left">012</td>
-          <td style="text-align: center">换页符(FF)，将当前位置移到下页开头</td>
-      </tr>
-      <tr>
-          <td>\n</td>
-          <td style="text-align: left">010</td>
-          <td style="text-align: center">换行符(LF)，将当前位置移到下一行开头</td>
-      </tr>
-      <tr>
-          <td>\r</td>
-          <td style="text-align: left">013</td>
-          <td style="text-align: center">回车符(CR) ，将当前位置移到本行开头</td>
-      </tr>
-      <tr>
-          <td>\t</td>
-          <td style="text-align: left">009</td>
-          <td style="text-align: center">水平制表符(HT)</td>
-      </tr>
-      <tr>
-          <td>\v</td>
-          <td style="text-align: left">011</td>
-          <td style="text-align: center">垂直制表符(VT)</td>
-      </tr>
-      <tr>
-          <td>\\</td>
-          <td style="text-align: left">092</td>
-          <td style="text-align: center">反斜杠</td>
-      </tr>
-      <tr>
-          <td>\'</td>
-          <td style="text-align: left">039</td>
-          <td style="text-align: center">单引号</td>
-      </tr>
-      <tr>
-          <td>\&quot;</td>
-          <td style="text-align: left">034</td>
-          <td style="text-align: center">双引号</td>
-      </tr>
-      <tr>
-          <td>\ooo</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: center">八进制</td>
-      </tr>
-      <tr>
-          <td>\xhh</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: center">十六进制</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>转义字符</th>
+					<th style="text-align: left">ASCII码值(十进制)</th>
+					<th style="text-align: center">意义</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>\a</td>
+					<td style="text-align: left">007</td>
+					<td style="text-align: center">响铃符(BEL)</td>
+			</tr>
+			<tr>
+					<td>\b</td>
+					<td style="text-align: left">008</td>
+					<td style="text-align: center">退格符(BS)，将当前位置移到前一列</td>
+			</tr>
+			<tr>
+					<td>\f</td>
+					<td style="text-align: left">012</td>
+					<td style="text-align: center">换页符(FF)，将当前位置移到下页开头</td>
+			</tr>
+			<tr>
+					<td>\n</td>
+					<td style="text-align: left">010</td>
+					<td style="text-align: center">换行符(LF)，将当前位置移到下一行开头</td>
+			</tr>
+			<tr>
+					<td>\r</td>
+					<td style="text-align: left">013</td>
+					<td style="text-align: center">回车符(CR) ，将当前位置移到本行开头</td>
+			</tr>
+			<tr>
+					<td>\t</td>
+					<td style="text-align: left">009</td>
+					<td style="text-align: center">水平制表符(HT)</td>
+			</tr>
+			<tr>
+					<td>\v</td>
+					<td style="text-align: left">011</td>
+					<td style="text-align: center">垂直制表符(VT)</td>
+			</tr>
+			<tr>
+					<td>\\</td>
+					<td style="text-align: left">092</td>
+					<td style="text-align: center">反斜杠</td>
+			</tr>
+			<tr>
+					<td>\'</td>
+					<td style="text-align: left">039</td>
+					<td style="text-align: center">单引号</td>
+			</tr>
+			<tr>
+					<td>\&quot;</td>
+					<td style="text-align: left">034</td>
+					<td style="text-align: center">双引号</td>
+			</tr>
+			<tr>
+					<td>\ooo</td>
+					<td style="text-align: left">-</td>
+					<td style="text-align: center">八进制</td>
+			</tr>
+			<tr>
+					<td>\xhh</td>
+					<td style="text-align: left">-</td>
+					<td style="text-align: center">十六进制</td>
+			</tr>
+	</tbody>
 </table></div>
 <ul>
 <li>字符常量&rsquo;\0&rsquo;表示值为0的字符，也就是空字符(null)。</li>
@@ -11691,80 +11691,80 @@
 <h5 id="721-输出控制符">7.2.1 输出控制符
 </h5><p>printf函数基本的转换说明</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>序号</th>
-          <th>字符</th>
-          <th>意义</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td><code>d</code></td>
-          <td><code>int</code>类型，以十进制形式输出带符号整数(正数不输出符号)</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td><code>i</code></td>
-          <td>与<code>d</code>相同，以十进制形式输出带符号整数(正数不输出符号)</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>小写<code>o</code></td>
-          <td><code>int</code>类型，以八进制形式输出无符号整数(不输出前缀0)</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td>小写<code>x</code></td>
-          <td><code>int</code>类型，以十六进制形式输出无符号整数(不输出前缀0x),10-15分别用abcdef表示</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td>大写<code>X</code></td>
-          <td><code>int</code>类型，以十六进制形式输出无符号整数(不输出前缀0X),10-15分别用ABCDEF表示</td>
-      </tr>
-      <tr>
-          <td>6</td>
-          <td>小写<code>u</code></td>
-          <td><code>int</code>类型，以十进制形式输出无符号整数</td>
-      </tr>
-      <tr>
-          <td>7</td>
-          <td>小写<code>s</code></td>
-          <td><code>char *</code>类型，顺序打印字符串中的字符，走到遇到<code>\0</code>或已打印了由精度指定的字符数为止</td>
-      </tr>
-      <tr>
-          <td>8</td>
-          <td><code>f</code></td>
-          <td><code>double</code>类型，双精度实数，十进制小数[-]m.dddddd,其中d的个数由精度指定（默认值为6）</td>
-      </tr>
-      <tr>
-          <td>9</td>
-          <td><code>e</code>或<code>E</code></td>
-          <td><code>double</code>类型，双精度实数，以指数形式输出</td>
-      </tr>
-      <tr>
-          <td>10</td>
-          <td><code>g</code>或<code>G</code></td>
-          <td><code>double</code>类型，以%f或%e中较短的输出宽度输出双精度实数，如果指定小于-4或大于等于精度，则用<code>%e</code>或<code>%E</code>格式输出，否则用<code>%f</code>格式输出。尾部的0和小数点不打印</td>
-      </tr>
-      <tr>
-          <td>11</td>
-          <td>小写<code>p</code></td>
-          <td><code>void *</code>类型， 输出指针地址</td>
-      </tr>
-      <tr>
-          <td>12</td>
-          <td><code>%</code></td>
-          <td>不转换参数，打印一个百分号<code>%</code></td>
-      </tr>
-      <tr>
-          <td>13</td>
-          <td><code>c</code></td>
-          <td><code>int</code>类型，输出单个字符</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>序号</th>
+					<th>字符</th>
+					<th>意义</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td><code>d</code></td>
+					<td><code>int</code>类型，以十进制形式输出带符号整数(正数不输出符号)</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td><code>i</code></td>
+					<td>与<code>d</code>相同，以十进制形式输出带符号整数(正数不输出符号)</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>小写<code>o</code></td>
+					<td><code>int</code>类型，以八进制形式输出无符号整数(不输出前缀0)</td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td>小写<code>x</code></td>
+					<td><code>int</code>类型，以十六进制形式输出无符号整数(不输出前缀0x),10-15分别用abcdef表示</td>
+			</tr>
+			<tr>
+					<td>5</td>
+					<td>大写<code>X</code></td>
+					<td><code>int</code>类型，以十六进制形式输出无符号整数(不输出前缀0X),10-15分别用ABCDEF表示</td>
+			</tr>
+			<tr>
+					<td>6</td>
+					<td>小写<code>u</code></td>
+					<td><code>int</code>类型，以十进制形式输出无符号整数</td>
+			</tr>
+			<tr>
+					<td>7</td>
+					<td>小写<code>s</code></td>
+					<td><code>char *</code>类型，顺序打印字符串中的字符，走到遇到<code>\0</code>或已打印了由精度指定的字符数为止</td>
+			</tr>
+			<tr>
+					<td>8</td>
+					<td><code>f</code></td>
+					<td><code>double</code>类型，双精度实数，十进制小数[-]m.dddddd,其中d的个数由精度指定（默认值为6）</td>
+			</tr>
+			<tr>
+					<td>9</td>
+					<td><code>e</code>或<code>E</code></td>
+					<td><code>double</code>类型，双精度实数，以指数形式输出</td>
+			</tr>
+			<tr>
+					<td>10</td>
+					<td><code>g</code>或<code>G</code></td>
+					<td><code>double</code>类型，以%f或%e中较短的输出宽度输出双精度实数，如果指定小于-4或大于等于精度，则用<code>%e</code>或<code>%E</code>格式输出，否则用<code>%f</code>格式输出。尾部的0和小数点不打印</td>
+			</tr>
+			<tr>
+					<td>11</td>
+					<td>小写<code>p</code></td>
+					<td><code>void *</code>类型， 输出指针地址</td>
+			</tr>
+			<tr>
+					<td>12</td>
+					<td><code>%</code></td>
+					<td>不转换参数，打印一个百分号<code>%</code></td>
+			</tr>
+			<tr>
+					<td>13</td>
+					<td><code>c</code></td>
+					<td><code>int</code>类型，输出单个字符</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>以下是一个简单输出数字<code>47</code>在不同进制下的输出代码：</p>
 <div class="highlight"><div class="chroma">
@@ -12196,70 +12196,70 @@
 </ul>
 <p><code>scanf</code>类型说明符：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th style="text-align: center">序号</th>
-          <th style="text-align: center">类型</th>
-          <th style="text-align: center">合格的输入</th>
-          <th style="text-align: center">参数的类型</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: center">1</td>
-          <td style="text-align: center">%d</td>
-          <td style="text-align: center">十进制整数：数字前面的 + 或 - 号是可选的。</td>
-          <td style="text-align: center">int *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">2</td>
-          <td style="text-align: center">%i</td>
-          <td style="text-align: center">读入十进制，八进制，十六进制整数</td>
-          <td style="text-align: center">int *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">3</td>
-          <td style="text-align: center">%o</td>
-          <td style="text-align: center">八进制（以0开头）整数</td>
-          <td style="text-align: center">int *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">4</td>
-          <td style="text-align: center">%x、%X</td>
-          <td style="text-align: center">十六进制(可以0x或0X开头，也可以不以0x或0X开头)整数</td>
-          <td style="text-align: center">int *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">5</td>
-          <td style="text-align: center">%c</td>
-          <td style="text-align: center">读取一个字符</td>
-          <td style="text-align: center">char *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">6</td>
-          <td style="text-align: center">%s</td>
-          <td style="text-align: center">字符串。这将读取连续字符，直到遇到一个空白字符</td>
-          <td style="text-align: center">char *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">7</td>
-          <td style="text-align: center">%e、%E、%f、%F、%g、%G</td>
-          <td style="text-align: center">浮点数：包含了一个小数点、一个可选的前置符号 + 或 -、一个可选的后置字符 e 或 E，以及一个十进制数字。两个有效的实例 -732.103 和 7.12e4</td>
-          <td style="text-align: center">float *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">8</td>
-          <td style="text-align: center">%u</td>
-          <td style="text-align: center">无符号的十进制整数</td>
-          <td style="text-align: center">unsigned int *</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">9</td>
-          <td style="text-align: center">%%</td>
-          <td style="text-align: center">读 % 符号,不进行任何赋值操作</td>
-          <td style="text-align: center"></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th style="text-align: center">序号</th>
+					<th style="text-align: center">类型</th>
+					<th style="text-align: center">合格的输入</th>
+					<th style="text-align: center">参数的类型</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: center">1</td>
+					<td style="text-align: center">%d</td>
+					<td style="text-align: center">十进制整数：数字前面的 + 或 - 号是可选的。</td>
+					<td style="text-align: center">int *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">2</td>
+					<td style="text-align: center">%i</td>
+					<td style="text-align: center">读入十进制，八进制，十六进制整数</td>
+					<td style="text-align: center">int *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">3</td>
+					<td style="text-align: center">%o</td>
+					<td style="text-align: center">八进制（以0开头）整数</td>
+					<td style="text-align: center">int *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">4</td>
+					<td style="text-align: center">%x、%X</td>
+					<td style="text-align: center">十六进制(可以0x或0X开头，也可以不以0x或0X开头)整数</td>
+					<td style="text-align: center">int *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">5</td>
+					<td style="text-align: center">%c</td>
+					<td style="text-align: center">读取一个字符</td>
+					<td style="text-align: center">char *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">6</td>
+					<td style="text-align: center">%s</td>
+					<td style="text-align: center">字符串。这将读取连续字符，直到遇到一个空白字符</td>
+					<td style="text-align: center">char *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">7</td>
+					<td style="text-align: center">%e、%E、%f、%F、%g、%G</td>
+					<td style="text-align: center">浮点数：包含了一个小数点、一个可选的前置符号 + 或 -、一个可选的后置字符 e 或 E，以及一个十进制数字。两个有效的实例 -732.103 和 7.12e4</td>
+					<td style="text-align: center">float *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">8</td>
+					<td style="text-align: center">%u</td>
+					<td style="text-align: center">无符号的十进制整数</td>
+					<td style="text-align: center">unsigned int *</td>
+			</tr>
+			<tr>
+					<td style="text-align: center">9</td>
+					<td style="text-align: center">%%</td>
+					<td style="text-align: center">读 % 符号,不进行任何赋值操作</td>
+					<td style="text-align: center"></td>
+			</tr>
+	</tbody>
 </table></div>
 <h5 id="741-读取用户信息">7.4.1 读取用户信息
 </h5><p>在编写代码时，经常是需要输入用户信息，下面代码获取用户输入的系统名称以及打印标志，判断最后是否需要输出系统名称信息：</p>

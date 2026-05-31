@@ -668,96 +668,96 @@
 </ul>
 <h3 id="2-参数">2. 参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>参数</th>
-          <th>可选值</th>
-          <th>默认值</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>arguments</strong>                                                       string</td>
-          <td></td>
-          <td></td>
-          <td>命令行的附加参数。别名<code>args</code></td>
-      </tr>
-      <tr>
-          <td><strong>enabled</strong>                                                       boolean</td>
-          <td>yes/no</td>
-          <td></td>
-          <td>服务是否开机启动。<code>**enabled</code>和<code>state</code>两个参数至少需要指定一个。**</td>
-      </tr>
-      <tr>
-          <td><strong>name</strong>                                                       string                                              <strong>required</strong></td>
-          <td></td>
-          <td></td>
-          <td>必须参数，服务名称。</td>
-      </tr>
-      <tr>
-          <td><strong>pattern</strong>                                                       string</td>
-          <td></td>
-          <td></td>
-          <td>如果服务不响应·status·命令，请在<code>ps</code>命令的输出中找到要查找的子字符串，作为状态结果的替代。 如果找到该字符串，则将假定服务已启动。</td>
-      </tr>
-      <tr>
-          <td><strong>runlevel</strong>                                                       string</td>
-          <td></td>
-          <td><strong>Default:</strong> &ldquo;default&rdquo;</td>
-          <td>服务在运行层级。</td>
-      </tr>
-      <tr>
-          <td><strong>sleep</strong>                                                       integer</td>
-          <td></td>
-          <td></td>
-          <td>如果该服务正在重新启动，则在<code>stop</code>和<code>start</code>命令之间睡眠几秒钟。 这有助于解决行为异常的初始化脚本在发出停止进程的信号后立即退出问题。 并非所有服务管理器都支持睡眠功能，比如<code>systemd</code>将忽略此设置。</td>
-      </tr>
-      <tr>
-          <td><strong>state</strong>                                                       string</td>
-          <td><strong>Choices:</strong>                                                                                                                                                               reloaded                                                                                                                                                                                               restarted                                                                                                                                                                                               started                                                                                                                                                                                               stopped</td>
-          <td></td>
-          <td><code>started</code>/<code>stopped</code>是幂等动作，除非必要，否则将不会运行命令。   <code>restarted</code>重新启动将始终启动服务。 <code>reloaded</code>将始终重新加载配置文件(不用重启服务，直接重新加载配置文件，客户端感觉不到服务异常，平滑切换。)，并启动服务。 <strong><code>enabled</code>和<code>state</code>两个参数至少需要指定一个。</strong></td>
-      </tr>
-      <tr>
-          <td><strong>use</strong>                                                       string</td>
-          <td><strong>Default:</strong> &ldquo;auto&rdquo;</td>
-          <td></td>
-          <td>服务模块实际上使用的系统特定的模块，通常通过自动检测，此设置可以强制使用特定的模块。 通常使用<code>ansible_service_mgr</code>的值，并且在找不到匹配项时退回到旧的<code>service</code>模块。</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>参数</th>
+					<th>可选值</th>
+					<th>默认值</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>arguments</strong>                                                       string</td>
+					<td></td>
+					<td></td>
+					<td>命令行的附加参数。别名<code>args</code></td>
+			</tr>
+			<tr>
+					<td><strong>enabled</strong>                                                       boolean</td>
+					<td>yes/no</td>
+					<td></td>
+					<td>服务是否开机启动。<code>**enabled</code>和<code>state</code>两个参数至少需要指定一个。**</td>
+			</tr>
+			<tr>
+					<td><strong>name</strong>                                                       string                                              <strong>required</strong></td>
+					<td></td>
+					<td></td>
+					<td>必须参数，服务名称。</td>
+			</tr>
+			<tr>
+					<td><strong>pattern</strong>                                                       string</td>
+					<td></td>
+					<td></td>
+					<td>如果服务不响应·status·命令，请在<code>ps</code>命令的输出中找到要查找的子字符串，作为状态结果的替代。 如果找到该字符串，则将假定服务已启动。</td>
+			</tr>
+			<tr>
+					<td><strong>runlevel</strong>                                                       string</td>
+					<td></td>
+					<td><strong>Default:</strong> &ldquo;default&rdquo;</td>
+					<td>服务在运行层级。</td>
+			</tr>
+			<tr>
+					<td><strong>sleep</strong>                                                       integer</td>
+					<td></td>
+					<td></td>
+					<td>如果该服务正在重新启动，则在<code>stop</code>和<code>start</code>命令之间睡眠几秒钟。 这有助于解决行为异常的初始化脚本在发出停止进程的信号后立即退出问题。 并非所有服务管理器都支持睡眠功能，比如<code>systemd</code>将忽略此设置。</td>
+			</tr>
+			<tr>
+					<td><strong>state</strong>                                                       string</td>
+					<td><strong>Choices:</strong>                                                                                                                                                               reloaded                                                                                                                                                                                               restarted                                                                                                                                                                                               started                                                                                                                                                                                               stopped</td>
+					<td></td>
+					<td><code>started</code>/<code>stopped</code>是幂等动作，除非必要，否则将不会运行命令。   <code>restarted</code>重新启动将始终启动服务。 <code>reloaded</code>将始终重新加载配置文件(不用重启服务，直接重新加载配置文件，客户端感觉不到服务异常，平滑切换。)，并启动服务。 <strong><code>enabled</code>和<code>state</code>两个参数至少需要指定一个。</strong></td>
+			</tr>
+			<tr>
+					<td><strong>use</strong>                                                       string</td>
+					<td><strong>Default:</strong> &ldquo;auto&rdquo;</td>
+					<td></td>
+					<td>服务模块实际上使用的系统特定的模块，通常通过自动检测，此设置可以强制使用特定的模块。 通常使用<code>ansible_service_mgr</code>的值，并且在找不到匹配项时退回到旧的<code>service</code>模块。</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-返回值">3. 返回值
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>键</th>
-          <th>何时返回</th>
-          <th>描述信息</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>name</strong>                                    string</td>
-          <td>成功时</td>
-          <td>处理的服务的名称,如<code>&quot;name&quot;: &quot;httpd&quot;</code></td>
-      </tr>
-      <tr>
-          <td><strong>state</strong>                                     string</td>
-          <td>成功时</td>
-          <td>服务的当前状态，如<code>&quot;state&quot;: &quot;started&quot;</code></td>
-      </tr>
-      <tr>
-          <td><strong>status</strong>                                   dict</td>
-          <td>成功时</td>
-          <td>服务响应的<code>status</code>状态信息</td>
-      </tr>
-      <tr>
-          <td><strong>enabled</strong>                                bool</td>
-          <td>设置开机启动时</td>
-          <td>服务是否开机启动，如<code>&quot;enabled&quot;: true</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>键</th>
+					<th>何时返回</th>
+					<th>描述信息</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>name</strong>                                    string</td>
+					<td>成功时</td>
+					<td>处理的服务的名称,如<code>&quot;name&quot;: &quot;httpd&quot;</code></td>
+			</tr>
+			<tr>
+					<td><strong>state</strong>                                     string</td>
+					<td>成功时</td>
+					<td>服务的当前状态，如<code>&quot;state&quot;: &quot;started&quot;</code></td>
+			</tr>
+			<tr>
+					<td><strong>status</strong>                                   dict</td>
+					<td>成功时</td>
+					<td>服务响应的<code>status</code>状态信息</td>
+			</tr>
+			<tr>
+					<td><strong>enabled</strong>                                bool</td>
+					<td>设置开机启动时</td>
+					<td>服务是否开机启动，如<code>&quot;enabled&quot;: true</code></td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="4-官方示例">4. 官方示例
 </h3><div class="highlight"><div class="chroma">

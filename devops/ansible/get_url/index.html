@@ -657,106 +657,106 @@
 </ul>
 <h3 id="2-参数">2. 参数
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th style="text-align: left">参数</th>
-          <th>描述</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><code>attributes</code>  string</td>
-          <td>下载后的文件的文件属性，属性顺序应同<code>lsattr</code>展示的一样，默认使用<code>=</code>操作，如果要使用<code>+</code>或<code>-</code>操作则需要在字符串中说明</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>backup</code>  boolean</td>
-          <td>是否备份文件，默认<code>no</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>checksum</code>  string</td>
-          <td>校验文件，文件下载完成后校验其摘要的校验码是否与给定的相同</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>client_cert</code>  path</td>
-          <td>PEM格式的证书文件路径</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>client_key</code> path</td>
-          <td>PEM格式的私有key文件路径</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>dest</code> path/required</td>
-          <td>下载的文件存放的绝对路径,如果是文件夹，文件夹必须存在</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>force</code>  boolean</td>
-          <td>每次都下载并代理文件。通常只有要文件才设置为<code>yes</code>，默认<code>no</code>，即不强制下载</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>force_basic_auth</code> boolean</td>
-          <td>强制发送认证头，默认<code>no</code>不发送</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>group</code> string</td>
-          <td>下载文件的组属性，类似于<code>chown</code>操作</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>headers</code>  dictionary</td>
-          <td>添加自定义header头部到请求中</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>http_agent</code> string</td>
-          <td>标识以识别AS，通常出现在Web服务器日志中。默认值<code>ansible-httpget</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>mode</code>  raw</td>
-          <td>文件系统的权限模式</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>owner</code> string</td>
-          <td>文件的拥有者</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">se*</td>
-          <td>selevel、serole、setype、seuser配置略，请参考官方文档</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>timeout</code> integer</td>
-          <td>URL请求的超时秒数，默认10秒</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>tmp_dest</code> path</td>
-          <td>临时文件的绝对路径</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>unredirected_headers</code></td>
-          <td>不进行重定向的请求头名称的列表</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>unsafe_writes</code> boolean</td>
-          <td>不安全写，默认<code>no</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>url</code> string/required</td>
-          <td>请求的URL，`HTTP, HTTPS, or FTP URL in the form (http</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>url_password</code>  string</td>
-          <td>认证时使用的用户密码</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>url_username</code> string</td>
-          <td>认证时使用的用户名</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>use_proxy</code> boolean</td>
-          <td>使用代理，默认<code>yes</code></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><code>validate_certs</code> boolean</td>
-          <td>是否验证SSL证书，默认<code>yes</code>，自签名证书时可以设置为<code>no</code>不验证</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th style="text-align: left">参数</th>
+					<th>描述</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><code>attributes</code>  string</td>
+					<td>下载后的文件的文件属性，属性顺序应同<code>lsattr</code>展示的一样，默认使用<code>=</code>操作，如果要使用<code>+</code>或<code>-</code>操作则需要在字符串中说明</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>backup</code>  boolean</td>
+					<td>是否备份文件，默认<code>no</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>checksum</code>  string</td>
+					<td>校验文件，文件下载完成后校验其摘要的校验码是否与给定的相同</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>client_cert</code>  path</td>
+					<td>PEM格式的证书文件路径</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>client_key</code> path</td>
+					<td>PEM格式的私有key文件路径</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>dest</code> path/required</td>
+					<td>下载的文件存放的绝对路径,如果是文件夹，文件夹必须存在</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>force</code>  boolean</td>
+					<td>每次都下载并代理文件。通常只有要文件才设置为<code>yes</code>，默认<code>no</code>，即不强制下载</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>force_basic_auth</code> boolean</td>
+					<td>强制发送认证头，默认<code>no</code>不发送</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>group</code> string</td>
+					<td>下载文件的组属性，类似于<code>chown</code>操作</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>headers</code>  dictionary</td>
+					<td>添加自定义header头部到请求中</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>http_agent</code> string</td>
+					<td>标识以识别AS，通常出现在Web服务器日志中。默认值<code>ansible-httpget</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>mode</code>  raw</td>
+					<td>文件系统的权限模式</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>owner</code> string</td>
+					<td>文件的拥有者</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">se*</td>
+					<td>selevel、serole、setype、seuser配置略，请参考官方文档</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>timeout</code> integer</td>
+					<td>URL请求的超时秒数，默认10秒</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>tmp_dest</code> path</td>
+					<td>临时文件的绝对路径</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>unredirected_headers</code></td>
+					<td>不进行重定向的请求头名称的列表</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>unsafe_writes</code> boolean</td>
+					<td>不安全写，默认<code>no</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>url</code> string/required</td>
+					<td>请求的URL，`HTTP, HTTPS, or FTP URL in the form (http</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>url_password</code>  string</td>
+					<td>认证时使用的用户密码</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>url_username</code> string</td>
+					<td>认证时使用的用户名</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>use_proxy</code> boolean</td>
+					<td>使用代理，默认<code>yes</code></td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><code>validate_certs</code> boolean</td>
+					<td>是否验证SSL证书，默认<code>yes</code>，自签名证书时可以设置为<code>no</code>不验证</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="3-官方示例">3. 官方示例
 </h3><div class="highlight"><div class="chroma">
