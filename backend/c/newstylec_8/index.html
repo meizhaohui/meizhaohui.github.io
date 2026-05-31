@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_8/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-31T20:35:45&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-05-31T23:09:42&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第8章">
 <meta name="twitter:description" content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -488,6 +488,12 @@
               </ul>
             </li>
             <li><a href="#82-计算机是如何显示图形的">8.2 计算机是如何显示图形的</a></li>
+            <li><a href="#83-使用easyx图形库">8.3 使用EasyX图形库</a>
+              <ul>
+                <li><a href="#831--下载和安装easyx图形库">8.3.1  下载和安装EasyX图形库</a></li>
+                <li><a href="#832-初始化图形窗口并绘制一个白色的点">8.3.2 初始化图形窗口并绘制一个白色的点</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -637,7 +643,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -747,10 +753,190 @@
 <h4 id="82-计算机是如何显示图形的">8.2 计算机是如何显示图形的
 </h4><p>数据相片是按照一定的次序使用RGB色彩模型逐个描述每一个像素的颜色。计算机显示器要解决的问题是它要显示的内容是动态的、变化的。目前我们用到图形显示器可以分为：</p>
 <ul>
-<li>大型发光二级管显示屏。单色显示屏由单色发光二级管组成，由驱动电路决定每一个二极管的亮或灭。单色显示屏的颜色由发光二级管的颜色决定，人们当然不可能满足于单色显示，怎样才能实现发出各种颜色的光呢？最简单的方式是将三个不同的颜色的发光二极管放到一起并控制它们以不同的亮度发光，它们就可以组合成多种颜色。将三个独立的发光二极管放到一起难免会增加显示屏的体积。</li>
-<li>OLED显示屏；</li>
-<li>LCD显示屏。</li>
+<li>大型发光二级管显示屏。单色显示屏由单色发光二级管组成，由驱动电路决定每一个二极管的亮或灭。单色显示屏的颜色由发光二级管的颜色决定，人们当然不可能满足于单色显示，怎样才能实现发出各种颜色的光呢？最简单的方式是将三个不同的颜色的发光二极管放到一起并控制它们以不同的亮度发光，它们就可以组合成多种颜色。将三个独立的发光二极管放到一起难免会增加显示屏的体积。多彩发光二级管就是将这三个发光二极管封装到一起以减少每个像素所使用的器件体积。</li>
+<li>OLED显示屏；如果把发光二级管做得更小、更薄，就可以用于手机和计算机屏幕，一些手机就采用了被称为OLED的显示技术，这种发光二级光被称为有机发光二级管（Organic Ligth-Emitting Diode, OLED）,这种发光二级管可以做得很小、很薄。OLED屏幕上每一个像素都由三个发光二级管组成，它们各自的亮度决定了每一个像素的颜色。由于它们足够小，因此只有通过放大镜才能分辨每一个像素。如果一个显示屏长期显示一副画面，则屏幕上的发光二级管老化程度会不一样，这就带来OLED显示屏的硬伤，也就是俗称的“烧屏”。由于OLED显示屏是主动发光的，因此它可以做成透明的。</li>
+<li>LCD显示屏。LCD全称是液晶显示器（Liquid-Crystal Display， LCD）,与OLED不同的是LCD显示屏本身不发光，而是有一个白色的背光光源。LCD显示屏是通过薄膜晶体管控制液晶的偏转角度，进而能控制透过它的背光亮度。透过液晶层的背光再通过彩色滤光片，就变成三种强弱不同的色光，进而组合成种种颜色。</li>
 </ul>
+<h4 id="83-使用easyx图形库">8.3 使用EasyX图形库
+</h4><p>在程序中绘制图形，本质上是在和显卡打交道。向显卡中写入数据会改变显示的内容：在显示文本时，将文本的ASCII码值送入显存指定位置就可以了；而在显示图片时只需要将每个像素的RGB颜色值送入指定的显示位置即可，显卡的GPU会根据显示中的内容驱动显示器显示图形。</p>
+<p>遗憾的是，现代操作系统基本上都禁止直接操作显卡和访问显卡（这可能导致硬件损坏或操作系统崩溃），绘制图形必须通过操作系统提供的应用程序接口或其他图形库进行！</p>
+<p>微软提供了DirectDraw图形库用于绘制图形。但它对于我们来说较为复杂。因此我们选择对初学者更为友好的EasyX图形库。</p>
+<h5 id="831--下载和安装easyx图形库">8.3.1  下载和安装EasyX图形库
+</h5><p>直接访问 <a class="link" href="https://easyx.cn/"  target="_blank" rel="noopener"
+    >https://easyx.cn/</a> 点击右侧的【下载EasyX】即可下载：</p>
+<p><img src="/img/Snipaste_2026-05-31_22-28-04.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-31_22-28-04.png"
+	
+	
+></p>
+<p>双击下载好的安装文件，如<code>EasyX_26.1.1.exe</code>，开始安装：</p>
+<p><img src="/img/Snipaste_2026-05-31_22-29-08.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-31_22-29-08.png"
+	
+	
+></p>
+<p>点击【下一步】，尝试选择我们使用的VS2022：</p>
+<p><img src="/img/Snipaste_2026-05-31_22-53-31.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-31_22-53-31.png"
+	
+	
+></p>
+<p>可以看到，无法选择。</p>
+<p>但在官网可以查看：Zip 版本：EasyX 所有版本都支持将安装包的 .exe 扩展名修改为 .7z，直接解压缩需要的库文件。</p>
+<p>也就是可以直接将安装文件重命名为<code>.7z</code>文件，然后解压，解压后就可以得到头文件和库文件。</p>
+<p><img src="/img/Snipaste_2026-05-31_22-57-05.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-31_22-57-05.png"
+	
+	
+></p>
+<p>解压后，文件夹中有多个文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">./include/easyx.h
+</span></span><span class="line"><span class="cl">./include/graphics.h
+</span></span><span class="line"><span class="cl">./lib/VC2008/x64/EasyXa.lib
+</span></span><span class="line"><span class="cl">./lib/VC2008/x64/EasyXw.lib
+</span></span><span class="line"><span class="cl">./lib/VC2008/x86/EasyXa.lib
+</span></span><span class="line"><span class="cl">./lib/VC2008/x86/EasyXw.lib
+</span></span><span class="line"><span class="cl">./lib/VC2015/x64/EasyXa.lib
+</span></span><span class="line"><span class="cl">./lib/VC2015/x64/EasyXw.lib
+</span></span><span class="line"><span class="cl">./lib/VC2015/x86/EasyXa.lib
+</span></span><span class="line"><span class="cl">./lib/VC2015/x86/EasyXw.lib
+</span></span><span class="line"><span class="cl">./lib/VC6/x86/EasyXa.lib
+</span></span><span class="line"><span class="cl">./lib/VC6/x86/EasyXw.lib
+</span></span><span class="line"><span class="cl">./readme.txt
+</span></span><span class="line"><span class="cl">./Setup.exe
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们将这4个文件复制到<code>D:\BC101\Libraries\EasyX</code>目录下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">./include/easyx.h
+</span></span><span class="line"><span class="cl">./include/graphics.h
+</span></span><span class="line"><span class="cl">./lib/VC2015/x86/EasyXa.lib
+</span></span><span class="line"><span class="cl">./lib/VC2015/x86/EasyXw.lib
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后像之前一样配置附加包含目录，附加库目录、强制输出等信息。</p>
+<h5 id="832-初始化图形窗口并绘制一个白色的点">8.3.2 初始化图形窗口并绘制一个白色的点
+</h5><p>创建新的项目，其代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CPP" data-lang="CPP"><span class="line"><span class="cl"><span class="c1">// L08_01_PUT_PIXEL.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 忽略scanf不安全告警
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 屏蔽scanf返回值被忽略警告
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable: 6031)
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 附加包含目录已经添加 D:/BC101/Libraries/EasyX
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 此处引入自定义的静态库的头文件需要相对路径
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;graphics.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// #pragma comment：VS 编译器专用指令，给编译器发命令
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      lib：表示我要链接一个静态库
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/EasyXa.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      路径/EasyXw.lib&#34;：库文件在哪里
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 链接器--附加库目录，加上D:\BC101\Libraries\EasyX 目录
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib,&#34;EasyXa.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">initgraph</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">putpixel</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">16777215</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">getchar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行程序后，可以看到这样一个窗口：</p>
+<p><img src="/img/Snipaste_2026-05-31_23-08-45.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-05-31_23-08-45.png"
+	
+	
+></p>
 
 </section>
 
@@ -790,7 +976,7 @@
 
 
         <span>
-            最后更新于 2026年05月31日 20:35
+            最后更新于 2026年05月31日 23:09
         </span>
     </section></footer>
 
