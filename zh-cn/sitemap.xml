@@ -3,6 +3,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hellogitlab.com/categories/</loc>
+    <lastmod>2026-06-08T19:57:51+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/categories/centos/</loc>
+    <lastmod>2026-06-08T19:57:51+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/centos/</loc>
+    <lastmod>2026-06-08T19:57:51+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/categories/os/</loc>
+    <lastmod>2026-06-08T19:57:51+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/categories/os/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/categories/os/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/tags/os/</loc>
+    <lastmod>2026-06-08T19:57:51+08:00</lastmod>
+  </url><url>
+    <loc>https://hellogitlab.com/tags/</loc>
+    <lastmod>2026-06-08T19:57:51+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://hellogitlab.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://hellogitlab.com/en/tags/"
+                />
+  </url><url>
+    <loc>https://hellogitlab.com/os/centos/server_noise_reduction_processing/</loc>
+    <lastmod>2026-06-08T19:57:51+08:00</lastmod>
+  </url><url>
     <loc>https://hellogitlab.com/categories/backend/</loc>
     <lastmod>2026-05-31T23:09:42+08:00</lastmod>
     <xhtml:link
@@ -24,32 +75,6 @@
   </url><url>
     <loc>https://hellogitlab.com/tags/c/</loc>
     <lastmod>2026-05-31T23:09:42+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/categories/</loc>
-    <lastmod>2026-05-31T23:09:42+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/"
-                />
-  </url><url>
-    <loc>https://hellogitlab.com/tags/</loc>
-    <lastmod>2026-05-31T23:09:42+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/tags/"
-                />
   </url><url>
     <loc>https://hellogitlab.com/backend/c/newstylec_8/</loc>
     <lastmod>2026-05-31T23:09:42+08:00</lastmod>
@@ -444,19 +469,6 @@
                 href="https://hellogitlab.com/en/os/memory-management/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/categories/os/</loc>
-    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://hellogitlab.com/categories/os/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://hellogitlab.com/en/categories/os/"
-                />
-  </url><url>
     <loc>https://hellogitlab.com/tags/react/</loc>
     <lastmod>2026-02-13T00:06:07+08:00</lastmod>
     <xhtml:link
@@ -646,17 +658,8 @@
                 href="https://hellogitlab.com/en/os/thread-scheduling/"
                 />
   </url><url>
-    <loc>https://hellogitlab.com/categories/centos/</loc>
-    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/centos/</loc>
-    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
-  </url><url>
     <loc>https://hellogitlab.com/os/centos/dig/</loc>
     <lastmod>2026-02-14T15:28:30+08:00</lastmod>
-  </url><url>
-    <loc>https://hellogitlab.com/tags/os/</loc>
-    <lastmod>2026-03-02T22:02:19+08:00</lastmod>
   </url><url>
     <loc>https://hellogitlab.com/categories/ci/</loc>
     <lastmod>2026-03-15T20:16:27+08:00</lastmod>
