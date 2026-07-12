@@ -553,7 +553,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -1684,8 +1684,8 @@ Ext4的单个目录文件超过200W个，性能下降的就比较厉害了。</p
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dest</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;{{ item.dest }}&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">hard</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">loop</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">src: x, dest</span><span class="p">:</span><span class="w"> </span><span class="kc">y</span><span class="w"> </span>}<span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">src: z, dest</span><span class="p">:</span><span class="w"> </span><span class="l">k }</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">src</span><span class="p">:</span><span class="w"> </span><span class="nt">x, dest</span><span class="p">:</span><span class="w"> </span><span class="kc">y</span><span class="w"> </span>}<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">src</span><span class="p">:</span><span class="w"> </span><span class="nt">z, dest</span><span class="p">:</span><span class="w"> </span><span class="l">k }</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Touch a file, using symbolic modes to set the permissions (equivalent to 0644)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ansible.builtin.file</span><span class="p">:</span><span class="w">

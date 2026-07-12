@@ -547,7 +547,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -940,7 +940,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/etc/sudoers</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">regexp</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;^%ADMIN ALL=&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">line: &#39;%ADMIN ALL=(ALL) NOPASSWD</span><span class="p">:</span><span class="w"> </span><span class="l">ALL&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">line</span><span class="p">:</span><span class="w"> </span><span class="nt">&#39;%ADMIN ALL=(ALL) NOPASSWD</span><span class="p">:</span><span class="w"> </span><span class="l">ALL&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">validate</span><span class="p">:</span><span class="w"> </span><span class="l">/usr/sbin/visudo -cf %s</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="c">## See https://docs.python.org/3/library/re.html for further details on syntax</span><span class="w">
@@ -1833,7 +1833,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Add download URL to nginx conf</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">ansible.builtin.lineinfile</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/etc/nginx/nginx.conf</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">insertbefore: &#39;^#   \* Official Russian Documentation</span><span class="p">:</span><span class="w"> </span><span class="l">http://nginx.org/ru/docs/&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">insertbefore</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;^#   \* Official Russian Documentation: http://nginx.org/ru/docs/&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">line</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#  * Download Nginx: http://nginx.org/en/download.html&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">backup</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">

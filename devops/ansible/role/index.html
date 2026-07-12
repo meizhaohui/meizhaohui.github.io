@@ -554,7 +554,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -1390,8 +1390,8 @@ When using vars: within the roles: section of a playbook, the variables are adde
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl">- <span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l">webservers</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">roles</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">role: foo, message</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;first&#34;</span><span class="w"> </span>}<span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">role: foo, message</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;second&#34;</span><span class="w"> </span>}<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="nt">foo, message</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;first&#34;</span><span class="w"> </span>}<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="nt">foo, message</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;second&#34;</span><span class="w"> </span>}<span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>下面的语法也可以运行<code>foo</code>角色任务两次：</p>

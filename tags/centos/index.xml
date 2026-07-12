@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Mon, 08 Jun 2026 19:57:51 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/centos/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Jul 2026 19:44:21 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/centos/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>服务器降噪处理方法</title>
         <link>https://hellogitlab.com/os/centos/server_noise_reduction_processing/</link>
         <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
         
         <guid>https://hellogitlab.com/os/centos/server_noise_reduction_processing/</guid>
-        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 服务器降噪处理方法" /&gt;&lt;h2 id=&#34;华为服务器降噪处理方法&#34;&gt;华为服务器降噪处理方法
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 服务器降噪处理方法" /&gt;&lt;h2 id=&#34;1-华为服务器降噪处理方法&#34;&gt;1 华为服务器降噪处理方法
 &lt;/h2&gt;&lt;h3 id=&#34;11-本地电脑配置说明&#34;&gt;1.1 本地电脑配置说明
 &lt;/h3&gt;&lt;p&gt;关闭自己电脑WIFI无线网。用网线连接服务器和自己电脑，然后以太网配置IP信息：&lt;/p&gt;
 &lt;ul&gt;

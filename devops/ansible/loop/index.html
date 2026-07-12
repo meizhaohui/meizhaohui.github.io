@@ -556,7 +556,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -1328,8 +1328,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l">present</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">groups</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ item.groups }}&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">loop</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">name: &#39;testuser1&#39;, groups</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;wheel&#39;</span><span class="w"> </span>}<span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">name: &#39;testuser2&#39;, groups</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="w"> </span>}<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nt">&#39;testuser1&#39;, groups</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;wheel&#39;</span><span class="w"> </span>}<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- {<span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nt">&#39;testuser2&#39;, groups</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="w"> </span>}<span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以看到，通过<code>item.name</code>或<code>item.groups</code>就可以访问列表子项的<code>name</code>和<code>groups</code>属性了。</p>
