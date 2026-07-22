@@ -746,6 +746,8 @@
 	
 	
 &gt;&lt;/p&gt;
+&lt;h5 id=&#34;842-控制绘图颜色&#34;&gt;8.4.2 控制绘图颜色
+&lt;/h5&gt;&lt;p&gt;当前&lt;code&gt;drawHorizontalLine&lt;/code&gt;和&lt;code&gt;drawVerticalLine&lt;/code&gt;函数都只能绘制白色的线，但如果要绘制不同颜色的线，则需要如何处理呢？线的程序中我们使用16777215表示白色，这个数字是如何得到的呢？&lt;/p&gt;
 </description>
         </item>
         <item>
