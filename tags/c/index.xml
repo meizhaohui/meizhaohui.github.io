@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Wed, 22 Jul 2026 21:17:53 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 22 Jul 2026 22:35:25 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8/</link>
         <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
@@ -749,6 +749,32 @@
 &gt;&lt;/p&gt;
 &lt;h5 id=&#34;842-控制绘图颜色&#34;&gt;8.4.2 控制绘图颜色
 &lt;/h5&gt;&lt;p&gt;当前&lt;code&gt;drawHorizontalLine&lt;/code&gt;和&lt;code&gt;drawVerticalLine&lt;/code&gt;函数都只能绘制白色的线，但如果要绘制不同颜色的线，则需要如何处理呢？线的程序中我们使用16777215表示白色，这个数字是如何得到的呢？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;屏幕上每一个像素都是由3种颜色的色块组成，这三种颜色是红色Red、绿色Green和蓝色Blue，简称RGB。&lt;/li&gt;
+&lt;li&gt;对于组成像素的3个色块而言，每一个色块的亮度值范围是0~255，当值是255时色块最亮，值为0时色块最暗，这3个色块分别对应显存中的一字节。因此，在计算机中至少需要3字节来描述一个像素点的颜色，而实际上一般使用4字节。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;8421-rgba色彩模型&#34;&gt;8.4.2.1 RGBA色彩模型
+&lt;/h6&gt;&lt;p&gt;在描述一个像素的颜色时，计算机可以使用RGBA色彩模型。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在这种模式中，一个像素点使用4字节来描述，前3字节分别表示红色R、绿色G和蓝色B，最后一个字节被称为“阿尔法(Alpha)通道”，用于表示透明度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因此在显存中是使用4字节描述一个像素点的颜色的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C语言中没有专门用于存储颜色值的数据类型，但任何占用4字节的数据类型都可以存储颜色值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数在内存中是按照低字节在前，高字节在后的次序存储的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;putpixel(x, y, 16777215);&lt;/code&gt;函数本质上是向显存中指定位置传送 16777215 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;16777215 被送入对应的显存地址后，第1字节作为红色的颜色分量，第2字节作为绿色的颜色分量，第3字节作为蓝色的颜色分量，第4字节作为透明度，因为这三种颜色的值都是255，均为最亮的状态，于是屏幕上就显示了白色的点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
