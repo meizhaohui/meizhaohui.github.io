@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/more/blog/build_your_vitepress_blog/'>
 
-<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="VitePress从零开始搭建自己的博客基础配置">
+<link rel="stylesheet" href="/scss/style.min.55b5092a1b0540d213f11172f3f142bee5269e846b438b13c7defe1e0f97443c.css"><meta property='og:title' content="VitePress从零开始搭建自己的博客基础配置">
 <meta property='og:description' content="VitePress从零开始搭建自己的博客 基础配置 0. 为什么要使用VitePress搭建博客 主要有以下两个原因：\n随着我博客文章越来越多后，使用vuepress本地编译时非常慢，经常编译的时候会出现 JavaScript heap out of memory异常，导致本地查看博客效果时，非常的折腾。 服务端端会定时检查博客是否有更新，有更新就会自动编译，但编译时也会出现 JavaScript heap out of memory异常，博客就不能第一时间显示在网站上，需要我手动去重新执行脚本编译。 内存泄露的问题仍然存在！！\nVitePress是什么？\n参考: vitePress快速搭建及部署一个博客\n什么是 VitePress？\nVitePress 是 VuePress 的小弟弟，但是vitepress是在 Vite 上构建的。\n动机\n主要是因为太慢！但是不怪 VuePress，怪 Webpack！\nVite 则非常好的解决了问题：\n1.几乎实时的服务启动\n2.根据需要编译页面\n3.非常轻量快速的 HMR（热模块重载）\n另外，本身 VuePress 一些设计问题一直没有时间去修复，正好这次做个大重构。\n改进的地方\n1.利用了 Vue 3 的改进的模板静态分析来尽可能字符串化静态内容\n2.静态内容以字符串模式而不是渲染函数代码发送，JS 负载更便宜，注水（SSR 时生成 js 交互逻辑代码）也更快\n3.这些优化仍然允许在 markdown 中混合使用 Vue 组件，编译器会帮你处理静态/动态分离工作\n4.使用了 Vite\n5.更快的 dev 服务器启动\n6.更快的热更新\n7.更快的构建（使用 Rollup）\n更轻量的页面\nVue 3 + Rollup 代码分离 不会把所有页面的元数据都在一个请求中发送出去。客户端导航时再一起获得新页面的组件及元数据\n">
 <meta property='og:url' content='https://hellogitlab.com/more/blog/build_your_vitepress_blog/'>
 <meta property='og:site_name' content='编程技术分享'>

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/cron/'>
 
-<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="cron定时任务模块">
+<link rel="stylesheet" href="/scss/style.min.55b5092a1b0540d213f11172f3f142bee5269e846b438b13c7defe1e0f97443c.css"><meta property='og:title' content="cron定时任务模块">
 <meta property='og:description' content="cron定时任务模块 cron模块可以在远程主机上面创建定时任务，有点类似于crontab命令。\n参考：\nhttps://docs.ansible.com/ansible/latest/modules/cron_module.html https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/cron.py 一般在在linux系统上面都有crontab命令，也可以查看其配置示例：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 [ansible@master ~]$ cat /etc/crontab SHELL=/bin/bash PATH=/sbin:/bin:/usr/sbin:/usr/bin MAILTO=root ## For details see man 4 crontabs ## Example of job definition: ## .---------------- minute (0 - 59) ## | .------------- hour (0 - 23) ## | | .---------- day of month (1 - 31) ## | | | .------- month (1 - 12) OR jan,feb,mar,apr ... ## | | | | .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat ## | | | | | ## * * * * * user-name command to be executed 我们现在来了解一下Ansible的定时任务cron模块。\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/cron/'>
 <meta property='og:site_name' content='编程技术分享'>

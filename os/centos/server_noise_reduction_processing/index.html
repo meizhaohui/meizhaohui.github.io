@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/os/centos/server_noise_reduction_processing/'>
 
-<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="服务器降噪处理方法">
+<link rel="stylesheet" href="/scss/style.min.55b5092a1b0540d213f11172f3f142bee5269e846b438b13c7defe1e0f97443c.css"><meta property='og:title' content="服务器降噪处理方法">
 <meta property='og:description' content="1 华为服务器降噪处理方法 1.1 本地电脑配置说明 关闭自己电脑WIFI无线网。用网线连接服务器和自己电脑，然后以太网配置IP信息：\nIP: 192.168.0.100 子网掩码：255.255.255.0 使用mobaxterm ssh连接到管理服务器:\n账号：root 密码：yx123&hellip; 可以浏览器登陆 https://192.168.0.102/index.php 查看管理信息。\n服务器配置信息：\n华为RH1288v3/2288v31288Hv5/2288Hv5二手2U机架式服务器数据虚拟化存储 2288V3配置三。\n1.2 命令行处理降噪 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 $ ssh root@192.168.0.102 iBMC:/-&gt;ipmcget -d faninfo Current mode: auto # 设置手动永久 with parameter [timeout], timeout range &lt;0-100000000&gt;,(0 means max timeout) iBMC:/-&gt;ipmcset -d fanmode -v 1 100000000 Set fan mode successfully. Current Mode: manual Time out : 10000000 seconds # 设置最低20% iBMC:/-&gt;ipmcset -d fanlevel -v 20 Set fan level successfully. Current Mode: manual, timeout 99999975 seconds. Manual Fan Level: 20% # 再次查看 iBMC:/-&gt;ipmcget -d faninfo Current mode: manual,timeout 99999962 seconds. Manual fan level is 20. 1 0000 0000秒 约为3.17年。\n">
 <meta property='og:url' content='https://hellogitlab.com/os/centos/server_noise_reduction_processing/'>
 <meta property='og:site_name' content='编程技术分享'>

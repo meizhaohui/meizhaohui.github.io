@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/htpasswd/'>
 
-<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="htpasswd用户认证模块">
+<link rel="stylesheet" href="/scss/style.min.55b5092a1b0540d213f11172f3f142bee5269e846b438b13c7defe1e0f97443c.css"><meta property='og:title' content="htpasswd用户认证模块">
 <meta property='og:description' content="htpasswd用户认证模块 1. 概述 htpasswd模块用于管理使用htpasswd进行用户认证的用户文件。 可以添加或删除一个用户/密码对象，可以用Nginx或Apache等Web服务器的用户认证。 官方文档 ：https://docs.ansible.com/ansible/2.9/modules/htpasswd_module.html 2. 官方示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 ## Add a user to a password file and ensure permissions are set - htpasswd: path: /etc/nginx/passwdfile name: janedoe password: &#39;9s36?;fyNp&#39; owner: root group: www-data mode: 0640 ## Remove a user from a password file - htpasswd: path: /etc/apache2/passwdfile name: foobar state: absent ## Add a user to a password file suitable for use by libpam-pwdfile - htpasswd: path: /etc/mail/passwords name: alex password: oedu2eGh crypt_scheme: md5_crypt ">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/htpasswd/'>
 <meta property='og:site_name' content='编程技术分享'>

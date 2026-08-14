@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/ansible/when/'>
 
-<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="when条件判断">
+<link rel="stylesheet" href="/scss/style.min.55b5092a1b0540d213f11172f3f142bee5269e846b438b13c7defe1e0f97443c.css"><meta property='og:title' content="when条件判断">
 <meta property='og:description' content="when条件判断 1. 官方示例 when条件判断，可参考官方文档 Conditionals 以下是官方示例中的几个示例：\n1.1 判断操作系统 判断操作系统是否是Debian:\n1 2 3 4 tasks: - name: Shut down Debian flavored systems ansible.builtin.command: /sbin/shutdown -t now when: ansible_facts[&#39;os_family&#39;] == &#34;Debian&#34; 多条件判断，判断操作系统是不是CentOS6或Debian7:\n1 2 3 4 5 tasks: - name: Shut down CentOS 6 and Debian 7 systems ansible.builtin.command: /sbin/shutdown -t now when: (ansible_facts[&#39;distribution&#39;] == &#34;CentOS&#34; and ansible_facts[&#39;distribution_major_version&#39;] == &#34;6&#34;) or (ansible_facts[&#39;distribution&#39;] == &#34;Debian&#34; and ansible_facts[&#39;distribution_major_version&#39;] == &#34;7&#34;) 1.2 判断变量是否定义 判断变量是否定义：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/ansible/when/'>
 <meta property='og:site_name' content='编程技术分享'>

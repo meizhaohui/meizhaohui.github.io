@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hellogitlab.com/devops/docker/create_your_nexus_2/'>
 
-<link rel="stylesheet" href="/scss/style.min.45f5ba11d63cba300756106f37c5b56e8299738b1514b9d099c594571aeadaa7.css"><meta property='og:title' content="搭建自己的nexus私有仓库2--创建pythonpypi代理">
+<link rel="stylesheet" href="/scss/style.min.55b5092a1b0540d213f11172f3f142bee5269e846b438b13c7defe1e0f97443c.css"><meta property='og:title' content="搭建自己的nexus私有仓库2--创建pythonpypi代理">
 <meta property='og:description' content="搭建自己的nexus私有仓库2&ndash;创建python pypi代理 本文档是nexus系列课程第2篇。\nnexus系列课程第1篇，请参考 搭建自己的nexus私有仓库1&ndash;nexus初体验 本文计划做以下事情：\n使用nexus创建python pypi代理仓库。 以下是实验环境：\n主机 IP 主机名 操作系统 docker版本 自定义域名 1 192.168.56.11 nexus CentOS 7.6.1810 20.10.5 nexushub.com 2 192.168.56.12 master CentOS 7.6.1810 20.10.5 0. 准备工作 请在主机2以及你的电脑上面配置域名解析：\n1 2 [root@master ~]# tail -n 1 /etc/hosts 192.168.56.11 nexushub.com 注意，实际操作时，请将192.168.56.11替换成你服务器的内网IP或者公网IP，nexushub.com替换成你想使用的域名。\n查看清华大学开源镜像站pypi的帮助信息： PyPI 镜像使用帮助\nPyPI 镜像使用帮助\nPyPI 镜像在每次同步成功后间隔 5 分钟同步一次。 pip 临时使用\n1 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package 注意，simple 不能少, 是 https 而不是 http 设为默认\n升级 pip 到最新的版本 (&gt;=10.0.0) 后进行配置：\n">
 <meta property='og:url' content='https://hellogitlab.com/devops/docker/create_your_nexus_2/'>
 <meta property='og:site_name' content='编程技术分享'>

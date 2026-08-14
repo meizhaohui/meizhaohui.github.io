@@ -12,21 +12,36 @@
         <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
         
         <guid>https://hellogitlab.com/backend/flask/flask-intro/</guid>
-        <description>&lt;h2 id=&#34;flask简介&#34;&gt;Flask简介
-&lt;/h2&gt;&lt;p&gt;Flask是一个轻量级的Python Web框架，非常适合快速开发Web应用。&lt;/p&gt;
-&lt;h2 id=&#34;快速开始&#34;&gt;快速开始
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <description>&lt;h2 id=&#34;flask-web框架入门&#34;&gt;Flask Web框架入门
+&lt;/h2&gt;&lt;h3 id=&#34;0-准备工作&#34;&gt;0. 准备工作
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;python安装，可以在这里&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.python.org/downloads/&lt;/a&gt; 下载Python安装包，我下载3.11.8这个版本。&lt;/li&gt;
+&lt;li&gt;flask安装，使用&lt;code&gt;pip install flask==3.1.2&lt;/code&gt;命令安装flask依赖包。&lt;/li&gt;
+&lt;li&gt;pycharm安装，可以在这里&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/zh-cn/pycharm/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.jetbrains.com/zh-cn/pycharm/&lt;/a&gt;下载。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1-flask简介&#34;&gt;1. Flask简介
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Flask是一个轻量级的Python Web框架，非常适合快速开发Web应用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flask是一个用Python编写的Web应用程序框架。它由Armin Ronacher开发，他领导着一个名为Pocco的Python爱好者的国际组织。Flask基于Werkzeug WSGI工具包和Jinja2模板引擎。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-快速开始&#34;&gt;2. 快速开始
+&lt;/h3&gt;&lt;h4 id=&#34;21-最小应用&#34;&gt;2.1 最小应用
+&lt;/h4&gt;&lt;p&gt;一个最小的应用，可以像下面这样，将以下内容保存到&lt;code&gt;app.py&lt;/code&gt;文件中&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;flask&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;
@@ -35,14 +50,68 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@app.route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Hello, World!&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;debug&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;p&amp;gt;Hello, World!&amp;lt;/p&amp;gt;&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;路由配置&#34;&gt;路由配置
-&lt;/h2&gt;&lt;p&gt;Flask使用装饰器来定义路由，非常简洁。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;然后在pycharm终端运行&lt;code&gt;flask run&lt;/code&gt;命令，就可以启动一个web应用服务器。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-13_15-11-42.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-13_15-11-42.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后，在浏览器打开&lt;code&gt;http://localhost:5000/&lt;/code&gt;，就可以看到页面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-13_16-08-30.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-13_16-08-30.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在Flask中使用&lt;code&gt;route()&lt;/code&gt;装饰器将一个函数绑定到对应的URL上。&lt;code&gt;@app.route()&lt;/code&gt;装饰器相当于MVC模型中的Control控制层。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;@app.route()&lt;/code&gt;装饰器下面的函数，当浏览器中处理的请求符合路由规则时，就会进入到函数中，这里的函数相同于MVC模型中的Model模型层。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;return&lt;/code&gt;后面返回字符会返回到用户浏览器显示出来，当使用&lt;code&gt;render_template()&lt;/code&gt;方法构建HTML视图模板时，视图模板就相当于MVC模型中的View视图层。&lt;/p&gt;
+&lt;p&gt;除了使用&lt;code&gt;flask run&lt;/code&gt;启动应用外，也可以使用以下命令：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python -m flask run&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flask --app app run&lt;/code&gt;，指定应用名称是&lt;code&gt;app&lt;/code&gt;，指代的是&lt;code&gt;app.py&lt;/code&gt;这个文件，不要将文件名命名为&lt;code&gt;flask.py&lt;/code&gt;,这样会与Flask框架冲突。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;22-debug调试模式&#34;&gt;2.2 Debug调试模式
+&lt;/h4&gt;&lt;p&gt;Flask可以开启Debug调试模式，这样当代码发生变化时，能自动重新加载服务。同时，如果代码有异常时，会自动在页面上面显示出来。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只需要在启动flask应用时，增加&lt;code&gt;--debug&lt;/code&gt;参数即可。如&lt;code&gt;flask run --debug&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-14_15-37-09.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-14_15-37-09.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如果我将&lt;code&gt;World&lt;/code&gt;替换成&lt;code&gt;flask&lt;/code&gt;，则可以看到控制台自动重新加载，然后刷新页面可以看到页面已经发生了变化。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-14_19-42-25.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-14_19-42-25.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;调试器允许从浏览器执行任意 Python 代码。它受 PIN 码保护，但依然存在重大安全风险。&lt;strong&gt;切勿在生产环境运行开发服务器或调试器。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
