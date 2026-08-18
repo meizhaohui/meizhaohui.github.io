@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_8/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-07-22T22:35:25&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-18T21:44:49&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第8章">
 <meta name="twitter:description" content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1426,6 +1426,40 @@
 <p>16777215 被送入对应的显存地址后，第1字节作为红色的颜色分量，第2字节作为绿色的颜色分量，第3字节作为蓝色的颜色分量，第4字节作为透明度，因为这三种颜色的值都是255，均为最亮的状态，于是屏幕上就显示了白色的点。</p>
 </li>
 </ul>
+<h6 id="8422-在程序中表示颜色">8.4.2.2 在程序中表示颜色
+</h6><p>假设使用<code>int</code>类型表示颜色参数<code>color</code>，但是在32位编译器中<code>int</code>型占用4字节，而在16位编译器中<code>int</code>只占用2字节，考虑到程序的兼容性，我们应选择<code>long</code>型，即长整型，无论哪种编译器都占用4字节来表示颜色。</p>
+<p>同时为了避免不必要的麻烦，使用无符号长整型，即<code>unsigned long</code>来表达颜色更为妥当。<code>unsigned long</code>是一种基本数据类型，为了增加程序的易读性，很多人更愿意使用<code>typedef</code>语句定义一种新的数据类型名称，例如在程序中加入一行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">RGBColor</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样就定义了一种新的数据类型<code>RGBColor</code>，未来想要定义表达颜色的变量、函数参数时，使用类型<code>RGBColor</code>即可，以下是使用<code>RBGColor</code>类型定义变量的例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="n">white</span> <span class="o">=</span> <span class="mi">16777215</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h6 id="8423-使用rgb函数进行格式转换">8.4.2.3 使用rgb函数进行格式转换
+</h6><p>增加了<code>RGBColor</code>类型，我们该怎么给它赋值呢？当然可以像上面那样直接赋值：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="n">white</span> <span class="o">=</span> <span class="mi">16777215</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nf">putpixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">white</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>但UI设计师在选定颜色后可不会告诉我们这样一个数字，他们更习惯用R、G、B值来表示一种颜色。</p>
+<p>如果UI设计师告诉我们要使用的颜色是R（0）、G（255）、B（0），那么怎样将这3种颜色分量值组合起来，存入<code>RGBColor</code>类型的变量呢？难道要手动算一遍吗？不用，可以使用以下函数实现。</p>
 
 </section>
 
@@ -1465,7 +1499,7 @@
 
 
         <span>
-            最后更新于 2026年07月22日 22:35
+            最后更新于 2026年08月18日 21:44
         </span>
     </section></footer>
 

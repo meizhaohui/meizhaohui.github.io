@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 16 Aug 2026 01:22:48 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/backend/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 18 Aug 2026 21:44:49 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/backend/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章-换个方式学图形编程</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8_other_method/</link>
         <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
@@ -1460,6 +1460,40 @@
 &lt;p&gt;16777215 被送入对应的显存地址后，第1字节作为红色的颜色分量，第2字节作为绿色的颜色分量，第3字节作为蓝色的颜色分量，第4字节作为透明度，因为这三种颜色的值都是255，均为最亮的状态，于是屏幕上就显示了白色的点。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h6 id=&#34;8422-在程序中表示颜色&#34;&gt;8.4.2.2 在程序中表示颜色
+&lt;/h6&gt;&lt;p&gt;假设使用&lt;code&gt;int&lt;/code&gt;类型表示颜色参数&lt;code&gt;color&lt;/code&gt;，但是在32位编译器中&lt;code&gt;int&lt;/code&gt;型占用4字节，而在16位编译器中&lt;code&gt;int&lt;/code&gt;只占用2字节，考虑到程序的兼容性，我们应选择&lt;code&gt;long&lt;/code&gt;型，即长整型，无论哪种编译器都占用4字节来表示颜色。&lt;/p&gt;
+&lt;p&gt;同时为了避免不必要的麻烦，使用无符号长整型，即&lt;code&gt;unsigned long&lt;/code&gt;来表达颜色更为妥当。&lt;code&gt;unsigned long&lt;/code&gt;是一种基本数据类型，为了增加程序的易读性，很多人更愿意使用&lt;code&gt;typedef&lt;/code&gt;语句定义一种新的数据类型名称，例如在程序中加入一行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;typedef&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;long&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;RGBColor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这样就定义了一种新的数据类型&lt;code&gt;RGBColor&lt;/code&gt;，未来想要定义表达颜色的变量、函数参数时，使用类型&lt;code&gt;RGBColor&lt;/code&gt;即可，以下是使用&lt;code&gt;RBGColor&lt;/code&gt;类型定义变量的例子：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;RGBColor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;white&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;16777215&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h6 id=&#34;8423-使用rgb函数进行格式转换&#34;&gt;8.4.2.3 使用rgb函数进行格式转换
+&lt;/h6&gt;&lt;p&gt;增加了&lt;code&gt;RGBColor&lt;/code&gt;类型，我们该怎么给它赋值呢？当然可以像上面那样直接赋值：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;RGBColor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;white&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;16777215&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;putpixel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;white&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;但UI设计师在选定颜色后可不会告诉我们这样一个数字，他们更习惯用R、G、B值来表示一种颜色。&lt;/p&gt;
+&lt;p&gt;如果UI设计师告诉我们要使用的颜色是R（0）、G（255）、B（0），那么怎样将这3种颜色分量值组合起来，存入&lt;code&gt;RGBColor&lt;/code&gt;类型的变量呢？难道要手动算一遍吗？不用，可以使用以下函数实现。&lt;/p&gt;
 </description>
         </item>
         <item>
