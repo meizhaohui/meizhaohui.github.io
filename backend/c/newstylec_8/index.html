@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_8/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-18T21:44:49&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-18T23:48:08&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第8章">
 <meta name="twitter:description" content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -649,7 +649,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 8 分钟
                 </time>
             </div>
         
@@ -1460,6 +1460,557 @@
 </div>
 </div><p>但UI设计师在选定颜色后可不会告诉我们这样一个数字，他们更习惯用R、G、B值来表示一种颜色。</p>
 <p>如果UI设计师告诉我们要使用的颜色是R（0）、G（255）、B（0），那么怎样将这3种颜色分量值组合起来，存入<code>RGBColor</code>类型的变量呢？难道要手动算一遍吗？不用，可以使用以下函数实现。</p>
+<p>以下代码参考书上的，绘制一个红色的点：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// L08_03_SET_COLOR.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">RGBColor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// rbg格式转换
+</span></span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">initgraph</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">RGBColor</span> <span class="n">color</span> <span class="o">=</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">putpixel</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">_getch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">((</span><span class="n">RGBColor</span><span class="p">)(((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)(</span><span class="n">red</span><span class="p">)</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">((</span><span class="kt">unsigned</span> <span class="kt">short</span><span class="p">)((</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)(</span><span class="n">green</span><span class="p">))</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">))</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">                       <span class="p">(((</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">)(</span><span class="n">blue</span><span class="p">))</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">)));</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行代码后，可以看到屏幕上出现了一个红色小点！</p>
+<p><img src="/img/Snipaste_2026-08-18_22-59-16.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-18_22-59-16.png"
+	
+	
+></p>
+<p>但实际在输入<code>rgb</code>实现函数时，括号配对太麻烦！写了很久才写对！</p>
+<p>优化后代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">/// L08_03_SET_COLOR.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">RGBColor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// rbg格式转换
+</span></span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">initgraph</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">RGBColor</span> <span class="n">color</span> <span class="o">=</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">putpixel</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">_getch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">red</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">           <span class="p">((</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">green</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">           <span class="p">((</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">blue</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>既然 <code>RGBColor</code> 本身就是<code>unsigned long</code>，那就没必要混用 short、char，全部统一拓宽，代码最清爽，逻辑一目了然，也兼容 16 位 int 老编译器。 再次运行可以达到相同的效果！</p>
+<p>有了以上实验后，就可以对绘制水平线和绘制垂直线的函数进行改进！使其<code>putpixel</code>第3个参数可以指定颜色！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">/// L08_03_SET_COLOR.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">RGBColor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// rbg格式转换
+</span></span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 绘制水平线
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">drawHorizontalLine</span><span class="p">(</span><span class="kt">int</span> <span class="n">x1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="n">RGBColor</span> <span class="n">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 绘制垂直线
+</span></span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">drawVerticalLine</span><span class="p">(</span><span class="kt">int</span> <span class="n">y1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">RGBColor</span> <span class="n">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">initgraph</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">RGBColor</span> <span class="n">red</span> <span class="o">=</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">RGBColor</span> <span class="n">yellow</span> <span class="o">=</span> <span class="nf">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 绘制黄色水平线
+</span></span></span><span class="line"><span class="cl">    <span class="nf">drawHorizontalLine</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">yellow</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 绘制红色垂直线
+</span></span></span><span class="line"><span class="cl">    <span class="nf">drawVerticalLine</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">red</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">_getch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">red</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">           <span class="p">((</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">green</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">           <span class="p">((</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">blue</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">drawHorizontalLine</span><span class="p">(</span><span class="kt">int</span> <span class="n">x1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="n">RGBColor</span> <span class="n">color</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">x2</span> <span class="o">&lt;</span> <span class="n">x1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">x1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x1</span> <span class="o">=</span> <span class="n">x2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x2</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x1</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">x2</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">putpixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">drawVerticalLine</span><span class="p">(</span><span class="kt">int</span> <span class="n">y1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">RGBColor</span> <span class="n">color</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">y2</span> <span class="o">&lt;</span> <span class="n">y1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">y1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y1</span> <span class="o">=</span> <span class="n">y2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y2</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y1</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="n">y2</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">putpixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行效果图：</p>
+<p><img src="/img/Snipaste_2026-08-18_23-21-16.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-18_23-21-16.png"
+	
+	
+></p>
+<p>这个程序可以绘制出红色的垂直线和黄色的水平线，定义的颜色<code>red</code>和<code>yellow</code>只是为了代码便于阅读，变量名本身的英语含义并不影响显示颜色。</p>
+<ul>
+<li>实际上UI设计师经常用<code>#FF0000</code>这样的格式表示颜色，<code>#</code>后面是十六进制数，第1-2位表示红色分量，第3-4位表示绿色分量，第5-6位表示蓝色分量。</li>
+</ul>
+<p>如果要打印出颜色值的十六进制数，可以这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;0x%08lX</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">red</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;0x%08lX</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">yellow</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>片段</th>
+					<th>含义</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>0x</code></td>
+					<td>普通文本，原样打印出来</td>
+			</tr>
+			<tr>
+					<td><code>%</code></td>
+					<td>格式说明符开始</td>
+			</tr>
+			<tr>
+					<td><code>0</code></td>
+					<td><strong>补 0 标志</strong>：宽度不够时，左边补数字<code>0</code>，而不是补空格</td>
+			</tr>
+			<tr>
+					<td><code>8</code></td>
+					<td><strong>总宽度</strong>：输出至少占 8 个字符位置</td>
+			</tr>
+			<tr>
+					<td><code>l</code></td>
+					<td>长度修饰符：对应 <code>long</code> 类型；<code>unsigned long</code> 就用 <code>%lX</code> / <code>%lx</code></td>
+			</tr>
+			<tr>
+					<td><code>X</code></td>
+					<td>十六进制，大写输出 A‑F；小写<code>x</code>则输出 a‑f</td>
+			</tr>
+			<tr>
+					<td><code>\n</code></td>
+					<td>换行</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>而<code>easyx.h</code>是定义的颜色是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// Color constant
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	BLACK			0
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	BLUE			0xAA0000
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	GREEN			0x00AA00
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	CYAN			0xAAAA00
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	RED             0x0000AA
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	MAGENTA			0xAA00AA
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	BROWN			0x0055AA
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	LIGHTGRAY		0xAAAAAA
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	DARKGRAY		0x555555
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	LIGHTBLUE		0xFF5555
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	LIGHTGREEN		0x55FF55
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	LIGHTCYAN		0xFFFF55
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	LIGHTRED		0x5555FF
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	LIGHTMAGENTA	0xFF55FF
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	YELLOW			0x55FFFF
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define	WHITE			0xFFFFFF
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>C 编译器看到<code>0x55FFFF</code>，会自动把高位补 0，扩充成 32bit 整数，内存、运算结果一模一样。头文件为简洁，省略前面的<code>00</code>。</li>
+</ul>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>宏</th>
+					<th>十六进制值</th>
+					<th>实际 RGB (R,G,B)</th>
+					<th>现代标准期望 RGB</th>
+					<th>差异说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>BLACK</td>
+					<td>0</td>
+					<td>(0,0,0)</td>
+					<td>(0,0,0)</td>
+					<td>✅完全一致</td>
+			</tr>
+			<tr>
+					<td>BLUE</td>
+					<td>0xAA0000</td>
+					<td>(0,0,170)</td>
+					<td>(0,0,255)</td>
+					<td>❌深蓝，不是饱和正蓝；<code>LIGHTBLUE</code>才接近正蓝</td>
+			</tr>
+			<tr>
+					<td>GREEN</td>
+					<td>0x00AA00</td>
+					<td>(0,170,0)</td>
+					<td>(0,255,0)</td>
+					<td>❌暗绿，不是饱和正绿；<code>LIGHTGREEN</code>才是饱和绿</td>
+			</tr>
+			<tr>
+					<td>CYAN</td>
+					<td>0xAAAA00</td>
+					<td>(0,170,170)</td>
+					<td>(0,255,255)</td>
+					<td>❌暗青色；<code>LIGHTCYAN</code>才是饱和青色</td>
+			</tr>
+			<tr>
+					<td>RED</td>
+					<td>0x0000AA</td>
+					<td>(170,0,0)</td>
+					<td>(255,0,0)</td>
+					<td>❌暗红色；<strong><code>LIGHTRED</code>才是标准大红</strong>，初学者高频踩坑</td>
+			</tr>
+			<tr>
+					<td>MAGENTA</td>
+					<td>0xAA00AA</td>
+					<td>(170,0,170)</td>
+					<td>(255,0,255)</td>
+					<td>❌暗品红；<code>LIGHTMAGENTA</code>饱和品红</td>
+			</tr>
+			<tr>
+					<td>BROWN</td>
+					<td>0x0055AA</td>
+					<td>(170,85,0)</td>
+					<td>(165,42,42)</td>
+					<td>⚠️土黄色调，和网页标准棕色差距很大</td>
+			</tr>
+			<tr>
+					<td>LIGHTGRAY</td>
+					<td>0xAAAAAA</td>
+					<td>(170,170,170)</td>
+					<td>(170,170,170)</td>
+					<td>✅灰度，无问题</td>
+			</tr>
+			<tr>
+					<td>DARKGRAY</td>
+					<td>0x555555</td>
+					<td>(85,85,85)</td>
+					<td>(85,85,85)</td>
+					<td>✅灰度，无问题</td>
+			</tr>
+			<tr>
+					<td>LIGHTBLUE</td>
+					<td>0xFF5555</td>
+					<td>(85,85,255)</td>
+					<td>(0,0,255)</td>
+					<td>⚠️亮蓝，但混入少量 R、G，偏天蓝，不是纯蓝</td>
+			</tr>
+			<tr>
+					<td>LIGHTGREEN</td>
+					<td>0x55FF55</td>
+					<td>(85,255,85)</td>
+					<td>(0,255,0)</td>
+					<td>⚠️亮绿，混入红色，偏嫩草绿，不是纯绿</td>
+			</tr>
+			<tr>
+					<td>LIGHTCYAN</td>
+					<td>0xFFFF55</td>
+					<td>(85,255,255)</td>
+					<td>(0,255,255)</td>
+					<td>⚠️亮青，混入红色</td>
+			</tr>
+			<tr>
+					<td>LIGHTRED</td>
+					<td>0x5555FF</td>
+					<td>(255,0,0)</td>
+					<td>(255,0,0)</td>
+					<td>✅标准饱和大红</td>
+			</tr>
+			<tr>
+					<td>LIGHTMAGENTA</td>
+					<td>0xFF55FF</td>
+					<td>(255,0,255)</td>
+					<td>(255,0,255)</td>
+					<td>✅标准饱和品红</td>
+			</tr>
+			<tr>
+					<td>YELLOW</td>
+					<td>0x55FFFF</td>
+					<td>(255,255,85)</td>
+					<td>(255,255,0)</td>
+					<td>❌浅黄色，混入蓝色；<strong>没有内置纯黄宏</strong></td>
+			</tr>
+			<tr>
+					<td>WHITE</td>
+					<td>0xFFFFFF</td>
+					<td>(255,255,255)</td>
+					<td>(255,255,255)</td>
+					<td>✅完全一致</td>
+			</tr>
+	</tbody>
+</table></div>
+<ul>
+<li>
+<p><strong>RED ≠ 正红</strong>：<code>RED</code>是 (170,0,0) 暗红；要真正大红请用 <code>LIGHTRED</code> 或者 <code>RGB(255,0,0)</code>。</p>
+</li>
+<li>
+<p><strong>YELLOW 不是纯黄</strong>：自带 B=85，偏浅；标准纯黄 <code>RGB(255,255,0)</code>，没有对应宏。</p>
+</li>
+</ul>
 
 </section>
 
@@ -1499,7 +2050,7 @@
 
 
         <span>
-            最后更新于 2026年08月18日 21:44
+            最后更新于 2026年08月18日 23:48
         </span>
     </section></footer>
 
