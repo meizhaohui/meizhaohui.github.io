@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Tue, 18 Aug 2026 23:48:08 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 19 Aug 2026 21:06:22 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章-换个方式学图形编程</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8_other_method/</link>
         <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
@@ -2044,6 +2044,30 @@
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;YELLOW 不是纯黄&lt;/strong&gt;：自带 B=85，偏浅；标准纯黄 &lt;code&gt;RGB(255,255,0)&lt;/code&gt;，没有对应宏。&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;843-绘制和填充矩形框&#34;&gt;8.4.3 绘制和填充矩形框
+&lt;/h5&gt;&lt;p&gt;绘制矩形就是绘制四条边，在必要的情况下还可能需要填充内部颜色。&lt;/p&gt;
+&lt;h6 id=&#34;8431-自定义绘制四条边的函数drawbox&#34;&gt;8.4.3.1 自定义绘制四条边的函数&amp;ndash;drawBox
+&lt;/h6&gt;&lt;p&gt;绘制边框是一件简单的事，在指定位置绘制上、下、左、右四条线即可。考虑到绘制边框是常用的操作，也需要把它定义为一个函数，名为&lt;code&gt;drawBox&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;drawBox&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(...)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这个函数应该有哪些参数？你可能会认为需要将矩形框的每一条边的起、止点坐标都输入函数，但这样一来你需要传递8个点的坐标（也就是16个参数）到函数里。这样就太复杂了，当在平面上绘制矩形时 ，其实主要考虑两个条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;矩形在平面上的位置；&lt;/li&gt;
+&lt;li&gt;矩形的大小。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;用矩形左上角的坐标就可以表示矩形在平面上的位置，因此这两个条件用下述4个参数即可描述，至于每一条边的起、止点坐标可以在函数内部通过这4个参数计算得到。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;左上角x轴坐标，表示矩形左边距屏幕最左边的像素数，这个参数通常被命名为left，以像素为单位。&lt;/li&gt;
+&lt;li&gt;左上角y轴坐标，表示矩形上边距屏幕最顶边的像素数，这个参数通常被命名为top，以像素为单位。&lt;/li&gt;
+&lt;li&gt;宽度(x轴上的长度)，表示矩形在水平方向的长度被称为宽度，这个参数通常被命名为width，以像素为单位。&lt;/li&gt;
+&lt;li&gt;高度(y轴上的长度)，表示矩形在垂直方向的长度被称为高度，这个参数通常被命名为height，以像素为单位。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

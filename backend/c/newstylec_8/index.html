@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_8/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-18T23:48:08&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-19T21:06:22&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第8章">
 <meta name="twitter:description" content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -498,6 +498,7 @@
               <ul>
                 <li><a href="#841-绘制线">8.4.1 绘制线</a></li>
                 <li><a href="#842-控制绘图颜色">8.4.2 控制绘图颜色</a></li>
+                <li><a href="#843-绘制和填充矩形框">8.4.3 绘制和填充矩形框</a></li>
               </ul>
             </li>
           </ul>
@@ -2011,6 +2012,30 @@
 <p><strong>YELLOW 不是纯黄</strong>：自带 B=85，偏浅；标准纯黄 <code>RGB(255,255,0)</code>，没有对应宏。</p>
 </li>
 </ul>
+<h5 id="843-绘制和填充矩形框">8.4.3 绘制和填充矩形框
+</h5><p>绘制矩形就是绘制四条边，在必要的情况下还可能需要填充内部颜色。</p>
+<h6 id="8431-自定义绘制四条边的函数drawbox">8.4.3.1 自定义绘制四条边的函数&ndash;drawBox
+</h6><p>绘制边框是一件简单的事，在指定位置绘制上、下、左、右四条线即可。考虑到绘制边框是常用的操作，也需要把它定义为一个函数，名为<code>drawBox</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">drawBox</span><span class="p">(...)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个函数应该有哪些参数？你可能会认为需要将矩形框的每一条边的起、止点坐标都输入函数，但这样一来你需要传递8个点的坐标（也就是16个参数）到函数里。这样就太复杂了，当在平面上绘制矩形时 ，其实主要考虑两个条件：</p>
+<ul>
+<li>矩形在平面上的位置；</li>
+<li>矩形的大小。</li>
+</ul>
+<p>用矩形左上角的坐标就可以表示矩形在平面上的位置，因此这两个条件用下述4个参数即可描述，至于每一条边的起、止点坐标可以在函数内部通过这4个参数计算得到。</p>
+<ul>
+<li>左上角x轴坐标，表示矩形左边距屏幕最左边的像素数，这个参数通常被命名为left，以像素为单位。</li>
+<li>左上角y轴坐标，表示矩形上边距屏幕最顶边的像素数，这个参数通常被命名为top，以像素为单位。</li>
+<li>宽度(x轴上的长度)，表示矩形在水平方向的长度被称为宽度，这个参数通常被命名为width，以像素为单位。</li>
+<li>高度(y轴上的长度)，表示矩形在垂直方向的长度被称为高度，这个参数通常被命名为height，以像素为单位。</li>
+</ul>
 
 </section>
 
@@ -2050,7 +2075,7 @@
 
 
         <span>
-            最后更新于 2026年08月18日 23:48
+            最后更新于 2026年08月19日 21:06
         </span>
     </section></footer>
 
