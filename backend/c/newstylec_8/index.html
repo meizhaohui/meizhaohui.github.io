@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_8/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-20T00:00:19&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-05-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-21T21:48:06&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第8章">
 <meta name="twitter:description" content="换个姿势学C语言 第8章 图形编程基础 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 8. 图形编程基础 上一章节我们已经通过GetAllRates接口获取到了所有的外汇牌价信息，并保存到文件当中，并能在控制台输出中显示出来。但外汇牌价看板是一个图形用户界面的程序。下面是第一章给出的效果图：\n这种包含图形元素的程序外观被称为“图形用户界面”(Graphical User Interface， GUI)。相对于纯文本组成的用户界面，对于用户来说，图形用户界面在视觉上更易于接受，也更容易操作。\n8.1 图像在计算机中的表示 早期的计算机只能打印或显示文本，为了使计算机能够显示“图形”，最早的方法是使用多行的ASCII文本来表达图形，这种方式被称为“字形画”，如下面这个字符：\n1 2 3 4 5 6 7 .o. .oooooo..o .oooooo. ooooo ooooo .888. d8P&#39; `Y8 d8P&#39; `Y8b `888&#39; `888&#39; .8&#34;888. Y88bo. 888 888 888 .8&#39; `888. `&#34;Y8888o. 888 888 888 .88ooo8888. `&#34;Y88b 888 888 888 .8&#39; `888. oo .d8P `88b ooo 888 888 o88o o8888o 8&#34;&#34;88888P&#39; `Y8bood8P&#39; o888o o888o 你可以在 ASCII文本艺术图像在线生成器 https://www.perfcode.com/tools/generator/ascii-art 生成你需要的字形画！\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -501,6 +501,7 @@
                 <li><a href="#843-绘制和填充矩形框">8.4.3 绘制和填充矩形框</a></li>
               </ul>
             </li>
+            <li><a href="#85-小结">8.5 小结</a></li>
           </ul>
         </li>
       </ul>
@@ -551,7 +552,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -650,7 +651,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 15 分钟
+                    阅读时长: 16 分钟
                 </time>
             </div>
         
@@ -2722,6 +2723,240 @@
 	
 	
 ></p>
+<h4 id="85-小结">8.5 小结
+</h4><p>本章介绍了如何使用EasyX图形库在屏幕上绘制点、线和矩形。实际上这种绘图方式的效率是比较低的，如果你绘制的矩形面积比较大时，可能会看到矩形是逐行显示出来的。</p>
+<p>EasyX提供了效率更高。功能更多的绘图函数。详细可参考 <a class="link" href="https://docs.easyx.cn/zh-cn/drawing-func"  target="_blank" rel="noopener"
+    >https://docs.easyx.cn/zh-cn/drawing-func</a> 。</p>
+<p><img src="/img/Snipaste_2026-08-21_21-16-41.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-21_21-16-41.png"
+	
+	
+></p>
+<p>未来你的项目就可以直接使用这个函数。</p>
+<p>我随机用EasyX库画的一些图形：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// L08_05_TEST_EASYX.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">initgraph</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">arc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">circle</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">clearcircle</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">clearellipse</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ellipse</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">120</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fillcircle</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">line</span><span class="p">(</span><span class="mi">210</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">240</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">pie</span><span class="p">(</span><span class="mi">310</span><span class="p">,</span> <span class="mi">320</span><span class="p">,</span> <span class="mi">330</span><span class="p">,</span> <span class="mi">340</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">150</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">setfillcolor</span><span class="p">(</span><span class="n">RED</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">solidrectangle</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">320</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">450</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">setfillcolor</span><span class="p">(</span><span class="n">YELLOW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">solidroundrect</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">_getch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行效果：</p>
+<p><img src="/img/Snipaste_2026-08-21_21-44-40.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-21_21-44-40.png"
+	
+	
+></p>
+<p>用AI生成的优化代码，画一个小人：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// L08_05_TEST_EASYX.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">initgraph</span><span class="p">(</span><span class="mi">600</span><span class="p">,</span> <span class="mi">600</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 原点参考：小人整体放在画面中间
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">head_x</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">head_y</span> <span class="o">=</span> <span class="mi">120</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">head_r</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ---------- 头部 肤色填充圆 ----------
+</span></span></span><span class="line"><span class="cl">    <span class="nf">setfillcolor</span><span class="p">(</span><span class="nf">RGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">180</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">setlinecolor</span><span class="p">(</span><span class="n">BLACK</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fillcircle</span><span class="p">(</span><span class="n">head_x</span><span class="p">,</span> <span class="n">head_y</span><span class="p">,</span> <span class="n">head_r</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ---------- 眼睛 ----------
+</span></span></span><span class="line"><span class="cl">    <span class="nf">setfillcolor</span><span class="p">(</span><span class="n">BLACK</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fillcircle</span><span class="p">(</span><span class="n">head_x</span> <span class="o">-</span> <span class="mi">18</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">-</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fillcircle</span><span class="p">(</span><span class="n">head_x</span> <span class="o">+</span> <span class="mi">18</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">-</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ---------- 嘴巴，用圆弧画微笑 ----------
+</span></span></span><span class="line"><span class="cl">    <span class="nf">arc</span><span class="p">(</span><span class="n">head_x</span> <span class="o">-</span> <span class="mi">20</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">head_x</span> <span class="o">+</span> <span class="mi">20</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">340</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ---------- 身体：蓝色实心矩形 ----------
+</span></span></span><span class="line"><span class="cl">    <span class="nf">setfillcolor</span><span class="p">(</span><span class="n">BLUE</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">solidrectangle</span><span class="p">(</span><span class="n">head_x</span> <span class="o">-</span> <span class="mi">35</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="n">head_x</span> <span class="o">+</span> <span class="mi">35</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">150</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ---------- 手臂：红色线条 ----------
+</span></span></span><span class="line"><span class="cl">    <span class="nf">setlinecolor</span><span class="p">(</span><span class="n">RED</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">setlinestyle</span><span class="p">(</span><span class="n">PS_SOLID</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 左手臂
+</span></span></span><span class="line"><span class="cl">    <span class="nf">line</span><span class="p">(</span><span class="n">head_x</span> <span class="o">-</span> <span class="mi">35</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">70</span><span class="p">,</span> <span class="n">head_x</span> <span class="o">-</span> <span class="mi">110</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 右手臂
+</span></span></span><span class="line"><span class="cl">    <span class="nf">line</span><span class="p">(</span><span class="n">head_x</span> <span class="o">+</span> <span class="mi">35</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">70</span><span class="p">,</span> <span class="n">head_x</span> <span class="o">+</span> <span class="mi">110</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ---------- 腿：绿色线条 ----------
+</span></span></span><span class="line"><span class="cl">    <span class="nf">setlinecolor</span><span class="p">(</span><span class="n">GREEN</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">setlinestyle</span><span class="p">(</span><span class="n">PS_SOLID</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 左腿
+</span></span></span><span class="line"><span class="cl">    <span class="nf">line</span><span class="p">(</span><span class="n">head_x</span> <span class="o">-</span> <span class="mi">15</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">150</span><span class="p">,</span> <span class="n">head_x</span> <span class="o">-</span> <span class="mi">50</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">270</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 右腿
+</span></span></span><span class="line"><span class="cl">    <span class="nf">line</span><span class="p">(</span><span class="n">head_x</span> <span class="o">+</span> <span class="mi">15</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">150</span><span class="p">,</span> <span class="n">head_x</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="n">head_y</span> <span class="o">+</span> <span class="mi">270</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">_getch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行效果：</p>
+<p><img src="/img/Snipaste_2026-08-21_21-46-14.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-21_21-46-14.png"
+	
+	
+></p>
+<p>可以看到，还是蛮酷的！</p>
 
 </section>
 
@@ -2761,7 +2996,7 @@
 
 
         <span>
-            最后更新于 2026年08月20日 00:00
+            最后更新于 2026年08月21日 21:48
         </span>
     </section></footer>
 
