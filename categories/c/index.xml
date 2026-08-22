@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sat, 22 Aug 2026 22:33:07 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Aug 2026 23:03:08 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章-换个方式学图形编程</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8_other_method/</link>
         <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
@@ -797,6 +797,94 @@
 &lt;li&gt;文件头的大小一般是固定的，例如BMP文件的文件头为固定的54个字节（在只讨论24位真彩色、无压缩、标准40字节信息头模式的BMP图像的前提下），文件头里面除了存储图像的宽度、高度。还包含其他一些信息，如文件大小、像素数据的起始位置和颜色数等。&lt;/li&gt;
 &lt;li&gt;在文件头之后是图片的像素数据，像素数据的多少取决于图片的大小和颜色模式，图片越大、包含的颜色数越多，像素数据就越多。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;接下来以显示24位BMP图像为例，逐步了解BMP文件的文件格式，并在程序中读取和显示BMP图像！&lt;/p&gt;
+&lt;h4 id=&#34;92-显示24位bmp图像&#34;&gt;9.2 显示24位BMP图像
+&lt;/h4&gt;&lt;p&gt;在目录&lt;code&gt;D:\BC101\Resources\L09&lt;/code&gt;下有一个&lt;code&gt;640_480_RED.bmp&lt;/code&gt;文件，它是一个宽度为640像素、高度为480像素、全部像素为红色(RGB值为255,0,0)的BMP文件，全部像素为红色是为了便于在调试程序时观察文件中的数据。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-22_22-53-59.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-22_22-53-59.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;我们用python读取一下BMP的头文件信息，看看和书上是不是一致的：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;struct&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;file1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;sa&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;D:&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;BC101&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;Resources&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;L09&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;640_480_RED.bmp&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;parse_bmp_header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;rb&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;header&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;read&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;54&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;==== &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; ====&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;原始54字节:&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# 小端解析 BITMAPFILEHEADER + BITMAPINFOHEADER&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;file_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;reserved&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data_offset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;n&#34;&gt;ih_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;planes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;n&#34;&gt;bitcnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;comp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;img_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xppm&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;n&#34;&gt;yppm&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;clrused&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;clrimp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;struct&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;unpack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;2sI4sIIiiHHIIIIII&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;签名:&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sig&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;, 文件大小:&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file_size&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;,像素偏移:&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data_offset&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;宽=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;,高=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;,位深=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bitcnt&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;,压缩=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;comp&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;,像素区大小=&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;img_size&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;parse_bmp_header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;file1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;运行程序输出如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;==== D:\\BC101\\Resources\\L09\\640_480_RED.bmp ====
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;原始54字节: b&amp;#39;BM6\x10\x0e\x00\x00\x00\x00\x006\x00\x00\x00(\x00\x00\x00\x80\x02\x00\x00\xe0\x01\x00\x00\x01\x00\x18\x00\x00\x00\x00\x00\x00\x10\x0e\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;签名:b&amp;#39;BM&amp;#39;, 文件大小:921654,像素偏移:54
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;宽=640,高=480,位深=24,压缩=0,像素区大小=921600
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-22_22-56-13.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-22_22-56-13.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;可以看到通过python程序获取到的像素高度、宽度、文件大小、位深等信息都和查看文件属性里面的信息是对得上的！&lt;/p&gt;
 </description>
         </item>
         <item>
