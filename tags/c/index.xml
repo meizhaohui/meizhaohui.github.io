@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sat, 22 Aug 2026 15:44:21 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Aug 2026 21:24:22 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章-换个方式学图形编程</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8_other_method/</link>
         <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
@@ -690,6 +690,97 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;也能正常绘图，并且水平线和垂直线都变成了红色的，说明新项目代码是正常的！！！&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>换个姿势学C语言第9章</title>
+        <link>https://hellogitlab.com/backend/c/newstylec_9/</link>
+        <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://hellogitlab.com/backend/c/newstylec_9/</guid>
+        <description>&lt;img src="https://hellogitlab.com/img/default.jpg" alt="Featured image of post 换个姿势学C语言第9章" /&gt;&lt;h2 id=&#34;换个姿势学c语言-第9章-显示图形和文本元素&#34;&gt;换个姿势学C语言 第9章 显示图形和文本元素
+&lt;/h2&gt;&lt;h3 id=&#34;0-说明&#34;&gt;0. 说明
+&lt;/h3&gt;&lt;p&gt;《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-03-10_14-51-10.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这是一本非常不错的书！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一、二、三章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec/&#34; &gt;换个姿势学C语言 第1-3章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第四章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_4/&#34; &gt;换个姿势学C语言 第4章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.1节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5/&#34; &gt;换个姿势学C语言 第5章 5.1节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.2/&#34; &gt;换个姿势学C语言 第5章 5.2节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.3/&#34; &gt;换个姿势学C语言 第5章 5.3节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第五章5.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_5.4/&#34; &gt;换个姿势学C语言 第5章 5.4节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第六章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_6/&#34; &gt;换个姿势学C语言 第6章&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.1节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7/&#34; &gt;换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.2节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_2/&#34; &gt;换个姿势学C语言 第7.2章 文件访问的基础知识&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.3节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_3/&#34; &gt;换个姿势学C语言 第7.3章 将结构体存入磁盘文件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第七章7.4节总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_7_4/&#34; &gt;换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;第八章总结参考&lt;a class=&#34;link&#34; href=&#34;../newstylec_8/&#34; &gt;换个姿势学C语言 第8章 图形编程基础&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-显示图形和文本元素&#34;&gt;9. 显示图形和文本元素
+&lt;/h3&gt;&lt;p&gt;学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。&lt;/p&gt;
+&lt;p&gt;现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-22_20-48-17.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-22_20-48-17.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;但我们还是先自己实现它。&lt;/p&gt;
+&lt;p&gt;本章相关知识：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;常见的位图文件格式。&lt;/li&gt;
+&lt;li&gt;显示24位.bmp图像的方法（国旗和行政区旗）。&lt;/li&gt;
+&lt;li&gt;显示不同字体的方法。&lt;/li&gt;
+&lt;li&gt;控制屏幕分辨率和全屏显示窗口。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！&lt;/p&gt;
+&lt;p&gt;外汇牌价看板的运行效果图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2024-03-10_00-12-26.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2024-03-10_00-12-26.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-22_21-03-53.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-22_21-03-53.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;91-常见的位图文件格式&#34;&gt;9.1 常见的位图文件格式
+&lt;/h4&gt;&lt;p&gt;第8章介绍过图像传感器感应每一个像素点上的光并以R、G、B三种颜色分量描述像素点的颜色，一幅图像由多个像素组成，这种用像素表达图像的图形被称为位图。&lt;/p&gt;
+&lt;h5 id=&#34;911-常见的位图格式&#34;&gt;9.1.1 常见的位图格式
+&lt;/h5&gt;&lt;p&gt;针对不同的场景和应用需求，位图目前存在多种格式，其中较常用的格式有JPG和PNG。各种图形格式的特点和相互关系如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RAW格式，原始图像文件，是数码相机从图像传感器上获取的未经压缩的原始数据，会记录相应拍摄所产生的一些原始数据，如快门设置、光圈值等信息，图像细节丰富，但占用空间较大。&lt;/li&gt;
+&lt;li&gt;JPG格式，使用最广泛的照片格式，在日常生活中，手机、数码相机拍摄的都是JPG格式的，其进行了压缩，虽然压缩会对图像质量进行破坏，但人眼难以分辨。&lt;/li&gt;
+&lt;li&gt;GIF格式，只支持256种颜色，文件较小，如常见的动图就是GIF格式。但由于专利限制，后来很快被PNG格式取代。&lt;/li&gt;
+&lt;li&gt;PNG格式，便携式网络图形，是一种无损压缩的位图图形格式。广泛用于互联网。&lt;/li&gt;
+&lt;li&gt;BMP格式，位图，是一种不压缩像素数据的文件格式。它逐个地描述每个像素点的颜色，这一点和RAW格式类似，但比RAW格式保存的信息少，文件占用空间较RAW小，但比JPG、PNG大、&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
