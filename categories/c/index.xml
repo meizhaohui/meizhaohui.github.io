@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sat, 22 Aug 2026 21:24:22 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Aug 2026 22:33:07 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章-换个方式学图形编程</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8_other_method/</link>
         <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
@@ -779,7 +779,23 @@
 &lt;li&gt;JPG格式，使用最广泛的照片格式，在日常生活中，手机、数码相机拍摄的都是JPG格式的，其进行了压缩，虽然压缩会对图像质量进行破坏，但人眼难以分辨。&lt;/li&gt;
 &lt;li&gt;GIF格式，只支持256种颜色，文件较小，如常见的动图就是GIF格式。但由于专利限制，后来很快被PNG格式取代。&lt;/li&gt;
 &lt;li&gt;PNG格式，便携式网络图形，是一种无损压缩的位图图形格式。广泛用于互联网。&lt;/li&gt;
-&lt;li&gt;BMP格式，位图，是一种不压缩像素数据的文件格式。它逐个地描述每个像素点的颜色，这一点和RAW格式类似，但比RAW格式保存的信息少，文件占用空间较RAW小，但比JPG、PNG大、&lt;/li&gt;
+&lt;li&gt;BMP格式，位图，是一种不压缩像素数据的文件格式。它逐个地描述每个像素点的颜色，这一点和RAW格式类似，但比RAW格式保存的信息少，文件占用空间较RAW小，但比JPG、PNG大。BMP文件支持不同的颜色位数，本章只讲解24位真彩色模式的BMP图像的显示，以降低程序复杂度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;912-bmp文件基本结构&#34;&gt;9.1.2 BMP文件基本结构
+&lt;/h5&gt;&lt;p&gt;BMP文件都遵循统一的文件格式规范，BMP文件的主要内容是像素数据，但除此之外BMP文件中还包含必备的图片信息，例如图片的宽度和高度，这些信息一般放在文件的开始部分，被称为&lt;strong&gt;文件头&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-22_22-23-43.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-22_22-23-43.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文件头的大小一般是固定的，例如BMP文件的文件头为固定的54个字节（在只讨论24位真彩色、无压缩、标准40字节信息头模式的BMP图像的前提下），文件头里面除了存储图像的宽度、高度。还包含其他一些信息，如文件大小、像素数据的起始位置和颜色数等。&lt;/li&gt;
+&lt;li&gt;在文件头之后是图片的像素数据，像素数据的多少取决于图片的大小和颜色模式，图片越大、包含的颜色数越多，像素数据就越多。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

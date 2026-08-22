@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_9/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-22T21:24:22&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-22T22:33:07&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第9章">
 <meta name="twitter:description" content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -484,6 +484,7 @@
             <li><a href="#91-常见的位图文件格式">9.1 常见的位图文件格式</a>
               <ul>
                 <li><a href="#911-常见的位图格式">9.1.1 常见的位图格式</a></li>
+                <li><a href="#912-bmp文件基本结构">9.1.2 BMP文件基本结构</a></li>
               </ul>
             </li>
           </ul>
@@ -536,7 +537,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -731,7 +732,23 @@
 <li>JPG格式，使用最广泛的照片格式，在日常生活中，手机、数码相机拍摄的都是JPG格式的，其进行了压缩，虽然压缩会对图像质量进行破坏，但人眼难以分辨。</li>
 <li>GIF格式，只支持256种颜色，文件较小，如常见的动图就是GIF格式。但由于专利限制，后来很快被PNG格式取代。</li>
 <li>PNG格式，便携式网络图形，是一种无损压缩的位图图形格式。广泛用于互联网。</li>
-<li>BMP格式，位图，是一种不压缩像素数据的文件格式。它逐个地描述每个像素点的颜色，这一点和RAW格式类似，但比RAW格式保存的信息少，文件占用空间较RAW小，但比JPG、PNG大、</li>
+<li>BMP格式，位图，是一种不压缩像素数据的文件格式。它逐个地描述每个像素点的颜色，这一点和RAW格式类似，但比RAW格式保存的信息少，文件占用空间较RAW小，但比JPG、PNG大。BMP文件支持不同的颜色位数，本章只讲解24位真彩色模式的BMP图像的显示，以降低程序复杂度。</li>
+</ul>
+<h5 id="912-bmp文件基本结构">9.1.2 BMP文件基本结构
+</h5><p>BMP文件都遵循统一的文件格式规范，BMP文件的主要内容是像素数据，但除此之外BMP文件中还包含必备的图片信息，例如图片的宽度和高度，这些信息一般放在文件的开始部分，被称为<strong>文件头</strong>。</p>
+<p><img src="/img/Snipaste_2026-08-22_22-23-43.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-22_22-23-43.png"
+	
+	
+></p>
+<ul>
+<li>文件头的大小一般是固定的，例如BMP文件的文件头为固定的54个字节（在只讨论24位真彩色、无压缩、标准40字节信息头模式的BMP图像的前提下），文件头里面除了存储图像的宽度、高度。还包含其他一些信息，如文件大小、像素数据的起始位置和颜色数等。</li>
+<li>在文件头之后是图片的像素数据，像素数据的多少取决于图片的大小和颜色模式，图片越大、包含的颜色数越多，像素数据就越多。</li>
 </ul>
 
 </section>
@@ -772,7 +789,7 @@
 
 
         <span>
-            最后更新于 2026年08月22日 21:24
+            最后更新于 2026年08月22日 22:33
         </span>
     </section></footer>
 
