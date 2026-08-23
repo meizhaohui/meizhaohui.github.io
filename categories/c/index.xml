@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sun, 23 Aug 2026 17:11:57 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 23 Aug 2026 20:38:49 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/categories/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章-换个方式学图形编程</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8_other_method/</link>
         <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
@@ -1761,6 +1761,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到获取的关键信息与之前通过一个个的参数读取是一样的，但这样读取方式更加快捷简便！&lt;/p&gt;
+&lt;p&gt;为什么不定义一个结构体包含全部文件头的内容，然后一次性读入54个字节呢？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;是由于在结构体进行内存分配时存在“内存对齐”因素，把BMP文件头的全部内容定义成一个结构体会导致从文件中读入的数据与结构体元素发生错位！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因此没有采用定义1个结构体存储所有文件头信息的方法。读取BMP文件头的主要目的是为了获取图片的关键信息，如宽度、高度和颜色数。在文件头读取完毕后，从第55个字节开始的内容会因为文件格式不同而分为两种情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对于单色(1位)、16色(4位)、256色(8位)位图，接下来是调色板数据；&lt;/li&gt;
+&lt;li&gt;对于16位、24位真彩色位图，接下来是像素数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为了减少程序的复杂度，我们只考虑24位位图的情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从第55字节开始就是像素数据；&lt;/li&gt;
+&lt;li&gt;1个像素的颜色使用3个字节来描述。&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_9/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-23T17:11:57&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-23T20:38:49&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第9章">
 <meta name="twitter:description" content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -1719,6 +1719,18 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以看到获取的关键信息与之前通过一个个的参数读取是一样的，但这样读取方式更加快捷简便！</p>
+<p>为什么不定义一个结构体包含全部文件头的内容，然后一次性读入54个字节呢？</p>
+<p><strong>是由于在结构体进行内存分配时存在“内存对齐”因素，把BMP文件头的全部内容定义成一个结构体会导致从文件中读入的数据与结构体元素发生错位！</strong></p>
+<p>因此没有采用定义1个结构体存储所有文件头信息的方法。读取BMP文件头的主要目的是为了获取图片的关键信息，如宽度、高度和颜色数。在文件头读取完毕后，从第55个字节开始的内容会因为文件格式不同而分为两种情况：</p>
+<ul>
+<li>对于单色(1位)、16色(4位)、256色(8位)位图，接下来是调色板数据；</li>
+<li>对于16位、24位真彩色位图，接下来是像素数据。</li>
+</ul>
+<p>为了减少程序的复杂度，我们只考虑24位位图的情况：</p>
+<ul>
+<li>从第55字节开始就是像素数据；</li>
+<li>1个像素的颜色使用3个字节来描述。</li>
+</ul>
 
 </section>
 
@@ -1758,7 +1770,7 @@
 
 
         <span>
-            最后更新于 2026年08月23日 17:11
+            最后更新于 2026年08月23日 20:38
         </span>
     </section></footer>
 
