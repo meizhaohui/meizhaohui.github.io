@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_9/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-22T23:03:08&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-23T13:27:23&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第9章">
 <meta name="twitter:description" content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -487,7 +487,11 @@
                 <li><a href="#912-bmp文件基本结构">9.1.2 BMP文件基本结构</a></li>
               </ul>
             </li>
-            <li><a href="#92-显示24位bmp图像">9.2 显示24位BMP图像</a></li>
+            <li><a href="#92-显示24位bmp图像">9.2 显示24位BMP图像</a>
+              <ul>
+                <li><a href="#921-打开bmp文件并读取文件头">9.2.1 打开BMP文件并读取文件头</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -538,7 +542,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -839,6 +843,36 @@
 	
 ></p>
 <p>可以看到通过python程序获取到的像素高度、宽度、文件大小、位深等信息都和查看文件属性里面的信息是对得上的！</p>
+<p>通过notepad++打开这个文件，并使用HEX插件查看，其内容如下：</p>
+<p><img src="/img/Snipaste_2026-08-23_12-54-37.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-23_12-54-37.png"
+	
+	
+></p>
+<p>我们的目标不是查看文件的内容，而是要在程序中将它显示出来。</p>
+<h5 id="921-打开bmp文件并读取文件头">9.2.1 打开BMP文件并读取文件头
+</h5><p>要在程序中显示BMP文件，首先要打开文件并从文件头中获取一些有用的信息（图片的宽度、高度和允许的颜色数等），BMP文件的文件头占用文件开始的54个字节，这54字节又分为三个部分。</p>
+<p><img src="/img/Snipaste_2026-08-23_13-04-13.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-23_13-04-13.png"
+	
+	
+></p>
+<ul>
+<li>BMP文件标识（2字节），第1-2字节是BMP文件的特殊标识，分别是字节B和M，如果一个文件的第1、2字节不是这两个字母，则可以认为不是一个BMP文件，可以放弃下一步读取。</li>
+<li>位图文件头（12字节），第3-14字节被称为位图文件头，其中主要包含两项信息：BMP文件的大小和像素数据在文件中的起始位置。</li>
+<li>位图详细信息（40字节），第一直-54字节包含位图文件的详细信息，其中我们关心的信息包括位图宽度（像素）和位图高度（像素）。</li>
+</ul>
+<p>知道了BMP文件头的基本组成后，就可以打开BMP文件并读取文件头。</p>
 
 </section>
 
@@ -878,7 +912,7 @@
 
 
         <span>
-            最后更新于 2026年08月22日 23:03
+            最后更新于 2026年08月23日 13:27
         </span>
     </section></footer>
 

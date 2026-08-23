@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <copyright>阿梅的博客</copyright>
-        <lastBuildDate>Sat, 22 Aug 2026 23:03:08 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 23 Aug 2026 13:27:23 +0800</lastBuildDate><atom:link href="https://hellogitlab.com/tags/c/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>换个姿势学C语言第8章-换个方式学图形编程</title>
         <link>https://hellogitlab.com/backend/c/newstylec_8_other_method/</link>
         <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
@@ -885,6 +885,36 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到通过python程序获取到的像素高度、宽度、文件大小、位深等信息都和查看文件属性里面的信息是对得上的！&lt;/p&gt;
+&lt;p&gt;通过notepad++打开这个文件，并使用HEX插件查看，其内容如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-23_12-54-37.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-23_12-54-37.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;我们的目标不是查看文件的内容，而是要在程序中将它显示出来。&lt;/p&gt;
+&lt;h5 id=&#34;921-打开bmp文件并读取文件头&#34;&gt;9.2.1 打开BMP文件并读取文件头
+&lt;/h5&gt;&lt;p&gt;要在程序中显示BMP文件，首先要打开文件并从文件头中获取一些有用的信息（图片的宽度、高度和允许的颜色数等），BMP文件的文件头占用文件开始的54个字节，这54字节又分为三个部分。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hellogitlab.com/img/Snipaste_2026-08-23_13-04-13.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Snipaste_2026-08-23_13-04-13.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BMP文件标识（2字节），第1-2字节是BMP文件的特殊标识，分别是字节B和M，如果一个文件的第1、2字节不是这两个字母，则可以认为不是一个BMP文件，可以放弃下一步读取。&lt;/li&gt;
+&lt;li&gt;位图文件头（12字节），第3-14字节被称为位图文件头，其中主要包含两项信息：BMP文件的大小和像素数据在文件中的起始位置。&lt;/li&gt;
+&lt;li&gt;位图详细信息（40字节），第一直-54字节包含位图文件的详细信息，其中我们关心的信息包括位图宽度（像素）和位图高度（像素）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;知道了BMP文件头的基本组成后，就可以打开BMP文件并读取文件头。&lt;/p&gt;
 </description>
         </item>
         <item>
