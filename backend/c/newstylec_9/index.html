@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_9/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-25T22:06:07&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-29T15:27:42&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第9章">
 <meta name="twitter:description" content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -544,7 +544,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                Os
+                OS
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -2285,6 +2285,39 @@
 	
 	
 ></p>
+<p>只显示一个纯色BMP不能证明程序是正确的，在同一个文件夹中有另一个名为&quot;640_480_TEST_CARD.bmp&quot;的文件，将程序中文件路径<code>&quot;D:/BC101/Resources/L09/640_480_RED.bmp&quot;</code>替换成<code>&quot;D:/BC101/Resources/L09/640_480_TEST_CARD.bmp&quot;</code>,再次运行程序，可以看到效果如下图所示：</p>
+<p><img src="/img/Snipaste_2026-08-29_15-01-11.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-29_15-01-11.png"
+	
+	
+></p>
+<p>可以看到，图片是上下颠倒的！</p>
+<p>这是因为之前没有讲过BMP文件中存储的像素数据次序是“从下到上、从左到右”的，这是BMP文件格式的定义者规定的，我们只能遵守它。换句话说，我们读取的第1行像素数据，实际上是图片最底部的一行，我们的程序将图像最底部的一行像素绘制到最上方，因此图形就颠倒了。要解决这个问题也很简单，只需要将<code>putpixel(x, y, rgb(pixel.Red, pixel.Green, pixel.Blue));</code>优化一下为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="nf">putpixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">y</span><span class="p">,</span> <span class="nf">rgb</span><span class="p">(</span><span class="n">pixel</span><span class="p">.</span><span class="n">Red</span><span class="p">,</span> <span class="n">pixel</span><span class="p">.</span><span class="n">Green</span><span class="p">,</span> <span class="n">pixel</span><span class="p">.</span><span class="n">Blue</span><span class="p">));</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样一来就是从底部开始从下到上地绘制像素，解决了图片显示上下颠倒的问题，再次运行效果如下：</p>
+<p><img src="/img/Snipaste_2026-08-29_15-09-06.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-29_15-09-06.png"
+	
+	
+></p>
+<p>需要注意<code>y = 0</code> 时，<code> bitInfo.Height - y</code>为480像素，此时就会越界，超出画布，像素直接丢失，因此绘制垂直方向需要减1。</p>
 
 </section>
 
@@ -2324,7 +2357,7 @@
 
 
         <span>
-            最后更新于 2026年08月25日 22:06
+            最后更新于 2026年08月29日 15:27
         </span>
     </section></footer>
 
