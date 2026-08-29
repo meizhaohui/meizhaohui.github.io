@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_9/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-29T15:27:42&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-29T20:48:09&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第9章">
 <meta name="twitter:description" content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -494,6 +494,12 @@
                 <li><a href="#923-绘制每一个像素">9.2.3 绘制每一个像素</a></li>
               </ul>
             </li>
+            <li><a href="#93-优化bmp图像显示程序">9.3 优化BMP图像显示程序</a>
+              <ul>
+                <li><a href="#931-重新组织代码结构">9.3.1 重新组织代码结构</a></li>
+                <li><a href="#932-函数displaybmp的设计与实现">9.3.2 函数<code>displayBMP</code>的设计与实现</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -643,7 +649,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 12 分钟
+                    阅读时长: 19 分钟
                 </time>
             </div>
         
@@ -2318,6 +2324,878 @@
 	
 ></p>
 <p>需要注意<code>y = 0</code> 时，<code> bitInfo.Height - y</code>为480像素，此时就会越界，超出画布，像素直接丢失，因此绘制垂直方向需要减1。</p>
+<h4 id="93-优化bmp图像显示程序">9.3 优化BMP图像显示程序
+</h4><p>虽然使用<code>L09_02_DISPLAY_BMP.cpp</code>程序已经能显示出BMP图片了，但这个程序仅用于说明BMP图片显示的原理，而不能用于外汇牌价看板程序的，它存在很多问题：</p>
+<ul>
+<li>显示图片的代码全部位于<code>main</code>函数中，无法复用。</li>
+<li>只能显示一张图片，且图片填充了整个窗口，在外汇牌价看板中，我们需要显示多张旗帜的图片，而且需要图片显示在窗口的任意位置，而不是用图片填充整个窗口。</li>
+<li>一个文件分多次读取，显示速度较慢。多次使用<code>fread</code>函数从文件中读取数据，甚至像素数据都慢逐个读取的，这影响了程序的性能。</li>
+</ul>
+<p>为了解决上面的问题，我们需要对程序进行优化，优化的手段包括：</p>
+<ul>
+<li>新增<code>displayBMP</code>函数，以支持代码复用并可以在指定位置显示图片；</li>
+<li>对显示BMP文件的代码进行重构，提高读取文件的效率。</li>
+</ul>
+<h5 id="931-重新组织代码结构">9.3.1 重新组织代码结构
+</h5><p>在<code>main</code>函数中写大量代码是一种恶习，在<code>main</code>函数所以的<code>main.cpp</code>文件中包含很多其他函数的代码也不是一个好习惯。</p>
+<p>之前介绍过组织函数库代码的原则：</p>
+<ul>
+<li>如果一个函数库中包含多种用途的函数，应该将其按功能进行分类，分种类别的函数源代码应该独立放在一个源代码文件(.cpp文件或.c文件中。</li>
+<li>单独使用一个头文件(.h文件)对类型、函数等进行声明。这个头文件的文件名通常与函数定义的源代码文件相同（扩展名不同）。</li>
+</ul>
+<p>这两个原则同样适用于普通应用程序。它所带来的好处是显而易见的：将程序划分成多个文件、多个模块，为多人协作完成一个项目提供可能；未来如果需要将其独立做成函数库，代码也更容易分离。</p>
+<p>在开始之前，我们先将与颜色相关的数据类型、函数从<code>main.cpp</code>中独立出来。</p>
+<p>为了不影响之前的项目代码，复制<code>L09_02_DISPLAY_BMP</code>文件夹，为<code>L09_03_DISPLAY_BMP</code>，并调整里面的文件名称以及<code>launch.json</code>和<code>tasks.json</code>配置，此处不展开。</p>
+<h6 id="9311-新增颜色类模块">9.3.1.1 新增颜色类模块
+</h6><p>新增<code>color.h</code>头文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// color.h
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 颜色相关文件头
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma once
+</span></span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">RGBColor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// rbg格式转换
+</span></span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个文件包括了数据类型<code>RGBColor</code>的定义和<code>rgb</code>函数的声明。</p>
+<p>新增<code>color.cpp</code>函数实现文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// color.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 颜色相关实现
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;color.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">RGBColor</span> <span class="nf">rgb</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">red</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">green</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">blue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">(</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">red</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">           <span class="p">((</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">green</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">|</span>
+</span></span><span class="line"><span class="cl">           <span class="p">((</span><span class="n">RGBColor</span><span class="p">)</span><span class="n">blue</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个文件里面包含了头文件<code>color.h</code>以及<code>rgb</code>函数的实现代码，然后在<code>L09_03_DISPLAY_BMP.cpp</code>中引入<code>\#include &quot;color.h&quot;</code>，并删除移动到<code>color.h</code>和<code>color.cpp</code>文件中的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// L09_03_DISPLAY_BMP.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;color.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 位图文件头
+</span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">BITMAP_HEADER</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">Size</span><span class="p">;</span>        <span class="c1">// 第1-4字节，无符号整型， BMP文件大小
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">Reserved1</span><span class="p">;</span> <span class="c1">// 第5-6字节，无符号短整型，保留区1
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">Reserved2</span><span class="p">;</span> <span class="c1">// 第7-8字节，无符号短整型，保留区2
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">OffBits</span><span class="p">;</span>     <span class="c1">// 第9-12字节，无符号整型， 像素偏移量
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">BITMAP_HEADER</span> <span class="n">BitmapHeader</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 位图详细信息
+</span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">BITMAP_INFORMATION</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ========== BITMAPINFOHEADER 信息头 ==========
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">InfoHeaderSize</span><span class="p">;</span> <span class="c1">// 信息头结构体长度，标准BMP为40
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">Width</span><span class="p">;</span>                   <span class="c1">// 图像宽度，像素
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">Height</span><span class="p">;</span>                  <span class="c1">// 图像高度，像素；&gt;0像素行倒存，&lt;0正向存储
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">Planes</span><span class="p">;</span>       <span class="c1">// 色彩平面数，BMP固定等于1
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">BitCount</span><span class="p">;</span>     <span class="c1">// 每个像素位深；24代表24位真彩色
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">Compression</span><span class="p">;</span>    <span class="c1">// 压缩方式；0=不压缩
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ImageSize</span><span class="p">;</span>      <span class="c1">// 像素数据总字节（包含行padding填充，可为0）
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">XPelsPerMeter</span><span class="p">;</span>  <span class="c1">// 水平分辨率：每米多少像素
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">YPelsPerMeter</span><span class="p">;</span>  <span class="c1">// 垂直分辨率：每米多少像素
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ClrUsed</span><span class="p">;</span>        <span class="c1">// 使用的调色板颜色数量，24位真彩色为0
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ClrImportant</span><span class="p">;</span>   <span class="c1">// 重要颜色数量，一般为0
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">BITMAP_INFORMATION</span> <span class="n">bitmapInfomation</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 24位像素数据
+</span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">_24BIT_PIXEL</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">Blue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">Green</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">Red</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_24BIT_PIXEL</span> <span class="n">_24BitPixel</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">FILE</span> <span class="o">*</span><span class="n">bmpfile</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="s">&#34;D:/BC101/Resources/L09/640_480_TEST_CARD.bmp&#34;</span><span class="p">,</span> <span class="s">&#34;rb&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">bmpfile</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开BMP文件失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开BMP文件成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取标识信息
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">tag</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// fread(缓冲区,每个元素大小,元素数量,文件)
+</span></span></span><span class="line"><span class="cl">    <span class="kt">size_t</span> <span class="n">ret_1</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">ret_1</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取BMP标识失败，文件过短或损坏</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">first</span> <span class="o">=</span> <span class="n">tag</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">second</span> <span class="o">=</span> <span class="n">tag</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%c%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">first</span> <span class="o">!=</span> <span class="sc">&#39;B&#39;</span> <span class="o">||</span> <span class="n">second</span> <span class="o">!=</span> <span class="sc">&#39;M&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开的文件不是BMP文件格式</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取BMP文件标识成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 开始处理位图文件图信息
+</span></span></span><span class="line"><span class="cl">    <span class="n">BitmapHeader</span> <span class="n">bmpHeader</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">size_t</span> <span class="n">ret_2</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="o">&amp;</span><span class="n">bmpHeader</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bmpHeader</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">ret_2</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取BMP位图文件头异常</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;BMP文件大小: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">Size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;像素偏移量: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">OffBits</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 开始处理位图详情信息
+</span></span></span><span class="line"><span class="cl">    <span class="n">bitmapInfomation</span> <span class="n">bitInfo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">size_t</span> <span class="n">ret_3</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="o">&amp;</span><span class="n">bitInfo</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bitInfo</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">ret_3</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取位图详情信息失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;==== BITMAPINFOHEADER ====</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;信息头大小: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">InfoHeaderSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;图像宽: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;图像高: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;色彩平面: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Planes</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;位深: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">BitCount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;压缩方式: %u (0=无压缩)</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Compression</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;像素数据总大小(含padding): %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">ImageSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;X分辨率(每米像素): %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">XPelsPerMeter</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Y分辨率(每米像素): %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">YPelsPerMeter</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;调色板颜色数量: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">ClrUsed</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;重要颜色数量: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">ClrImportant</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">bytes_per_pixel</span> <span class="o">=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">BitCount</span> <span class="o">/</span> <span class="mi">8</span><span class="p">;</span>           <span class="c1">// 每个像素占多少字节，24位就是3字节
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">line_raw_bytes</span> <span class="o">=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span> <span class="o">*</span> <span class="n">bytes_per_pixel</span><span class="p">;</span> <span class="c1">// 一行原始像素字节，不含padding填充
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">line_padded_bytes</span> <span class="o">=</span> <span class="p">(</span><span class="n">line_raw_bytes</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">~</span><span class="mi">3</span><span class="p">);</span>  <span class="c1">// 4字节对齐后的真实一行大小，包含padding
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;每行原始字节：%d, 对齐后实际行大小:%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">line_raw_bytes</span><span class="p">,</span> <span class="n">line_padded_bytes</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 跳到像素数据真正起始位置，不要硬编码54
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fseek</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">OffBits</span><span class="p">,</span> <span class="n">SEEK_SET</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;已经fseek跳到像素偏移：%u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">OffBits</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sizeof(BitmapHeader)=%zu</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bmpHeader</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sizeof(bitmapInformation)=%zu</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bitInfo</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 开始读取像素信息
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// _24BitPixel pixel;
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// size_t ret_4 = fread(&amp;pixel, sizeof(_24BitPixel), 1, bmpfile);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// if (ret_4 != 1)
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// {
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//     printf(&#34;读取位图第1个像素信息失败\n&#34;);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//     fclose(bmpfile);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//     return 5;
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// }
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;第1个像素的颜色分量Red：%d\n&#34;, pixel.Red);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;第1个像素的颜色分量Green：%d\n&#34;, pixel.Green);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;第1个像素的颜色分量Blue：%d\n&#34;, pixel.Blue);
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 初始化窗口
+</span></span></span><span class="line"><span class="cl">    <span class="nf">initgraph</span><span class="p">(</span><span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_24BitPixel</span> <span class="n">pixel</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">size_t</span> <span class="n">ret_5</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pixel</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">_24BitPixel</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">ret_5</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取位图像素信息失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">putpixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">y</span><span class="p">,</span> <span class="nf">rgb</span><span class="p">(</span><span class="n">pixel</span><span class="p">.</span><span class="n">Red</span><span class="p">,</span> <span class="n">pixel</span><span class="p">.</span><span class="n">Green</span><span class="p">,</span> <span class="n">pixel</span><span class="p">.</span><span class="n">Blue</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">_getch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行代码，此时会提示以下异常：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">D:\BC101\Examples\L09\L09_03_DISPLAY_BMP/L09_03_DISPLAY_BMP.cpp:159: undefined reference to `rgb(unsigned char, unsigned char, unsigned char)&#39;      
+</span></span><span class="line"><span class="cl">collect2.exe: error: ld returned 1 exit status
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>问题的根源是<strong>color.cpp 没有参与编译链接</strong>，这是 VSCode + MinGW 多文件项目最经典的坑。</p>
+<p><code>#include &quot;color.h&quot;</code> 只是让编译器<strong>看到函数声明</strong>，但函数的<strong>实现代码在 color.cpp 里</strong>。如果你的 <code>tasks.json</code> 编译命令只编译了当前打开的 <code>L09_03_DISPLAY_BMP.cpp</code> 这一个文件，链接器就找不到 <code>rgb</code> 函数的实体，报 &ldquo;未定义&rdquo;。因此需要修改<code>tasks.json</code>配置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="hl"><span class="lnt">11
+</span></span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;2.0.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;tasks&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;label&#34;</span><span class="p">:</span> <span class="s2">&#34;build_easyx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;process&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;D:\\ProgramFiles\\mingw-w64\\bin\\g++.exe&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-g&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;L09_03_DISPLAY_BMP.cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line hl"><span class="cl">                <span class="s2">&#34;color.cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-lEasyX&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-lgdi32&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-limm32&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-lole32&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-luuid&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-o&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;D:\\BC101\\Examples\\Debug\\L09_03_DISPLAY_BMP.exe&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;options&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;cwd&#34;</span><span class="p">:</span> <span class="s2">&#34;D:\\BC101\\Examples\\L09\\L09_03_DISPLAY_BMP&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;group&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;kind&#34;</span><span class="p">:</span> <span class="s2">&#34;build&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;isDefault&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;problemMatcher&#34;</span><span class="p">:</span> <span class="s2">&#34;$gcc&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>增加11行的<code>&quot;color.cpp&quot;,</code>表示<code>color.cpp</code>也一起参与编译，再次运行代码，可以看到程序能正常编译运行，说明重新组织颜色类代码是正常的！</p>
+<h6 id="9312-新增bmp处理类模块">9.3.1.2 新增BMP处理类模块
+</h6><p>我们可以将与BMP文件相关的结构体、数据类型和函数作为一个模块，分成<code>bmp.h</code>和<code>bmp.cpp</code>两个文件中。</p>
+<p>创建<code>bmp.h</code>文件，直接将<code>L09_03_DISPLAY_BMP.cpp</code>中跟BMP文件相关的定义和声明移动过去：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// bmp.h
+</span></span></span><span class="line"><span class="cl"><span class="c1">// BMP相关文件头
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 位图文件头
+</span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">BITMAP_HEADER</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">Size</span><span class="p">;</span>        <span class="c1">// 第1-4字节，无符号整型， BMP文件大小
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">Reserved1</span><span class="p">;</span> <span class="c1">// 第5-6字节，无符号短整型，保留区1
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">Reserved2</span><span class="p">;</span> <span class="c1">// 第7-8字节，无符号短整型，保留区2
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">OffBits</span><span class="p">;</span>     <span class="c1">// 第9-12字节，无符号整型， 像素偏移量
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">BITMAP_HEADER</span> <span class="n">BitmapHeader</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 位图详细信息
+</span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">BITMAP_INFORMATION</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ========== BITMAPINFOHEADER 信息头 ==========
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">InfoHeaderSize</span><span class="p">;</span> <span class="c1">// 信息头结构体长度，标准BMP为40
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">Width</span><span class="p">;</span>                   <span class="c1">// 图像宽度，像素
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">Height</span><span class="p">;</span>                  <span class="c1">// 图像高度，像素；&gt;0像素行倒存，&lt;0正向存储
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">Planes</span><span class="p">;</span>       <span class="c1">// 色彩平面数，BMP固定等于1
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">BitCount</span><span class="p">;</span>     <span class="c1">// 每个像素位深；24代表24位真彩色
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">Compression</span><span class="p">;</span>    <span class="c1">// 压缩方式；0=不压缩
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ImageSize</span><span class="p">;</span>      <span class="c1">// 像素数据总字节（包含行padding填充，可为0）
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">XPelsPerMeter</span><span class="p">;</span>  <span class="c1">// 水平分辨率：每米多少像素
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">YPelsPerMeter</span><span class="p">;</span>  <span class="c1">// 垂直分辨率：每米多少像素
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ClrUsed</span><span class="p">;</span>        <span class="c1">// 使用的调色板颜色数量，24位真彩色为0
+</span></span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">ClrImportant</span><span class="p">;</span>   <span class="c1">// 重要颜色数量，一般为0
+</span></span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">BITMAP_INFORMATION</span> <span class="n">bitmapInfomation</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 24位像素数据
+</span></span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="n">_24BIT_PIXEL</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">Blue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">Green</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">Red</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">_24BIT_PIXEL</span> <span class="n">_24BitPixel</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后在<code>L09_03_DISPLAY_BMP.cpp</code>中引入<code>bmp.h</code>头文件，就变成了下面这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="hl"><span class="lnt"> 14
+</span></span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// L09_03_DISPLAY_BMP.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;color.h&#34;</span><span class="cp">
+</span></span></span><span class="line hl"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;bmp.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">FILE</span> <span class="o">*</span><span class="n">bmpfile</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="s">&#34;D:/BC101/Resources/L09/640_480_TEST_CARD.bmp&#34;</span><span class="p">,</span> <span class="s">&#34;rb&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">bmpfile</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开BMP文件失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开BMP文件成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取标识信息
+</span></span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">tag</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// fread(缓冲区,每个元素大小,元素数量,文件)
+</span></span></span><span class="line"><span class="cl">    <span class="kt">size_t</span> <span class="n">ret_1</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">ret_1</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取BMP标识失败，文件过短或损坏</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">first</span> <span class="o">=</span> <span class="n">tag</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">second</span> <span class="o">=</span> <span class="n">tag</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%c%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">first</span> <span class="o">!=</span> <span class="sc">&#39;B&#39;</span> <span class="o">||</span> <span class="n">second</span> <span class="o">!=</span> <span class="sc">&#39;M&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;打开的文件不是BMP文件格式</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取BMP文件标识成功</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 开始处理位图文件图信息
+</span></span></span><span class="line"><span class="cl">    <span class="n">BitmapHeader</span> <span class="n">bmpHeader</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">size_t</span> <span class="n">ret_2</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="o">&amp;</span><span class="n">bmpHeader</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bmpHeader</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">ret_2</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取BMP位图文件头异常</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;BMP文件大小: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">Size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;像素偏移量: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">OffBits</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 开始处理位图详情信息
+</span></span></span><span class="line"><span class="cl">    <span class="n">bitmapInfomation</span> <span class="n">bitInfo</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">size_t</span> <span class="n">ret_3</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="o">&amp;</span><span class="n">bitInfo</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bitInfo</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">ret_3</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取位图详情信息失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;==== BITMAPINFOHEADER ====</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;信息头大小: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">InfoHeaderSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;图像宽: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;图像高: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;色彩平面: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Planes</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;位深: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">BitCount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;压缩方式: %u (0=无压缩)</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Compression</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;像素数据总大小(含padding): %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">ImageSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;X分辨率(每米像素): %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">XPelsPerMeter</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Y分辨率(每米像素): %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">YPelsPerMeter</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;调色板颜色数量: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">ClrUsed</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;重要颜色数量: %u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">ClrImportant</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">bytes_per_pixel</span> <span class="o">=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">BitCount</span> <span class="o">/</span> <span class="mi">8</span><span class="p">;</span>           <span class="c1">// 每个像素占多少字节，24位就是3字节
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">line_raw_bytes</span> <span class="o">=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span> <span class="o">*</span> <span class="n">bytes_per_pixel</span><span class="p">;</span> <span class="c1">// 一行原始像素字节，不含padding填充
+</span></span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">line_padded_bytes</span> <span class="o">=</span> <span class="p">(</span><span class="n">line_raw_bytes</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">~</span><span class="mi">3</span><span class="p">);</span>  <span class="c1">// 4字节对齐后的真实一行大小，包含padding
+</span></span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;每行原始字节：%d, 对齐后实际行大小:%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">line_raw_bytes</span><span class="p">,</span> <span class="n">line_padded_bytes</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 跳到像素数据真正起始位置，不要硬编码54
+</span></span></span><span class="line"><span class="cl">    <span class="nf">fseek</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">OffBits</span><span class="p">,</span> <span class="n">SEEK_SET</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;已经fseek跳到像素偏移：%u</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">bmpHeader</span><span class="p">.</span><span class="n">OffBits</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sizeof(BitmapHeader)=%zu</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bmpHeader</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sizeof(bitmapInformation)=%zu</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bitInfo</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 开始读取像素信息
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// _24BitPixel pixel;
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// size_t ret_4 = fread(&amp;pixel, sizeof(_24BitPixel), 1, bmpfile);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// if (ret_4 != 1)
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// {
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//     printf(&#34;读取位图第1个像素信息失败\n&#34;);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//     fclose(bmpfile);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//     return 5;
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// }
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;第1个像素的颜色分量Red：%d\n&#34;, pixel.Red);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;第1个像素的颜色分量Green：%d\n&#34;, pixel.Green);
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// printf(&#34;第1个像素的颜色分量Blue：%d\n&#34;, pixel.Blue);
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 初始化窗口
+</span></span></span><span class="line"><span class="cl">    <span class="nf">initgraph</span><span class="p">(</span><span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_24BitPixel</span> <span class="n">pixel</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">size_t</span> <span class="n">ret_5</span> <span class="o">=</span> <span class="nf">fread</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pixel</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">_24BitPixel</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">ret_5</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;读取位图像素信息失败</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">putpixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bitInfo</span><span class="p">.</span><span class="n">Height</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">y</span><span class="p">,</span> <span class="nf">rgb</span><span class="p">(</span><span class="n">pixel</span><span class="p">.</span><span class="n">Red</span><span class="p">,</span> <span class="n">pixel</span><span class="p">.</span><span class="n">Green</span><span class="p">,</span> <span class="n">pixel</span><span class="p">.</span><span class="n">Blue</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">_getch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">closegraph</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">fclose</span><span class="p">(</span><span class="n">bmpfile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个文件包括读取24位BMP文件的结构体声明和类型定义，未来还会在此文件中增加<code>displayBMP</code>函数声明，目前<code>displayBMP</code>函数虽尚未创建，但也应该创建一个空的<code>bmp.cpp</code>文件，然后在其中加入<code>#include</code>指令包含<code>bmp.h</code>文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">/// bmp.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// BMP文件相关实现
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;bmp.h&#34;;</span><span class="cp">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时，重新编译代码，可以正常编译，说明<code>bmp.h</code>头文件起作用了！但还有大段的代码在<code>main</code>函数中，需要将其移动到<code>bmp.cpp</code>中，实现代码复用！</p>
+<p>因此，计划增加函数<code>displayBMP</code>，并放到<code>bmp.cpp</code>文件中。</p>
+<h5 id="932-函数displaybmp的设计与实现">9.3.2 函数<code>displayBMP</code>的设计与实现
+</h5><p>我们现在来设计函数<code>displayBMP</code>，用于在指定位置显示BMP图片，它的声明被加入<code>bmp.h</code>文件中，它的实现代码将被加入到<code>bmp.cpp</code>中。</p>
 
 </section>
 
@@ -2357,7 +3235,7 @@
 
 
         <span>
-            最后更新于 2026年08月29日 15:27
+            最后更新于 2026年08月29日 20:48
         </span>
     </section></footer>
 
