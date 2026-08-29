@@ -10,7 +10,7 @@
 <meta property='og:description' content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n">
 <meta property='og:url' content='https://hellogitlab.com/backend/c/newstylec_9/'>
 <meta property='og:site_name' content='编程技术分享'>
-<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-29T20:48:09&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Backend' /><meta property='article:tag' content='Backend' /><meta property='article:tag' content='C' /><meta property='article:tag' content='图形编程' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-29T21:32:49&#43;08:00'/><meta property='og:image' content='https://hellogitlab.com/img/default.jpg' />
 <meta name="twitter:title" content="换个姿势学C语言第9章">
 <meta name="twitter:description" content="换个姿势学C语言 第9章 显示图形和文本元素 0. 说明 《换个姿势学C语言》由何旭辉 著，清华大学出版社2022年出版。感谢何老师！\n这是一本非常不错的书！\n第一、二、三章总结参考换个姿势学C语言 第1-3章 第四章总结参考换个姿势学C语言 第4章 第五章5.1节总结参考换个姿势学C语言 第5章 5.1节 第五章5.2节总结参考换个姿势学C语言 第5章 5.2节 第五章5.3节总结参考换个姿势学C语言 第5章 5.3节 第五章5.4节总结参考换个姿势学C语言 第5章 5.4节 第六章总结参考换个姿势学C语言 第6章 第七章7.1节总结参考换个姿势学C语言 第7.1章 使用结构体存储不同类型的多项数据 第七章7.2节总结参考换个姿势学C语言 第7.2章 文件访问的基础知识 第七章7.3节总结参考换个姿势学C语言 第7.3章 将结构体存入磁盘文件 第七章7.4节总结参考换个姿势学C语言 第7.4章 获取和保存全部外币牌价数据 第八章总结参考换个姿势学C语言 第8章 图形编程基础 9. 显示图形和文本元素 学习了绘制点、线和填充颜色，我们还需要学习如何显示图像。\n现在我们将学习如何显示采用BMP格式的图像文件。EasyX其实提供了显示图片的函数：\n但我们还是先自己实现它。\n本章相关知识：\n常见的位图文件格式。 显示24位.bmp图像的方法（国旗和行政区旗）。 显示不同字体的方法。 控制屏幕分辨率和全屏显示窗口。 在完成本章后，外汇牌价看板程序所需的技术预研工作就完成了！\n外汇牌价看板的运行效果图：\n很多国旗或行政区区旗，每一面旗帜对应一个图形文件，文件名与倾向代码相同，例如英镑就是GBP.bmp。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hellogitlab.com/img/default.jpg' />
@@ -550,7 +550,7 @@
             </a>
         
             <a href="/categories/os/" class="font_size_34">
-                OS
+                Os
             </a>
         
             <a href="/categories/docker/" class="font_size_27">
@@ -649,7 +649,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 19 分钟
+                    阅读时长: 20 分钟
                 </time>
             </div>
         
@@ -3196,6 +3196,235 @@
 <p>因此，计划增加函数<code>displayBMP</code>，并放到<code>bmp.cpp</code>文件中。</p>
 <h5 id="932-函数displaybmp的设计与实现">9.3.2 函数<code>displayBMP</code>的设计与实现
 </h5><p>我们现在来设计函数<code>displayBMP</code>，用于在指定位置显示BMP图片，它的声明被加入<code>bmp.h</code>文件中，它的实现代码将被加入到<code>bmp.cpp</code>中。</p>
+<h6 id="9321-displaybmp函数的设计">9.3.2.1 displayBMP函数的设计
+</h6><p>在设计<code>displayBMP</code>之前需要考虑如下问题：</p>
+<ul>
+<li>函数的功能是什么？  在指定位置显示24位真彩色图片。</li>
+<li>函数的名字是什么？  displayBMP。</li>
+<li>函数需要传入哪些参数？ BMP图片的完整路径、图片要显示的位置,如top像素和left像素。</li>
+<li>函数是否需要返回值？返回何种类型的值？
+<ul>
+<li>需要返回值，因为显示图片不一定都会成功，根据不同的失败原因约定返回值如下表所示。</li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>返回值</th>
+					<th>意义</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>0</td>
+					<td>显示图片成功</td>
+			</tr>
+			<tr>
+					<td>-1</td>
+					<td>打开文件失败（文件不存在或权限不足）</td>
+			</tr>
+			<tr>
+					<td>-2</td>
+					<td>内存分配失败（可能是文件过大）</td>
+			</tr>
+			<tr>
+					<td>-3</td>
+					<td>打开的文件不是BMP文件</td>
+			</tr>
+	</tbody>
+</table></div>
+<p>于是<code>displayBMP</code>函数的原型为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">// 显示bmp文件
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">displayBMP</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">int</span> <span class="n">top</span><span class="p">,</span> <span class="kt">int</span> <span class="n">left</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后就可以在<code>bmp.cpp</code>中加入这个函数的基础代码，函数的功能实现可以后面再处理。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// bmp.cpp
+</span></span></span><span class="line"><span class="cl"><span class="c1">// BMP文件相关实现
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;bmp.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 显示bmp文件
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">displayBMP</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">int</span> <span class="n">top</span><span class="p">,</span> <span class="kt">int</span> <span class="n">left</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;你调用了displayBMP函数&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后修改<code> L09_03_DISPLAY_BMP.cpp</code>代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="hl"><span class="lnt">14
+</span></span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="hl"><span class="lnt">18
+</span></span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="c1">/// L09_03_DISPLAY_BMP.cpp
+</span></span></span><span class="line"><span class="cl"><span class="cp">#ifdef _MSC_VER
+</span></span></span><span class="line"><span class="cl"><span class="c1">// VS 环境生效
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define _CRT_SECURE_NO_WARNINGS
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma warning(disable : 6031)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#pragma comment(lib, &#34;EasyXw.lib&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;conio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;graphics.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;color.h&#34;</span><span class="cp">
+</span></span></span><span class="line hl"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;bmp.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line hl"><span class="cl">    <span class="nf">displayBMP</span><span class="p">(</span><span class="s">&#34;D:/BC101/Resources/L09/640_480_TEST_CARD.bmp&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后，此时也要改一下<code>tasks.json</code>，将<code>bmp.cpp</code>文件加入到编译中：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;2.0.0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;tasks&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;label&#34;</span><span class="p">:</span> <span class="s2">&#34;build_easyx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;process&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;D:\\ProgramFiles\\mingw-w64\\bin\\g++.exe&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-g&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;L09_03_DISPLAY_BMP.cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;color.cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;bmp.cpp&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-lEasyX&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-lgdi32&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-limm32&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-lole32&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-luuid&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-o&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;D:\\BC101\\Examples\\Debug\\L09_03_DISPLAY_BMP.exe&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;options&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;cwd&#34;</span><span class="p">:</span> <span class="s2">&#34;D:\\BC101\\Examples\\L09\\L09_03_DISPLAY_BMP&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;group&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;kind&#34;</span><span class="p">:</span> <span class="s2">&#34;build&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;isDefault&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;problemMatcher&#34;</span><span class="p">:</span> <span class="s2">&#34;$gcc&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后再运行程序：</p>
+<p><img src="/img/Snipaste_2026-08-29_21-12-29.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Snipaste_2026-08-29_21-12-29.png"
+	
+	
+></p>
+<p>正常输出了<code>调用了displayBMP函数</code>，说明函数调用没有问题！</p>
+<p>达成这个目标后，就可以专注<code>bmp.cpp</code>中<code>displayBMP</code>函数的实现了！</p>
+<h6 id="9322-displaybmp函数的实现">9.3.2.2 displayBMP函数的实现
+</h6><p><code>displayBMP</code>的原型是：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// 显示bmp文件
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">displayBMP</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">filename</span><span class="p">,</span> <span class="kt">int</span> <span class="n">top</span><span class="p">,</span> <span class="kt">int</span> <span class="n">left</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第1个参数<code>const char* filename</code>用于传入要显示的BMP文件名，它是字符串常量的指针，第2、3个参数表示位图显示的位置，此处的<code>top</code>和<code>left</code>表示图片的左上角在窗口中的坐标。</p>
+<p>以上是调用的<code>displayBMP</code>函数的例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="nf">displayBMP</span><span class="p">(</span><span class="s">&#34;D:/BC101/Resources/L09/640_480_TEST_CARD.bmp&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>1）一次性读入图片文件</strong></p>
+<p>分多次用<code>fread</code>函数读取同一个磁盘文件不是一个好习惯！因为磁盘文件位于外部存储设备，访问速度比内存慢很多。对于机构硬盘来说每次读取都需要运动磁头，而机械运行是需要耗费较长时间的。即使有文件缓冲区存在或者使用固态硬盘，多次读取的性能仍比一次读取全部内容要低。此外，如果一次性读入了文件的全部内容，接下来你就可以马上关闭文件避免对文件长时间占用。</p>
 
 </section>
 
@@ -3235,7 +3464,7 @@
 
 
         <span>
-            最后更新于 2026年08月29日 20:48
+            最后更新于 2026年08月29日 21:32
         </span>
     </section></footer>
 
